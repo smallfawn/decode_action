@@ -1,0 +1,21 @@
+{
+  "name": "decode-js",
+  "scripts": {
+    "decode": "node src/main.js",
+    "deob": "node src/main.js -t obfuscator",
+    "deso": "node src/main.js -t sojson",
+    "desov7": "node src/main.js -t sojsonv7",
+    "lint": "eslint --ext .js --fix src"
+  },
+  "dependencies": {
+    "@babel/generator": "^7.17.10",
+    "@babel/parser": "^7.17.10",
+    "@babel/traverse": "^7.17.10",
+    "@babel/types": "^7.17.10",
+    "eslint": "^8.23.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "isolated-vm": "^4.7.2",
+    "prettier": "^2.7.1"
+  }
+}
