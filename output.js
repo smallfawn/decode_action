@@ -801,7 +801,7 @@ class _0x15ca64 extends _0x31446a {
   }
 })().catch(_0xd59247 => _0x5f00b5.log(_0xd59247)).finally(() => _0x5f00b5.exitNow());
 async function _0x307e44(_0x84aa64 = 0) {
-  let _0x144111 = true;
+  let _0x144111 = false;
   try {
     let _0x22187d = {
         fn: "auth",
