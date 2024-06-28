@@ -109,5 +109,18 @@ with open('./input.py', 'r', encoding='utf-8') as file:
 final_decrypted_data = decrypt_nested(encoded_data)
 # 输出最终解密结果
 # print("最终解密结果:")
+def process_data(data):
+    if isinstance(data, str):
+        # 如果是字符串，则编码为字节对象
+        byte_data = data.encode('utf-8')
+    elif isinstance(data, bytes):
+        # 如果已经是字节对象，则直接使用
+        byte_data = data
+    else:
+        # 如果不是字符串也不是字节对象，抛出异常或做其他处理
+        raise TypeError("Expected string or bytes-like object")
+    return byte_data
+
+
 with open("./onput.py", 'wb') as f:
-    f.write(final_decrypted_data.encode('utf-8'))
+    f.write(process_data(final_decrypted_data))
