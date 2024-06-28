@@ -121,6 +121,6 @@ def process_data(data):
         raise TypeError("Expected string or bytes-like object")
     return byte_data
 
-
+print(final_decrypted_data)
 with open("./onput.py", 'wb') as f:
     f.write(process_data(final_decrypted_data))
