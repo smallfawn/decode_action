@@ -15,7 +15,7 @@ jobs:
 
     - name: Execute Python script for decoding
       run: |
-        python scr/decode.py
+        python src/decode.py
 
     - name: Install dependencies and run decode
       run: |
