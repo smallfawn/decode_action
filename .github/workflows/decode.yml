@@ -17,7 +17,7 @@ jobs:
     - name: Install dependencies and run decode
       run: |
         npm install
-        npm run decode -- [-i input.js] [-o output.js]
+        npm run decode -- -t obfuscator [-i input.js] [-o output.js]
     - name: Configure Git author
       run: |
         git config --local user.email "action@github.com"
@@ -25,7 +25,7 @@ jobs:
     - name: Save decoded output to repository
       run: |
         git status
-        git add output.js
+        git add output.js # Add the decoded output file
         git status
         git commit -m "Add decoded output file"
         git push
