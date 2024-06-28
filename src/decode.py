@@ -122,5 +122,5 @@ def process_data(data):
     return byte_data
 
 print(final_decrypted_data)
-with open("./onput.py", 'wb') as f:
+with open("./output.py", 'wb') as f:
     f.write(process_data("#")+process_data(formatted_date)+process_data("\n")+process_data(final_decrypted_data))
