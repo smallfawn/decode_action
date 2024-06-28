@@ -2,9 +2,15 @@ import base64
 import bz2
 import zlib
 import lzma
+import gzip
 
 
 def try_decompress(data):
+    try:
+        decompressed_data = gzip.decompress(data)
+        return decompressed_data
+    except Exception as e:
+        pass
     # 尝试使用 bz2 解压缩
     try:
         decompressed_data = bz2.decompress(data)
