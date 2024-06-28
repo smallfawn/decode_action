@@ -1,3 +1,5 @@
+代码保护学习ing 
+
 fork仓库后 把待解密的脚本放入到input.js里面 等待60s左右即可在output.js看到解密脚本
 
 python脚本同理 放入到input.py里面 等待60s左右即可在output.py看到解密脚本
