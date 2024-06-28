@@ -88,10 +88,10 @@ with open('./input.py', 'r') as file:
     content = file.read().strip()
     # 打印内容
     encoded_data = extract_base64_encoded(content)
-    print(encoded_data)
+    #print(encoded_data)
 # 解密嵌套加密数据
 final_decrypted_data = decrypt_nested(encoded_data)
-
+final_decrypted_data_str = final_decrypted_data.decode('utf-8')  # 根据实际编码调整 utf-8
 # 输出最终解密结果
 print("最终解密结果:")
 print("#"+formatted_date + "\n"+final_decrypted_data)
