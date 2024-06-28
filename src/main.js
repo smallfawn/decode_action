@@ -7,7 +7,6 @@ const PluginObfuscator = require('./plugin/obfuscator.js')
 const PluginAwsc = require('./plugin/awsc.js')
 
 // 读取参数
-let type = 'test'
 let encodeFile = 'input.js'
 let decodeFile = 'output.js'
 for (let i = 2; i < process.argv.length; i += 2) {
@@ -18,7 +17,6 @@ for (let i = 2; i < process.argv.length; i += 2) {
     decodeFile = process.argv[i + 1]
   }
 }
-console.log(`类型: ${type}`)
 console.log(`输入: ${encodeFile}`)
 console.log(`输出: ${decodeFile}`)
 
@@ -41,7 +39,7 @@ const plugins = [
 
 for (let plugin of plugins) {
   const code = plugin.plugin(sourceCode);
-  if (code !== processedCode) {
+  if (code && code !== processedCode) {
     processedCode = code;
     pluginUsed = plugin.name;
     break;
@@ -58,7 +56,3 @@ if (processedCode !== sourceCode) {
   console.log(`所有插件处理后的代码与原代码一致，未写入文件。`);
 }
 
-// 输出代码
-if (code) {
-  fs.writeFile(decodeFile, code, () => { })
-}
