@@ -7,19 +7,6 @@ from Crypto.Hash import SHA1
 import base64, time, sys
 from datetime import datetime
 
-'''
-new Env("得间小说")
-一天1块左右，新增阅读和提现广告
-安装pycryptodome依赖
-必须抓开宝箱的全部链接https://dj.palmestore.com/zycl/gold/receiveV5?1234567
-搜索param=50,即可找到宝箱的链接
-变量：djxs，多号===分开,不能用青龙并发
-格式：备注#链接
-一天一次即可，宝箱没什么金币（宝箱视频一次性跑完）
-新增pushplush表格推送，一目了然
-v1.12
-'''
-
 #pushplush的token
 token = ""#只填这个即可
 userid = ""
