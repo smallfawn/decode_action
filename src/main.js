@@ -51,10 +51,10 @@ for (let plugin of plugins) {
     continue;
   }
 }
-
+let time = new Date().getTime();
 if (processedCode !== sourceCode) {
   // 输出代码
-  fs.writeFile(decodeFile, processedCode, (err) => {
+  fs.writeFile(decodeFile, "//" + time + '\n' + processedCode, (err) => {
     if (err) throw err;
     console.log(`使用插件 ${pluginUsed} 成功处理并写入文件 ${decodeFile}`);
   });
