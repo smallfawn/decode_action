@@ -123,4 +123,4 @@ def process_data(data):
 
 print(final_decrypted_data)
 with open("./onput.py", 'wb') as f:
-    f.write(process_data(final_decrypted_data))
+    f.write(process_data("#")+process_data(formatted_date)+process_data("\n")+process_data(final_decrypted_data))
