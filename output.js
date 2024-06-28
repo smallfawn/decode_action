@@ -1,4 +1,6 @@
-//1719542315240
+//Fri Jun 28 2024 03:42:51 GMT+0000 (Coordinated Universal Time)
+Base:https://github.com/echo094/decode-js
+Modify:https://github.com/smallfawn/decode_action
 const $ = new Env("顺丰速运"),
   ckName = "sfsy_data",
   userCookie = $.toObj($.isNode() ? process.env[ckName] : $.getdata(ckName)) || [];
