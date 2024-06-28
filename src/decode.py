@@ -3,6 +3,13 @@ import bz2
 import zlib
 import lzma
 import gzip
+from datetime import datetime
+
+# 获取当前日期和时间
+now = datetime.now()
+
+# 将日期和时间格式化为字符串
+formatted_date = now.strftime("%Y-%m-%d %H:%M:%S")
 
 
 def try_decompress(data):
@@ -87,6 +94,6 @@ final_decrypted_data = decrypt_nested(encoded_data)
 
 # 输出最终解密结果
 print("最终解密结果:")
-print(final_decrypted_data)
-with open("./input.py", 'wb') as f:
+print("#"+formatted_date + "\n"+final_decrypted_data)
+with open("./onput.py", 'wb') as f:
     f.write(final_decrypted_data)
