@@ -38,11 +38,17 @@ const plugins = [
 ];
 
 for (let plugin of plugins) {
-  const code = plugin.plugin(sourceCode);
-  if (code && code !== processedCode) {
-    processedCode = code;
-    pluginUsed = plugin.name;
-    break;
+  try {
+    const code = plugin.plugin(sourceCode);
+    if (code && code !== processedCode) {
+      processedCode = code;
+      pluginUsed = plugin.name;
+      break;
+    }
+  } catch (error) {
+    console.error(`插件 ${plugin.name} 处理时发生错误: ${error.message}`);
+    // 继续循环尝试下一个插件
+    continue;
   }
 }
 
