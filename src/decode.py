@@ -4,9 +4,9 @@ import zlib
 import lzma
 import gzip
 from datetime import datetime
-from Crypto.Cipher import AES
-from cryptography.fernet import Fernet
-from Crypto.Cipher import ChaCha20
+#from Crypto.Cipher import AES
+#from cryptography.fernet import Fernet
+#from Crypto.Cipher import ChaCha20
 # 获取当前日期和时间
 now = datetime.now()
 
