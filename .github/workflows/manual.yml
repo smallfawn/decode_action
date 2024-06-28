@@ -1,0 +1,32 @@
+name: Decode JavaScript File
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  decode:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: List files in root directory
+      run: ls -l
+    - name: Install dependencies and run decode
+      run: |
+        npm install
+        npm run decode -- [-i input.js] [-o output.js]
+    - name: Configure Git author
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "action"
+    - name: Save decoded output to repository
+      run: |
+        git status
+        git add output.js
+        git status
+        git commit -m "Add decoded output file"
+        git push
+        
