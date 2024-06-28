@@ -15,7 +15,7 @@ jobs:
 
     - name: Execute Python script for decoding
       run: |
-        python src/decode.py
+        python scr/decode.py
 
     - name: Install dependencies and run decode
       run: |
@@ -27,6 +27,8 @@ jobs:
         git config --local user.name "action"
     - name: Save decoded output to repository
       run: |
+        git status
+        ls
         git add output.js
         git add output.py
         git commit -m "Add decoded output file"
