@@ -12,10 +12,13 @@
     "@babel/parser": "^7.17.10",
     "@babel/traverse": "^7.17.10",
     "@babel/types": "^7.17.10",
+    "base64url": "^3.0.1",
+    "crypto-js": "^4.2.0",
     "eslint": "^8.23.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "isolated-vm": "^4.7.2",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "vm2": "^3.9.11"
   }
 }
