@@ -33,9 +33,9 @@ const plugins = [
   { name: "ob2", plugin: PluginObfuscator },
   { name: 'sojsonv7', plugin: PluginSojsonV7 },
   { name: 'sojson', plugin: PluginSojson },
+    { name: 'common', plugin: PluginCommon },// 最后一次使用通用插件
   { name: 'awsc', plugin: PluginAwsc },
   { name: 'jjencode', plugin: PluginJjencode },
-  { name: 'common', plugin: PluginCommon },// 最后一次使用通用插件
 
 ];
 
