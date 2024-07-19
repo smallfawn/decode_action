@@ -1,6 +1,4 @@
-//Wed Jul 10 2024 13:25:22 GMT+0000 (Coordinated Universal Time)
-//Base:https://github.com/echo094/decode-js
-//Modify:https://github.com/smallfawn/decode_action
+
 !function (_0xf51711) {
   "use strict";
 
