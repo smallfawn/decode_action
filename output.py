@@ -1,4 +1,4 @@
-#2024-07-20 15:47:01
+#2024-07-21 13:30:20
 import os
 import requests
 import time
@@ -99,11 +99,6 @@ class yuanshen():
    printf(f"🎉️第[{self.num}]个账号获取到阅读域名[{self.domain}][{self.iu}]")
    h={"Host":self.domain,"Connection":"keep-alive","Upgrade-Insecure-Requests":"1","User-Agent":ua,"Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7","X-Requested-With":"com.tencent.mm","Accept-Encoding":"gzip, deflate","Accept-Language":"zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"}
    r=requests.get(kurl,headers=h).text
-   md5=hashlib.md5(r.encode('utf-8')).hexdigest()
-   printf(f"阅读域名校准值:[{md5}]")
-   if md5!="c2b3d76c1a570d83b151742353bcab84":
-    print("检测到接口代码发生变化，火速跑路，台子抓人了")
-    exit()
    if "rd" not in kurl:
     print("检测到接口链接发生变化，火速跑路，台子抓人了")
     exit()
