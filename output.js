@@ -1,7 +1,10 @@
+//Tue Jul 23 2024 09:42:37 GMT+0000 (Coordinated Universal Time)
+//Base:https://github.com/echo094/decode-js
+//Modify:https://github.com/smallfawn/decode_action
 //Tue Jul 23 2024 09:41:42 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-const _0x58a094 = new _0x313dd5("巴奴火锅小程序"),
+const _0x58a094 = new _0x313dd5("\u5DF4\u5974\u706B\u9505\u5C0F\u7A0B\u5E8F"),
   _0x38bb5b = "bnmdhg",
   _0x521cbd = 1;
 let _0x5405b0 = ["@", "\n"],
@@ -10,7 +13,7 @@ let _0x5405b0 = ["@", "\n"],
 async function _0x104bb7() {
   await _0x11b342("smallfawn/QLScriptPublic@main/bnmdhg_wx.js");
   await _0x455560();
-  console.log("\n================== 用户信息 ==================\n");
+  console.log("\n================== \u7528\u6237\u4FE1\u606F ==================\n");
   let _0x5c3f2e = [];
   for (let _0x33113a of _0x58a094.userList) {
     _0x33113a.ckStatus && (_0x5c3f2e.push(await _0x33113a.main()), await _0x58a094.wait(6000));
@@ -82,8 +85,8 @@ class _0x4692a1 {
           "headers": this.getHeaders()
         },
         _0x50f53c = await _0x3d1792(_0x193cb5);
-      if (_0x50f53c.code == 200) _0x58a094.DoubleLog("✅账号[" + this.index + "]  " + _0x50f53c.message + "🎉"), _0x58a094.DoubleLog("✅账号[" + this.index + "]  已签到" + _0x50f53c.data.days + "天 获得积分为" + _0x50f53c.data.points + "🎉"), _0x50f53c.data.is_sign_in == false && (await this.sign_in()), this.ckStatus = true;else {
-        _0x58a094.DoubleLog("❌账号[" + this.index + "]  失败");
+      if (_0x50f53c.code == 200) _0x58a094.DoubleLog("\u2705\u8D26\u53F7[" + this.index + "]  " + _0x50f53c.message + "\uD83C\uDF89"), _0x58a094.DoubleLog("\u2705\u8D26\u53F7[" + this.index + "]  \u5DF2\u7B7E\u5230" + _0x50f53c.data.days + "\u5929 \u83B7\u5F97\u79EF\u5206\u4E3A" + _0x50f53c.data.points + "\uD83C\uDF89"), _0x50f53c.data.is_sign_in == false && (await this.sign_in()), this.ckStatus = true;else {
+        _0x58a094.DoubleLog("\u274C\u8D26\u53F7[" + this.index + "]  \u5931\u8D25");
         this.ckStatus = false;
         console.log(_0x50f53c);
       }
@@ -101,7 +104,7 @@ class _0x4692a1 {
           })
         },
         _0x533c27 = await _0x3d1792(_0xa2561b);
-      _0x533c27.code == 200 ? _0x58a094.DoubleLog("✅账号[" + this.index + "]  签到: " + _0x533c27.message + "🎉") : (_0x58a094.DoubleLog("❌账号[" + this.index + "]  签到: 失败"), console.log(_0x533c27));
+      _0x533c27.code == 200 ? _0x58a094.DoubleLog("\u2705\u8D26\u53F7[" + this.index + "]  \u7B7E\u5230: " + _0x533c27.message + "\uD83C\uDF89") : (_0x58a094.DoubleLog("\u274C\u8D26\u53F7[" + this.index + "]  \u7B7E\u5230: \u5931\u8D25"), console.log(_0x533c27));
     } catch (_0x517248) {
       console.log(_0x517248);
     }
@@ -122,29 +125,29 @@ async function _0x52864e() {
     }
     for (let _0x3f338a of _0xe784f9.split(_0x5c44a5)) _0x3f338a && _0x58a094.userList.push(new _0x4692a1(_0x3f338a));
   } else {
-    console.log("未找到CK");
+    console.log("\u672A\u627E\u5230CK");
     return;
   }
-  return console.log("共找到" + _0x58a094.userList.length + "个账号"), true;
+  return console.log("\u5171\u627E\u5230" + _0x58a094.userList.length + "\u4E2A\u8D26\u53F7"), true;
 }
 function _0x3d1792(_0x1c21ef, _0x14bce4 = null) {
   return _0x14bce4 = _0x1c21ef.method ? _0x1c21ef.method.toLowerCase() : _0x1c21ef.body ? "post" : "get", new Promise(_0x38e4e0 => {
     _0x58a094[_0x14bce4](_0x1c21ef, (_0x4d59c0, _0x3e448d, _0x161303) => {
-      if (_0x4d59c0) console.log(_0x14bce4 + "请求失败"), _0x58a094.logErr(_0x4d59c0);else {
+      if (_0x4d59c0) console.log(_0x14bce4 + "\u8BF7\u6C42\u5931\u8D25"), _0x58a094.logErr(_0x4d59c0);else {
         if (_0x161303) {
           try {
             _0x161303 = JSON.parse(_0x161303);
           } catch (_0x44b2c5) {}
           _0x38e4e0(_0x161303);
         } else {
-          console.log("请求api返回数据为空，请检查自身原因");
+          console.log("\u8BF7\u6C42api\u8FD4\u56DE\u6570\u636E\u4E3A\u7A7A\uFF0C\u8BF7\u68C0\u67E5\u81EA\u8EAB\u539F\u56E0");
         }
       }
       _0x38e4e0();
     });
   });
 }
-function _0x11b342(_0x4dbda0, _0x123ec5 = 3 * 1000) {
+function _0x11b342(_0x4dbda0, _0x123ec5 = 3000) {
   return new Promise(_0x2fa65b => {
     const _0x4b69f0 = {
       "url": "https://originfastly.jsdelivr.net/gh/" + _0x4dbda0
@@ -154,7 +157,7 @@ function _0x11b342(_0x4dbda0, _0x123ec5 = 3 * 1000) {
         const _0x314dbc = /scriptVersionNow\s*=\s*(["'`])([\d.]+)\1/,
           _0x166b9f = _0x450f43.match(_0x314dbc),
           _0x271362 = _0x166b9f ? _0x166b9f[2] : "";
-        _0x58a094.DoubleLog("\n====== 当前版本：" + _0x5e6b99 + " 📌 最新版本：" + _0x271362 + " ======");
+        _0x58a094.DoubleLog("\n====== \u5F53\u524D\u7248\u672C\uFF1A" + _0x5e6b99 + " \uD83D\uDCCC \u6700\u65B0\u7248\u672C\uFF1A" + _0x271362 + " ======");
       } catch (_0x519b79) {
         _0x58a094.logErr(_0x519b79, _0xdb33dd);
       }
@@ -162,7 +165,7 @@ function _0x11b342(_0x4dbda0, _0x123ec5 = 3 * 1000) {
     }, _0x123ec5);
   });
 }
-function _0x455560(_0x5c98d7 = 3 * 1000) {
+function _0x455560(_0x5c98d7 = 3000) {
   return new Promise(_0x260144 => {
     const _0x1bf344 = {
       "url": "https://originfastly.jsdelivr.net/gh/smallfawn/Note@main/Notice.json"
@@ -220,7 +223,7 @@ function _0x313dd5(_0x5ccb4a, _0x528fb9) {
       this.encoding = "utf-8";
       this.startTime = new Date().getTime();
       Object.assign(this, _0x8d15db);
-      this.log("", "🔔" + this.name + ",开始!");
+      this.log("", "\uD83D\uDD14" + this.name + ",\u5F00\u59CB!");
     }
     ["getEnv"]() {
       return "undefined" != typeof $environment && $environment["surge-version"] ? "Surge" : "undefined" != typeof $environment && $environment["stash-version"] ? "Stash" : "undefined" != typeof module && module.exports ? "Node.js" : "undefined" != typeof $task ? "Quantumult X" : "undefined" != typeof $loon ? "Loon" : "undefined" != typeof $rocket ? "Shadowrocket" : void 0;
@@ -647,7 +650,7 @@ function _0x313dd5(_0x5ccb4a, _0x528fb9) {
         case "Node.js":
       }
       if (!this.isMuteLog) {
-        let _0x4cb65f = ["", "==============📣系统通知📣=============="];
+        let _0x4cb65f = ["", "==============\uD83D\uDCE3\u7CFB\u7EDF\u901A\u77E5\uD83D\uDCE3=============="];
         _0x4cb65f.push(_0x57bce8);
         _0x9a161c && _0x4cb65f.push(_0x9a161c);
         _0x2742f3 && _0x4cb65f.push(_0x2742f3);
@@ -667,10 +670,10 @@ function _0x313dd5(_0x5ccb4a, _0x528fb9) {
         case "Shadowrocket":
         case "Quantumult X":
         default:
-          this.log("", "❗️" + this.name + ",错误!", _0x18809c);
+          this.log("", "\u2757\uFE0F" + this.name + ",\u9519\u8BEF!", _0x18809c);
           break;
         case "Node.js":
-          this.log("", "❗️" + this.name + ",错误!", _0x18809c.stack);
+          this.log("", "\u2757\uFE0F" + this.name + ",\u9519\u8BEF!", _0x18809c.stack);
       }
     }
     ["wait"](_0x2723b7) {
@@ -698,7 +701,7 @@ function _0x313dd5(_0x5ccb4a, _0x528fb9) {
     ["done"](_0x50c76d = {}) {
       const _0x153b28 = new Date().getTime(),
         _0x26855c = (_0x153b28 - this.startTime) / 1000;
-      switch (this.log("", "🔔" + this.name + ",结束!🕛" + _0x26855c + "秒"), this.log(), this.getEnv()) {
+      switch (this.log("", "\uD83D\uDD14" + this.name + ",\u7ED3\u675F!\uD83D\uDD5B" + _0x26855c + "\u79D2"), this.log(), this.getEnv()) {
         case "Surge":
         case "Loon":
         case "Stash":
