@@ -1,4 +1,4 @@
-//Tue Aug 06 2024 14:46:33 GMT+0000 (Coordinated Universal Time)
+//Tue Aug 06 2024 14:56:42 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
 const _0x42d73f = _0x32b871("七猫免费小说 书币2.0"),
