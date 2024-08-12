@@ -1,525 +1,481 @@
-//Sat Aug 10 2024 08:58:37 GMT+0000 (Coordinated Universal Time)
+//Mon Aug 12 2024 07:53:09 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-var vm = new Vue({
-  el: "#app",
-  data: function () {
-    return data;
-  },
-  created() {
-    var _0xf099b7 = dataslist;
-    if (_0xf099b7) {
-      window.document.title = _0xf099b7.cj.title;
-      this.data = _0xf099b7.cj;
-      if (_0xf099b7.cj.iframe == "no") {
-        this.danmus = _0xf099b7.danmus;
-        this.prize_log = _0xf099b7.prize_log;
+(() => {
+  "use strict";
+
+  const _0x4d89ed = new class {
+      setCache(_0x4d7682, _0x4a1a2d) {
+        const _0x3d5577 = {
+          key: _0x4d7682,
+          data: _0x4a1a2d
+        };
+        const _0x42ec97 = {
+          type: "setCache",
+          data: _0x3d5577
+        };
+        return this.sendMessage(_0x42ec97);
       }
-    }
-  },
-  mounted() {
-    $(".form-popuo").css("background-image", "linear-gradient(#ffffff, " + this.data.color.form + ")");
-  },
-  methods: {
-    start_cj() {
-      if (this.status.cj == false) {
-        return false;
+      getCache(_0x2af832) {
+        const _0x30a22c = {
+          type: "getCache",
+          data: _0x2af832
+        };
+        return this.sendMessage(_0x30a22c);
       }
-      if (this.data.iframe == "yes") {
-        if (this.data.form.form_switch == "kai" || this.data.form.cj_code_switch == "kai") {
-          this.status.form = true;
-          return false;
-        }
-        this.$message({
-          message: "测试环境,随便抽，主要是看抽奖效果，非真实抽奖",
-          type: "warning",
-          customClass: "message"
-        });
-        this.status.cj = false;
-        let _0x133e5c = this.data.prize,
-          _0x18ffa1 = _0x133e5c.length,
-          _0x12e4c1 = Math.floor(Math.random() * _0x18ffa1) + 1,
-          _0x30a58c = _0x133e5c[_0x12e4c1 - 1];
-        _0x30a58c.cj_time = "2023-01-04 18:16:03";
-        _0x30a58c.dj_status = "0";
-        _0x30a58c.id = 1;
-        this.zj_prize = _0x30a58c;
-        this.prize_log.unshift(_0x30a58c);
-        this.cj_animation(_0x12e4c1);
-        return false;
-      } else {
-        let _0x4748b1 = Math.round(new Date() / 1000),
-          _0x1cf5da = new Date("" + this.data.time1 + "") / 1000,
-          _0xd4d0d5 = new Date("" + this.data.time2 + "") / 1000;
-        if (_0x1cf5da > _0x4748b1) {
-          this.$message({
-            message: "活动未开始",
-            type: "warning",
-            center: true,
-            customClass: "message"
-          });
-          return false;
-        }
-        if (_0xd4d0d5 < _0x4748b1) {
-          this.$message({
-            message: "活动已结束",
-            type: "warning",
-            center: true,
-            customClass: "message"
-          });
-          return false;
-        }
-        const _0x135e75 = this.$loading({
-          lock: true,
-          text: "抽奖准备中，请稍后...",
-          spinner: "el-icon-loading",
-          background: "rgba(0, 0, 0, 0.1)"
-        });
-        let _0x5b6935 = this.data.form.form_switch + "-" + this.data.form.cj_code_switch;
-        var _0x1a1980 = this;
-        $.post("?act=common/start_cj", {
-          id: this.data.id,
-          sign: _0x5b6935
-        }, function (_0x80cdad) {
-          _0x135e75.close();
-          switch (_0x80cdad.code) {
-            case 1:
-              _0x1a1980.status.cj = false;
-              var _0x2e5643 = _0x80cdad.data.level;
-              _0x1a1980.zj_prize = {
-                id: _0x80cdad.data.id,
-                prize_img: _0x80cdad.data.prize_img,
-                prize_title: _0x80cdad.data.prize_title,
-                prize_name: _0x80cdad.data.prize_name,
-                prize_type: _0x80cdad.data.prize_type
-              };
-              _0x1a1980.prize_log.unshift(_0x80cdad.data);
-              if (_0x80cdad.data.level == 0) {
-                setTimeout(function () {
-                  _0x1a1980.status.zj = true;
-                  _0x1a1980.status.cj = true;
-                }, 1000);
-                return false;
-              } else {
-                _0x1a1980.cj_animation(_0x2e5643);
-              }
-              break;
-            case 2:
-              _0x1a1980.status.form = true;
-              break;
-            case 3:
-              _0x1a1980.data.form.form_switch = "guan";
-              _0x1a1980.status.form = true;
-              break;
-            default:
-              _0x1a1980.$message({
-                message: _0x80cdad.msg,
-                type: "warning",
-                customClass: "message"
-              });
-          }
-        });
+      getCookie(_0x3c4e6a) {
+        const _0x52fb27 = {
+          type: "getCookie",
+          data: _0x3c4e6a
+        };
+        return this.sendMessage(_0x52fb27);
       }
-    },
-    draw_zhuanpan() {
-      var _0x19965d = this,
-        _0x22a6e4 = Math.PI / (_0x19965d.data.prize.length / 2),
-        _0x36e3eb = document.getElementById("dazhuanpan"),
-        _0x4efcf8 = _0x36e3eb.getContext("2d"),
-        _0x512d84 = _0x36e3eb.width,
-        _0x5594fe = _0x36e3eb.height;
-      _0x4efcf8.clearRect(0, 0, _0x512d84, _0x5594fe);
-      _0x4efcf8.font = "" + _0x19965d.data.panmian.fontSize1 + "px Microsoft YaHei";
-      for (var _0x23eb5a = 0; _0x23eb5a < _0x19965d.data.prize.length; _0x23eb5a++) {
-        var _0x6d33b8 = _0x23eb5a * _0x22a6e4;
-        _0x4efcf8.beginPath();
-        _0x4efcf8.fillStyle = "rgba(0,0,0,0)";
-        _0x4efcf8.arc(_0x512d84 / 2, _0x5594fe / 2, _0x19965d.data.panmian.r1, _0x6d33b8, _0x6d33b8 + _0x22a6e4, false);
-        _0x4efcf8.closePath();
-        _0x4efcf8.fill();
-        _0x4efcf8.save();
-        _0x4efcf8.fillStyle = _0x19965d.data.panmian.fontColr;
-        var _0x1e0298 = _0x19965d.data.prize[_0x23eb5a].prize_name,
-          _0x4d9683 = _0x19965d.data.panmian.fontLine;
-        _0x4efcf8.translate(_0x512d84 / 2 + Math.cos(_0x6d33b8 + _0x22a6e4 / 2) * _0x19965d.data.panmian.textRadius, _0x5594fe / 2 + Math.sin(_0x6d33b8 + _0x22a6e4 / 2) * _0x19965d.data.panmian.textRadius);
-        _0x4efcf8.rotate(_0x6d33b8 + _0x22a6e4 / 2 + Math.PI / 2);
-        if (_0x1e0298.indexOf("|") > 0) {
-          var _0x2e1306 = _0x1e0298.split("|");
-          for (var _0x15795e = 0; _0x15795e < _0x2e1306.length; _0x15795e++) {
-            _0x4efcf8.font = _0x15795e == 0 ? "" + _0x19965d.data.panmian.fontSize1 + "px Microsoft YaHei" : "" + _0x19965d.data.panmian.fontSize2 + "px Microsoft YaHei";
-            if (_0x15795e == 0) {
-              _0x4efcf8.fillText(_0x2e1306[_0x15795e] + " ", -_0x4efcf8.measureText(_0x2e1306[_0x15795e] + " ").width / 2, _0x15795e * _0x4d9683);
-            } else {
-              _0x4efcf8.fillText(_0x2e1306[_0x15795e], -_0x4efcf8.measureText(_0x2e1306[_0x15795e]).width / 2, _0x15795e * _0x4d9683 * 1.2);
-            }
-          }
-        } else {
-          _0x4efcf8.fillText(_0x1e0298, -_0x4efcf8.measureText(_0x1e0298).width / 2, 0);
-        }
-        if (_0x1e0298.indexOf(_0x19965d.data.prize[_0x23eb5a].prize_name) >= 0) {
-          var _0x47c794 = document.getElementById("img_" + _0x23eb5a);
-          _0x4efcf8.drawImage(_0x47c794, -_0x19965d.data.panmian.imgSize / 2, 20, _0x19965d.data.panmian.imgSize, _0x19965d.data.panmian.imgSize);
-        }
-        _0x4efcf8.restore();
+      setCookie(_0xfea4c0) {
+        const _0x43e4db = {
+          type: "setCookie",
+          data: _0xfea4c0
+        };
+        return this.sendMessage(_0x43e4db);
       }
-      _0x4efcf8.translate(_0x512d84 / 2, _0x5594fe / 2);
-      _0x4efcf8.strokeStyle = _0x19965d.data.panmian.xian_color;
-      _0x4efcf8.lineWidth = _0x19965d.data.panmian.xian_width;
-      for (var _0x7ac0c1 = 0; _0x7ac0c1 < _0x19965d.data.prize.length; _0x7ac0c1++) {
-        _0x4efcf8.beginPath();
-        _0x4efcf8.rotate(_0x22a6e4);
-        _0x4efcf8.moveTo(0, 0);
-        _0x4efcf8.lineTo(_0x19965d.data.panmian.r1, 0);
-        _0x4efcf8.stroke();
+      executeScript(_0xf50613) {
+        const _0x2f0cb0 = {
+          type: "executeScript",
+          data: _0xf50613
+        };
+        return this.sendMessage(_0x2f0cb0);
       }
-    },
-    cj_animation(_0x16ceb6) {
-      music1.pause();
-      music2.play();
-      var _0x1e3f16 = this,
-        _0x1d628e = _0x16ceb6 * (360 / _0x1e3f16.data.prize.length) - 360 / (_0x1e3f16.data.prize.length * 2);
-      _0x1d628e < 270 ? _0x1d628e = 270 - _0x1d628e : _0x1d628e = 360 - _0x1d628e + 270;
-      $("#dazhuanpan").stopRotate();
-      $("#dazhuanpan").rotate({
-        angle: 0,
-        animateTo: _0x1d628e + 1800,
-        duration: 6500,
-        callback: function () {
-          music2.load();
-          music3.play();
-          _0x1e3f16.status.zj = true;
-          _0x1e3f16.status.cj = true;
-        }
-      });
-      $(".zhuanpan-r1").rotate({
-        angle: 0,
-        animateTo: -(_0x1d628e + 1800),
-        duration: 8000
-      });
-    },
-    search() {
-      var _0x11ddc5 = this;
-      if (!_0x11ddc5.search_code) {
-        return _0x11ddc5.$message({
-          message: "请输入" + _0x11ddc5.data.form.cj_code_name + "后进行查询",
-          type: "warning",
-          customClass: "message"
-        }), false;
+      fetch(_0x1a85d6, _0x178a9f, _0x33d6aa) {
+        const _0x2460f3 = {
+          url: _0x1a85d6,
+          payload: _0x178a9f,
+          rspType: _0x33d6aa
+        };
+        const _0x53a83a = {
+          type: "fetch",
+          data: _0x2460f3
+        };
+        return this.sendMessage(_0x53a83a);
       }
-      if (_0x11ddc5.data.iframe == "yes") {
-        _0x11ddc5.prize_log = [_0x11ddc5.prize_info];
-        return false;
+      fetchText(_0x36cdf3, _0x50eab8) {
+        return this.fetch(_0x36cdf3, _0x50eab8);
       }
-      const _0x545765 = this.$loading({
-        lock: true,
-        text: "奖品查询中，请稍后...",
-        spinner: "el-icon-loading",
-        background: "rgba(0, 0, 0, 0.1)"
-      });
-      $.ajax({
-        type: "POST",
-        dataType: "json",
-        url: "?act=common/search",
-        data: {
-          huodong_id: _0x11ddc5.data.id,
-          cj_code: _0x11ddc5.search_code
-        },
-        success: function (_0x343e65) {
-          _0x545765.close();
-          if (_0x343e65.code == 1) {
-            _0x11ddc5.$message({
-              message: _0x343e65.msg,
-              type: "success",
-              center: true,
-              customClass: "message"
-            });
-            _0x11ddc5.prize_log = _0x343e65.data;
-          } else {
-            _0x11ddc5.$message({
-              message: _0x343e65.msg,
-              type: "error",
-              center: true,
-              customClass: "message"
-            });
-          }
-        }
-      });
-    },
-    show_xiangqing(_0x5c675d) {
-      var _0x560ab8 = this;
-      if (_0x560ab8.data.iframe == "yes") {
-        let _0x47e48b = [{}, {
-          id: 1,
-          prize_img: "index/common/images/1.png",
-          prize_title: "1等奖",
-          prize_name: "小米音响【线下兑奖演示】",
-          cj_time: "2022-11-11",
-          dj_status: "0",
-          dj_code: "666888",
-          dj_type: "1",
-          dj_address: "联系商家兑奖",
-          ewm: "iVBORw0KGgoAAAANSUhEUgAAAUoAAAFKAQMAAABB54RGAAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABmklEQVRoge2ZTY7DMAiFkXqAHMlXz5FygEhMwp9xpp1dBSO9t3BT5/MKgR+ECIKgL2lj0379uZYX68J8kr86gXZB7VeAHMFD9jICtAOqQdzvnXEBNCTOm+zZE9BuqAQ28UD/AzqTD2hDVKRX3C1Nw7/rK9AilE1WJZfFBLQLOqX18pXy7qOAFqFaFiN+Es6Lt0MUuQi0Berv7kPJhnCEeKTWDGgt6g0ZW+fshmRw6CCgTVAPpxyyi03SkH/VUKDlaAJIl2kf5YmmgJajpFVS2mcHrFN7ZizQalSpe1vuOfKnoUuOKtBy1EfzkxJlX3kAbYNSusmeV5yYy52AdkIlF8n7M44mTcvnOvYAWonOWZSGk71yin3kbEiAlqP+XZm0SUsTRvaxx2L2gVai/utmP2xIDK7yhARoLTrl/ZkdjwVoH/SZd8vMarWPQOtRT0Pb9vJp9pF5GdcDLUdnEBfTaFrqK9AuKFEAMWH0F0C7oduZZ78iGTNm+wi0HBV5GnKeJtqskYB2QT31BB0p7+Kry1v7CLQChSDoC/oB8HDeOijhIvwAAAAASUVORK5CYII="
-        }, {
-          id: 2,
-          prize_img: "index/common/images/2.png",
-          prize_title: "2等奖",
-          prize_name: "腾讯会员【线上兑奖演示】",
-          cj_time: "2022-11-11",
-          dj_status: "0",
-          dj_code: "888888",
-          dj_type: "2",
-          dj_web: "http://www.baidu.com"
-        }, {
-          id: 3,
-          prize_img: "index/common/images/3.png",
-          prize_title: "3等奖",
-          prize_name: "鼠标键盘【表单兑奖演示】",
-          cj_time: "2022-11-11",
-          dj_status: "0",
-          dj_code: "999888",
-          dj_type: "3",
-          form: [{
-            name: "姓名",
-            val: ""
-          }, {
-            name: "电话",
-            val: ""
-          }, {
-            name: "地址",
-            val: ""
-          }]
-        }];
-        _0x560ab8.prize_info = _0x47e48b[_0x5c675d];
-        _0x560ab8.status.duijiang = true;
-        return false;
+      fetchJson(_0xd19d70, _0xbab1f5) {
+        return this.fetch(_0xd19d70, _0xbab1f5, "json");
       }
-      const _0x5010d4 = _0x560ab8.$loading({
-        lock: true,
-        text: "数据加载中,请稍后...",
-        spinner: "el-icon-loading",
-        background: "rgba(0, 0, 0, 0.1)"
-      });
-      $.ajax({
-        type: "POST",
-        dataType: "json",
-        url: "?act=common/prize_xiangqing",
-        data: {
-          log_id: _0x5c675d
-        },
-        success: function (_0x3a5c0d) {
-          _0x5010d4.close();
-          _0x560ab8.prize_info = _0x3a5c0d.data;
-          _0x560ab8.status.duijiang = true;
-        }
-      });
-    },
-    sub_form(_0x283963) {
-      if (_0x283963.form_switch == "kai") {
-        for (var _0x557dad = 0; _0x557dad < _0x283963.field.length; _0x557dad++) {
-          if (!_0x283963.field[_0x557dad].val) {
-            this.$message({
-              message: "信息填完完整后在提交！",
-              type: "warning",
-              customClass: "message"
-            });
-            return false;
-          }
-        }
+      get(_0x59a2cf, _0x1c9b51) {
+        const _0x4ee78e = {
+          type: "fetch",
+          data: {}
+        };
+        _0x4ee78e.data.url = _0x59a2cf;
+        _0x4ee78e.data.rspType = "json";
+        _0x4ee78e.data.payload = {
+          method: "GET",
+          ..._0x1c9b51
+        };
+        return this.sendMessage(_0x4ee78e);
       }
-      if (_0x283963.cj_code_switch == "kai") {
-        if (!_0x283963.cj_code) {
-          this.$message({
-            message: "请输入" + this.data.form.cj_code_name + "！",
-            type: "warning",
-            customClass: "message"
-          });
-          return false;
-        }
+      post(_0x62ce9c, _0x2e01cf, _0x89b5af) {
+        const _0x79e726 = JSON.stringify(_0x2e01cf),
+          _0x256e33 = {
+            type: "fetch",
+            data: {}
+          };
+        _0x256e33.data.url = _0x62ce9c;
+        _0x256e33.data.rspType = "json";
+        _0x256e33.data.payload = {
+          method: "POST",
+          body: _0x79e726,
+          ..._0x89b5af
+        };
+        return this.sendMessage(_0x256e33);
       }
-      if (this.data.iframe == "yes") {
-        this.status.form = false;
-        this.$message({
-          message: "测试环境,随便抽，主要是看抽奖效果，非真实抽奖",
-          type: "warning",
-          customClass: "message"
-        });
-        let _0x724f5a = this.data.prize,
-          _0x42a081 = _0x724f5a.length,
-          _0x309641 = Math.floor(Math.random() * _0x42a081) + 1,
-          _0x236da0 = _0x724f5a[_0x309641 - 1];
-        _0x236da0.cj_time = "2023-01-04 18:16:03";
-        _0x236da0.dj_status = "0";
-        _0x236da0.id = 1;
-        this.zj_prize = _0x236da0;
-        this.prize_log.unshift(_0x236da0);
-        this.cj_animation(_0x309641);
-        return false;
+      uploadFile(_0x283756, _0xa38b2, _0x3854df) {
+        const _0x56088b = {
+            method: "POST",
+            body: _0xa38b2,
+            ..._0x3854df
+          },
+          _0x12c1d0 = {
+            url: _0x283756,
+            payload: _0x56088b
+          };
+        const _0x36333c = {
+          type: "uploadFile",
+          data: _0x12c1d0
+        };
+        return this.sendMessage(_0x36333c);
       }
-      const _0x9d69d8 = this.$loading({
-        lock: true,
-        text: "抽奖准备中，请稍后...",
-        spinner: "el-icon-loading",
-        background: "rgba(0, 0, 0, 0.1)"
-      });
-      _0x283963.huodong_id = this.data.id;
-      _0x283963.type = this.data.type;
-      _0x283963.admin_id = this.data.admin_id;
-      var _0x44ec27 = this;
-      $.ajax({
-        type: "POST",
-        dataType: "json",
-        url: "?act=common/sub_form",
-        data: {
-          form: _0x283963
-        },
-        success: function (_0x4123a2) {
-          _0x9d69d8.close();
-          if (_0x4123a2.code == 1) {
-            _0x44ec27.status.form = false;
-            _0x44ec27.data.form.cj_code = "";
-            _0x44ec27.status.cj = false;
-            var _0x61116b = _0x4123a2.data.level;
-            _0x44ec27.zj_prize = {
-              id: _0x4123a2.data.id,
-              prize_img: _0x4123a2.data.prize_img,
-              prize_title: _0x4123a2.data.prize_title,
-              prize_name: _0x4123a2.data.prize_name,
-              prize_type: _0x4123a2.data.prize_type
+      tabCreate(_0x17f11e) {
+        const _0xe10eff = {
+          type: "tabCreate",
+          data: _0x17f11e
+        };
+        return this.sendMessage(_0xe10eff);
+      }
+      sendMessage(_0x5e645f) {
+        return new Promise(_0x15914e => {
+          try {
+            chrome.extension.sendMessage(_0x5e645f, _0x3691c6 => _0x15914e(_0x3691c6));
+          } catch (_0x408afa) {
+            const _0x2dc61c = {
+              success: !1,
+              message: "当前插件不可用，请刷新页面重试"
             };
-            _0x44ec27.prize_log.unshift(_0x4123a2.data);
-            if (_0x4123a2.data.level == 0) {
-              setTimeout(function () {
-                _0x44ec27.status.zj = true;
-                _0x44ec27.status.cj = true;
-              }, 1000);
-              return false;
-            } else {
-              _0x44ec27.cj_animation(_0x61116b);
-            }
-          } else {
-            if (_0x4123a2.code == 2) {
-              _0x44ec27.$message({
-                message: _0x4123a2.msg,
-                type: "warning",
-                customClass: "message"
-              });
-            } else {
-              _0x44ec27.status.form = false;
-              _0x44ec27.$message({
-                message: _0x44ec27.data.form.cj_code_name + "不存在",
-                type: "warning",
-                customClass: "message"
-              });
-            }
+            _0x15914e(_0x2dc61c);
           }
-        },
-        error: function () {
-          _0x44ec27.$message({
-            message: "抽奖出错",
-            type: "warning",
-            customClass: "message"
-          });
-        }
-      });
-    },
-    sub_duijiang_form(_0xbe1735) {
-      var _0x5c7a79 = this;
-      for (var _0x1c02e4 = 0; _0x1c02e4 < _0xbe1735.length; _0x1c02e4++) {
-        if (!_0xbe1735[_0x1c02e4].val) {
-          return _0x5c7a79.$message({
-            message: "信息填完完整后在提交！",
-            type: "warning",
-            center: true,
-            customClass: "message"
-          }), false;
-        }
-      }
-      if (this.data.iframe == "yes") {
-        var _0x453a23 = "";
-        _0xbe1735.forEach(function (_0x5f3508, _0x40c8fd) {
-          _0x453a23 += _0x5f3508.name + ":" + _0x5f3508.val + "</br>";
         });
-        _0x5c7a79.prize_info.dj_info = _0x453a23;
-        _0x5c7a79.prize_info.dj_status = 1;
-        this.$message({
-          message: "模拟奖品表单提交",
-          type: "warning",
-          customClass: "message"
-        });
-        return false;
       }
-      var _0x144f8e = _0x5c7a79.prize_info.id;
-      const _0x3d254d = this.$loading({
-        lock: true,
-        text: "数据提交中,请稍后...",
-        spinner: "el-icon-loading",
-        background: "rgba(0, 0, 0, 0.1)"
-      });
-      $.ajax({
-        type: "POST",
-        dataType: "json",
-        url: "?act=common/sub_duijiang",
-        data: {
-          log_id: _0x144f8e,
-          form: _0xbe1735
-        },
-        success: function (_0x36529a) {
-          _0x5c7a79.$message({
-            message: _0x36529a.msg,
-            type: "success",
-            center: true,
-            customClass: "message"
-          });
-          _0x5c7a79.prize_info.dj_status = 1;
-          _0x5c7a79.prize_info.dj_info = _0x36529a.data;
-        },
-        error: function () {
-          _0x5c7a79.$message({
-            message: "提交出错",
-            type: "error",
-            center: true,
-            customClass: "message"
-          });
+    }(),
+    _0x2b6331 = new class {
+      constructor() {
+        this.layerIndex = null;
+      }
+      async update(_0x5dc9c3) {
+        if (!_0x5dc9c3) {
+          return void this.hide();
         }
-      });
-      _0x3d254d.close();
-    },
-    cz() {
-      var _0x4e7fd2 = this,
-        _0xcced40 = document.getElementById("dazhuanpan"),
-        _0xfdf20e = _0xcced40.getContext("2d"),
-        _0x348c01 = _0xcced40.width,
-        _0x553dfa = _0xcced40.height;
-      _0xfdf20e.translate(-_0x348c01 / 2, -_0x553dfa / 2);
-      setTimeout(function () {
-        _0x4e7fd2.draw_zhuanpan();
-      }, 100);
-    }
-  }
-});
-window.onload = function () {
-  vm.draw_zhuanpan();
-  $("#dazhuanpan").rotate({
-    angle: 0,
-    animateTo: 3600,
-    duration: 3600000
-  });
-  $("body").addClass("loaded");
-  $("#loader-wrapper .load_title").remove();
-  if (vm.data.kaiguan.danmu == 1) {
-    danmu();
-    let _0x111dac = vm.danmus.length;
-    $loop_time = _0x111dac * 3 + 15;
-    setInterval(function () {
-      danmu();
-    }, $loop_time * 1000);
-  } else {
-    vm.data.kaiguan.danmu == 2 && danmu2({
-      line: 1,
-      speed: 500,
-      timer: 1500,
-      up: "but_up",
-      down: "but_down"
+        const _0x27c0b6 = _0x5dc9c3.receiver,
+          _0x2a116a = _0x5dc9c3.items?.["map"](_0x2a8ff7 => "<div class='emp-ware'>\n            <div class='emp-ware-card'>\n                <img src='" + _0x2a8ff7.cover + "' class='emp-cover'/>\n                <div class='emp-title-wrap'>\n                    <div class='emp-title'>" + _0x2a8ff7.title + "</div>\n                </div>\n            </div>\n            <div class='emp-mate'><span class='emp-label'>规格:</span><em class='emp-spec'>" + (_0x2a8ff7.sku || "") + "</em></div>\n            <div class='emp-mate'><span class='emp-label'>鏁伴噺:</span><em class='emp-num'>" + _0x2a8ff7.count + "</em></div>\n            <div class='emp-mate'><span class='emp-label'>金额:</span><em class='emp-num'>" + _0x2a8ff7.payment + "</em></div>\n            </div>")?.["join"](""),
+          _0x5578e0 = [_0x27c0b6.province, _0x27c0b6.city, _0x27c0b6.county, _0x27c0b6.town].filter(_0xc300fe => !!_0xc300fe).join("-"),
+          _0xbc7463 = _0x5dc9c3.purchInfo ? "\n            <div class='emp-mate'><span class='emp-label'>采购单号:</span><em class='emp-num'>" + _0x5dc9c3.purchInfo.orderId + "</em></div>\n        " : "",
+          _0x458cc9 = "<div id='emp-purchInfo'>\n                <div class='emp-mate'><div class='emp-label'>订单号:</div><div class='emp-orderId'>" + _0x5dc9c3.orderId + "</div></div>\n                <div class='emp-mate emp-address-card'>\n                    <div class='emp-label emp-name'>" + _0x27c0b6.receiver + "</div>\n                    <div class='emp-mobile'>" + _0x27c0b6.mobile + "</div>\n                    <div class='emp-address'>\n                        <div>" + _0x5578e0 + "</div>\n                        <div>" + _0x27c0b6.street + "</div>\n                    </div>\n                </div>\n                <div class='emp-ware-list'>" + _0x2a116a + "</div>\n                <div class='emp-mate'><span class='emp-label'>备注:</span><em>" + _0x5dc9c3.orderRemark + "</em></div>\n                " + _0xbc7463 + "\n        </div>",
+          _0x428f9f = $("<a id='emp-purch-cancel'>取消采购</a>");
+        this.layerIndex = layer.open({
+          title: "核对订单",
+          btn: "",
+          offset: "r",
+          id: "emp-purch-modal",
+          area: "280px",
+          closeBtn: 0,
+          shade: 0,
+          type: 1,
+          content: _0x458cc9,
+          zIndex: 199000020,
+          skin: "emp-purch-layer",
+          scrollbar: !0,
+          success: () => {
+            $(".emp-purch-layer").append(_0x428f9f);
+            _0x428f9f.on("click", () => {
+              _0x4d89ed.setCache("purchInfo", null);
+              this.hide();
+            });
+          }
+        });
+      }
+      hide() {
+        layer.close(this.layerIndex);
+      }
+    }();
+  function _0x1797e7(_0x352caf, _0x240b9a = 60000, _0x4d05e8 = 500) {
+    const _0x44eda3 = new Date().getTime() + _0x240b9a;
+    return new Promise((_0x91ecb0, _0x4cafaa) => {
+      if ($(_0x352caf)?.["length"] > 0) {
+        return void _0x91ecb0($(_0x352caf));
+      }
+      const _0x1f5022 = setInterval(() => {
+        const _0x16cbca = $(_0x352caf);
+        (_0x16cbca?.["length"] ?? 0) > 0 ? (clearInterval(_0x1f5022), _0x91ecb0(_0x16cbca)) : new Date().getTime() > _0x44eda3 && (clearInterval(_0x1f5022), _0x91ecb0(!1));
+      }, _0x4d05e8);
     });
   }
-};
+  function _0x234f4c(_0x116209, _0x3b3dce) {
+    let _0x34f569 = document.createEvent("HTMLEvents");
+    _0x116209.value = _0x3b3dce;
+    _0x34f569.initEvent("change", !0, !0);
+    _0x34f569.eventType = "message";
+    _0x116209.dispatchEvent(_0x34f569);
+  }
+  class _0x37f29c {
+    async addressParse(_0x568b74) {
+      const _0x1794f3 = "addressParseRst";
+      localStorage.removeItem(_0x1794f3);
+      (function (_0x29ead9) {
+        var _0x1eae16 = document.createElement("script");
+        _0x1eae16.type = "text/javascript";
+        _0x1eae16.innerHTML = "document.body.setAttribute('data-global', " + _0x29ead9 + ");";
+        document.head.appendChild(_0x1eae16);
+        document.head.removeChild(_0x1eae16);
+        document.body.getAttribute("data-global");
+        document.body.setAttribute("data-global", "");
+      })("(lib.mtop.H5Request({\n            ecode:1,\n            type:'post',\n            valueType:'string',\n            disableTracker:true,\n            api:'mtop.1688.trade.address.parse',\n            v:'1.0',\n            data:'" + JSON.stringify({
+        address: _0x568b74
+      }) + "',\n            preventFallback:true,\n            dataType:'jsonp'\n        }).then(e=> localStorage.setItem('" + _0x1794f3 + "', JSON.stringify({address:\"" + _0x568b74 + "\",rst:e}))),1)");
+      const _0x49e318 = await function (_0x92264a, _0x17999c = 60000, _0x1d9f29 = 500) {
+        const _0x10779a = {
+          success: !1,
+          message: "等待超时"
+        };
+        return Promise.race([new Promise((_0x3f430f, _0x2dc95c) => {
+          let _0x555c99 = localStorage.getItem(_0x92264a);
+          if (null !== _0x555c99) {
+            return void _0x3f430f(_0x555c99);
+          }
+          const _0x37542a = setInterval(() => {
+            _0x555c99 = localStorage.getItem(_0x92264a);
+            null !== _0x555c99 && (clearInterval(_0x37542a), _0x3f430f(_0x555c99));
+          }, _0x1d9f29);
+        }), (_0x2a7aef = _0x17999c, new Promise(_0x580cf5 => setTimeout(_0x42fe98 => _0x580cf5(_0x10779a), _0x2a7aef)))]);
+        var _0x2a7aef;
+      }("addressParseRst");
+      localStorage.removeItem(_0x1794f3);
+      const _0x476cea = function (_0x2080b0) {
+        try {
+          return JSON.parse(_0x2080b0);
+        } catch (_0x117566) {
+          return null;
+        }
+      }(_0x49e318);
+      if (_0x476cea?.["address"] != _0x568b74) {
+        return {
+          success: !1,
+          message: "地址不匹配"
+        };
+      }
+      const _0x1840ec = "200" == _0x476cea.rst?.["data"]?.["httpStatusCode"],
+        _0x1cbab8 = _0x476cea.rst?.["data"]?.["ret"]?.["join"](";"),
+        _0xad026e = _0x476cea.rst?.["data"]?.["model"],
+        _0x336d33 = {
+          success: _0x1840ec,
+          message: _0x1cbab8,
+          data: _0xad026e
+        };
+      return _0x336d33;
+    }
+  }
+  const _0x4abf36 = {
+    async updateAddress(_0xb3efa9) {
+      const _0x445249 = _0xb3efa9.receiver,
+        _0x47a7c5 = await _0x1797e7(".edit-temp-address"),
+        _0x18b13c = await _0x1797e7(".desktop-address-temp", 1000);
+      if (console.log("tempAddr", _0x18b13c), _0x18b13c?.["length"] > 0) {
+        return this.updateAddressByModal(_0xb3efa9);
+      }
+      _0x47a7c5?.[0]?.["click"]();
+      const _0x41cad7 = await _0x1797e7(".copy-address");
+      if (_0x41cad7 && _0x41cad7[0]) {
+        const _0x4e823f = _0x445249.province + " " + (_0x445249.city || "") + " " + (_0x445249.county || "") + " " + (_0x445249.town || "") + " " + _0x445249.street,
+          _0x2a3c43 = document.querySelector(".address-temp-block textarea.copy-address");
+        _0x2a3c43 && _0x234f4c(_0x2a3c43, _0x4e823f);
+        document.querySelector("#address .address-temp-block .transform-address").click();
+        let _0x5135d3 = await _0x1797e7("#address .address-temp-block .transform-address:contains(鍖归厤涓�)");
+        _0x5135d3 = await _0x1797e7("#address .address-temp-block .transform-address:contains(自动匹配地址)");
+        const _0xebf27a = document.querySelector("#address .address-temp-block textarea.input-address");
+        _0xebf27a && _0x234f4c(_0xebf27a, "" + (_0x445249.town || "") + _0x445249.street);
+        const _0x112d36 = document.querySelector("#address .address-temp-block input.input-username");
+        _0x112d36 && _0x234f4c(_0x112d36, _0x445249.receiver);
+        const _0x36a0c7 = document.querySelector("#address .address-temp-block input.input-mobile");
+        _0x36a0c7 && _0x234f4c(_0x36a0c7, _0x445249.mobile);
+        document.querySelector("#address .address-temp-block .save").click();
+      }
+    },
+    async updateAddressByModal(_0x3d4ce6) {
+      const _0xc977e7 = _0x3d4ce6.receiver,
+        _0x340b61 = new _0x37f29c(),
+        _0x4298bd = await _0x340b61.addressParse(_0xc977e7.province + " " + _0xc977e7.city + " " + _0xc977e7.county + " " + (_0xc977e7.town || "") + _0xc977e7.street);
+      if (_0x4298bd.success && _0x4298bd.data) {
+        var _0x440463 = {
+          id: "-1",
+          addressCode: _0x4298bd.data.districtCode || _0x4298bd.data.cityCode,
+          addressCodeText: _0x4298bd.data.province + " " + _0x4298bd.data.city + " " + (_0x4298bd.data.district || ""),
+          address: ((_0x4298bd.data.district ? "" : _0xc977e7.county || "") + " " + (_0xc977e7.town || "") + _0xc977e7.street).trim(),
+          fullName: _0xc977e7.receiver,
+          post: _0x4298bd.data.divisionZip,
+          mobilePhone: _0xc977e7.mobile,
+          phone: "",
+          default: !1,
+          temp: !0,
+          overseasAddress: !1
+        };
+        const _0x395a1a = {
+          type: "address-dialog-success",
+          data: _0x440463
+        };
+        window.postMessage(JSON.stringify(_0x395a1a, "*"));
+      }
+    },
+    async updateRemark(_0x4bde44) {
+      if (_0x4bde44.purchRemark) {
+        const _0x14bd60 = document.querySelector("#order .textarea-content textarea.lang-input");
+        if (_0x14bd60) {
+          const _0x1d23e7 = document.createEvent("HTMLEvents");
+          _0x1d23e7.initEvent("mousedown", !0, !1);
+          document.querySelector("#order .textarea-trigger ").dispatchEvent(_0x1d23e7);
+          _0x14bd60.focus();
+          document.execCommand("selectAll", !1, null);
+          document.execCommand("insertText", !1, _0x4bde44.purchRemark);
+          _0x14bd60.blur();
+        }
+      }
+    },
+    initProfit(_0x292309) {
+      const _0x2a8705 = $("#make-checkout .checkout-operate .due-total.text-stress").text()?.["trim"](),
+        _0xcc9fc7 = parseFloat(_0x2a8705),
+        _0x130cf2 = (100 * _0x292309.payment - Math.round(100 * _0xcc9fc7)) / 100,
+        _0x2be9fc = _0x292309.payment > 0 ? 100 * _0x130cf2 / _0x292309.payment : 0,
+        _0x2c8371 = _0x292309.profitLimit && _0x292309.profitLimit > _0x2be9fc,
+        _0x8ffb1d = "<div class='item'>\n                <span style='font-size:.1rem'>利润:</span>\n                <span class='control'><em style='" + (_0x2c8371 ? "color:#c700f9;font-weight:700;font-size:18px;" : "color:#4caf50;font-weight:700;font-size:18px;") + "'>" + _0x130cf2.toFixed(2) + "</em></span>\n            </div> \n            <div class='item'>\n                <span class='label'>利润率:</span>\n                <span class='control'><em style='" + (_0x2c8371 ? "color:#c700f9;font-weight:700;font-size:18px;" : "color:#4caf50;font-weight:700;font-size:18px;") + "'>" + _0x2be9fc.toFixed(2) + "%</em></span>\n            </div>",
+        _0x4d5f71 = {
+          price: _0xcc9fc7,
+          profit: _0x130cf2,
+          profitRate: _0x2be9fc
+        };
+      $(".summary-container .item-due-total").after(_0x8ffb1d);
+      return _0x4d5f71;
+    },
+    purchCheck(_0x4c4e8b, _0x5d6667) {
+      const _0x575dd4 = _0x4c4e8b.receiver;
+      let _0x5d3cd5 = document.querySelector(".address-info");
+      const _0x589c7b = {
+        success: !1,
+        message: "未从页面上找到地址"
+      };
+      if (!_0x5d3cd5) {
+        return _0x589c7b;
+      }
+      const _0x171800 = _0x5d3cd5.querySelector(".person-icon")?.["nextSibling"]?.["innerText"],
+        _0x22ff5e = _0x5d3cd5.querySelector(".line-label-phone")?.["innerText"],
+        _0x337d69 = _0x5d3cd5.querySelector(".line-label-address")?.["innerText"]?.["replace"](/\s/g, "") || "",
+        _0x25c197 = {
+          success: !1,
+          message: "收货城市错误"
+        };
+      const _0x1b11d2 = {
+        success: !0
+      };
+      return _0x575dd4.mobile != _0x22ff5e ? {
+        success: !1,
+        message: "收货电话错误"
+      } : _0x575dd4.receiver != _0x171800 ? {
+        success: !1,
+        message: "收货人姓名错误"
+      } : -1 == _0x575dd4.city.indexOf("闆勫畨") && -1 == _0x337d69.indexOf(_0x575dd4.city.replace(/\s/g, "")) ? _0x25c197 : -1 == _0x337d69.indexOf(_0x575dd4.street.replace(/\s/g, "")) ? {
+        success: !1,
+        message: "鏀惰揣鍦板潃閿欒"
+      } : _0x4c4e8b.profitLimit && _0x4c4e8b.profitLimit > _0x5d6667.profitRate ? {
+        success: !1,
+        message: "利润率低于" + _0x4c4e8b.profitLimit + "%"
+      } : _0x1b11d2;
+    },
+    async autoBindOrder(_0x124287, _0x51f83b, _0x312d61 = 0) {
+      const _0xf000ef = {
+        success: !1,
+        message: "未查询到采购单号"
+      };
+      if (!_0x51f83b) {
+        return _0xf000ef;
+      }
+      if (_0x312d61 || (await _0x1797e7(".pay-success-tips .money", 10000), _0x312d61 = document.querySelector(".pay-success-tips .money").innerText.trim()), !_0x312d61) {
+        return {
+          success: !1,
+          message: "未查询到实付金额"
+        };
+      }
+      const _0x42ffe5 = {
+        url: "https://trade.1688.com"
+      };
+      const _0x12285b = await _0x4d89ed.getCookie(_0x42ffe5);
+      let _0x1114f8 = _0x12285b.data?.["find"](_0x46a545 => "lid" == _0x46a545.name)?.["value"];
+      if (_0x1114f8 && (_0x1114f8 = decodeURIComponent(_0x1114f8)), !_0x1114f8) {
+        return {
+          success: !1,
+          message: "未查询到采购账号"
+        };
+      }
+      if (_0x124287?.["dc"]) {
+        const _0x1e5390 = {
+          responseType: "json",
+          headers: {}
+        };
+        _0x1e5390.headers["Content-Type"] = "application/json";
+        const _0x40a8ac = _0x124287.dc + "/api/purch/bind",
+          _0x3f5aa3 = {
+            purchInfo: _0x124287,
+            purchOrderId: _0x51f83b,
+            purchAccount: _0x1114f8,
+            purchSource: 3,
+            purchPayment: _0x312d61,
+            purchAddress: "",
+            purchCookies: JSON.stringify(_0x12285b.data)
+          },
+          _0x541501 = await _0x4d89ed.post(_0x40a8ac, _0x3f5aa3, _0x1e5390);
+        if (!_0x541501.success) {
+          return {
+            success: !1,
+            message: _0x541501.message
+          };
+        }
+      }
+      const _0x186bb5 = {
+        success: !0,
+        message: ""
+      };
+      return _0x186bb5;
+    }
+  };
+  !async function () {
+    const _0x21800d = await _0x4d89ed.getCache("purchInfo"),
+      _0x278f1f = _0x21800d?.["data"];
+    if (_0x2b6331.update(_0x278f1f), !_0x278f1f) {
+      return;
+    }
+    const {
+        pathname: _0x34ad7e
+      } = window.location,
+      _0x206a44 = function (_0x104cc9) {
+        const _0xcb93ee = _0x104cc9.indexOf("?"),
+          _0xa32925 = (_0xcb93ee > -1 ? _0x104cc9.substr(_0xcb93ee + 1) : _0x104cc9).split("&");
+        let _0x4fb83a = {};
+        for (let _0x426341 = 0; _0x426341 < _0xa32925?.["length"]; _0x426341++) {
+          const _0x42d36c = _0xa32925[_0x426341]?.["split"]("=");
+          2 == _0x42d36c?.["length"] && (_0x4fb83a[_0x42d36c[0]] = _0x42d36c[1]);
+        }
+        return _0x4fb83a;
+      }(window.location.search);
+    switch (_0x34ad7e) {
+      case "/order/smart_make_order.htm":
+      case "/order/smart_commit_order.htm":
+        await _0x4abf36.updateAddress(_0x278f1f);
+        await _0x4abf36.updateRemark(_0x278f1f);
+        await (1000, new Promise(function (_0xcd2b51, _0x5256b5) {
+          setTimeout(() => {
+            _0xcd2b51();
+          }, 1000);
+        }));
+        const _0x16daf2 = _0x4abf36.initProfit(_0x278f1f),
+          _0x13bdd0 = $("#make-checkout .button.make-order");
+        _0x13bdd0.hide();
+        const _0x5f2f48 = $("<span class=\"button lang-button button-important button-large\" style='margin-left:20px;height:60px;width:180px;line-height:60px;user-select:none;'>提交订单</span>");
+        _0x13bdd0.after(_0x5f2f48);
+        _0x5f2f48.on("click", _0xea7087 => {
+          const _0x147f3c = _0x4abf36.purchCheck(_0x278f1f, _0x16daf2);
+          (_0x147f3c.success || confirm(_0x147f3c.message + "，确定要提交订单吗？")) && document.querySelector("#make-checkout .button.make-order").click();
+        });
+        break;
+      case "/order/unify_pay_success.htm":
+        const _0x4506b0 = await _0x4abf36.autoBindOrder(_0x278f1f, _0x206a44.orderId),
+          _0x56541a = {
+            closeBtn: 0,
+            btn: ""
+          };
+        _0x4506b0.success ? (layer.alert("采购单号绑定成功"), await _0x4d89ed.setCache("purchInfo", null)) : layer.alert("采购单号绑定失败:" + _0x4506b0.message, _0x56541a);
+        break;
+      case "/order/new_step_order_detail.htm":
+        const _0x1348cd = document.querySelector("[data-mapping-key=\"toFullName\"]").innerText?.["trim"](),
+          _0x23384d = document.querySelector("[data-mapping-key=\"toMobile\"]").innerText?.["trim"](),
+          _0x6cdc6f = (document.querySelector("[data-mapping-key=\"toArea\"]").innerText?.["trim"](), document.querySelector(".unit-order-total .total-price").innerText?.["trim"]());
+        if (!_0x6cdc6f) {
+          return void layer.alert("采购单号绑定失败：未查询到采购成本");
+        }
+        if (_0x1348cd != _0x278f1f.receiver.receiver || _0x23384d != _0x278f1f.receiver.mobile) {
+          return void layer.alert("采购单号绑定失败：收件人信息和采购单不符");
+        }
+        const _0x16b3eb = await _0x4abf36.autoBindOrder(_0x278f1f, _0x206a44.orderId, _0x6cdc6f),
+          _0x3dd526 = {
+            closeBtn: 0,
+            btn: ""
+          };
+        _0x16b3eb.success ? (layer.alert("采购单号绑定成功"), await _0x4d89ed.setCache("purchInfo", null)) : layer.alert("采购单号绑定失败:" + _0x16b3eb.message, _0x3dd526);
+    }
+  }();
+})();
