@@ -1,6 +1,3 @@
-//Thu Aug 29 2024 10:50:12 GMT+0000 (Coordinated Universal Time)
-//Base:https://github.com/echo094/decode-js
-//Modify:https://github.com/smallfawn/decode_action
 const $ = new Env("霸王茶姬"),
   axios = require("axios"),
   {
