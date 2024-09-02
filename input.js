@@ -1,6 +1,4 @@
-//Mon Sep 02 2024 01:24:16 GMT+0000 (Coordinated Universal Time)
-//Base:https://github.com/echo094/decode-js
-//Modify:https://github.com/smallfawn/decode_action
+
 var vJhGjp, ufkEQr, CBX5A5, nD0CGs, tXfT_h, tBnZyHu, SP_NEj4, IJ3nJaK, _6v44N, lzYFd8, aCNKbYa, OgoBd5E, AEIrdeq, hRtkld, gWvyP9c, VciyZA, H_nQmX, zX5_bbc, wa05cO, dAZAo9, opZ5Ue, Wk_DBy;
 function Ox71lJ(ufkEQr) {
   return vJhGjp[ufkEQr > 93 ? ufkEQr > 93 ? ufkEQr > 1132 ? ufkEQr + 14 : ufkEQr < 1132 ? ufkEQr < 93 ? ufkEQr - 66 : ufkEQr > 93 ? ufkEQr - 94 : ufkEQr - 60 : ufkEQr - 2 : ufkEQr - 51 : ufkEQr - 13];
