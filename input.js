@@ -1,374 +1,399 @@
+//Wed Aug 07 2024 14:21:49 GMT+0000 (Coordinated Universal Time)
+//Base:https://github.com/echo094/decode-js
+//Modify:https://github.com/smallfawn/decode_action
 const {
-  sign,
-  getToken,
-  wait,
-  checkCk,
-  validateCarmeWithType,
-  User_Agent,
-  getCookies,
-  checkCarmeCount,
-  getUserInfo,
-  tryCatchPromise,
-  getCookieMap
-} = require("./common.js");
-
-const {
-  sendNotify
-} = require("./sendNotify1.js");
-
-const _0x3ee842 = require("moment");
-
-const _0x43a291 = require("request");
-
-const _0xf58a19 = 10;
-const _0x55733f = "异常";
-
-let _0x31839a = getCookies();
-
-const _0x46e8ae = process.env.ELE_CARME;
-var _0x2c5f85 = "| 昵称          | 乐园币    | 总吃货豆 |余额 |\n| ------------- | ------------------ | ---------|---------|\n";
-
-function _0x15e7a0() {
-  return _0x3ee842().format("YYYY-MM-DD");
+    validateCarmeWithType: _0xd12380,
+    commonRequest: _0x5da2a0,
+    getCookies: _0x14503f,
+    getUserInfoWithX: _0x1c9f9d,
+    getUserInfo: getUserInfo,
+    wait: _0x1e0e6b,
+    tryCatchPromise: _0x358f23,
+    checkCk: _0x507b71,
+    getToken
+  } = require("./common.js"),
+  md5 = require("md5"),
+  _0x34af9d = require("request"),
+  _0x1b471c = process.env.ELE_CARME,
+  HOST = process.env.HOST || "http://192.168.100.234:3750/script-auth",
+  _0x24ea83 = 3,
+  _0xa09546 = require("crypto");
+async function _0x2ba1e4(_0x87a808) {
+  let _0x56f9d2 = {
+      missionCollectionId: "894",
+      locationInfos: "[\"{\\\"lng\\\":\\\"120.21993197500706\\\",\\\"lat\\\":\\\"30.178378857672215\\\"}\"]",
+      bizScene: "SSKZ",
+      instance: "INNER"
+    },
+    _0x188fce = "mtop.ele.biz.growth.task.core.querytask";
+  try {
+    const _0x196558 = await _0x5da2a0(_0x87a808, JSON.stringify(_0x56f9d2), _0x188fce, _0x24ea83, "", process.env.x5sec);
+    if (_0x196558.data) {
+      return _0x196558.data.mlist;
+    }
+  } catch (_0x1a7101) {
+    return null;
+  }
 }
-
-function _0x23f651() {
-  var _0x1b2b0a = new Date(),
-      _0x1344ed = _0x1b2b0a.getMonth() + 1,
-      _0x3be63e = _0x1b2b0a.getDate();
-
-  _0x1344ed <= 9 && (_0x1344ed = "0" + _0x1344ed);
-  _0x3be63e <= 9 && (_0x3be63e = "0" + _0x3be63e);
-  return _0x1b2b0a.getFullYear() + "-" + _0x1344ed + "-" + _0x3be63e;
+async function _0x56dea5(_0x589b7c, _0x10e2ad, _0x4b4d9b, _0x447c6b) {
+  const _0xfebe66 = {
+    collectionId: _0x4b4d9b,
+    missionId: _0x10e2ad,
+    actionCode: "PAGEVIEW",
+    pageFrom: _0x447c6b,
+    viewTime: "15",
+    bizScene: "SSKZ",
+    accountPlan: "KB_ORCHARD",
+    sync: "false"
+  };
+  return await _0x5da2a0(_0x589b7c, JSON.stringify(_0xfebe66), "mtop.ele.biz.growth.task.event.pageview", _0x24ea83, "", process.env.x5sec);
 }
-
-function _0x1fb425(_0x1a7133) {
-  const _0x879662 = {
-    url: "https://httpizza.ele.me/walletUserV2/storedcard/queryBalanceBycardType?cardType=platform",
-    headers: {}
+async function _0x435ec7(_0x2c858d, _0x2332d1, _0x4b59f3, _0x5aa3cc) {
+  const _0xfd0d4c = {
+    missionCollectionId: _0x4b59f3,
+    missionId: _0x2332d1,
+    bizScene: "SSKZ",
+    extInfo: "{\"uid\":\"1899178\"}",
+    instance: "INNER",
+    instanceId: _0x5aa3cc,
+    locationInfos: "[\"{\\\"lng\\\":\\\"120.220926\\\",\\\"lat\\\":\\\"30.178582\\\"}\"]",
+    count: "1",
+    asac: "169932820075525472118"
   };
-  _0x879662.headers.Cookie = _0x1a7133;
-  _0x879662.headers["User-Agent"] = User_Agent;
-  _0x879662.headers.referer = "https://r.ele.me/alsc-wallet/home.html?channel=grzx";
-  return tryCatchPromise(_0x171e05 => {
-    _0x43a291(_0x879662, async (_0x3c1e94, _0x7b3e1d, _0x1d7b01) => {
-      if (!_0x3c1e94 && _0x7b3e1d.statusCode == 200) {
-        const _0x1c177e = JSON.parse(_0x1d7b01);
-
-        try {
-          _0x171e05(_0x1c177e.data.totalAmount);
-        } catch (_0x22658b) {
-          console.log(_0x1d7b01);
-
-          _0x171e05(null);
-        }
-      } else {
-        _0x171e05(null);
-      }
-    });
-  });
+  let _0x52d858 = await _0x5da2a0(_0x2c858d, JSON.stringify(_0xfd0d4c), "mtop.ele.biz.growth.task.core.receiveprize", _0x24ea83, "", process.env.x5sec);
+  _0x52d858 && _0x52d858.data.rlist && console.log("完成任务");
 }
-
-function _0xe7326c(_0x120afa) {
-  const _0x1b9ec9 = {
-    Cookie: _0x120afa,
-    "User-Agent": User_Agent
+async function _0x5c575e(_0x51b2b, _0x3d9812, _0x5953dd) {
+  const _0x51bea2 = {
+    missionCollectionId: _0x5953dd,
+    missionId: _0x3d9812,
+    locationInfos: "[\"{\\\"lng\\\":\\\"120.21993197500706\\\",\\\"lat\\\":\\\"30.178378857672215\\\"}\"]",
+    bizScene: "duobao_external",
+    accountPlan: "HAVANA_COMMON",
+    count: "1",
+    asac: "2A233157IJYIGQ95WFIIFJ",
+    umiToken: "1",
+    ua: "1"
   };
-  const _0x244676 = {
-    url: "https://h5.ele.me/restapi/svip_biz/v1/supervip/foodie/records?latitude=30.153352&limit=20&longitude=104.153352&offset=0",
-    headers: _0x1b9ec9
-  };
-  return tryCatchPromise(_0x131e5d => {
-    _0x43a291(_0x244676, async (_0x14f786, _0x49345d, _0x618a68) => {
-      if (!_0x14f786 && _0x49345d.statusCode == 200) {
-        const _0x18bbc7 = JSON.parse(_0x618a68);
-
-        try {
-          _0x131e5d(_0x18bbc7.peaCount);
-        } catch (_0x3df62f) {
-          console.log(_0x618a68);
-
-          _0x131e5d(null);
-        }
-      } else {
-        _0x131e5d(null);
-      }
-    });
-  });
+  let _0x3eaff1 = await _0x5da2a0(_0x51b2b, JSON.stringify(_0x51bea2), "mtop.ele.biz.growth.task.core.receiveprize", _0x24ea83, "", process.env.x5sec);
+  _0x3eaff1 && _0x3eaff1.rlist && console.log("完成任务");
 }
-
-async function _0xc1502e(_0x160c7f) {
-  const _0x3562ed = {
-    "content-type": "application/json",
-    Cookie: _0x160c7f,
-    "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36"
+async function _0x225d6b(_0x28c9b8, _0xad0080, _0x360139) {
+  const _0x34921e = {
+    missionCollectionId: _0xad0080,
+    missionId: _0x360139,
+    bizScene: "SSKZ",
+    instance: "INNER"
   };
-  s = _0x3562ed;
-  r = "https://h5.ele.me/restapi/svip_biz/v1/supervip/foodie/records?offset=0&limit=100&longitude=39.916527&latitude=116.397128";
-  const _0x48f96f = {
-    url: r,
-    headers: s
+  let _0x13cd23 = await _0x5da2a0(_0x28c9b8, JSON.stringify(_0x34921e), "mtop.ele.biz.growth.task.core.receivetask", _0x24ea83, "", process.env.x5sec);
+  if (_0x13cd23.data) {
+    return _0x13cd23.data;
+  }
+}
+async function _0x1c7fe9(_0x36170e, _0x2bc613) {
+  const _0x32eb18 = {
+    missionCollectionId: _0x2bc613,
+    locationInfos: "[\"{\\\"lng\\\":120.21993197500706,\\\"lat\\\":30.178378857672215}\"]",
+    bizScene: "SSKZ",
+    instance: "INNER"
   };
-  return tryCatchPromise(_0x74a4a1 => {
-    _0x43a291(_0x48f96f, async (_0x52123b, _0x42a22e, _0x5dd484) => {
-      if (!_0x52123b && _0x42a22e.statusCode == 200) {
-        const _0xdaab51 = JSON.parse(_0x5dd484);
-
-        try {
-          for (var _0x1d6792 = _0x23f651(), _0x1c93be = _0xdaab51.records, _0x33b6c4 = 0, _0x3c813c = 0; _0x3c813c < _0x1c93be.length; _0x3c813c++) {
-            _0x1c93be[_0x3c813c].createdTime.indexOf(_0x1d6792) > -1 && 1 == _0x1c93be[_0x3c813c].optType && (_0x33b6c4 += _0x1c93be[_0x3c813c].count);
+  let _0x385bea = await _0x5da2a0(_0x36170e, JSON.stringify(_0x32eb18), "mtop.ele.biz.growth.task.core.querytask", _0x24ea83, "", process.env.x5sec);
+  if (_0x385bea.data) {
+    return _0x385bea.data.mlist;
+  }
+}
+async function _0x137da9(_0x29d5c1, _0x1cac3f, _0xaed74f) {
+  const _0x5eecad = {
+    missionCollectionId: _0x1cac3f,
+    missionId: _0xaed74f,
+    bizScene: "SSKZ",
+    accountPlan: "KB_ORCHARD",
+    locationInfos: "[\"{\\\"lng\\\":\\\"120.21993197500706\\\",\\\"lat\\\":\\\"30.178378857672215\\\"}\"]"
+  };
+  let _0x5647f1 = await _0x5da2a0(_0x29d5c1, JSON.stringify(_0x5eecad), "mtop.ele.biz.growth.task.core.querytask", _0x24ea83, "", process.env.x5sec);
+  if (_0x5647f1.data) {
+    return _0x5647f1.data.mlist[0];
+  }
+}
+async function _0x207944(_0x341584) {
+  const _0x599a4d = await _0x2ba1e4(_0x341584);
+  for (const _0x336e26 of _0x599a4d) {
+    let _0x3fb601 = _0x336e26.missionCollectionId,
+      _0x2d4aea = _0x336e26.missionDefId;
+    if (_0x336e26.status === "FINISH") {
+      await _0x435ec7(_0x341584, _0x2d4aea, _0x3fb601, _0x336e26.id);
+    } else {
+      if (_0x336e26.actionConfig.actionType === "PAGEVIEW" && _0x336e26.status === "RUNNING") {
+        await _0x225d6b(_0x341584, _0x3fb601, _0x2d4aea);
+        let _0x57d6ce = await _0x137da9(_0x341584, _0x3fb601, _0x2d4aea);
+        if (_0x57d6ce.status === "RUNNING") {
+          await _0x56dea5(_0x341584, _0x2d4aea, _0x3fb601, _0x336e26.actionConfig.actionValue.pageSpm);
+          await _0x1e0e6b(3);
+          let _0x59f885 = await _0x1c7fe9(_0x341584, _0x3fb601);
+          for (let _0x1ef57e = 0; _0x1ef57e < _0x59f885.length; _0x1ef57e++) {
+            let _0x35c106 = _0x59f885[_0x1ef57e];
+            _0x35c106.status === "FINISH" && (await _0x435ec7(_0x341584, _0x2d4aea, _0x3fb601, _0x35c106.id));
           }
-
-          _0x74a4a1(_0x33b6c4);
-        } catch (_0x545707) {
-          console.log(_0x5dd484);
-
-          _0x74a4a1(null);
+        } else {
+          await _0x435ec7(_0x341584, _0x2d4aea, _0x3fb601, _0x57d6ce.id);
+        }
+      }
+    }
+  }
+}
+const _0x26bb0c = "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAntZvpNYeRv7UpTSvhzWtdVvUxPeSwfyFvV1hyhjByfc+RKLcBFHdkyI0nB4pMWcLln6zmXfhEJK+eSBovY7BR6LAP/fV+zhxTChnlMGjDwhr+E3/LEnlH24lVcIIFQaU/grflUGJHVJrCHtkJ3NPTLrit5gilviRNUSHMI+Y+PcX9HfzGCCEp1lnIPkzVrWVojtcXLjEYfdGZRijK/udICjSHNXp9No/vzrFxaH2jfk6PVLAcNXZAEGbNUdIzbfYorGdU6lf3tFJ8E2Fs1k6Q4BTFXYzkq+EejOYjHF64M5OTTKtfNcrHcZo13EDdjG5JRaKx7bGc5e5lUOSsBCWdwIDAQAB\n-----END PUBLIC KEY-----";
+function _0x273f84(_0x224243) {
+  const _0x3662b3 = Buffer.from(_0x224243, "utf8"),
+    _0x58f3c5 = _0xa09546.publicEncrypt(_0x26bb0c, _0x3662b3);
+  return _0x58f3c5.toString("base64");
+}
+function _0x594af1(_0x4f02ce) {
+  if (!_0x4f02ce) {
+    return "-1";
+  }
+  for (var _0x22b064 = _0x4f02ce.split(";"), _0x7f58e0 = 0; _0x7f58e0 < _0x22b064.length; _0x7f58e0++) {
+    var _0x2188cb = _0x22b064[_0x7f58e0].split("=");
+    if ([" _m_h5_tk", "_m_h5_tk"].includes(_0x2188cb[0])) {
+      return _0x2188cb[1];
+    }
+  }
+  return "-1";
+}
+const _0x1986db = async (_0x3eb1c, _0x5db2f7, _0x131052 = 5) => {
+  if (_0x131052 === 0) {
+    console.log("网络异常，请检查网络状况");
+    return "";
+  }
+  const _0x1aa3a9 = _0x594af1(_0x3eb1c),
+    _0x26d349 = _0x1aa3a9.split("_")[0],
+    _0x25677c = {
+      carmi: _0x1b471c,
+      content: _0x26d349 + _0x5db2f7,
+      type: 1
+    };
+  var _0x3fd3cb = {
+      "content-type": "application/json",
+      auth: Buffer.from(_0x3eb1c).toString("base64")
+    },
+    _0x1d7429 = {
+      url: HOST + "/new/sign",
+      method: "POST",
+      headers: _0x3fd3cb,
+      body: JSON.stringify(_0x25677c)
+    };
+  return _0x358f23(_0x389653 => {
+    _0x34af9d(_0x1d7429, async (_0x4e0866, _0x431add, _0x2832ce) => {
+      if (!_0x4e0866 && _0x431add.statusCode === 200) {
+        const _0x242f71 = JSON.parse(_0x2832ce);
+        if (_0x242f71.code !== 20000) {
+          console.error(_0x242f71.message);
+          process.exit(0);
+        } else {
+          _0x389653(_0x242f71.data.msg);
         }
       } else {
-        _0x74a4a1(null);
+        _0x4e0866 && (_0x4e0866.message.indexOf("socket hang up") !== -1 || _0x4e0866.message.indexOf("read ECONNRESET") !== -1) ? (console.log("网络链接失败，将在 2 秒后重试"), await _0x1e0e6b(2), _0x389653(await _0x1986db(_0x3eb1c, _0x5db2f7, _0x131052 - 1))) : (console.log("网络异常，请检查网络状况"), _0x389653(""));
       }
     });
   });
-}
-
-async function _0x2e425a(_0x46ff2a) {
-  const _0x4f9ca3 = {
-    bizScene: "IDIOM",
-    bizParam: "{\"type\":\"ggetGold\"}",
-    bizMethod: "queryIndex"
-  };
-
-  const _0x39444a = await _0x1df2c9(_0x46ff2a, _0x4f9ca3);
-
-  return _0x39444a.num;
-}
-
-async function _0x1df2c9(_0x396c11, _0x1e34ac) {
-  const _0x1c07f0 = {
+};
+async function _0x528630(_0x5260f4, _0x1b7800) {
+  var _0x488cf1 = {
     authority: "shopping.ele.me",
     accept: "application/json",
-    "accept-language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
     "cache-control": "no-cache",
     "content-type": "application/x-www-form-urlencoded",
-    origin: "https://r.ele.me",
-    pragma: "no-cache",
-    referer: "https://r.ele.me/linkgame/index.html?navType=3&spm-pre=a2ogi.13162730.zebra-ele-login-module-9089118186&spm=a13.b_activity_kb_m71293.0.0",
-    cookie: _0x396c11,
-    "x-ele-ua": "RenderWay/H5 AppName/wap Mozilla/5.0 (Linux; Android 8.0.0; SM-G955U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36",
-    "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G955U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36"
+    cookie: _0x5260f4,
+    "x-miniapp-id-taobao": "3000000091262411",
+    "x-miniapp-version": "0.0.116",
+    "x-mini-appkey": "34416858",
+    "x-req-appkey": "34416858",
+    appid: "3000000091262411"
   };
-
-  const _0x9ef4df = new Date().getTime();
-
-  const _0x582767 = 12574478;
-
-  var _0x2fb2c6 = "data=" + encodeURIComponent(JSON.stringify(_0x1e34ac));
-
-  const _0x4e6fdb = getToken(_0x396c11),
-        _0x460c4b = _0x4e6fdb.split("_")[0];
-
-  const _0x1d360e = await sign(_0x460c4b + "&" + _0x9ef4df + "&" + _0x582767 + "&" + JSON.stringify(_0x1e34ac), _0x46e8ae);
-
-  const _0x26d10c = {
-    url: "https://shopping.ele.me/h5/mtop.alsc.playgame.mini.game.dispatch/1.0/?jsv=2.6.1&appKey=12574478&t=" + _0x9ef4df + "&sign=" + _0x1d360e + "&api=mtop.alsc.playgame.mini.game.dispatch&v=1.0&type=originaljson&dataType=json&timeout=5000&subDomain=shopping&mainDomain=ele.me&H5Request=true&pageDomain=ele.me&ttid=h5%40chrome_android_87.0.4280.141&SV=5.0",
-    method: "POST",
-    headers: _0x1c07f0,
-    body: _0x2fb2c6
-  };
-  return tryCatchPromise(_0x46952e => {
-    _0x43a291(_0x26d10c, async (_0x1ea0a1, _0x266ff8, _0x582388) => {
-      if (!_0x1ea0a1 && _0x266ff8.statusCode == 200) {
+  const _0x3d0021 = getToken(_0x5260f4),
+          _0x15dbe5 = _0x3d0021.split("_")[0];
+  const _0x3fe7c9 = new Date().getTime(),
+    _0x56f126 = 34190632,
+    _0x3dac41 = "data=" + encodeURIComponent(JSON.stringify(_0x1b7800)),
+   // _0x52ff00 = await _0x1986db(_0x5260f4, "&" + _0x3fe7c9 + "&" + _0x56f126 + "&" + JSON.stringify(_0x1b7800), _0x1b471c),
+   _0x52ff00 =md5(_0x15dbe5 + '&' + _0x3fe7c9 + '&' + _0x56f126 + '&' + JSON.stringify(_0x1b7800));
+    _0x449212 = {
+      url: "https://shopping.ele.me/h5/mtop.miniapp.cloud.application.request/1.0/?jsv=2.6.1&appKey=34190632&t=" + _0x3fe7c9 + "&sign=" + _0x52ff00 + "&api=mtop.miniapp.cloud.application.request&v=1.0&type=originaljson&ttid=1608030065155%40eleme_android_11.0.38",
+      method: "POST",
+      headers: _0x488cf1,
+      body: _0x3dac41
+    };
+  return _0x358f23(_0x12e6b6 => {
+    _0x34af9d(_0x449212, async (_0x10ef1d, _0x26232e, _0x244ee5) => {
+      if (!_0x10ef1d && _0x26232e.statusCode === 200) {
         try {
-          const _0x3cb15f = JSON.parse(_0x582388);
-
-          const _0x470a8b = JSON.parse(_0x3cb15f.data.data);
-
-          _0x46952e(_0x470a8b);
-        } catch (_0x1d36db) {
-          console.log(_0x582388);
-
-          _0x46952e(null);
+          const _0x9f9bbe = JSON.parse(_0x244ee5);
+          _0x12e6b6(_0x9f9bbe.data.data);
+          //console.log(_0x9f9bbe)
+        } catch (_0x1a9999) {
+          console.log(_0x244ee5);
+          _0x12e6b6(null);
         }
       } else {
-        _0x46952e(null);
+        _0x12e6b6(null);
       }
     });
   });
 }
-
-async function _0xf7ccac(_0x1e0e27, _0x54f7f5) {
-  const _0x4e034e = {
-    authority: "mtop.ele.me",
+async function _0xe5a33d(_0x50b318, _0x26317f, _0x2ebb3c) {
+  var _0x1d2e36 = {
     accept: "application/json",
-    "accept-language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
     "cache-control": "no-cache",
-    "content-type": "application/x-www-form-urlencoded",
-    cookie: _0x1e0e27,
-    origin: "https://tb.ele.me",
-    pragma: "no-cache",
-    referer: "https://tb.ele.me/wow/alsc/mod/b9ee9e6451bc8eda7a6afcbb?spm=a2ogi.13162730.zebra-ele-login-module-9089118186&spm=a2ogi.13162730.zebra-ele-login-module-9089118186&spm-pre=a13.b_activity_kb_m71293.ebridge.login",
-    "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G955U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36"
+    "content-type": "application/json",
+    cookie: _0x50b318,
+    "User-Agent": "okhttp/3.14.9",
+    Host: "sskz.gzppxia.com",
+    startToken: "150483272097295"
   };
-  const _0x1d1a7b = {
-    templateId: "1404",
-    bizScene: "game_center",
-    convertType: "GAME_CENTER",
-    startTime: _0x15e7a0() + " 00:00:00",
-    pageNo: _0x54f7f5,
-    pageSize: "20"
-  };
-
-  const _0xa0411f = new Date().getTime();
-
-  const _0x2b5c72 = 12574478;
-
-  var _0x1a5ddd = "data=" + encodeURIComponent(JSON.stringify(_0x1d1a7b));
-
-  const _0x267792 = getToken(_0x1e0e27),
-        _0x1c4025 = _0x267792.split("_")[0];
-
-  const _0x26ba75 = await sign(_0x1c4025 + "&" + _0xa0411f + "&" + _0x2b5c72 + "&" + JSON.stringify(_0x1d1a7b), _0x46e8ae);
-
-  const _0x421606 = {
-    url: "https://mtop.ele.me/h5/mtop.koubei.interaction.center.common.querypropertydetail/1.0/?jsv=2.7.1&appKey=12574478&t=" + _0xa0411f + "&sign=" + _0x26ba75 + "&api=mtop.koubei.interaction.center.common.querypropertydetail&v=1.0",
+  const _0x15b19f = {
+    url: "https://sskz.gzppxia.com/" + _0x2ebb3c,
     method: "POST",
-    headers: _0x4e034e,
-    body: _0x1a5ddd
+    headers: _0x1d2e36,
+    body: JSON.stringify(_0x26317f)
   };
-  return tryCatchPromise(_0x51e67c => {
-    _0x43a291(_0x421606, async (_0x451736, _0x3352bc, _0x15e984) => {
-      if (!_0x451736 && _0x3352bc.statusCode === 200) {
-        const _0x1fab8a = JSON.parse(_0x15e984);
-
+  return _0x358f23(_0x3e95df => {
+    _0x34af9d(_0x15b19f, async (_0x4c886f, _0x1fec64, _0x2f1786) => {
+      if (!_0x4c886f && _0x1fec64.statusCode === 200) {
         try {
-          if (_0x1fab8a.data) {
-            var _0x5192ab = 0;
-
-            for (let _0xadb515 = 0; _0xadb515 < _0x1fab8a.data.list.length; _0xadb515++) {
-              const _0x4b4d8f = _0x1fab8a.data.list[_0xadb515];
-
-              if (_0x4b4d8f.detailType === "GRANT" && _0x4b4d8f.gmtModified.indexOf(_0x15e7a0()) !== -1) {
-                _0x5192ab += Number(_0x4b4d8f.amount);
-              }
-            }
-          }
-
-          _0x51e67c(_0x5192ab);
-        } catch (_0x2b9b54) {
-          console.log(_0x15e984);
+          const _0x32ef52 = JSON.parse(_0x2f1786);
+          _0x3e95df(_0x32ef52);
+        } catch (_0x5eaaf8) {
+          console.log(_0x2f1786);
+          _0x3e95df(null);
         }
-
-        _0x51e67c(_0x1fab8a);
       } else {
-        _0x51e67c(null);
+        _0x3e95df(null);
       }
     });
   });
 }
-
-async function _0x378f6c(_0x429356, _0x16a72b) {
-  const _0x220a27 = getCookieMap(_0x429356);
-
-  if (!_0x220a27.has("wxUid")) {
-    console.log("没有获取到推送 uid，不推送消息\n");
-  } else {
-    await sendNotify("饿了么资产推送", _0x16a72b, {
-      uid: _0x220a27.get("wxUid")
-    });
+async function _0x393e4b(_0x2da506) {
+  const _0x87e22f = new Date().getTime(),
+    _0x128877 = {
+      body: "{}",
+      headers: "{}",
+      instance: "INNER",
+      method: "GET",
+      options: "{\"cloudAppId\":\"47729\",\"domain\":\"https://sskz.gzppxia.com/tt_action/\",\"timeout\":3000,\"env\":\"online\",\"options\":{\"path\":\"pages/index/index\"}}",
+      path: "elmeisv.php?method=getOpenid",
+      protocols: "{\"Content-Type\":\"application/json\",\"mc-timestamp\":\"" + _0x87e22f + "\",\"mc-env\":\"online\"}",
+      queryString: "{}",
+      sdkVersion: "1.5.5"
+    },
+    _0x56c109 = await _0x528630(_0x2da506, _0x128877);
+  if (_0x56c109) {
+    return JSON.parse(_0x56c109).openid;
   }
 }
-
-async function _0x163ae7() {
-  await validateCarmeWithType(_0x46e8ae, 1);
-
-  for (let _0x3913fc = 0; _0x3913fc < _0x31839a.length; _0x3913fc++) {
-    let _0x1e1848 = _0x31839a[_0x3913fc];
-    _0x1e1848 = await checkCk(_0x1e1848);
-
-    if (!_0x1e1848) {
-      continue;
-    }
-
-    let _0x17b596 = await getUserInfo(_0x1e1848);
-
-    if (!_0x17b596.encryptMobile) {
-      console.log("第", _0x3913fc + 1, "账号失效！请重新登录！！！😭");
-      continue;
-    }
-
-    const _0x4feeeb = _0x17b596.localId;
-    await checkCarmeCount(_0x46e8ae, _0x4feeeb, _0xf58a19);
-    console.log("******开始【饿了么账号", _0x3913fc + 1, "】", _0x17b596.encryptMobile, "*********");
-
-    let _0x42bffc = await _0x1fb425(_0x1e1848);
-
-    if (_0x42bffc != null) {
-      _0x42bffc = _0x55733f;
-    } else {
-      _0x42bffc = _0x42bffc / 100;
-    }
-
-    let _0x524645 = await _0xe7326c(_0x1e1848);
-
-    if (!_0x524645) {
-      _0x524645 = _0x55733f;
-    }
-
-    let _0x14465a = await _0xf7ccac(_0x1e1848, 1);
-
-    await wait(1);
-
-    let _0x221f17 = await _0xf7ccac(_0x1e1848, 2);
-
-    await wait(1);
-
-    let _0x101b47 = await _0xf7ccac(_0x1e1848, 3);
-
-    await wait(1);
-
-    let _0x51d93b = await _0xf7ccac(_0x1e1848, 4);
-
-    await wait(1);
-
-    let _0x2e48f2 = await _0xf7ccac(_0x1e1848, 5);
-
-    let _0x30b429 = _0x14465a + _0x221f17 + _0x101b47 + _0x51d93b + _0x2e48f2;
-
-    if (!_0x30b429) {
-      _0x30b429 = _0x55733f;
-    }
-
-    var _0x4b0682 = await _0x2e425a(_0x1e1848);
-
-    if (!_0x4b0682) {
-      _0x4b0682 = _0x55733f;
-    }
-
-    console.log("乐园币：" + _0x30b429);
-    console.log("当前乐园币：" + _0x4b0682);
-    console.log("总吃货豆：" + _0x524645);
-    console.log("余额：" + _0x42bffc);
-
-    var _0x3ec5bd = "###资产推送\n" + _0x2c5f85 + "|" + _0x17b596.encryptMobile + "|" + _0x30b429 + "/" + _0x4b0682 + "|" + _0x524645 + "|" + _0x42bffc + "|";
-
-    await _0x378f6c(_0x1e1848, _0x3ec5bd);
-    await wait(10);
+async function _0xf0859e(_0x1c8b82, _0x2f594c) {
+  const _0x1379b2 = new Date().getTime(),
+    _0x31b8fa = {
+      handler: "login",
+      auth_code: _0x2f594c,
+      attach: null,
+      platform_id: "taoteGame2",
+      channel_id: 1002,
+      cver: "1.0.1",
+      wx_data: {
+        nickName: "曾天曼",
+        gender: 2,
+        avatarUrl: "elm_head_2_jpg",
+        sk: "",
+        platform_data: {
+          h5openid: _0x2f594c
+        }
+      },
+      imei: "",
+      userId: "",
+      token: "",
+      ver: 1,
+      send_time: _0x1379b2
+    },
+    _0x580658 = {},
+    _0x54a18a = await _0xe5a33d(_0x1c8b82, _0x31b8fa, "tt_action/20220926/action/login.php?XDEBUG_SESSION_START=PHPSTORM");
+  if (_0x54a18a) {
+    _0x580658.token = _0x54a18a.token;
+    _0x580658.openId = _0x2f594c;
+    _0x580658.userId = _0x54a18a.userId;
   }
-
+  return _0x580658;
+}
+async function _0x46037d(_0x3ca94c, _0x2f232c) {
+  const _0x5ff7ef = new Date().getTime(),
+    _0x24841c = {
+      handler: "sendElmeCoin",
+      elmeopenid: _0x2f232c.openId,
+      num: 10,
+      userId: _0x2f232c.userId,
+      token: _0x2f232c.token,
+      ver: 1,
+      send_time: _0x5ff7ef
+    };
+  return await _0xe5a33d(_0x3ca94c, _0x24841c, "tt_action/20220926/action/sendElmeCoin.php?XDEBUG_SESSION_START=PHPSTORM");
+}
+async function _0x5be252() {
+  await _0xd12380(_0x1b471c, 1);
+  const _0x5f9ed = _0x14503f("elmck");
+  for (let _0x1c70c2 = 0; _0x1c70c2 < _0x5f9ed.length; _0x1c70c2++) {
+    let _0x244cdb = _0x5f9ed[_0x1c70c2];
+    _0x244cdb = await _0x507b71(_0x244cdb, _0x1c70c2, _0x1b471c, 1);
+    if (!_0x244cdb) {
+      continue;
+    }
+    let _0x32757e = await getUserInfo(_0x244cdb, _0x24ea83);
+    if (_0x32757e && _0x32757e[0]) {
+      console.log("第", _0x1c70c2 + 1, "账号失效！请重新登录！！！😭");
+      continue;
+    }
+    //console.log(_0x32757e)
+    if (!_0x32757e || !_0x32757e.username) {
+      continue;
+    }
+    const _0x321d13 = _0x32757e.user_id;
+    let _0x147fd6 = _0x32757e.mobile;
+    console.log("\n****** #" + (_0x1c70c2 + 1), _0x147fd6, "*********");
+    console.log("账号的 id 为", _0x321d13);
+    const _0x2d28dd = await _0x393e4b(_0x244cdb),
+      _0x4fd68a = await _0xf0859e(_0x244cdb, _0x2d28dd);
+    
+    let _0x2f18c9;
+ while(true){
+     _0x2f18c9 = await _0x46037d(_0x244cdb, _0x4fd68a);
+     if(_0x2f18c9.errcode==0)
+     console.log("领取金币成功，当前金币：" + _0x2f18c9.value);
+     else if(_0x2f18c9.errcode==2)
+     {
+         console.log(_0x2f18c9.msg)
+         break;
+     }else{
+         console.log("等待5分钟")
+         await _0x1e0e6b(5*60);
+     }
+ }
+    // _0x2f18c9.msg ? console.log(_0x2f18c9.msg) : console.log("领取金币成功，当前金币：" + _0x2f18c9.value);
+    // while (!_0x2f18c9.msg) {
+    //     console.log("等待5分钟");
+    //   await _0x1e0e6b(5*60);
+    //   _0x2f18c9 = await _0x46037d(_0x244cdb, _0x4fd68a);
+    //   _0x2f18c9.msg ? console.log(_0x2f18c9.msg) : console.log("领取金币成功，当前金币：" + _0x2f18c9.value);
+    // }
+    console.log("防止挤爆了，延时 1 秒");
+    await _0x1e0e6b(1);
+  }
   process.exit(0);
 }
-
-_0x163ae7();
-
+_0x5be252();
 function Env(t, e) {
   "undefined" != typeof process && JSON.stringify(process.env).indexOf("GITHUB") > -1 && process.exit(0);
-
   class s {
     constructor(t) {
       this.env = t;
     }
-
     send(t, e = "GET") {
       t = "string" == typeof t ? {
         url: t
@@ -381,17 +406,13 @@ function Env(t, e) {
         });
       });
     }
-
     get(t) {
       return this.send.call(this.env, t);
     }
-
     post(t) {
       return this.send.call(this.env, t, "POST");
     }
-
   }
-
   return new class {
     constructor(t, e) {
       this.name = t;
@@ -406,23 +427,18 @@ function Env(t, e) {
       Object.assign(this, e);
       this.log("", `🔔${this.name}, 开始!`);
     }
-
     isNode() {
       return "undefined" != typeof module && !!module.exports;
     }
-
     isQuanX() {
       return "undefined" != typeof $task;
     }
-
     isSurge() {
       return "undefined" != typeof $httpClient && "undefined" == typeof $loon;
     }
-
     isLoon() {
       return "undefined" != typeof $loon;
     }
-
     toObj(t, e = null) {
       try {
         return JSON.parse(t);
@@ -430,7 +446,6 @@ function Env(t, e) {
         return e;
       }
     }
-
     toStr(t, e = null) {
       try {
         return JSON.stringify(t);
@@ -438,20 +453,16 @@ function Env(t, e) {
         return e;
       }
     }
-
     getjson(t, e) {
       let s = e;
       const i = this.getdata(t);
-
       if (i) {
         try {
           s = JSON.parse(this.getdata(t));
         } catch {}
       }
-
       return s;
     }
-
     setjson(t, e) {
       try {
         return this.setdata(JSON.stringify(t), e);
@@ -459,7 +470,6 @@ function Env(t, e) {
         return !1;
       }
     }
-
     getScript(t) {
       return new Promise(e => {
         this.get({
@@ -467,7 +477,6 @@ function Env(t, e) {
         }, (t, s, i) => e(i));
       });
     }
-
     runScript(t, e) {
       return new Promise(s => {
         let i = this.getdata("@chavy_boxjs_userCfgs.httpapi");
@@ -476,42 +485,37 @@ function Env(t, e) {
         r = r ? 1 * r : 20;
         r = e && e.timeout ? e.timeout : r;
         const [o, h] = i.split("@"),
-              n = {
-          url: `http://${h}/v1/scripting/evaluate`,
-          body: {
-            script_text: t,
-            mock_type: "cron",
-            timeout: r
-          },
-          headers: {
-            "X-Key": o,
-            Accept: "*/*"
-          }
-        };
+          n = {
+            url: `http://${h}/v1/scripting/evaluate`,
+            body: {
+              script_text: t,
+              mock_type: "cron",
+              timeout: r
+            },
+            headers: {
+              "X-Key": o,
+              Accept: "*/*"
+            }
+          };
         this.post(n, (t, e, i) => s(i));
       }).catch(t => this.logErr(t));
     }
-
     loaddata() {
       if (!this.isNode()) {
         return {};
       }
-
       {
         this.fs = this.fs ? this.fs : require("fs");
         this.path = this.path ? this.path : require("path");
         const t = this.path.resolve(this.dataFile),
-              e = this.path.resolve(process.cwd(), this.dataFile),
-              s = this.fs.existsSync(t),
-              i = !s && this.fs.existsSync(e);
-
+          e = this.path.resolve(process.cwd(), this.dataFile),
+          s = this.fs.existsSync(t),
+          i = !s && this.fs.existsSync(e);
         if (!s && !i) {
           return {};
         }
-
         {
           const i = s ? t : e;
-
           try {
             return JSON.parse(this.fs.readFileSync(i));
           } catch (t) {
@@ -520,42 +524,34 @@ function Env(t, e) {
         }
       }
     }
-
     writedata() {
       if (this.isNode()) {
         this.fs = this.fs ? this.fs : require("fs");
         this.path = this.path ? this.path : require("path");
         const t = this.path.resolve(this.dataFile),
-              e = this.path.resolve(process.cwd(), this.dataFile),
-              s = this.fs.existsSync(t),
-              i = !s && this.fs.existsSync(e),
-              r = JSON.stringify(this.data);
+          e = this.path.resolve(process.cwd(), this.dataFile),
+          s = this.fs.existsSync(t),
+          i = !s && this.fs.existsSync(e),
+          r = JSON.stringify(this.data);
         s ? this.fs.writeFileSync(t, r) : i ? this.fs.writeFileSync(e, r) : this.fs.writeFileSync(t, r);
       }
     }
-
     lodash_get(t, e, s) {
       const i = e.replace(/\[(\d+)\]/g, ".$1").split(".");
       let r = t;
-
       for (const t of i) if (r = Object(r)[t], void 0 === r) {
         return s;
       }
-
       return r;
     }
-
     lodash_set(t, e, s) {
       return Object(t) !== t ? t : (Array.isArray(e) || (e = e.toString().match(/[^.[\]]+/g) || []), e.slice(0, -1).reduce((t, s, i) => Object(t[s]) === t[s] ? t[s] : t[s] = Math.abs(e[i + 1]) >> 0 == +e[i + 1] ? [] : {}, t)[e[e.length - 1]] = s, t);
     }
-
     getdata(t) {
       let e = this.getval(t);
-
       if (/^@/.test(t)) {
         const [, s, i] = /^@(.*?)\.(.*?)$/.exec(t),
-              r = s ? this.getval(s) : "";
-
+          r = s ? this.getval(s) : "";
         if (r) {
           try {
             const t = JSON.parse(r);
@@ -565,18 +561,14 @@ function Env(t, e) {
           }
         }
       }
-
       return e;
     }
-
     setdata(t, e) {
       let s = !1;
-
       if (/^@/.test(e)) {
         const [, i, r] = /^@(.*?)\.(.*?)$/.exec(e),
-              o = this.getval(i),
-              h = i ? "null" === o ? null : o || "{}" : "{}";
-
+          o = this.getval(i),
+          h = i ? "null" === o ? null : o || "{}" : "{}";
         try {
           const e = JSON.parse(h);
           this.lodash_set(e, r, t);
@@ -589,25 +581,20 @@ function Env(t, e) {
       } else {
         s = this.setval(t, e);
       }
-
       return s;
     }
-
     getval(t) {
       return this.isSurge() || this.isLoon() ? $persistentStore.read(t) : this.isQuanX() ? $prefs.valueForKey(t) : this.isNode() ? (this.data = this.loaddata(), this.data[t]) : this.data && this.data[t] || null;
     }
-
     setval(t, e) {
       return this.isSurge() || this.isLoon() ? $persistentStore.write(t, e) : this.isQuanX() ? $prefs.setValueForKey(t, e) : this.isNode() ? (this.data = this.loaddata(), this.data[e] = t, this.writedata(), !0) : this.data && this.data[e] || null;
     }
-
     initGotEnv(t) {
       this.got = this.got ? this.got : require("got");
       this.cktough = this.cktough ? this.cktough : require("tough-cookie");
       this.ckjar = this.ckjar ? this.ckjar : new this.cktough.CookieJar();
       t && (t.headers = t.headers ? t.headers : {}, void 0 === t.headers.Cookie && void 0 === t.cookieJar && (t.cookieJar = this.ckjar));
     }
-
     get(t, e = () => {}) {
       t.headers && (delete t.headers["Content-Type"], delete t.headers["Content-Length"]);
       this.isSurge() || this.isLoon() ? (this.isSurge() && this.isNeedRewrite && (t.headers = t.headers || {}, Object.assign(t.headers, {
@@ -661,7 +648,6 @@ function Env(t, e) {
         e(s, i, i && i.body);
       }));
     }
-
     post(t, e = () => {}) {
       if (t.body && t.headers && !t.headers["Content-Type"] && (t.headers["Content-Type"] = "application/x-www-form-urlencoded"), t.headers && delete t.headers["Content-Length"], this.isSurge() || this.isLoon()) {
         this.isSurge() && this.isNeedRewrite && (t.headers = t.headers || {}, Object.assign(t.headers, {
@@ -722,7 +708,6 @@ function Env(t, e) {
         }
       }
     }
-
     time(t, e = null) {
       const s = e ? new Date(e) : new Date();
       let i = {
@@ -735,18 +720,14 @@ function Env(t, e) {
         S: s.getMilliseconds()
       };
       /(y+)/.test(t) && (t = t.replace(RegExp.$1, (s.getFullYear() + "").substr(4 - RegExp.$1.length)));
-
       for (let e in i) new RegExp("(" + e + ")").test(t) && (t = t.replace(RegExp.$1, 1 == RegExp.$1.length ? i[e] : ("00" + i[e]).substr(("" + i[e]).length)));
-
       return t;
     }
-
     msg(e = t, s = "", i = "", r) {
       const o = t => {
         if (!t) {
           return t;
         }
-
         if ("string" == typeof t) {
           return this.isLoon() ? t : this.isQuanX() ? {
             "open-url": t
@@ -754,26 +735,23 @@ function Env(t, e) {
             url: t
           } : void 0;
         }
-
         if ("object" == typeof t) {
           if (this.isLoon()) {
             let e = t.openUrl || t.url || t["open-url"],
-                s = t.mediaUrl || t["media-url"];
+              s = t.mediaUrl || t["media-url"];
             return {
               openUrl: e,
               mediaUrl: s
             };
           }
-
           if (this.isQuanX()) {
             let e = t["open-url"] || t.url || t.openUrl,
-                s = t["media-url"] || t.mediaUrl;
+              s = t["media-url"] || t.mediaUrl;
             return {
               "open-url": e,
               "media-url": s
             };
           }
-
           if (this.isSurge()) {
             let e = t.url || t.openUrl || t["open-url"];
             return {
@@ -782,7 +760,6 @@ function Env(t, e) {
           }
         }
       };
-
       if (this.isMute || (this.isSurge() || this.isLoon() ? $notification.post(e, s, i, o(r)) : this.isQuanX() && $notify(e, s, i, o(r))), !this.isMuteLog) {
         let t = ["", "==============📣系统通知📣=============="];
         t.push(e);
@@ -792,28 +769,23 @@ function Env(t, e) {
         this.logs = this.logs.concat(t);
       }
     }
-
     log(...t) {
       t.length > 0 && (this.logs = [...this.logs, ...t]);
       console.log(t.join(this.logSeparator));
     }
-
     logErr(t, e) {
       const s = !this.isSurge() && !this.isQuanX() && !this.isLoon();
       s ? this.log("", `❗️${this.name}, 错误!`, t.stack) : this.log("", `❗️${this.name}, 错误!`, t);
     }
-
     wait(t) {
       return new Promise(e => setTimeout(e, t));
     }
-
     done(t = {}) {
       const e = new Date().getTime(),
-            s = (e - this.startTime) / 1000;
+        s = (e - this.startTime) / 1000;
       this.log("", `🔔${this.name}, 结束! 🕛 ${s} 秒`);
       this.log();
       (this.isSurge() || this.isQuanX() || this.isLoon()) && $done(t);
     }
-
   }(t, e);
 }
