@@ -7,6 +7,7 @@ const traverse = require('@babel/traverse').default
 const t = require('@babel/types')
 const ivm = require('isolated-vm')
 const PluginEval = require('./eval.js')
+const calculateConstantExp = require('../visitor/calculate-constant-exp')
 
 const isolate = new ivm.Isolate()
 const globalContext = isolate.createContextSync()
@@ -83,65 +84,6 @@ function decodeGlobal(ast) {
     MemberExpression: memToStr,
   })
   return ast
-}
-
-function purifyBoolean(path) {
-  // 简化 ![] 和 !![]
-  const node0 = path.node
-  if (node0.operator !== '!') {
-    return
-  }
-  const node1 = node0.argument
-  if (t.isArrayExpression(node1) && node1.elements.length === 0) {
-    path.replaceWith(t.booleanLiteral(false))
-    return
-  }
-  if (!t.isUnaryExpression(node1) || node1.operator !== '!') {
-    return
-  }
-  const node2 = node1.argument
-  if (t.isArrayExpression(node2) && node2.elements.length === 0) {
-    path.replaceWith(t.booleanLiteral(true))
-  }
-}
-
-function cleanIFCode(path) {
-  function clear(path, toggle) {
-    // 判定成立
-    if (toggle) {
-      if (path.node.consequent.type == 'BlockStatement') {
-        path.replaceWithMultiple(path.node.consequent.body)
-      } else {
-        path.replaceWith(path.node.consequent)
-      }
-      return
-    }
-    // 判定不成立
-    if (!path.node.alternate) {
-      path.remove()
-      return
-    }
-    if (path.node.alternate.type == 'BlockStatement') {
-      path.replaceWithMultiple(path.node.alternate.body)
-    } else {
-      path.replaceWith(path.node.alternate)
-    }
-  }
-  // 判断判定是否恒定
-  const test = path.node.test
-  const types = ['StringLiteral', 'NumericLiteral', 'BooleanLiteral']
-  if (test.type === 'BinaryExpression') {
-    if (
-      types.indexOf(test.left.type) !== -1 &&
-      types.indexOf(test.right.type) !== -1
-    ) {
-      const left = JSON.stringify(test.left.value)
-      const right = JSON.stringify(test.right.value)
-      clear(path, eval(left + test.operator + right))
-    }
-  } else if (types.indexOf(test.type) !== -1) {
-    clear(path, eval(JSON.stringify(test.value)))
-  }
 }
 
 function cleanSwitchCode(path) {
@@ -223,9 +165,9 @@ function cleanSwitchCode(path) {
 }
 
 function cleanDeadCode(ast) {
-  traverse(ast, { UnaryExpression: purifyBoolean })
-  traverse(ast, { IfStatement: cleanIFCode })
-  traverse(ast, { ConditionalExpression: cleanIFCode })
+  traverse(ast, calculateConstantExp)
+  const pruneIfBranch = require('../visitor/prune-if-branch')
+  traverse(ast, pruneIfBranch)
   traverse(ast, { WhileStatement: { exit: cleanSwitchCode } })
   return ast
 }
@@ -502,54 +444,8 @@ function purifyFunction(path) {
 function purifyCode(ast) {
   // 净化拼接字符串的函数
   traverse(ast, { AssignmentExpression: purifyFunction })
-  // 净化变量定义中的常量数值
-  function purifyDecl(path) {
-    if (t.isNumericLiteral(path.node.init)) {
-      return
-    }
-    const name = path.node.id.name
-    const { code } = generator(
-      {
-        type: 'Program',
-        body: [path.node.init],
-      },
-      {
-        compact: true,
-      }
-    )
-    const valid = /^[-+*/%!<>&|~^ 0-9;]+$/.test(code)
-    if (!valid) {
-      return
-    }
-    if (/^[-][0-9]*$/.test(code)) {
-      return
-    }
-    const value = eval(code)
-    const node = t.valueToNode(value)
-    path.replaceWith(t.variableDeclarator(path.node.id, node))
-    console.log(`替换 ${name}: ${code} -> ${value}`)
-  }
-  traverse(ast, { VariableDeclarator: purifyDecl })
-  // 合并字符串
-  let end = false
-  function combineString(path) {
-    const op = path.node.operator
-    if (op !== '+') {
-      return
-    }
-    const left = path.node.left
-    const right = path.node.right
-    if (!t.isStringLiteral(left) || !t.isStringLiteral(right)) {
-      return
-    }
-    end = false
-    path.replaceWith(t.StringLiteral(eval(path + '')))
-    console.log(`合并字符串: ${path.node.value}`)
-  }
-  while (!end) {
-    end = true
-    traverse(ast, { BinaryExpression: combineString })
-  }
+  // 计算常量表达式
+  traverse(ast, calculateConstantExp)
   // 替换索引器
   function FormatMember(path) {
     // _0x19882c['removeCookie']['toString']()
@@ -573,26 +469,8 @@ function purifyCode(ast) {
   }
   traverse(ast, { MemberExpression: FormatMember })
   // 分割表达式
-  function removeComma(path) {
-    // a = 1, b = ddd(), c = null;
-    //  |
-    //  |
-    //  |
-    //  v
-    // a = 1;
-    // b = ddd();
-    // c = null;
-    let { expression } = path.node
-    if (!t.isSequenceExpression(expression)) {
-      return
-    }
-    let body = []
-    expression.expressions.forEach((express) => {
-      body.push(t.expressionStatement(express))
-    })
-    path.replaceInline(body)
-  }
-  traverse(ast, { ExpressionStatement: removeComma })
+  const splitSequence = require('../visitor/split-sequence')
+  traverse(ast, splitSequence)
   // 删除空语句
   traverse(ast, {
     EmptyStatement: (path) => {

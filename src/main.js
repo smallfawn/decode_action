@@ -5,7 +5,6 @@ const PluginSojson = require('./plugin/sojson.js')
 const PluginSojsonV7 = require('./plugin/sojsonv7.js')
 const PluginObfuscator = require('./plugin/obfuscator.js')
 const PluginAwsc = require('./plugin/awsc.js')
-const PluginObfuscator2 = require('./plugin/obfuscator2.js')
 
 // 读取参数
 let encodeFile = 'input.js'
@@ -29,8 +28,7 @@ let pluginUsed = '';
 
 // 循环尝试不同的插件，直到源代码与处理后的代码不一致
 const plugins = [
-  { name: 'obfuscator', plugin: PluginObfuscator2 },
-  { name: "ob2", plugin: PluginObfuscator },
+  { name: 'obfuscator', plugin: PluginObfuscator },
   { name: 'sojsonv7', plugin: PluginSojsonV7 },
   { name: 'sojson', plugin: PluginSojson },
     { name: 'common', plugin: PluginCommon },// 最后一次使用通用插件
