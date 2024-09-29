@@ -1,4 +1,4 @@
-//Sun Sep 29 2024 13:17:36 GMT+0000 (Coordinated Universal Time)
+//Sun Sep 29 2024 13:32:30 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
 //Sun Sep 29 2024 13:15:36 GMT+0000 (Coordinated Universal Time)
@@ -24,10 +24,10 @@
           s: ah,
           n: function () {
             var am = {
-              done: !0
+              done: true
             };
             return ag >= ac.length ? am : {
-              done: !1,
+              done: false,
               value: ac[ag++]
             };
           },
@@ -40,8 +40,8 @@
       throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
     }
     var ai,
-      aj = !0,
-      ak = !1;
+      aj = true,
+      ak = false;
     return {
       s: function () {
         af = af.call(ac);
@@ -52,7 +52,7 @@
         return ap;
       },
       e: function (ao) {
-        ak = !0;
+        ak = true;
         ai = ao;
       },
       f: function () {
@@ -73,7 +73,7 @@
       }
       var ae = {}.toString.call(ac).slice(8, -1);
       "Object" === ae && ac.constructor && (ae = ac.constructor.name);
-      return "Map" === ae || "Set" === ae ? Array.from(ac) : "Arguments" === ae || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(ae) ? f(ac, ad) : void 0;
+      return "Map" === ae || "Set" === ae ? Array.from(ac) : "Arguments" === ae || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(ae) ? f(ac, ad) : undefined;
     }
   }
   function f(ac, ad) {
@@ -103,9 +103,9 @@
     function am(aJ, aK, aL) {
       var aM = {
         value: aL,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
+        enumerable: true,
+        configurable: true,
+        writable: true
       };
       Object.defineProperty(aJ, aK, aM);
       return aJ[aK];
@@ -208,7 +208,7 @@
           }
           var aV = {};
           aV.value = ad;
-          aV.done = !0;
+          aV.done = true;
           return aV;
         }
         for (aO.method = aS, aO.arg = aT;;) {
@@ -288,7 +288,7 @@
       };
       this.tryEntries = [aN];
       aM.forEach(aF, this);
-      this.reset(!0);
+      this.reset(true);
     }
     function aI(aM) {
       if (aM || "" === aM) {
@@ -305,12 +305,12 @@
               for (; ++aP < aM.length;) {
                 if (ag.call(aM, aP)) {
                   aT.value = aM[aP];
-                  aT.done = !1;
+                  aT.done = false;
                   return aT;
                 }
               }
               aT.value = ad;
-              aT.done = !0;
+              aT.done = true;
               return aT;
             };
           return aQ.next = aQ;
@@ -321,11 +321,11 @@
     av.prototype = aw;
     ah(aA, "constructor", {
       value: aw,
-      configurable: !0
+      configurable: true
     });
     ah(aw, "constructor", {
       value: av,
-      configurable: !0
+      configurable: true
     });
     av.displayName = am(aw, al, "GeneratorFunction");
     ae.isGeneratorFunction = function (aM) {
@@ -349,7 +349,7 @@
     });
     ae.AsyncIterator = aC;
     ae.async = function (aM, aN, aO, aP, aQ) {
-      void 0 === aQ && (aQ = Promise);
+      undefined === aQ && (aQ = Promise);
       var aS = new aC(an(aM, aN, aO, aP), aQ);
       return ae.isGeneratorFunction(aN) ? aS : aS.next().then(function (aU) {
         return aU.done ? aU.value : aS.next();
@@ -373,11 +373,11 @@
           var aT = aP.pop();
           if (aT in aO) {
             aR.value = aT;
-            aR.done = !1;
+            aR.done = false;
             return aR;
           }
         }
-        aR.done = !0;
+        aR.done = true;
         return aR;
       };
     };
@@ -385,12 +385,12 @@
     aH.prototype = {
       constructor: aH,
       reset: function (aM) {
-        if (this.prev = 0, this.next = 0, this.sent = this._sent = ad, this.done = !1, this.delegate = null, this.method = "next", this.arg = ad, this.tryEntries.forEach(aG), !aM) {
+        if (this.prev = 0, this.next = 0, this.sent = this._sent = ad, this.done = false, this.delegate = null, this.method = "next", this.arg = ad, this.tryEntries.forEach(aG), !aM) {
           for (var aN in this) "t" === aN.charAt(0) && ag.call(this, aN) && !isNaN(+aN.slice(1)) && (this[aN] = ad);
         }
       },
       stop: function () {
-        this.done = !0;
+        this.done = true;
         var aM = this.tryEntries[0].completion;
         if ("throw" === aM.type) {
           throw aM.arg;
@@ -420,7 +420,7 @@
               aT = ag.call(aQ, "finallyLoc");
             if (aS && aT) {
               if (this.prev < aQ.catchLoc) {
-                return aU(aQ.catchLoc, !0);
+                return aU(aQ.catchLoc, true);
               }
               if (this.prev < aQ.finallyLoc) {
                 return aU(aQ.finallyLoc);
@@ -428,7 +428,7 @@
             } else {
               if (aS) {
                 if (this.prev < aQ.catchLoc) {
-                  return aU(aQ.catchLoc, !0);
+                  return aU(aQ.catchLoc, true);
                 }
               } else {
                 if (!aT) {
@@ -520,12 +520,12 @@
         function am(an) {
           h(ak, ah, ai, al, am, "throw", an);
         }
-        al(void 0);
+        al(undefined);
       });
     };
   }
   var j = ($.isNode() ? process.env.WangChao : $.getdata("WangChao")) || "",
-    k = void 0,
+    k = undefined,
     l = "",
     m = "64",
     n = "",
@@ -813,7 +813,7 @@
               aW.next = 151;
               return X("/wcgames/WordFillGame/get_question/");
             case 151:
-              if (aS = aW.sent, null != aS && null !== (aR = aS.data) && void 0 !== aR && aR.question) {
+              if (aS = aW.sent, null != aS && null !== (aR = aS.data) && undefined !== aR && aR.question) {
                 aW.next = 155;
                 break;
               }
