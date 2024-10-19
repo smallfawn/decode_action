@@ -1,4 +1,4 @@
-//Sat Oct 19 2024 10:42:52 GMT+0000 (Coordinated Universal Time)
+//Sat Oct 19 2024 10:44:16 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
 let t = threads.start(function () {
