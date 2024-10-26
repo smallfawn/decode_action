@@ -1,3 +1,6 @@
+//Sat Oct 26 2024 08:57:15 GMT+0000 (Coordinated Universal Time)
+//Base:https://github.com/echo094/decode-js
+//Modify:https://github.com/smallfawn/decode_action
 //Sat Oct 26 2024 08:56:14 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
@@ -1094,7 +1097,7 @@
     })("versions", []).push({
       version: _0x53bcf1.version,
       mode: _0x1d7ee2("./_library") ? "pure" : "global",
-      copyright: "© 2019 Denis Pushkarev (zloirock.ru)"
+      copyright: "\xA9 2019 Denis Pushkarev (zloirock.ru)"
     });
   }, {
     "./_core": 23,
@@ -1955,7 +1958,7 @@
             try {
               _0x346d65.innerHTML = _0x29d747;
             } catch (_0x2cd6c3) {
-              _0x579c52.default.logError(_0x299d70, "appendTo参数异常");
+              _0x579c52.default.logError(_0x299d70, "appendTo\u53C2\u6570\u5F02\u5E38");
             }
         }
         this.fixSize();
@@ -2287,7 +2290,7 @@
               break;
           }
         } else {
-          _0x579c52.default.logError(_0x299d70, "width:参数不合法");
+          _0x579c52.default.logError(_0x299d70, "width:\u53C2\u6570\u4E0D\u5408\u6CD5");
         }
         _0x589a91 > 600 || _0x589a91 < 200;
         this._data.trueWidth = _0x589a91;
@@ -3650,7 +3653,7 @@
             !_0x2dc787 ? this.getInsensitiveCaTypeApi(this.insensitiveHandlerCallback.bind(this)) : this.changePannelStatus("show");
             break;
           default:
-            _0x579c52.default.logError(_0x299d70, "无感验证码,暂不支持:" + _0x237075);
+            _0x579c52.default.logError(_0x299d70, "\u65E0\u611F\u9A8C\u8BC1\u7801,\u6682\u4E0D\u652F\u6301:" + _0x237075);
             break;
         }
       };
@@ -4122,20 +4125,20 @@
     _0x37a5ca.__esModule = true;
     _0x37a5ca.default = {
       "zh-cn": {
-        loading: "图片加载中...",
-        js: "JS-SDK资源加载失败",
-        css: "CSS资源加载失败",
-        img: "图片资源加载失败",
-        conf: "获取配置参数异常",
-        network: "网络请求异常",
-        errorTips: "当前网络不佳, 请刷新重试",
-        selectPlaceholder: "请依次点击",
-        selectSeqPlaceholder: "请按成语顺序点击",
-        insensitivePlaceholder: "点击完成验证",
-        success: "<i class='sm-iconfont iconchenggong1'></i><span>验证成功</span>",
-        fail: "<i class='shumei_success_wrong'></i><span>验证失败,请重新验证</span>",
-        invalidParams: "参数不合法",
-        htmlNetwork: "网络不给力|点击重试"
+        loading: "\u56FE\u7247\u52A0\u8F7D\u4E2D...",
+        js: "JS-SDK\u8D44\u6E90\u52A0\u8F7D\u5931\u8D25",
+        css: "CSS\u8D44\u6E90\u52A0\u8F7D\u5931\u8D25",
+        img: "\u56FE\u7247\u8D44\u6E90\u52A0\u8F7D\u5931\u8D25",
+        conf: "\u83B7\u53D6\u914D\u7F6E\u53C2\u6570\u5F02\u5E38",
+        network: "\u7F51\u7EDC\u8BF7\u6C42\u5F02\u5E38",
+        errorTips: "\u5F53\u524D\u7F51\u7EDC\u4E0D\u4F73, \u8BF7\u5237\u65B0\u91CD\u8BD5",
+        selectPlaceholder: "\u8BF7\u4F9D\u6B21\u70B9\u51FB",
+        selectSeqPlaceholder: "\u8BF7\u6309\u6210\u8BED\u987A\u5E8F\u70B9\u51FB",
+        insensitivePlaceholder: "\u70B9\u51FB\u5B8C\u6210\u9A8C\u8BC1",
+        success: "<i class='sm-iconfont iconchenggong1'></i><span>\u9A8C\u8BC1\u6210\u529F</span>",
+        fail: "<i class='shumei_success_wrong'></i><span>\u9A8C\u8BC1\u5931\u8D25,\u8BF7\u91CD\u65B0\u9A8C\u8BC1</span>",
+        invalidParams: "\u53C2\u6570\u4E0D\u5408\u6CD5",
+        htmlNetwork: "\u7F51\u7EDC\u4E0D\u7ED9\u529B|\u70B9\u51FB\u91CD\u8BD5"
       },
       en: {
         loading: "Image loading...",
@@ -4186,36 +4189,36 @@
         htmlNetwork: "Kegagalan jaringan|Klik untuk mencoba lagi"
       },
       tha: {
-        loading: "กำลังโหลดรูปภาพ",
-        js: "จาวาสคริปต์โหลดล้มเหลว",
-        css: "ความล้มเหลวในการโหลด CSS",
-        img: "โหลดภาพล้มเหลว",
-        conf: "การกำหนดค่าล้มเหลวในการโหลด",
-        network: "เครือข่ายล่ม",
-        errorTips: "เครือข่ายขัดข้อง โปรดลองอีกครั้ง",
-        selectPlaceholder: "กรุณากดสั่งซื้อ",
-        selectSeqPlaceholder: "กรุณากดสั่งซื้อ",
-        insensitivePlaceholder: "คลิกเพื่อตรวจสอบ",
-        success: "<i class='sm-iconfont iconchenggong1'></i><span>ที่ประสบความสำเร็จ</span>",
-        fail: "<i class='shumei_success_wrong'></i><span>ล้มเหลว</span>",
-        invalidParams: "พารามิเตอร์ไม่ถูกต้อง",
-        htmlNetwork: "เครือข่ายขัดข้อง|คลิกเพื่อลองอีกครั้ง"
+        loading: "\u0E01\u0E33\u0E25\u0E31\u0E07\u0E42\u0E2B\u0E25\u0E14\u0E23\u0E39\u0E1B\u0E20\u0E32\u0E1E",
+        js: "\u0E08\u0E32\u0E27\u0E32\u0E2A\u0E04\u0E23\u0E34\u0E1B\u0E15\u0E4C\u0E42\u0E2B\u0E25\u0E14\u0E25\u0E49\u0E21\u0E40\u0E2B\u0E25\u0E27",
+        css: "\u0E04\u0E27\u0E32\u0E21\u0E25\u0E49\u0E21\u0E40\u0E2B\u0E25\u0E27\u0E43\u0E19\u0E01\u0E32\u0E23\u0E42\u0E2B\u0E25\u0E14 CSS",
+        img: "\u0E42\u0E2B\u0E25\u0E14\u0E20\u0E32\u0E1E\u0E25\u0E49\u0E21\u0E40\u0E2B\u0E25\u0E27",
+        conf: "\u0E01\u0E32\u0E23\u0E01\u0E33\u0E2B\u0E19\u0E14\u0E04\u0E48\u0E32\u0E25\u0E49\u0E21\u0E40\u0E2B\u0E25\u0E27\u0E43\u0E19\u0E01\u0E32\u0E23\u0E42\u0E2B\u0E25\u0E14",
+        network: "\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22\u0E25\u0E48\u0E21",
+        errorTips: "\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22\u0E02\u0E31\u0E14\u0E02\u0E49\u0E2D\u0E07 \u0E42\u0E1B\u0E23\u0E14\u0E25\u0E2D\u0E07\u0E2D\u0E35\u0E01\u0E04\u0E23\u0E31\u0E49\u0E07",
+        selectPlaceholder: "\u0E01\u0E23\u0E38\u0E13\u0E32\u0E01\u0E14\u0E2A\u0E31\u0E48\u0E07\u0E0B\u0E37\u0E49\u0E2D",
+        selectSeqPlaceholder: "\u0E01\u0E23\u0E38\u0E13\u0E32\u0E01\u0E14\u0E2A\u0E31\u0E48\u0E07\u0E0B\u0E37\u0E49\u0E2D",
+        insensitivePlaceholder: "\u0E04\u0E25\u0E34\u0E01\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E15\u0E23\u0E27\u0E08\u0E2A\u0E2D\u0E1A",
+        success: "<i class='sm-iconfont iconchenggong1'></i><span>\u0E17\u0E35\u0E48\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E04\u0E27\u0E32\u0E21\u0E2A\u0E33\u0E40\u0E23\u0E47\u0E08</span>",
+        fail: "<i class='shumei_success_wrong'></i><span>\u0E25\u0E49\u0E21\u0E40\u0E2B\u0E25\u0E27</span>",
+        invalidParams: "\u0E1E\u0E32\u0E23\u0E32\u0E21\u0E34\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E44\u0E21\u0E48\u0E16\u0E39\u0E01\u0E15\u0E49\u0E2D\u0E07",
+        htmlNetwork: "\u0E40\u0E04\u0E23\u0E37\u0E2D\u0E02\u0E48\u0E32\u0E22\u0E02\u0E31\u0E14\u0E02\u0E49\u0E2D\u0E07|\u0E04\u0E25\u0E34\u0E01\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E25\u0E2D\u0E07\u0E2D\u0E35\u0E01\u0E04\u0E23\u0E31\u0E49\u0E07"
       },
       vn: {
-        loading: "Đang tải hình ảnh",
-        js: "Lỗi tải Javascript",
-        css: "Css tải không thành công",
-        img: "Không tải được hình ảnh",
-        conf: "Cấu hình tải không thành công",
-        network: "Lỗi mạng",
-        errorTips: "Lỗi mạng, hãy thử lại",
-        selectPlaceholder: "Vui lòng bấm vào để đặt hàng",
-        selectSeqPlaceholder: "Vui lòng bấm vào để đặt hàng",
-        insensitivePlaceholder: "Bấm để xác minh",
-        success: "<i class='sm-iconfont iconchenggong1'></i><span>Thành công</span>",
-        fail: "<i class='shumei_success_wrong'></i><span>Thất bại</span>",
-        invalidParams: "Tham số không hợp lệ",
-        htmlNetwork: "Lỗi mạng | Nhấp để thử lại"
+        loading: "\u0110ang t\u1EA3i h\xECnh \u1EA3nh",
+        js: "L\u1ED7i t\u1EA3i Javascript",
+        css: "Css t\u1EA3i kh\xF4ng th\xE0nh c\xF4ng",
+        img: "Kh\xF4ng t\u1EA3i \u0111\u01B0\u1EE3c h\xECnh \u1EA3nh",
+        conf: "C\u1EA5u h\xECnh t\u1EA3i kh\xF4ng th\xE0nh c\xF4ng",
+        network: "L\u1ED7i m\u1EA1ng",
+        errorTips: "L\u1ED7i m\u1EA1ng, h\xE3y th\u1EED l\u1EA1i",
+        selectPlaceholder: "Vui l\xF2ng b\u1EA5m v\xE0o \u0111\u1EC3 \u0111\u1EB7t h\xE0ng",
+        selectSeqPlaceholder: "Vui l\xF2ng b\u1EA5m v\xE0o \u0111\u1EC3 \u0111\u1EB7t h\xE0ng",
+        insensitivePlaceholder: "B\u1EA5m \u0111\u1EC3 x\xE1c minh",
+        success: "<i class='sm-iconfont iconchenggong1'></i><span>Th\xE0nh c\xF4ng</span>",
+        fail: "<i class='shumei_success_wrong'></i><span>Th\u1EA5t b\u1EA1i</span>",
+        invalidParams: "Tham s\u1ED1 kh\xF4ng h\u1EE3p l\u1EC7",
+        htmlNetwork: "L\u1ED7i m\u1EA1ng | Nh\u1EA5p \u0111\u1EC3 th\u1EED l\u1EA1i"
       },
       mys: {
         loading: "Memuatkan imej",
@@ -4234,132 +4237,132 @@
         htmlNetwork: "Kegagalan rangkaian|Klik untuk mencuba semula"
       },
       jp: {
-        loading: "画像の読み込み",
-        js: "Javascriptの読み込みに失敗しました",
-        css: "Cssロードエラー",
-        img: "画像の読み込みに失敗しました",
-        conf: "構成のロードに失敗しました",
-        network: "ネットワーク障害",
-        errorTips: "ネットワーク障害、再試行してください",
-        selectPlaceholder: "順番にクリックしてください",
-        selectSeqPlaceholder: "順番にクリックしてください",
-        insensitivePlaceholder: "クリックして確認",
-        success: "<i class='sm-iconfont iconchenggong1'></i><span>成功</span>",
-        fail: "<i class='shumei_success_wrong'></i><span>失敗した</span>",
-        invalidParams: "パラメータが無効です",
-        htmlNetwork: "ネットワーク障害|クリックして再試行"
+        loading: "\u753B\u50CF\u306E\u8AAD\u307F\u8FBC\u307F",
+        js: "Javascript\u306E\u8AAD\u307F\u8FBC\u307F\u306B\u5931\u6557\u3057\u307E\u3057\u305F",
+        css: "Css\u30ED\u30FC\u30C9\u30A8\u30E9\u30FC",
+        img: "\u753B\u50CF\u306E\u8AAD\u307F\u8FBC\u307F\u306B\u5931\u6557\u3057\u307E\u3057\u305F",
+        conf: "\u69CB\u6210\u306E\u30ED\u30FC\u30C9\u306B\u5931\u6557\u3057\u307E\u3057\u305F",
+        network: "\u30CD\u30C3\u30C8\u30EF\u30FC\u30AF\u969C\u5BB3",
+        errorTips: "\u30CD\u30C3\u30C8\u30EF\u30FC\u30AF\u969C\u5BB3\u3001\u518D\u8A66\u884C\u3057\u3066\u304F\u3060\u3055\u3044",
+        selectPlaceholder: "\u9806\u756A\u306B\u30AF\u30EA\u30C3\u30AF\u3057\u3066\u304F\u3060\u3055\u3044",
+        selectSeqPlaceholder: "\u9806\u756A\u306B\u30AF\u30EA\u30C3\u30AF\u3057\u3066\u304F\u3060\u3055\u3044",
+        insensitivePlaceholder: "\u30AF\u30EA\u30C3\u30AF\u3057\u3066\u78BA\u8A8D",
+        success: "<i class='sm-iconfont iconchenggong1'></i><span>\u6210\u529F</span>",
+        fail: "<i class='shumei_success_wrong'></i><span>\u5931\u6557\u3057\u305F</span>",
+        invalidParams: "\u30D1\u30E9\u30E1\u30FC\u30BF\u304C\u7121\u52B9\u3067\u3059",
+        htmlNetwork: "\u30CD\u30C3\u30C8\u30EF\u30FC\u30AF\u969C\u5BB3|\u30AF\u30EA\u30C3\u30AF\u3057\u3066\u518D\u8A66\u884C"
       },
       kr: {
-        loading: "이미지 로딩",
-        js: "자바스크립트 로드 실패",
-        css: "CSS 로드 실패",
-        img: "이미지 로드 실패",
-        conf: "구성 로드 실패",
-        network: "네트워크 장애",
-        errorTips: "네트워크 오류, 다시 시도하십시오.",
-        selectPlaceholder: "순서대로 클릭해주세요",
-        selectSeqPlaceholder: "순서대로 클릭해주세요",
-        insensitivePlaceholder: "확인하려면 클릭",
-        success: "<i class='sm-iconfont iconchenggong1'></i><span>성공</span>",
-        fail: "<i class='shumei_success_wrong'></i><span>실패한</span>",
-        invalidParams: "잘못된 매개변수",
-        htmlNetwork: "네트워크 오류|다시 시도하려면 클릭하세요."
+        loading: "\uC774\uBBF8\uC9C0 \uB85C\uB529",
+        js: "\uC790\uBC14\uC2A4\uD06C\uB9BD\uD2B8 \uB85C\uB4DC \uC2E4\uD328",
+        css: "CSS \uB85C\uB4DC \uC2E4\uD328",
+        img: "\uC774\uBBF8\uC9C0 \uB85C\uB4DC \uC2E4\uD328",
+        conf: "\uAD6C\uC131 \uB85C\uB4DC \uC2E4\uD328",
+        network: "\uB124\uD2B8\uC6CC\uD06C \uC7A5\uC560",
+        errorTips: "\uB124\uD2B8\uC6CC\uD06C \uC624\uB958, \uB2E4\uC2DC \uC2DC\uB3C4\uD558\uC2ED\uC2DC\uC624.",
+        selectPlaceholder: "\uC21C\uC11C\uB300\uB85C \uD074\uB9AD\uD574\uC8FC\uC138\uC694",
+        selectSeqPlaceholder: "\uC21C\uC11C\uB300\uB85C \uD074\uB9AD\uD574\uC8FC\uC138\uC694",
+        insensitivePlaceholder: "\uD655\uC778\uD558\uB824\uBA74 \uD074\uB9AD",
+        success: "<i class='sm-iconfont iconchenggong1'></i><span>\uC131\uACF5</span>",
+        fail: "<i class='shumei_success_wrong'></i><span>\uC2E4\uD328\uD55C</span>",
+        invalidParams: "\uC798\uBABB\uB41C \uB9E4\uAC1C\uBCC0\uC218",
+        htmlNetwork: "\uB124\uD2B8\uC6CC\uD06C \uC624\uB958|\uB2E4\uC2DC \uC2DC\uB3C4\uD558\uB824\uBA74 \uD074\uB9AD\uD558\uC138\uC694."
       },
       es: {
         loading: "cargando imagen",
-        js: "Falló la carga de recursos de JS-SDK",
+        js: "Fall\xF3 la carga de recursos de JS-SDK",
         css: "El recurso CSS no se pudo cargar",
         img: "El recurso de imagen no se pudo cargar",
-        conf: "Obtener excepción de parámetro de configuración",
+        conf: "Obtener excepci\xF3n de par\xE1metro de configuraci\xF3n",
         network: "solicitud de red anormal",
         errorTips: "La red actual no es buena, actualice y vuelva a intentarlo",
         selectPlaceholder: "Por favor haz click",
         selectSeqPlaceholder: "Por favor haga clic en orden",
-        insensitivePlaceholder: "Haga clic para completar la verificación",
-        success: "<i class='sm-iconfont iconchenggong1'></i><span>Verificación exitosa</span>",
-        fail: "<i class='shumei_success_wrong'></i><span>La autenticación falló, vuelva a autenticarse</span>",
-        invalidParams: "el parámetro no es válido",
+        insensitivePlaceholder: "Haga clic para completar la verificaci\xF3n",
+        success: "<i class='sm-iconfont iconchenggong1'></i><span>Verificaci\xF3n exitosa</span>",
+        fail: "<i class='shumei_success_wrong'></i><span>La autenticaci\xF3n fall\xF3, vuelva a autenticarse</span>",
+        invalidParams: "el par\xE1metro no es v\xE1lido",
         htmlNetwork: "La red no es fuerte | Haz clic para intentarlo de nuevo"
       },
       bn: {
-        loading: "ছবি লোড হচ্ছে",
-        js: "JS-SDK রিসোর্স লোডিং ব্যর্থ হয়েছে৷",
-        css: "CSS সংস্থান লোড করতে ব্যর্থ হয়েছে৷",
-        img: "চিত্র সম্পদ লোড করতে ব্যর্থ হয়েছে",
-        conf: "কনফিগারেশন প্যারামিটার ব্যতিক্রম পান",
-        network: "অস্বাভাবিক নেটওয়ার্ক অনুরোধ",
-        errorTips: "অনুগ্রহ করে নেটওয়ার্ক রিফ্রেশ করুন এবং আবার চেষ্টা করুন৷",
-        selectPlaceholder: "ক্লিক করুন",
-        selectSeqPlaceholder: "ক্রমানুসারে ক্লিক করুন",
-        insensitivePlaceholder: "যাচাইকরণ সম্পূর্ণ করতে ক্লিক করুন",
-        success: "<i class='sm-iconfont iconchenggong1'></i><span>যাচাইকরণ সফল হয়েছে৷</span>",
-        fail: "<i class='shumei_success_wrong'></i><span>প্রমাণীকরণ ব্যর্থ হয়েছে, অনুগ্রহ করে পুনরায় প্রমাণীকরণ করুন৷</span>",
-        invalidParams: "প্যারামিটার অবৈধ",
-        htmlNetwork: "নেটওয়ার্ক শক্তিশালী নয় | আবার চেষ্টা করতে ক্লিক করুন৷"
+        loading: "\u099B\u09AC\u09BF \u09B2\u09CB\u09A1 \u09B9\u099A\u09CD\u099B\u09C7",
+        js: "JS-SDK \u09B0\u09BF\u09B8\u09CB\u09B0\u09CD\u09B8 \u09B2\u09CB\u09A1\u09BF\u0982 \u09AC\u09CD\u09AF\u09B0\u09CD\u09A5 \u09B9\u09AF\u09BC\u09C7\u099B\u09C7\u09F7",
+        css: "CSS \u09B8\u0982\u09B8\u09CD\u09A5\u09BE\u09A8 \u09B2\u09CB\u09A1 \u0995\u09B0\u09A4\u09C7 \u09AC\u09CD\u09AF\u09B0\u09CD\u09A5 \u09B9\u09AF\u09BC\u09C7\u099B\u09C7\u09F7",
+        img: "\u099A\u09BF\u09A4\u09CD\u09B0 \u09B8\u09AE\u09CD\u09AA\u09A6 \u09B2\u09CB\u09A1 \u0995\u09B0\u09A4\u09C7 \u09AC\u09CD\u09AF\u09B0\u09CD\u09A5 \u09B9\u09AF\u09BC\u09C7\u099B\u09C7",
+        conf: "\u0995\u09A8\u09AB\u09BF\u0997\u09BE\u09B0\u09C7\u09B6\u09A8 \u09AA\u09CD\u09AF\u09BE\u09B0\u09BE\u09AE\u09BF\u099F\u09BE\u09B0 \u09AC\u09CD\u09AF\u09A4\u09BF\u0995\u09CD\u09B0\u09AE \u09AA\u09BE\u09A8",
+        network: "\u0985\u09B8\u09CD\u09AC\u09BE\u09AD\u09BE\u09AC\u09BF\u0995 \u09A8\u09C7\u099F\u0993\u09AF\u09BC\u09BE\u09B0\u09CD\u0995 \u0985\u09A8\u09C1\u09B0\u09CB\u09A7",
+        errorTips: "\u0985\u09A8\u09C1\u0997\u09CD\u09B0\u09B9 \u0995\u09B0\u09C7 \u09A8\u09C7\u099F\u0993\u09AF\u09BC\u09BE\u09B0\u09CD\u0995 \u09B0\u09BF\u09AB\u09CD\u09B0\u09C7\u09B6 \u0995\u09B0\u09C1\u09A8 \u098F\u09AC\u0982 \u0986\u09AC\u09BE\u09B0 \u099A\u09C7\u09B7\u09CD\u099F\u09BE \u0995\u09B0\u09C1\u09A8\u09F7",
+        selectPlaceholder: "\u0995\u09CD\u09B2\u09BF\u0995 \u0995\u09B0\u09C1\u09A8",
+        selectSeqPlaceholder: "\u0995\u09CD\u09B0\u09AE\u09BE\u09A8\u09C1\u09B8\u09BE\u09B0\u09C7 \u0995\u09CD\u09B2\u09BF\u0995 \u0995\u09B0\u09C1\u09A8",
+        insensitivePlaceholder: "\u09AF\u09BE\u099A\u09BE\u0987\u0995\u09B0\u09A3 \u09B8\u09AE\u09CD\u09AA\u09C2\u09B0\u09CD\u09A3 \u0995\u09B0\u09A4\u09C7 \u0995\u09CD\u09B2\u09BF\u0995 \u0995\u09B0\u09C1\u09A8",
+        success: "<i class='sm-iconfont iconchenggong1'></i><span>\u09AF\u09BE\u099A\u09BE\u0987\u0995\u09B0\u09A3 \u09B8\u09AB\u09B2 \u09B9\u09AF\u09BC\u09C7\u099B\u09C7\u09F7</span>",
+        fail: "<i class='shumei_success_wrong'></i><span>\u09AA\u09CD\u09B0\u09AE\u09BE\u09A3\u09C0\u0995\u09B0\u09A3 \u09AC\u09CD\u09AF\u09B0\u09CD\u09A5 \u09B9\u09AF\u09BC\u09C7\u099B\u09C7, \u0985\u09A8\u09C1\u0997\u09CD\u09B0\u09B9 \u0995\u09B0\u09C7 \u09AA\u09C1\u09A8\u09B0\u09BE\u09AF\u09BC \u09AA\u09CD\u09B0\u09AE\u09BE\u09A3\u09C0\u0995\u09B0\u09A3 \u0995\u09B0\u09C1\u09A8\u09F7</span>",
+        invalidParams: "\u09AA\u09CD\u09AF\u09BE\u09B0\u09BE\u09AE\u09BF\u099F\u09BE\u09B0 \u0985\u09AC\u09C8\u09A7",
+        htmlNetwork: "\u09A8\u09C7\u099F\u0993\u09AF\u09BC\u09BE\u09B0\u09CD\u0995 \u09B6\u0995\u09CD\u09A4\u09BF\u09B6\u09BE\u09B2\u09C0 \u09A8\u09AF\u09BC | \u0986\u09AC\u09BE\u09B0 \u099A\u09C7\u09B7\u09CD\u099F\u09BE \u0995\u09B0\u09A4\u09C7 \u0995\u09CD\u09B2\u09BF\u0995 \u0995\u09B0\u09C1\u09A8\u09F7"
       },
       pt: {
         loading: "carregamento de imagem",
         js: "Falha no carregamento do recurso JS-SDK",
         css: "Falha ao carregar o recurso CSS",
         img: "Falha ao carregar o recurso de imagem",
-        conf: "Obter exceção de parâmetro de configuração",
-        network: "solicitação de rede anormal",
-        errorTips: "A rede atual não é boa, atualize e tente novamente",
+        conf: "Obter exce\xE7\xE3o de par\xE2metro de configura\xE7\xE3o",
+        network: "solicita\xE7\xE3o de rede anormal",
+        errorTips: "A rede atual n\xE3o \xE9 boa, atualize e tente novamente",
         selectPlaceholder: "Por favor clique",
         selectSeqPlaceholder: "Por favor clique em ordem",
-        insensitivePlaceholder: "Clique para concluir a verificação",
-        success: "<i class='sm-iconfont iconchenggong1'></i><span>Verificação bem-sucedida</span>",
-        fail: "<i class='shumei_success_wrong'></i><span>Falha na autenticação. Autentique novamente</span>",
-        invalidParams: "parâmetro é inválido",
-        htmlNetwork: "A rede não é forte | Clique para tentar novamente"
+        insensitivePlaceholder: "Clique para concluir a verifica\xE7\xE3o",
+        success: "<i class='sm-iconfont iconchenggong1'></i><span>Verifica\xE7\xE3o bem-sucedida</span>",
+        fail: "<i class='shumei_success_wrong'></i><span>Falha na autentica\xE7\xE3o. Autentique novamente</span>",
+        invalidParams: "par\xE2metro \xE9 inv\xE1lido",
+        htmlNetwork: "A rede n\xE3o \xE9 forte | Clique para tentar novamente"
       },
       de: {
         loading: "Bild wird geladen",
         js: "Das Laden der JS-SDK-Ressource ist fehlgeschlagen",
         css: "CSS-Ressource konnte nicht geladen werden",
         img: "Bildressource konnte nicht geladen werden",
-        conf: "Ausnahme für Konfigurationsparameter abrufen",
+        conf: "Ausnahme f\xFCr Konfigurationsparameter abrufen",
         network: "anormale Netzwerkanfrage",
         errorTips: "aktualisieren Sie das Netzwerk erneut",
         selectPlaceholder: "bitte klicken",
         selectSeqPlaceholder: "Bitte klicken Sie in der Reihenfolge",
-        insensitivePlaceholder: "Klicken Sie hier, um die Überprüfung abzuschließen",
-        success: "<i class='sm-iconfont iconchenggong1'></i><span>Überprüfung erfolgreich</span>",
+        insensitivePlaceholder: "Klicken Sie hier, um die \xDCberpr\xFCfung abzuschlie\xDFen",
+        success: "<i class='sm-iconfont iconchenggong1'></i><span>\xDCberpr\xFCfung erfolgreich</span>",
         fail: "<i class='shumei_success_wrong'></i><span>Verifizierung fehl geschlagen. Bitte versuchen Sie es erneut</span>",
-        invalidParams: "Parameter ist ungültig",
+        invalidParams: "Parameter ist ung\xFCltig",
         htmlNetwork: "Schlechtes Netzwerk | Bitte versuchen Sie es erneut"
       },
       fr: {
         loading: "chargement des images",
-        js: "Échec du chargement des ressources JS-SDK",
-        css: "La ressource CSS n'a pas pu être chargée",
-        img: "Échec du chargement de la ressource d'image",
-        conf: "Obtenir l'exception du paramètre de configuration",
-        network: "requête réseau anormale",
-        errorTips: "Le réseau actuel n'est pas bon, veuillez actualiser et réessayer",
+        js: "\xC9chec du chargement des ressources JS-SDK",
+        css: "La ressource CSS n'a pas pu \xEAtre charg\xE9e",
+        img: "\xC9chec du chargement de la ressource d'image",
+        conf: "Obtenir l'exception du param\xE8tre de configuration",
+        network: "requ\xEAte r\xE9seau anormale",
+        errorTips: "Le r\xE9seau actuel n'est pas bon, veuillez actualiser et r\xE9essayer",
         selectPlaceholder: "Cliquez s'il vous plait",
         selectSeqPlaceholder: "Veuillez cliquer dans l'ordre",
-        insensitivePlaceholder: "Cliquez pour terminer la vérification",
-        success: "<i class='sm-iconfont iconchenggong1'></i><span>Vérification réussie</span>",
-        fail: "<i class='shumei_success_wrong'></i><span>La vérification a échoué. Merci d'essayer de nouveau</span>",
-        invalidParams: "le paramètre est invalide",
-        htmlNetwork: "Le réseau n'est pas fort | Cliquez pour réessayer"
+        insensitivePlaceholder: "Cliquez pour terminer la v\xE9rification",
+        success: "<i class='sm-iconfont iconchenggong1'></i><span>V\xE9rification r\xE9ussie</span>",
+        fail: "<i class='shumei_success_wrong'></i><span>La v\xE9rification a \xE9chou\xE9. Merci d'essayer de nouveau</span>",
+        invalidParams: "le param\xE8tre est invalide",
+        htmlNetwork: "Le r\xE9seau n'est pas fort | Cliquez pour r\xE9essayer"
       },
       hi: {
-        loading: "छवि लोड हो रहा है",
-        js: "JS-SDK संसाधन लोड करना विफल रहा",
-        css: "सीएसएस संसाधन लोड करने में विफल",
-        img: "छवि संसाधन लोड करने में विफल",
-        conf: "कॉन्फ़िगरेशन पैरामीटर अपवाद प्राप्त करें",
-        network: "असामान्य नेटवर्क अनुरोध",
-        errorTips: "वर्तमान नेटवर्क अच्छा नहीं है, कृपया ताज़ा करें और पुनः प्रयास करें",
-        selectPlaceholder: "फिर से लॉगिन करने के लिए",
-        selectSeqPlaceholder: "कृपया क्रम में क्लिक करें",
-        insensitivePlaceholder: "सत्यापन पूरा करने के लिए क्लिक करें",
-        success: "<i class='sm-iconfont iconchenggong1'></i><span>सत्यापन सफल हुआ</span>",
-        fail: "<i class='shumei_success_wrong'></i><span>प्रमाणीकरण विफल, कृपया पुनः प्रमाणित करें</span>",
-        invalidParams: "पैरामीटर अमान्य है",
-        htmlNetwork: "नेटवर्क मजबूत नहीं है | पुनः प्रयास करने के लिए क्लिक करें"
+        loading: "\u091B\u0935\u093F \u0932\u094B\u0921 \u0939\u094B \u0930\u0939\u093E \u0939\u0948",
+        js: "JS-SDK \u0938\u0902\u0938\u093E\u0927\u0928 \u0932\u094B\u0921 \u0915\u0930\u0928\u093E \u0935\u093F\u092B\u0932 \u0930\u0939\u093E",
+        css: "\u0938\u0940\u090F\u0938\u090F\u0938 \u0938\u0902\u0938\u093E\u0927\u0928 \u0932\u094B\u0921 \u0915\u0930\u0928\u0947 \u092E\u0947\u0902 \u0935\u093F\u092B\u0932",
+        img: "\u091B\u0935\u093F \u0938\u0902\u0938\u093E\u0927\u0928 \u0932\u094B\u0921 \u0915\u0930\u0928\u0947 \u092E\u0947\u0902 \u0935\u093F\u092B\u0932",
+        conf: "\u0915\u0949\u0928\u094D\u092B\u093C\u093F\u0917\u0930\u0947\u0936\u0928 \u092A\u0948\u0930\u093E\u092E\u0940\u091F\u0930 \u0905\u092A\u0935\u093E\u0926 \u092A\u094D\u0930\u093E\u092A\u094D\u0924 \u0915\u0930\u0947\u0902",
+        network: "\u0905\u0938\u093E\u092E\u093E\u0928\u094D\u092F \u0928\u0947\u091F\u0935\u0930\u094D\u0915 \u0905\u0928\u0941\u0930\u094B\u0927",
+        errorTips: "\u0935\u0930\u094D\u0924\u092E\u093E\u0928 \u0928\u0947\u091F\u0935\u0930\u094D\u0915 \u0905\u091A\u094D\u091B\u093E \u0928\u0939\u0940\u0902 \u0939\u0948, \u0915\u0943\u092A\u092F\u093E \u0924\u093E\u091C\u093C\u093E \u0915\u0930\u0947\u0902 \u0914\u0930 \u092A\u0941\u0928\u0903 \u092A\u094D\u0930\u092F\u093E\u0938 \u0915\u0930\u0947\u0902",
+        selectPlaceholder: "\u092B\u093F\u0930 \u0938\u0947 \u0932\u0949\u0917\u093F\u0928 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093F\u090F",
+        selectSeqPlaceholder: "\u0915\u0943\u092A\u092F\u093E \u0915\u094D\u0930\u092E \u092E\u0947\u0902 \u0915\u094D\u0932\u093F\u0915 \u0915\u0930\u0947\u0902",
+        insensitivePlaceholder: "\u0938\u0924\u094D\u092F\u093E\u092A\u0928 \u092A\u0942\u0930\u093E \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093F\u090F \u0915\u094D\u0932\u093F\u0915 \u0915\u0930\u0947\u0902",
+        success: "<i class='sm-iconfont iconchenggong1'></i><span>\u0938\u0924\u094D\u092F\u093E\u092A\u0928 \u0938\u092B\u0932 \u0939\u0941\u0906</span>",
+        fail: "<i class='shumei_success_wrong'></i><span>\u092A\u094D\u0930\u092E\u093E\u0923\u0940\u0915\u0930\u0923 \u0935\u093F\u092B\u0932, \u0915\u0943\u092A\u092F\u093E \u092A\u0941\u0928\u0903 \u092A\u094D\u0930\u092E\u093E\u0923\u093F\u0924 \u0915\u0930\u0947\u0902</span>",
+        invalidParams: "\u092A\u0948\u0930\u093E\u092E\u0940\u091F\u0930 \u0905\u092E\u093E\u0928\u094D\u092F \u0939\u0948",
+        htmlNetwork: "\u0928\u0947\u091F\u0935\u0930\u094D\u0915 \u092E\u091C\u092C\u0942\u0924 \u0928\u0939\u0940\u0902 \u0939\u0948 | \u092A\u0941\u0928\u0903 \u092A\u094D\u0930\u092F\u093E\u0938 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093F\u090F \u0915\u094D\u0932\u093F\u0915 \u0915\u0930\u0947\u0902"
       },
       it: {
         loading: "caricamento dell'immagine",
@@ -4368,126 +4371,126 @@
         img: "Impossibile caricare la risorsa immagine",
         conf: "Ottieni l'eccezione del parametro di configurazione",
         network: "richiesta di rete anomala",
-        errorTips: "La rete attuale non è buona, aggiorna e riprova",
+        errorTips: "La rete attuale non \xE8 buona, aggiorna e riprova",
         selectPlaceholder: "Si prega di fare clic",
         selectSeqPlaceholder: "Si prega di fare clic in ordine",
         insensitivePlaceholder: "Fare clic per completare la verifica",
         success: "<i class='sm-iconfont iconchenggong1'></i><span>Verifica riuscita</span>",
         fail: "<i class='shumei_success_wrong'></i><span>Autenticazione non riuscita, autentica nuovamente</span>",
-        invalidParams: "parametro non è valido",
-        htmlNetwork: "La rete non è forte | Fai clic per riprovare"
+        invalidParams: "parametro non \xE8 valido",
+        htmlNetwork: "La rete non \xE8 forte | Fai clic per riprovare"
       },
       ur: {
-        loading: "  تصویر لوڈ ہو رہا ہے",
-        js: "JS-SDK وسائل کی لوڈنگ ناکام ہو گئی۔",
-        css: "CSS ریسورس لوڈ ہونے میں ناکام",
-        img: "تصویری وسیلہ لوڈ ہونے میں ناکام",
-        conf: "کنفیگریشن پیرامیٹر کی رعایت حاصل کریں۔",
-        network: "غیر معمولی نیٹ ورک کی درخواست",
-        errorTips: "براہ کرم نیٹ ورک کو ریفریش کریں اور دوبارہ کوشش کریں۔",
-        selectPlaceholder: "براہ کرم کلک کریں۔",
-        selectSeqPlaceholder: "براہ کرم ترتیب میں کلک کریں۔",
-        insensitivePlaceholder: "تصدیق مکمل کرنے کے لیے کلک کریں۔",
-        success: "<i class='sm-iconfont iconchenggong1'></i><span>تصدیق کامیاب ہو گئی۔</span>",
-        fail: "<i class='shumei_success_wrong'></i><span>توثیق ناکام ہوگئی، براہ کرم دوبارہ تصدیق کریں۔</span>",
-        invalidParams: "پیرامیٹر غلط ہے۔",
-        htmlNetwork: "نیٹ ورک مضبوط نہیں ہے دوبارہ کوشش کرنے کے لیے کلک کریں۔ "
+        loading: "  \u062A\u0635\u0648\u06CC\u0631 \u0644\u0648\u0688 \u06C1\u0648 \u0631\u06C1\u0627 \u06C1\u06D2",
+        js: "JS-SDK \u0648\u0633\u0627\u0626\u0644 \u06A9\u06CC \u0644\u0648\u0688\u0646\u06AF \u0646\u0627\u06A9\u0627\u0645 \u06C1\u0648 \u06AF\u0626\u06CC\u06D4",
+        css: "CSS \u0631\u06CC\u0633\u0648\u0631\u0633 \u0644\u0648\u0688 \u06C1\u0648\u0646\u06D2 \u0645\u06CC\u06BA \u0646\u0627\u06A9\u0627\u0645",
+        img: "\u062A\u0635\u0648\u06CC\u0631\u06CC \u0648\u0633\u06CC\u0644\u06C1 \u0644\u0648\u0688 \u06C1\u0648\u0646\u06D2 \u0645\u06CC\u06BA \u0646\u0627\u06A9\u0627\u0645",
+        conf: "\u06A9\u0646\u0641\u06CC\u06AF\u0631\u06CC\u0634\u0646 \u067E\u06CC\u0631\u0627\u0645\u06CC\u0679\u0631 \u06A9\u06CC \u0631\u0639\u0627\u06CC\u062A \u062D\u0627\u0635\u0644 \u06A9\u0631\u06CC\u06BA\u06D4",
+        network: "\u063A\u06CC\u0631 \u0645\u0639\u0645\u0648\u0644\u06CC \u0646\u06CC\u0679 \u0648\u0631\u06A9 \u06A9\u06CC \u062F\u0631\u062E\u0648\u0627\u0633\u062A",
+        errorTips: "\u0628\u0631\u0627\u06C1 \u06A9\u0631\u0645 \u0646\u06CC\u0679 \u0648\u0631\u06A9 \u06A9\u0648 \u0631\u06CC\u0641\u0631\u06CC\u0634 \u06A9\u0631\u06CC\u06BA \u0627\u0648\u0631 \u062F\u0648\u0628\u0627\u0631\u06C1 \u06A9\u0648\u0634\u0634 \u06A9\u0631\u06CC\u06BA\u06D4",
+        selectPlaceholder: "\u0628\u0631\u0627\u06C1 \u06A9\u0631\u0645 \u06A9\u0644\u06A9 \u06A9\u0631\u06CC\u06BA\u06D4",
+        selectSeqPlaceholder: "\u0628\u0631\u0627\u06C1 \u06A9\u0631\u0645 \u062A\u0631\u062A\u06CC\u0628 \u0645\u06CC\u06BA \u06A9\u0644\u06A9 \u06A9\u0631\u06CC\u06BA\u06D4",
+        insensitivePlaceholder: "\u062A\u0635\u062F\u06CC\u0642 \u0645\u06A9\u0645\u0644 \u06A9\u0631\u0646\u06D2 \u06A9\u06D2 \u0644\u06CC\u06D2 \u06A9\u0644\u06A9 \u06A9\u0631\u06CC\u06BA\u06D4",
+        success: "<i class='sm-iconfont iconchenggong1'></i><span>\u062A\u0635\u062F\u06CC\u0642 \u06A9\u0627\u0645\u06CC\u0627\u0628 \u06C1\u0648 \u06AF\u0626\u06CC\u06D4</span>",
+        fail: "<i class='shumei_success_wrong'></i><span>\u062A\u0648\u062B\u06CC\u0642 \u0646\u0627\u06A9\u0627\u0645 \u06C1\u0648\u06AF\u0626\u06CC\u060C \u0628\u0631\u0627\u06C1 \u06A9\u0631\u0645 \u062F\u0648\u0628\u0627\u0631\u06C1 \u062A\u0635\u062F\u06CC\u0642 \u06A9\u0631\u06CC\u06BA\u06D4</span>",
+        invalidParams: "\u067E\u06CC\u0631\u0627\u0645\u06CC\u0679\u0631 \u063A\u0644\u0637 \u06C1\u06D2\u06D4",
+        htmlNetwork: "\u0646\u06CC\u0679 \u0648\u0631\u06A9 \u0645\u0636\u0628\u0648\u0637 \u0646\u06C1\u06CC\u06BA \u06C1\u06D2 \u062F\u0648\u0628\u0627\u0631\u06C1 \u06A9\u0648\u0634\u0634 \u06A9\u0631\u0646\u06D2 \u06A9\u06D2 \u0644\u06CC\u06D2 \u06A9\u0644\u06A9 \u06A9\u0631\u06CC\u06BA\u06D4 "
       },
       ru: {
-        loading: "загрузка изображения",
-        js: "Не удалось загрузить ресурсы JS-SDK",
-        css: "Ресурс CSS не удалось загрузить",
-        img: "Ресурс изображения не удалось загрузить",
-        conf: "Получить исключение параметра конфигурации",
-        network: "аномальный сетевой запрос",
-        errorTips: "Пожалуйста, обновите сеть и повторите попытку.",
-        selectPlaceholder: "Пожалуйста, нажмите",
-        selectSeqPlaceholder: "Пожалуйста, нажмите, чтобы заказать",
-        insensitivePlaceholder: "Нажмите, чтобы завершить проверку",
-        success: "<i class='sm-iconfont iconchenggong1'></i><span>Проверка прошла успешно</span>",
-        fail: "<i class='shumei_success_wrong'></i><span>Ошибка аутентификации, повторите аутентификацию</span>",
-        invalidParams: "параметр недействителен",
-        htmlNetwork: "Сеть слабая | Нажмите, чтобы повторить попытку"
+        loading: "\u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0430 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F",
+        js: "\u041D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044C \u0440\u0435\u0441\u0443\u0440\u0441\u044B JS-SDK",
+        css: "\u0420\u0435\u0441\u0443\u0440\u0441 CSS \u043D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044C",
+        img: "\u0420\u0435\u0441\u0443\u0440\u0441 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u043D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044C",
+        conf: "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u0438\u0441\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u0430 \u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438",
+        network: "\u0430\u043D\u043E\u043C\u0430\u043B\u044C\u043D\u044B\u0439 \u0441\u0435\u0442\u0435\u0432\u043E\u0439 \u0437\u0430\u043F\u0440\u043E\u0441",
+        errorTips: "\u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430, \u043E\u0431\u043D\u043E\u0432\u0438\u0442\u0435 \u0441\u0435\u0442\u044C \u0438 \u043F\u043E\u0432\u0442\u043E\u0440\u0438\u0442\u0435 \u043F\u043E\u043F\u044B\u0442\u043A\u0443.",
+        selectPlaceholder: "\u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430, \u043D\u0430\u0436\u043C\u0438\u0442\u0435",
+        selectSeqPlaceholder: "\u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430, \u043D\u0430\u0436\u043C\u0438\u0442\u0435, \u0447\u0442\u043E\u0431\u044B \u0437\u0430\u043A\u0430\u0437\u0430\u0442\u044C",
+        insensitivePlaceholder: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435, \u0447\u0442\u043E\u0431\u044B \u0437\u0430\u0432\u0435\u0440\u0448\u0438\u0442\u044C \u043F\u0440\u043E\u0432\u0435\u0440\u043A\u0443",
+        success: "<i class='sm-iconfont iconchenggong1'></i><span>\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u043F\u0440\u043E\u0448\u043B\u0430 \u0443\u0441\u043F\u0435\u0448\u043D\u043E</span>",
+        fail: "<i class='shumei_success_wrong'></i><span>\u041E\u0448\u0438\u0431\u043A\u0430 \u0430\u0443\u0442\u0435\u043D\u0442\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u0438, \u043F\u043E\u0432\u0442\u043E\u0440\u0438\u0442\u0435 \u0430\u0443\u0442\u0435\u043D\u0442\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u044E</span>",
+        invalidParams: "\u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440 \u043D\u0435\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u0435\u043D",
+        htmlNetwork: "\u0421\u0435\u0442\u044C \u0441\u043B\u0430\u0431\u0430\u044F | \u041D\u0430\u0436\u043C\u0438\u0442\u0435, \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u0432\u0442\u043E\u0440\u0438\u0442\u044C \u043F\u043E\u043F\u044B\u0442\u043A\u0443"
       },
       sv: {
         loading: "bild laddas",
         js: "JS-SDK resursladdning misslyckades",
         css: "Det gick inte att ladda CSS-resursen",
         img: "Det gick inte att ladda bildresursen",
-        conf: "Hämta undantag för konfigurationsparameter",
-        network: "onormal nätverksbegäran",
-        errorTips: "Det aktuella nätverket är inte bra. Uppdatera och försök igen",
+        conf: "H\xE4mta undantag f\xF6r konfigurationsparameter",
+        network: "onormal n\xE4tverksbeg\xE4ran",
+        errorTips: "Det aktuella n\xE4tverket \xE4r inte bra. Uppdatera och f\xF6rs\xF6k igen",
         selectPlaceholder: "var god klicka",
-        selectSeqPlaceholder: "Vänligen klicka i ordning",
-        insensitivePlaceholder: "Klicka för att slutföra verifieringen",
+        selectSeqPlaceholder: "V\xE4nligen klicka i ordning",
+        insensitivePlaceholder: "Klicka f\xF6r att slutf\xF6ra verifieringen",
         success: "<i class='sm-iconfont iconchenggong1'></i><span>Verifieringen lyckades</span>",
-        fail: "<i class='shumei_success_wrong'></i><span>Autentiseringen misslyckades, vänligen autentisera igen</span>",
-        invalidParams: "parametern är ogiltig",
-        htmlNetwork: "Nätverket är inte starkt | Klicka för att försöka igen"
+        fail: "<i class='shumei_success_wrong'></i><span>Autentiseringen misslyckades, v\xE4nligen autentisera igen</span>",
+        invalidParams: "parametern \xE4r ogiltig",
+        htmlNetwork: "N\xE4tverket \xE4r inte starkt | Klicka f\xF6r att f\xF6rs\xF6ka igen"
       },
       tr: {
-        loading: "resim yükleme",
-        js: "JS-SDK kaynak yüklemesi başarısız oldu",
-        css: "CSS kaynağı yüklenemedi",
-        img: "Resim kaynağı yüklenemedi",
-        conf: "Yapılandırma parametresi istisnasını al",
-        network: "anormal ağ isteği",
-        errorTips: "Mevcut ağ iyi değil, lütfen yenileyin ve tekrar deneyin",
-        selectPlaceholder: "lütfen tıklayın",
-        selectSeqPlaceholder: "Lütfen sırayla tıklayın",
-        insensitivePlaceholder: "Doğrulamayı tamamlamak için tıklayın",
-        success: "<i class='sm-iconfont iconchenggong1'></i><span>Doğrulama başarılı</span>",
-        fail: "<i class='shumei_success_wrong'></i><span>Doğrulama başarısız. Lütfen tekrar deneyiniz</span>",
-        invalidParams: "parametre geçersiz",
-        htmlNetwork: "Ağ güçlü değil | Tekrar denemek için tıklayın"
+        loading: "resim y\xFCkleme",
+        js: "JS-SDK kaynak y\xFCklemesi ba\u015Far\u0131s\u0131z oldu",
+        css: "CSS kayna\u011F\u0131 y\xFCklenemedi",
+        img: "Resim kayna\u011F\u0131 y\xFCklenemedi",
+        conf: "Yap\u0131land\u0131rma parametresi istisnas\u0131n\u0131 al",
+        network: "anormal a\u011F iste\u011Fi",
+        errorTips: "Mevcut a\u011F iyi de\u011Fil, l\xFCtfen yenileyin ve tekrar deneyin",
+        selectPlaceholder: "l\xFCtfen t\u0131klay\u0131n",
+        selectSeqPlaceholder: "L\xFCtfen s\u0131rayla t\u0131klay\u0131n",
+        insensitivePlaceholder: "Do\u011Frulamay\u0131 tamamlamak i\xE7in t\u0131klay\u0131n",
+        success: "<i class='sm-iconfont iconchenggong1'></i><span>Do\u011Frulama ba\u015Far\u0131l\u0131</span>",
+        fail: "<i class='shumei_success_wrong'></i><span>Do\u011Frulama ba\u015Far\u0131s\u0131z. L\xFCtfen tekrar deneyiniz</span>",
+        invalidParams: "parametre ge\xE7ersiz",
+        htmlNetwork: "A\u011F g\xFC\xE7l\xFC de\u011Fil | Tekrar denemek i\xE7in t\u0131klay\u0131n"
       },
       ar: {
-        loading: "تحميل الصورة",
-        js: "فشل تحميل JavaScript",
-        css: "فشل تحميل CSS",
-        img: "فشل تحميل الصورة",
-        conf: "فشل تحميل الإعدادات",
-        network: "خطأ في الشبكة",
-        errorTips: "خطأ في الشبكة، يرجى المحاولة مرة أخرى",
-        selectPlaceholder: "يرجى الضغط بالترتيب",
-        selectSeqPlaceholder: "اضغط للتحقق",
-        insensitivePlaceholder: "Doğrulamayı tamamlamak için tıklayın",
-        success: "<iclass=sm-iconfonticonchenggong1></i><span>تم بنجاح</span>",
-        fail: "<iclass=shumei_success_wrong></i><span>فشل</span>",
-        invalidParams: "خطأ في البارامز",
-        htmlNetwork: "خطأ في الشبكة، يرجى المحاولة مرة أخرى"
+        loading: "\u062A\u062D\u0645\u064A\u0644 \u0627\u0644\u0635\u0648\u0631\u0629",
+        js: "\u0641\u0634\u0644 \u062A\u062D\u0645\u064A\u0644 JavaScript",
+        css: "\u0641\u0634\u0644 \u062A\u062D\u0645\u064A\u0644 CSS",
+        img: "\u0641\u0634\u0644 \u062A\u062D\u0645\u064A\u0644 \u0627\u0644\u0635\u0648\u0631\u0629",
+        conf: "\u0641\u0634\u0644 \u062A\u062D\u0645\u064A\u0644 \u0627\u0644\u0625\u0639\u062F\u0627\u062F\u0627\u062A",
+        network: "\u062E\u0637\u0623 \u0641\u064A \u0627\u0644\u0634\u0628\u0643\u0629",
+        errorTips: "\u062E\u0637\u0623 \u0641\u064A \u0627\u0644\u0634\u0628\u0643\u0629\u060C \u064A\u0631\u062C\u0649 \u0627\u0644\u0645\u062D\u0627\u0648\u0644\u0629 \u0645\u0631\u0629 \u0623\u062E\u0631\u0649",
+        selectPlaceholder: "\u064A\u0631\u062C\u0649 \u0627\u0644\u0636\u063A\u0637 \u0628\u0627\u0644\u062A\u0631\u062A\u064A\u0628",
+        selectSeqPlaceholder: "\u0627\u0636\u063A\u0637 \u0644\u0644\u062A\u062D\u0642\u0642",
+        insensitivePlaceholder: "Do\u011Frulamay\u0131 tamamlamak i\xE7in t\u0131klay\u0131n",
+        success: "<iclass=sm-iconfonticonchenggong1></i><span>\u062A\u0645 \u0628\u0646\u062C\u0627\u062D</span>",
+        fail: "<iclass=shumei_success_wrong></i><span>\u0641\u0634\u0644</span>",
+        invalidParams: "\u062E\u0637\u0623 \u0641\u064A \u0627\u0644\u0628\u0627\u0631\u0627\u0645\u0632",
+        htmlNetwork: "\u062E\u0637\u0623 \u0641\u064A \u0627\u0644\u0634\u0628\u0643\u0629\u060C \u064A\u0631\u062C\u0649 \u0627\u0644\u0645\u062D\u0627\u0648\u0644\u0629 \u0645\u0631\u0629 \u0623\u062E\u0631\u0649"
       },
       "zh-tw": {
-        loading: "圖片加載中",
-        js: "JS-SDK資源加載失敗",
-        css: "CSS資源加載失敗",
-        img: "圖片資源加載失敗",
-        conf: "獲取配置參數異常",
-        network: "網絡請求異常",
-        errorTips: "當前網絡不佳, 請刷新重試",
-        selectPlaceholder: "請依次點擊",
-        selectSeqPlaceholder: "請按順序點擊",
-        insensitivePlaceholder: "點擊完成驗證",
-        success: "<i class='sm-iconfont iconchenggong1'></i><span>驗證成功</span>",
-        fail: "<i class='shumei_success_wrong'></i><span>驗證失敗,請重新驗證</span>",
-        invalidParams: "參數不合法",
-        htmlNetwork: "網絡不給力|點擊重試"
+        loading: "\u5716\u7247\u52A0\u8F09\u4E2D",
+        js: "JS-SDK\u8CC7\u6E90\u52A0\u8F09\u5931\u6557",
+        css: "CSS\u8CC7\u6E90\u52A0\u8F09\u5931\u6557",
+        img: "\u5716\u7247\u8CC7\u6E90\u52A0\u8F09\u5931\u6557",
+        conf: "\u7372\u53D6\u914D\u7F6E\u53C3\u6578\u7570\u5E38",
+        network: "\u7DB2\u7D61\u8ACB\u6C42\u7570\u5E38",
+        errorTips: "\u7576\u524D\u7DB2\u7D61\u4E0D\u4F73, \u8ACB\u5237\u65B0\u91CD\u8A66",
+        selectPlaceholder: "\u8ACB\u4F9D\u6B21\u9EDE\u64CA",
+        selectSeqPlaceholder: "\u8ACB\u6309\u9806\u5E8F\u9EDE\u64CA",
+        insensitivePlaceholder: "\u9EDE\u64CA\u5B8C\u6210\u9A57\u8B49",
+        success: "<i class='sm-iconfont iconchenggong1'></i><span>\u9A57\u8B49\u6210\u529F</span>",
+        fail: "<i class='shumei_success_wrong'></i><span>\u9A57\u8B49\u5931\u6557,\u8ACB\u91CD\u65B0\u9A57\u8B49</span>",
+        invalidParams: "\u53C3\u6578\u4E0D\u5408\u6CD5",
+        htmlNetwork: "\u7DB2\u7D61\u4E0D\u7D66\u529B|\u9EDE\u64CA\u91CD\u8A66"
       },
       "zh-hk": {
-        loading: "圖片加載中...",
-        js: "JS-SDK資源加載失敗",
-        css: "CSS資源加載失敗",
-        img: "圖片資源加載失敗",
-        conf: "獲取配置參數異常",
-        network: "網絡請求異常",
-        errorTips: "當前網絡不佳, 請刷新重試",
-        selectPlaceholder: "請依次點擊",
-        selectSeqPlaceholder: "請按成語順序點擊",
-        insensitivePlaceholder: "點擊完成驗證",
-        success: "<i class='sm-iconfont iconchenggong1'></i><span>驗證成功</span>",
-        fail: "<i class='shumei_success_wrong'></i><span>驗證失敗,請重新驗證</span>",
-        invalidParams: "參數不合法",
-        htmlNetwork: "網絡不給力|點擊重試"
+        loading: "\u5716\u7247\u52A0\u8F09\u4E2D...",
+        js: "JS-SDK\u8CC7\u6E90\u52A0\u8F09\u5931\u6557",
+        css: "CSS\u8CC7\u6E90\u52A0\u8F09\u5931\u6557",
+        img: "\u5716\u7247\u8CC7\u6E90\u52A0\u8F09\u5931\u6557",
+        conf: "\u7372\u53D6\u914D\u7F6E\u53C3\u6578\u7570\u5E38",
+        network: "\u7DB2\u7D61\u8ACB\u6C42\u7570\u5E38",
+        errorTips: "\u7576\u524D\u7DB2\u7D61\u4E0D\u4F73, \u8ACB\u5237\u65B0\u91CD\u8A66",
+        selectPlaceholder: "\u8ACB\u4F9D\u6B21\u9EDE\u64CA",
+        selectSeqPlaceholder: "\u8ACB\u6309\u6210\u8A9E\u9806\u5E8F\u9EDE\u64CA",
+        insensitivePlaceholder: "\u9EDE\u64CA\u5B8C\u6210\u9A57\u8B49",
+        success: "<i class='sm-iconfont iconchenggong1'></i><span>\u9A57\u8B49\u6210\u529F</span>",
+        fail: "<i class='shumei_success_wrong'></i><span>\u9A57\u8B49\u5931\u6557,\u8ACB\u91CD\u65B0\u9A57\u8B49</span>",
+        invalidParams: "\u53C3\u6578\u4E0D\u5408\u6CD5",
+        htmlNetwork: "\u7DB2\u7D61\u4E0D\u7D66\u529B|\u9EDE\u64CA\u91CD\u8A66"
       }
     };
   }, {}],
@@ -5678,7 +5681,7 @@
           this._captcha.updateAnswerHtml();
           return this;
         } catch (_0x528b3c) {
-          _0x2114f1.default.logError(_0xbb068c, "重置失败");
+          _0x2114f1.default.logError(_0xbb068c, "\u91CD\u7F6E\u5931\u8D25");
         }
       };
       _0x511cf9.prototype.disableCaptcha = function _0x1d406f() {
@@ -5693,7 +5696,7 @@
           this._captcha._config.disabled = true;
           return this;
         } catch (_0x2515ef) {
-          _0x2114f1.default.logError(_0xbb068c, "禁用验证码失败");
+          _0x2114f1.default.logError(_0xbb068c, "\u7981\u7528\u9A8C\u8BC1\u7801\u5931\u8D25");
         }
       };
       _0x511cf9.prototype.enableCaptcha = function _0x2332be() {
@@ -5708,7 +5711,7 @@
           this._captcha._config.disabled = false;
           return this;
         } catch (_0x4ccf68) {
-          _0x2114f1.default.logError(_0xbb068c, "启用验证码失败");
+          _0x2114f1.default.logError(_0xbb068c, "\u542F\u7528\u9A8C\u8BC1\u7801\u5931\u8D25");
         }
       };
       _0x511cf9.prototype.verify = function _0x540e2a() {
@@ -5720,7 +5723,7 @@
           this._captcha.changePannelStatus("show");
           return this;
         } catch (_0x53d85e) {
-          _0x2114f1.default.logError(_0xbb068c, "弹出层式验证码初始化失败");
+          _0x2114f1.default.logError(_0xbb068c, "\u5F39\u51FA\u5C42\u5F0F\u9A8C\u8BC1\u7801\u521D\u59CB\u5316\u5931\u8D25");
         }
       };
       _0x511cf9.prototype.onReady = function _0x2052c8(_0x23e756) {
