@@ -1,174 +1,256 @@
-//Wed Oct 30 2024 09:44:07 GMT+0000 (Coordinated Universal Time)
+//Fri Nov 01 2024 01:39:36 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-Array.prototype.unique3 = function () {
-  var _0x53dbf9 = [],
-    _0x1e49c3 = {};
-  for (var _0x30f758 = 0; _0x30f758 < this.length; _0x30f758++) {
-    if (!_0x1e49c3[this[_0x30f758]]) {
-      _0x53dbf9.push(this[_0x30f758]);
-      _0x1e49c3[this[_0x30f758]] = true;
-    }
+function en(_0x14e586) {
+  for (var _0x286090 = "", _0xd4a30e = "0123456789", _0x31de21 = _0xd4a30e.length, _0x25c148 = 0; _0x25c148 < _0x14e586; _0x25c148++) {
+    _0x286090 += _0xd4a30e.charAt(Math.floor(Math.random() * _0x31de21));
   }
-  return _0x53dbf9;
-};
-Array.prototype.remove = function (_0x477826) {
-  var _0x49e088 = this.indexOf(_0x477826);
-  _0x49e088 > -1 && this.splice(_0x49e088, 1);
-};
-var shengxiaoV = function (_0x4352d9) {
-    var _0xae36ab = _0x4352d9.split(","),
-      _0x35cc2f = _0xae36ab[6],
-      _0x49f4e1 = _0xae36ab.unique3();
-    _0x49f4e1.remove(_0x35cc2f);
-    var _0x2ef4df = _0x49f4e1[0] + "-" + _0x49f4e1[1] + "-" + _0x35cc2f;
-    return _0x2ef4df;
+  return _0x286090;
+}
+function on(_0x4d99cb) {
+  return _0x4d99cb ? (2 * Math.floor(5 * Math.random()) + 1).toString() + en(15) : (2 * Math.floor(5 * Math.random())).toString() + en(15);
+}
+var V = {
+  _x64Add: function (_0x234eeb, _0x3f838b) {
+    _0x234eeb = [_0x234eeb[0] >>> 16, 65535 & _0x234eeb[0], _0x234eeb[1] >>> 16, 65535 & _0x234eeb[1]];
+    _0x3f838b = [_0x3f838b[0] >>> 16, 65535 & _0x3f838b[0], _0x3f838b[1] >>> 16, 65535 & _0x3f838b[1]];
+    var _0x4432f1 = [0, 0, 0, 0];
+    _0x4432f1[3] += _0x234eeb[3] + _0x3f838b[3];
+    _0x4432f1[2] += _0x4432f1[3] >>> 16;
+    _0x4432f1[3] &= 65535;
+    _0x4432f1[2] += _0x234eeb[2] + _0x3f838b[2];
+    _0x4432f1[1] += _0x4432f1[2] >>> 16;
+    _0x4432f1[2] &= 65535;
+    _0x4432f1[1] += _0x234eeb[1] + _0x3f838b[1];
+    _0x4432f1[0] += _0x4432f1[1] >>> 16;
+    _0x4432f1[1] &= 65535;
+    _0x4432f1[0] += _0x234eeb[0] + _0x3f838b[0];
+    _0x4432f1[0] &= 65535;
+    return [_0x4432f1[0] << 16 | _0x4432f1[1], _0x4432f1[2] << 16 | _0x4432f1[3]];
   },
-  danshuang = function (_0x29b4fd) {
-    if (_0x29b4fd % 2 == 1) return "单";else {
-      return "双";
+  _x64Multiply: function (_0x402e33, _0x27cb7c) {
+    _0x402e33 = [_0x402e33[0] >>> 16, 65535 & _0x402e33[0], _0x402e33[1] >>> 16, 65535 & _0x402e33[1]];
+    _0x27cb7c = [_0x27cb7c[0] >>> 16, 65535 & _0x27cb7c[0], _0x27cb7c[1] >>> 16, 65535 & _0x27cb7c[1]];
+    var _0x1edbea = [0, 0, 0, 0];
+    _0x1edbea[3] += _0x402e33[3] * _0x27cb7c[3];
+    _0x1edbea[2] += _0x1edbea[3] >>> 16;
+    _0x1edbea[3] &= 65535;
+    _0x1edbea[2] += _0x402e33[2] * _0x27cb7c[3];
+    _0x1edbea[1] += _0x1edbea[2] >>> 16;
+    _0x1edbea[2] &= 65535;
+    _0x1edbea[2] += _0x402e33[3] * _0x27cb7c[2];
+    _0x1edbea[1] += _0x1edbea[2] >>> 16;
+    _0x1edbea[2] &= 65535;
+    _0x1edbea[1] += _0x402e33[1] * _0x27cb7c[3];
+    _0x1edbea[0] += _0x1edbea[1] >>> 16;
+    _0x1edbea[1] &= 65535;
+    _0x1edbea[1] += _0x402e33[2] * _0x27cb7c[2];
+    _0x1edbea[0] += _0x1edbea[1] >>> 16;
+    _0x1edbea[1] &= 65535;
+    _0x1edbea[1] += _0x402e33[3] * _0x27cb7c[1];
+    _0x1edbea[0] += _0x1edbea[1] >>> 16;
+    _0x1edbea[1] &= 65535;
+    _0x1edbea[0] += _0x402e33[0] * _0x27cb7c[3] + _0x402e33[1] * _0x27cb7c[2] + _0x402e33[2] * _0x27cb7c[1] + _0x402e33[3] * _0x27cb7c[0];
+    _0x1edbea[0] &= 65535;
+    return [_0x1edbea[0] << 16 | _0x1edbea[1], _0x1edbea[2] << 16 | _0x1edbea[3]];
+  },
+  _x64Rotl: function (_0x22bb11, _0x21aa33) {
+    return 32 == (_0x21aa33 %= 64) ? [_0x22bb11[1], _0x22bb11[0]] : _0x21aa33 < 32 ? [_0x22bb11[0] << _0x21aa33 | _0x22bb11[1] >>> 32 - _0x21aa33, _0x22bb11[1] << _0x21aa33 | _0x22bb11[0] >>> 32 - _0x21aa33] : (_0x21aa33 -= 32, [_0x22bb11[1] << _0x21aa33 | _0x22bb11[0] >>> 32 - _0x21aa33, _0x22bb11[0] << _0x21aa33 | _0x22bb11[1] >>> 32 - _0x21aa33]);
+  },
+  _x64LeftShift: function (_0x11c863, _0x513b9d) {
+    return 0 == (_0x513b9d %= 64) ? _0x11c863 : _0x513b9d < 32 ? [_0x11c863[0] << _0x513b9d | _0x11c863[1] >>> 32 - _0x513b9d, _0x11c863[1] << _0x513b9d] : [_0x11c863[1] << _0x513b9d - 32, 0];
+  },
+  _x64Xor: function (_0x2d6c60, _0x17fa26) {
+    return [_0x2d6c60[0] ^ _0x17fa26[0], _0x2d6c60[1] ^ _0x17fa26[1]];
+  },
+  _x64Fmix: function (_0x416673) {
+    _0x416673 = this._x64Xor(_0x416673, [0, _0x416673[0] >>> 1]);
+    _0x416673 = this._x64Multiply(_0x416673, [4283543511, 3981806797]);
+    _0x416673 = this._x64Xor(_0x416673, [0, _0x416673[0] >>> 1]);
+    _0x416673 = this._x64Multiply(_0x416673, [3301882366, 444984403]);
+    return this._x64Xor(_0x416673, [0, _0x416673[0] >>> 1]);
+  },
+  hash128: function (_0x6a6192, _0x4609b4) {
+    _0x4609b4 = _0x4609b4 || 0;
+    for (var _0x23f65a = (_0x6a6192 = _0x6a6192 || "").length % 16, _0x33a5b1 = _0x6a6192.length - _0x23f65a, _0x27c3fb = [0, _0x4609b4], _0x316c69 = [0, _0x4609b4], _0xcedd07 = [0, 0], _0x2ac3fa = [0, 0], _0x49e2df = [2277735313, 289559509], _0x214fe0 = [1291169091, 658871167], _0x3cecc8 = 0; _0x3cecc8 < _0x33a5b1; _0x3cecc8 += 16) {
+      _0xcedd07 = [255 & _0x6a6192.charCodeAt(_0x3cecc8 + 4) | (255 & _0x6a6192.charCodeAt(_0x3cecc8 + 5)) << 8 | (255 & _0x6a6192.charCodeAt(_0x3cecc8 + 6)) << 16 | (255 & _0x6a6192.charCodeAt(_0x3cecc8 + 7)) << 24, 255 & _0x6a6192.charCodeAt(_0x3cecc8) | (255 & _0x6a6192.charCodeAt(_0x3cecc8 + 1)) << 8 | (255 & _0x6a6192.charCodeAt(_0x3cecc8 + 2)) << 16 | (255 & _0x6a6192.charCodeAt(_0x3cecc8 + 3)) << 24];
+      _0x2ac3fa = [255 & _0x6a6192.charCodeAt(_0x3cecc8 + 12) | (255 & _0x6a6192.charCodeAt(_0x3cecc8 + 13)) << 8 | (255 & _0x6a6192.charCodeAt(_0x3cecc8 + 14)) << 16 | (255 & _0x6a6192.charCodeAt(_0x3cecc8 + 15)) << 24, 255 & _0x6a6192.charCodeAt(_0x3cecc8 + 8) | (255 & _0x6a6192.charCodeAt(_0x3cecc8 + 9)) << 8 | (255 & _0x6a6192.charCodeAt(_0x3cecc8 + 10)) << 16 | (255 & _0x6a6192.charCodeAt(_0x3cecc8 + 11)) << 24];
+      _0xcedd07 = this._x64Multiply(_0xcedd07, _0x49e2df);
+      _0xcedd07 = this._x64Rotl(_0xcedd07, 31);
+      _0xcedd07 = this._x64Multiply(_0xcedd07, _0x214fe0);
+      _0x27c3fb = this._x64Xor(_0x27c3fb, _0xcedd07);
+      _0x27c3fb = this._x64Rotl(_0x27c3fb, 27);
+      _0x27c3fb = this._x64Add(_0x27c3fb, _0x316c69);
+      _0x27c3fb = this._x64Add(this._x64Multiply(_0x27c3fb, [0, 5]), [0, 1390208809]);
+      _0x2ac3fa = this._x64Multiply(_0x2ac3fa, _0x214fe0);
+      _0x2ac3fa = this._x64Rotl(_0x2ac3fa, 33);
+      _0x2ac3fa = this._x64Multiply(_0x2ac3fa, _0x49e2df);
+      _0x316c69 = this._x64Xor(_0x316c69, _0x2ac3fa);
+      _0x316c69 = this._x64Rotl(_0x316c69, 31);
+      _0x316c69 = this._x64Add(_0x316c69, _0x27c3fb);
+      _0x316c69 = this._x64Add(this._x64Multiply(_0x316c69, [0, 5]), [0, 944331445]);
     }
-  },
-  daxiao = function (_0x10f50a) {
-    if (_0x10f50a < 25) {
-      return "小";
+    switch (_0xcedd07 = [0, 0], _0x2ac3fa = [0, 0], _0x23f65a) {
+      case 15:
+        _0x2ac3fa = this._x64Xor(_0x2ac3fa, this._x64LeftShift([0, _0x6a6192.charCodeAt(_0x3cecc8 + 14)], 48));
+      case 14:
+        _0x2ac3fa = this._x64Xor(_0x2ac3fa, this._x64LeftShift([0, _0x6a6192.charCodeAt(_0x3cecc8 + 13)], 40));
+      case 13:
+        _0x2ac3fa = this._x64Xor(_0x2ac3fa, this._x64LeftShift([0, _0x6a6192.charCodeAt(_0x3cecc8 + 12)], 32));
+      case 12:
+        _0x2ac3fa = this._x64Xor(_0x2ac3fa, this._x64LeftShift([0, _0x6a6192.charCodeAt(_0x3cecc8 + 11)], 24));
+      case 11:
+        _0x2ac3fa = this._x64Xor(_0x2ac3fa, this._x64LeftShift([0, _0x6a6192.charCodeAt(_0x3cecc8 + 10)], 16));
+      case 10:
+        _0x2ac3fa = this._x64Xor(_0x2ac3fa, this._x64LeftShift([0, _0x6a6192.charCodeAt(_0x3cecc8 + 9)], 8));
+      case 9:
+        _0x2ac3fa = this._x64Xor(_0x2ac3fa, [0, _0x6a6192.charCodeAt(_0x3cecc8 + 8)]);
+        _0x2ac3fa = this._x64Multiply(_0x2ac3fa, _0x214fe0);
+        _0x2ac3fa = this._x64Rotl(_0x2ac3fa, 33);
+        _0x2ac3fa = this._x64Multiply(_0x2ac3fa, _0x49e2df);
+        _0x316c69 = this._x64Xor(_0x316c69, _0x2ac3fa);
+      case 8:
+        _0xcedd07 = this._x64Xor(_0xcedd07, this._x64LeftShift([0, _0x6a6192.charCodeAt(_0x3cecc8 + 7)], 56));
+      case 7:
+        _0xcedd07 = this._x64Xor(_0xcedd07, this._x64LeftShift([0, _0x6a6192.charCodeAt(_0x3cecc8 + 6)], 48));
+      case 6:
+        _0xcedd07 = this._x64Xor(_0xcedd07, this._x64LeftShift([0, _0x6a6192.charCodeAt(_0x3cecc8 + 5)], 40));
+      case 5:
+        _0xcedd07 = this._x64Xor(_0xcedd07, this._x64LeftShift([0, _0x6a6192.charCodeAt(_0x3cecc8 + 4)], 32));
+      case 4:
+        _0xcedd07 = this._x64Xor(_0xcedd07, this._x64LeftShift([0, _0x6a6192.charCodeAt(_0x3cecc8 + 3)], 24));
+      case 3:
+        _0xcedd07 = this._x64Xor(_0xcedd07, this._x64LeftShift([0, _0x6a6192.charCodeAt(_0x3cecc8 + 2)], 16));
+      case 2:
+        _0xcedd07 = this._x64Xor(_0xcedd07, this._x64LeftShift([0, _0x6a6192.charCodeAt(_0x3cecc8 + 1)], 8));
+      case 1:
+        _0xcedd07 = this._x64Xor(_0xcedd07, [0, _0x6a6192.charCodeAt(_0x3cecc8)]);
+        _0xcedd07 = this._x64Multiply(_0xcedd07, _0x49e2df);
+        _0xcedd07 = this._x64Rotl(_0xcedd07, 31);
+        _0xcedd07 = this._x64Multiply(_0xcedd07, _0x214fe0);
+        _0x27c3fb = this._x64Xor(_0x27c3fb, _0xcedd07);
+    }
+    _0x27c3fb = this._x64Xor(_0x27c3fb, [0, _0x6a6192.length]);
+    _0x316c69 = this._x64Xor(_0x316c69, [0, _0x6a6192.length]);
+    _0x27c3fb = this._x64Add(_0x27c3fb, _0x316c69);
+    _0x316c69 = this._x64Add(_0x316c69, _0x27c3fb);
+    _0x27c3fb = this._x64Fmix(_0x27c3fb);
+    _0x316c69 = this._x64Fmix(_0x316c69);
+    _0x27c3fb = this._x64Add(_0x27c3fb, _0x316c69);
+    _0x316c69 = this._x64Add(_0x316c69, _0x27c3fb);
+    return ("00000000" + (_0x27c3fb[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (_0x27c3fb[1] >>> 0).toString(16)).slice(-8) + ("00000000" + (_0x316c69[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (_0x316c69[1] >>> 0).toString(16)).slice(-8);
+  }
+};
+function nn(_0x7f6ae3, _0x27509b) {
+  var _0x3c9553 = "",
+    _0x16f5b9 = 0;
+  for (_0x16f5b9 = 0; _0x16f5b9 < _0x7f6ae3.length; _0x16f5b9++) {
+    var _0x54cc13 = _0x7f6ae3.charAt(_0x16f5b9);
+    _0x3c9553 += _0x27509b.charAt("0123456789-".indexOf(_0x54cc13));
+  }
+  return _0x3c9553;
+}
+function _typeof(_0x2b94db) {
+  return _0x2b94db && "function" == typeof Symbol && _0x2b94db.constructor === Symbol && _0x2b94db !== Symbol.prototype ? "symbol" : typeof _0x2b94db;
+}
+function rn() {
+  var _0x848934,
+    _0x92fc19 = new Date().getTime();
+  try {
+    _0x848934 = performance && performance.now && 1000 * performance.now() || 0;
+  } catch (_0x4a06bb) {
+    _0x848934 = new Date().getTime().toString().slice(-9);
+  }
+  return "xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx".replace(/[xy]/g, function (_0x178df4) {
+    var _0x48576e = 16 * Math.random();
+    0 < _0x92fc19 ? (_0x48576e = (_0x92fc19 + _0x48576e) % 16 | 0, _0x92fc19 = Math.floor(_0x92fc19 / 16)) : (_0x48576e = (_0x848934 + _0x48576e) % 16 | 0, _0x848934 = Math.floor(_0x848934 / 16));
+    return ("x" === _0x178df4 ? _0x48576e : 3 & _0x48576e | 8).toString(16);
+  });
+}
+var kn = {};
+function sign(_0x3b67a6, _0x908df5) {
+  null !== _0x908df5 && "" !== _0x908df5 || (_0x908df5 = rn());
+  var _0x5f106e;
+  if (_0x3b67a6.query && "object" === Rn(_0x3b67a6.query) || _0x3b67a6.body && "string" === _typeof(_0x3b67a6.body)) {
+    var _0x589e22 = "";
+    if (_0x3b67a6.body) {
+      _0x589e22 = _0x3b67a6.body;
     } else {
-      return "大";
+      for (var _0x1a9bad = Object.keys(_0x3b67a6.query).sort(), _0x2bb3c9 = {}, _0x540384 = 0; _0x540384 < _0x1a9bad.length; _0x540384++) {
+        if ("string" !== n(_0x3b67a6.query[_0x1a9bad[_0x540384]]) && null !== _0x3b67a6.query[_0x1a9bad[_0x540384]]) {
+          return {
+            code: 2002,
+            msg: "query的value值含有非字符串类型"
+          };
+        }
+        _0x2bb3c9[_0x1a9bad[_0x540384]] = null === _0x3b67a6.query[_0x1a9bad[_0x540384]] ? "" : _0x3b67a6.query[_0x1a9bad[_0x540384]];
+      }
+      _0x5f106e = _0x2bb3c9;
+      _0x589e22 = Object.entries(_0x5f106e).map(function (_0x3fb64e) {
+        var _0x45bbae = U(_0x3fb64e, 2);
+        return "" + _0x45bbae[0] + _0x45bbae[1];
+      }).join("");
     }
-  };
-function removeValues(_0x3bcd80, _0x3e4336) {
-  var _0x4a0a20 = new Array();
-  for (var _0x4d1011 of _0x3bcd80) {
-    !_0x3e4336.includes(_0x4d1011) && _0x4a0a20.push(_0x4d1011);
+    _0x3b67a6.path in kn ? kn[_0x3b67a6.path] += 1 : kn[_0x3b67a6.path] = 1;
+    var _0x12ca67 = function (_0x25dc5a) {
+      var _0x458f6c;
+      _0x458f6c = 254 < _0x25dc5a ? "ff" : 2 === _0x25dc5a.toString(16).length ? _0x25dc5a.toString(16) : "0" + _0x25dc5a.toString(16);
+      var _0x1a990e = new Date().getTime().toString().slice(-10),
+        _0x40c599 = nn(_0x1a990e, "wtuosgjkxbm"),
+        _0x44adb8 = Math.floor(90 * Math.random()) + 10,
+        _0x44cf81 = 1 + (((Number(_0x44adb8) + Number(_0x1a990e)) % 256).toString() + _0x44adb8.toString() + _0x1a990e).slice(0, 10) + _0x458f6c + _0x44adb8,
+        _0x1a91f2 = V.hash128(_0x44cf81).slice(8, 16);
+      return _0x458f6c + 1 .toString(16) + _0x44adb8 + _0x40c599 + _0x1a91f2;
+    }(kn[_0x3b67a6.path]);
+    if (23 !== _0x12ca67.length) {
+      return {
+        code: 2003,
+        msg: "ts不符合规范"
+      };
+    }
+    var _0x170f5b = encodeURIComponent(_0x589e22 + _0x12ca67).replace(/%20/g, "+").replace(/!/g, "%21").replace(/'/g, "%27").replace(/\(/g, "%28").replace(/\)/g, "%29").replace(/~/g, "%7E");
+    if (w = V.hash128(_0x170f5b) + _0x908df5, 64 !== w.length) {
+      return {
+        code: 2004,
+        msg: "sign1不符合规范"
+      };
+    }
+    temp = on(!1);
+    var _0x4c90ec = V.hash128(w + _0x3b67a6.path).slice(-16) + temp,
+      _0x5f1c06 = V.hash128(_0x908df5 + "4").slice(-16) + _0x4c90ec;
+    if (48 !== _0x5f1c06.length) {
+      return {
+        code: 2005,
+        msg: "sign2不符合规范"
+      };
+    }
+    var _0x4a3980 = V.hash128(_0x5f1c06);
+    if (32 !== _0x4a3980.length) {
+      return {
+        code: 2006,
+        msg: "sign3不符合规范"
+      };
+    }
+    var _0x17a66f = "m" + w + _0x12ca67 + _0x5f1c06 + _0x4a3980;
+    return 168 !== _0x17a66f.length ? {
+      code: 2008,
+      msg: "finalSign不符合规范"
+    } : {
+      code: 0,
+      sign: _0x17a66f,
+      cid: _0x908df5
+    };
   }
-  return _0x4a0a20;
-}
-function getRandomArrayItems(_0x56d356, _0x49756e) {
-  var _0x160ef7 = _0x56d356,
-    _0x39fa38 = new Array();
-  for (var _0x4672c6 = 0; _0x4672c6 < _0x49756e; ++_0x4672c6) {
-    var _0x409a09 = Math.floor(Math.random() * _0x160ef7.length);
-    if (_0x39fa38.includes(_0x160ef7[_0x409a09])) {
-      continue;
-    }
-    _0x39fa38.push(_0x160ef7[_0x409a09]);
-    _0x160ef7.splice(_0x409a09, 1);
-  }
-  return _0x39fa38;
-}
-var maN = function (_0x1ae9ce, _0x41e97c) {
-    var _0x37f44c = _0x1ae9ce.num.split(",");
-    var _0x201a2a = removeValues(_0x37f44c, _0x37f44c[6]);
-    var _0x28b30d = getRandomArrayItems(_0x201a2a, _0x41e97c);
-    var _0xc8ecbc = "";
-    for (var _0x1d5ea9 = 0; _0x1d5ea9 < _0x41e97c; _0x1d5ea9++) {
-      _0xc8ecbc += _0x28b30d[_0x1d5ea9] + ",";
-    }
-    _0xc8ecbc += _0x37f44c[6];
-    return _0xc8ecbc;
-  },
-  weiN = function (_0x22a96b, _0x40d5f1) {
-    var _0x4d7fcc = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
-      _0x2e0038 = _0x22a96b.num.split(","),
-      _0x5d8a95 = getWei(_0x2e0038[6]),
-      _0x18480d = removeValues(_0x4d7fcc, _0x5d8a95),
-      _0x2e68c6 = getRandomArrayItems(_0x18480d, _0x40d5f1),
-      _0x49db6e = "";
-    for (var _0x1cfa14 = 0; _0x1cfa14 < _0x40d5f1; _0x1cfa14++) {
-      _0x49db6e += _0x2e68c6[_0x1cfa14] + ",";
-    }
-    return _0x49db6e += _0x5d8a95, _0x49db6e;
-  },
-  getWei = function (_0x5eba23) {
-    var _0x4a8d46 = parseInt(_0x5eba23);
-    if (_0x4a8d46 < 10) {
-      return _0x4a8d46 + "";
-    } else return _0x5eba23.substring(1, 2);
-  },
-  html_ = "",
-  tableHead = function (_0x28d93d) {
-    html_ = "";
-    html_ += "<div class=\"tableContent\">";
-    if (_0x28d93d < 100) html_ += "\t<p>0" + _0x28d93d + "</p>";else {
-      html_ += "\t<p>" + _0x28d93d + "</p>";
-    }
-    return html_ += "\t<p>???</p>", html_ += "\t<p>???</p>", html_ += "\t<p>开???</p>", html_ += "\t<p class=\"result\"> <img class=\"Plugin_float_weixin\" src=\"cdn/yongzhe/imgs/add.png\" alt=\"\"></p>", html_ += "</div>", html_;
-  },
-  tips = function (_0x7ffa50, _0x34b284) {
-    html_ = "";
-    console.log(_0x34b284);
-    console.log(_0x7ffa50);
-    for (var _0x15b425 in _0x7ffa50) {
-      if (_0x15b425 < 3) {
-        var _0x3bc4bc = _0x7ffa50[_0x15b425].shengxiao.split(","),
-          _0x5c6342 = _0x7ffa50[_0x15b425].num.split(",");
-        html_ += _0x34b284 + _0x7ffa50[_0x15b425].qishu + "期：" + _0x5c6342[1] + "-" + _0x5c6342[4] + "-" + _0x5c6342[6] + " 开《" + _0x3bc4bc[6] + _0x5c6342[6] + "》准<br>";
-      }
-    }
-    return html_;
-  },
-  sanxiaosanma = function (_0x4c4ab9) {
-    html_ = "";
-    for (var _0x1fcd67 in _0x4c4ab9) {
-      if (_0x1fcd67 == 0) {
-        var _0x1a7535 = parseInt(_0x4c4ab9[_0x1fcd67].qishu);
-        _0x1a7535++;
-        html_ += tableHead(_0x1a7535);
-      }
-      if (_0x1fcd67 < 10) {
-        var _0xf5a303 = _0x4c4ab9[_0x1fcd67].shengxiao.split(",");
-        var _0xcdb04a = _0x4c4ab9[_0x1fcd67].num.split(",");
-        html_ += "<div class=\"tableContent\">";
-        html_ += "\t<p>" + _0x4c4ab9[_0x1fcd67].qishu + "</p>";
-        html_ += "\t<p>" + shengxiaoV(_0x4c4ab9[_0x1fcd67].shengxiao) + "</p>";
-        html_ += "\t<p>" + _0xcdb04a[1] + "-" + _0xcdb04a[4] + "-" + _0xcdb04a[6] + "</p>";
-        html_ += "\t<p>" + _0xf5a303[6] + _0xcdb04a[6] + "</p>";
-        html_ += "\t<p class=\"result\">&#31934;&#20934;</p>";
-        html_ += "</div>";
-      }
-    }
-    return html_;
-  },
-  yixiaodanshuang = function (_0x3a7cef) {
-    html_ = "";
-    for (var _0x442f8f in _0x3a7cef) {
-      if (_0x442f8f == 0) {
-        var _0x22ad41 = parseInt(_0x3a7cef[_0x442f8f].qishu);
-        _0x22ad41++;
-        html_ += tableHead(_0x22ad41);
-      }
-      if (_0x442f8f < 10) {
-        var _0x2ff3ac = _0x3a7cef[_0x442f8f].shengxiao.split(",");
-        var _0x50c9eb = _0x3a7cef[_0x442f8f].num.split(",");
-        html_ += "<div class=\"tableContent\">";
-        html_ += "\t<p>" + _0x3a7cef[_0x442f8f].qishu + "</p>";
-        html_ += "\t<p>" + _0x2ff3ac[6] + "</p>";
-        html_ += "\t<p>" + danshuang(_0x50c9eb[6]) + "</p>";
-        html_ += "\t<p>" + _0x2ff3ac[6] + _0x50c9eb[6] + "</p>";
-        html_ += "\t<p class=\"result\">&#31934;&#20934;</p>";
-        html_ += "</div>";
-      }
-    }
-    return html_;
+  return {
+    code: 2001,
+    msg: "请传入合法的query或者body"
   };
-$(function () {
-  $(".k-am-1 > .table").append(sanxiaosanma(amHistoryJson.data));
-  $(".k-am-2 > .table").append(yixiaodanshuang(amHistoryJson.data));
-  $("#am_tips").html(tips(amHistoryJson.data, "澳门"));
-  $(".k-am1-1 > .table").append(sanxiaosanma(amHistoryJson1.data));
-  $(".k-am1-2 > .table").append(yixiaodanshuang(amHistoryJson1.data));
-  $("#am_tips1").html(tips(amHistoryJson1.data, "新澳门"));
-  $(".k-hk-1 > .table").append(sanxiaosanma(xgHistoryJson.data));
-  $(".k-hk-2 > .table").append(yixiaodanshuang(xgHistoryJson.data));
-  $("#hk_tips").html(tips(xgHistoryJson.data, "香港"));
-  var _0x55c838 = document.location.hostname;
-  _0x55c838.indexOf("www.") > -1 && (_0x55c838 = _0x55c838.replace("www.", ""));
-  var _0x25cafd = _0x55c838.split(".");
-  try {
-    $("#domain_n").html(_0x25cafd[0]);
-    $("#domain_p").html("." + _0x25cafd[1]);
-  } catch (_0x56fca0) {}
-  try {
-    document.getElementById("pop-cpt").style.display = "block";
-  } catch (_0x243b48) {}
-});
+}
+function td_sign(body, _0x2df3b9, url) {
+  param = {
+    path: url,
+    body: JSON.stringify(body)
+  };
+  return sign(param, _0x2df3b9);
+}
+console.log(td_sign({}, "", "new/sg/order/create_order"));
