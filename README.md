@@ -1,5 +1,10 @@
-代码保护学习ing 
-[url:http://encode.onecc.cc]
+# QLScriptpublic
+# JD 京东账密登录协议版本已发布 DOCKER一键部署 对接青龙 对接BOT
+购买地址
+http://smshop.back1.idcfengye.com/
+
+体验地址
+http://smjd.back1.idcfengye.com/
 
 fork仓库后 把待解密的脚本放入到input.js里面 等待60s左右即可在output.js看到解密脚本
 
