@@ -1,1223 +1,663 @@
-//Fri Dec 06 2024 03:57:47 GMT+0000 (Coordinated Universal Time)
+//Fri Dec 06 2024 03:59:19 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-var _url = window["location"]["href"];
-var awp_ws_url = "ws://127.0.0.1:6651/ws";
-var awp_url = "http://127.0.0.1:6651/plugin";
-if (_url["indexOf"]("https") == 0) {
-  awp_url = "https://local.zsignyun.com:6652/plugin";
-  awp_ws_url = "wss://local.zsignyun.com:6652/ws";
-}
-var timeouts = 36000000;
-var _awp_allWebPlugin_ = null;
-const _awp_bro_Alert = window["alert"];
-const _awp_bro_Confirm = window["confirm"];
-const _awp_bro_Prompt = window["prompt"];
-function SendXMLHttpRequest(_0x59cb8d, _0x38f010, _0x480d00, _0xa1c7e4) {
-  var _0x395c8d = new XMLHttpRequest();
-  _0x395c8d["open"]("POST", awp_url, _0x480d00);
-  if (_0x480d00 == ![]) try {
-    _0x395c8d["timeout"] = timeouts;
-  } catch (_0x55e4cd) {
-    console["log"]("xhr.timeout fail");
+class WSrunner {
+  constructor(_0x49d0c5) {
+    this["wsurl"] = _0x49d0c5;
   }
-  _0x395c8d["setRequestHeader"]("Accept", "application/json; charset=utf-8");
-  _0x395c8d["setRequestHeader"]("X-Requested-With", "XMLHttpRequest");
-  _0x395c8d["setRequestHeader"]("Content-Type", "application/json;charset=utf-8");
-  if (_0x480d00 == ![]) _0x395c8d["send"](JSON["stringify"](_0xa1c7e4));
-  return _0x395c8d;
+  ["Run"]() {
+    try {
+      this["sock"] = new WebSocket(this["wsurl"]);
+    } catch (_0x4103e6) {}
+    this["sock"]["binaryType"] = "arraybuffer";
+    this["sock"]["onopen"] = this["onWSopen"]["bind"](this);
+    this["sock"]["onclose"] = this["onWSclose"]["bind"](this);
+    this["sock"]["onmessage"] = this["onWSmsg"]["bind"](this);
+    this["sock"]["onerror"] = this["onWSerr"]["bind"](this);
+  }
 }
-class allWebPlugin {
-  constructor() {
-    this["HostCnts"] = [];
-    this["_usePluginUI"] = ![];
-    this["_pluginUtility"] = null;
-    this["_httpClient"] = null;
-    this["_blInit"] = ![];
-    this["_ActivateContainer"] = null;
+class allWebPluginUI extends WSrunner {
+  constructor(_0x3f7ea3, _0x3fd218, _0x154e19, _0x2c8239, _0x4e260f) {
+    super(_0x3f7ea3);
+    this["pcid"] = _0x2c8239;
+    this["canvas"] = _0x154e19;
+    this["httpurl"] = _0x3fd218;
+    this["bFixSize"] = _0x4e260f;
+    this["blForceShowUI"] = !![];
+    this["cctx"] = _0x154e19["getContext"]("2d");
+    this["cctx"]["strokeStyle"] = "rgba(16,16,16,0)";
+    this["cctx"]["FillStyle"] = "rgba(16,16,16,0)";
+    this["dpr"] = window["devicePixelRatio"] || window["webkitDevicePixelRatio"] || window["mozDevicePixelRatio"] || 1;
+    if (this["bFixSize"] == !![]) {
+      this["canvasW"] = this["canvas"]["width"];
+      this["canvasH"] = this["canvas"]["height"];
+      this["canvas"]["style"]["width"] = this["canvas"]["width"] + "px";
+      this["canvas"]["style"]["height"] = this["canvas"]["height"] + "px";
+      this["canvas"]["width"] = this["dpr"] * this["canvasW"];
+      this["canvas"]["height"] = this["dpr"] * this["canvasH"];
+    } else {
+      this["canvas"]["width"] = this["canvas"]["clientWidth"] * this["dpr"];
+      this["canvas"]["height"] = this["canvas"]["clientHeight"] * this["dpr"];
+    }
+    this["mX"] = 0;
+    this["mY"] = 0;
+    this["open"] = ![];
+    this["alertmsg"] = "";
+    this["mouseDownStatus"] = {};
+    this["msie"] = window["navigator"]["userAgent"]["indexOf"]("MSIE ");
+    this["trident"] = window["navigator"]["userAgent"]["indexOf"]("Trident/");
     this["isFirefox"] = window["navigator"]["userAgent"]["toLowerCase"]()["indexOf"]("firefox");
-    _awp_allWebPlugin_ = this;
+    this["canvas"]["addEventListener"]("mousemove", this["onMm"]["bind"](this));
+    this["canvas"]["addEventListener"]("dblclick", this["onMdclk"]["bind"](this));
+    this["canvas"]["addEventListener"]("mousedown", this["onMd"]["bind"](this));
+    this["canvas"]["addEventListener"]("mouseup", this["onMu"]["bind"](this));
+    this["canvas"]["addEventListener"]("mousewheel", this["onMw"]["bind"](this));
+    this["canvas"]["addEventListener"]("mouseleave", this["onMouseLeave"]["bind"](this));
   }
-  ["getExploreName"]() {
-    var _0x1ad833 = navigator["userAgent"];
-    if (_0x1ad833["indexOf"]("Opera") > -1 || _0x1ad833["indexOf"]("OPR") > -1) {
-      return "Opera";
-    } else if (_0x1ad833["indexOf"]("compatible") > -1 && _0x1ad833["indexOf"]("MSIE") > -1) {
-      return "IE";
-    } else if (_0x1ad833["indexOf"]("Edge") > -1) {
-      return "Edge";
-    } else if (_0x1ad833["indexOf"]("Edg") > -1) {
-      return "Edge";
-    } else if (_0x1ad833["indexOf"]("Firefox") > -1) {
-      return "Firefox";
-    } else if (_0x1ad833["indexOf"]("Safari") > -1 && _0x1ad833["indexOf"]("Chrome") == -1) {
-      return "Safari";
-    } else if (_0x1ad833["indexOf"]("Chrome") > -1 && _0x1ad833["indexOf"]("Safari") > -1) {
-      return "Chrome";
-    } else if (!!window["ActiveXObject"] || "ActiveXObject" in window) {
-      return "IE>=11";
-    } else {
-      return "Unkonwn";
+  ["Disconnect"]() {
+    this["_reset"]();
+  }
+  ["fillRect"]() {
+    this["cctx"]["fillStyle"] = "#f0f0f0";
+    var _0x44915e = this["canvas"]["width"];
+    var _0x58ebb9 = this["canvas"]["height"];
+    this["cctx"]["fillRect"](0, 0, _0x44915e, _0x58ebb9);
+    this["cctx"]["fillStyle"] = "#333333";
+    this["cctx"]["font"] = "30px \u6977\u4F53";
+    this["cctx"]["fillText"]("\u63D2\u4EF6\u663E\u793A\u533A\u57DF", _0x44915e / 2 - 3 * 30, _0x58ebb9 / 2 - 60);
+    this["cctx"]["fillText"]("\u70B9\u51FB\u8FD9\u91CC\uFF0C\u7ACB\u5373\u663E\u793A\u63D2\u4EF6", _0x44915e / 2 - 5 * 30, _0x58ebb9 / 2 - 10);
+    this["cctx"]["fillStyle"] = "#ee0000";
+    this["cctx"]["font"] = "16px \u6977\u4F53";
+    this["cctx"]["fillText"]("\u4E3A\u4E86\u907F\u514D\u53EF\u80FD\u906E\u6321\u6D4F\u89C8\u5668\u754C\u9762\uFF0C\u63D2\u4EF6\u88AB\u9690\u85CF\u3002\u70B9\u51FB\u9875\u9762\u5C06\u8FD8\u539F\u63D2\u4EF6\u754C\u9762\u3002", _0x44915e / 2 - 16 * 17, _0x58ebb9 / 2 + 20);
+  }
+  ["_reset"]() {
+    if (this["sock"]["readyState"] == this["sock"]["OPEN"]) {
+      this["sock"]["close"]();
+    }
+    this["cctx"]["clearRect"](0, 0, this["canvas"]["width"], this["canvas"]["height"]);
+    document["title"] = document["title"]["replace"](/:.*/, ": offline");
+    this["canvas"]["style"]["cursor"] = "none";
+  }
+  ["onMdclk"](_0x5c3fd5) {
+    var _0x360c0e, _0x5d9bcb, _0x2d8c64, _0x504a2e, _0x56c850;
+    _0x5c3fd5["preventDefault"]();
+    var _0x5f3b2e = this["CheckKeyStatus"](_0x5c3fd5);
+    if (_awp_allWebPlugin_) _awp_allWebPlugin_["ActivateContainerByPCID"](this["pcid"]);
+    {
+      _0x2d8c64 = this["msie"] > 0 || this["trident"] > 0 ? _0x5c3fd5["layerX"] - _0x5c3fd5["currentTarget"]["offsetLeft"] : _0x5c3fd5["layerX"];
+      _0x504a2e = this["msie"] > 0 || this["trident"] > 0 ? _0x5c3fd5["layerY"] - _0x5c3fd5["currentTarget"]["offsetTop"] : _0x5c3fd5["layerY"];
+    }
+    this["mX"] = _0x2d8c64;
+    this["mY"] = _0x504a2e;
+    _0x56c850 = this["_mB"](_0x5c3fd5);
+    if (this["sock"]["readyState"] == this["sock"]["OPEN"]) {
+      _0x360c0e = new ArrayBuffer(20);
+      _0x5d9bcb = new Uint32Array(_0x360c0e);
+      _0x5d9bcb[0] = 0;
+      _0x5d9bcb[1] = 1024 | _0x56c850;
+      _0x5d9bcb[2] = _0x2d8c64;
+      _0x5d9bcb[3] = _0x504a2e;
+      _0x5d9bcb[4] = _0x5f3b2e;
+      this["sock"]["send"](_0x360c0e);
     }
   }
-  ["createContainer"](_0x337a5e, _0x514049, _0x3b9e11, _0x51a593, _0x4eb5c1) {
-    if (_0x51a593 === undefined || _0x51a593 == null) _0x51a593 = !![];
-    if (_0x4eb5c1 == undefined || _0x4eb5c1 == null) _0x4eb5c1 = !![];
-    var _0x16089b = window["devicePixelRatio"] || window["webkitDevicePixelRatio"] || window["mozDevicePixelRatio"] || 1;
-    var _0x2d1f88 = window["screenX"] | window["screenLeft"];
-    var _0x1fd80d = window["screenY"] | window["screenTop"];
-    var _0x56fb91 = window["outerWidth"];
-    var _0x537e87 = window["outerHeight"];
-    var _0x137089 = this["getExploreName"]();
-    var _0x53182f = document["title"];
-    var _0x2209ed = _0x337a5e["getBoundingClientRect"]();
-    var _0x3d7fe6 = _0x2209ed["left"];
-    var _0x2175ff = _0x2209ed["top"];
-    var _0x2de3b8 = _0x2209ed["width"];
-    var _0x10d0b0 = _0x2209ed["height"];
-    var _0x20bd83 = {
-      "cmd": "CreateContainer",
-      "progid": _0x514049,
-      "lic": _0x3b9e11,
-      "dpi": _0x16089b,
-      "left": _0x2d1f88,
-      "top": _0x1fd80d,
-      "width": _0x56fb91,
-      "height": _0x537e87,
-      "name": _0x137089,
-      "title": _0x53182f,
-      "cleft": _0x3d7fe6,
-      "ctop": _0x2175ff,
-      "cwidth": _0x2de3b8,
-      "cheight": _0x10d0b0
+  ["onMm"](_0x3556a2) {
+    var _0x49eaa3, _0x39190b, _0x27149c, _0x11dd27;
+    var _0x41820b = this["CheckKeyStatus"](_0x3556a2);
+    _0x3556a2["preventDefault"]();
+    {
+      _0x27149c = this["msie"] > 0 || this["trident"] > 0 ? _0x3556a2["layerX"] - _0x3556a2["currentTarget"]["offsetLeft"] : _0x3556a2["layerX"];
+      _0x11dd27 = this["msie"] > 0 || this["trident"] > 0 ? _0x3556a2["layerY"] - _0x3556a2["currentTarget"]["offsetTop"] : _0x3556a2["layerY"];
+    }
+    this["mX"] = _0x27149c;
+    this["mY"] = _0x11dd27;
+    if (this["sock"]["readyState"] == this["sock"]["OPEN"]) {
+      _0x49eaa3 = new ArrayBuffer(20);
+      _0x39190b = new Uint32Array(_0x49eaa3);
+      _0x39190b[0] = 0;
+      _0x39190b[1] = 2048;
+      _0x39190b[2] = _0x27149c;
+      _0x39190b[3] = _0x11dd27;
+      _0x39190b[4] = _0x41820b;
+      this["sock"]["send"](_0x49eaa3);
+    }
+  }
+  ["onMd"](_0x5327f3) {
+    var _0x5a8ca3, _0xdfdb99, _0x46fc04, _0x3a7fe3, _0x22380a;
+    var _0x4796c7 = this["CheckKeyStatus"](_0x5327f3);
+    if (_awp_allWebPlugin_) _awp_allWebPlugin_["ActivateContainerByPCID"](this["pcid"]);
+    if (_0x5327f3["preventDefault"]) _0x5327f3["preventDefault"]();
+    if (_0x5327f3["stopPropagation"]) _0x5327f3["stopPropagation"]();
+    if (_0x5327f3["rightClick"] && _0x5327f3["control"] && _0x5327f3["alt"]) {
+      return;
+    }
+    _0x46fc04 = this["msie"] > 0 || this["trident"] > 0 ? _0x5327f3["layerX"] - _0x5327f3["currentTarget"]["offsetLeft"] : _0x5327f3["layerX"];
+    _0x3a7fe3 = this["msie"] > 0 || this["trident"] > 0 ? _0x5327f3["layerY"] - _0x5327f3["currentTarget"]["offsetTop"] : _0x5327f3["layerY"];
+    _0x22380a = this["_mB"](_0x5327f3);
+    if (this["sock"]["readyState"] == this["sock"]["OPEN"]) {
+      _0x5a8ca3 = new ArrayBuffer(20);
+      _0xdfdb99 = new Uint32Array(_0x5a8ca3);
+      _0xdfdb99[0] = 0;
+      _0xdfdb99[1] = 32768 | _0x22380a;
+      _0xdfdb99[2] = _0x46fc04;
+      _0xdfdb99[3] = _0x3a7fe3;
+      _0xdfdb99[4] = _0x4796c7;
+      this["sock"]["send"](_0x5a8ca3);
+      this["mouseDownStatus"][_0x22380a] = !![];
+    }
+  }
+  ["onMu"](_0x391329, _0x49be69, _0x5703d1) {
+    var _0x44f494, _0x4305d7, _0x49be69, _0x5703d1, _0xa598d5;
+    var _0x1ed90e = this["CheckKeyStatus"](_0x391329);
+    _0x391329["preventDefault"]();
+    {
+      _0x49be69 = this["msie"] > 0 || this["trident"] > 0 ? _0x391329["layerX"] - _0x391329["currentTarget"]["offsetLeft"] : _0x391329["layerX"];
+      _0x5703d1 = this["msie"] > 0 || this["trident"] > 0 ? _0x391329["layerY"] - _0x391329["currentTarget"]["offsetTop"] : _0x391329["layerY"];
+      console["log"]("onMu: X" + _0x49be69 + "  Y:" + _0x5703d1);
+    }
+    _0xa598d5 = this["_mB"](_0x391329);
+    if (this["aMF"]) {}
+    if (this["sock"]["readyState"] == this["sock"]["OPEN"]) {
+      _0x44f494 = new ArrayBuffer(20);
+      _0x4305d7 = new Uint32Array(_0x44f494);
+      _0x4305d7[0] = 0;
+      _0x4305d7[1] = _0xa598d5;
+      _0x4305d7[2] = _0x49be69;
+      _0x4305d7[3] = _0x5703d1;
+      _0x4305d7[4] = _0x1ed90e;
+      this["sock"]["send"](_0x44f494);
+      this["mouseDownStatus"][_0xa598d5] = ![];
+    }
+  }
+  ["onMw"](_0x4db9cd) {
+    var _0x1168cf, _0x540de3, _0x37414c, _0x4e26b9;
+    _0x4db9cd["preventDefault"]();
+    var _0x4ee2c6 = this["CheckKeyStatus"](_0x4db9cd);
+    _0x37414c = this["msie"] > 0 || this["trident"] > 0 ? _0x4db9cd["layerX"] - _0x4db9cd["currentTarget"]["offsetLeft"] : _0x4db9cd["layerX"];
+    _0x4e26b9 = this["msie"] > 0 || this["trident"] > 0 ? _0x4db9cd["layerY"] - _0x4db9cd["currentTarget"]["offsetTop"] : _0x4db9cd["layerY"];
+    if (this["sock"]["readyState"] == this["sock"]["OPEN"]) {
+      _0x1168cf = new ArrayBuffer(20);
+      _0x540de3 = new Uint32Array(_0x1168cf);
+      _0x540de3[0] = 0;
+      _0x540de3[1] = 512 | (_0x4db9cd["wheel"] > 0 ? 135 : 392);
+      _0x540de3[2] = _0x37414c;
+      _0x540de3[3] = _0x4e26b9;
+      _0x540de3[4] = _0x4ee2c6;
+      this["sock"]["send"](_0x1168cf);
+    }
+  }
+  ["onMouseLeave"](_0x179676) {
+    var _0xde4563, _0x2bbf56;
+    for (var _0x5883bc in this["mouseDownStatus"]) {
+      if (this["mouseDownStatus"][_0x5883bc]) {
+        var _0x356b1f = this["msie"] > 0 || this["trident"] > 0 ? _0x179676["layerX"] - _0x179676["currentTarget"]["offsetLeft"] : _0x179676["layerX"];
+        var _0x17cb92 = this["msie"] > 0 || this["trident"] > 0 ? _0x179676["layerY"] - _0x179676["currentTarget"]["offsetTop"] : _0x179676["layerY"];
+        if (_0x356b1f < 0) _0x356b1f = 0;
+        if (_0x17cb92 < 0) _0x17cb92 = 0;
+        var _0x34f638 = _0x5883bc;
+        var _0x225091 = this["CheckKeyStatus"](_0x179676);
+        if (this["sock"]["readyState"] == this["sock"]["OPEN"]) {
+          _0xde4563 = new ArrayBuffer(20);
+          _0x2bbf56 = new Uint32Array(_0xde4563);
+          _0x2bbf56[0] = 0;
+          _0x2bbf56[1] = _0x34f638;
+          _0x2bbf56[2] = _0x356b1f;
+          _0x2bbf56[3] = _0x17cb92;
+          _0x2bbf56[4] = _0x225091;
+          this["sock"]["send"](_0xde4563);
+          this["mouseDownStatus"][_0x34f638] = ![];
+        }
+      }
+    }
+  }
+  ["hasVerticalScrollbar"]() {
+    if (document["body"]["style"]["overflowY"] === "hidden") return ![];
+    if (document["documentElement"]["clientHeight"]) return document["body"]["scrollHeight"] > document["documentElement"]["clientHeight"];
+    return document["body"]["scrollHeight"] > window["innerHeight"];
+  }
+  ["hasHorizontalScrollbar"]() {
+    if (document["body"]["style"]["overflowX"] === "hidden") return ![];
+    if (document["documentElement"]["clientWidth"]) return document["body"]["scrollWidth"] > document["documentElement"]["clientWidth"];
+    return document["body"]["scrollWidth"] > window["innerWidth"];
+  }
+  ["getScrollbarWidth"]() {
+    var _0x2d93ad = document["createElement"]("div");
+    _0x2d93ad["style"]["cssText"] = "width: 99px; height: 99px; overflow: scroll; position: absolute; top: -9999px;";
+    document["body"]["appendChild"](_0x2d93ad);
+    var _0x5c27a9 = _0x2d93ad["offsetWidth"] - _0x2d93ad["clientWidth"];
+    document["body"]["removeChild"](_0x2d93ad);
+    return _0x5c27a9;
+  }
+  ["sendCanvasPosCmd"](_0x530ab7, _0x5a325d, _0x9364fd, _0x6bde8c, _0x1df442, _0xb84670, _0x464be4, _0x29fc6a, _0x4cee2a, _0x558359, _0x53cc43, _0x1d56b8) {
+    var _0x5300a0 = {
+      "fun": "UpdateCanvasPositionCmd",
+      "params": [_0x530ab7, _0x5a325d, _0x9364fd, _0x6bde8c, _0x1df442, _0xb84670, _0x464be4, _0x29fc6a, _0x4cee2a, _0x558359, _0x53cc43, _0x1d56b8]
     };
-    var _0x2ee5ae = "";
-    var _0x4b19c1 = null;
-    var _0x3a07ad = SendXMLHttpRequest("POST", awp_url, ![], _0x20bd83);
-    if (_0x3a07ad["status"] === 200) {
-      var _0x7d6c16 = JSON["parse"](_0x3a07ad["responseText"]);
-      if (_0x7d6c16["code"] == 0) {
-        _0x2ee5ae = _0x7d6c16["pcid"];
-        _awp_allWebPlugin_["Init"]();
-        _0x4b19c1 = new PluginHostCnt(_0x2ee5ae, new allWebPluginUI(awp_ws_url + "?pcid=" + _0x2ee5ae, awp_url, _0x337a5e, _0x2ee5ae, _0x51a593));
-        _awp_allWebPlugin_["HostCnts"]["push"](_0x4b19c1);
-        _awp_allWebPlugin_["ActivateContainer"] = _0x4b19c1;
-        _awp_allWebPlugin_["_usePluginUI"] = _0x4eb5c1;
-      } else {
-        alert(_0x7d6c16["msg"]);
+    if (this["sock"]["readyState"] == this["sock"]["OPEN"]) {
+      var _0x5b7ced = JSON["stringify"](_0x5300a0);
+      var _0x240b9d = _0x5b7ced["length"];
+      var _0x3a5366 = new ArrayBuffer(4 * _0x240b9d + 4);
+      var _0x2ca165 = new Uint32Array(_0x3a5366);
+      _0x2ca165[0] = 6;
+      for (var _0x912816 = 0; _0x912816 < _0x240b9d; _0x912816++) {
+        _0x2ca165[_0x912816 + 1] = _0x5b7ced["charCodeAt"](_0x912816);
       }
-    } else {
-      alert("net error: " + _0x3a07ad["status"]);
-    }
-    return _0x4b19c1;
-  }
-  ["destroyContainer"](_0x5e1729) {
-    var _0xc141c0 = null;
-    if (_0x5e1729 === null || _0x5e1729["pcid"] === null) return;
-    _0x5e1729["UI"]["ShowUI"](![]);
-    _0x5e1729["destroyContainer"]();
-    if (this["_ActivateContainer"] === _0x5e1729) this["_ActivateContainer"] = null;
-    for (let _0x2907dd = 0; _0x2907dd < this["HostCnts"]["length"]; _0x2907dd++) {
-      const _0x217667 = this["HostCnts"][_0x2907dd];
-      if (_0x217667["pcid"] === _0x5e1729["pcid"]) {
-        this["HostCnts"]["splice"](_0x2907dd, 1);
-        break;
-      }
+      this["sock"]["send"](_0x3a5366);
     }
   }
-  ["destroyAllContainer"]() {
-    for (let _0x184d3e = 0; _0x184d3e < this["HostCnts"]["length"]; _0x184d3e++) {
-      const _0x42c937 = this["HostCnts"][_0x184d3e];
-      if (_0x42c937 != null) {
-        _0x42c937["destroyContainer"]();
-      }
+  ["CheckKeyStatus"](_0x7de982) {
+    var _0x3befba = 0;
+    if (_0x7de982["altKey"]) {
+      _0x3befba |= 1;
     }
-    this["_ActivateContainer"] = null;
-  }
-  get ["ActivateContainer"]() {
-    return this["_ActivateContainer"];
-  }
-  set ["ActivateContainer"](_0x3b9428) {
-    this["_ActivateContainer"] = _0x3b9428;
-  }
-  ["ActivateContainerByPCID"](_0xade188) {
-    for (let _0x548e3f = 0; _0x548e3f < this["HostCnts"]["length"]; _0x548e3f++) {
-      const _0x50c50a = this["HostCnts"][_0x548e3f];
-      if (_0x50c50a != null && _0x50c50a["pcid"] === _0xade188) {
-        this["_ActivateContainer"] = this["HostCnts"][_0x548e3f];
-        break;
-      }
+    if (_0x7de982["ctrlKey"]) {
+      _0x3befba |= 2;
     }
-  }
-  ["IsNewVersion"](_0x497598) {
-    var _0x307d76 = {
-      "cmd": "IsNewVersion",
-      "ver": _0x497598
-    };
-    var _0xbda3d2 = ![];
-    var _0xd1a808 = SendXMLHttpRequest("POST", awp_url, ![], _0x307d76);
-    if (_0xd1a808["status"] === 200) {
-      var _0x5f593e = JSON["parse"](_0xd1a808["responseText"]);
-      if (_0x5f593e["code"] == 0) {
-        _0xbda3d2 = !![];
-      } else {
-        _0xbda3d2 = ![];
-      }
-    } else {
-      _0xbda3d2 = ![];
+    if (_0x7de982["metaKey"]) {
+      _0x3befba |= 4;
     }
-    return _0xbda3d2;
+    if (_0x7de982["shiftKey"]) {
+      _0x3befba |= 8;
+    }
+    if (_0x7de982["getModifierState"]("CapsLock")) {
+      _0x3befba |= 16;
+    }
+    return _0x3befba;
   }
-  ["GetVersion"]() {
-    var _0x1d4c72 = {
-      "cmd": "GetVersion"
-    };
-    var _0x2e52f3 = "";
-    var _0x12bdc9 = SendXMLHttpRequest("POST", awp_url, ![], _0x1d4c72);
-    if (_0x12bdc9["status"] === 200) {
-      var _0x256f02 = JSON["parse"](_0x12bdc9["responseText"]);
-      if (_0x256f02["code"] == 0) {
-        _0x2e52f3 = _0x256f02["msg"];
-      } else {
-        _0x2e52f3 = "";
-      }
+  ["onUpdatePosition"](_0x6f78bb) {
+    if (this["blForceShowUI"] == ![]) return;
+    this["dpr"] = window["devicePixelRatio"] || window["webkitDevicePixelRatio"] || window["mozDevicePixelRatio"] || 1;
+    if (this["bFixSize"] == !![]) {
+      this["canvas"]["style"]["width"] = this["canvasW"] + "px";
+      this["canvas"]["style"]["height"] = this["canvasH"] + "px";
+      this["canvas"]["width"] = this["canvasW"] * this["dpr"];
+      this["canvas"]["height"] = this["canvasH"] * this["dpr"];
     } else {}
-    return _0x2e52f3;
+    var _0x497b4c = this["canvas"]["getBoundingClientRect"]();
+    var _0x5a9a3a = this["getScrollbarWidth"]();
+    var _0x1994e8 = 0;
+    if (this["hasHorizontalScrollbar"]()) _0x1994e8 = 1;
+    if (this["hasVerticalScrollbar"]()) {
+      _0x1994e8 = _0x1994e8 == 0 ? 2 : 3;
+    }
+    var _0x14f452 = 0;
+    var _0x164b16 = 0;
+    var _0x29f613 = window;
+    if (window["parent"] && window["parent"] != window && typeof window["parent"]["getFramePos"] === "function") {
+      window["parent"]["getFramePos"]();
+      _0x14f452 = window["parent"]["frameX"];
+      _0x164b16 = window["parent"]["frameY"];
+      _0x29f613 = window["parent"];
+    }
+    this["sendCanvasPosCmd"](_0x497b4c["left"] + _0x14f452, _0x497b4c["top"] + _0x164b16, _0x497b4c["width"], _0x497b4c["height"], this["dpr"], _0x1994e8, _0x5a9a3a, _0x29f613["outerWidth"], _0x29f613["outerHeight"], _0x29f613["innerWidth"], _0x29f613["innerHeight"], _0x6f78bb);
   }
-  ["IsInstall"]() {
-    var _0x4c53e2 = {
-      "cmd": "IsInstall"
+  ["setCanvasSize"](_0x5bc92b, _0x245aec) {
+    this["canvasW"] = _0x5bc92b;
+    this["canvasH"] = _0x245aec;
+    this["dpr"] = window["devicePixelRatio"] || window["webkitDevicePixelRatio"] || window["mozDevicePixelRatio"] || 1;
+    this["bFixSize"] = !![];
+    this["canvas"]["style"]["width"] = this["canvas"]["width"] + "px";
+    this["canvas"]["style"]["height"] = this["canvas"]["height"] + "px";
+    this["canvas"]["width"] = this["dpr"] * this["canvasW"];
+    this["canvas"]["height"] = this["dpr"] * this["canvasH"];
+    var _0x30817d = this["canvas"]["getBoundingClientRect"]();
+    var _0xbb7086 = this["getScrollbarWidth"]();
+    var _0xd0a13b = 0;
+    if (this["hasHorizontalScrollbar"]()) _0xd0a13b = 1;
+    if (this["hasVerticalScrollbar"]()) {
+      _0xd0a13b = _0xd0a13b == 0 ? 2 : 3;
+    }
+    var _0x8c7e1f = 0;
+    var _0x12587f = 0;
+    var _0x1f34fe = window;
+    if (window["parent"] && window["parent"] != window) {
+      window["parent"]["getFramePos"]();
+      _0x8c7e1f = window["parent"]["frameX"];
+      _0x12587f = window["parent"]["frameY"];
+      _0x1f34fe = window["parent"];
+    }
+    this["sendCanvasPosCmd"](_0x30817d["left"] + _0x8c7e1f, _0x30817d["top"] + _0x12587f, _0x30817d["width"], _0x30817d["height"], this["dpr"], _0xd0a13b, _0xbb7086, _0x1f34fe["outerWidth"], _0x1f34fe["outerHeight"], _0x1f34fe["innerWidth"], _0x1f34fe["innerHeight"]);
+  }
+  ["ShowUI"](_0x59a072) {
+    var _0x54304a = {
+      "fun": "ShowUI",
+      "params": [_0x59a072]
     };
-    var _0x3663d2 = ![];
-    var _0xa25116 = SendXMLHttpRequest("POST", awp_url, ![], _0x4c53e2);
-    if (_0xa25116["status"] === 200) {
-      var _0x1a7c7c = JSON["parse"](_0xa25116["responseText"]);
-      _0x3663d2 = !![];
+    if (this["sock"]["readyState"] == this["sock"]["OPEN"]) {
+      var _0x55d5af = JSON["stringify"](_0x54304a);
+      var _0x57bbe7 = _0x55d5af["length"];
+      var _0x3798e6 = new ArrayBuffer(4 * _0x57bbe7 + 4);
+      var _0x506060 = new Uint32Array(_0x3798e6);
+      _0x506060[0] = 6;
+      for (var _0x1cfee6 = 0; _0x1cfee6 < _0x57bbe7; _0x1cfee6++) {
+        _0x506060[_0x1cfee6 + 1] = _0x55d5af["charCodeAt"](_0x1cfee6);
+      }
+      this["sock"]["send"](_0x3798e6);
+    }
+  }
+  ["SynchUI"](_0x5b2fe6) {
+    var _0x3ae624 = {
+      "fun": "SynchUI",
+      "params": [_0x5b2fe6]
+    };
+    if (this["sock"]["readyState"] == this["sock"]["OPEN"]) {
+      var _0x143f0a = JSON["stringify"](_0x3ae624);
+      var _0x306872 = _0x143f0a["length"];
+      var _0x4b32db = new ArrayBuffer(4 * _0x306872 + 4);
+      var _0x5d512b = new Uint32Array(_0x4b32db);
+      _0x5d512b[0] = 6;
+      for (var _0x23d3b7 = 0; _0x23d3b7 < _0x306872; _0x23d3b7++) {
+        _0x5d512b[_0x23d3b7 + 1] = _0x143f0a["charCodeAt"](_0x23d3b7);
+      }
+      this["sock"]["send"](_0x4b32db);
+    }
+  }
+  ["ForceShowUI"](_0x52b34f) {
+    this["blForceShowUI"] = _0x52b34f;
+    var _0x5f4fec = {
+      "fun": "ForceShowUI",
+      "params": [_0x52b34f]
+    };
+    if (this["sock"]["readyState"] == this["sock"]["OPEN"]) {
+      var _0x9cb88a = JSON["stringify"](_0x5f4fec);
+      var _0x597dd1 = _0x9cb88a["length"];
+      var _0x31fe7f = new ArrayBuffer(4 * _0x597dd1 + 4);
+      var _0x1c3cb9 = new Uint32Array(_0x31fe7f);
+      _0x1c3cb9[0] = 6;
+      for (var _0x306213 = 0; _0x306213 < _0x597dd1; _0x306213++) {
+        _0x1c3cb9[_0x306213 + 1] = _0x9cb88a["charCodeAt"](_0x306213);
+      }
+      this["sock"]["send"](_0x31fe7f);
+    }
+  }
+  ["EnabledCanvas"](_0x32b7e4) {
+    this["blForceShowUI"] = !_0x32b7e4;
+    var _0x543d70 = {
+      "fun": "EnabledCanvas",
+      "params": [_0x32b7e4]
+    };
+    if (this["sock"]["readyState"] == this["sock"]["OPEN"]) {
+      var _0xaffe87 = JSON["stringify"](_0x543d70);
+      var _0x738b6f = _0xaffe87["length"];
+      var _0x2ef7eb = new ArrayBuffer(4 * _0x738b6f + 4);
+      var _0x726b4e = new Uint32Array(_0x2ef7eb);
+      _0x726b4e[0] = 6;
+      for (var _0x594d5a = 0; _0x594d5a < _0x738b6f; _0x594d5a++) {
+        _0x726b4e[_0x594d5a + 1] = _0xaffe87["charCodeAt"](_0x594d5a);
+      }
+      this["sock"]["send"](_0x2ef7eb);
+    }
+  }
+  ["ShowMsg"](_0x37d9bf) {
+    this["alertmsg"] = _0x37d9bf;
+    var _0x1a57c5 = {
+      "fun": "ShowMsg",
+      "params": []
+    };
+    if (this["sock"]["readyState"] == this["sock"]["OPEN"]) {
+      var _0x3c5bf1 = JSON["stringify"](_0x1a57c5);
+      var _0x5d0a68 = _0x3c5bf1["length"];
+      var _0x1fae8b = new ArrayBuffer(4 * _0x5d0a68 + 4);
+      var _0x2d7826 = new Uint32Array(_0x1fae8b);
+      _0x2d7826[0] = 6;
+      for (var _0x49a62f = 0; _0x49a62f < _0x5d0a68; _0x49a62f++) {
+        _0x2d7826[_0x49a62f + 1] = _0x3c5bf1["charCodeAt"](_0x49a62f);
+      }
+      this["sock"]["send"](_0x1fae8b);
+    }
+  }
+  ["UpdateTitle"](_0x559149) {
+    var _0x1c4bc7 = new awpBase64();
+    var _0x2d9347 = _0x1c4bc7["encode"](_0x559149);
+    var _0x84d228 = {
+      "fun": "UpdateTitle",
+      "params": [_0x2d9347]
+    };
+    if (this["sock"]["readyState"] == this["sock"]["OPEN"]) {
+      var _0x9f2cd6 = JSON["stringify"](_0x84d228);
+      var _0x2d82c7 = _0x9f2cd6["length"];
+      var _0x59367a = new ArrayBuffer(4 * _0x2d82c7 + 4);
+      var _0x363509 = new Uint32Array(_0x59367a);
+      _0x363509[0] = 6;
+      for (var _0x16c2d1 = 0; _0x16c2d1 < _0x2d82c7; _0x16c2d1++) {
+        _0x363509[_0x16c2d1 + 1] = _0x9f2cd6["charCodeAt"](_0x16c2d1);
+      }
+      this["sock"]["send"](_0x59367a);
+    }
+  }
+  ["onUpdateUI"]() {
+    if (document["visibilityState"] === "hidden") {
+      this["ShowUI"](![]);
     } else {
-      console["error"]("Error: " + _0xa25116["status"]);
-    }
-    return _0x3663d2;
-  }
-  ["UpdateVersion"](_0xde21a) {
-    var _0x37374b = {
-      "cmd": "UpdateVersion",
-      "src": _0xde21a
-    };
-    return new Promise(function (_0x5bbf77, _0x1edcf5) {
-      var _0xc4ba16 = SendXMLHttpRequest("POST", awp_url, !![]);
-      _0xc4ba16["onreadystatechange"] = function () {
-        if (_0xc4ba16["readyState"] === XMLHttpRequest["DONE"]) {
-          if (_0xc4ba16["status"] === 200) {
-            var _0x17ad69 = JSON["parse"](_0xc4ba16["responseText"]);
-            _0x5bbf77(_0x17ad69);
-          } else {
-            _0x1edcf5(_0xc4ba16["status"]);
-          }
-        }
-      };
-      _0xc4ba16["send"](JSON["stringify"](_0x37374b));
-    });
-  }
-  ["ShowUI"](_0x3c6c9d) {
-    for (let _0x4aacc2 = 0; _0x4aacc2 < this["HostCnts"]["length"]; _0x4aacc2++) {
-      const _0x4eb358 = this["HostCnts"][_0x4aacc2];
-      if (_0x4eb358 != null) {
-        _0x4eb358["UI"]["ShowUI"](_0x3c6c9d);
-      }
+      this["onUpdatePosition"](0);
     }
   }
-  ["Init"]() {
-    if (this["_blInit"]) return;
-    window["alert"] = function (_0x5e97f5) {
-      var _0x162e63;
-      if (_awp_allWebPlugin_["_usePluginUI"] && _awp_allWebPlugin_["ActivateContainer"] != null) {
-        _0x162e63 = _awp_allWebPlugin_["ActivateContainer"]["getPluginUtility"]()["Alert"](_0x5e97f5);
-      } else {
-        _awp_allWebPlugin_["ShowUI"](![]);
-        _0x162e63 = _awp_bro_Alert(_0x5e97f5);
-        _awp_allWebPlugin_["ShowUI"](!![]);
-      }
-      return _0x162e63;
-    };
-    window["confirm"] = function (_0x5db88f) {
-      var _0x33071f;
-      if (_awp_allWebPlugin_["_usePluginUI"] && _awp_allWebPlugin_["ActivateContainer"] != null) {
-        _0x33071f = _awp_allWebPlugin_["ActivateContainer"]["getPluginUtility"]()["Confirm"](_0x5db88f);
-      } else {
-        _awp_allWebPlugin_["ShowUI"](![]);
-        _0x33071f = _awp_bro_Confirm(_0x5db88f);
-        _awp_allWebPlugin_["ShowUI"](!![]);
-      }
-      return _0x33071f;
-    };
-    window["prompt"] = function (_0x368822, _0x37bc9c) {
-      var _0x254172;
-      if (_awp_allWebPlugin_["_usePluginUI"] && _awp_allWebPlugin_["ActivateContainer"] != null) {
-        _0x254172 = _awp_allWebPlugin_["ActivateContainer"]["getPluginUtility"]()["Prompt"](_0x368822, _0x37bc9c);
-      } else {
-        _awp_allWebPlugin_["ShowUI"](![]);
-        _0x254172 = _awp_bro_Prompt(_0x368822, _0x37bc9c);
-        _awp_allWebPlugin_["ShowUI"](!![]);
-      }
-      return _0x254172;
-    };
-    setInterval(this["check_allWebPlugin_Status_Timer"], 3000);
-    window["addEventListener"]("beforeunload", this["onBeforeunload"]["bind"](this), ![]);
-    window["addEventListener"]("unload", this["onBeforeunload"]["bind"](this), ![]);
-    window["addEventListener"]("resize", this["onWindowResize"]["bind"](this));
-    if (document["addEventListener"]) document["addEventListener"]("visibilitychange", this["onShowUI"]["bind"](this));else document["attachEvent"]("onvisibilitychange", this["onShowUI"]["bind"](this));
-    if (!this["isFirefox"]) {
-      if (window["pageXOffset"] != undefined) document["addEventListener"]("scroll", this["onScrollEvent"]["bind"](this));else window["addEventListener"]("scroll", this["onScrollEvent"]["bind"](this));
-    } else {
-      document["addEventListener"]("scroll", this["onScrollEvent"]["bind"](this));
-    }
-    this["_blInit"] = !![];
-  }
-  ["check_allWebPlugin_Status_Timer"]() {
-    for (let _0x3e7bfe = 0; _0x3e7bfe < _awp_allWebPlugin_["HostCnts"]["length"]; _0x3e7bfe++) {
-      const _0x1a436d = _awp_allWebPlugin_["HostCnts"][_0x3e7bfe];
-      if (_0x1a436d != null) {
-        if (_0x1a436d["UI"] === null || _0x1a436d["UI"] === undefined || _0x1a436d["UI"]["sock"] === null || _0x1a436d["UI"]["sock"] === undefined) continue;
-        if (_0x1a436d["UI"]["sock"]["readyState"] === _0x1a436d["UI"]["sock"]["CLOSED"]) _0x1a436d["UI"]["Run"]();
-        if (document["visibilityState"] === "visible") {
-          _0x1a436d["UI"]["SynchUI"](_0x1a436d["UI"]["blForceShowUI"]);
-          _0x1a436d["UI"]["onUpdatePosition"](0);
-        } else {
-          _0x1a436d["UI"]["SynchUI"](![]);
-        }
-      }
-    }
-  }
-  ["onBeforeunload"](_0x3bf6d6) {
-    var _0x395497 = "";
-    for (let _0xc29285 = 0; _0xc29285 < _awp_allWebPlugin_["HostCnts"]["length"]; _0xc29285++) {
-      const _0x25946f = _awp_allWebPlugin_["HostCnts"][_0xc29285];
-      if (_0x25946f != null) {
-        _0x395497 += _0x25946f["pcid"] + ";";
-      }
-    }
-    var _0x3db4a4 = {
-      "cmd": "DestroyContainer",
-      "pcid": _0x395497
-    };
-    navigator["sendBeacon"](awp_url, JSON["stringify"](_0x3db4a4));
-  }
-  ["onShowUI"](_0x242ad9) {
-    for (let _0x2b07dd = 0; _0x2b07dd < _awp_allWebPlugin_["HostCnts"]["length"]; _0x2b07dd++) {
-      const _0x4001c3 = _awp_allWebPlugin_["HostCnts"][_0x2b07dd];
-      if (_0x4001c3) {
-        if (_0x4001c3["UI"] === null || _0x4001c3["UI"] === undefined || _0x4001c3["UI"]["sock"] === null || _0x4001c3["UI"]["sock"] === undefined) continue;
-        if (_0x4001c3["UI"]["sock"]["readyState"] === _0x4001c3["UI"]["sock"]["CLOSED"]) _0x4001c3["UI"]["Run"]();
-        if (document["visibilityState"] === "visible") {
-          _0x4001c3["UI"]["onUpdatePosition"](0);
-        }
-        if (_0x4001c3["UI"]["blForceShowUI"] == !![]) _0x4001c3["UI"]["ShowUI"](document["visibilityState"] === "hidden" ? ![] : !![]);else _0x4001c3["UI"]["ShowUI"](![]);
-      }
-    }
-  }
-  ["onScrollEvent"](_0x199f52) {
-    for (let _0x4ada40 = 0; _0x4ada40 < _awp_allWebPlugin_["HostCnts"]["length"]; _0x4ada40++) {
-      const _0x1c0777 = _awp_allWebPlugin_["HostCnts"][_0x4ada40];
-      if (_0x1c0777) {
-        if (_0x1c0777["UI"] === null || _0x1c0777["UI"] === undefined || _0x1c0777["UI"]["sock"] === null || _0x1c0777["UI"]["sock"] === undefined) continue;
-        if (_0x1c0777["UI"]["sock"]["readyState"] === _0x1c0777["UI"]["sock"]["CLOSED"]) _0x1c0777["UI"]["Run"]();
-        if (document["visibilityState"] === "visible" && _0x1c0777["UI"]["blForceShowUI"] == !![]) {
-          _0x1c0777["UI"]["ShowUI"](!![]);
-          _0x1c0777["UI"]["onUpdatePosition"](0);
-        } else {
-          _0x1c0777["UI"]["ShowUI"](![]);
-        }
-      }
-    }
-  }
-  ["onWindowResize"](_0x4bfbd1) {
-    for (let _0x3aea76 = 0; _0x3aea76 < _awp_allWebPlugin_["HostCnts"]["length"]; _0x3aea76++) {
-      const _0x54e724 = _awp_allWebPlugin_["HostCnts"][_0x3aea76];
-      if (_0x54e724) {
-        if (_0x54e724["UI"] === null || _0x54e724["UI"] === undefined || _0x54e724["UI"]["sock"] === null || _0x54e724["UI"]["sock"] === undefined) continue;
-        if (_0x54e724["UI"]["sock"]["readyState"] === _0x54e724["UI"]["sock"]["CLOSED"]) _0x54e724["Run"]();
-        if (document["visibilityState"] === "visible" && _0x54e724["UI"]["blForceShowUI"] == !![]) {
-          _0x54e724["UI"]["ShowUI"](!![]);
-          _0x54e724["UI"]["onUpdatePosition"](1);
-        } else {
-          _0x54e724["UI"]["ShowUI"](![]);
-        }
-      }
-    }
-  }
-}
-class PluginHostCnt {
-  constructor(_0x9209c0, _0x4d0b61) {
-    if (_0x9209c0 == undefined) _0x9209c0 = "";
-    if (_0x4d0b61 === undefined) _0x4d0b61 = null;
-    this["pcid"] = _0x9209c0;
-    this["UI"] = _0x4d0b61;
-    this["_msg"] = "";
-    this["_ObjectAx"] = null;
-    if (this["UI"]) {
-      this["UI"]["Run"]();
-    }
-  }
-  ["get_msg"]() {
-    return this["_msg"];
-  }
-  ["get_pcid"]() {
-    return this["pcid"];
-  }
-  ["getExploreName"]() {
-    var _0xa33007 = navigator["userAgent"];
-    if (_0xa33007["indexOf"]("Opera") > -1 || _0xa33007["indexOf"]("OPR") > -1) {
-      return "Opera";
-    } else if (_0xa33007["indexOf"]("compatible") > -1 && _0xa33007["indexOf"]("MSIE") > -1) {
-      return "IE";
-    } else if (_0xa33007["indexOf"]("Edge") > -1) {
-      return "Edge";
-    } else if (_0xa33007["indexOf"]("Edg") > -1) {
-      return "Edge";
-    } else if (_0xa33007["indexOf"]("Firefox") > -1) {
-      return "Firefox";
-    } else if (_0xa33007["indexOf"]("Safari") > -1 && _0xa33007["indexOf"]("Chrome") == -1) {
-      return "Safari";
-    } else if (_0xa33007["indexOf"]("Chrome") > -1 && _0xa33007["indexOf"]("Safari") > -1) {
-      return "Chrome";
-    } else if (!!window["ActiveXObject"] || "ActiveXObject" in window) {
-      return "IE>=11";
-    } else {
-      return "Unkonwn";
-    }
-  }
-  ["createContainer"](_0x412f45, _0x144906, _0x264a95, _0x29b184, _0x2d4729) {
-    if (_0x29b184 === undefined || _0x29b184 == null) _0x29b184 = !![];
-    if (_0x2d4729 == undefined || _0x2d4729 == null) _0x2d4729 = !![];
-    if (_awp_allWebPlugin_ == null) _awp_allWebPlugin_ = new allWebPlugin();
-    var _0x333676 = window["devicePixelRatio"] || window["webkitDevicePixelRatio"] || window["mozDevicePixelRatio"] || 1;
-    var _0x3f7f78 = window["screenX"] | window["screenLeft"];
-    var _0x2aa086 = window["screenY"] | window["screenTop"];
-    var _0x1cb00c = window["outerWidth"];
-    var _0x5e16f1 = window["outerHeight"];
-    var _0x4088ec = this["getExploreName"]();
-    var _0x52e963 = document["title"];
-    var _0x23ae4e = _0x412f45["getBoundingClientRect"]();
-    var _0x5e74dd = _0x23ae4e["left"];
-    var _0x260c2e = _0x23ae4e["top"];
-    var _0xdba179 = _0x23ae4e["width"];
-    var _0x3249d9 = _0x23ae4e["height"];
-    var _0x2f4abe = {
-      "cmd": "CreateContainer",
-      "progid": _0x144906,
-      "lic": _0x264a95,
-      "dpi": _0x333676,
-      "left": _0x3f7f78,
-      "top": _0x2aa086,
-      "width": _0x1cb00c,
-      "height": _0x5e16f1,
-      "name": _0x4088ec,
-      "title": _0x52e963,
-      "cleft": _0x5e74dd,
-      "ctop": _0x260c2e,
-      "cwidth": _0xdba179,
-      "cheight": _0x3249d9
-    };
-    var _0x389973 = "";
-    var _0x1e951d = ![];
-    var _0x175477 = null;
-    this["pcid"] = "";
-    var _0x26ec9d = SendXMLHttpRequest("POST", awp_url, ![], _0x2f4abe);
-    if (_0x26ec9d["status"] === 200) {
-      var _0x5919cf = JSON["parse"](_0x26ec9d["responseText"]);
-      if (_0x5919cf["code"] == 0) {
-        _0x389973 = _0x5919cf["pcid"];
-        _awp_allWebPlugin_["Init"]();
-        _0x175477 = new allWebPluginUI(awp_ws_url + "?pcid=" + _0x389973, awp_url, _0x412f45, _0x389973, _0x29b184);
-        _0x1e951d = !![];
-      } else {
-        alert(_0x5919cf["msg"]);
-      }
-    } else {
-      console["error"]("net error: " + _0x26ec9d["status"]);
-    }
-    this["UI"] = _0x175477;
-    if (this["UI"] != null) {
-      this["UI"]["Run"]();
-      _awp_allWebPlugin_["_usePluginUI"] = _0x2d4729;
-      _awp_allWebPlugin_["HostCnts"]["push"](this);
-      _awp_allWebPlugin_["ActivateContainer"] = this;
-    }
-    this["pcid"] = _0x389973;
-    return _0x1e951d;
-  }
-  ["destroyContainer"]() {
-    var _0x1feac8 = {
-      "cmd": "DestroyContainer",
-      "pcid": this["pcid"]
-    };
-    var _0x2e524b = SendXMLHttpRequest("POST", awp_url, ![], _0x1feac8);
-    if (_0x2e524b["status"] === 200) {
-      var _0x162044 = JSON["parse"](_0x2e524b["responseText"]);
-    } else {
-      console["error"]("Error: " + _0x2e524b["status"]);
-    }
-  }
-  ["IsNewVersion"](_0x2b9cf7) {
-    var _0x1e7f58 = {
-      "cmd": "IsNewVersion",
-      "ver": _0x2b9cf7
-    };
-    var _0x1511ae = ![];
-    var _0x5899e8 = SendXMLHttpRequest("POST", awp_url, ![], _0x1e7f58);
-    if (_0x5899e8["status"] === 200) {
-      var _0x347b60 = JSON["parse"](_0x5899e8["responseText"]);
-      if (_0x347b60["code"] == 0) _0x1511ae = !![];
-    } else {
-      console["error"]("Error: " + _0x5899e8["status"]);
-    }
-    return _0x1511ae;
-  }
-  ["GetVersion"]() {
-    var _0x41c98d = {
-      "cmd": "GetVersion"
-    };
-    var _0xfae6c9 = "";
-    var _0x115f46 = SendXMLHttpRequest("POST", awp_url, ![], _0x41c98d);
-    if (_0x115f46["status"] === 200) {
-      var _0xc465b3 = JSON["parse"](_0x115f46["responseText"]);
-      if (_0xc465b3["code"] == 0) _0xfae6c9 = _0xc465b3["msg"];
-    } else {
-      console["error"]("Error: " + _0x115f46["status"]);
-    }
-    return _0xfae6c9;
-  }
-  ["IsInstall"]() {
-    var _0x423913 = {
-      "cmd": "IsInstall"
-    };
-    var _0x14c735 = ![];
-    var _0x4ace46 = SendXMLHttpRequest("POST", awp_url, ![], _0x423913);
-    if (_0x4ace46["status"] === 200) {
-      _0x14c735 = !![];
-    } else {
-      console["error"]("Error: " + _0x4ace46["status"]);
-    }
-    return _0x14c735;
-  }
-  ["UpdateVersion"](_0x52435b) {
-    var _0x387b6e = {
-      "cmd": "UpdateVersion",
-      "src": _0x52435b
-    };
-    return new Promise(function (_0x52f81d, _0xb37d1d) {
-      var _0x3a4d38 = SendXMLHttpRequest("POST", awp_url, !![]);
-      _0x3a4d38["onreadystatechange"] = function () {
-        if (_0x3a4d38["readyState"] === XMLHttpRequest["DONE"]) {
-          if (_0x3a4d38["status"] === 200) {
-            var _0x573a1e = JSON["parse"](_0x3a4d38["responseText"]);
-            _0x52f81d(_0x573a1e);
-          } else {
-            console["error"]("Error: " + _0x3a4d38["status"]);
-            _0xb37d1d(_0x3a4d38["status"]);
-          }
-        }
-      };
-      _0x3a4d38["send"](JSON["stringify"](_0x387b6e));
-    });
-  }
-  ["createPlugin"](_0x1a74c9, _0x425114) {
-    if (_0x425114 === undefined) _0x425114 = "";
-    this["clsID"] = _0x1a74c9;
-    var _0x4ac032 = null;
-    if (this["pcid"] == "") return _0x4ac032;
-    var _0x3db2ac = {
-      "cmd": "CreatePlugin",
-      "clsid": _0x1a74c9,
-      "params": _0x425114,
-      "pcid": this["pcid"]
-    };
-    var _0x367cfb = this;
-    var _0x22b2a8 = SendXMLHttpRequest("POST", awp_url, ![], _0x3db2ac);
-    if (_0x22b2a8["status"] === 200) {
-      var _0x4e5df6 = JSON["parse"](_0x22b2a8["responseText"]);
-      if (_0x4e5df6["code"] == 0) _0x4ac032 = _0x4e5df6;else {
-        alert(_0x4e5df6["msg"]);
-        console["log"](_0x4e5df6["msg"]);
-      }
-    } else {
-      console["error"]("Error: " + _0x22b2a8["status"]);
-    }
-    return _0x4ac032;
-  }
-  ["createProxyPlugin"](_0x36550b, _0x405de8) {
-    if (_0x405de8 === undefined) _0x405de8 = "";
-    this["clsID"] = _0x36550b;
-    var _0x3d7a74 = null;
-    if (this["pcid"] == "") return _0x3d7a74;
-    var _0x3cbf7f = {
-      "cmd": "CreatePlugin",
-      "clsid": _0x36550b,
-      "params": _0x405de8,
-      "pcid": this["pcid"]
-    };
-    var _0x1560b5 = SendXMLHttpRequest("POST", awp_url, ![], _0x3cbf7f);
-    if (_0x1560b5["status"] === 200) {
-      var _0x17d85e = JSON["parse"](_0x1560b5["responseText"]);
-      if (_0x17d85e["code"] == 0) {
-        _0x3d7a74 = new Proxy(new AxObject(_0x3cbf7f["pcid"], _0x17d85e["ret"]["v"], _0x17d85e["ret"]["t"]), AxObjectHandle);
-      } else {
-        alert(_0x17d85e["msg"]);
-        console["log"](_0x17d85e["msg"]);
-      }
-    } else {
-      console["error"]("Error: " + _0x1560b5["status"]);
-    }
-    this["_ObjectAx"] = _0x3d7a74;
-    return _0x3d7a74;
-  }
-  get ["ObjectAx"]() {
-    return this["_ObjectAx"];
-  }
-  set ["ObjectAx"](_0x2aef80) {
-    this["_ObjectAx"] = _0x2aef80;
-  }
-  ["getHttpClient"]() {
-    var _0x26c429 = null;
-    if (this["pcid"] == "") return _0x26c429;
-    if (this["_httpClient"] != null) return this["_httpClient"];
-    var _0x56a2fd = {
-      "cmd": "GetObject",
-      "name": "httpclient",
-      "pcid": this["pcid"]
-    };
-    var _0x4e793d = SendXMLHttpRequest("POST", awp_url, ![], _0x56a2fd);
-    if (_0x4e793d["status"] === 200) {
-      var _0x4eff32 = JSON["parse"](_0x4e793d["responseText"]);
-      _0x26c429 = new httpclient(_0x4eff32["pcid"], _0x4eff32["ret"]["v"]);
-    } else {
-      console["error"]("Error: " + _0x4e793d["status"]);
-    }
-    this["_httpClient"] = _0x26c429;
-    return _0x26c429;
-  }
-  ["getPluginUtility"]() {
-    var _0x239671 = null;
-    if (this["_pluginUtility"] != null) return this["_pluginUtility"];
-    if (this["pcid"] == "") return _0x239671;
-    var _0x5ab337 = {
-      "cmd": "GetObject",
-      "name": "pluginutility",
-      "pcid": this["pcid"]
-    };
-    var _0x3eb899 = SendXMLHttpRequest("POST", awp_url, ![], _0x5ab337);
-    if (_0x3eb899["status"] === 200) {
-      var _0x2632bc = JSON["parse"](_0x3eb899["responseText"]);
-      _0x239671 = new PluginUtility(_0x2632bc["pcid"], _0x2632bc["ret"]["v"]);
-    } else {
-      console["error"]("Error: " + _0x3eb899["status"]);
-    }
-    this["_pluginUtility"] = _0x239671;
-    return _0x239671;
-  }
-  ["RegisterEvent"](_0x2ebeb8) {
-    var _0x5e24dc;
-    var _0x4cbe9c = {
-      "cmd": "CCmd",
-      "pcid": this["pcid"],
-      "fun": "RegisterEvent",
-      "params": [_0x2ebeb8]
-    };
-    var _0xd70ce0 = ![];
-    var _0x317231 = SendXMLHttpRequest("POST", awp_url, ![], _0x4cbe9c);
-    if (_0x317231["status"] === 200) {
-      var _0x378e93 = JSON["parse"](_0x317231["responseText"]);
-      if (_0x378e93["code"] === 0) {
-        _0xd70ce0 = !![];
-      }
-    } else {
-      console["error"]("Error: " + _0x317231["status"]);
-    }
-    return _0xd70ce0;
-  }
-}
-class NObject {
-  constructor(_0x572f10, _0x6cd2db) {
-    this["pcid"] = _0x572f10;
-    this["obj"] = _0x6cd2db;
-    this["msg"] = "";
-  }
-  ["InvokeObject"]() {
-    var _0x14c33b;
-    if (arguments["length"] < 1) return _0x14c33b;
-    var _0x4ff02a = [];
-    for (var _0x206a0c = 1; _0x206a0c < arguments["length"]; _0x206a0c++) {
-      if (typeof arguments[_0x206a0c] === "object" && arguments[_0x206a0c] !== null) {
-        var _0x2500c8 = arguments[_0x206a0c]["obj"];
-        var _0x101036 = {
-          "obj": _0x2500c8
-        };
-        _0x4ff02a["push"](_0x101036);
-      } else {
-        if (arguments[_0x206a0c] === undefined) arguments[_0x206a0c] = null;
-        _0x4ff02a["push"](arguments[_0x206a0c]);
-      }
-    }
-    var _0x1ae972 = {
-      "cmd": "InvokePlugin",
-      "pcid": this["pcid"],
-      "obj": this["obj"],
-      "fun": arguments[0],
-      "params": _0x4ff02a
-    };
-    var _0x36af2c = SendXMLHttpRequest("POST", awp_url, ![], _0x1ae972);
-    if (_0x36af2c["status"] === 200) {
-      var _0x4ba767 = JSON["parse"](_0x36af2c["responseText"]);
-      if (_0x4ba767["code"] == 0) {
-        _0x14c33b = _0x4ba767["ret"];
-      } else {
-        this["msg"] = _0x4ba767["msg"];
-        console["log"]("Invoke Start-\n");
-        console["log"](_0x1ae972);
-        console["log"](_0x4ba767);
-        console["log"]("Invoke End-\n");
-      }
-    } else {
-      console["error"]("Error: " + _0x36af2c["status"]);
-    }
-    return _0x14c33b;
-  }
-  ["get_pcid"]() {
-    return this["pcid"];
-  }
-  ["get_obj"]() {
-    return this["obj"];
-  }
-  ["get_msg"]() {
-    return this["msg"];
-  }
-}
-class AxObject {
-  constructor(_0xbf6d2, _0x3ba75d, _0x25a439) {
-    this["pcid"] = _0xbf6d2;
-    this["obj"] = _0x3ba75d;
-    this["objtype"] = _0x25a439;
-    this["msg"] = "";
-    this["code"] = 0;
-  }
-  ["Invoke"]() {
-    var _0x2e57b7;
-    var _0x1fe2b8;
-    if (arguments["length"] < 1) return _0x2e57b7;
-    var _0x306794 = [];
-    if (arguments[1] instanceof Array) {
-      for (var _0x5cf58e = 0; _0x5cf58e < arguments[1]["length"]; _0x5cf58e++) {
-        if (typeof arguments[1][_0x5cf58e] === "object" && arguments[1][_0x5cf58e] !== null) {
-          var _0x3451eb = arguments[1][_0x5cf58e]["obj"];
-          var _0x3f0f7a = {
-            "obj": _0x3451eb
-          };
-          _0x306794["push"](_0x3f0f7a);
-        } else {
-          if (arguments[1][_0x5cf58e] === undefined) arguments[1][_0x5cf58e] = null;
-          _0x306794["push"](arguments[1][_0x5cf58e]);
-        }
-      }
-    } else {
-      for (var _0x5cf58e = 1; _0x5cf58e < arguments["length"]; _0x5cf58e++) {
-        if (typeof arguments[_0x5cf58e] === "object" && arguments[_0x5cf58e] !== null) {
-          var _0x3451eb = arguments[_0x5cf58e]["obj"];
-          var _0x3f0f7a = {
-            "obj": _0x3451eb
-          };
-          _0x306794["push"](_0x3f0f7a);
-        } else {
-          if (arguments[_0x5cf58e] === undefined) arguments[_0x5cf58e] = null;
-          _0x306794["push"](arguments[_0x5cf58e]);
-        }
-      }
-    }
-    var _0x413fab = {
-      "cmd": "InvokePlugin",
-      "pcid": this["pcid"],
-      "obj": this["obj"],
-      "fun": arguments[0],
-      "params": _0x306794
-    };
-    var _0x30bc53 = SendXMLHttpRequest("POST", awp_url, ![], _0x413fab);
-    if (_0x30bc53["status"] === 200) {
-      var _0x75bbd = JSON["parse"](_0x30bc53["responseText"]);
-      _0x1fe2b8 = _0x75bbd["code"];
-      if (_0x75bbd["code"] == 0) {
-        _0x2e57b7 = _0x75bbd["ret"];
-      } else {
-        this["msg"] = _0x75bbd["msg"];
-        console["log"]("Invoke Start-\n");
-        console["log"](_0x413fab);
-        console["log"](_0x75bbd);
-        console["log"]("Invoke End-\n");
-      }
-    } else {
-      console["error"]("Error: " + _0x30bc53["status"]);
-    }
-    this["code"] = _0x1fe2b8;
-    return _0x2e57b7;
-  }
-  ["InvokeProp"]() {
-    var _0x3f4c3c;
-    var _0x338a2f;
-    if (arguments["length"] < 1) return _0x3f4c3c;
-    var _0x2f9f01 = [];
-    if (arguments[1] instanceof Array) {
-      for (var _0x5442d3 = 0; _0x5442d3 < arguments[1]["length"]; _0x5442d3++) {
-        if (typeof arguments[1][_0x5442d3] === "object" && arguments[1][_0x5442d3] !== null) {
-          var _0x2bb22e = arguments[1][_0x5442d3]["obj"];
-          var _0x205b70 = {
-            "obj": _0x2bb22e
-          };
-          _0x2f9f01["push"](_0x205b70);
-        } else {
-          if (arguments[1][_0x5442d3] === undefined) arguments[1][_0x5442d3] = null;
-          _0x2f9f01["push"](arguments[1][_0x5442d3]);
-        }
-      }
-    } else {
-      for (var _0x5442d3 = 1; _0x5442d3 < arguments["length"]; _0x5442d3++) {
-        if (typeof arguments[_0x5442d3] === "object" && arguments[_0x5442d3] !== null) {
-          var _0x2bb22e = arguments[_0x5442d3]["obj"];
-          var _0x205b70 = {
-            "obj": _0x2bb22e
-          };
-          _0x2f9f01["push"](_0x205b70);
-        } else {
-          if (arguments[_0x5442d3] === undefined) arguments[_0x5442d3] = null;
-          _0x2f9f01["push"](arguments[_0x5442d3]);
-        }
-      }
-    }
-    var _0x106612 = {
-      "cmd": "InvokePlugin",
-      "pcid": this["pcid"],
-      "obj": this["obj"],
-      "fun": arguments[0],
-      "params": _0x2f9f01
-    };
-    var _0x3cfc14 = SendXMLHttpRequest("POST", awp_url, ![], _0x106612);
-    if (_0x3cfc14["status"] === 200) {
-      var _0x3bce29 = JSON["parse"](_0x3cfc14["responseText"]);
-      _0x338a2f = _0x3bce29["code"];
-      if (_0x3bce29["code"] == 0) {
-        _0x3f4c3c = _0x3bce29["ret"];
-      } else if (_0x3bce29["code"] = 1011) {
-        this["msg"] = _0x3bce29["msg"];
-      } else {
-        this["msg"] = _0x3bce29["msg"];
-        console["log"]("Invoke Start-\n");
-        console["log"](_0x106612);
-        console["log"](_0x3bce29);
-        console["log"]("Invoke End-\n");
-      }
-    } else {
-      console["error"]("Error: " + _0x3cfc14["status"]);
-      this["msg"] = _0x3cfc14["status"];
-    }
-    this["code"] = _0x338a2f;
-    return _0x3f4c3c;
-  }
-  ["get_pcid"]() {
-    return this["pcid"];
-  }
-  ["get_obj"]() {
-    return this["obj"];
-  }
-  ["get_msg"]() {
-    return this["msg"];
-  }
-}
-const AxObjectHandle = {
-  "AxObj": [],
-  "findAxObj": function (_0x1ba81c, _0x23e7de) {
-    var _0x5c2fd5 = null;
-    for (let _0x1dca29 = 0; _0x1dca29 < AxObjectHandle["AxObj"]["length"]; _0x1dca29++) {
-      const _0x14b8d0 = AxObjectHandle["AxObj"][_0x1dca29];
-      if (_0x14b8d0 != null && _0x14b8d0["pcid"] === _0x1ba81c && _0x14b8d0["obj"] === _0x23e7de) {
-        _0x5c2fd5 = _0x14b8d0;
-        break;
-      }
-    }
-    return _0x5c2fd5;
-  },
-  "get": function (_0x1468c3, _0x1b1b20) {
-    const _0x5f0954 = function (..._0x2365de) {
-      var _0x48b487 = _0x1468c3["InvokeProp"]("wget_" + _0x1b1b20, _0x2365de);
-      var _0x12360f;
-      if (_0x48b487 === undefined || _0x48b487 === null || typeof _0x48b487 !== "object") return _0x48b487;
-      if (_0x48b487["v"] === null || _0x48b487["v"] === undefined) {
-        return undefined;
-      }
-      if ((_0x12360f = AxObjectHandle["findAxObj"](_0x1468c3["get_pcid"](), _0x48b487["v"])) !== null) {
-        return _0x12360f;
-      } else {
-        _0x12360f = new Proxy(new AxObject(_0x1468c3["get_pcid"](), _0x48b487["v"], _0x48b487["t"]), AxObjectHandle);
-        AxObjectHandle["AxObj"]["push"](_0x12360f);
-        return _0x12360f;
-      }
-    };
-    const _0x56c4ce = function (..._0x460fd9) {
-      var _0x29c374 = _0x1468c3["Invoke"](_0x1b1b20, _0x460fd9);
-      var _0x4de431;
-      if (_0x29c374 === undefined || _0x29c374 === null || typeof _0x29c374 !== "object") return _0x29c374;
-      if (_0x29c374["v"] === null || _0x29c374["v"] === undefined) {
-        return undefined;
-      }
-      if ((_0x4de431 = AxObjectHandle["findAxObj"](_0x1468c3["get_pcid"](), _0x29c374["v"])) !== null) {
-        return _0x4de431;
-      } else {
-        _0x4de431 = new Proxy(new AxObject(_0x1468c3["get_pcid"](), _0x29c374["v"], _0x29c374["t"]), AxObjectHandle);
-        AxObjectHandle["AxObj"]["push"](_0x4de431);
-        return _0x4de431;
-      }
-    };
-    const _0x5ac2c6 = function (..._0x2a4fcb) {
-      var _0x1e130b;
-      var _0x7a4356 = _0x1b1b20["substr"](0, _0x1b1b20["length"] - 5);
-      var _0x5bfef4 = [];
-      for (var _0x5bcd97 = 0; _0x5bcd97 < _0x2a4fcb["length"]; _0x5bcd97++) {
-        if (typeof _0x2a4fcb[_0x5bcd97] === "object" && _0x2a4fcb[_0x5bcd97] !== null) {
-          var _0x13597b = _0x2a4fcb[_0x5bcd97]["obj"];
-          var _0x2259bb = {
-            "obj": _0x13597b
-          };
-          _0x5bfef4["push"](_0x2259bb);
-        } else {
-          if (_0x2a4fcb[_0x5bcd97] === undefined) _0x2a4fcb[_0x5bcd97] = null;
-          _0x5bfef4["push"](_0x2a4fcb[_0x5bcd97]);
-        }
-      }
-      var _0x432a98 = {
-        "cmd": "InvokePlugin",
-        "pcid": this["pcid"],
-        "obj": this["obj"],
-        "fun": _0x7a4356,
-        "params": _0x5bfef4
-      };
-      return new Promise(function (_0x3e2ac4, _0x2ebac1) {
-        var _0x406e30 = SendXMLHttpRequest("POST", awp_url, !![]);
-        _0x406e30["onreadystatechange"] = function () {
-          if (_0x406e30["readyState"] === XMLHttpRequest["DONE"]) {
-            if (_0x406e30["status"] === 200) {
-              var _0x3a4902 = JSON["parse"](_0x406e30["responseText"]);
-              if (_0x3a4902["code"] == 0) {
-                _0x1e130b = _0x3a4902["ret"];
-                var _0x245162 = null;
-                if (_0x1e130b === undefined || _0x1e130b === null || typeof _0x1e130b !== "object") _0x3e2ac4(_0x1e130b);
-                if (_0x1e130b["v"] === null || _0x1e130b["v"] === undefined) {
-                  _0x3e2ac4(undefined);
-                } else if ((_0x245162 = AxObjectHandle["findAxObj"](_0x1468c3["get_pcid"](), _0x1e130b["v"])) !== null) {
-                  _0x3e2ac4(_0x245162);
-                } else {
-                  _0x245162 = new Proxy(new AxObject(_0x1468c3["get_pcid"](), _0x1e130b["v"], _0x1e130b["t"]), AxObjectHandle);
-                  AxObjectHandle["AxObj"]["push"](_0x245162);
-                  _0x3e2ac4(_0x245162);
+  ["onWSmsg"](_0x58f3ff) {
+    switch (typeof _0x58f3ff["data"]) {
+      case "object":
+        {
+          var _0x4ff2e7 = new Uint32Array(_0x58f3ff["data"], 0, 1);
+          switch (_0x4ff2e7[0]) {
+            case 1:
+              {
+                if (this["bFixSize"] == !![]) {
+                  var _0x43210d = new Uint32Array(_0x58f3ff["data"], 0, 5);
+                  if (_0x43210d[1] == 0) {
+                    var _0x471e6d = new Uint8Array(_0x58f3ff["data"], 20);
+                    var _0x4ee17f = new Blob([_0x471e6d], {
+                      "type": "image/jpg"
+                    });
+                    createImageBitmap(_0x4ee17f)["then"](_0x40f7d1 => {
+                      this["cctx"]["drawImage"](_0x40f7d1, 0, 0, _0x40f7d1["width"], _0x40f7d1["height"], 0, 0, this["canvas"]["width"], this["canvas"]["height"]);
+                    });
+                  }
                 }
-              } else {
-                this["msg"] = _0x3a4902["msg"];
-                console["log"]("Invoke Start-\n");
-                console["log"](_0x432a98);
-                console["log"](_0x3a4902);
-                console["log"]("Invoke End-\n");
-                _0x2ebac1(_0x3a4902);
+                console["log"]("ws event 1\n");
               }
-            } else {
-              console["error"]("Error: " + _0x406e30["status"]);
-            }
+              break;
+            case 2:
+              {
+                var _0x2dcc74 = _awp_allWebPlugin_["ActivateContainer"];
+                _awp_allWebPlugin_["ActivateContainerByPCID"](this["pcid"]);
+                var _0x31ffe4 = new Uint8Array(_0x58f3ff["data"], 8);
+                const _0x31e95a = new TextDecoder("utf-8");
+                const _0x2a48ff = _0x31e95a["decode"](_0x31ffe4);
+                var _0x5e2486 = _0x2a48ff["indexOf"]("(");
+                var _0x196d34 = _0x2a48ff["slice"](0, _0x5e2486);
+                if (typeof window[_0x196d34] === "function") eval(_0x2a48ff);
+                _awp_allWebPlugin_["ActivateContainer"] = _0x2dcc74;
+                console["log"]("ws event 2\n");
+              }
+              break;
+            case 3:
+              {
+                this["onUpdateUI"]();
+                this["fillRect"]();
+                console["log"]("ws event 3\n");
+              }
+              break;
+            case 4:
+              {
+                this["fillRect"]();
+                console["log"]("ws event 4\n");
+              }
+              break;
+            case 5:
+              {
+                var _0x43210d = new Uint32Array(_0x58f3ff["data"]);
+                if (_0x43210d[1] == 0) {
+                  this["onUpdatePosition"](1);
+                }
+                this["fillRect"]();
+                console["log"]("ws event 5\n");
+              }
+              break;
+            case 6:
+              {
+                if (document["visibilityState"] === "visible") {
+                  this["onUpdatePosition"](0);
+                }
+                this["ShowUI"](document["visibilityState"] === "hidden" ? ![] : !![]);
+                console["log"]("ws event 6\n");
+              }
+              break;
+            case 7:
+              {
+                alert(this["alertmsg"]);
+                this["EnabledCanvas"](![]);
+                console["log"]("ws event 7\n");
+              }
+              break;
+            case 8:
+              {
+                var _0x250c3a = document["activeElement"];
+                if (_0x250c3a) _0x250c3a["blur"]();
+                if (_awp_allWebPlugin_) _awp_allWebPlugin_["ActivateContainerByPCID"](this["pcid"]);
+                console["log"]("ws event 8\n");
+              }
+              break;
           }
-        };
-        _0x406e30["send"](JSON["stringify"](_0x432a98));
-      });
-    };
-    if (_0x1b1b20 in _0x1468c3) {
-      return _0x1468c3[_0x1b1b20];
-    } else {
-      var _0x474ff0;
-      if (typeof _0x1b1b20 === "string" && typeof _0x1468c3[_0x1b1b20] !== "function") {
-        var _0x33d03b = _0x1b1b20["slice"](-5);
-        var _0x218c09;
-        if (_0x33d03b == "_Asyn") {
-          _0x218c09 = _0x5ac2c6;
-        } else {
-          _0x218c09 = _0x56c4ce;
         }
-        _0x1468c3[_0x1b1b20] = _0x218c09;
-        return _0x1468c3[_0x1b1b20];
-      }
-      return _0x474ff0;
+        break;
     }
-  },
-  "set": function (_0x2ab1a2, _0x4c55a4, _0xb38543) {
-    var _0x113784 = "put_" + _0x4c55a4;
-    _0x2ab1a2["Invoke"](_0x113784, _0xb38543);
-    return !![];
-  },
-  "has": function (_0x17c661, _0x34f1b8) {
-    return _0x34f1b8 in _0x17c661;
   }
-};
-class PluginUtility extends NObject {
-  constructor(_0x5625cb, _0x26c0b0) {
-    super(_0x5625cb, _0x26c0b0);
-  }
-  ["GetTempFileName"](_0x54190c, _0xeacfd6) {
-    return this["InvokeObject"]("GetTempFileName", _0x54190c, _0xeacfd6);
-  }
-  ["GetTempPath"]() {
-    return this["InvokeObject"]("GetTempPath");
-  }
-  ["CreateDirectory"](_0x3836d0) {
-    return this["InvokeObject"]("CreateDirectory", _0x3836d0);
-  }
-  ["DeleteFile"](_0xb62a5) {
-    return this["InvokeObject"]("DeleteFile", _0xb62a5);
-  }
-  ["ClearDirectory"](_0x42a140) {
-    return this["InvokeObject"]("ClearDirectory", _0x42a140);
-  }
-  ["GetFileSize"](_0x2be49c) {
-    return this["InvokeObject"]("GetFileSize", _0x2be49c);
-  }
-  ["FilePathExists"](_0x1886ca) {
-    return this["InvokeObject"]("FilePathExists", _0x1886ca);
-  }
-  ["DirectoryExists"](_0x11baf9) {
-    return this["InvokeObject"]("DirectoryExists", _0x11baf9);
-  }
-  ["Alert"](_0x431801) {
-    var _0x55695b = 0;
-    var _0x3aaaf3 = document["title"] === "" ? "allWebPluin\u4E2D\u95F4\u4EF6-\u63D0\u793A" : document["title"] + "-\u63D0\u793A";
-    var _0x2eaae3 = 0;
-    var _0x44a82f = {
-      "cmd": "InvokePlugin",
-      "pcid": this["pcid"],
-      "obj": this["obj"],
-      "fun": "ShowMessage",
-      "params": [_0x431801, _0x3aaaf3, _0x2eaae3]
-    };
-    var _0x43dab5 = SendXMLHttpRequest("POST", awp_url, ![], _0x44a82f);
-    if (_0x43dab5["status"] === 200) {
-      var _0x3b7451 = JSON["parse"](_0x43dab5["responseText"]);
-      _0x55695b = _0x3b7451["ret"];
-    } else {
-      console["error"]("Error: " + _0x43dab5["status"]);
+  ["onWSopen"](_0x8ea2f) {
+    this["open"] = !![];
+    if (this["blForceShowUI"] == ![]) {
+      this["ForceShowUI"](![]);
+    } else if (document["visibilityState"] === "visible") {
+      this["ShowUI"](!![]);
+      this["onUpdatePosition"](0);
     }
-    return _0x55695b;
-  }
-  ["Confirm"](_0x5bf542) {
-    var _0x2e0c72 = 0;
-    var _0x1248a0 = document["title"] === "" ? "allWebPluin\u4E2D\u95F4\u4EF6-\u786E\u8BA4" : document["title"] + "-\u786E\u8BA4";
-    var _0x24df41 = 1;
-    var _0x1f7301 = {
-      "cmd": "InvokePlugin",
-      "pcid": this["pcid"],
-      "obj": this["obj"],
-      "fun": "ShowMessage",
-      "params": [_0x5bf542, _0x1248a0, _0x24df41]
-    };
-    var _0x2c0bf0 = SendXMLHttpRequest("POST", awp_url, ![], _0x1f7301);
-    if (_0x2c0bf0["status"] === 200) {
-      var _0x3818e7 = JSON["parse"](_0x2c0bf0["responseText"]);
-      _0x2e0c72 = _0x3818e7["ret"];
-    } else {
-      console["error"]("Error: " + _0x2c0bf0["status"]);
+    if (document["visibilityState"] === "hidden") {
+      this["ShowUI"](![]);
     }
-    return _0x2e0c72 == 1 ? !![] : ![];
   }
-  ["Prompt"](_0x146ed8, _0x3cf00c) {
-    var _0x99f3be;
-    var _0x136079 = document["title"] === "" ? "allWebPluin\u4E2D\u95F4\u4EF6-\u8BF7\u8F93\u5165" : document["title"] + "-\u8BF7\u8F93\u5165";
-    var _0xb4f18c = {
-      "cmd": "InvokePlugin",
-      "pcid": this["pcid"],
-      "obj": this["obj"],
-      "fun": "Prompt",
-      "params": [_0x146ed8, _0x3cf00c, _0x136079]
-    };
-    var _0x5aff5f = SendXMLHttpRequest("POST", awp_url, ![], _0xb4f18c);
-    if (_0x5aff5f["status"] === 200) {
-      var _0x1ee426 = JSON["parse"](_0x5aff5f["responseText"]);
-      if (_0x1ee426["ret"]["code"] == 1) {
-        _0x99f3be = _0x1ee426["ret"]["value"];
-      }
-    } else {
-      console["error"]("Error: " + _0x5aff5f["status"]);
+  ["onWSclose"](_0x36548d) {
+    if (!this["isFirefox"]) {
+      if (!_0x36548d["wasClean"] && !this["open"]) {}
     }
-    return _0x99f3be;
+    this["open"] = ![];
+    this["_reset"]();
   }
-  ["GetLocalOpenDialog"](_0x3c2f1b) {
-    var _0x28408e = {
-      "cmd": "InvokePlugin",
-      "pcid": this["pcid"],
-      "obj": this["obj"],
-      "fun": "GetLocalOpenDialog",
-      "params": [_0x3c2f1b]
-    };
-    return new Promise(function (_0x35c090, _0xba7154) {
-      var _0x1c58be = SendXMLHttpRequest("POST", awp_url, !![]);
-      _0x1c58be["onreadystatechange"] = function () {
-        if (_0x1c58be["readyState"] === XMLHttpRequest["DONE"]) {
-          if (_0x1c58be["status"] === 200) {
-            var _0x5f5611 = JSON["parse"](_0x1c58be["responseText"]);
-            _0x35c090(_0x5f5611["ret"]);
-          } else {
-            _0xba7154(_0x1c58be["status"]);
-          }
-        }
-      };
-      _0x1c58be["send"](JSON["stringify"](_0x28408e));
-    });
+  ["onWSerr"](_0x14cfd7) {
+    this["open"] = ![];
+    switch (this["sock"]["readyState"]) {
+      case this["sock"]["CONNECTING"]:
+        break;
+    }
+    this["_reset"]();
   }
-  ["GetLocalSaveDialog"](_0x58c371) {
-    var _0x5268f7 = {
-      "cmd": "InvokePlugin",
-      "pcid": this["pcid"],
-      "obj": this["obj"],
-      "fun": "GetLocalSaveDialog",
-      "params": [_0x58c371]
-    };
-    return new Promise(function (_0x3a68d5, _0xe5042f) {
-      var _0x4c61e0 = SendXMLHttpRequest("POST", awp_url, !![]);
-      _0x4c61e0["onreadystatechange"] = function () {
-        if (_0x4c61e0["readyState"] === XMLHttpRequest["DONE"]) {
-          if (_0x4c61e0["status"] === 200) {
-            var _0x3eb244 = JSON["parse"](_0x4c61e0["responseText"]);
-            _0x3a68d5(_0x3eb244["ret"]);
-          } else {
-            _0xe5042f(_0x4c61e0["status"]);
-          }
-        }
-      };
-      _0x4c61e0["send"](JSON["stringify"](_0x5268f7));
-    });
-  }
-  ["ShowMessage"](_0x2d5228, _0x347589, _0x34e5f9) {
-    if (_0x347589 === undefined) _0x347589 = document["title"] === "" ? "allWebPlugin" : document["title"];
-    if (_0x34e5f9 === undefined) _0x34e5f9 = 0;
-    var _0x247be1 = {
-      "cmd": "InvokePlugin",
-      "pcid": this["pcid"],
-      "obj": this["obj"],
-      "fun": "ShowMessage",
-      "params": [_0x2d5228, _0x347589, _0x34e5f9]
-    };
-    return new Promise(function (_0x47f03e, _0x4dc9b5) {
-      var _0x4ba815 = SendXMLHttpRequest("POST", awp_url, !![]);
-      _0x4ba815["onreadystatechange"] = function () {
-        if (_0x4ba815["readyState"] === XMLHttpRequest["DONE"]) {
-          if (_0x4ba815["status"] === 200) {
-            var _0x5c6909 = JSON["parse"](_0x4ba815["responseText"]);
-            _0x47f03e(_0x5c6909["ret"]);
-          } else {
-            _0x4dc9b5(_0x4ba815["status"]);
-          }
-        }
-      };
-      _0x4ba815["send"](JSON["stringify"](_0x247be1));
-    });
-  }
-  ["ExecuteApp"](_0x38fc5c, _0x45c0a7) {
-    var _0x132f0a = {
-      "cmd": "InvokePlugin",
-      "pcid": this["pcid"],
-      "obj": this["obj"],
-      "fun": "ExecuteApp",
-      "params": [_0x38fc5c, _0x45c0a7]
-    };
-    return new Promise(function (_0xd8f8cd, _0x3e85e6) {
-      var _0x209b54 = SendXMLHttpRequest("POST", awp_url, !![]);
-      _0x209b54["onreadystatechange"] = function () {
-        if (_0x209b54["readyState"] === XMLHttpRequest["DONE"]) {
-          if (_0x209b54["status"] === 200) {
-            var _0x105ee1 = JSON["parse"](_0x209b54["responseText"]);
-            _0xd8f8cd(_0x105ee1["ret"]);
-          } else {
-            _0x3e85e6(_0x209b54["status"]);
-          }
-        }
-      };
-      _0x209b54["send"](JSON["stringify"](_0x132f0a));
-    });
-  }
-  ["IsExistApp"](_0x56d634) {
-    return this["InvokeObject"]("IsExistApp", _0x56d634);
-  }
-  ["KillApp"](_0x501fab) {
-    return this["InvokeObject"]("KillApp", _0x501fab);
+  ["_mB"](_0x4b87c4) {
+    if (this["aMF"]) {
+      return this["aMF"];
+    }
+    var _0x27de27;
+    if ("event" in _0x4b87c4 && "button" in _0x4b87c4) {
+      _0x27de27 = _0x4b87c4["button"];
+    } else {
+      _0x27de27 = _0x4b87c4["rightClick"] ? 2 : 0;
+    }
+    switch (_0x27de27) {
+      case 0:
+        return 4096;
+      case 1:
+        return 16384;
+      case 2:
+        return 8192;
+    }
+    return 4096;
   }
 }
-class httpclient extends NObject {
-  constructor(_0x516200, _0x1aee0f) {
-    super(_0x516200, _0x1aee0f);
+class awpBase64 {
+  constructor() {
+    this["_keyStr"] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
   }
-  ["Open"](_0x58e769, _0x13adab, _0x26d611, _0x5497f8, _0x324c92) {
-    return this["InvokeObject"]("Open", _0x58e769, _0x13adab, _0x26d611, _0x5497f8, _0x324c92);
-  }
-  ["Close"]() {
-    return this["InvokeObject"]("Close");
-  }
-  ["SetRequestHeader"](_0x35f88e, _0x2b342f) {
-    return this["InvokeObject"]("SetRequestHeader", _0x35f88e, _0x2b342f);
-  }
-  ["Send"]() {
-    var _0xb31e6a = this;
-    return new Promise(function (_0x3b7a08, _0x1429a1) {
-      var _0x16a2be = _0xb31e6a["InvokeObject"]("Send");
-      if (_0x16a2be === undefined) {
-        _0x1429a1(_0xb31e6a["get_msg"]());
-      } else {
-        _0x3b7a08(_0x16a2be);
+  ["encode"](_0x21888a) {
+    let _0xd9c6b6 = "";
+    let _0x5bc2d0, _0x1d12fe, _0x4cd6ec, _0x1046a9, _0x371692, _0x359473, _0x5d3924;
+    let _0x1bd9d2 = 0;
+    _0x21888a = this["_utf8_encode"](_0x21888a);
+    while (_0x1bd9d2 < _0x21888a["length"]) {
+      _0x5bc2d0 = _0x21888a["charCodeAt"](_0x1bd9d2++);
+      _0x1d12fe = _0x21888a["charCodeAt"](_0x1bd9d2++);
+      _0x4cd6ec = _0x21888a["charCodeAt"](_0x1bd9d2++);
+      _0x1046a9 = _0x5bc2d0 >> 2;
+      _0x371692 = (_0x5bc2d0 & 3) << 4 | _0x1d12fe >> 4;
+      _0x359473 = (_0x1d12fe & 15) << 2 | _0x4cd6ec >> 6;
+      _0x5d3924 = _0x4cd6ec & 63;
+      if (isNaN(_0x1d12fe)) {
+        _0x359473 = _0x5d3924 = 64;
+      } else if (isNaN(_0x4cd6ec)) {
+        _0x5d3924 = 64;
       }
-    });
+      _0xd9c6b6 = _0xd9c6b6 + this["_keyStr"]["charAt"](_0x1046a9) + this["_keyStr"]["charAt"](_0x371692) + this["_keyStr"]["charAt"](_0x359473) + this["_keyStr"]["charAt"](_0x5d3924);
+    }
+    return _0xd9c6b6;
   }
-  ["AddForm"](_0xc4f4ce, _0x3ca509) {
-    return this["InvokeObject"]("AddForm", _0xc4f4ce, _0x3ca509);
+  ["decode"](_0x434b7c) {
+    let _0x19bc5e = "";
+    let _0x1779e0, _0x303de1, _0x361035;
+    let _0x4ef2bd, _0x386b9a, _0x4191ba, _0x3d2139;
+    let _0x22c684 = 0;
+    _0x434b7c = _0x434b7c["replace"](/[^A-Za-z0-9\+\/\=]/g, "");
+    while (_0x22c684 < _0x434b7c["length"]) {
+      _0x4ef2bd = this["_keyStr"]["indexOf"](_0x434b7c["charAt"](_0x22c684++));
+      _0x386b9a = this["_keyStr"]["indexOf"](_0x434b7c["charAt"](_0x22c684++));
+      _0x4191ba = this["_keyStr"]["indexOf"](_0x434b7c["charAt"](_0x22c684++));
+      _0x3d2139 = this["_keyStr"]["indexOf"](_0x434b7c["charAt"](_0x22c684++));
+      _0x1779e0 = _0x4ef2bd << 2 | _0x386b9a >> 4;
+      _0x303de1 = (_0x386b9a & 15) << 4 | _0x4191ba >> 2;
+      _0x361035 = (_0x4191ba & 3) << 6 | _0x3d2139;
+      _0x19bc5e = _0x19bc5e + String["fromCharCode"](_0x1779e0);
+      if (_0x4191ba != 64) {
+        _0x19bc5e = _0x19bc5e + String["fromCharCode"](_0x303de1);
+      }
+      if (_0x3d2139 != 64) {
+        _0x19bc5e = _0x19bc5e + String["fromCharCode"](_0x361035);
+      }
+    }
+    _0x19bc5e = Base64["_utf8_decode"](_0x19bc5e);
+    return _0x19bc5e;
   }
-  ["AddFile"](_0x598b9d, _0x1fb274) {
-    return this["InvokeObject"]("AddFile", _0x598b9d, _0x1fb274);
+  ["_utf8_encode"](_0x8b880a) {
+    _0x8b880a = _0x8b880a["replace"](/\r\n/g, "\n");
+    let _0x10e37b = "";
+    for (let _0x2d2a93 = 0; _0x2d2a93 < _0x8b880a["length"]; _0x2d2a93++) {
+      let _0x29707c = _0x8b880a["charCodeAt"](_0x2d2a93);
+      if (_0x29707c < 128) {
+        _0x10e37b += String["fromCharCode"](_0x29707c);
+      } else if (_0x29707c > 127 && _0x29707c < 2048) {
+        _0x10e37b += String["fromCharCode"](_0x29707c >> 6 | 192);
+        _0x10e37b += String["fromCharCode"](_0x29707c & 63 | 128);
+      } else {
+        _0x10e37b += String["fromCharCode"](_0x29707c >> 12 | 224);
+        _0x10e37b += String["fromCharCode"](_0x29707c >> 6 & 63 | 128);
+        _0x10e37b += String["fromCharCode"](_0x29707c & 63 | 128);
+      }
+    }
+    return _0x10e37b;
   }
-  ["Clear"]() {
-    return this["InvokeObject"]("Clear");
-  }
-  ["GetStatus"]() {
-    return this["InvokeObject"]("GetStatus");
-  }
-  ["GetStatusText"]() {
-    return this["InvokeObject"]("GetStatusText");
-  }
-  ["GetResponseText"]() {
-    return this["InvokeObject"]("GetResponseText");
-  }
-  ["GetResponseHeader"](_0x1f43fd) {
-    return this["InvokeObject"]("GetResponseHeader", _0x1f43fd);
-  }
-  ["GetAllResponseHeaders"]() {
-    return this["InvokeObject"]("GetAllResponseHeaders");
-  }
-  ["GetErrorCode"]() {
-    return this["InvokeObject"]("GetErrorCode");
-  }
-  ["GetErrorText"]() {
-    return this["InvokeObject"]("GetErrorText");
-  }
-  get ["ShowProgressUI"]() {
-    return this["InvokeObject"]("GetShowProgressUI");
-  }
-  set ["ShowProgressUI"](_0x5978d6) {
-    return this["InvokeObject"]("PutShowProgressUI", _0x5978d6);
-  }
-  ["AddString"](_0x1eec16) {
-    return this["InvokeObject"]("AddString", _0x1eec16);
-  }
-  ["SetHttpTimeOut"](_0x2cd084) {
-    return this["InvokeObject"]("SetHttpTimeOut", _0x2cd084);
-  }
-  ["SetCookie"](_0x443a2b) {
-    return this["InvokeObject"]("SetCookie", _0x443a2b);
-  }
-  ["ResponseSaveToFile"](_0x5463be) {
-    return this["InvokeObject"]("ResponseSaveToFile", _0x5463be);
+  ["_utf8_decode"](_0x4763cd) {
+    let _0x5958ca = "";
+    let _0x56968d = 0;
+    let _0x6e3c78 = c1 = c2 = 0;
+    while (_0x56968d < _0x4763cd["length"]) {
+      _0x6e3c78 = _0x4763cd["charCodeAt"](_0x56968d);
+      if (_0x6e3c78 < 128) {
+        _0x5958ca += String["fromCharCode"](_0x6e3c78);
+        _0x56968d++;
+      } else if (_0x6e3c78 > 191 && _0x6e3c78 < 224) {
+        c2 = _0x4763cd["charCodeAt"](_0x56968d + 1);
+        _0x5958ca += String["fromCharCode"]((_0x6e3c78 & 31) << 6 | c2 & 63);
+        _0x56968d += 2;
+      } else {
+        c2 = _0x4763cd["charCodeAt"](_0x56968d + 1);
+        c3 = _0x4763cd["charCodeAt"](_0x56968d + 2);
+        _0x5958ca += String["fromCharCode"]((_0x6e3c78 & 15) << 12 | (c2 & 63) << 6 | c3 & 63);
+        _0x56968d += 3;
+      }
+    }
+    return _0x5958ca;
   }
 }
