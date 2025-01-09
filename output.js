@@ -1,4 +1,4 @@
-//Thu Jan 09 2025 03:15:43 GMT+0000 (Coordinated Universal Time)
+//Thu Jan 09 2025 03:25:34 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
 !function () {
@@ -4127,7 +4127,7 @@
               gs = Mx;
             if (go(6459) + "Mg" === go(6459) + "Mg") this["Ft"] = IZ[gs(5070) + go(5565) + "D"], this["Qt"] = 0, this["zt"](), void 0 !== this["Ut"] && (1 === this["Ut"][go(6899) + "e"] ? this["Ut"] = void 0 : (this["Ut"][gs(977) + go(7424) + go(6532)] = void 0, this["Ut"][gs(4366) + go(7752)] = 0)), this["ei"] && (this["Wt"](!0), this[gs(1415) + "t"](Ip[go(357) + "ED"], this)), this[go(1415) + "t"](Ip[gs(5138) + "ED"], this);else {
               var oA = 229,
-                oC = (qT[go(620) + gs(7920)] / qq[gs(3337) + "th"] - 1.7777777777777777) / (2.1666666666666665 - 1.7777777777777777),
+                oC = (qT[go(620) + gs(7920)] / qq[gs(3337) + "th"] - 1.7777777777777777) / 0.38888888888888884,
                 oD = go(5613) + "t" === q8[gs(6013) + go(6547) + gs(5732) + go(1893) + go(7898) + go(297)]() ? oA - oA * (1 - oC) * 0.12 : qB[go(1993) + gs(2096) + gs(543) + gs(7030) + gs(5749) + gs(7500) + go(3145) + "PE"];
               this[gs(3703) + go(6410) + go(5732)][go(1386) + gs(1252) + go(7064) + "te"](qy, {
                 "height": oD,
@@ -9836,7 +9836,7 @@
                 s0 = this[pj(7679) + "w"][pj(6013) + pX(7022) + pj(938) + pX(393) + "nt"](SB);
               if (s0 && (null === (oC = null == s0 ? void 0 : s0[pX(3235) + pX(938) + pX(393) + pj(3061) + pX(6928) + "d"]) || void 0 === oC ? void 0 : oC[pj(3235) + pj(938) + pX(393) + pX(3061) + pX(6928) + "d"])) {
                 var s1 = 229,
-                  s2 = (oD[pX(620) + pj(7920)] / oD[pX(3337) + "th"] - 1.7777777777777777) / (2.1666666666666665 - 1.7777777777777777),
+                  s2 = (oD[pX(620) + pj(7920)] / oD[pX(3337) + "th"] - 1.7777777777777777) / 0.38888888888888884,
                   s3 = pX(5613) + "t" === Im[pX(6013) + pj(6547) + pX(5732) + pj(1893) + pj(7898) + pj(297)]() ? s1 - s1 * (1 - s2) * 0.12 : op[pX(1993) + pX(2096) + pX(543) + pj(7030) + pj(5749) + pj(7500) + pX(3145) + "PE"];
                 this[pj(3703) + pX(6410) + pX(5732)][pX(1386) + pj(1252) + pj(7064) + "te"](SB, {
                   "height": s3,
