@@ -1,4 +1,4 @@
-//Sun Jan 12 2025 12:12:04 GMT+0000 (Coordinated Universal Time)
+//Sun Jan 12 2025 12:13:45 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
 !function () {
@@ -79,7 +79,9 @@
         },
         fu: function (j, k) {
           var q = (0, U.fW)(j, true);
-          k && (q += k);
+          if (k) {
+            q += k;
+          }
           k = F.fp(q) + "|" + (0, W.n)() + "|" + new Date().getTime() + "|1";
           q = x.fh.ua(k, true);
           k = {};
@@ -127,7 +129,9 @@
       var h = p(170);
       var x = "acw_sc__v2";
       function S(m, T) {
-        h.fm[h.fT] && (0, W.ft)(m, location.href) && Q(m, T);
+        if (h.fm[h.fT] && (0, W.ft)(m, location.href)) {
+          Q(m, T);
+        }
         (0, b.fV)(x, T, 3600000);
       }
       function U(m) {
@@ -144,12 +148,18 @@
         fF: function (L, b) {
           for (var M = JSON.parse("[15, 35, 29, 24, 33, 16, 1, 38, 10, 9, 19, 31, 40, 27, 22, 23, 25, 13, 6, 11,39,18,20,8, 14, 21, 32, 26, 2, 30, 7, 4, 17, 5, 3, 28, 34, 37, 12, 36]"), W = "3000176000856006061501533003690027800375", h = [], x = "", S = "", U = 0; U < L.length; U++) {
             for (var Q = L[U], m = 0; m < M.length; m++) {
-              M[m] == U + 1 && (h[m] = Q);
+              if (M[m] == U + 1) {
+                h[m] = Q;
+              }
             }
           }
           for (x = h.join(""), U = 0; U < x.length && U < W.length; U += 2) {
             var T = (parseInt(x.slice(U, U + 2), 16) ^ parseInt(W.slice(U, U + 2), 16)).toString(16);
-            S += T = 1 == T.length ? "0" + T : T;
+            if (1 == T.length) {
+              S += T = "0" + T;
+            } else {
+              S += T = T;
+            }
           }
           G(b, S);
         }
@@ -196,7 +206,9 @@
           }
         }
       }
-      U && "false" == U.getAttribute(x) && (S[x] = false);
+      if (U && "false" == U.getAttribute(x)) {
+        S[x] = false;
+      }
     },
     376: function (y, N, p) {
       "use strict";
@@ -219,13 +231,20 @@
         } catch (P) {}
         var Q;
         var m = 0;
-        M.fo.hasOwnProperty && Object.keys(M.fP).forEach(function (E) {
-          var O = M.fo.document[E];
-          (0 == E.indexOf("$cdc_asdjflasutopfhvcZLmcfl_") || O && O.hasOwnProperty("idPrefix_") && O.hasOwnProperty("cache_") && O.hasOwnProperty("nextId_")) && (m = 1);
-        });
-        1 != m && (Q = new RegExp("^cdc_[a-zA-Z0-9]{22}_"), Object.keys(M.fo).forEach(function (E) {
-          "$chrome_asyncScriptInfo" != E && !Q.test(E) || (m = 1);
-        }));
+        if (M.fo.hasOwnProperty) {
+          Object.keys(M.fP).forEach(function (E) {
+            var O = M.fo.document[E];
+            if (0 == E.indexOf("$cdc_asdjflasutopfhvcZLmcfl_") || O && O.hasOwnProperty("idPrefix_") && O.hasOwnProperty("cache_") && O.hasOwnProperty("nextId_")) {
+              m = 1;
+            }
+          });
+        }
+        if (1 != m) {
+          Q = new RegExp("^cdc_[a-zA-Z0-9]{22}_");
+          Object.keys(M.fo).forEach(function (E) {
+            "$chrome_asyncScriptInfo" != E && !Q.test(E) || (m = 1);
+          });
+        }
         var T = new Date();
         var V = 0;
         T.toString = function () {
@@ -233,7 +252,9 @@
             return "";
           }
         };
-        b && b(T);
+        if (b) {
+          b(T);
+        }
         var F = 0;
         var F = (F = (F = (F = (F = (F = (F = (F = (F = (F = (F = (F = (F = (F = (F = (F |= ((1 < V ? 1 : 0) ? 1 : 0) << 0) | S(M.fE.webdriver) << 1) | (m ? 1 : 0) << 2) | S(M.fo._phantom) << 3) | S(M.fo.callPhantom) << 4) | S(M.fo.phantom) << 5) | S(M.fo.spawn) << 6) | S(M.fo.emit) << 7 | (U ? 1 : 0) << 8) | S(M.fo.Buffer) << 9) | S(M.fo.domAutomation) << 10) | S(M.fo.webdriver) << 11) | S(M.fP.__webdriver_script_fn) << 12) | S(M.fo.fxdriver_id) << 13) | S(M.fo.__fxdriver_unwrapped) << 14) | S(M.fo.ClientUtils) << 15) | S(M.fo.__nightmare) << 16;
         W = function () {
@@ -241,7 +262,10 @@
         };
         return F;
       }
-      M.fo.console && (b = M.fo.console.log.bind(M.fo.console), M.fo.console.debug.bind(M.fo.console));
+      if (M.fo.console) {
+        b = M.fo.console.log.bind(M.fo.console);
+        M.fo.console.debug.bind(M.fo.console);
+      }
     },
     429: function (y, N, p) {
       "use strict";
@@ -283,14 +307,23 @@
           }
           switch (S.length % 4) {
             default:
+              {}
             case 0:
-              return S;
+              {
+                return S;
+              }
             case 1:
-              return S + "===";
+              {
+                return S + "===";
+              }
             case 2:
-              return S + "==";
+              {
+                return S + "==";
+              }
             case 3:
-              return S + "=";
+              {
+                return S + "=";
+              }
           }
         },
         uu: function (M, W, x) {
@@ -298,7 +331,10 @@
             return "";
           }
           for (var S, U, Q, m, T = {}, V = {}, F = "", P = 2, E = 3, O = 2, K = [], v = 0, J = 0, C = 0; C < M.length; C += 1) {
-            if (Q = M.charAt(C), Object.prototype.hasOwnProperty.call(T, Q) || (T[Q] = E++, V[Q] = true), m = F + Q, Object.prototype.hasOwnProperty.call(T, m)) {
+            Q = M.charAt(C);
+            Object.prototype.hasOwnProperty.call(T, Q) || (T[Q] = E++, V[Q] = true);
+            m = F + Q;
+            if (Object.prototype.hasOwnProperty.call(T, m)) {
               F = m;
             } else {
               if (Object.prototype.hasOwnProperty.call(V, F)) {
@@ -324,7 +360,10 @@
                     U >>= 1;
                   }
                 }
-                0 == --P && (P = Math.pow(2, O), O++);
+                if (0 == --P) {
+                  P = Math.pow(2, O);
+                  O++;
+                }
                 delete V[F];
               } else {
                 for (U = T[F], S = 0; S < O; S++) {
@@ -333,7 +372,10 @@
                   U >>= 1;
                 }
               }
-              0 == --P && (P = Math.pow(2, O), O++);
+              if (0 == --P) {
+                P = Math.pow(2, O);
+                O++;
+              }
               T[m] = E++;
               F = String(Q);
             }
@@ -362,7 +404,10 @@
                   U >>= 1;
                 }
               }
-              0 == --P && (P = Math.pow(2, O), O++);
+              if (0 == --P) {
+                P = Math.pow(2, O);
+                O++;
+              }
               delete V[F];
             } else {
               for (U = T[F], S = 0; S < O; S++) {
@@ -371,7 +416,10 @@
                 U >>= 1;
               }
             }
-            0 == --P && (P = Math.pow(2, O), O++);
+            if (0 == --P) {
+              P = Math.pow(2, O);
+              O++;
+            }
           }
           for (U = 2, S = 0; S < O; S++) {
             v = v << 1 | 1 & U;
@@ -379,7 +427,8 @@
             U >>= 1;
           }
           for (;;) {
-            if (v <<= 1, J == W - 1) {
+            v <<= 1;
+            if (J == W - 1) {
               K.push(x(v));
               break;
             }
@@ -442,7 +491,7 @@
         var V;
         var F = h();
         var P = x[m] || F.getItem(m);
-        return P ? (V = (T = P.split(b))[1]) && new Date().getTime() > parseInt(V) ? (F.removeItem(m), void delete x[m]) : (x[m] = P, T[0]) : (x[m] = S("", 300000), "");
+        return P ? (V = (T = P.split(b))[1]) && new Date().getTime() > parseInt(V) ? (F.removeItem(m), delete x[m]) : (x[m] = P, T[0]) : (x[m] = S("", 300000), "");
       }
     },
     554: function (y, N, G) {
@@ -504,12 +553,15 @@
           var O;
           var K = "";
           for (O in E) K += encodeURIComponent(O) + "=" + encodeURIComponent(E[O]) + "&";
-          if (K = K.slice(0, K.length - 1), 0 == P.length) {
+          K = K.slice(0, K.length - 1);
+          if (0 == P.length) {
             P = "?" + K;
           } else {
             for (var v = P.slice(1).split("&"), J = [], C = Object.keys(E), H = 0; H < v.length; H++) {
               O = decodeURIComponent(v[H].split("=", 1)[0]);
-              -1 == C.indexOf(O) && J.push(v[H]);
+              if (-1 == C.indexOf(O)) {
+                J.push(v[H]);
+              }
             }
             P = "?" + (0 == J.length ? "" : J.join("&") + "&") + K;
           }
@@ -522,7 +574,9 @@
       function T(P, E) {
         var O = m(P);
         var K = P.pathname;
-        O && 0 == K.indexOf("/") && (K = P.pathname.slice(1));
+        if (O && 0 == K.indexOf("/")) {
+          K = P.pathname.slice(1);
+        }
         return P.protocol + (O ? "" : "//" + P.host) + K + P.search + (E ? "" : P.hash);
       }
       function V(P, E) {
@@ -541,9 +595,11 @@
           return P;
         }
         for (var J = [], C = 0; C < v.length; ++C) {
-          0 != v[C].indexOf(E + "=") && J.push(v[C]);
+          if (0 != v[C].indexOf(E + "=")) {
+            J.push(v[C]);
+          }
         }
-        H.search = 0 == J.length ? "" : "?" + J.join("&");
+        0 == J.length ? H.search = "" : H.search = "?" + J.join("&");
         return T(H);
       }
     }
@@ -558,10 +614,12 @@
     return N.exports;
   }
   R.d = function (y, N) {
-    for (var p in N) R.fc(N, p) && !R.fc(y, p) && Object.defineProperty(y, p, {
-      enumerable: true,
-      get: N[p]
-    });
+    for (var p in N) if (R.fc(N, p) && !R.fc(y, p)) {
+      Object.defineProperty(y, p, {
+        enumerable: true,
+        get: N[p]
+      });
+    }
   };
   R.fc = function (y, N) {
     return Object.prototype.hasOwnProperty.call(y, N);
@@ -570,9 +628,11 @@
     var N = {
       value: true
     };
-    "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(y, Symbol.toStringTag, {
-      value: "Module"
-    });
+    if ("undefined" != typeof Symbol && Symbol.toStringTag) {
+      Object.defineProperty(y, Symbol.toStringTag, {
+        value: "Module"
+      });
+    }
     Object.defineProperty(y, "__esModule", N);
   };
   !function () {
@@ -598,13 +658,20 @@
     AM = "onreadystatechange";
     AW = "readyState";
     Ah = (Ao ? /^loaded|^c/ : /^loaded|c/).test(AR.fP[AW]);
-    AR.fP[Ax] && AR.fP[Ax](Ab, Au = function () {
-      AR.fP.removeEventListener(Ab, Au, false);
-      AS();
-    }, false);
-    Ao && AR.fP.attachEvent(AM, Au = function () {
-      /^c/.test(AR.fP[AW]) && (AR.fP.detachEvent(AM, Au), AS());
-    });
+    if (AR.fP[Ax]) {
+      AR.fP[Ax](Ab, Au = function () {
+        AR.fP.removeEventListener(Ab, Au, false);
+        AS();
+      }, false);
+    }
+    if (Ao) {
+      AR.fP.attachEvent(AM, Au = function () {
+        if (/^c/.test(AR.fP[AW])) {
+          AR.fP.detachEvent(AM, Au);
+          AS();
+        }
+      });
+    }
     var Ap;
     var Au;
     var AG;
@@ -613,20 +680,20 @@
     var AM;
     var AW;
     var Ah;
-    Ap = Ao ? function (wJ) {
+    Ao ? Ap = function (wJ) {
       if (self != top) {
         Ah ? wJ() : AG.push(wJ);
       } else {
         try {
           AL.doScroll("left");
         } catch (wC) {
-          return void setTimeout(function () {
+          return setTimeout(function () {
             Ap(wJ);
           }, 50);
         }
         wJ();
       }
-    } : function (wJ) {
+    } : Ap = function (wJ) {
       Ah ? wJ() : AG.push(wJ);
     };
     var Ax = Ap;
@@ -638,7 +705,10 @@
     var AU;
     var AQ = false;
     function Ad() {
-      AR.fo.aliyun_csp_inline_test && (AQ = true, delete AR.fo.aliyun_csp_inline_test);
+      if (AR.fo.aliyun_csp_inline_test) {
+        AQ = true;
+        delete AR.fo.aliyun_csp_inline_test;
+      }
       AU.remove();
       delete AR.fo.aliyun_csp_inline_test_func;
     }
@@ -670,7 +740,10 @@
         return function () {
           var wq = arguments;
           var wI = Date.now();
-          wr <= wI - wk && (wk = wI, wJ.apply(this, wq));
+          if (wr <= wI - wk) {
+            wk = wI;
+            wJ.apply(this, wq);
+          }
         };
       };
       AR.fo._waf_async_initialized1 = true;
@@ -682,7 +755,9 @@
       var AO = [];
       var AK = [];
       var Aa = false;
-      ("ontouchstart" in window || navigator.maxTouchPoints) && (Aa = true);
+      if ("ontouchstart" in window || navigator.maxTouchPoints) {
+        Aa = true;
+      }
       var Av = [0];
       var AJ = (0, AA.cd)();
       var Ar = Ao(function () {
@@ -691,9 +766,13 @@
       }, 60);
       undefined !== AR.fP.hidden ? (AF = "hidden", Aq = "visibilitychange") : undefined !== AR.fP.mozHidden ? (AF = "mozHidden", Aq = "mozvisibilitychange") : undefined !== AR.fP.msHidden ? (AF = "msHidden", Aq = "msvisibilitychange") : undefined !== AR.fP.webkitHidden && (AF = "webkitHidden", Aq = "webkitvisibilitychange");
       AR.fP.addEventListener && AF ? AR.fP.addEventListener(Aq, function () {
-        !AR.fP[AF] && 20 < As.length && As[20]++;
+        if (!AR.fP[AF] && 20 < As.length) {
+          As[20]++;
+        }
       }) : AR.fP.attachEvent && AR.fP.attachEvent("on" + Aq, function () {
-        !AR.fP[AF] && 20 < As.length && As[20]++;
+        if (!AR.fP[AF] && 20 < As.length) {
+          As[20]++;
+        }
       });
       var AC = 0;
       var AH = 0;
@@ -706,7 +785,7 @@
         var wC;
         var wH;
         var wl;
-        Aa || (Ak && (wJ = AR.fo.event), 100 < Aj && (wr = Ai[1].split("+"), wC = Ai[0].split("+"), Ai[1] = parseInt(wr[0]) + parseInt(wC[0]) + "+" + (parseInt(wr[1]) + parseInt(wC[1])) + "+" + (parseInt(wr[2]) + parseInt(wC[2])), Ai.shift()), Aj++, wr = wJ.pageX, wC = wJ.pageY, undefined === wr && (wH = AR.fP.body ? AR.fP.body.scrollLeft : 0, wl = AR.fP.body ? AR.fP.body.scrollTop : 0, wr = wJ.clientX + wH, wC = wJ.clientY + wl), wH = wr - AC, wJ = wC - AH, wl = new Date().getTime() - Al, 1 == Aj && (An = wl), As[3]++, Ai.push(wH + "+" + wJ + "+" + wl), Ar(), AC = wr, AH = wC, Al += wl);
+        Aa || (Ak && (wJ = AR.fo.event), 100 < Aj && (wr = Ai[1].split("+"), wC = Ai[0].split("+"), Ai[1] = parseInt(wr[0]) + parseInt(wC[0]) + "+" + (parseInt(wr[1]) + parseInt(wC[1])) + "+" + (parseInt(wr[2]) + parseInt(wC[2])), Ai.shift()), Aj++, wr = wJ.pageX, wC = wJ.pageY, undefined === wr && (AR.fP.body ? wH = AR.fP.body.scrollLeft : wH = 0, AR.fP.body ? wl = AR.fP.body.scrollTop : wl = 0, wr = wJ.clientX + wH, wC = wJ.clientY + wl), wH = wr - AC, wJ = wC - AH, wl = new Date().getTime() - Al, 1 == Aj && (An = wl), As[3]++, Ai.push(wH + "+" + wJ + "+" + wl), Ar(), AC = wr, AH = wC, Al += wl);
       }, 30);
       AR.fP.addEventListener ? AR.fP.addEventListener("mousemove", Aq, true) : AR.fP.attachEvent && AR.fP.attachEvent("onmousemove", Aq);
       var AI = AP;
@@ -717,7 +796,7 @@
         var wC;
         var wH;
         var wl;
-        Aa || (Ak && (wJ = AR.fo.event), 10 < Az && Ac.shift(), Az++, wH = wJ.pageX, wl = wJ.pageY, undefined === wH && (wr = AR.fP.body ? AR.fP.body.scrollLeft : 0, wC = AR.fP.body ? AR.fP.body.scrollTop : 0, wH = wJ.clientX + wr, wl = wJ.clientY + wC), wr = parseInt(wH), wC = parseInt(wl), wH = new Date().getTime() - AI, wl = wJ.which || 9, 1 == Az && (AZ = wH), As[3]++, Ac.push(wl + ("mousedown" == wJ.type ? "0" : "1") + "+" + wr + "+" + wC + "+" + wH), Ar(), AI += wH);
+        Aa || (Ak && (wJ = AR.fo.event), 10 < Az && Ac.shift(), Az++, wH = wJ.pageX, wl = wJ.pageY, undefined === wH && (AR.fP.body ? wr = AR.fP.body.scrollLeft : wr = 0, AR.fP.body ? wC = AR.fP.body.scrollTop : wC = 0, wH = wJ.clientX + wr, wl = wJ.clientY + wC), wr = parseInt(wH), wC = parseInt(wl), wH = new Date().getTime() - AI, wl = wJ.which || 9, 1 == Az && (AZ = wH), As[3]++, Ac.push(wl + ("mousedown" == wJ.type ? "0" : "1") + "+" + wr + "+" + wC + "+" + wH), Ar(), AI += wH);
       };
       AR.fP.addEventListener ? (AR.fP.addEventListener("mousedown", Aq, true), AR.fP.addEventListener("mouseup", Aq, true)) : AR.fP.attachEvent && (AR.fP.attachEvent("onmousedown", Aq), AR.fP.attachEvent("onmouseup", Aq));
       var AB = 0;
@@ -729,7 +808,21 @@
         var wr;
         var wC;
         var wH;
-        (Aa = true) && (Ak && (wJ = AR.fo.event), 100 < AY && (wr = AO[1].split("+"), wC = AO[0].split("+"), AO[1] = parseInt(wr[0]) + parseInt(wC[0]) + "+" + (parseInt(wr[1]) + parseInt(wC[1])) + "+" + (parseInt(wr[2]) + parseInt(wC[2])), AO.shift()), AY++, wr = parseInt(wJ.touches[0].pageX) - AB, wC = parseInt(wJ.touches[0].pageY) - Ag, wH = new Date().getTime() - AX, As[3]++, AO.push(wr + "+" + wC + "+" + wH), 1 == AY && (w0 = wH), Ar(), AB = parseInt(wJ.touches[0].pageX), Ag = parseInt(wJ.touches[0].pageY), AX += wH);
+        if (Aa = true) {
+          Ak && (wJ = AR.fo.event);
+          100 < AY && (wr = AO[1].split("+"), wC = AO[0].split("+"), AO[1] = parseInt(wr[0]) + parseInt(wC[0]) + "+" + (parseInt(wr[1]) + parseInt(wC[1])) + "+" + (parseInt(wr[2]) + parseInt(wC[2])), AO.shift());
+          AY++;
+          wr = parseInt(wJ.touches[0].pageX) - AB;
+          wC = parseInt(wJ.touches[0].pageY) - Ag;
+          wH = new Date().getTime() - AX;
+          As[3]++;
+          AO.push(wr + "+" + wC + "+" + wH);
+          1 == AY && (w0 = wH);
+          Ar();
+          AB = parseInt(wJ.touches[0].pageX);
+          Ag = parseInt(wJ.touches[0].pageY);
+          AX += wH;
+        }
       }, 30);
       AR.fP.addEventListener ? AR.fP.addEventListener("touchmove", Aq, true) : AR.fP.attachEvent && AR.fP.attachEvent("ontouchmove", Aq);
       var w1 = AP;
@@ -739,15 +832,40 @@
         var wr;
         var wC;
         var wH;
-        "touchstart" == wJ.type && (wr = (screen.availWidth - AR.fo.outerWidth < 10) << 0, As[21] = wr);
-        (Aa = true) && (Ak && (wJ = AR.fo.event), 10 < w2 && AK.shift(), w2++, wr = parseInt(wJ["touchstart" == wJ.type ? "touches" : "changedTouches"][0].pageX), wC = parseInt(wJ["touchstart" == wJ.type ? "touches" : "changedTouches"][0].pageY), wH = new Date().getTime() - w1, As[3]++, AK.push(("touchstart" == wJ.type ? "0" : 1) + "+" + wr + "+" + wC + "+" + wH), 1 == w2 && (w3 = wH), Ar(), w1 += wH);
+        if ("touchstart" == wJ.type) {
+          wr = (screen.availWidth - AR.fo.outerWidth < 10) << 0;
+          As[21] = wr;
+        }
+        if (Aa = true) {
+          Ak && (wJ = AR.fo.event);
+          10 < w2 && AK.shift();
+          w2++;
+          wr = parseInt(wJ["touchstart" == wJ.type ? "touches" : "changedTouches"][0].pageX);
+          wC = parseInt(wJ["touchstart" == wJ.type ? "touches" : "changedTouches"][0].pageY);
+          wH = new Date().getTime() - w1;
+          As[3]++;
+          AK.push(("touchstart" == wJ.type ? "0" : 1) + "+" + wr + "+" + wC + "+" + wH);
+          1 == w2 && (w3 = wH);
+          Ar();
+          w1 += wH;
+        }
       };
       AR.fP.addEventListener ? (AR.fP.addEventListener("touchstart", Ao, true), AR.fP.addEventListener("touchend", Ao, true)) : AR.fP.attachEvent && (AR.fP.attachEvent("ontouchstart", Ao), AR.fP.attachEvent("ontouchend", Ao));
       var w4 = AP;
       var w5 = 0;
       var Aq = function (wJ) {
         var wr;
-        w5 <= 20 && ((wJ = Ak ? AR.fo.event : wJ).isComposing && (Av[0] = 1), w5++, wr = wJ.code, (/(Key)[a-zA-Z]/.test(wr) || /(Digit)[0-9]/.test(wr)) && (wr = ""), wr = new Date().getTime() - w4, As[3]++, Av.push(("keydown" == wJ.type ? 0 : 1) + wr), Ar(), w4 += wr);
+        if (w5 <= 20) {
+          (Ak ? wJ = AR.fo.event : wJ = wJ).isComposing && (Av[0] = 1);
+          w5++;
+          wr = wJ.code;
+          (/(Key)[a-zA-Z]/.test(wr) || /(Digit)[0-9]/.test(wr)) && (wr = "");
+          wr = new Date().getTime() - w4;
+          As[3]++;
+          Av.push(("keydown" == wJ.type ? 0 : 1) + wr);
+          Ar();
+          w4 += wr;
+        }
       };
       AR.fP.addEventListener ? (AR.fP.addEventListener("keydown", Aq, true), AR.fP.addEventListener("keyup", Aq, true)) : AR.fP.attachEvent && (AR.fP.attachEvent("onkeydown", Aq), AR.fP.attachEvent("onkeyup", Aq));
       As.push(AN((4294967295 * Math.random() >>> 0) + "|" + AP, 0, 1));
@@ -758,13 +876,17 @@
         wp |= (undefined !== wG.style[wu[wD]] ? 1 : 0) << wD;
       }
       As.push(Ao + "|" + wp);
-      for (var Ao = AR.fE.language || AR.fE.userLanguage, Ao = (As.push(Ao), new Date().getTimezoneOffset()), w6 = (As.push(Ao), Ao = AR.fo.hasOwnProperty ? (Ao = !![].copyWithin << 0, Ao = (Ao = (Ao = (Ao = (Ao = (Ao = (Ao |= !![].includes << 1) | AR.fo.hasOwnProperty("Touch") << 2) | AR.fo.hasOwnProperty("Proxy") << 3) | (AR.fo.Symbol && AR.fo.Symbol.hasOwnProperty && AR.fo.Symbol.hasOwnProperty("match")) << 4) | !!function () {}.name << 5) | (AR.fo.Object.hasOwnProperty && AR.fo.Object.hasOwnProperty("values")) << 6) | (AR.fo.OfflineAudioContext && AR.fo.OfflineAudioContext.prototype.hasOwnProperty("close")) << 7, wf = AR.fP.createElement("canvas"), Ao = (Ao = (Ao = (Ao = (Ao = (Ao = (Ao = (Ao = (Ao = (Ao = (Ao |= !!"".padStart << 9) | (AR.fo.PointerEvent && AR.fo.PointerEvent.prototype.hasOwnProperty("getCoalescedEvents")) << 10) | AR.fo.hasOwnProperty("BudgetService") << 12) | !(!wf || !wf.getAttributeNames) << 13) | !(!AR.fo.performance || undefined === AR.fo.performance.timeOrigin) << 14) | (AR.fo.Intl && AR.fo.Intl.hasOwnProperty && AR.fo.Intl.hasOwnProperty("PluralRules")) << 15) | AR.fo.hasOwnProperty("getMatchedCSSRules") << 16) | AR.fo.hasOwnProperty("PerformanceServerTiming") << 17) | !![].values << 18) | AR.fo.hasOwnProperty("BigInt") << 19) | (undefined !== AR.fP.wasDiscarded) << 20, w6 = (AR.fo.Symbol && AR.fo.Symbol.hasOwnProperty && AR.fo.Symbol.hasOwnProperty("species")) << 0, Ao + "|" + (w6 = (w6 = (w6 = (w6 = (w6 = (w6 = (w6 = (w6 = (w6 = (w6 = (w6 |= AR.fo.hasOwnProperty("Reflect") << 1) | (AR.fo.Symbol && AR.fo.Symbol.hasOwnProperty && AR.fo.Symbol.hasOwnProperty("toPrimitive")) << 2) | (AR.fo.WeakMap && AR.fo.WeakMap.prototype.hasOwnProperty("clear")) << 3) | (AR.fo.DOMTokenList && AR.fo.DOMTokenList.prototype.hasOwnProperty("replace")) << 4) | (AR.fo.Symbol && AR.fo.Symbol.hasOwnProperty && AR.fo.Symbol.hasOwnProperty("hasInstance")) << 5) | AR.fo.hasOwnProperty("isSecureContext") << 6) | AR.fo.self.hasOwnProperty("origin") << 7) | (AR.fo.PerformanceTiming && AR.fo.PerformanceTiming.prototype.hasOwnProperty("secureConnectionStart")) << 8) | AR.fo.hasOwnProperty("showModalDialog") << 9) | (AR.fo.HTMLDocument && AR.fo.HTMLDocument.prototype.hasOwnProperty("getSelection")) << 10) | (AR.fo.HTMLMediaElement && AR.fo.HTMLMediaElement.prototype.hasOwnProperty("mozAutoplayEnabled")) << 11)) : "0|0", As.push(Ao), AR.fo.screen), Ao = AR.fP.documentElement, Aq = w6.width || 0, AE = w6.height || 0, w7 = AR.fo.innerWidth || Ao && Ao.clientWidth || AR.fP.body && AR.fP.body.clientWidth || 0, Ao = AR.fo.innerHeight || Ao && Ao.clientHeight || AR.fP.body && AR.fP.body.clientHeight || 0, w8 = AR.fo.screenTop || AR.fo.screenY || 0, w9 = AR.fo.screenLeft || AR.fo.screenX || 0, Aq = (As.push(Aq + "|" + AE + "|" + w7 + "|" + Ao + "|" + w8 + "|" + w9), AR.fo.hasOwnProperty && AR.fo.hasOwnProperty("history") ? AR.fo.history.length : -1), AE = (As.push(Aq), AR.fE.platform), w7 = (As.push(AE), AR.fE.hardwareConcurrency || 0), Ao = (As.push(w7), ""), wf = AR.fP.createElement("canvas"), AE = (Ao = wf.getContext ? (w8 = wf.getContext("webgl") || wf.getContext("experimental-webgl")) ? (w9 = w8.getExtension("WEBGL_debug_renderer_info")) ? (Aq = w8.getParameter(w9.UNMASKED_VENDOR_WEBGL), w8.getParameter(w9.UNMASKED_RENDERER_WEBGL) + "|" + Aq) : "ns|3" : "ns|2" : "ns|1", As.push(Ao), w6.colorDepth + "|" + w6.pixelDepth), w7 = (As.push(AE), AR.fE.oscpu || 0), wA = (As.push(w7), wL = AR.fo.hasOwnProperty ? (wL = AR.fo.hasOwnProperty("ApplePaySession") << 0, (wL = (wL = (wL |= AR.fo.hasOwnProperty("ApplePayError") << 1) | AR.fo.hasOwnProperty("Bluetooth") << 2) | AR.fo.hasOwnProperty("BluetoothDevice") << 3) | AR.fo.hasOwnProperty("BluetoothUUID") << 4) : 0, As.push(wL), ""), ww = AR.fE.plugins, wD = 0; ww && wD < ww.length; wD++) {
+      for (var Ao = AR.fE.language || AR.fE.userLanguage, Ao = (As.push(Ao), new Date().getTimezoneOffset()), w6 = (As.push(Ao), AR.fo.hasOwnProperty ? Ao = (Ao = !![].copyWithin << 0, Ao = (Ao = (Ao = (Ao = (Ao = (Ao = (Ao |= !![].includes << 1) | AR.fo.hasOwnProperty("Touch") << 2) | AR.fo.hasOwnProperty("Proxy") << 3) | (AR.fo.Symbol && AR.fo.Symbol.hasOwnProperty && AR.fo.Symbol.hasOwnProperty("match")) << 4) | !!function () {}.name << 5) | (AR.fo.Object.hasOwnProperty && AR.fo.Object.hasOwnProperty("values")) << 6) | (AR.fo.OfflineAudioContext && AR.fo.OfflineAudioContext.prototype.hasOwnProperty("close")) << 7, wf = AR.fP.createElement("canvas"), Ao = (Ao = (Ao = (Ao = (Ao = (Ao = (Ao = (Ao = (Ao = (Ao = (Ao |= !!"".padStart << 9) | (AR.fo.PointerEvent && AR.fo.PointerEvent.prototype.hasOwnProperty("getCoalescedEvents")) << 10) | AR.fo.hasOwnProperty("BudgetService") << 12) | !(!wf || !wf.getAttributeNames) << 13) | !(!AR.fo.performance || undefined === AR.fo.performance.timeOrigin) << 14) | (AR.fo.Intl && AR.fo.Intl.hasOwnProperty && AR.fo.Intl.hasOwnProperty("PluralRules")) << 15) | AR.fo.hasOwnProperty("getMatchedCSSRules") << 16) | AR.fo.hasOwnProperty("PerformanceServerTiming") << 17) | !![].values << 18) | AR.fo.hasOwnProperty("BigInt") << 19) | (undefined !== AR.fP.wasDiscarded) << 20, w6 = (AR.fo.Symbol && AR.fo.Symbol.hasOwnProperty && AR.fo.Symbol.hasOwnProperty("species")) << 0, Ao + "|" + (w6 = (w6 = (w6 = (w6 = (w6 = (w6 = (w6 = (w6 = (w6 = (w6 = (w6 |= AR.fo.hasOwnProperty("Reflect") << 1) | (AR.fo.Symbol && AR.fo.Symbol.hasOwnProperty && AR.fo.Symbol.hasOwnProperty("toPrimitive")) << 2) | (AR.fo.WeakMap && AR.fo.WeakMap.prototype.hasOwnProperty("clear")) << 3) | (AR.fo.DOMTokenList && AR.fo.DOMTokenList.prototype.hasOwnProperty("replace")) << 4) | (AR.fo.Symbol && AR.fo.Symbol.hasOwnProperty && AR.fo.Symbol.hasOwnProperty("hasInstance")) << 5) | AR.fo.hasOwnProperty("isSecureContext") << 6) | AR.fo.self.hasOwnProperty("origin") << 7) | (AR.fo.PerformanceTiming && AR.fo.PerformanceTiming.prototype.hasOwnProperty("secureConnectionStart")) << 8) | AR.fo.hasOwnProperty("showModalDialog") << 9) | (AR.fo.HTMLDocument && AR.fo.HTMLDocument.prototype.hasOwnProperty("getSelection")) << 10) | (AR.fo.HTMLMediaElement && AR.fo.HTMLMediaElement.prototype.hasOwnProperty("mozAutoplayEnabled")) << 11)) : Ao = "0|0", As.push(Ao), AR.fo.screen), Ao = AR.fP.documentElement, Aq = w6.width || 0, AE = w6.height || 0, w7 = AR.fo.innerWidth || Ao && Ao.clientWidth || AR.fP.body && AR.fP.body.clientWidth || 0, Ao = AR.fo.innerHeight || Ao && Ao.clientHeight || AR.fP.body && AR.fP.body.clientHeight || 0, w8 = AR.fo.screenTop || AR.fo.screenY || 0, w9 = AR.fo.screenLeft || AR.fo.screenX || 0, Aq = (As.push(Aq + "|" + AE + "|" + w7 + "|" + Ao + "|" + w8 + "|" + w9), AR.fo.hasOwnProperty && AR.fo.hasOwnProperty("history") ? AR.fo.history.length : -1), AE = (As.push(Aq), AR.fE.platform), w7 = (As.push(AE), AR.fE.hardwareConcurrency || 0), Ao = (As.push(w7), ""), wf = AR.fP.createElement("canvas"), AE = (wf.getContext ? (w8 = wf.getContext("webgl") || wf.getContext("experimental-webgl")) ? (w9 = w8.getExtension("WEBGL_debug_renderer_info")) ? Ao = (Aq = w8.getParameter(w9.UNMASKED_VENDOR_WEBGL), w8.getParameter(w9.UNMASKED_RENDERER_WEBGL) + "|" + Aq) : Ao = "ns|3" : Ao = "ns|2" : Ao = "ns|1", As.push(Ao), w6.colorDepth + "|" + w6.pixelDepth), w7 = (As.push(AE), AR.fE.oscpu || 0), wA = (As.push(w7), AR.fo.hasOwnProperty ? wL = (wL = AR.fo.hasOwnProperty("ApplePaySession") << 0, (wL = (wL = (wL |= AR.fo.hasOwnProperty("ApplePayError") << 1) | AR.fo.hasOwnProperty("Bluetooth") << 2) | AR.fo.hasOwnProperty("BluetoothDevice") << 3) | AR.fo.hasOwnProperty("BluetoothUUID") << 4) : wL = 0, As.push(wL), ""), ww = AR.fE.plugins, wD = 0; ww && wD < ww.length; wD++) {
         wA += ww[wD].name + ww[wD].filename;
-        ww[wD].version && (wA += ww[wD].version + "<br>");
+        if (ww[wD].version) {
+          wA += ww[wD].version + "<br>";
+        }
         for (var wR = 0; wR < ww[wD].length; wR++) {
           var wy = ww[wD][wR];
           var wN = 0;
-          (wN = wy ? wy.type : wN) && (wA += wN.substring(12));
+          if (wy ? wN = wy.type : wN = wN) {
+            wA += wN.substring(12);
+          }
         }
       }
       wA = (ww ? ww.length : 0) + "|" + AN(wA, 0, 1);
@@ -800,7 +922,9 @@
     }
     function wP(wJ, wr) {
       var wC;
-      AR.fm[AR.fT] && wr && (wC = (0, AA.fb)(wJ)).host && (0, AA.ft)(wJ, location.href) && (0, wt.fy)(wo(wC.host), wr);
+      if (AR.fm[AR.fT] && wr && (wC = (0, AA.fb)(wJ)).host && (0, AA.ft)(wJ, location.href)) {
+        (0, wt.fy)(wo(wC.host), wr);
+      }
     }
     var wE = R(540);
     var ws = {};
@@ -814,7 +938,10 @@
       var wl = 0;
       for (wr in ws) {
         var wj = (0, wt.fD)(ws[wr](wC.host));
-        wj && (wH[wr] = wj, ++wl);
+        if (wj) {
+          wH[wr] = wj;
+          ++wl;
+        }
       }
       return 0 == wl ? wJ : (wC.search = (0, AA.fx)(wC.search, wH), (0, AA.fW)(wC));
     }
@@ -822,9 +949,9 @@
     ws[wF] = wo;
     var wc = R(669);
     function wO(wJ) {
-      return (wO = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (wC) {
+      return ("function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? wO = function (wC) {
         return typeof wC;
-      } : function (wC) {
+      } : wO = function (wC) {
         return wC && "function" == typeof Symbol && wC.constructor === Symbol && wC !== Symbol.prototype ? "symbol" : typeof wC;
       })(wJ);
     }
@@ -843,10 +970,14 @@
         if (wJ) {
           switch (wJ.which) {
             case "jsclg":
-              this.fK.push(wJ);
-              break;
+              {
+                this.fK.push(wJ);
+                break;
+              }
             case "captcha":
-              this.fO.push(wJ);
+              {
+                this.fO.push(wJ);
+              }
           }
         }
       },
@@ -873,7 +1004,9 @@
             wx.apply(this, arguments);
           };
           wK.fe = wW.send = function (wH) {
-            this.scene && delete this.scene;
+            if (this.scene) {
+              delete this.scene;
+            }
             this.sendBody = wH;
             var wl = wK.fk(this.openArgs[1]);
             var wl = wa(wl, wH);
@@ -892,12 +1025,15 @@
             var wn;
             var wk;
             var wq = wl;
-            wl = "readystatechange" != wH ? (wk = wl, function (wI) {
-              !this.scene && wk && wk.call(this, wI);
-            }) : (wn = wl, function (wI) {
+            "readystatechange" != wH ? wl = (wk = wl, function (wI) {
+              if (!this.scene && wk) {
+                wk.call(this, wI);
+              }
+            }) : wl = (wn = wl, function (wI) {
               if (!this.scene) {
                 var wZ = this.openArgs[1];
-                if (4 === this.readyState && this.fq && (0, AA.ft)(wZ, location.href) && (wB = this.getAllResponseHeaders()) && -1 < wB.indexOf(wV) && (this.fq = false, wP(wZ, this.getResponseHeader(wV))), 4 === this.readyState && wK.fI(this.status, this.getResponseHeader("Content-Type"))) {
+                4 === this.readyState && this.fq && (0, AA.ft)(wZ, location.href) && (wB = this.getAllResponseHeaders()) && -1 < wB.indexOf(wV) && (this.fq = false, wP(wZ, this.getResponseHeader(wV)));
+                if (4 === this.readyState && wK.fI(this.status, this.getResponseHeader("Content-Type"))) {
                   var wB = "";
                   try {
                     wB = wd.get.call(this);
@@ -914,7 +1050,9 @@
                     });
                   }, this.openArgs[1], false === this.openArgs[2]);
                 }
-                wn && !this.scene && wn.call(this, wI);
+                if (wn && !this.scene) {
+                  wn.call(this, wI);
+                }
               }
             });
             wS.call(this, wH, wl);
@@ -941,8 +1079,14 @@
                 },
                 set: function (wl) {
                   this.fB || (this.fB = {});
-                  this.fB["on" + wH] && (wK.fJ.call(this, wH, this.fB["on" + wH]), delete this.fB["on" + wH]);
-                  wl && (wK.fv.call(this, wH, wl), this.fB["on" + wH] = wl);
+                  if (this.fB["on" + wH]) {
+                    wK.fJ.call(this, wH, this.fB["on" + wH]);
+                    delete this.fB["on" + wH];
+                  }
+                  if (wl) {
+                    wK.fv.call(this, wH, wl);
+                    this.fB["on" + wH] = wl;
+                  }
                 },
                 configurable: true
               });
@@ -999,7 +1143,9 @@
                 wj = "jsclg";
               } else {
                 if (wJ && "string" == typeof wJ && (0, wc.ff)(wJ)) {
-                  -1 < wC.indexOf((0, wc.f8)(wl.host)) && (0, wc.f7)();
+                  if (-1 < wC.indexOf((0, wc.f8)(wl.host))) {
+                    (0, wc.f7)();
+                  }
                   return !(wc.f5 > wc.f9 || ((0, wc.f4)(wl), wr("dySig"), 0));
                 }
               }
@@ -1008,51 +1154,64 @@
           if ("" != wj) {
             switch (wr(wj), wj) {
               case "jsclg":
-                var wk = wJ.split("var arg1='")[1].split("';")[0];
-                if (40 === wk.length) {
-                  (0, wM.fF)(wk, wC);
-                  wH ? wK.fg() : AR.fo.setTimeout(wK.fg.bind(wK));
-                } else {
-                  var wq = /<script\sname="aliyunwaf_6a6f5ea8">(.+)?<\/script>/gm.exec(wJ);
-                  var wI = AR.fo.arg1;
-                  AR.fo.arg1 = wk;
-                  AR.fo.nothing2reload10ba = function (wY) {
-                    AR.fo.arg1 = wI;
-                    (0, wE.fS)(wC, wY);
-                    wz.remove();
-                    delete AR.fo.nothing2reload10ba;
+                {
+                  var wk = wJ.split("var arg1='")[1].split("';")[0];
+                  if (40 === wk.length) {
+                    (0, wM.fF)(wk, wC);
                     wH ? wK.fg() : AR.fo.setTimeout(wK.fg.bind(wK));
-                  };
-                  var wz = AR.fP.createElement("script");
-                  wz.name = "aliyunwaf_6a6f5ea8";
-                  AQ ? wz.innerText = wq[1] : wz.src = "/nfb8ouq4/om6lhs71/109xfjkc";
-                  try {
-                    AT().appendChild(wz);
-                  } catch (wY) {}
+                  } else {
+                    var wq = /<script\sname="aliyunwaf_6a6f5ea8">(.+)?<\/script>/gm.exec(wJ);
+                    var wI = AR.fo.arg1;
+                    AR.fo.arg1 = wk;
+                    AR.fo.nothing2reload10ba = function (wY) {
+                      AR.fo.arg1 = wI;
+                      (0, wE.fS)(wC, wY);
+                      wz.remove();
+                      delete AR.fo.nothing2reload10ba;
+                      wH ? wK.fg() : AR.fo.setTimeout(wK.fg.bind(wK));
+                    };
+                    var wz = AR.fP.createElement("script");
+                    wz.name = "aliyunwaf_6a6f5ea8";
+                    AQ ? wz.innerText = wq[1] : wz.src = "/nfb8ouq4/om6lhs71/109xfjkc";
+                    try {
+                      AT().appendChild(wz);
+                    } catch (wY) {}
+                  }
+                  return true;
                 }
-                return true;
               case "captcha":
-                var wk = "cn";
-                var wq = "0b72f618-4c1-4aba-9a78-f" + new Date().getTime() + "ba";
-                var wZ = {};
-                var wB = /var requestInfo = ({[\s\S]*?});/g.exec(wJ);
-                if (null !== wB && (wq = (wZ = new Function("return " + wB[1])()).token), "2" === wn) {
-                  wZ.region && "sgp" == wZ.region && (wk = "en");
-                  wZ.traceid ? AR.fo._waf_traceid = wZ.traceid : AR.fo._waf_traceid = wK.fX(wJ);
-                } else {
-                  if (AR.fo._waf_traceid = wK.fX(wJ), !wK.fH) {
-                    var wg;
-                    var wX = /window.(aliyun_captcha(id|trace)_[0-9a-f]{4}) ='([0-9a-f]+)';/gm;
-                    for (wZ.fY = []; null !== (wg = wX.exec(wJ));) {
-                      wg.index === wX.lastIndex && wX.lastIndex++;
-                      wZ.fY.push(wg[1]);
-                      wg[1] && wg[3] && (AR.fo[wg[1]] = wg[3]);
+                {
+                  var wk = "cn";
+                  var wq = "0b72f618-4c1-4aba-9a78-f" + new Date().getTime() + "ba";
+                  var wZ = {};
+                  var wB = /var requestInfo = ({[\s\S]*?});/g.exec(wJ);
+                  if (null !== wB && (wq = (wZ = new Function("return " + wB[1])()).token), "2" === wn) {
+                    if (wZ.region && "sgp" == wZ.region) {
+                      wk = "en";
+                    }
+                    wZ.traceid ? AR.fo._waf_traceid = wZ.traceid : AR.fo._waf_traceid = wK.fX(wJ);
+                  } else {
+                    AR.fo._waf_traceid = wK.fX(wJ);
+                    if (!wK.fH) {
+                      var wg;
+                      var wX = /window.(aliyun_captcha(id|trace)_[0-9a-f]{4}) ='([0-9a-f]+)';/gm;
+                      for (wZ.fY = []; null !== (wg = wX.exec(wJ));) {
+                        if (wg.index === wX.lastIndex) {
+                          wX.lastIndex++;
+                        }
+                        wZ.fY.push(wg[1]);
+                        if (wg[1] && wg[3]) {
+                          AR.fo[wg[1]] = wg[3];
+                        }
+                      }
+                    }
+                    if (-1 < wJ.indexOf("language: \"en\",//语言包，默认中文") || -1 < wJ.indexOf("language: \"en\", //语言包，默认中文")) {
+                      wk = "en";
                     }
                   }
-                  (-1 < wJ.indexOf("language: \"en\",//语言包，默认中文") || -1 < wJ.indexOf("language: \"en\", //语言包，默认中文")) && (wk = "en");
+                  wK.A0(wq, wk, wn, wZ);
+                  return true;
                 }
-                wK.A0(wq, wk, wn, wZ);
-                return true;
             }
           }
         }
@@ -1061,48 +1220,64 @@
       A1: function () {
         var wr;
         var wC;
-        AR.fo.fetch && (wr = Request, AR.fo.Request = function (wH, wl) {
-          var wj = new wr(wH, wl);
-          wH instanceof wr && (wl = Object.assign(wH.init ? Object.assign({}, wH.init) : {}, wl), wH = wH.input);
-          wj.input = wH;
-          wj.init = wl;
-          return wj;
-        }, wC = fetch, AR.fo.fetch = function () {
-          var wH = arguments[0];
-          var wl = arguments[1];
-          wH instanceof wr && (wH = arguments[0].input, wl = arguments[0].init);
-          null == wl ? wl = {
-            credentials: "same-origin"
-          } : wl.credentials || (wl.credentials = "same-origin");
-          wH = wi(wH = wv(wH));
-          var wj = wK.fk(wH);
-          var wj = wa(wj, wl.body);
-          wj && (wH = wj);
-          return wC.call(this, wH, wl).then(function (wn) {
-            return new Promise(function (wq, wI) {
-              wP(wH, wn.headers.get(wV));
-              wK.fI(wn.status, wn.headers.get("Content-Type")) ? wn.clone().text().then(function (wZ) {
-                wK.fz(wZ, function (wg) {
-                  "dySig" == wg ? fetch(wH, wl).then(function (wY) {
-                    200 <= wY.status && wY.status < 500 && wq(wY);
-                  }).catch(function (wY) {}) : wK.fC({
-                    type: "fetch",
-                    which: wg,
-                    A2: wH,
-                    A3: wl,
-                    A4: function (wY) {
-                      wq(wY);
-                    }
-                  });
-                }, wH) || wq(wn);
-              }).catch(function (wZ) {
-                wq(wn);
-              }) : wq(wn);
+        if (AR.fo.fetch) {
+          wr = Request;
+          AR.fo.Request = function (wH, wl) {
+            var wj = new wr(wH, wl);
+            if (wH instanceof wr) {
+              wl = Object.assign(wH.init ? Object.assign({}, wH.init) : {}, wl);
+              wH = wH.input;
+            }
+            wj.input = wH;
+            wj.init = wl;
+            return wj;
+          };
+          wC = fetch;
+          AR.fo.fetch = function () {
+            var wH = arguments[0];
+            var wl = arguments[1];
+            if (wH instanceof wr) {
+              wH = arguments[0].input;
+              wl = arguments[0].init;
+            }
+            null == wl ? wl = {
+              credentials: "same-origin"
+            } : wl.credentials || (wl.credentials = "same-origin");
+            wH = wi(wH = wv(wH));
+            var wj = wK.fk(wH);
+            var wj = wa(wj, wl.body);
+            if (wj) {
+              wH = wj;
+            }
+            return wC.call(this, wH, wl).then(function (wn) {
+              return new Promise(function (wq, wI) {
+                wP(wH, wn.headers.get(wV));
+                wK.fI(wn.status, wn.headers.get("Content-Type")) ? wn.clone().text().then(function (wZ) {
+                  wK.fz(wZ, function (wg) {
+                    "dySig" == wg ? fetch(wH, wl).then(function (wY) {
+                      if (200 <= wY.status && wY.status < 500) {
+                        wq(wY);
+                      }
+                    }).catch(function (wY) {}) : wK.fC({
+                      type: "fetch",
+                      which: wg,
+                      A2: wH,
+                      A3: wl,
+                      A4: function (wY) {
+                        wq(wY);
+                      }
+                    });
+                  }, wH) || wq(wn);
+                }).catch(function (wZ) {
+                  wq(wn);
+                }) : wq(wn);
+              });
+            }).catch(function (wn) {
+              return Promise.reject(wn);
             });
-          }).catch(function (wn) {
-            return Promise.reject(wn);
-          });
-        }, AR.fo.fetch._waf_hook = true);
+          };
+          AR.fo.fetch._waf_hook = true;
+        }
       },
       fI: function (wJ, wr) {
         return 200 == wJ && wr && -1 < wr.indexOf("text/html");
@@ -1160,7 +1335,8 @@
           isEnabled: true,
           times: 3,
           success: function (wI) {
-            if (undefined === wI.token && (wI.token = wJ), wH.fY) {
+            undefined === wI.token && (wI.token = wJ);
+            if (wH.fY) {
               for (var wz = 0; wz < wH.fY.length; ++wz) {
                 delete AR.fo[wH.fY[wz]];
               }
@@ -1185,8 +1361,12 @@
         if (wJ) {
           var wH = AR.fP.getElementById("nocaptcha");
           var wl = AR.fP.getElementById("waf_nc_block");
-          wl && (wl.style.display = "none");
-          wH && (wH.innerHTML = "");
+          if (wl) {
+            wl.style.display = "none";
+          }
+          if (wH) {
+            wH.innerHTML = "";
+          }
           wC.fH = false;
           try {
             wK.fr.remove();
@@ -1202,12 +1382,20 @@
           var wB;
           var wg;
           var wX;
-          0 != wk.length && (wq = wk[0], wk.splice(0, 1), "xhr" === wq.type ? (wI = wq.fZ, wg = (wz = wq.fZ).openArgs, wZ = wz.sendBody, wB = wg[1], "captcha" === wq.which && ((wX = wC.fk(wB)).search = wC.A7(wX.search, wJ), wg[1] = wC.A8(wX), wI.fq = true), wK.fj(wz), wI.addEventListener("readystatechange", function (wY) {
-            4 === wI.readyState && wn(wk);
-          }), wK.fe.call(wI, wZ)) : "fetch" === wq.type && (wB = wq.A2, wg = wq.A3, "object" == wO(wB) && wB.url && wq.A9 ? wB = wq.A9 : "captcha" === wq.which && ((wX = wC.fk(wB)).search = wC.A7(wX.search, wJ), wB = wC.A8(wX)), fetch(wB, wg).then(function (wY) {
-            200 <= wY.status && wY.status < 500 && wq.A4(wY);
-            wn(wk);
-          }).catch(function (wY) {})));
+          if (0 != wk.length) {
+            wq = wk[0];
+            wk.splice(0, 1);
+            "xhr" === wq.type ? (wI = wq.fZ, wg = (wz = wq.fZ).openArgs, wZ = wz.sendBody, wB = wg[1], "captcha" === wq.which && ((wX = wC.fk(wB)).search = wC.A7(wX.search, wJ), wg[1] = wC.A8(wX), wI.fq = true), wK.fj(wz), wI.addEventListener("readystatechange", function (wY) {
+              if (4 === wI.readyState) {
+                wn(wk);
+              }
+            }), wK.fe.call(wI, wZ)) : "fetch" === wq.type && (wB = wq.A2, wg = wq.A3, "object" == wO(wB) && wB.url && wq.A9 ? wB = wq.A9 : "captcha" === wq.which && ((wX = wC.fk(wB)).search = wC.A7(wX.search, wJ), wB = wC.A8(wX)), fetch(wB, wg).then(function (wY) {
+              if (200 <= wY.status && wY.status < 500) {
+                wq.A4(wY);
+              }
+              wn(wk);
+            }).catch(function (wY) {}));
+          }
         }(wJ ? this.fO : this.fK);
       },
       fk: AA.fb,
@@ -1242,12 +1430,16 @@
         var wl = new Date();
         var wj = AR.fP.head || AR.fP.getElementsByTagName("head")[0];
         var wl = wl.getFullYear() + (wl.getMonth() + 1) + wl.getDate() + wl.getHours();
-        wH.src = 2 == wr ? "//o.alicdn.com/captcha-frontend/aliyunCaptcha/AliyunCaptcha.js?t=" + wl : "//g.alicdn.com/AWSC/AWSC/awsc.js?t=" + wl;
-        wJ && ("onload" in wH ? wH.onload = function () {
-          wJ();
-        } : wH.onreadystatechange = function () {
-          /loaded|complete/.test(wH.readyState) && wJ();
-        });
+        2 == wr ? wH.src = "//o.alicdn.com/captcha-frontend/aliyunCaptcha/AliyunCaptcha.js?t=" + wl : wH.src = "//g.alicdn.com/AWSC/AWSC/awsc.js?t=" + wl;
+        if (wJ) {
+          "onload" in wH ? wH.onload = function () {
+            wJ();
+          } : wH.onreadystatechange = function () {
+            if (/loaded|complete/.test(wH.readyState)) {
+              wJ();
+            }
+          };
+        }
         wj.appendChild(wH);
       }
     }).fn(), wK.A1(), Ax(function () {
