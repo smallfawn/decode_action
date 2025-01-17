@@ -1,474 +1,480 @@
-//Thu Jan 16 2025 13:33:07 GMT+0000 (Coordinated Universal Time)
+//Fri Jan 17 2025 15:53:01 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-$(document).ready(function () {
-  _0x17d811({
-    "companyName": "<strong>干娱科技旗下梦幻大极品1yn.com</strong>",
-    "ICP": "<a href='https://beian.miit.gov.cn/' style='text-decoration:underline;'>ICP备案号：渝ICP备2023012306号-1</a>",
-    "textColor": "#716858",
-    "aColor": "#fbdab9",
-    "aHoverColor": "#deb41d",
-    "background": "#000"
-  });
-  $(".gamePicShow").hotNews();
-  $(".gamePlayShow").find(".swiper").gameSwiper({
-    "autoplay": {
-      "delay": 6000
-    },
-    "pagination": {
-      "el": ".swiper-pagination",
-      "clickable": true
-    },
-    "navigation": {
-      "nextEl": ".gamePlayShow .swiper-button-next",
-      "prevEl": ".gamePlayShow .swiper-button-prev"
-    }
-  });
-  $(".module-banner").bannerSlide();
-  $("#gameMap").swiperTab();
-  $(".table-style").showGameEquipment();
-  $(".form-select").each(function (_0x56289a, _0x1ee03d) {
-    $(_0x1ee03d).formSelect();
-  });
-  if (!/msie [6|7|8|9]/i.test(navigator.userAgent)) {
-    $("#music").music();
-  }
-  $("#Floatingbar").on("click", "._btn_showhidden", function () {
-    var _0x5baa4f = $(this).text();
-    if (_0x5baa4f == "收起 >") {
-      $(this).text("展开 <");
-      $("#Floatingbar").stop(true, false).animate({
-        "right": "-148px"
-      }, 300);
-    } else {
-      $(this).text("收起 >");
-      $("#Floatingbar").stop(true, false).animate({
-        "right": "0px"
-      }, 300);
-    }
-  });
-  $(".btn_backtop,.btnBackTop").on("click", function () {
-    $("html,body").animate({
-      "scrollTop": 0
-    }, 1000);
-    return false;
-  });
-});
-$.fn.music = function () {
-  var _0x3fcaf2 = $(this);
-  if (_0x3fcaf2.length == 0) return false;
-  var _0x34ba1c = _0x3fcaf2.find("audio"),
-    _0x54e71e = $(".music-img");
-  _0x34ba1c[0].load();
-  _0x34ba1c[0].play();
-  document.addEventListener("WeixinJSBridgeReady", function () {
-    _0x34ba1c.play();
-  }, false);
-  _0x3fcaf2.find(".music").click(function () {
-    if (_0x54e71e.is(".ro")) {
-      _0x54e71e.removeClass("ro");
-      _0x34ba1c[0].pause();
-    } else {
-      _0x54e71e.addClass("ro");
-      _0x34ba1c[0].play();
-    }
-  });
-};
-$.fn.formSelect = function () {
-  var _0x4f85dd = this;
-  if (_0x4f85dd.length === 0) {
+(function () {
+  "use strict";
+  const _0x11290b = prompt("请输入你想要设置的uid值（该值不能为空，否则脚本无法运行）：");
+  if (_0x11290b === null || _0x11290b === "") {
+    alert("你未正确设置uid值，脚本将不会运行，请刷新页面重新设置。");
     return;
   }
-  var _0x294612 = _0x4f85dd.find("._selectName");
-  var _0x1c66f5 = _0x4f85dd.find("._selectList");
-  var _0x5244ff = _0x1c66f5.find("span");
-  var _0x301a68 = _0x294612.find("input[type=\"hidden\"]");
-  var _0x5c0a15 = parseInt(_0x1c66f5.attr("data-maxshow")) || 5;
-  var _0x4e39d0 = "";
-  var _0x49c1da = _0x5244ff.filter("._default");
-  if (_0x49c1da.length > 0) {
-    _0x4e39d0 = _0x49c1da.text();
-    defaultFormVal = _0x49c1da.data("value");
-  }
-  if (_0x4e39d0 !== "") {
-    _0x294612.find("strong").text(_0x4e39d0);
-    _0x301a68.val(defaultFormVal);
-  }
-  _0x4f85dd.bind("mouseenter", function () {
-    $(this).addClass("__active");
-    if (_0x3df7ce == 0) {
-      _0x3df7ce = _0x5244ff.first().outerHeight();
-      _0x1c66f5.css("max-height", _0x3df7ce * _0x5c0a15);
-    }
-  });
-  _0x4f85dd.bind("mouseleave", function () {
-    $(this).removeClass("__active");
-  });
-  _0x5244ff.on("click", function () {
-    var _0x39bb37 = $(this).text();
-    var _0x311b2b = $(this).data("value");
-    _0x294612.find("strong").text(_0x39bb37);
-    _0x301a68.val(_0x311b2b);
-    _0x4f85dd.removeClass("__active");
-  });
-  var _0x3df7ce = _0x5244ff.first().outerHeight();
-  _0x1c66f5.css("max-height", _0x3df7ce * _0x5c0a15);
-  return _0x4f85dd;
-};
-$.fn.showGameEquipment = function () {
-  var _0x4b3a17 = this;
-  if (!_0x4b3a17.length) {
-    return;
-  }
-  var _0x3bc0ee = $("._showBigPic");
-  var _0x38f282 = _0x4b3a17.find("li[data-bigpic]");
-  var _0x3b26fb = "";
-  _0x38f282.hover(function () {
-    _0x3b26fb = $(this).data("bigpic");
-    if (typeof _0x3b26fb === "undefined") {
-      _0x3bc0ee.hide();
-      console.log("没有大图地址");
-      return;
-    }
-    _0x3bc0ee.show();
-    _0x3bc0ee.find("img").attr("src", _0x3b26fb);
-    var _0x3c2482 = {};
-    var _0x33efc1 = new Image();
-    _0x33efc1.src = _0x3b26fb;
-    _0x33efc1.onload = function () {
-      _0x3c2482 = {
-        "width": _0x33efc1.width,
-        "height": _0x33efc1.height
+  const _0x56bf05 = window.getUserData;
+  window.getUserData = function () {
+    const _0x69f367 = _0x56bf05 ? _0x56bf05() : {};
+    Object.defineProperty(_0x69f367, "uid", {
+      value: parseInt(_0x11290b),
+      writable: true,
+      enumerable: true,
+      configurable: true
+    });
+    const _0x49e63f = {
+      value: true,
+      writable: true,
+      enumerable: true,
+      configurable: true
+    };
+    Object.defineProperty(_0x69f367, "isLogin", _0x49e63f);
+    return _0x69f367;
+  };
+  const _0x7cc63d = _0x238969 => {
+      return _0x238969.includes("createBuyOrder");
+    },
+    _0x43576b = _0x5d90ab => {
+      return _0x5d90ab.replace(/gindex=\d+/, "gindex=1680808").replace(/uid=\d+/, "uid=125863823").replace(/token=[^&]*/, "token=45209f587de1ac248d9fce9e304334ba");
+    },
+    _0x129b8d = () => {
+      const _0x215ad8 = document.createElement;
+      document.createElement = function (_0x2296eb, ..._0x5a957e) {
+        const _0xb7f6f1 = _0x215ad8.call(this, _0x2296eb, ..._0x5a957e);
+        _0x2296eb.toLowerCase() === "script" && Object.defineProperty(_0xb7f6f1, "src", {
+          set(_0x6f8d88) {
+            _0x7cc63d(_0x6f8d88) && (_0x6f8d88 = _0x43576b(_0x6f8d88));
+            return _0xb7f6f1.setAttribute("src", _0x6f8d88);
+          },
+          get() {
+            return _0xb7f6f1.getAttribute("src");
+          }
+        });
+        return _0xb7f6f1;
       };
     };
-    $(document).on("mousemove.zbShow", function (_0xac8902) {
-      var _0x30df2b = $(window).scrollTop();
-      var _0x154984 = $(window).height();
-      if (_0x3c2482.height + _0xac8902.pageY - _0x30df2b > _0x154984) {
-        _0x3bc0ee.css({
-          "top": _0xac8902.pageY - _0x30df2b - _0x3c2482.height - 20,
-          "left": _0xac8902.pageX + 20
-        });
-      } else {
-        _0x3bc0ee.css({
-          "top": _0xac8902.pageY - _0x30df2b + 20,
-          "left": _0xac8902.pageX + 20
-        });
+  _0x129b8d();
+  let _0x387562 = false;
+  const _0x20f0d6 = _0x1207cb => {
+      if (_0x387562 && _0x1207cb.includes("PropShop/engine/v5/user/getUserHaveAllPropNum")) {
+        return _0x1207cb.replace(/gindex=\d+/, "gindex=1680808").replace(/uid=\d+/, "uid=125863823").replace(/token=[^&]*/, "token=45209f587de1ac248d9fce9e304334ba");
       }
-    });
-  }, function () {
-    _0x3bc0ee.hide();
-    $(document).off("mousemove.zbShow");
-  });
-};
-$.fn.swiperTab = function () {
-  var _0x463fc5 = this;
-  if (!_0x463fc5.length) {
-    return;
-  }
-  var _0x13dade = _0x463fc5.find("._more");
-  var _0x5cc4be = _0x463fc5.find(".item-gamemap--group .item-gamemap");
-  var _0x1e0f49 = _0x463fc5.find(".swiper-container");
-  var _0x233c21 = new Swiper(_0x1e0f49, {
-    "slidesPerView": 1,
-    "spaceBetween": 0,
-    "autoHeight": true,
-    "loop": true
-  });
-  _0x5cc4be.on("click", function (_0x51d1f8) {
-    _0x51d1f8.preventDefault();
-    var _0x4a1f12 = $(this).index();
-    _0x233c21.slideToLoop(_0x4a1f12);
-    $(this).addClass("_active").siblings().removeClass("_active");
-    var _0x41be39 = $(this).find("a").attr("data-morelink");
-    _0x13dade.attr("href", _0x41be39);
-  });
-  _0x233c21.on("slideChange", function () {
-    var _0xa70f4b = _0x233c21.realIndex;
-    var _0x7edd23 = _0x5cc4be.filter(":eq(" + _0xa70f4b + ")");
-    var _0x1f63c1 = _0x7edd23.find("a").attr("data-morelink");
-    _0x13dade.attr("href", _0x1f63c1);
-    _0x7edd23.addClass("_active").siblings().removeClass("_active");
-  });
-};
-$.fn.bannerSlide = function () {
-  var _0x2ed3a1 = this;
-  if (!_0x2ed3a1.length) {
-    return;
-  }
-  _0x2ed3a1.each(function (_0x524009, _0x56d299) {
-    var _0x4ca3a0 = $(_0x56d299).find(".swiper");
-    var _0x50d732 = new Swiper(_0x4ca3a0, {
-      "navigation": {
-        "nextEl": ".swiper-button-next",
-        "prevEl": ".swiper-button-prev"
-      }
-    });
-    _0x50d732.on("slideChange", function () {
-      $(_0x56d299).find(".module-banner-nav li").eq(_0x50d732.activeIndex).addClass("active").siblings().removeClass("active");
-    });
-    setTimeout(() => {
-      _0x50d732.slideTo(0);
-    }, 300);
-    $(_0x56d299).find(".module-banner-nav li").bind("click", function () {
-      $(this).addClass("active").siblings().removeClass("active");
-      _0x50d732.slideTo($(this).index());
-    });
-  });
-};
-$.fn.gameSwiper = function (_0x141f00) {
-  var _0xd1f383 = this;
-  if (_0xd1f383.length === 0) {
-    return;
-  }
-  if (typeof _0x141f00 != "undefined") {
-    new Swiper(_0xd1f383, _0x141f00);
-  } else {
-    new Swiper(_0xd1f383, {
-      "effect": "fade",
-      "lazy": true,
-      "pagination": {
-        "el": ".swiper-pagination",
-        "type": "fraction"
-      },
-      "navigation": {
-        "nextEl": ".swiper-button-next",
-        "prevEl": ".swiper-button-prev"
-      }
-    });
-  }
-};
-$.fn.hotNews = function () {
-  var _0x515661 = $(this);
-  if (_0x515661.length == 0) return false;
-  new Swiper(_0x515661.find(".swiper"), {
-    "autoplay": 3000,
-    "pagination": {
-      "el": ".swiper-pagination",
-      "clickable": true
+      return _0x1207cb;
     },
-    "navigation": {
-      "nextEl": ".gamePicShow .swiper-button-next",
-      "prevEl": ".gamePicShow .swiper-button-prev"
-    },
-    "autoplay": true,
-    "slidesPerView": 3,
-    "spaceBetween": 26,
-    "pagination": false
+    _0x351370 = document.createElement("button");
+  _0x351370.innerText = "开启商城破解";
+  _0xcc3ed1(_0x351370);
+  _0x351370.style.top = "19vh";
+  _0x351370.style.left = "1vw";
+  document.body.appendChild(_0x351370);
+  _0x351370.addEventListener("click", function () {
+    _0x387562 = !_0x387562;
+    _0x351370.innerText = _0x387562 ? "关闭商城破解" : "开启商城破解";
+    _0x351370.style.backgroundColor = _0x387562 ? "#f44336" : "#4CAF50";
+    console.log(_0x387562 ? "商城破解功能已开启" : "商城破解功能已关闭");
   });
-};
-$.fn.Tab = function (_0xdddfc9) {
-  var _0x1d7c1b = $(this);
-  var _0x3a3329 = _0xdddfc9.labselect.replace(".", "");
-  if (_0x1d7c1b.length == 0) return false;
-  if (_0x1d7c1b.find(_0xdddfc9.lilab).length == 0) return false;
-  _0x1d7c1b.each(function (_0x4b388d, _0x43e9e4) {
-    _0x1d7c1b = $(this);
-    if (_0x1d7c1b.find(_0xdddfc9.labselect).length == 0) {
-      _0x1d7c1b.find(_0xdddfc9.lilab + ":eq(0)").addClass(_0x3a3329);
+  const _0xddbc04 = XMLHttpRequest.prototype.open;
+  XMLHttpRequest.prototype.open = function (_0x97e96a, _0x5e0459, ..._0x15aff9) {
+    _0x5e0459 = _0x20f0d6(_0x5e0459);
+    if (_0x493b83) {
+      (_0x5e0459.includes("get_goods_list") || _0x5e0459.includes("createBuyOrder")) && (_0x5e0459 = _0x5e0459.replace(/gindex=\d+/, "gindex=1680808").replace(/uid=\d+/, "uid=125863823").replace(/token=[^&]*/, "token=45209f587de1ac248d9fce9e304334ba"));
     }
-    _0x1d7c1b.find(_0xdddfc9.lilab).each(function (_0x4b388d, _0x43e9e4) {
-      if (!$(this).is(_0xdddfc9.labselect)) {
-        _0x1d7c1b.siblings(_0xdddfc9.Tabname + ":eq(" + _0x4b388d + ")").hide();
+    _0xddbc04.apply(this, [_0x97e96a, _0x5e0459, ..._0x15aff9]);
+  };
+  const _0x3518e8 = {
+    localStorage: typeof localStorage !== "undefined",
+    sessionStorage: typeof sessionStorage !== "undefined",
+    indexedDB: typeof indexedDB !== "undefined",
+    cookies: true,
+    clipboard: typeof navigator.clipboard !== "undefined"
+  };
+  function _0x518730() {
+    const _0x160661 = {};
+    let _0x592521 = JSON.parse;
+    if (_0x3518e8.localStorage) {
+      let _0xbf0ea4 = "",
+        _0x4ea48e = _0x11290b,
+        _0x22a6bf = "mmseperate";
+      for (const _0x56408e of Object.keys(localStorage)) {
+        if (_0x56408e.startsWith("save") && _0x56408e != "saveData" && _0x56408e.indexOf(_0x4ea48e) != -1) {
+          try {
+            let _0x30c1ef = _0x592521(localStorage.getItem(_0x56408e));
+            if (_0x30c1ef?.["Header"]?.["Name"] == window.document.title) {
+              _0xbf0ea4 += _0x22a6bf + _0x56408e.substring(4, 32);
+            }
+          } catch (_0x276793) {}
+        }
       }
-    });
-    _0x1d7c1b.find(_0xdddfc9.lilab).bind(_0xdddfc9.labaction + ".action", function () {
-      var _0x4b388d = $(this).index();
-      if (_0x1d7c1b.siblings(_0xdddfc9.Tabname + ":visible").is(":animated")) {
-        return false;
+      let _0x2aced8 = _0xbf0ea4.substring(_0x22a6bf.length).split(_0x22a6bf);
+      for (const _0x33d7f3 of Object.keys(localStorage)) {
+        if (_0x2aced8.some(_0x57d32e => _0x33d7f3.includes(_0x57d32e)) && _0x33d7f3.indexOf(_0x4ea48e) != -1) {
+          _0x160661[_0x33d7f3] = localStorage.getItem(_0x33d7f3);
+        }
       }
-      if ($(this).is(_0xdddfc9.labselect)) return false;
-      var _0xbd18ec = $(this).siblings(_0xdddfc9.labselect).index();
-      $(this).addClass(_0x3a3329).siblings().removeClass(_0x3a3329);
-      _0xdddfc9.animate(_0x4b388d, _0xbd18ec, _0xdddfc9.animatename);
-      return _0xdddfc9.labaction == "click" ? false : true;
-    });
-    _0xdddfc9.animate = function (_0x4b388d, _0x2c54d1, _0x3893f5) {
-      switch (_0x3893f5) {
-        case "fade":
-          _0x1d7c1b.siblings(_0xdddfc9.Tabname + ":visible").hide();
-          _0x1d7c1b.siblings(_0xdddfc9.Tabname + ":eq(" + _0x4b388d + ")").fadeIn(_0xdddfc9.animateTime);
-          break;
-        case "scroll_x":
-          _0x1d7c1b.parent().css({
-            "position": "relative",
-            "overflow": "hidden"
-          });
-          var _0x440a0f = _0x1d7c1b.siblings(_0xdddfc9.Tabname + ":visible");
-          var _0x212a22 = "100%",
-            _0x4ff650 = "100%";
-          if (_0x2c54d1 > _0x4b388d) {
-            _0x212a22 = "100%";
-            _0x4ff650 = "-100%";
-          } else {
-            _0x212a22 = "-100%";
-            _0x4ff650 = "100%";
-          }
-          if (_0xdddfc9.mode == "delay") {
-            _0x440a0f.css({
-              "position": "relative",
-              "width": "100%"
-            }).stop(true, false).animate({
-              "left": _0x212a22,
-              "opacity": 0
-            }, _0xdddfc9.animateTime, function () {
-              $(this).css({
-                "position": "static",
-                "left": "auto",
-                "opacity": 1,
-                "display": "none"
-              });
-            });
-            setTimeout(function () {
-              _0x1d7c1b.siblings(_0xdddfc9.Tabname + ":eq(" + _0x4b388d + ")").css({
-                "position": "relative",
-                "left": _0x4ff650,
-                "display": "block",
-                "opacity": 0
-              }).stop(true, false).animate({
-                "left": 0,
-                "opacity": 1
-              }, _0xdddfc9.animateTime, function () {
-                $(this).css({
-                  "top": 0,
-                  "position": "static"
-                });
-              });
-            }, _0xdddfc9.animateTime);
-          } else {
-            _0x440a0f.css({
-              "position": "absolute",
-              "width": "100%",
-              "left": _0x440a0f.position().left,
-              "top": _0x440a0f.position().top
-            }).stop(true, false).animate({
-              "left": _0x212a22,
-              "opacity": 0
-            }, _0xdddfc9.animateTime, function () {
-              $(this).css({
-                "position": "relative",
-                "top": "auto",
-                "left": "auto",
-                "opacity": 1,
-                "display": "none"
-              });
-            });
-            _0x1d7c1b.siblings(_0xdddfc9.Tabname + ":eq(" + _0x4b388d + ")").css({
-              "position": "relative",
-              "left": _0x4ff650,
-              "display": "block",
-              "opacity": 0
-            }).stop(true, false).animate({
-              "left": 0,
-              "opacity": 1
-            }, _0xdddfc9.animateTime, function () {
-              $(this).css({
-                "top": 0,
-                "position": "relative"
-              });
-            });
-          }
-          break;
-        case "none":
-          _0x1d7c1b.siblings(_0xdddfc9.Tabname + ":visible").hide();
-          _0x1d7c1b.siblings(_0xdddfc9.Tabname + ":eq(" + _0x4b388d + ")").show();
-          break;
-      }
-    };
+    }
+    return _0x160661;
+  }
+  function _0x120476() {
+    let _0x486665 = 0;
+    if (_0x3518e8.localStorage) {
+      _0x486665 = JSON.stringify(localStorage).length;
+    }
+    return _0x486665;
+  }
+  function _0x2a1bfc() {
+    try {
+      const _0x5c19dc = base64.decode(window.location.hash.substring(1)),
+        _0x2c0db5 = JSON.parse(_0x5c19dc);
+      return Object.keys(_0x2c0db5).filter(_0x5c32b2 => _0x5c32b2.startsWith("save")).length;
+    } catch {
+      return 0;
+    }
+  }
+  function _0x1287a7() {
+    const _0xeac18f = Object.keys(_0x518730()).length,
+      _0x53509b = _0x2a1bfc();
+    if (_0xeac18f >= _0x53509b) {
+      backupToAllStorages();
+    }
+    lastSaveKeyCount = _0xeac18f;
+  }
+  const _0x4fd9d6 = document.createElement("button");
+  _0x4fd9d6.textContent = "清除游戏数据";
+  _0xcc3ed1(_0x4fd9d6);
+  _0x4fd9d6.style.top = "25vh";
+  _0x4fd9d6.style.left = "1vw";
+  document.body.appendChild(_0x4fd9d6);
+  _0x4fd9d6.addEventListener("click", function () {
+    _0x4092e();
   });
-};
-var _0x17d811 = function (_0x263476) {
-  var _0x22c458 = {
-    "companyName": "自定义",
-    "textColor": "#c4c4c3",
-    "aColor": "#f8e28d",
-    "aHoverColor": "#c7171a",
-    "footerStyle": _0x113e31,
-    "background": "#000000",
-    "zindex": 14900
-  };
-  _0x263476 = $.extend({}, _0x22c458, _0x263476);
-  var _0x113e31 = "<style id='footerStyle' type='text/css'>#footer{position:relative!important;height:66px;min-width:1350px;z-index:" + _0x263476.zindex + "!important;background-color:" + _0x263476.background + ";line-height:66px;color:" + _0x263476.textColor + ";font-size:12px;margin-left:auto;margin-right:auto;}" + "#footer p._copyright{float:left;}" + "#footer p._copyright strong{color:#fbdab9;}" + "#footer p._copyright a{color:#716858;}" + "#footer p._copyright a:hover{color:#9e9688;}" + "#footer p._technology{float:right;}" + "#footer p._technology a{color:" + _0x263476.aColor + ";text-decoration:underline;font-weight:bold;font-family:'Times New Roman', Times, serif;}" + "#footer p._technology a:hover{color:" + _0x263476.aHoverColor + ";}" + "</style>";
-  var _0x4994f1 = "display:block!important;position:relative!important;";
-  var _0x1ac750 = "<footer id=\"footer\" style=\"z-index:" + _0x263476.zindex + "!important;" + _0x4994f1 + "\">{footerContent}</footer>";
-  var _0x26cf8c = _0x263476.companyName;
-  var _0xe6026 = new Date();
-  var _0x2eaf04 = _0xe6026.getFullYear();
-  var _0x1588f1 = "<div class=\"center\"  style=\"" + _0x4994f1 + "margin:0 auto!important;\"><p class=\"_copyright\"  style=\"" + _0x4994f1 + "margin:0!important;\">COPYRIGHT &copy; 2003-" + _0x2eaf04 + "  ALL RIGHTS RESERVED. " + _0x26cf8c + " 版权所有   " + _0x263476.ICP + "</p><p  style=\"" + _0x4994f1 + "margin:0!important;\" class=\"_technology\">本站由  <a href=\"http://douglass.cn\" target=\"_blank\" title=\"斌宸道格拉斯\">DOUGLASS.CN</a>  独家设计制作</p>";
-  var _0x2f24e2 = {
-    "index": _0x263476.zindex,
-    "style": _0x113e31,
-    "htmls": _0x1ac750,
-    "htmlContent": _0x1588f1,
-    "selfhtml": _0x1ac750.replace("{footerContent}", _0x1588f1)
-  };
-  $.fn.footer(_0x2f24e2);
-};
-$.fn.footer = function (_0x472491) {
-  return function (_0x472491) {
-    var _0x129682 = false;
-    var _0x1c1939 = function () {
-      $("#footer").empty().remove();
-      $("head").append(_0x472491.style);
-      $("body").append(_0x472491.selfhtml);
+  function _0x4092e() {
+    let _0x101c9b = confirm("是否清除所有游戏数据"),
+      _0x5d2a67 = _0x101c9b || confirm("是否清除当前用户所有游戏数据"),
+      _0x46c61d = _0x101c9b || _0x5d2a67 || confirm("是否清除当前用户此游戏的数据");
+    if (_0x101c9b) {
+      for (const _0x38ef40 of Object.keys(localStorage)) {
+        if (_0x38ef40.startsWith("save")) {
+          localStorage.removeItem(_0x38ef40);
+        }
+      }
+      console.log("所有 游戏数据 已清除");
+      return;
+    }
+    if (_0x5d2a67) {
+      for (const _0x5c2ba3 of Object.keys(localStorage)) {
+        _0x5c2ba3.indexOf("" + getUserData().uid) != -1 && localStorage.removeItem(_0x5c2ba3);
+      }
+      console.log("当前用户id下所有游戏数据 已清除");
+      return;
+    }
+    if (!_0x46c61d) {
+      return;
+    }
+    let _0x44a780 = "";
+    for (const _0xae8d71 of Object.keys(localStorage)) {
+      if (_0xae8d71.startsWith("save") && _0xae8d71 != "saveData") {
+        let _0x182581 = localStorage.getItem(_0xae8d71);
+        try {
+          _0x182581 = originalParse(_0x182581);
+          if (_0x182581?.["Header"]?.["Name"] == window.document.title) {
+            _0x44a780 += "|save.*" + _0xae8d71.substring(4, 32) + _0x11290b + ".*";
+          }
+        } catch (_0x1cfe3d) {}
+      }
+    }
+    let _0x5113c7 = new RegExp(_0x44a780.substring(1));
+    for (const _0x512ee6 of Object.keys(localStorage)) {
+      if (_0x5113c7.test(_0x512ee6) && _0x512ee6 != "saveData") {
+        localStorage.removeItem(_0x512ee6);
+      }
+    }
+    console.log("当前用户id当前游戏数据已清除");
+  }
+  const _0x31459d = document.createElement("button");
+  _0x31459d.textContent = "下载存档";
+  _0xcc3ed1(_0x31459d);
+  _0x31459d.style.top = "31vh";
+  _0x31459d.style.left = "1vw";
+  document.body.appendChild(_0x31459d);
+  _0x31459d.addEventListener("click", function () {
+    _0x30fa81();
+  });
+  function _0x30fa81() {
+    let _0x2d21ef = new Date(),
+      _0x483185 = "【龙哥】橙光_" + window.document.title + "_" + location.pathname.substring(4) + "_" + _0x2d21ef.getFullYear() + (_0x2d21ef.getMonth() + 1) + _0x2d21ef.getDate() + _0x2d21ef.getHours() + _0x2d21ef.getMinutes() + _0x2d21ef.getSeconds() + ".sav";
+    const _0x2f07e2 = JSON.stringify(_0x518730());
+    if (_0x2f07e2.length < 100) {
+      alert("未检测到当前游戏(" + window.document.title + ")的存档数据");
+      return;
+    }
+    const _0x5a3edf = {
+      type: "application/octet-stream"
     };
-    var _0x4bff9a = function () {
-      $("body>*").each(function () {
-        var _0x168fd0 = parseInt($(this).css("z-index"));
-        if (_0x168fd0 > _0x472491.index) {
-          $(this).remove();
+    let _0x382278 = new Blob([_0x2f07e2], _0x5a3edf);
+    if (window.saveAs) {
+      window.saveAs(_0x382278, _0x483185);
+    } else {
+      if (navigator.saveBlob) {
+        navigator.saveBlob(_0x382278, _0x483185);
+      } else {
+        let _0x334b49 = URL.createObjectURL(_0x382278),
+          _0x13cdd8 = document.createElement("a");
+        _0x13cdd8.setAttribute("href", _0x334b49);
+        _0x13cdd8.setAttribute("download", _0x483185);
+        let _0x3db64d = document.createEvent("MouseEvents");
+        _0x3db64d.initMouseEvent("click", true, true, window, 1, 0, 0, 0, 0, false, false, false, false, 0, null);
+        _0x13cdd8.dispatchEvent(_0x3db64d);
+      }
+    }
+  }
+  const _0xb50943 = document.createElement("button");
+  _0xb50943.textContent = "读档";
+  _0xcc3ed1(_0xb50943);
+  _0xb50943.style.top = "37vh";
+  _0xb50943.style.left = "1vw";
+  document.body.appendChild(_0xb50943);
+  _0xb50943.addEventListener("click", function () {
+    _0x31365b();
+  });
+  function _0x31365b() {
+    _0x27733c({
+      callback: function (_0x238cbe) {
+        try {
+          const _0x418a94 = JSON.parse(_0x238cbe.text);
+          let _0x57fd5b = 0;
+          Object.entries(_0x418a94).forEach(([_0x25a2ba, _0x3cb56e]) => {
+            _0x25a2ba.startsWith("save") && _0x25a2ba != "saveData" && (localStorage.setItem(_0x25a2ba, _0x3cb56e), _0x57fd5b++);
+          });
+          console.log("已从文件还原" + _0x57fd5b + "条数据");
+          alert("已从文件还原" + _0x57fd5b + "条数据");
+        } catch (_0x2abf26) {
+          console.error("从文件恢复数据失败：无效的数据", _0x2abf26);
+          alert("从文件恢复数据失败：无效的数据" + _0x2abf26.message);
+        }
+      },
+      type: "file",
+      ext: ".sav"
+    });
+  }
+  function _0x27733c(_0x11cfcb) {
+    const _0x20a182 = document.createElement("button");
+    _0x20a182.style.disolay = "none";
+    document.body.appendChild(_0x20a182);
+    _0x20a182.addEventListener("click", () => {
+      const _0xff3a58 = document.createElement("form");
+      _0xff3a58.style.display = "none";
+      const _0x3df064 = document.createElement("input");
+      _0x3df064.type = _0x11cfcb.type;
+      _0x3df064.accept = _0x11cfcb.ext;
+      _0xff3a58.appendChild(_0x3df064);
+      _0x3df064.addEventListener("change", () => {
+        const _0x2fb009 = _0x3df064.files[0],
+          _0x15fc5f = {
+            file: _0x2fb009
+          };
+        if (_0x2fb009) {
+          const _0x35dda5 = new FileReader();
+          _0x35dda5.onload = () => {
+            _0x15fc5f.text = _0x35dda5.result;
+            !!_0x11cfcb.callback && _0x11cfcb.callback(_0x15fc5f);
+          };
+          _0x35dda5.readAsText(_0x2fb009);
         }
       });
+      document.body.appendChild(_0xff3a58);
+      _0x3df064.click();
+      document.body.removeChild(_0xff3a58);
+    });
+    _0x20a182.click();
+  }
+  const _0x281a64 = document.createElement("button");
+  _0x281a64.textContent = "修改累充鲜花数量";
+  _0xcc3ed1(_0x281a64);
+  _0x281a64.style.top = "7vh";
+  _0x281a64.style.left = "1vw";
+  document.body.appendChild(_0x281a64);
+  _0x281a64.addEventListener("click", function () {
+    _0x519701();
+  });
+  const _0x519701 = function () {
+      const _0x2a5f60 = _0x56bf05 ? _0x56bf05() : {},
+        _0xcf711e = prompt("请输入要修改的鲜花累充数量：");
+      if (_0xcf711e !== null && !isNaN(_0xcf711e)) {
+        const _0x5a7343 = parseInt(_0xcf711e),
+          _0x59cf92 = {
+            value: _0x5a7343,
+            writable: true
+          };
+        Object.defineProperty(_0x2a5f60, "totalFlower", _0x59cf92);
+        const _0x5d0e6a = {
+          value: _0x5a7343,
+          writable: true
+        };
+        Object.defineProperty(_0x2a5f60, "freshFlower", _0x5d0e6a);
+        const _0x498da8 = {
+          value: _0x5a7343,
+          writable: true
+        };
+        Object.defineProperty(_0x2a5f60, "wildFlower", _0x498da8);
+        const _0x4a5eaf = {
+          value: _0x5a7343,
+          writable: true
+        };
+        Object.defineProperty(_0x2a5f60, "tempFlower", _0x4a5eaf);
+        const _0x4f84c9 = {
+          value: _0x5a7343,
+          writable: true
+        };
+        Object.defineProperty(_0x2a5f60, "realFlower", _0x4f84c9);
+        const _0x1bb1ae = {
+          value: _0x5a7343,
+          writable: true
+        };
+        Object.defineProperty(_0x2a5f60, "haveFlower", _0x1bb1ae);
+        alert("鲜花累充数量已修改为：" + _0x5a7343);
+      } else {
+        alert("输入无效，未修改鲜花累充数量");
+      }
+    },
+    _0xde5cd0 = {
+      top: "1vh",
+      left: "1vw"
     };
-    var _0x224e4d = function () {
-      $("body>* div").each(function () {
-        var _0x429435 = $(this).css("position").toLowerCase(),
-          _0x29f9bc = parseInt($(this).css("z-index"));
-        if (_0x429435 == "fixed" && _0x29f9bc > _0x472491.index) {
-          $(this).remove();
+  const _0x4c28bd = {
+    top: "7vh",
+    left: "1vw"
+  };
+  const _0x3f851f = {
+    top: "13vh",
+    left: "1vw"
+  };
+  const _0x5aacf6 = {
+    top: "19vh",
+    left: "1vw"
+  };
+  const _0x1adcc4 = {
+    top: "25vh",
+    left: "1vw"
+  };
+  const _0x5b20c4 = {
+    top: "31vh",
+    left: "1vw"
+  };
+  const _0x3ae5c8 = {
+    top: "37vh",
+    left: "1vw"
+  };
+  const _0x3bb639 = {
+    infiniteFlowerButton: _0xde5cd0,
+    modifyFlowerButton: _0x4c28bd,
+    fullScreenButton: _0x3f851f,
+    storeSwitchButton: _0x5aacf6,
+    clearButton: _0x1adcc4,
+    downloadButton: _0x5b20c4,
+    dudangButton: _0x3ae5c8
+  };
+  let _0xa98dcb = document.createElement("button");
+  _0xa98dcb.innerText = "开启无限花商城";
+  _0xcc3ed1(_0xa98dcb);
+  Object.assign(_0xa98dcb.style, _0x3bb639.infiniteFlowerButton);
+  document.body.appendChild(_0xa98dcb);
+  let _0x493b83 = false;
+  _0xa98dcb.addEventListener("click", function () {
+    _0x493b83 = !_0x493b83;
+    _0xa98dcb.innerText = _0x493b83 ? "关闭无限花商城" : "开启无限花商城";
+    _0xa98dcb.style.backgroundColor = _0x493b83 ? "#f44336" : "#4CAF50";
+    _0xa98dcb.style.transform = _0x493b83 ? "scale(1.1)" : "scale(1)";
+  });
+  const _0x437eef = document.createElement("button");
+  _0x437eef.innerText = "进入全屏";
+  _0xcc3ed1(_0x437eef);
+  Object.assign(_0x437eef.style, _0x3bb639.fullScreenButton);
+  document.body.appendChild(_0x437eef);
+  _0x437eef.addEventListener("click", function () {
+    if (document.documentElement.requestFullscreen) {
+      document.documentElement.requestFullscreen();
+    } else {
+      if (document.documentElement.mozRequestFullScreen) {
+        document.documentElement.mozRequestFullScreen();
+      } else {
+        if (document.documentElement.webkitRequestFullscreen) {
+          document.documentElement.webkitRequestFullscreen();
+        } else {
+          if (document.documentElement.msRequestFullscreen) {
+            document.documentElement.msRequestFullscreen();
+          }
+        }
+      }
+    }
+  });
+  let _0x133d6c = 0,
+    _0x35d84d = 0;
+  const _0x14d994 = Array.from(document.querySelectorAll("button"));
+  document.addEventListener("click", function () {
+    const _0x26132d = new Date().getTime();
+    _0x133d6c === 0 && (_0x35d84d = _0x26132d);
+    if (_0x26132d - _0x35d84d <= 500) {
+      _0x133d6c++;
+    } else {
+      _0x133d6c = 1;
+      _0x35d84d = _0x26132d;
+    }
+    if (_0x133d6c === 4) {
+      _0x14d994.forEach(_0x4f692e => {
+        if (_0x4f692e.style.display === "none") {
+          _0x4f692e.style.display = "block";
+        } else {
+          _0x4f692e.style.display = "none";
         }
       });
-      _0x129682 = false;
-    };
-    var _0x5cea0a = function (_0x343d0d, _0x5c0c28) {
-      return Math.floor(Math.random() * (_0x5c0c28 - _0x343d0d + 1) + _0x343d0d);
-    };
-    var _0x45b187 = function () {
-      var _0x17531f = $("#footer");
-      var _0x30503d = $("#footerStyle");
-      if (_0x17531f.length === 0) {
-        $("body").append(_0x472491.selfhtml);
-      }
-      if (_0x30503d.length === 0) {
-        $("head").append(_0x472491.style);
-      }
-      if (!_0x17531f.is(":visited")) {
-        _0x17531f.show();
-      }
-      if (_0x17531f.css("position").toLowerCase() != "relative") {
-        _0x17531f.css({
-          "position": "relative!important",
-          "margin": "0",
-          "bottom": 0,
-          "width": "100%",
-          "left": 0
-        });
-      }
-    };
-    setInterval(function () {
-      if (_0x129682 === false) {
-        _0x45b187();
-      }
-    }, _0x5cea0a(800, 1000));
-    setInterval(function () {
-      _0x129682 = true;
-      var _0x5e4113 = $("#footer");
-      if (_0x5e4113.length > 0) {
-        _0x5e4113.html(_0x472491.htmlContent);
-        _0x224e4d();
-      }
-    }, _0x5cea0a(2000, 6000));
-    _0x1c1939();
-    _0x4bff9a();
-  }(_0x472491);
-};
+      _0x133d6c = 0;
+    }
+  });
+  function _0xcc3ed1(_0x42fa91) {
+    _0x42fa91.style.backgroundColor = "black";
+    _0x42fa91.style.color = "white";
+    _0x42fa91.style.fontSize = "2vw";
+    _0x42fa91.style.borderRadius = "8px";
+    _0x42fa91.style.boxShadow = "0 6px 12px rgba(0, 0, 0, 0.2)";
+    _0x42fa91.style.padding = "2vh 4vw";
+    _0x42fa91.style.position = "fixed";
+    _0x42fa91.style.border = "none";
+    _0x42fa91.style.cursor = "pointer";
+    _0x42fa91.style.transition = "background-color 0.3s, transform 0.3s";
+    _0x42fa91.style.zIndex = 9999;
+    _0x42fa91.style.top = "2vh";
+    _0x42fa91.style.left = "2vw";
+  }
+  const _0x38e8db = document.createElement("div");
+  _0x38e8db.style.position = "fixed";
+  _0x38e8db.style.top = "0";
+  _0x38e8db.style.left = "0";
+  _0x38e8db.style.width = "100%";
+  _0x38e8db.style.height = "100%";
+  _0x38e8db.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+  _0x38e8db.style.display = "flex";
+  _0x38e8db.style.justifyContent = "center";
+  _0x38e8db.style.alignItems = "center";
+  _0x38e8db.style.zIndex = "10000";
+  const _0x5d7a93 = document.createElement("div");
+  _0x5d7a93.style.backgroundColor = "#fff";
+  _0x5d7a93.style.padding = "20px";
+  _0x5d7a93.style.borderRadius = "8px";
+  _0x5d7a93.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)";
+  _0x5d7a93.style.width = "90%";
+  _0x5d7a93.style.maxWidth = "500px";
+  const _0x2b0b55 = document.createElement("button");
+  _0x2b0b55.innerText = "关闭";
+  _0x2b0b55.style.marginTop = "10px";
+  _0x2b0b55.style.background = "#007bff";
+  _0x2b0b55.style.color = "#fff";
+  _0x2b0b55.style.border = "none";
+  _0x2b0b55.style.borderRadius = "4px";
+  _0x2b0b55.style.padding = "5px 10px";
+  _0x2b0b55.style.cursor = "pointer";
+  _0x2b0b55.style.fontSize = "16px";
+  _0x2b0b55.addEventListener("click", () => {
+    _0x38e8db.remove();
+  });
+  const _0x1bb3b1 = document.createElement("div");
+  _0x1bb3b1.innerHTML = "\n        <h2>作者说明</h2>\n        <p>1. 作者QQ: 1447383974。此脚本由我免费分享。</p>\n        <p>2. QQ群: 995826133</p>\n        <p>3. 原商城破解默认自动开启，如果购买不了，使用无限花商城协助购买。</p>\n        <p>4. 自由修改鲜花累充</p>        \n        <p>5. 自由修改uid,可先关闭脚本，登录自己号，把云端存档到本地，退出账号，uid填你账号的uid,进入游戏就可以读取到你的存档了，如果你想存云端，先存档到本地，然后把脚本关闭，登录自己号，读取本地存档，存到云端。至于会不会封号就不知道了。</p>        \n        <p>6. 如果你觉得此脚本不错，可以打赏支持一下。说明一下，橙光的东西我会一直免费分享。不会收费。不要相信别人造谣。</p>   \n        <h3>打赏支持</h3>\n        <p><a href=\"https://s2.loli.net/2024/12/09/hHtSpqsbFYUVywW.png\" target=\"_blank\">微信打赏</a></p>\n        <p><a href=\"https://s2.loli.net/2024/12/09/LP8Ao3jg7kNdXqe.jpg\" target=\"_blank\">支付宝打赏</a></p>\n    ";
+  _0x5d7a93.appendChild(_0x1bb3b1);
+  _0x5d7a93.appendChild(_0x2b0b55);
+  _0x38e8db.appendChild(_0x5d7a93);
+  document.body.appendChild(_0x38e8db);
+})();
