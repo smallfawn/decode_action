@@ -1,4 +1,4 @@
-APIPassword = '这里应该写些什么呢？'
+APIPassword = '这里应该写些什么呢？1'
 # 变量名 sfhd_Token
 # 961token#社服活动token
 # APIPassword为答题调用讯飞星火大模型为lite版本模型，配参填写api密钥，模型密钥申请地址https://xinghuo.xfyun.cn/sparkapi?scr=true（向下滑不瞎就能看到）
