@@ -3,7 +3,7 @@
 #   变量:PGSH_TOKEN
 #   多号分割方式 [新建变量 ]
 #   下载胖乖生活App抓取userapi.qiekj.com域名下Authorization的值填入
-#   或者使用插件手机号验证码登录
+#   或者使用插件手机号验证码登
 #   完成app任务 zfb任务等
 #   corn: 一天二次即可                                            
 
