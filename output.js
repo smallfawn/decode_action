@@ -1,30 +1,9 @@
-//Fri Feb 28 2025 10:00:07 GMT+0000 (Coordinated Universal Time)
+//Fri Feb 28 2025 10:00:47 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
 var encode_version = "jsjiami.com.v5";
-(function (_0xbc7c25, _0x4f2dd8) {
-  const _0x1a44dd = _0x2389;
-  const _0xc3747b = _0xbc7c25();
-  while (true) {
-    try {
-      {
-        const _0x150a55 = -parseInt(_0x1a44dd(348)) / 1 * (-parseInt(_0x1a44dd(389)) / 2) + parseInt(_0x1a44dd(395)) / 3 + -parseInt(_0x1a44dd(355)) / 4 * (parseInt(_0x1a44dd(353)) / 5) + parseInt(_0x1a44dd(366)) / 6 + parseInt(_0x1a44dd(400)) / 7 + -parseInt(_0x1a44dd(362)) / 8 + -parseInt(_0x1a44dd(351)) / 9;
-        if (_0x150a55 === _0x4f2dd8) {
-          break;
-        } else {
-          _0xc3747b.push(_0xc3747b.shift());
-        }
-      }
-    } catch (_0x535a8f) {
-      {
-        _0xc3747b.push(_0xc3747b.shift());
-      }
-    }
-  }
-})(_0xf753, 966785);
 const _0x46dd2f = _0x3eee;
 (function (_0x1129fe, _0x562550) {
-  const _0xb3c992 = _0x2389;
   const _0x34c643 = _0x3eee;
   const _0x30d54b = _0x1129fe();
   while (true) {
@@ -34,24 +13,15 @@ const _0x46dd2f = _0x3eee;
         if (_0x51176e === _0x562550) {
           break;
         } else {
-          _0x30d54b[_0xb3c992(363)](_0x30d54b[_0xb3c992(384)]());
+          _0x30d54b.push(_0x30d54b.shift());
         }
       } catch (_0x3c3b62) {
-        _0x30d54b[_0xb3c992(363)](_0x30d54b[_0xb3c992(384)]());
+        _0x30d54b.push(_0x30d54b.shift());
       }
     }
   }
 })(_0x5c85, 528990);
 const crypto = require(_0x46dd2f(284));
-function _0x2389(_0x30cab6, _0x3ac13f) {
-  const _0x5152ea = _0xf753();
-  _0x2389 = function (_0x44df44, _0x25ef60) {
-    _0x44df44 = _0x44df44 - 348;
-    let _0x5c832e = _0x5152ea[_0x44df44];
-    return _0x5c832e;
-  };
-  return _0x2389(_0x30cab6, _0x3ac13f);
-}
 function MD5(_0x2ea37a) {
   const _0x38f2f1 = _0x46dd2f;
   const _0x2ed2fc = {
@@ -163,13 +133,6 @@ async function getSig56(_0xce9d13 = {}, _0x42a89b = null, _0x2150e8 = _0x46dd2f(
     }
   }
 }
-function _0xf753() {
-  const _0xa28eb0 = ["QrVmW", "hex", "18342Rtemmh", "4082960znQdPS", "push", "update", "xxnXM", "11283630hzeffC", "crypto", "MD5", "smallfawn", "createHash", "3320564McVenT", "kuaishou_s", "digest", "data", "rEGVb", "jdwOb", "qTJeO", "naQgS", "11wTDJyp", "00.top:566", "HplcK", "917XRrGCA", "3641560kVZOWj", "shift", "841823kjZRsR", "peed_openb", "sZvLP", "POST", "20122bBXKLH", "get", "vqUpG", "substr", "path", "headers", "677343zsACga", "http://yi1", "RMIkF", "6/sig68", "pPscH", "9725254hvMvGc", "12dlfInR", "121GbyjqH", "YWMtn", "haXAr", "12762873uWlusH", "7309580ZOTUhk", "1298455DidLQB", "sign", "28XVsNvR", "62530JcXTIR", "request", "FPvyT"];
-  _0xf753 = function () {
-    return _0xa28eb0;
-  };
-  return _0xf753();
-}
 function _0x3eee(_0x45923c, _0x7b4546) {
   const _0x337a57 = _0x5c85();
   _0x3eee = function (_0x296336, _0x4170ed) {
@@ -238,8 +201,7 @@ async function getSig68(_0x368c89 = {}, _0x2ffea8 = null, _0x341046 = _0x46dd2f(
   }
 }
 function _0x5c85() {
-  const _0x4f1a5f = _0x2389;
-  const _0x47e007 = [_0x4f1a5f(350), _0x4f1a5f(365), _0x4f1a5f(357), _0x4f1a5f(381), _0x4f1a5f(359), _0x4f1a5f(379), _0x4f1a5f(376), _0x4f1a5f(394), _0x4f1a5f(369), "HDvzU", _0x4f1a5f(352), _0x4f1a5f(393), "peed", "2306456HFfgKF", "indexOf", _0x4f1a5f(370), _0x4f1a5f(375), _0x4f1a5f(356), _0x4f1a5f(367), _0x4f1a5f(368), "stringify", "PpBHM", _0x4f1a5f(382), "json", _0x4f1a5f(372), _0x4f1a5f(364), "6/sig56", _0x4f1a5f(377), _0x4f1a5f(383), _0x4f1a5f(354), _0x4f1a5f(396), _0x4f1a5f(371), _0x4f1a5f(378), _0x4f1a5f(360), _0x4f1a5f(361), "env", _0x4f1a5f(387), _0x4f1a5f(398), "LffHi", _0x4f1a5f(349), "resolve", _0x4f1a5f(390), _0x4f1a5f(392), _0x4f1a5f(374), _0x4f1a5f(385), _0x4f1a5f(399), "27kHtVhS", "PLSrv", _0x4f1a5f(397), _0x4f1a5f(380), _0x4f1a5f(358), _0x4f1a5f(373), _0x4f1a5f(401), "EpMNd", _0x4f1a5f(391), _0x4f1a5f(388), _0x4f1a5f(386)];
+  const _0x47e007 = ["haXAr", "xxnXM", "request", "HplcK", "QrVmW", "11wTDJyp", "jdwOb", "headers", "smallfawn", "HDvzU", "7309580ZOTUhk", "path", "peed", "2306456HFfgKF", "indexOf", "createHash", "rEGVb", "62530JcXTIR", "crypto", "MD5", "stringify", "PpBHM", "917XRrGCA", "json", "kuaishou_s", "update", "6/sig56", "qTJeO", "3641560kVZOWj", "sign", "http://yi1", "3320564McVenT", "naQgS", "hex", "18342Rtemmh", "env", "sZvLP", "6/sig68", "LffHi", "YWMtn", "resolve", "get", "substr", "data", "841823kjZRsR", "pPscH", "27kHtVhS", "PLSrv", "RMIkF", "00.top:566", "FPvyT", "digest", "12dlfInR", "EpMNd", "vqUpG", "POST", "peed_openb"];
   _0x5c85 = function () {
     {
       return _0x47e007;
