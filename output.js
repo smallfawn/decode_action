@@ -1,150 +1,89 @@
-//Tue Feb 25 2025 08:15:40 GMT+0000 (Coordinated Universal Time)
+//Fri Feb 28 2025 09:45:16 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-const Huaji_0x2774c1 = require("js-md5");
-const Huaji_0x136060 = require("crypto-js");
-const Huaji_0x2e42db = require("axios");
-const Huaji_0x412565 = require("dayjs");
-const Huaji_0x545404 = require("dayjs/plugin/timezone");
-const Huaji_0x24ad81 = require("dayjs/plugin/utc");
-Huaji_0x412565.extend(Huaji_0x24ad81);
-Huaji_0x412565.extend(Huaji_0x545404);
-const Huaji_0x249db8 = "bfc5e947cd84c7ced1ee48d28fb3e90f";
-const Huaji_0x3ea809 = process.env.yuanshen_bnhg.split("@");
-console.log("共" + Huaji_0x3ea809.length + "个账号");
-function Huaji_0x37332f(_0x4b4b65 = 16, _0x14813d = 36) {
-  const _0x181bd6 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".split("");
-  const _0x295ca7 = [];
-  let _0x4713fe = 0;
-  if (_0x4b4b65) {
-    {
-      for (_0x4713fe = 0; _0x4713fe < _0x4b4b65; _0x4713fe++) {
-        {
-          _0x295ca7[_0x4713fe] = _0x181bd6[0 | Math.random() * _0x14813d];
-        }
-      }
-    }
-  } else {
-    {
-      let _0x540406;
-      for (_0x295ca7[8] = _0x295ca7[13] = _0x295ca7[18] = _0x295ca7[23] = "-", _0x295ca7[14] = "4", _0x4713fe = 0; _0x4713fe < 36; _0x4713fe++) {
-        {
-          if (!_0x295ca7[_0x4713fe]) {
-            {
-              _0x540406 = 0 | 16 * Math.random();
-              _0x295ca7[_0x4713fe] = _0x181bd6[19 === _0x4713fe ? 3 & _0x540406 | 8 : _0x540406];
-            }
-          }
-        }
-      }
-    }
+const crypto = require("crypto");
+function MD5(_0x3582b8) {
+  return crypto.createHash("MD5").update(_0x3582b8).digest("hex");
+}
+function getSign(_0x3d3a73) {
+  let _0x174a2b = MD5(_0x3d3a73);
+  let _0x285f90 = _0x174a2b.substr(0, 1);
+  let _0x5d6c68 = _0x174a2b.substr(-1, 1);
+  let _0x155e5a = _0x285f90 + _0x5d6c68;
+  return MD5(_0x3d3a73 + _0x155e5a);
+}
+async function getSig56(_0x4dd35d = {}, _0x314ec6 = null, _0x1fefd6 = "get", _0x36824c = "json", _0x275ba8) {
+  if (!process.env.kuaishou_speed_openbox || !process.env.kuaishou_speed) {
+    return "";
   }
-  return _0x295ca7.join("");
-}
-function Huaji_0x445765(_0x2f7f2f) {
-  return Huaji_0x2774c1(_0x2f7f2f).toString().toLowerCase();
-}
-function Huaji_0x345b61(_0x28a6be, _0x32d686) {
-  const _0x54b390 = {
-    app_key: "KlZ4LqOF",
-    app_secret: "HoBJTYXdwn"
-  };
-  const _0x3aaf0a = {
-    t: Math.floor(new Date().getTime() / 1000),
-    n: Huaji_0x37332f(),
-    ..._0x54b390
-  };
-  const _0x419328 = Object.values(_0x3aaf0a).join("");
-  const _0xa29bdb = Huaji_0x445765(Huaji_0x445765(_0x419328)).split("").reverse().join("");
-  const _0x40281c = {
-    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.50(0x18003232) NetType/WIFI Language/zh_CN",
-    "Accept-Encoding": "gzip,compress,br,deflate",
-    "Content-Type": "application/json",
-    uuid: _0x28a6be.uuid,
-    platform_version_code: "iOS 18.0",
-    version: "6.1.5",
-    authorization: _0x28a6be.authorization,
-    tenancy_id: "banu",
-    app_key: "KlZ4LqOF",
-    source: "",
-    platform_version_name: "iPhone 14 Pro Max<iPhone15,3>",
-    platform_version_weapp: "8.0.50",
-    t: _0x3aaf0a.t,
-    n: _0x3aaf0a.n,
-    platform_version_sdk: "3.5.1",
-    sign: _0xa29bdb,
-    Referer: "https://servicewechat.com/wx71373698c47f9a9f/441/page-frame.html"
-  };
-  if (_0x32d686) {
-    {
-      const _0xa2075e = new URLSearchParams({
-        ..._0x54b390,
-        enc_data: _0x32d686
-      }).toString();
-      const _0x3c7695 = Huaji_0x445765(Huaji_0x445765(_0xa2075e)).split("").reverse().join("");
-      _0x40281c.code = _0x3c7695;
-    }
+  const _0x44ccc3 = require("path");
+  if (!(_0x44ccc3.resolve(__dirname).indexOf("smallfawn") !== -1)) {
+    return "";
   }
-  return _0x40281c;
-}
-function Huaji_0xd89c2b(_0x3c73c4) {
-  const _0x3218f0 = Huaji_0x136060.lib.WordArray.random(16).toString();
-  const _0x30b65e = JSON.stringify(_0x3c73c4);
-  const _0x429ee1 = Huaji_0x136060.AES.encrypt(_0x30b65e, Huaji_0x136060.enc.Utf8.parse(Huaji_0x249db8), {
-    iv: Huaji_0x136060.enc.Utf8.parse(_0x3218f0),
-    mode: Huaji_0x136060.mode.CBC
-  }).toString();
-  return Huaji_0x136060.enc.Base64.stringify(Huaji_0x136060.enc.Utf8.parse(JSON.stringify({
-    iv: _0x3218f0,
-    encrypted_data: _0x429ee1
-  })));
-}
-async function Huaji_0x117888(_0x54acb9) {
-  const _0x14e6a7 = {};
-  const _0x795860 = {
-    member_id: _0x54acb9
-  };
+  let _0x350e87 = "http://yi100.top:5666/sig56";
   try {
     {
-      _0x14e6a7.uuid = Huaji_0x37332f();
-      const _0x3a1bdf = await Huaji_0x2e42db.get("https://cloud.banu.cn/api/sign-in/days", {
-        params: _0x795860,
-        headers: Huaji_0x345b61(_0x14e6a7)
-      });
-      let _0xde464e = "";
-      if (_0x3a1bdf.data.data.is_sign_in) {
-        {
-          _0xde464e = "签到：重复签到";
-        }
-      } else {
-        {
-          const _0x5ebb17 = Huaji_0xd89c2b(_0x795860);
-          const _0x2ea4a8 = await Huaji_0x2e42db.post("https://cloud.banu.cn/api/sign-in", {
-            enc_data: _0x5ebb17
-          }, {
-            headers: Huaji_0x345b61(_0x14e6a7, _0x5ebb17)
-          });
-          _0xde464e = "签到：" + _0x2ea4a8.data.message;
-        }
-      }
-      const _0x5b8bca = await Huaji_0x2e42db.get("https://cloud.banu.cn/api/member/statistic", {
-        params: _0x795860,
-        headers: Huaji_0x345b61(_0x14e6a7)
-      });
-      const _0x3b7f34 = "\nMember_id:" + _0x54acb9 + "\n用户名:" + _0x5b8bca.data.data.name + "\n总积分:" + _0x5b8bca.data.data.points;
-      console.log(_0x3b7f34 + " | " + _0xde464e);
+      const _0xe5a85c = {
+        Cookie: _0x275ba8
+      };
+      const _0x47c647 = {
+        query: _0x4dd35d,
+        data: _0x314ec6,
+        method: _0x1fefd6,
+        type: _0x36824c
+      };
+      let _0x31f90e = {
+        url: _0x350e87,
+        headers: _0xe5a85c,
+        method: "POST",
+        data: _0x47c647
+      };
+      _0x31f90e.headers.sign = getSign(JSON.stringify(_0x31f90e.data));
+      let {
+        data: _0x3f9437
+      } = await axios.request(_0x31f90e);
+      return _0x3f9437 ? _0x3f9437.s3 ? _0x3f9437.s3 : false : false;
     }
-  } catch (_0x14af7a) {
+  } catch (_0x2bd529) {
     {
-      console.log("签到失败：" + _0x14af7a + " | 签到时间：" + Huaji_0x412565().tz("Asia/Shanghai").format("YYYY-MM-DD HH:mm:ss"));
+      return false;
     }
   }
 }
-async function Huaji_0x15b17b() {
-  for (let _0x1baafc = 0; _0x1baafc < Huaji_0x3ea809.length; _0x1baafc++) {
-    await Huaji_0x117888(Huaji_0x3ea809[_0x1baafc]);
-    console.log("==========================================");
-    await new Promise(_0x4d13bd => setTimeout(_0x4d13bd, Math.random() * 100000));
+async function getSig68(_0x3d319d = {}, _0x2c2fd1 = null, _0x5a57ad = "get", _0x500dc9 = "json", _0x46a3af) {
+  if (!process.env.kuaishou_speed_openbox || !process.env.kuaishou_speed) {
+    return "";
+  }
+  const _0x4e4bff = require("path");
+  if (!(_0x4e4bff.resolve(__dirname).indexOf("smallfawn") !== -1)) {
+    return "";
+  }
+  let _0x48f0f4 = "http://yi100.top:5666/sig68";
+  try {
+    {
+      const _0x4f1802 = {
+        Cookie: _0x46a3af,
+        sign: ""
+      };
+      const _0xf0dcbf = {
+        query: _0x3d319d,
+        data: _0x2c2fd1,
+        method: _0x5a57ad,
+        type: _0x500dc9
+      };
+      let _0x48121d = {
+        url: _0x48f0f4,
+        headers: _0x4f1802,
+        method: "POST",
+        data: _0xf0dcbf
+      };
+      _0x48121d.headers.sign = getSign(JSON.stringify(_0x48121d.data));
+      let {
+        data: _0x3276cb
+      } = await axios.request(_0x48121d);
+      return _0x3276cb ? _0x3276cb.s3 ? _0x3276cb.s3 : false : false;
+    }
+  } catch (_0x2fe28a) {
+    return false;
   }
 }
-Huaji_0x15b17b();
