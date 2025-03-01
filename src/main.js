@@ -10,6 +10,7 @@ const sojsonModule = await import('./plugin/sojson.js');
 const sojsonv7Module = await import('./plugin/sojsonv7.js');
 const obfuscatorModule = await import('./plugin/obfuscator.js');
 const awscModule = await import('./plugin/awsc.js');
+const jsconfuserModule = await import('./plugin/jsconfuser.js');
 
 // Provide default exports if necessary
 const PluginCommon = commonModule.default || commonModule;
@@ -18,7 +19,7 @@ const PluginSojson = sojsonModule.default || sojsonModule;
 const PluginSojsonV7 = sojsonv7Module.default || sojsonv7Module;
 const PluginObfuscator = obfuscatorModule.default || obfuscatorModule;
 const PluginAwsc = awscModule.default || awscModule;
-
+const PluginJsconfuser = jsconfuserModule.default || jsconfuserModule;
 // Read command-line arguments
 let encodeFile = 'input.js';
 let decodeFile = 'output.js';
@@ -45,6 +46,7 @@ let time;
 const plugins = [
   { name: 'obfuscator', plugin: PluginObfuscator },
   { name: 'sojsonv7', plugin: PluginSojsonV7 },
+  { name: 'jsconfuser', plugin: PluginJsconfuser },
   { name: 'sojson', plugin: PluginSojson },
   { name: 'awsc', plugin: PluginAwsc },
   { name: 'jjencode', plugin: PluginJjencode },
