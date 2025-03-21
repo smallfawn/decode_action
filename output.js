@@ -1,4 +1,4 @@
-//Fri Mar 21 2025 02:56:24 GMT+0000 (Coordinated Universal Time)
+//Fri Mar 21 2025 02:59:15 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
 var encode_version = "jsjiami.com.v5";
@@ -70,9 +70,7 @@ $(function () {
   console.log("\\_| |_/\\____/ \\____/_|\\___/ \\__,_|\\__,_|--爱尚互联 30041321-小爱2020-12-10");
   function _0x366109() {
     {
-      var _0x1f5006 = $(this).attr("lottery_code_two");
-      _0x1f5006 = "tmzx";
-      $(".lottery-number").find("span[way-data=\"tabDoc\"]").html("至少选择五个号码，每五个号码为一注，所有号码均未在开奖号码中出现，即为中奖。 赔率 <em style=\"color:red;\">" + rates[_0x1f5006].rate + "</em>元");
+      $(".lottery-number").find("span[way-data=\"tabDoc\"]").html("至少选择五个号码，每五个号码为一注，所有号码均未在开奖号码中出现，即为中奖。 赔率 <em style=\"color:red;\">" + rates["tmzx"].rate + "</em>元");
     }
   }
   _0x366109();
