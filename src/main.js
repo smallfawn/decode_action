@@ -46,8 +46,9 @@ let time;
 const plugins = [
   { name: 'obfuscator', plugin: PluginObfuscator },
   { name: 'sojsonv7', plugin: PluginSojsonV7 },
+    { name: 'sojson', plugin: PluginSojson },
+
   { name: 'jsconfuser', plugin: PluginJsconfuser },
-  { name: 'sojson', plugin: PluginSojson },
   { name: 'awsc', plugin: PluginAwsc },
   { name: 'jjencode', plugin: PluginJjencode },
   { name: 'common', plugin: PluginCommon }, // Use common plugin last
