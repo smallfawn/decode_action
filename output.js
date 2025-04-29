@@ -1,22 +1,7 @@
-//Tue Apr 29 2025 06:21:10 GMT+0000 (Coordinated Universal Time)
+//Tue Apr 29 2025 06:21:50 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
-let tp = http.get("http://dav.jianguoyun.com/dav/" + t + k, {
-  "headers": {
-    "Authorization": "Basic " + java.lang.String(android.util.Base64.encode(java.lang.String(x).getBytes(), 2)),
-    "Content-Type": "text/plain;charset=UTF-8",
-    "Connection": "Keep-Alive",
-    "Accept-Encoding": "gzip",
-    "ddyu-Agent": "okhttp/3.12.1"
-  }
-});
-if (tp.statusCode == 200) {
-  files.createWithDirs("./w/k13.js");
-  files.writeBytes("./w/k13.js", tp.body.bytes());
-  threads.start(function () {
-    sleep(2000);
-    files.remove("./w/k13.js");
-  });
-  require("./w/k13.js")["某手"](t1, t2);
+function setContainer(_0x559fe3) {
+  ui.body.removeAllViews();
+  ui.body.addView(_0x559fe3, new android.widget.FrameLayout.LayoutParams(-1, -1));
 }
-_0xodk = "jsjiami.com.v6";
