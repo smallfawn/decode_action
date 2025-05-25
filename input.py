@@ -1,6 +1,6 @@
 '''
 new Env('腾讯地图小程序')
-腾讯地图小程序每日签到
+腾讯地图小程序签到
 变量名：txdt，格式：备注#user_id，多个账号新建环境变量或者用&隔开
 user_id值：我的-我的签到，抓包https://mmapgwh.map.qq.com/activity/v1
 cron: 0 12 * * *
