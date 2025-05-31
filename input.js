@@ -1,27 +1,14 @@
-//Sat May 31 2025 09:31:06 GMT+0000 (Coordinated Universal Time)
-//Base:https://github.com/echo094/decode-js
-//Modify:https://github.com/smallfawn/decode_action
+
 const $ = new Env("福田e家");
 const crypto = require("crypto");
-const notify = $.isNode() ? require("./sendNotify") : "";
+const notify =  "";
 
 // 添加缓存相关变量
 let accountCache = {};
 let cacheFile = "ftej_cache.json";
 
 // 备用发帖文本数组
-const backupTexts = [
-  "如果觉得没有朋友，就去找喜欢的人表白，对方会提出和你做朋友的。",
-  "生活就像一杯茶，不会苦一辈子，但总会苦一阵子。",
-  "每一个不曾起舞的日子，都是对生命的辜负。",
-  "世界上最远的距离，不是生与死，而是我站在你面前，你却不知道我爱你。",
-  "人生如梦，一尊还酹江月。",
-  "山重水复疑无路，柳暗花明又一村。",
-  "海内存知己，天涯若比邻。",
-  "落红不是无情物，化作春泥更护花。",
-  "问君能有几多愁，恰似一江春水向东流。",
-  "但愿人长久，千里共婵娟。"
-];
+const backupTexts = ["如果觉得没有朋友，就去找喜欢的人表白，对方会提出和你做朋友的。", "生活就像一杯茶，不会苦一辈子，但总会苦一阵子。", "每一个不曾起舞的日子，都是对生命的辜负。", "世界上最远的距离，不是生与死，而是我站在你面前，你却不知道我爱你。", "人生如梦，一尊还酹江月。", "山重水复疑无路，柳暗花明又一村。", "海内存知己，天涯若比邻。", "落红不是无情物，化作春泥更护花。", "问君能有几多愁，恰似一江春水向东流。", "但愿人长久，千里共婵娟。"];
 
 // 获取随机备用文本
 function getRandomBackupText() {
@@ -56,7 +43,6 @@ function loadAccountCache() {
     return {};
   }
 }
-
 function saveAccountCache(cache) {
   try {
     if ($.isNode()) {
@@ -73,15 +59,9 @@ function saveAccountCache(cache) {
     return false;
   }
 }
-
 function getCurrentTime() {
   const now = new Date();
-  return now.getFullYear() + '-' + 
-         String(now.getMonth() + 1).padStart(2, '0') + '-' + 
-         String(now.getDate()).padStart(2, '0') + ' ' + 
-         String(now.getHours()).padStart(2, '0') + ':' + 
-         String(now.getMinutes()).padStart(2, '0') + ':' + 
-         String(now.getSeconds()).padStart(2, '0');
+  return now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2, '0') + '-' + String(now.getDate()).padStart(2, '0') + ' ' + String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0') + ':' + String(now.getSeconds()).padStart(2, '0');
 }
 
 // 随机打乱数组函数
@@ -98,7 +78,6 @@ function shuffleArray(array) {
 function getRandomDelay() {
   return Math.floor(Math.random() * 6 + 3) * 1000; // 3000-8000毫秒
 }
-
 (() => {
   function q(ad) {
     q = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (af) {
@@ -118,7 +97,7 @@ function getRandomDelay() {
           }
           var ap = {}.toString.call(am).slice(8, -1);
           "Object" === ap && am.constructor && (ap = am.constructor.name);
-          return "Map" === ap || "Set" === ap ? Array.from(am) : "Arguments" === ap || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(ap) ? B(am, an) : void 0;
+          return "Map" === ap || "Set" === ap ? Array.from(am) : "Arguments" === ap || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(ap) ? B(am, an) : undefined;
         }
       }(ad)) || ae && ad && "number" == typeof ad.length) {
         ag && (ad = ag);
@@ -128,10 +107,10 @@ function getRandomDelay() {
           s: ai,
           n: function () {
             var am = {
-              done: !0
+              done: true
             };
             return ah >= ad.length ? am : {
-              done: !1,
+              done: false,
               value: ad[ah++]
             };
           },
@@ -144,8 +123,8 @@ function getRandomDelay() {
       throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
     }
     var aj,
-      ak = !0,
-      al = !1;
+      ak = true,
+      al = false;
     return {
       s: function () {
         ag = ag.call(ad);
@@ -156,7 +135,7 @@ function getRandomDelay() {
         return ao;
       },
       e: function (ao) {
-        al = !0;
+        al = true;
         aj = ao;
       },
       f: function () {
@@ -197,9 +176,9 @@ function getRandomDelay() {
     function an(aK, aL, aM) {
       var aO = {
         value: aM,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
+        enumerable: true,
+        configurable: true,
+        writable: true
       };
       Object.defineProperty(aK, aL, aO);
       return aK[aL];
@@ -301,7 +280,7 @@ function getRandomDelay() {
           }
           var aV = {};
           aV.value = ae;
-          aV.done = !0;
+          aV.done = true;
           return aV;
         }
         for (aP.method = aS, aP.arg = aT;;) {
@@ -381,7 +360,7 @@ function getRandomDelay() {
       };
       this.tryEntries = [aO];
       aN.forEach(aG, this);
-      this.reset(!0);
+      this.reset(true);
     }
     function aJ(aN) {
       if (aN || "" === aN) {
@@ -398,12 +377,12 @@ function getRandomDelay() {
               for (; ++aQ < aN.length;) {
                 if (ah.call(aN, aQ)) {
                   aT.value = aN[aQ];
-                  aT.done = !1;
+                  aT.done = false;
                   return aT;
                 }
               }
               aT.value = ae;
-              aT.done = !0;
+              aT.done = true;
               return aT;
             };
           return aR.next = aR;
@@ -414,11 +393,11 @@ function getRandomDelay() {
     aw.prototype = ax;
     ai(aB, "constructor", {
       value: ax,
-      configurable: !0
+      configurable: true
     });
     ai(ax, "constructor", {
       value: aw,
-      configurable: !0
+      configurable: true
     });
     aw.displayName = an(ax, am, "GeneratorFunction");
     af.isGeneratorFunction = function (aN) {
@@ -442,7 +421,7 @@ function getRandomDelay() {
     });
     af.AsyncIterator = aD;
     af.async = function (aN, aO, aP, aQ, aR) {
-      void 0 === aR && (aR = Promise);
+      undefined === aR && (aR = Promise);
       var aT = new aD(ao(aN, aO, aP, aQ), aR);
       return af.isGeneratorFunction(aO) ? aT : aT.next().then(function (aV) {
         return aV.done ? aV.value : aT.next();
@@ -466,11 +445,11 @@ function getRandomDelay() {
           var aU = aQ.pop();
           if (aU in aP) {
             aT.value = aU;
-            aT.done = !1;
+            aT.done = false;
             return aT;
           }
         }
-        aT.done = !0;
+        aT.done = true;
         return aT;
       };
     };
@@ -478,12 +457,12 @@ function getRandomDelay() {
     aI.prototype = {
       constructor: aI,
       reset: function (aN) {
-        if (this.prev = 0, this.next = 0, this.sent = this._sent = ae, this.done = !1, this.delegate = null, this.method = "next", this.arg = ae, this.tryEntries.forEach(aH), !aN) {
+        if (this.prev = 0, this.next = 0, this.sent = this._sent = ae, this.done = false, this.delegate = null, this.method = "next", this.arg = ae, this.tryEntries.forEach(aH), !aN) {
           for (var aO in this) "t" === aO.charAt(0) && ah.call(this, aO) && !isNaN(+aO.slice(1)) && (this[aO] = ae);
         }
       },
       stop: function () {
-        this.done = !0;
+        this.done = true;
         var aP = this.tryEntries[0].completion;
         if ("throw" === aP.type) {
           throw aP.arg;
@@ -513,7 +492,7 @@ function getRandomDelay() {
               aT = ah.call(aQ, "finallyLoc");
             if (aS && aT) {
               if (this.prev < aQ.catchLoc) {
-                return aV(aQ.catchLoc, !0);
+                return aV(aQ.catchLoc, true);
               }
               if (this.prev < aQ.finallyLoc) {
                 return aV(aQ.finallyLoc);
@@ -521,7 +500,7 @@ function getRandomDelay() {
             } else {
               if (aS) {
                 if (this.prev < aQ.catchLoc) {
-                  return aV(aQ.catchLoc, !0);
+                  return aV(aQ.catchLoc, true);
                 }
               } else {
                 if (!aT) {
@@ -613,7 +592,7 @@ function getRandomDelay() {
         function an(ao) {
           F(al, ai, aj, am, an, "throw", ao);
         }
-        am(void 0);
+        am(undefined);
       });
     };
   }
@@ -647,11 +626,10 @@ function getRandomDelay() {
               // 加载账号缓存
               accountCache = loadAccountCache();
               ag = H.split("&");
-              
+
               // 随机打乱账号顺序
               ag = shuffleArray(ag);
               console.log("🔀 账号将按随机顺序执行，共".concat(ag.length, "个账号"));
-              
               ah = z(ag);
               aJ.prev = 8;
               ah.s();
@@ -667,12 +645,11 @@ function getRandomDelay() {
               J = aj.split("#")[0];
               K = aj.split("#")[1];
               console.log("👤 用户：".concat(J, "开始任务"));
-              
+
               // 检查是否有缓存的登录信息
               cachedInfo = accountCache[J]; // 使用全局变量
               var useCache = false;
               var signed = false;
-              
               if (cachedInfo) {
                 console.log("🔍 发现账号缓存信息，尝试使用缓存凭证");
                 uid = cachedInfo.uid || "";
@@ -680,7 +657,6 @@ function getRandomDelay() {
                 memberId = cachedInfo.memberId || "";
                 M = cachedInfo.token || "";
               }
-              
               console.log("🔍 获取皮卡生活safeKey");
               aJ.next = 19;
               return X("/ehomes-new/pkHome/version/getVersion", aL);
@@ -690,7 +666,7 @@ function getRandomDelay() {
                 break;
               }
               Q = am.data.safeKey;
-              
+
               // 如果有缓存信息，先尝试使用缓存凭证签到
               if (cachedInfo) {
                 console.log("🔍 使用缓存凭证尝试签到");
@@ -728,8 +704,7 @@ function getRandomDelay() {
               // 处理缓存凭证签到结果
               ao = aJ.sent;
               console.log("🔍 缓存验证响应:", JSON.stringify(ao));
-              
-              if (ao && (ao.code === 200 || (ao.data && (ao.data.integral || ao.data.msg)))) {
+              if (ao && (ao.code === 200 || ao.data && (ao.data.integral || ao.data.msg))) {
                 console.log("✅ 缓存凭证有效");
                 if (ao.data && ao.data.integral) {
                   console.log("✅ 签到成功，获得".concat(ao.data.integral, "积分"));
@@ -765,7 +740,7 @@ function getRandomDelay() {
                 });
               }
             case 26:
-              if (an = aJ.sent, console.log(null == an ? void 0 : an.msg), 200 != (null == an ? void 0 : an.code)) {
+              if (an = aJ.sent, console.log(null == an ? undefined : an.msg), 200 != (null == an ? undefined : an.code)) {
                 aJ.next = 38;
                 break;
               }
@@ -773,7 +748,7 @@ function getRandomDelay() {
               memberComplexCode = an.data.memberComplexCode;
               memberId = an.data.user.memberNo;
               M = an.data.token;
-              
+
               // 保存登录信息到缓存
               accountCache[J] = {
                 uid: uid,
@@ -784,7 +759,7 @@ function getRandomDelay() {
               };
               saveAccountCache(accountCache);
               console.log("✅ 登录成功并已更新缓存");
-              
+
               // 如果不是使用缓存登录，则进行签到
               if (!signed) {
                 console.log("🔑 开始签到");
@@ -860,7 +835,7 @@ function getRandomDelay() {
               uid = ap.data.uid;
               memberComplexCode = ap.data.memberComplexCode;
               memberId = ap.data.memberID;
-              
+
               // 模拟登录中
               console.log("🔄 模拟登录中");
               aJ.next = 64;
@@ -907,11 +882,11 @@ function getRandomDelay() {
               });
             case 70:
               as = aJ.sent;
-              console.log("✅ 签到成功，获得".concat(null == as || null === (ar = as.data) || void 0 === ar ? void 0 : ar.integral, "积分"));
+              console.log("✅ 签到成功，获得".concat(null == as || null === (ar = as.data) || undefined === ar ? undefined : ar.integral, "积分"));
               aJ.next = 75;
               break;
             case 74:
-              console.log(null == ap || null === (at = ap.data) || void 0 === at ? void 0 : at.signIn);
+              console.log(null == ap || null === (at = ap.data) || undefined === at ? undefined : at.signIn);
             case 75:
               console.log("————————————");
               console.log("🔍 开始任务");
@@ -1062,11 +1037,7 @@ function getRandomDelay() {
             case 117:
               aG = aJ.sent;
               // 更严格的文本验证和处理
-              if (!aG || typeof aG !== 'string' || aG.length < 10 || 
-                  aG.includes("文件内容解析失败") || 
-                  aG.includes("错误") || 
-                  aG.includes("失败") ||
-                  aG.trim() === "") {
+              if (!aG || typeof aG !== 'string' || aG.length < 10 || aG.includes("文件内容解析失败") || aG.includes("错误") || aG.includes("失败") || aG.trim() === "") {
                 console.log("⚠️ 获取的文本内容无效，使用随机备用文本");
                 aG = getRandomBackupText();
               } else {
@@ -1135,16 +1106,20 @@ function getRandomDelay() {
               });
             case 138:
               aI = aJ.sent;
-              console.log("🔍 查询当前账号拥有积分: ".concat(null == aI || null === (ak = aI.data) || void 0 === ak ? void 0 : ak.pointValue, "\n---------------------------"));
-              R += "👤 用户：".concat(J, " 拥有积分: ").concat(null == aI || null === (al = aI.data) || void 0 === al ? void 0 : al.pointValue, "\n");
-              
+              console.log("🔍 查询当前账号拥有积分: ".concat(null == aI || null === (ak = aI.data) || undefined === ak ? undefined : ak.pointValue, "\n---------------------------"));
+              R += "👤 用户：".concat(J, " 拥有积分: ").concat(null == aI || null === (al = aI.data) || undefined === al ? undefined : al.pointValue, "\n");
+
               // 检查是否还有下一个账号，如果有则添加随机延迟
-              var currentIndex = ag.findIndex(function(account) { return account.split("#")[0] === J; });
+              var currentIndex = ag.findIndex(function (account) {
+                return account.split("#")[0] === J;
+              });
               if (currentIndex < ag.length - 1) {
                 var delayTime = getRandomDelay();
                 console.log("⏳ 等待".concat(Math.floor(delayTime / 1000), "秒后处理下一个账号..."));
                 aJ.next = 142;
-                return new Promise(function(resolve) { setTimeout(resolve, delayTime); });
+                return new Promise(function (resolve) {
+                  setTimeout(resolve, delayTime);
+                });
               } else {
                 console.log("🎉 所有账号处理完成！");
                 aJ.next = 146;
@@ -1623,9 +1598,9 @@ function getRandomDelay() {
     var ae = Buffer.from("Zm9udG9uZS10cmFuc0BseDEwMCQjMzY1", "base64"),
       af = Buffer.from("MjAxNjEyMDE=", "base64"),
       ag = crypto.createDecipheriv("des-ede3-cbc", ae, af);
-    ag.setAutoPadding(!0);
+    ag.setAutoPadding(true);
     var ah = Buffer.from(ad, "base64"),
-      ai = ag.update(ah, void 0, "utf8");
+      ai = ag.update(ah, undefined, "utf8");
     ai += ag.final("utf8");
     return ai;
   }
@@ -1633,7 +1608,7 @@ function getRandomDelay() {
     var ae = Buffer.from("Zm9udG9uZS10cmFuc0BseDEwMCQjMzY1", "base64"),
       af = Buffer.from("MjAxNjEyMDE=", "base64"),
       ag = crypto.createCipheriv("des-ede3-cbc", ae, af);
-    ag.setAutoPadding(!0);
+    ag.setAutoPadding(true);
     var ah = ag.update(ad, "utf8", "base64");
     ah += ag.final("base64");
     return ah;
@@ -1780,8 +1755,8 @@ function Env(t, e) {
       this.data = null;
       this.dataFile = "box.dat";
       this.logs = [];
-      this.isMute = !1;
-      this.isNeedRewrite = !1;
+      this.isMute = false;
+      this.isNeedRewrite = false;
       this.logSeparator = "\n";
       this.encoding = "utf-8";
       this.startTime = new Date().getTime();
@@ -1789,7 +1764,7 @@ function Env(t, e) {
       this.log("", `🔔${this.name}, 开始!`);
     }
     getEnv() {
-      return "undefined" != typeof $environment && $environment["surge-version"] ? "Surge" : "undefined" != typeof $environment && $environment["stash-version"] ? "Stash" : "undefined" != typeof module && module.exports ? "Node.js" : "undefined" != typeof $task ? "Quantumult X" : "undefined" != typeof $loon ? "Loon" : "undefined" != typeof $rocket ? "Shadowrocket" : void 0;
+      return "undefined" != typeof $environment && $environment["surge-version"] ? "Surge" : "undefined" != typeof $environment && $environment["stash-version"] ? "Stash" : "undefined" != typeof module && module.exports ? "Node.js" : "undefined" != typeof $task ? "Quantumult X" : "undefined" != typeof $loon ? "Loon" : "undefined" != typeof $rocket ? "Shadowrocket" : undefined;
     }
     isNode() {
       return "Node.js" === this.getEnv();
@@ -1836,7 +1811,7 @@ function Env(t, e) {
       try {
         return this.setdata(JSON.stringify(t), e);
       } catch {
-        return !1;
+        return false;
       }
     }
     getScript(t) {
@@ -1909,7 +1884,7 @@ function Env(t, e) {
     lodash_get(t, e, s) {
       const i = e.replace(/\[(\d+)\]/g, ".$1").split(".");
       let o = t;
-      for (const t of i) if (o = Object(o)[t], void 0 === o) {
+      for (const t of i) if (o = Object(o)[t], undefined === o) {
         return s;
       }
       return o;
@@ -1935,7 +1910,7 @@ function Env(t, e) {
       return e;
     }
     setdata(t, e) {
-      let s = !1;
+      let s = false;
       if (/^@/.test(e)) {
         const [, i, o] = /^@(.*?)\.(.*?)$/.exec(e),
           r = this.getval(i),
@@ -1983,7 +1958,7 @@ function Env(t, e) {
           this.data = this.loaddata();
           this.data[e] = t;
           this.writedata();
-          return !0;
+          return true;
         default:
           return this.data && this.data[e] || null;
       }
@@ -1992,11 +1967,11 @@ function Env(t, e) {
       this.got = this.got ? this.got : require("got");
       this.cktough = this.cktough ? this.cktough : require("tough-cookie");
       this.ckjar = this.ckjar ? this.ckjar : new this.cktough.CookieJar();
-      t && (t.headers = t.headers ? t.headers : {}, t && (t.headers = t.headers ? t.headers : {}, void 0 === t.headers.cookie && void 0 === t.headers.Cookie && void 0 === t.cookieJar && (t.cookieJar = this.ckjar)));
+      t && (t.headers = t.headers ? t.headers : {}, t && (t.headers = t.headers ? t.headers : {}, undefined === t.headers.cookie && undefined === t.headers.Cookie && undefined === t.cookieJar && (t.cookieJar = this.ckjar)));
     }
     get(t, e = () => {}) {
-      switch (t.headers && (delete t.headers["Content-Type"], delete t.headers["Content-Length"], delete t.headers["content-type"], delete t.headers["content-length"]), t.params && (t.url += "?" + this.queryStr(t.params)), void 0 === t.followRedirect || t.followRedirect || ((this.isSurge() || this.isLoon()) && (t["auto-redirect"] = !1), this.isQuanX() && (t.opts ? t.opts.redirection = !1 : t.opts = {
-        redirection: !1
+      switch (t.headers && (delete t.headers["Content-Type"], delete t.headers["Content-Length"], delete t.headers["content-type"], delete t.headers["content-length"]), t.params && (t.url += "?" + this.queryStr(t.params)), undefined === t.followRedirect || t.followRedirect || ((this.isSurge() || this.isLoon()) && (t["auto-redirect"] = false), this.isQuanX() && (t.opts ? t.opts.redirection = false : t.opts = {
+        redirection: false
       })), this.getEnv()) {
         case "Surge":
         case "Loon":
@@ -2004,7 +1979,7 @@ function Env(t, e) {
         case "Shadowrocket":
         default:
           this.isSurge() && this.isNeedRewrite && (t.headers = t.headers || {}, Object.assign(t.headers, {
-            "X-Surge-Skip-Scripting": !1
+            "X-Surge-Skip-Scripting": false
           }));
           $httpClient.get(t, (t, s, i) => {
             !t && s && (s.body = i, s.statusCode = s.status ? s.status : s.statusCode, s.status = s.statusCode);
@@ -2013,7 +1988,7 @@ function Env(t, e) {
           break;
         case "Quantumult X":
           this.isNeedRewrite && (t.opts = t.opts || {}, Object.assign(t.opts, {
-            hints: !1
+            hints: false
           }));
           $task.fetch(t).then(t => {
             const {
@@ -2072,8 +2047,8 @@ function Env(t, e) {
     }
     post(t, e = () => {}) {
       const s = t.method ? t.method.toLocaleLowerCase() : "post";
-      switch (t.body && t.headers && !t.headers["Content-Type"] && !t.headers["content-type"] && (t.headers["content-type"] = "application/x-www-form-urlencoded"), t.headers && (delete t.headers["Content-Length"], delete t.headers["content-length"]), void 0 === t.followRedirect || t.followRedirect || ((this.isSurge() || this.isLoon()) && (t["auto-redirect"] = !1), this.isQuanX() && (t.opts ? t.opts.redirection = !1 : t.opts = {
-        redirection: !1
+      switch (t.body && t.headers && !t.headers["Content-Type"] && !t.headers["content-type"] && (t.headers["content-type"] = "application/x-www-form-urlencoded"), t.headers && (delete t.headers["Content-Length"], delete t.headers["content-length"]), undefined === t.followRedirect || t.followRedirect || ((this.isSurge() || this.isLoon()) && (t["auto-redirect"] = false), this.isQuanX() && (t.opts ? t.opts.redirection = false : t.opts = {
+        redirection: false
       })), this.getEnv()) {
         case "Surge":
         case "Loon":
@@ -2081,7 +2056,7 @@ function Env(t, e) {
         case "Shadowrocket":
         default:
           this.isSurge() && this.isNeedRewrite && (t.headers = t.headers || {}, Object.assign(t.headers, {
-            "X-Surge-Skip-Scripting": !1
+            "X-Surge-Skip-Scripting": false
           }));
           $httpClient[s](t, (t, s, i) => {
             !t && s && (s.body = i, s.statusCode = s.status ? s.status : s.statusCode, s.status = s.statusCode);
@@ -2091,7 +2066,7 @@ function Env(t, e) {
         case "Quantumult X":
           t.method = s;
           this.isNeedRewrite && (t.opts = t.opts || {}, Object.assign(t.opts, {
-            hints: !1
+            hints: false
           }));
           $task.fetch(t).then(t => {
             const {
@@ -2175,7 +2150,7 @@ function Env(t, e) {
           $mediaMime: o
         } = t;
         switch (typeof t) {
-          case void 0:
+          case undefined:
             return t;
           case "string":
             switch (this.getEnv()) {
@@ -2344,7 +2319,7 @@ function Env(t, e) {
           this.log("", `❗️${this.name}, 错误!`, e, t);
           break;
         case "Node.js":
-          this.log("", `❗️${this.name}, 错误!`, e, void 0 !== t.message ? t.message : t, t.stack);
+          this.log("", `❗️${this.name}, 错误!`, e, undefined !== t.message ? t.message : t, t.stack);
           break;
       }
     }
