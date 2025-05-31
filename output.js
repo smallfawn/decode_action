@@ -1,10 +1,9 @@
-//Sat May 31 2025 14:25:44 GMT+0000 (Coordinated Universal Time)
+//Sat May 31 2025 16:29:20 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
-//福田解密2
 const $ = new Env("福田e家");
 const crypto = require("crypto");
-const notify = $.isNode() ? require("../sendNotify") : "";
+const notify = "";
 (() => {
   var j = {
     gvHlt: function (ad, ae) {
@@ -563,81 +562,113 @@ const notify = $.isNode() ? require("../sendNotify") : "";
     }
   };
   function q(ad) {
-    q = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (af) {
-      return typeof af;
-    } : function (af) {
-      return af && "function" == typeof Symbol && af.constructor === Symbol && af !== Symbol.prototype ? "symbol" : typeof af;
-    };
-    return q(ad);
+    {
+      q = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (af) {
+        {
+          return typeof af;
+        }
+      } : function (af) {
+        {
+          return af && "function" == typeof Symbol && af.constructor === Symbol && af !== Symbol.prototype ? "symbol" : typeof af;
+        }
+      };
+      return q(ad);
+    }
   }
   function z(ad, ae) {
-    var ag = "undefined" != typeof Symbol && ad[Symbol.iterator] || ad["@@iterator"];
-    if (!ag) {
-      if (Array.isArray(ad) || (ag = function (am, an) {
-        if (am) {
-          if ("string" == typeof am) {
-            return B(am, an);
+    {
+      var ag = "undefined" != typeof Symbol && ad[Symbol.iterator] || ad["@@iterator"];
+      if (!ag) {
+        {
+          if (Array.isArray(ad) || (ag = function (am, an) {
+            {
+              if (am) {
+                {
+                  if ("string" == typeof am) {
+                    return B(am, an);
+                  }
+                  var ap = {}.toString.call(am).slice(8, -1);
+                  "Object" === ap && am.constructor && (ap = am.constructor.name);
+                  return "Map" === ap || "Set" === ap ? Array.from(am) : "Arguments" === ap || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(ap) ? B(am, an) : undefined;
+                }
+              }
+            }
+          }(ad)) || ae && ad && "number" == typeof ad.length) {
+            {
+              ag && (ad = ag);
+              var ah = 0;
+              var ai = function () {};
+              return {
+                s: ai,
+                n: function () {
+                  {
+                    var am = {
+                      done: true
+                    };
+                    return ah >= ad.length ? am : {
+                      done: false,
+                      value: ad[ah++]
+                    };
+                  }
+                },
+                e: function (am) {
+                  {
+                    throw am;
+                  }
+                },
+                f: ai
+              };
+            }
           }
-          var ap = {}.toString.call(am).slice(8, -1);
-          "Object" === ap && am.constructor && (ap = am.constructor.name);
-          return "Map" === ap || "Set" === ap ? Array.from(am) : "Arguments" === ap || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(ap) ? B(am, an) : undefined;
+          throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
         }
-      }(ad)) || ae && ad && "number" == typeof ad.length) {
-        ag && (ad = ag);
-        var ah = 0;
-        var ai = function () {};
-        return {
-          s: ai,
-          n: function () {
-            var am = {
-              done: true
-            };
-            return ah >= ad.length ? am : {
-              done: false,
-              value: ad[ah++]
-            };
-          },
-          e: function (am) {
-            throw am;
-          },
-          f: ai
-        };
       }
-      throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+      var aj;
+      var ak = true;
+      var al = false;
+      return {
+        s: function () {
+          {
+            ag = ag.call(ad);
+          }
+        },
+        n: function () {
+          {
+            var ao = ag.next();
+            ak = ao.done;
+            return ao;
+          }
+        },
+        e: function (ao) {
+          al = true;
+          aj = ao;
+        },
+        f: function () {
+          {
+            try {
+              {
+                ak || null == ag.return || ag.return();
+              }
+            } finally {
+              {
+                if (al) {
+                  throw aj;
+                }
+              }
+            }
+          }
+        }
+      };
     }
-    var aj;
-    var ak = true;
-    var al = false;
-    return {
-      s: function () {
-        ag = ag.call(ad);
-      },
-      n: function () {
-        var ao = ag.next();
-        ak = ao.done;
-        return ao;
-      },
-      e: function (ao) {
-        al = true;
-        aj = ao;
-      },
-      f: function () {
-        try {
-          ak || null == ag.return || ag.return();
-        } finally {
-          if (al) {
-            throw aj;
-          }
-        }
-      }
-    };
   }
   function B(ad, ae) {
-    (null == ae || ae > ad.length) && (ae = ad.length);
-    for (var ag = 0, ah = Array(ae); ag < ae; ag++) {
-      ah[ag] = ad[ag];
+    {
+      (null == ae || ae > ad.length) && (ae = ad.length);
+      for (var ag = 0, ah = Array(ae); ag < ae; ag++) {
+        ah[ag] = ad[ag];
+      }
+      return ah;
     }
-    return ah;
   }
   function D() {
     "use strict";
@@ -846,68 +877,90 @@ const notify = $.isNode() ? require("../sendNotify") : "";
       }
     };
     D = function () {
-      return af;
+      {
+        return af;
+      }
     };
     var ae;
     var af = {
       wrap: ao,
       isGeneratorFunction: function (aN) {
-        var aO = "function" == typeof aN && aN.constructor;
-        return !!aO && (aO === aw || "GeneratorFunction" === (aO.displayName || aO.name));
+        {
+          var aO = "function" == typeof aN && aN.constructor;
+          return !!aO && (aO === aw || "GeneratorFunction" === (aO.displayName || aO.name));
+        }
       },
       mark: function (aN) {
-        Object.setPrototypeOf ? Object.setPrototypeOf(aN, ax) : (aN.__proto__ = ax, an(aN, am, "GeneratorFunction"));
-        aN.prototype = Object.create(aB);
-        return aN;
+        {
+          Object.setPrototypeOf ? Object.setPrototypeOf(aN, ax) : (aN.__proto__ = ax, an(aN, am, "GeneratorFunction"));
+          aN.prototype = Object.create(aB);
+          return aN;
+        }
       }
     };
     var ag = Object.prototype;
     var ah = ag.hasOwnProperty;
     var ai = Object.defineProperty || function (aK, aL, aM) {
-      aK[aL] = aM.value;
+      {
+        aK[aL] = aM.value;
+      }
     };
     var aj = "function" == typeof Symbol ? Symbol : {};
     var ak = aj.iterator || "@@iterator";
     var al = aj.asyncIterator || "@@asyncIterator";
     var am = aj.toStringTag || "@@toStringTag";
     function an(aK, aL, aM) {
-      var aO = {
-        value: aM,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      };
-      Object.defineProperty(aK, aL, aO);
-      return aK[aL];
+      {
+        var aO = {
+          value: aM,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        };
+        Object.defineProperty(aK, aL, aO);
+        return aK[aL];
+      }
     }
     try {
-      an({}, "");
+      {
+        an({}, "");
+      }
     } catch (aL) {
-      an = function (aM, aN, aO) {
-        return aM[aN] = aO;
-      };
+      {
+        an = function (aM, aN, aO) {
+          {
+            return aM[aN] = aO;
+          }
+        };
+      }
     }
     function ao(aN, aO, aP, aQ) {
-      var aR = aO && aO.prototype instanceof av ? aO : av;
-      var aS = Object.create(aR.prototype);
-      var aT = new aI(aQ || []);
-      ai(aS, "_invoke", {
-        value: aE(aN, aP, aT)
-      });
-      return aS;
+      {
+        var aR = aO && aO.prototype instanceof av ? aO : av;
+        var aS = Object.create(aR.prototype);
+        var aT = new aI(aQ || []);
+        ai(aS, "_invoke", {
+          value: aE(aN, aP, aT)
+        });
+        return aS;
+      }
     }
     function ap(aN, aO, aP) {
-      try {
-        return {
-          type: "normal",
-          arg: aN.call(aO, aP)
-        };
-      } catch (aU) {
-        var aR = {
-          type: "throw",
-          arg: aU
-        };
-        return aR;
+      {
+        try {
+          return {
+            type: "normal",
+            arg: aN.call(aO, aP)
+          };
+        } catch (aU) {
+          {
+            var aR = {
+              type: "throw",
+              arg: aU
+            };
+            return aR;
+          }
+        }
       }
     }
     var aq = "suspendedStart";
@@ -920,7 +973,9 @@ const notify = $.isNode() ? require("../sendNotify") : "";
     function ax() {}
     var ay = {};
     an(ay, ak, function () {
-      return this;
+      {
+        return this;
+      }
     });
     var az = Object.getPrototypeOf;
     var aA = az && az(az(aJ([])));
@@ -928,165 +983,221 @@ const notify = $.isNode() ? require("../sendNotify") : "";
     ax.prototype = av.prototype = Object.create(ay);
     var aB = ax.prototype;
     function aC(aN) {
-      ["next", "throw", "return"].forEach(function (aQ) {
-        an(aN, aQ, function (aS) {
-          return this._invoke(aQ, aS);
-        });
-      });
-    }
-    function aD(aN, aO) {
-      function aS(aT, aU, aV, aW) {
-        var aY = ap(aN[aT], aN, aU);
-        if ("throw" !== aY.type) {
-          var aZ = aY.arg;
-          var b0 = aZ.value;
-          return b0 && "object" == q(b0) && ah.call(b0, "__await") ? aO.resolve(b0.__await).then(function (b2) {
-            aS("next", b2, aV, aW);
-          }, function (b2) {
-            aS("throw", b2, aV, aW);
-          }) : aO.resolve(b0).then(function (b2) {
-            aZ.value = b2;
-            aV(aZ);
-          }, function (b2) {
-            return aS("throw", b2, aV, aW);
-          });
-        }
-        aW(aY.arg);
-      }
-      var aQ;
-      ai(this, "_invoke", {
-        value: function (aT, aU) {
-          function aW() {
-            return new aO(function (aX, aY) {
-              aS(aT, aU, aX, aY);
+      {
+        ["next", "throw", "return"].forEach(function (aQ) {
+          {
+            an(aN, aQ, function (aS) {
+              {
+                return this._invoke(aQ, aS);
+              }
             });
           }
-          return aQ = aQ ? aQ.then(aW, aW) : aW();
+        });
+      }
+    }
+    function aD(aN, aO) {
+      {
+        function aS(aT, aU, aV, aW) {
+          {
+            var aY = ap(aN[aT], aN, aU);
+            if ("throw" !== aY.type) {
+              {
+                var aZ = aY.arg;
+                var b0 = aZ.value;
+                return b0 && "object" == q(b0) && ah.call(b0, "__await") ? aO.resolve(b0.__await).then(function (b2) {
+                  {
+                    aS("next", b2, aV, aW);
+                  }
+                }, function (b2) {
+                  {
+                    aS("throw", b2, aV, aW);
+                  }
+                }) : aO.resolve(b0).then(function (b2) {
+                  {
+                    aZ.value = b2;
+                    aV(aZ);
+                  }
+                }, function (b2) {
+                  {
+                    return aS("throw", b2, aV, aW);
+                  }
+                });
+              }
+            }
+            aW(aY.arg);
+          }
         }
-      });
+        var aQ;
+        ai(this, "_invoke", {
+          value: function (aT, aU) {
+            {
+              function aW() {
+                {
+                  return new aO(function (aX, aY) {
+                    {
+                      aS(aT, aU, aX, aY);
+                    }
+                  });
+                }
+              }
+              return aQ = aQ ? aQ.then(aW, aW) : aW();
+            }
+          }
+        });
+      }
     }
     function aE(aN, aO, aP) {
       var aR = aq;
       return function (aS, aT) {
-        if (aR === as) {
-          throw Error("Generator is already running");
-        }
-        if (aR === at) {
-          if ("throw" === aS) {
-            throw aT;
+        {
+          if (aR === as) {
+            throw Error("Generator is already running");
           }
-          var aV = {
-            value: ae,
-            done: true
-          };
-          return aV;
-        }
-        for (aP.method = aS, aP.arg = aT;;) {
-          var aW = aP.delegate;
-          if (aW) {
-            var aX = aF(aW, aP);
-            if (aX) {
-              if (aX === au) {
-                continue;
+          if (aR === at) {
+            {
+              if ("throw" === aS) {
+                throw aT;
               }
-              return aX;
+              var aV = {
+                value: ae,
+                done: true
+              };
+              return aV;
             }
           }
-          if ("next" === aP.method) {
-            aP.sent = aP._sent = aP.arg;
-          } else {
-            if ("throw" === aP.method) {
-              if (aR === aq) {
-                throw aR = at, aP.arg;
+          for (aP.method = aS, aP.arg = aT;;) {
+            {
+              var aW = aP.delegate;
+              if (aW) {
+                {
+                  var aX = aF(aW, aP);
+                  if (aX) {
+                    {
+                      if (aX === au) {
+                        continue;
+                      }
+                      return aX;
+                    }
+                  }
+                }
               }
-              aP.dispatchException(aP.arg);
-            } else {
-              "return" === aP.method && aP.abrupt("return", aP.arg);
+              if ("next" === aP.method) {
+                aP.sent = aP._sent = aP.arg;
+              } else {
+                if ("throw" === aP.method) {
+                  {
+                    if (aR === aq) {
+                      throw aR = at, aP.arg;
+                    }
+                    aP.dispatchException(aP.arg);
+                  }
+                } else {
+                  "return" === aP.method && aP.abrupt("return", aP.arg);
+                }
+              }
+              aR = as;
+              var aY = ap(aN, aO, aP);
+              if ("normal" === aY.type) {
+                {
+                  if (aR = aP.done ? at : ar, aY.arg === au) {
+                    continue;
+                  }
+                  var aZ = {
+                    value: aY.arg,
+                    done: aP.done
+                  };
+                  return aZ;
+                }
+              }
+              "throw" === aY.type && (aR = at, aP.method = "throw", aP.arg = aY.arg);
             }
           }
-          aR = as;
-          var aY = ap(aN, aO, aP);
-          if ("normal" === aY.type) {
-            if (aR = aP.done ? at : ar, aY.arg === au) {
-              continue;
-            }
-            var aZ = {
-              value: aY.arg,
-              done: aP.done
-            };
-            return aZ;
-          }
-          "throw" === aY.type && (aR = at, aP.method = "throw", aP.arg = aY.arg);
         }
       };
     }
     function aF(aN, aO) {
-      var aS = aO.method;
-      var aT = aN.iterator[aS];
-      if (aT === ae) {
-        aO.delegate = null;
-        "throw" === aS && aN.iterator.return && (aO.method = "return", aO.arg = ae, aF(aN, aO), "throw" === aO.method) || "return" !== aS && (aO.method = "throw", aO.arg = new TypeError("The iterator does not provide a '" + aS + "' method"));
-        return au;
+      {
+        var aS = aO.method;
+        var aT = aN.iterator[aS];
+        if (aT === ae) {
+          aO.delegate = null;
+          "throw" === aS && aN.iterator.return && (aO.method = "return", aO.arg = ae, aF(aN, aO), "throw" === aO.method) || "return" !== aS && (aO.method = "throw", aO.arg = new TypeError("The iterator does not provide a '" + aS + "' method"));
+          return au;
+        }
+        var aU = ap(aT, aN.iterator, aO.arg);
+        if ("throw" === aU.type) {
+          aO.method = "throw";
+          aO.arg = aU.arg;
+          aO.delegate = null;
+          return au;
+        }
+        var aV = aU.arg;
+        return aV ? aV.done ? (aO[aN.resultName] = aV.value, aO.next = aN.nextLoc, "return" !== aO.method && (aO.method = "next", aO.arg = ae), aO.delegate = null, au) : aV : (aO.method = "throw", aO.arg = new TypeError("iterator result is not an object"), aO.delegate = null, au);
       }
-      var aU = ap(aT, aN.iterator, aO.arg);
-      if ("throw" === aU.type) {
-        aO.method = "throw";
-        aO.arg = aU.arg;
-        aO.delegate = null;
-        return au;
-      }
-      var aV = aU.arg;
-      return aV ? aV.done ? (aO[aN.resultName] = aV.value, aO.next = aN.nextLoc, "return" !== aO.method && (aO.method = "next", aO.arg = ae), aO.delegate = null, au) : aV : (aO.method = "throw", aO.arg = new TypeError("iterator result is not an object"), aO.delegate = null, au);
     }
     function aG(aN) {
-      var aQ = {
-        tryLoc: aN[0]
-      };
-      1 in aN && (aQ.catchLoc = aN[1]);
-      2 in aN && (aQ.finallyLoc = aN[2], aQ.afterLoc = aN[3]);
-      this.tryEntries.push(aQ);
+      {
+        var aQ = {
+          tryLoc: aN[0]
+        };
+        1 in aN && (aQ.catchLoc = aN[1]);
+        2 in aN && (aQ.finallyLoc = aN[2], aQ.afterLoc = aN[3]);
+        this.tryEntries.push(aQ);
+      }
     }
     function aH(aN) {
-      var aO = aN.completion || {};
-      aO.type = "normal";
-      delete aO.arg;
-      aN.completion = aO;
+      {
+        var aO = aN.completion || {};
+        aO.type = "normal";
+        delete aO.arg;
+        aN.completion = aO;
+      }
     }
     function aI(aN) {
-      var aO = {
-        tryLoc: "root"
-      };
-      this.tryEntries = [aO];
-      aN.forEach(aG, this);
-      this.reset(true);
+      {
+        var aO = {
+          tryLoc: "root"
+        };
+        this.tryEntries = [aO];
+        aN.forEach(aG, this);
+        this.reset(true);
+      }
     }
     function aJ(aN) {
-      if (aN || "" === aN) {
-        var aP = aN[ak];
-        if (aP) {
-          return aP.call(aN);
-        }
-        if ("function" == typeof aN.next) {
-          return aN;
-        }
-        if (!isNaN(aN.length)) {
-          var aQ = -1;
-          var aR = function aT() {
-            for (; ++aQ < aN.length;) {
-              if (ah.call(aN, aQ)) {
-                aT.value = aN[aQ];
-                aT.done = false;
-                return aT;
+      {
+        if (aN || "" === aN) {
+          {
+            var aP = aN[ak];
+            if (aP) {
+              return aP.call(aN);
+            }
+            if ("function" == typeof aN.next) {
+              return aN;
+            }
+            if (!isNaN(aN.length)) {
+              {
+                var aQ = -1;
+                var aR = function aT() {
+                  {
+                    for (; ++aQ < aN.length;) {
+                      if (ah.call(aN, aQ)) {
+                        aT.value = aN[aQ];
+                        aT.done = false;
+                        return aT;
+                      }
+                    }
+                    aT.value = ae;
+                    aT.done = true;
+                    return aT;
+                  }
+                };
+                return aR.next = aR;
               }
             }
-            aT.value = ae;
-            aT.done = true;
-            return aT;
-          };
-          return aR.next = aR;
+          }
         }
+        throw new TypeError(q(aN) + " is not iterable");
       }
-      throw new TypeError(q(aN) + " is not iterable");
     }
     aw.prototype = ax;
     ai(aB, "constructor", {
@@ -1099,10 +1210,12 @@ const notify = $.isNode() ? require("../sendNotify") : "";
     });
     aw.displayName = an(ax, am, "GeneratorFunction");
     af.awrap = function (aN) {
-      var aP = {
-        __await: aN
-      };
-      return aP;
+      {
+        var aP = {
+          __await: aN
+        };
+        return aP;
+      }
     };
     aC(aD.prototype);
     an(aD.prototype, al, function () {
@@ -1110,44 +1223,58 @@ const notify = $.isNode() ? require("../sendNotify") : "";
     });
     af.AsyncIterator = aD;
     af.async = function (aN, aO, aP, aQ, aR) {
-      undefined === aR && (aR = Promise);
-      var aT = new aD(ao(aN, aO, aP, aQ), aR);
-      return af.isGeneratorFunction(aO) ? aT : aT.next().then(function (aV) {
-        return aV.done ? aV.value : aT.next();
-      });
+      {
+        undefined === aR && (aR = Promise);
+        var aT = new aD(ao(aN, aO, aP, aQ), aR);
+        return af.isGeneratorFunction(aO) ? aT : aT.next().then(function (aV) {
+          {
+            return aV.done ? aV.value : aT.next();
+          }
+        });
+      }
     };
     aC(aB);
     an(aB, am, "Generator");
     an(aB, ak, function () {
-      return this;
+      {
+        return this;
+      }
     });
     an(aB, "toString", function () {
       return "[object Generator]";
     });
     af.keys = function (aN) {
-      var aP = Object(aN);
-      var aQ = [];
-      for (var aR in aP) aQ.push(aR);
-      aQ.reverse();
-      return function aT() {
-        for (; aQ.length;) {
-          var aU = aQ.pop();
-          if (aU in aP) {
-            aT.value = aU;
-            aT.done = false;
+      {
+        var aP = Object(aN);
+        var aQ = [];
+        for (var aR in aP) aQ.push(aR);
+        aQ.reverse();
+        return function aT() {
+          {
+            for (; aQ.length;) {
+              {
+                var aU = aQ.pop();
+                if (aU in aP) {
+                  aT.value = aU;
+                  aT.done = false;
+                  return aT;
+                }
+              }
+            }
+            aT.done = true;
             return aT;
           }
-        }
-        aT.done = true;
-        return aT;
-      };
+        };
+      }
     };
     af.values = aJ;
     aI.prototype = {
       constructor: aI,
       reset: function (aN) {
-        if (this.prev = 0, this.next = 0, this.sent = this._sent = ae, this.done = false, this.delegate = null, this.method = "next", this.arg = ae, this.tryEntries.forEach(aH), !aN) {
-          for (var aO in this) "t" === aO.charAt(0) && ah.call(this, aO) && !isNaN(+aO.slice(1)) && (this[aO] = ae);
+        {
+          if (this.prev = 0, this.next = 0, this.sent = this._sent = ae, this.done = false, this.delegate = null, this.method = "next", this.arg = ae, this.tryEntries.forEach(aH), !aN) {
+            for (var aO in this) "t" === aO.charAt(0) && ah.call(this, aO) && !isNaN(+aO.slice(1)) && (this[aO] = ae);
+          }
         }
       },
       stop: function () {
@@ -1159,44 +1286,58 @@ const notify = $.isNode() ? require("../sendNotify") : "";
         return this.rval;
       },
       dispatchException: function (aN) {
-        if (this.done) {
-          throw aN;
-        }
-        var aO = this;
-        function aV(aW, aX) {
-          aR.type = "throw";
-          aR.arg = aN;
-          aO.next = aW;
-          aX && (aO.method = "next", aO.arg = ae);
-          return !!aX;
-        }
-        for (var aP = this.tryEntries.length - 1; aP >= 0; --aP) {
-          var aQ = this.tryEntries[aP];
-          var aR = aQ.completion;
-          if ("root" === aQ.tryLoc) {
-            return aV("end");
+        {
+          if (this.done) {
+            throw aN;
           }
-          if (aQ.tryLoc <= this.prev) {
-            var aS = ah.call(aQ, "catchLoc");
-            var aT = ah.call(aQ, "finallyLoc");
-            if (aS && aT) {
-              if (this.prev < aQ.catchLoc) {
-                return aV(aQ.catchLoc, true);
+          var aO = this;
+          function aV(aW, aX) {
+            {
+              aR.type = "throw";
+              aR.arg = aN;
+              aO.next = aW;
+              aX && (aO.method = "next", aO.arg = ae);
+              return !!aX;
+            }
+          }
+          for (var aP = this.tryEntries.length - 1; aP >= 0; --aP) {
+            {
+              var aQ = this.tryEntries[aP];
+              var aR = aQ.completion;
+              if ("root" === aQ.tryLoc) {
+                return aV("end");
               }
-              if (this.prev < aQ.finallyLoc) {
-                return aV(aQ.finallyLoc);
-              }
-            } else {
-              if (aS) {
-                if (this.prev < aQ.catchLoc) {
-                  return aV(aQ.catchLoc, true);
-                }
-              } else {
-                if (!aT) {
-                  throw Error("try statement without catch or finally");
-                }
-                if (this.prev < aQ.finallyLoc) {
-                  return aV(aQ.finallyLoc);
+              if (aQ.tryLoc <= this.prev) {
+                {
+                  var aS = ah.call(aQ, "catchLoc");
+                  var aT = ah.call(aQ, "finallyLoc");
+                  if (aS && aT) {
+                    {
+                      if (this.prev < aQ.catchLoc) {
+                        return aV(aQ.catchLoc, true);
+                      }
+                      if (this.prev < aQ.finallyLoc) {
+                        return aV(aQ.finallyLoc);
+                      }
+                    }
+                  } else {
+                    if (aS) {
+                      {
+                        if (this.prev < aQ.catchLoc) {
+                          return aV(aQ.catchLoc, true);
+                        }
+                      }
+                    } else {
+                      {
+                        if (!aT) {
+                          throw Error("try statement without catch or finally");
+                        }
+                        if (this.prev < aQ.finallyLoc) {
+                          return aV(aQ.finallyLoc);
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -1204,70 +1345,96 @@ const notify = $.isNode() ? require("../sendNotify") : "";
         }
       },
       abrupt: function (aN, aO) {
-        for (var aP = this.tryEntries.length - 1; aP >= 0; --aP) {
-          var aQ = this.tryEntries[aP];
-          if (aQ.tryLoc <= this.prev && ah.call(aQ, "finallyLoc") && this.prev < aQ.finallyLoc) {
-            var aR = aQ;
-            break;
+        {
+          for (var aP = this.tryEntries.length - 1; aP >= 0; --aP) {
+            {
+              var aQ = this.tryEntries[aP];
+              if (aQ.tryLoc <= this.prev && ah.call(aQ, "finallyLoc") && this.prev < aQ.finallyLoc) {
+                {
+                  var aR = aQ;
+                  break;
+                }
+              }
+            }
           }
+          aR && ("break" === aN || "continue" === aN) && aR.tryLoc <= aO && aO <= aR.finallyLoc && (aR = null);
+          var aS = aR ? aR.completion : {};
+          aS.type = aN;
+          aS.arg = aO;
+          return aR ? (this.method = "next", this.next = aR.finallyLoc, au) : this.complete(aS);
         }
-        aR && ("break" === aN || "continue" === aN) && aR.tryLoc <= aO && aO <= aR.finallyLoc && (aR = null);
-        var aS = aR ? aR.completion : {};
-        aS.type = aN;
-        aS.arg = aO;
-        return aR ? (this.method = "next", this.next = aR.finallyLoc, au) : this.complete(aS);
       },
       complete: function (aN, aO) {
-        if ("throw" === aN.type) {
-          throw aN.arg;
+        {
+          if ("throw" === aN.type) {
+            throw aN.arg;
+          }
+          "break" === aN.type || "continue" === aN.type ? this.next = aN.arg : "return" === aN.type ? (this.rval = this.arg = aN.arg, this.method = "return", this.next = "end") : "normal" === aN.type && aO && (this.next = aO);
+          return au;
         }
-        "break" === aN.type || "continue" === aN.type ? this.next = aN.arg : "return" === aN.type ? (this.rval = this.arg = aN.arg, this.method = "return", this.next = "end") : "normal" === aN.type && aO && (this.next = aO);
-        return au;
       },
       finish: function (aN) {
-        for (var aP = this.tryEntries.length - 1; aP >= 0; --aP) {
-          var aQ = this.tryEntries[aP];
-          if (aQ.finallyLoc === aN) {
-            this.complete(aQ.completion, aQ.afterLoc);
-            aH(aQ);
-            return au;
+        {
+          for (var aP = this.tryEntries.length - 1; aP >= 0; --aP) {
+            {
+              var aQ = this.tryEntries[aP];
+              if (aQ.finallyLoc === aN) {
+                this.complete(aQ.completion, aQ.afterLoc);
+                aH(aQ);
+                return au;
+              }
+            }
           }
         }
       },
       catch: function (aN) {
-        for (var aO = this.tryEntries.length - 1; aO >= 0; --aO) {
-          var aP = this.tryEntries[aO];
-          if (aP.tryLoc === aN) {
-            var aQ = aP.completion;
-            if ("throw" === aQ.type) {
-              var aR = aQ.arg;
-              aH(aP);
+        {
+          for (var aO = this.tryEntries.length - 1; aO >= 0; --aO) {
+            {
+              var aP = this.tryEntries[aO];
+              if (aP.tryLoc === aN) {
+                var aQ = aP.completion;
+                if ("throw" === aQ.type) {
+                  {
+                    var aR = aQ.arg;
+                    aH(aP);
+                  }
+                }
+                return aR;
+              }
             }
-            return aR;
           }
+          throw Error("illegal catch attempt");
         }
-        throw Error("illegal catch attempt");
       },
       delegateYield: function (aN, aO, aP) {
-        this.delegate = {
-          iterator: aJ(aN),
-          resultName: aO,
-          nextLoc: aP
-        };
-        "next" === this.method && (this.arg = ae);
-        return au;
+        {
+          this.delegate = {
+            iterator: aJ(aN),
+            resultName: aO,
+            nextLoc: aP
+          };
+          "next" === this.method && (this.arg = ae);
+          return au;
+        }
       }
     };
     return af;
   }
   function F(ad, ae, af, ag, ah, ai, aj) {
-    try {
-      var ak = ad[ai](aj);
-      var al = ak.value;
-    } catch (ao) {
-      return void af(ao);
+    {
+      try {
+        {
+          var ak = ad[ai](aj);
+          var al = ak.value;
+        }
+      } catch (ao) {
+        {
+          return void af(ao);
+        }
+      }
+      ak.done ? ae(al) : Promise.resolve(al).then(ag, ah);
     }
-    ak.done ? ae(al) : Promise.resolve(al).then(ag, ah);
   }
   function G(ad) {
     return function () {
@@ -1276,10 +1443,14 @@ const notify = $.isNode() ? require("../sendNotify") : "";
       return new Promise(function (ai, aj) {
         var al = ad.apply(ag, ah);
         function am(ao) {
-          F(al, ai, aj, am, an, "next", ao);
+          {
+            F(al, ai, aj, am, an, "next", ao);
+          }
         }
         function an(ao) {
-          F(al, ai, aj, am, an, "throw", ao);
+          {
+            F(al, ai, aj, am, an, "throw", ao);
+          }
         }
         am(undefined);
       });
@@ -1330,8 +1501,10 @@ const notify = $.isNode() ? require("../sendNotify") : "";
           switch (aJ.prev = aJ.next) {
             case 0:
               if (console.log("作者：@xzxxn777\n频道：https://t.me/xzxxn777\n群组：https://t.me/xzxxn7777\n自用机场推荐：https://xn--diqv0fut7b.com\n"), H) {
-                aJ.next = 6;
-                break;
+                {
+                  aJ.next = 6;
+                  break;
+                }
               }
               console.log("先去boxjs填写账号密码");
               aJ.next = 5;
@@ -1345,8 +1518,10 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               ah.s();
             case 10:
               if ((ai = ah.n()).done) {
-                aJ.next = 148;
-                break;
+                {
+                  aJ.next = 148;
+                  break;
+                }
               }
               var aL = {
                 deviceType: 1
@@ -1361,8 +1536,10 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               return X("/ehomes-new/pkHome/version/getVersion", aL);
             case 19:
               if (am = aJ.sent, 200 != am.code) {
-                aJ.next = 40;
-                break;
+                {
+                  aJ.next = 40;
+                  break;
+                }
               }
               Q = am.data.safeKey;
               console.log(Q);
@@ -1430,8 +1607,10 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               })));
             case 45:
               if (am = aJ.sent, 0 == am.code) {
-                aJ.next = 49;
-                break;
+                {
+                  aJ.next = 49;
+                  break;
+                }
               }
               console.log(am.msg);
               return aJ.abrupt("continue", 146);
@@ -1454,8 +1633,10 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               });
             case 54:
               if (ap = aJ.sent, 200 == ap.code) {
-                aJ.next = 58;
-                break;
+                {
+                  aJ.next = 58;
+                  break;
+                }
               }
               console.log(ap.msg);
               return aJ.abrupt("continue", 146);
@@ -1488,8 +1669,10 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               });
             case 64:
               if (aq = aJ.sent, 200 == aq.code ? console.log("打开app成功") : console.log("打开app：".concat(aq.msg)), console.log("开始签到"), "未签到" != ap.data.signIn) {
-                aJ.next = 74;
-                break;
+                {
+                  aJ.next = 74;
+                  break;
+                }
               }
               aJ.next = 70;
               return a1("/ehomes-new/homeManager/api/bonus/signActivity2nd", {
@@ -1538,12 +1721,16 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               av.s();
             case 83:
               if ((aw = av.n()).done) {
-                aJ.next = 126;
-                break;
+                {
+                  aJ.next = 126;
+                  break;
+                }
               }
               if (ax = aw.value, console.log("任务：".concat(ax.ruleName)), "1" != ax.isComplete) {
-                aJ.next = 90;
-                break;
+                {
+                  aJ.next = 90;
+                  break;
+                }
               }
               console.log("任务已完成");
               aJ.next = 124;
