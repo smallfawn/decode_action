@@ -1,4 +1,4 @@
-//Sun Jun 01 2025 08:56:01 GMT+0000 (Coordinated Universal Time)
+//Sun Jun 01 2025 08:59:40 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
 const $ = new Env("福田e家");
@@ -609,114 +609,84 @@ const notify = $.isNode() ? require("../sendNotify") : "";
     z = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (am) {
       return typeof am;
     } : function (am) {
-      {
-        return am && "function" == typeof Symbol && am.constructor === Symbol && am !== Symbol.prototype ? "symbol" : typeof am;
-      }
+      return am && "function" == typeof Symbol && am.constructor === Symbol && am !== Symbol.prototype ? "symbol" : typeof am;
     };
     return z(aj);
   }
   function B(aj, ak) {
-    {
-      var am = "undefined" != typeof Symbol && aj[Symbol.iterator] || aj["@@iterator"];
-      if (!am) {
-        {
-          if (Array.isArray(aj) || (am = function (at, au) {
-            {
-              if (at) {
-                {
-                  if ("string" == typeof at) {
-                    return D(at, au);
-                  }
-                  var av = {}.toString.call(at).slice(8, -1);
-                  "Object" === av && at.constructor && (av = at.constructor.name);
-                  return "Map" === av || "Set" === av ? Array.from(at) : "Arguments" === av || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(av) ? D(at, au) : undefined;
-                }
-              }
-            }
-          }(aj)) || ak && aj && "number" == typeof aj.length) {
-            {
-              am && (aj = am);
-              var an = 0;
-              var ao = function () {};
-              return {
-                s: ao,
-                n: function () {
-                  {
-                    var at = {
-                      done: true
-                    };
-                    return an >= aj.length ? at : {
-                      done: false,
-                      value: aj[an++]
-                    };
-                  }
-                },
-                e: function (at) {
-                  {
-                    throw at;
-                  }
-                },
-                f: ao
-              };
-            }
+    var am = "undefined" != typeof Symbol && aj[Symbol.iterator] || aj["@@iterator"];
+    if (!am) {
+      if (Array.isArray(aj) || (am = function (at, au) {
+        if (at) {
+          if ("string" == typeof at) {
+            return D(at, au);
           }
-          throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+          var av = {}.toString.call(at).slice(8, -1);
+          "Object" === av && at.constructor && (av = at.constructor.name);
+          return "Map" === av || "Set" === av ? Array.from(at) : "Arguments" === av || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(av) ? D(at, au) : undefined;
+        }
+      }(aj)) || ak && aj && "number" == typeof aj.length) {
+        am && (aj = am);
+        var an = 0;
+        var ao = function () {};
+        return {
+          s: ao,
+          n: function () {
+            var at = {
+              done: true
+            };
+            return an >= aj.length ? at : {
+              done: false,
+              value: aj[an++]
+            };
+          },
+          e: function (at) {
+            throw at;
+          },
+          f: ao
+        };
+      }
+      throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+    }
+    var ap;
+    var aq = true;
+    var ar = false;
+    return {
+      s: function () {
+        am = am.call(aj);
+      },
+      n: function () {
+        var au = am.next();
+        aq = au.done;
+        return au;
+      },
+      e: function (au) {
+        ar = true;
+        ap = au;
+      },
+      f: function () {
+        try {
+          aq || null == am.return || am.return();
+        } finally {
+          if (ar) {
+            throw ap;
+          }
         }
       }
-      var ap;
-      var aq = true;
-      var ar = false;
-      return {
-        s: function () {
-          {
-            am = am.call(aj);
-          }
-        },
-        n: function () {
-          {
-            var au = am.next();
-            aq = au.done;
-            return au;
-          }
-        },
-        e: function (au) {
-          {
-            ar = true;
-            ap = au;
-          }
-        },
-        f: function () {
-          {
-            try {
-              aq || null == am.return || am.return();
-            } finally {
-              {
-                if (ar) {
-                  throw ap;
-                }
-              }
-            }
-          }
-        }
-      };
-    }
+    };
   }
   function D(aj, ak) {
-    {
-      (null == ak || ak > aj.length) && (ak = aj.length);
-      for (var al = 0, am = Array(ak); al < ak; al++) {
-        am[al] = aj[al];
-      }
-      return am;
+    (null == ak || ak > aj.length) && (ak = aj.length);
+    for (var al = 0, am = Array(ak); al < ak; al++) {
+      am[al] = aj[al];
     }
+    return am;
   }
   function F() {
     "use strict";
 
     F = function () {
-      {
-        return al;
-      }
+      return al;
     };
     var ak;
     var al = {
@@ -732,57 +702,43 @@ const notify = $.isNode() ? require("../sendNotify") : "";
     var ar = ap.asyncIterator || "@@asyncIterator";
     var as = ap.toStringTag || "@@toStringTag";
     function at(aQ, aR, aS) {
-      {
-        var aT = {
-          value: aS,
-          enumerable: true,
-          configurable: true,
-          writable: true
-        };
-        Object.defineProperty(aQ, aR, aT);
-        return aQ[aR];
-      }
+      var aT = {
+        value: aS,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      };
+      Object.defineProperty(aQ, aR, aT);
+      return aQ[aR];
     }
     try {
-      {
-        at({}, "");
-      }
+      at({}, "");
     } catch (aR) {
       at = function (aS, aT, aU) {
-        {
-          return aS[aT] = aU;
-        }
+        return aS[aT] = aU;
       };
     }
     function au(aT, aU, aV, aW) {
-      {
-        var aX = aU && aU.prototype instanceof aB ? aU : aB;
-        var aY = Object.create(aX.prototype);
-        var aZ = new aO(aW || []);
-        ao(aY, "_invoke", {
-          value: aK(aT, aV, aZ)
-        });
-        return aY;
-      }
+      var aX = aU && aU.prototype instanceof aB ? aU : aB;
+      var aY = Object.create(aX.prototype);
+      var aZ = new aO(aW || []);
+      ao(aY, "_invoke", {
+        value: aK(aT, aV, aZ)
+      });
+      return aY;
     }
     function av(aT, aU, aV) {
-      {
-        try {
-          {
-            return {
-              type: "normal",
-              arg: aT.call(aU, aV)
-            };
-          }
-        } catch (aZ) {
-          {
-            var aX = {
-              type: "throw",
-              arg: aZ
-            };
-            return aX;
-          }
-        }
+      try {
+        return {
+          type: "normal",
+          arg: aT.call(aU, aV)
+        };
+      } catch (aZ) {
+        var aX = {
+          type: "throw",
+          arg: aZ
+        };
+        return aX;
       }
     }
     var aw = "suspendedStart";
@@ -795,9 +751,7 @@ const notify = $.isNode() ? require("../sendNotify") : "";
     function aD() {}
     var aE = {};
     at(aE, aq, function () {
-      {
-        return this;
-      }
+      return this;
     });
     var aF = Object.getPrototypeOf;
     var aG = aF && aF(aF(aP([])));
@@ -805,221 +759,165 @@ const notify = $.isNode() ? require("../sendNotify") : "";
     aD.prototype = aB.prototype = Object.create(aE);
     var aH = aD.prototype;
     function aI(aT) {
-      {
-        ["next", "throw", "return"].forEach(function (aW) {
-          {
-            at(aT, aW, function (aY) {
-              {
-                return this._invoke(aW, aY);
-              }
-            });
-          }
+      ["next", "throw", "return"].forEach(function (aW) {
+        at(aT, aW, function (aY) {
+          return this._invoke(aW, aY);
         });
-      }
+      });
     }
     function aJ(aT, aU) {
-      {
-        function aY(aZ, b0, b1, b2) {
-          {
-            var b4 = av(aT[aZ], aT, b0);
-            if ("throw" !== b4.type) {
-              {
-                var b5 = b4.arg;
-                var b6 = b5.value;
-                return b6 && "object" == z(b6) && an.call(b6, "__await") ? aU.resolve(b6.__await).then(function (b8) {
-                  {
-                    aY("next", b8, b1, b2);
-                  }
-                }, function (b8) {
-                  {
-                    aY("throw", b8, b1, b2);
-                  }
-                }) : aU.resolve(b6).then(function (b8) {
-                  {
-                    b5.value = b8;
-                    b1(b5);
-                  }
-                }, function (b8) {
-                  {
-                    return aY("throw", b8, b1, b2);
-                  }
-                });
-              }
-            }
-            b2(b4.arg);
-          }
+      function aY(aZ, b0, b1, b2) {
+        var b4 = av(aT[aZ], aT, b0);
+        if ("throw" !== b4.type) {
+          var b5 = b4.arg;
+          var b6 = b5.value;
+          return b6 && "object" == z(b6) && an.call(b6, "__await") ? aU.resolve(b6.__await).then(function (b8) {
+            aY("next", b8, b1, b2);
+          }, function (b8) {
+            aY("throw", b8, b1, b2);
+          }) : aU.resolve(b6).then(function (b8) {
+            b5.value = b8;
+            b1(b5);
+          }, function (b8) {
+            return aY("throw", b8, b1, b2);
+          });
         }
-        var aW;
-        ao(this, "_invoke", {
-          value: function (aZ, b0) {
-            {
-              function b1() {
-                return new aU(function (b3, b4) {
-                  {
-                    aY(aZ, b0, b3, b4);
-                  }
-                });
-              }
-              return aW = aW ? aW.then(b1, b1) : b1();
-            }
-          }
-        });
+        b2(b4.arg);
       }
+      var aW;
+      ao(this, "_invoke", {
+        value: function (aZ, b0) {
+          function b1() {
+            return new aU(function (b3, b4) {
+              aY(aZ, b0, b3, b4);
+            });
+          }
+          return aW = aW ? aW.then(b1, b1) : b1();
+        }
+      });
     }
     function aK(aT, aU, aV) {
-      {
-        var aY = aw;
-        return function (b0, b1) {
-          {
-            if (aY === ay) {
-              throw Error("Generator is already running");
-            }
-            if (aY === az) {
-              {
-                if ("throw" === b0) {
-                  throw b1;
-                }
-                var b3 = {
-                  value: ak,
-                  done: true
-                };
-                return b3;
+      var aY = aw;
+      return function (b0, b1) {
+        if (aY === ay) {
+          throw Error("Generator is already running");
+        }
+        if (aY === az) {
+          if ("throw" === b0) {
+            throw b1;
+          }
+          var b3 = {
+            value: ak,
+            done: true
+          };
+          return b3;
+        }
+        for (aV.method = b0, aV.arg = b1;;) {
+          var b4 = aV.delegate;
+          if (b4) {
+            var b5 = aL(b4, aV);
+            if (b5) {
+              if (b5 === aA) {
+                continue;
               }
-            }
-            for (aV.method = b0, aV.arg = b1;;) {
-              {
-                var b4 = aV.delegate;
-                if (b4) {
-                  {
-                    var b5 = aL(b4, aV);
-                    if (b5) {
-                      {
-                        if (b5 === aA) {
-                          continue;
-                        }
-                        return b5;
-                      }
-                    }
-                  }
-                }
-                if ("next" === aV.method) {
-                  aV.sent = aV._sent = aV.arg;
-                } else {
-                  if ("throw" === aV.method) {
-                    {
-                      if (aY === aw) {
-                        throw aY = az, aV.arg;
-                      }
-                      aV.dispatchException(aV.arg);
-                    }
-                  } else {
-                    "return" === aV.method && aV.abrupt("return", aV.arg);
-                  }
-                }
-                aY = ay;
-                var b6 = av(aT, aU, aV);
-                if ("normal" === b6.type) {
-                  {
-                    if (aY = aV.done ? az : ax, b6.arg === aA) {
-                      continue;
-                    }
-                    var b7 = {
-                      value: b6.arg,
-                      done: aV.done
-                    };
-                    return b7;
-                  }
-                }
-                "throw" === b6.type && (aY = az, aV.method = "throw", aV.arg = b6.arg);
-              }
+              return b5;
             }
           }
-        };
-      }
+          if ("next" === aV.method) {
+            aV.sent = aV._sent = aV.arg;
+          } else {
+            if ("throw" === aV.method) {
+              if (aY === aw) {
+                throw aY = az, aV.arg;
+              }
+              aV.dispatchException(aV.arg);
+            } else {
+              "return" === aV.method && aV.abrupt("return", aV.arg);
+            }
+          }
+          aY = ay;
+          var b6 = av(aT, aU, aV);
+          if ("normal" === b6.type) {
+            if (aY = aV.done ? az : ax, b6.arg === aA) {
+              continue;
+            }
+            var b7 = {
+              value: b6.arg,
+              done: aV.done
+            };
+            return b7;
+          }
+          "throw" === b6.type && (aY = az, aV.method = "throw", aV.arg = b6.arg);
+        }
+      };
     }
     function aL(aT, aU) {
-      {
-        var aZ = aU.method;
-        var b0 = aT.iterator[aZ];
-        if (b0 === ak) {
-          aU.delegate = null;
-          "throw" === aZ && aT.iterator.return && (aU.method = "return", aU.arg = ak, aL(aT, aU), "throw" === aU.method) || "return" !== aZ && (aU.method = "throw", aU.arg = new TypeError("The iterator does not provide a '" + aZ + "' method"));
-          return aA;
-        }
-        var aX = av(b0, aT.iterator, aU.arg);
-        if ("throw" === aX.type) {
-          aU.method = "throw";
-          aU.arg = aX.arg;
-          aU.delegate = null;
-          return aA;
-        }
-        var aY = aX.arg;
-        return aY ? aY.done ? (aU[aT.resultName] = aY.value, aU.next = aT.nextLoc, "return" !== aU.method && (aU.method = "next", aU.arg = ak), aU.delegate = null, aA) : aY : (aU.method = "throw", aU.arg = new TypeError("iterator result is not an object"), aU.delegate = null, aA);
+      var aZ = aU.method;
+      var b0 = aT.iterator[aZ];
+      if (b0 === ak) {
+        aU.delegate = null;
+        "throw" === aZ && aT.iterator.return && (aU.method = "return", aU.arg = ak, aL(aT, aU), "throw" === aU.method) || "return" !== aZ && (aU.method = "throw", aU.arg = new TypeError("The iterator does not provide a '" + aZ + "' method"));
+        return aA;
       }
+      var aX = av(b0, aT.iterator, aU.arg);
+      if ("throw" === aX.type) {
+        aU.method = "throw";
+        aU.arg = aX.arg;
+        aU.delegate = null;
+        return aA;
+      }
+      var aY = aX.arg;
+      return aY ? aY.done ? (aU[aT.resultName] = aY.value, aU.next = aT.nextLoc, "return" !== aU.method && (aU.method = "next", aU.arg = ak), aU.delegate = null, aA) : aY : (aU.method = "throw", aU.arg = new TypeError("iterator result is not an object"), aU.delegate = null, aA);
     }
     function aM(aT) {
-      {
-        var aV = {
-          tryLoc: aT[0]
-        };
-        1 in aT && (aV.catchLoc = aT[1]);
-        2 in aT && (aV.finallyLoc = aT[2], aV.afterLoc = aT[3]);
-        this.tryEntries.push(aV);
-      }
+      var aV = {
+        tryLoc: aT[0]
+      };
+      1 in aT && (aV.catchLoc = aT[1]);
+      2 in aT && (aV.finallyLoc = aT[2], aV.afterLoc = aT[3]);
+      this.tryEntries.push(aV);
     }
     function aN(aT) {
-      {
-        var aU = aT.completion || {};
-        aU.type = "normal";
-        delete aU.arg;
-        aT.completion = aU;
-      }
+      var aU = aT.completion || {};
+      aU.type = "normal";
+      delete aU.arg;
+      aT.completion = aU;
     }
     function aO(aT) {
-      {
-        var aV = {
-          tryLoc: "root"
-        };
-        this.tryEntries = [aV];
-        aT.forEach(aM, this);
-        this.reset(true);
-      }
+      var aV = {
+        tryLoc: "root"
+      };
+      this.tryEntries = [aV];
+      aT.forEach(aM, this);
+      this.reset(true);
     }
     function aP(aT) {
-      {
-        if (aT || "" === aT) {
-          {
-            var aV = aT[aq];
-            if (aV) {
-              return aV.call(aT);
-            }
-            if ("function" == typeof aT.next) {
-              return aT;
-            }
-            if (!isNaN(aT.length)) {
-              {
-                var aW = -1;
-                var aX = function aZ() {
-                  {
-                    for (; ++aW < aT.length;) {
-                      if (an.call(aT, aW)) {
-                        aZ.value = aT[aW];
-                        aZ.done = false;
-                        return aZ;
-                      }
-                    }
-                    aZ.value = ak;
-                    aZ.done = true;
-                    return aZ;
-                  }
-                };
-                return aX.next = aX;
+      if (aT || "" === aT) {
+        var aV = aT[aq];
+        if (aV) {
+          return aV.call(aT);
+        }
+        if ("function" == typeof aT.next) {
+          return aT;
+        }
+        if (!isNaN(aT.length)) {
+          var aW = -1;
+          var aX = function aZ() {
+            for (; ++aW < aT.length;) {
+              if (an.call(aT, aW)) {
+                aZ.value = aT[aW];
+                aZ.done = false;
+                return aZ;
               }
             }
-          }
+            aZ.value = ak;
+            aZ.done = true;
+            return aZ;
+          };
+          return aX.next = aX;
         }
-        throw new TypeError(z(aT) + " is not iterable");
       }
+      throw new TypeError(z(aT) + " is not iterable");
     }
     aC.prototype = aD;
     ao(aH, "constructor", {
@@ -1032,43 +930,31 @@ const notify = $.isNode() ? require("../sendNotify") : "";
     });
     aC.displayName = at(aD, as, "GeneratorFunction");
     al.isGeneratorFunction = function (aT) {
-      {
-        var aU = "function" == typeof aT && aT.constructor;
-        return !!aU && (aU === aC || "GeneratorFunction" === (aU.displayName || aU.name));
-      }
+      var aU = "function" == typeof aT && aT.constructor;
+      return !!aU && (aU === aC || "GeneratorFunction" === (aU.displayName || aU.name));
     };
     al.mark = function (aT) {
-      {
-        Object.setPrototypeOf ? Object.setPrototypeOf(aT, aD) : (aT.__proto__ = aD, at(aT, as, "GeneratorFunction"));
-        aT.prototype = Object.create(aH);
-        return aT;
-      }
+      Object.setPrototypeOf ? Object.setPrototypeOf(aT, aD) : (aT.__proto__ = aD, at(aT, as, "GeneratorFunction"));
+      aT.prototype = Object.create(aH);
+      return aT;
     };
     al.awrap = function (aT) {
-      {
-        var aU = {
-          __await: aT
-        };
-        return aU;
-      }
+      var aU = {
+        __await: aT
+      };
+      return aU;
     };
     aI(aJ.prototype);
     at(aJ.prototype, ar, function () {
-      {
-        return this;
-      }
+      return this;
     });
     al.AsyncIterator = aJ;
     al.async = function (aT, aU, aV, aW, aX) {
-      {
-        undefined === aX && (aX = Promise);
-        var b0 = new aJ(au(aT, aU, aV, aW), aX);
-        return al.isGeneratorFunction(aU) ? b0 : b0.next().then(function (b2) {
-          {
-            return b2.done ? b2.value : b0.next();
-          }
-        });
-      }
+      undefined === aX && (aX = Promise);
+      var b0 = new aJ(au(aT, aU, aV, aW), aX);
+      return al.isGeneratorFunction(aU) ? b0 : b0.next().then(function (b2) {
+        return b2.done ? b2.value : b0.next();
+      });
     };
     aI(aH);
     at(aH, as, "Generator");
@@ -1076,107 +962,81 @@ const notify = $.isNode() ? require("../sendNotify") : "";
       return this;
     });
     at(aH, "toString", function () {
-      {
-        return "[object Generator]";
-      }
+      return "[object Generator]";
     });
     al.keys = function (aT) {
-      {
-        var aV = Object(aT);
-        var aW = [];
-        for (var aX in aV) aW.push(aX);
-        aW.reverse();
-        return function aY() {
-          {
-            for (; aW.length;) {
-              {
-                var aZ = aW.pop();
-                if (aZ in aV) {
-                  aY.value = aZ;
-                  aY.done = false;
-                  return aY;
-                }
-              }
-            }
-            aY.done = true;
+      var aV = Object(aT);
+      var aW = [];
+      for (var aX in aV) aW.push(aX);
+      aW.reverse();
+      return function aY() {
+        for (; aW.length;) {
+          var aZ = aW.pop();
+          if (aZ in aV) {
+            aY.value = aZ;
+            aY.done = false;
             return aY;
           }
-        };
-      }
+        }
+        aY.done = true;
+        return aY;
+      };
     };
     al.values = aP;
     aO.prototype = {
       constructor: aO,
       reset: function (aT) {
-        {
-          if (this.prev = 0, this.next = 0, this.sent = this._sent = ak, this.done = false, this.delegate = null, this.method = "next", this.arg = ak, this.tryEntries.forEach(aN), !aT) {
-            for (var aW in this) "t" === aW.charAt(0) && an.call(this, aW) && !isNaN(+aW.slice(1)) && (this[aW] = ak);
-          }
+        if (this.prev = 0, this.next = 0, this.sent = this._sent = ak, this.done = false, this.delegate = null, this.method = "next", this.arg = ak, this.tryEntries.forEach(aN), !aT) {
+          for (var aW in this) "t" === aW.charAt(0) && an.call(this, aW) && !isNaN(+aW.slice(1)) && (this[aW] = ak);
         }
       },
       stop: function () {
-        {
-          this.done = true;
-          var aT = this.tryEntries[0].completion;
-          if ("throw" === aT.type) {
-            throw aT.arg;
-          }
-          return this.rval;
+        this.done = true;
+        var aT = this.tryEntries[0].completion;
+        if ("throw" === aT.type) {
+          throw aT.arg;
         }
+        return this.rval;
       },
       dispatchException: function (aT) {
-        {
-          if (this.done) {
-            throw aT;
+        if (this.done) {
+          throw aT;
+        }
+        var aV = this;
+        function b2(b3, b4) {
+          aY.type = "throw";
+          aY.arg = aT;
+          aV.next = b3;
+          b4 && (aV.method = "next", aV.arg = ak);
+          return !!b4;
+        }
+        for (var aW = this.tryEntries.length - 1; aW >= 0; --aW) {
+          var aX = this.tryEntries[aW];
+          var aY = aX.completion;
+          if ("root" === aX.tryLoc) {
+            return b2("end");
           }
-          var aV = this;
-          function b2(b3, b4) {
-            {
-              aY.type = "throw";
-              aY.arg = aT;
-              aV.next = b3;
-              b4 && (aV.method = "next", aV.arg = ak);
-              return !!b4;
-            }
-          }
-          for (var aW = this.tryEntries.length - 1; aW >= 0; --aW) {
-            {
-              var aX = this.tryEntries[aW];
-              var aY = aX.completion;
-              if ("root" === aX.tryLoc) {
-                return b2("end");
+          if (aX.tryLoc <= this.prev) {
+            var aZ = an.call(aX, "catchLoc");
+            var b0 = an.call(aX, "finallyLoc");
+            if (aZ && b0) {
+              if (this.prev < aX.catchLoc) {
+                return b2(aX.catchLoc, true);
               }
-              if (aX.tryLoc <= this.prev) {
-                {
-                  var aZ = an.call(aX, "catchLoc");
-                  var b0 = an.call(aX, "finallyLoc");
-                  if (aZ && b0) {
-                    {
-                      if (this.prev < aX.catchLoc) {
-                        return b2(aX.catchLoc, true);
-                      }
-                      if (this.prev < aX.finallyLoc) {
-                        return b2(aX.finallyLoc);
-                      }
-                    }
-                  } else {
-                    if (aZ) {
-                      {
-                        if (this.prev < aX.catchLoc) {
-                          return b2(aX.catchLoc, true);
-                        }
-                      }
-                    } else {
-                      {
-                        if (!b0) {
-                          throw Error("try statement without catch or finally");
-                        }
-                        if (this.prev < aX.finallyLoc) {
-                          return b2(aX.finallyLoc);
-                        }
-                      }
-                    }
-                  }
+              if (this.prev < aX.finallyLoc) {
+                return b2(aX.finallyLoc);
+              }
+            } else {
+              if (aZ) {
+                if (this.prev < aX.catchLoc) {
+                  return b2(aX.catchLoc, true);
+                }
+              } else {
+                if (!b0) {
+                  throw Error("try statement without catch or finally");
+                }
+                if (this.prev < aX.finallyLoc) {
+                  return b2(aX.finallyLoc);
                 }
               }
             }
@@ -1184,96 +1044,70 @@ const notify = $.isNode() ? require("../sendNotify") : "";
         }
       },
       abrupt: function (aT, aU) {
-        {
-          for (var aW = this.tryEntries.length - 1; aW >= 0; --aW) {
-            {
-              var aX = this.tryEntries[aW];
-              if (aX.tryLoc <= this.prev && an.call(aX, "finallyLoc") && this.prev < aX.finallyLoc) {
-                {
-                  var aY = aX;
-                  break;
-                }
-              }
-            }
+        for (var aW = this.tryEntries.length - 1; aW >= 0; --aW) {
+          var aX = this.tryEntries[aW];
+          if (aX.tryLoc <= this.prev && an.call(aX, "finallyLoc") && this.prev < aX.finallyLoc) {
+            var aY = aX;
+            break;
           }
-          aY && ("break" === aT || "continue" === aT) && aY.tryLoc <= aU && aU <= aY.finallyLoc && (aY = null);
-          var aZ = aY ? aY.completion : {};
-          aZ.type = aT;
-          aZ.arg = aU;
-          return aY ? (this.method = "next", this.next = aY.finallyLoc, aA) : this.complete(aZ);
         }
+        aY && ("break" === aT || "continue" === aT) && aY.tryLoc <= aU && aU <= aY.finallyLoc && (aY = null);
+        var aZ = aY ? aY.completion : {};
+        aZ.type = aT;
+        aZ.arg = aU;
+        return aY ? (this.method = "next", this.next = aY.finallyLoc, aA) : this.complete(aZ);
       },
       complete: function (aT, aU) {
-        {
-          if ("throw" === aT.type) {
-            throw aT.arg;
-          }
-          "break" === aT.type || "continue" === aT.type ? this.next = aT.arg : "return" === aT.type ? (this.rval = this.arg = aT.arg, this.method = "return", this.next = "end") : "normal" === aT.type && aU && (this.next = aU);
-          return aA;
+        if ("throw" === aT.type) {
+          throw aT.arg;
         }
+        "break" === aT.type || "continue" === aT.type ? this.next = aT.arg : "return" === aT.type ? (this.rval = this.arg = aT.arg, this.method = "return", this.next = "end") : "normal" === aT.type && aU && (this.next = aU);
+        return aA;
       },
       finish: function (aT) {
-        {
-          for (var aU = this.tryEntries.length - 1; aU >= 0; --aU) {
-            {
-              var aV = this.tryEntries[aU];
-              if (aV.finallyLoc === aT) {
-                this.complete(aV.completion, aV.afterLoc);
-                aN(aV);
-                return aA;
-              }
-            }
+        for (var aU = this.tryEntries.length - 1; aU >= 0; --aU) {
+          var aV = this.tryEntries[aU];
+          if (aV.finallyLoc === aT) {
+            this.complete(aV.completion, aV.afterLoc);
+            aN(aV);
+            return aA;
           }
         }
       },
       catch: function (aT) {
         for (var aW = this.tryEntries.length - 1; aW >= 0; --aW) {
-          {
-            var aX = this.tryEntries[aW];
-            if (aX.tryLoc === aT) {
-              {
-                var aY = aX.completion;
-                if ("throw" === aY.type) {
-                  {
-                    var aZ = aY.arg;
-                    aN(aX);
-                  }
-                }
-                return aZ;
-              }
+          var aX = this.tryEntries[aW];
+          if (aX.tryLoc === aT) {
+            var aY = aX.completion;
+            if ("throw" === aY.type) {
+              var aZ = aY.arg;
+              aN(aX);
             }
+            return aZ;
           }
         }
         throw Error("illegal catch attempt");
       },
       delegateYield: function (aT, aU, aV) {
-        {
-          this.delegate = {
-            iterator: aP(aT),
-            resultName: aU,
-            nextLoc: aV
-          };
-          "next" === this.method && (this.arg = ak);
-          return aA;
-        }
+        this.delegate = {
+          iterator: aP(aT),
+          resultName: aU,
+          nextLoc: aV
+        };
+        "next" === this.method && (this.arg = ak);
+        return aA;
       }
     };
     return al;
   }
   function G(aj, ak, al, am, an, ao, ap) {
-    {
-      try {
-        {
-          var ar = aj[ao](ap);
-          var as = ar.value;
-        }
-      } catch (av) {
-        {
-          return void al(av);
-        }
-      }
-      ar.done ? ak(as) : Promise.resolve(as).then(am, an);
+    try {
+      var ar = aj[ao](ap);
+      var as = ar.value;
+    } catch (av) {
+      return void al(av);
     }
+    ar.done ? ak(as) : Promise.resolve(as).then(am, an);
   }
   function H(aj) {
     return function () {
@@ -1282,14 +1116,10 @@ const notify = $.isNode() ? require("../sendNotify") : "";
       return new Promise(function (ao, ap) {
         var aq = aj.apply(am, an);
         function ar(at) {
-          {
-            G(aq, ao, ap, ar, as, "next", at);
-          }
+          G(aq, ao, ap, ar, as, "next", at);
         }
         function as(at) {
-          {
-            G(aq, ao, ap, ar, as, "throw", at);
-          }
+          G(aq, ao, ap, ar, as, "throw", at);
         }
         ar(undefined);
       });
@@ -1303,9 +1133,7 @@ const notify = $.isNode() ? require("../sendNotify") : "";
   var V = "";
   var W = "";
   function X() {
-    {
-      return Y.apply(this, arguments);
-    }
+    return Y.apply(this, arguments);
   }
   function Y() {
     var aj = {
@@ -1553,10 +1381,8 @@ const notify = $.isNode() ? require("../sendNotify") : "";
           switch (aQ.prev = aQ.next) {
             case 0:
               if (J) {
-                {
-                  aQ.next = 5;
-                  break;
-                }
+                aQ.next = 5;
+                break;
               }
               console.log("先去boxjs填写账号密码");
               aQ.next = 4;
@@ -1570,10 +1396,8 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               an.s();
             case 9:
               if ((ao = an.n()).done) {
-                {
-                  aQ.next = 150;
-                  break;
-                }
+                aQ.next = 150;
+                break;
               }
               var aS = {
                 deviceType: 1
@@ -1588,10 +1412,8 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               return a3("/ehomes-new/pkHome/version/getVersion", aS);
             case 18:
               if (as = aQ.sent, 200 != as.code) {
-                {
-                  aQ.next = 39;
-                  break;
-                }
+                aQ.next = 39;
+                break;
               }
               V = as.data.safeKey;
               console.log(V);
@@ -1616,10 +1438,8 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               });
             case 25:
               if (at = aQ.sent, console.log(null == at ? undefined : at.msg), 200 != (null == at ? undefined : at.code)) {
-                {
-                  aQ.next = 37;
-                  break;
-                }
+                aQ.next = 37;
+                break;
               }
               uid = at.data.uid;
               memberComplexCode = at.data.memberComplexCode;
@@ -1661,10 +1481,8 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               })));
             case 44:
               if (as = aQ.sent, 0 == as.code) {
-                {
-                  aQ.next = 48;
-                  break;
-                }
+                aQ.next = 48;
+                break;
               }
               console.log(as.msg);
               return aQ.abrupt("continue", 148);
@@ -1687,10 +1505,8 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               });
             case 53:
               if (av = aQ.sent, 200 == av.code) {
-                {
-                  aQ.next = 57;
-                  break;
-                }
+                aQ.next = 57;
+                break;
               }
               console.log(av.msg);
               return aQ.abrupt("continue", 148);
@@ -1723,10 +1539,8 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               });
             case 63:
               if (aw = aQ.sent, 200 == aw.code ? console.log("打开app成功") : console.log("打开app：".concat(aw.msg)), console.log("开始签到"), "未签到" != av.data.signIn) {
-                {
-                  aQ.next = 73;
-                  break;
-                }
+                aQ.next = 73;
+                break;
               }
               aQ.next = 69;
               return a7("/ehomes-new/homeManager/api/bonus/signActivity2nd", {
@@ -1775,26 +1589,20 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               aB.s();
             case 82:
               if ((aC = aB.n()).done) {
-                {
-                  aQ.next = 128;
-                  break;
-                }
+                aQ.next = 128;
+                break;
               }
               if (aD = aC.value, console.log("任务：".concat(aD.ruleName)), "1" != aD.isComplete) {
-                {
-                  aQ.next = 89;
-                  break;
-                }
+                aQ.next = 89;
+                break;
               }
               console.log("任务已完成");
               aQ.next = 126;
               break;
             case 89:
               if ("33" != aD.ruleId) {
-                {
-                  aQ.next = 97;
-                  break;
-                }
+                aQ.next = 97;
+                break;
               }
               aQ.next = 92;
               return a1("/FONTON_PROD/ehomes-new/ehomesService/api/safeH5/getSafeInfo");
@@ -1813,10 +1621,8 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               200 == aF.code ? console.log("分享成功，获得".concat(aF.data.integral, "积分")) : console.log(aF.msg);
             case 97:
               if ("130" != aD.ruleId) {
-                {
-                  aQ.next = 111;
-                  break;
-                }
+                aQ.next = 111;
+                break;
               }
               aQ.next = 100;
               return a7("/ehomes-new/ehomesCommunity/api/post/recommendPostList", {
