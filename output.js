@@ -1,4 +1,4 @@
-//Wed Jun 11 2025 01:46:58 GMT+0000 (Coordinated Universal Time)
+//Wed Jun 11 2025 03:31:37 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
 const $ = new Env("新江北");
