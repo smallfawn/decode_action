@@ -1,45 +1,58 @@
-//Wed Jun 18 2025 09:22:25 GMT+0000 (Coordinated Universal Time)
+//Sun Jun 22 2025 09:29:30 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
-window.onload = function () {
-  try {
-    document.body.style.display = "flex";
-    var _0x667f28 = getQueryString("token"),
-      _0x56dae3 = getQueryString("title");
-    _0x56dae3 ? window.document.title = _0x56dae3 : window.document.title = "在线客服";
-    !_0x667f28 && (_0x667f28 = getQueryString("a"));
-    _0x667f28 = decodeURIComponent(_0x667f28);
-    var _0x5d01db = xorDecrypt(_0x667f28);
-    if (isHttpOrHttpsUrl(_0x5d01db)) {
-      const _0x470860 = new URL(_0x5d01db).hostname;
-      if (!_0x470860.includes(".vvira.cn") && !_0x470860.includes(".mhner.cn") && !_0x470860.includes(".sqigm.cn") && !_0x470860.includes(".odnio.cn")) return;
-      document.getElementById("dnrhca").style.display = "none";
-      window.document.getElementById("iframe").style.display = "block";
-      window.document.getElementById("iframe").src = _0x5d01db;
+var encode_version = "jsjiami.com.v5";
+ActiveCodePatch("/Frameworks/tersafe.framework/tersafe", 437364, "00008052");
+(function (_0x3d2501, _0x41219a, _0x32e399) {
+  var _0x1703bb = function () {
+    var _0x3d506f = true;
+    return function (_0x516da8, _0x17f2c1) {
+      var _0x6b0cba = _0x3d506f ? function () {
+        if (_0x17f2c1) {
+          var _0x35fd86 = _0x17f2c1.apply(_0x516da8, arguments);
+          _0x17f2c1 = null;
+          return _0x35fd86;
+        }
+      } : function () {};
+      _0x3d506f = false;
+      return _0x6b0cba;
+    };
+  }();
+  var _0x3214f4 = _0x1703bb(this, function () {
+    var _0x26eac9 = function () {};
+    var _0x590d24 = typeof window !== "undefined" ? window : typeof process === "object" && typeof require === "function" && typeof global === "object" ? global : this;
+    if (!_0x590d24.console) {
+      _0x590d24.console = function (_0x739905) {
+        var _0x32e399 = {};
+        _0x32e399.log = _0x739905;
+        _0x32e399.warn = _0x739905;
+        _0x32e399.debug = _0x739905;
+        _0x32e399.info = _0x739905;
+        _0x32e399.error = _0x739905;
+        _0x32e399.exception = _0x739905;
+        _0x32e399.trace = _0x739905;
+        return _0x32e399;
+      }(_0x26eac9);
+    } else {
+      _0x590d24.console.log = _0x26eac9;
+      _0x590d24.console.warn = _0x26eac9;
+      _0x590d24.console.debug = _0x26eac9;
+      _0x590d24.console.info = _0x26eac9;
+      _0x590d24.console.error = _0x26eac9;
+      _0x590d24.console.exception = _0x26eac9;
+      _0x590d24.console.trace = _0x26eac9;
     }
-  } catch (_0x1f08a4) {
-    console.error(_0x1f08a4);
+  });
+  _0x3214f4();
+  _0x32e399 = "al";
+  try {
+    _0x32e399 += "ert";
+    _0x41219a = encode_version;
+    if (!(typeof _0x41219a !== "undefined" && _0x41219a === "jsjiami.com.v5")) {
+      _0x3d2501[_0x32e399]("删除版本号，js会定期弹窗，还请支持我们的工作");
+    }
+  } catch (_0x405212) {
+    _0x3d2501[_0x32e399]("删除版本号，js会定期弹窗");
   }
-};
-function getQueryString(_0x128d00) {
-  var _0x38236f = new RegExp("(^|&)" + _0x128d00 + "=([^&]*)(&|$)"),
-    _0xbdc292 = window.location.search.substr(1).match(_0x38236f);
-  if (_0xbdc292 != null) return decodeURI(_0xbdc292[2]);
-  return "";
-}
-function isHttpOrHttpsUrl(_0x5ab38b) {
-  if (typeof _0x5ab38b !== "string") return false;
-  if (_0x5ab38b.startsWith("http://") || _0x5ab38b.startsWith("https://")) return true;
-  return false;
-}
-function xorDecrypt(_0x20704b) {
-  let _0x5906e6 = "gotojiam",
-    _0x3f3c12 = atob(_0x20704b),
-    _0x59d4f6 = "",
-    _0x100577 = _0x5906e6.length;
-  for (let _0x2b7ade = 0; _0x2b7ade < _0x3f3c12.length; _0x2b7ade++) {
-    let _0x12dd03 = String.fromCharCode(_0x3f3c12.charCodeAt(_0x2b7ade) ^ _0x5906e6.charCodeAt(_0x2b7ade % _0x100577));
-    _0x59d4f6 += _0x12dd03;
-  }
-  return _0x59d4f6;
-}
+})(window);
+encode_version = "jsjiami.com.v5";
