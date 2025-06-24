@@ -1,4 +1,4 @@
-//Tue Jun 24 2025 00:09:53 GMT+0000 (Coordinated Universal Time)
+//Tue Jun 24 2025 00:11:18 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
 const $ = new Env("有道词典");
@@ -437,9 +437,12 @@ function Env(name, env) {
       } else {
         if (this.isQuanX()) {
           t.method = m.toUpperCase();
-          this.isNeedRewrite && (t.opts = t.opts || {}, Object.assign(t.opts, {
-            hints: !1
-          }));
+          if (this.isNeedRewrite) {
+            t.opts = t.opts || {};
+            Object.assign(t.opts, {
+              hints: !1
+            });
+          }
           $task.fetch(t).then(t => {
             const {
               statusCode: i,
@@ -562,8 +565,12 @@ function Env(name, env) {
       this.isMute || (this.isSurge() || this.isLoon() ? $notification.post(e, s, i, o(r)) : this.isQuanX() && $notify(e, s, i, o(r)));
       let h = ["", "============== 系统通知 =============="];
       h.push(e);
-      s && h.push(s);
-      i && h.push(i);
+      if (s) {
+        h.push(s);
+      }
+      if (i) {
+        h.push(i);
+      }
       console.log(h.join("\n"));
     }
     getMin(a, b) {
