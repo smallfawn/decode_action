@@ -1,58 +1,124 @@
-//Sun Jun 22 2025 09:29:30 GMT+0000 (Coordinated Universal Time)
+//Tue Jun 24 2025 11:02:24 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
-var encode_version = "jsjiami.com.v5";
-ActiveCodePatch("/Frameworks/tersafe.framework/tersafe", 437364, "00008052");
-(function (_0x3d2501, _0x41219a, _0x32e399) {
-  var _0x1703bb = function () {
-    var _0x3d506f = true;
-    return function (_0x516da8, _0x17f2c1) {
-      var _0x6b0cba = _0x3d506f ? function () {
-        if (_0x17f2c1) {
-          var _0x35fd86 = _0x17f2c1.apply(_0x516da8, arguments);
-          _0x17f2c1 = null;
-          return _0x35fd86;
-        }
-      } : function () {};
-      _0x3d506f = false;
-      return _0x6b0cba;
-    };
-  }();
-  var _0x3214f4 = _0x1703bb(this, function () {
-    var _0x26eac9 = function () {};
-    var _0x590d24 = typeof window !== "undefined" ? window : typeof process === "object" && typeof require === "function" && typeof global === "object" ? global : this;
-    if (!_0x590d24.console) {
-      _0x590d24.console = function (_0x739905) {
-        var _0x32e399 = {};
-        _0x32e399.log = _0x739905;
-        _0x32e399.warn = _0x739905;
-        _0x32e399.debug = _0x739905;
-        _0x32e399.info = _0x739905;
-        _0x32e399.error = _0x739905;
-        _0x32e399.exception = _0x739905;
-        _0x32e399.trace = _0x739905;
-        return _0x32e399;
-      }(_0x26eac9);
-    } else {
-      _0x590d24.console.log = _0x26eac9;
-      _0x590d24.console.warn = _0x26eac9;
-      _0x590d24.console.debug = _0x26eac9;
-      _0x590d24.console.info = _0x26eac9;
-      _0x590d24.console.error = _0x26eac9;
-      _0x590d24.console.exception = _0x26eac9;
-      _0x590d24.console.trace = _0x26eac9;
-    }
-  });
-  _0x3214f4();
-  _0x32e399 = "al";
+const _0x445924 = function () {
+  let _0x18bc08 = true;
+  return function (_0x293ad0, _0x591ac5) {
+    const _0x39bd0b = _0x18bc08 ? function () {
+      if (_0x591ac5) {
+        const _0xee55eb = _0x591ac5.apply(_0x293ad0, arguments);
+        _0x591ac5 = null;
+        return _0xee55eb;
+      }
+    } : function () {};
+    _0x18bc08 = false;
+    return _0x39bd0b;
+  };
+}();
+const _0x42a84b = _0x445924(this, function () {
+  const _0x196312 = function () {};
+  let _0x3c1d61;
   try {
-    _0x32e399 += "ert";
-    _0x41219a = encode_version;
-    if (!(typeof _0x41219a !== "undefined" && _0x41219a === "jsjiami.com.v5")) {
-      _0x3d2501[_0x32e399]("删除版本号，js会定期弹窗，还请支持我们的工作");
-    }
-  } catch (_0x405212) {
-    _0x3d2501[_0x32e399]("删除版本号，js会定期弹窗");
+    const _0x26681f = Function("return (function() {}.constructor(\"return this\")( ));");
+    _0x3c1d61 = _0x26681f();
+  } catch (_0x691a19) {
+    _0x3c1d61 = window;
   }
-})(window);
-encode_version = "jsjiami.com.v5";
+  if (!_0x3c1d61.console) {
+    _0x3c1d61.console = function (_0x2357f4) {
+      {
+        const _0x43db6f = {
+          log: _0x2357f4,
+          warn: _0x2357f4,
+          debug: _0x2357f4,
+          info: _0x2357f4,
+          error: _0x2357f4,
+          exception: _0x2357f4,
+          table: _0x2357f4,
+          trace: _0x2357f4
+        };
+        return _0x43db6f;
+      }
+    }(_0x196312);
+  } else {
+    {
+      _0x3c1d61.console.log = _0x196312;
+      _0x3c1d61.console.warn = _0x196312;
+      _0x3c1d61.console.debug = _0x196312;
+      _0x3c1d61.console.info = _0x196312;
+      _0x3c1d61.console.error = _0x196312;
+      _0x3c1d61.console.exception = _0x196312;
+      _0x3c1d61.console.table = _0x196312;
+      _0x3c1d61.console.trace = _0x196312;
+    }
+  }
+});
+_0x42a84b();
+window.onload = function () {
+  try {
+    {
+      document.body.style.display = "flex";
+      var _0xff7c82 = getQueryString("d");
+      var _0x17f36c = getQueryString("title");
+      if (_0x17f36c) {
+        {
+          window.document.title = _0x17f36c;
+        }
+      } else {
+        window.document.title = "在线客服";
+      }
+      _0xff7c82 = decodeURIComponent(_0xff7c82);
+      var _0x4e6c6b = xorDecrypt(_0xff7c82);
+      if (isHttpOrHttpsUrl(_0x4e6c6b)) {
+        const _0x470f05 = new URL(_0x4e6c6b).hostname;
+        if (!_0x470f05.includes(".vvira.cn") && !_0x470f05.includes(".mhner.cn") && !_0x470f05.includes(".sqigm.cn") && !_0x470f05.includes(".odnio.cn")) {
+          return;
+        }
+        const _0x1b9d6a = document.documentElement.clientHeight;
+        document.getElementById("dnrhca").style.display = "none";
+        const _0x4700b2 = document.createElement("iframe");
+        _0x4700b2.src = _0x4e6c6b;
+        _0x4700b2.frameBorder = "0";
+        _0x4700b2.scrolling = "auto";
+        _0x4700b2.style.width = "100%";
+        _0x4700b2.style.height = _0x1b9d6a;
+        _0x4700b2.style.border = "none";
+        _0x4700b2.style.zIndex = "9999";
+        _0x4700b2.sandbox = "allow-same-origin allow-scripts allow-top-navigation allow-forms allow-popups";
+        document.getElementById("overlay").appendChild(_0x4700b2);
+      }
+    }
+  } catch (_0x45bab6) {}
+};
+function getQueryString(_0x3ae9a1) {
+  var _0x585a7d = new RegExp("(^|&)" + _0x3ae9a1 + "=([^&]*)(&|$)");
+  var _0x2477f0 = window.location.search.substr(1).match(_0x585a7d);
+  if (_0x2477f0 != null) {
+    return decodeURI(_0x2477f0[2]);
+  }
+  return "";
+}
+function isHttpOrHttpsUrl(_0x47e39e) {
+  if (typeof _0x47e39e !== "string") {
+    {
+      return false;
+    }
+  }
+  if (_0x47e39e.startsWith("http://") || _0x47e39e.startsWith("https://")) {
+    {
+      return true;
+    }
+  }
+  return false;
+}
+function xorDecrypt(_0x1463b7) {
+  let _0x2f40d6 = "gotojiam";
+  let _0x245875 = atob(_0x1463b7);
+  let _0x33e320 = "";
+  let _0x58ba08 = _0x2f40d6.length;
+  for (let _0x27aa8a = 0; _0x27aa8a < _0x245875.length; _0x27aa8a++) {
+    let _0x5d0e18 = String.fromCharCode(_0x245875.charCodeAt(_0x27aa8a) ^ _0x2f40d6.charCodeAt(_0x27aa8a % _0x58ba08));
+    _0x33e320 += _0x5d0e18;
+  }
+  return _0x33e320;
+}
