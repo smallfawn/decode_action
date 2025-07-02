@@ -1,121 +1,85 @@
-//Wed Jul 02 2025 06:13:49 GMT+0000 (Coordinated Universal Time)
+//Wed Jul 02 2025 06:15:39 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
-const 服务器 = "103.148.58.86:5003";
-let IP = 服务器;
-var XxHttp = class {
-  static ["Get"](_0x3b4fb1) {
-    return new Promise(_0x1019c0 => {
-      chrome.runtime.sendMessage({
-        "act": "发送网络请求3_Get",
-        "url": _0x3b4fb1
-      }, _0x5588db => {
-        _0x1019c0(_0x5588db);
-      });
-    });
-  }
-  static ["Post"](_0x5975ad, _0x3cca4c, _0x5c7ae5 = {}) {
-    return new Promise(_0x332848 => {
-      chrome.runtime.sendMessage({
-        "act": "发送网络请求3_Post",
-        "url": _0x5975ad,
-        "data": _0x3cca4c,
-        "headers": _0x5c7ae5
-      }, _0xb8dca => {
-        _0x332848(_0xb8dca);
-      });
-    });
-  }
-};
-async function HttpRequest(_0x31f9ef, _0x58ca50 = "GET", _0xe5871e = {}, _0x473fa3 = {}, _0x27a14a = 5000) {
-  return new Promise((_0x10ade6, _0x2afcee) => {
-    {
-      let _0x5a29b4 = {
-        "method": _0x58ca50,
-        "headers": _0x473fa3
-      };
-      _0x58ca50 === "POST" && (_0x5a29b4.body = JSON.stringify(_0xe5871e));
-      const _0x2d84fe = setTimeout(() => {
-        _0x2afcee(new Error("请求超时"));
-      }, _0x27a14a);
-      chrome.runtime.sendMessage({
-        "act": "发送网络请求2",
-        "url": _0x31f9ef,
-        "data": _0x5a29b4
-      }, _0x23dbb9 => {
-        clearTimeout(_0x2d84fe);
-        _0x10ade6(_0x23dbb9);
-      });
-    }
-  });
-}
-async function 加载核心脚本() {
-  let _0x12c0a4 = localStorage.getItem("核心脚本");
-  if (_0x12c0a4) {
-    console.log("本地存在核心脚本，尝试从网络加载");
-  } else {
-    {
-      console.log("本地不存在核心脚本，从网络加载");
-      await 无限制从网络加载核心脚本(10000);
-      return;
-    }
-  }
-  try {
-    {
-      let _0x26536c = "http://" + IP + "/Getinfo",
-        _0x5de2fe = await HttpRequest(_0x26536c, "GET", {}, {}, 5000);
-      if (_0x5de2fe.isError) {
-        console.log("网络失败，加载本地脚本");
-        eval(_0x12c0a4);
-        return;
-      }
-      if (_0x5de2fe.data) {
-        {
-          let _0x5176aa = localStorage.getItem("版本号");
-          console.log("当前的版本号", _0x5176aa);
-          _0x5de2fe.data.version == _0x5176aa ? (console.log("版本号一致，直接加载"), eval(_0x12c0a4)) : (console.log("版本号不一致，重新申请"), await 从网络加载核心脚本(3, 10000));
-        }
-      }
-    }
-  } catch (_0x21fe5a) {
-    console.log("网络请求超时或失败，加载本地脚本");
-    eval(_0x12c0a4);
-  }
-}
-async function 从网络加载核心脚本(_0x2af206 = 3, _0x210050 = 10000) {
-  let _0x3b8058 = 0;
-  while (_0x3b8058 < _0x2af206) {
-    try {
-      {
-        let _0x56099b = "http://" + IP + "/File/0.js?a=" + Math.random(),
-          _0x1e747d = await HttpRequest(_0x56099b, "GET", {}, {}, _0x210050),
-          _0x22052e = _0x1e747d.txt;
-        localStorage.setItem("核心脚本", _0x22052e);
-        console.log("核心脚本加载成功");
-        eval(_0x22052e);
-        return;
-      }
-    } catch (_0x2afd13) {
-      _0x3b8058++;
-      console.error("从网络加载核心脚本失败，重试第 " + _0x3b8058 + " 次", _0x2afd13);
-      _0x3b8058 < _0x2af206 ? await new Promise(_0x983b7b => setTimeout(_0x983b7b, _0x210050)) : console.error("所有重试均失败");
-    }
-  }
-}
-async function 无限制从网络加载核心脚本(_0x173c5f = 10000) {
+const _0x31ad4f = _0x1178;
+(function (_0x1e4074, _0x4fd127) {
+  (function () {})();
+  const _0x56a88e = _0x1178,
+    _0x52fcc2 = _0x1e4074();
   while (true) {
     try {
-      let _0x39d9dd = "http://" + IP + "/File/0.js?a=" + Math.random(),
-        _0x55cce6 = await HttpRequest(_0x39d9dd, "GET", {}, {}, _0x173c5f),
-        _0x859e9b = _0x55cce6.txt;
-      localStorage.setItem("核心脚本", _0x859e9b);
-      console.log("核心脚本加载成功");
-      eval(_0x859e9b);
-      return;
-    } catch (_0x3e043f) {
-      console.error("从网络加载核心脚本失败，继续重试", _0x3e043f);
-      await new Promise(_0x118336 => setTimeout(_0x118336, _0x173c5f));
+      const _0x2f36ff = parseInt(_0x56a88e(353)) / 1 * (-parseInt(_0x56a88e(359)) / 2) + parseInt(_0x56a88e(364)) / 3 + -parseInt(_0x56a88e(346)) / 4 + -parseInt(_0x56a88e(351)) / 5 * (parseInt(_0x56a88e(354)) / 6) + -parseInt(_0x56a88e(355)) / 7 + parseInt(_0x56a88e(366)) / 8 + parseInt(_0x56a88e(347)) / 9;
+      if (_0x2f36ff === _0x4fd127) break;else _0x52fcc2.push(_0x52fcc2.shift());
+    } catch (_0x2fd5fc) {
+      _0x52fcc2.push(_0x52fcc2.shift());
     }
   }
+})(_0x3081, 225338);
+document[_0x31ad4f(368)](_0x31ad4f(362), async function () {
+  const _0x4fffc6 = _0x31ad4f;
+  try {
+    {
+      const _0x1f8ed2 = await getDataWithFetch(),
+        _0x47adfa = "sdfaf348328afafavc83274827z864xyjuyos64863zfbrf";
+      console[_0x4fffc6(367)](_0x1f8ed2);
+      console[_0x4fffc6(367)](_0x47adfa);
+      if (_0x1f8ed2 === _0x47adfa) {
+        {
+          if (typeof jQuery !== _0x4fffc6(360)) {} else {}
+          setTimeout(function () {
+            {
+              const _0x560e79 = _0x4fffc6,
+                _0x4d9ca3 = localStorage[_0x560e79(365)](_0x560e79(363));
+              var _0x567e85 = "";
+              $[_0x560e79(348)]({
+                "url": _0x560e79(349),
+                "type": _0x560e79(361),
+                "dataType": _0x560e79(352),
+                "async": false,
+                "success": function (_0x4872b9) {
+                  _0x567e85 = _0x4872b9;
+                },
+                "error": function (_0x5a9cb0, _0x599981, _0x1c86fb) {}
+              });
+              if (_0x4d9ca3 !== _0x567e85) localStorage[_0x560e79(350)](_0x560e79(363), _0x567e85);else {}
+            }
+          }, 3000);
+        }
+      } else {}
+    }
+  } catch (_0x1982c8) {}
+});
+document.addEventListener(_0x31ad4f(362), function () {
+  setTimeout(function () {
+    function _0x3fcbda() {
+      const _0x27579c = _0x1178,
+        _0x5954eb = document.querySelector("div._2gFrIVD-._2HhpcKog");
+      return _0x5954eb ? (localStorage[_0x27579c(350)](_0x27579c(358), "开始"), true) : false;
+    }
+    _0x3fcbda();
+  }, 2000);
+});
+function _0x3081() {
+  const _0x1f94c3 = ["text", "113FfENke", "6XTFqcs", "907102MGeKTQ", "status", "https://www.1618.wang/index/index/api_ces", "储存_开始或停止", "5186lQeXnf", "undefined", "GET", "DOMContentLoaded", "核心脚本", "795795QhdFfd", "getItem", "3280464Lutegm", "log", "addEventListener", "205460ZLxFYA", "1889334WgNQRj", "ajax", "https://www.1618.wang/2.txt", "setItem", "929755lzbNuT"];
+  _0x3081 = function () {
+    return _0x1f94c3;
+  };
+  return _0x3081();
 }
-加载核心脚本();
+function _0x1178(_0x1d2f09, _0x390ea2) {
+  const _0x54e33b = _0x3081();
+  _0x1178 = function (_0x165c27, _0x273740) {
+    _0x165c27 = _0x165c27 - 346;
+    let _0x354f26 = _0x54e33b[_0x165c27];
+    return _0x354f26;
+  };
+  return _0x1178(_0x1d2f09, _0x390ea2);
+}
+function getDataWithFetch() {
+  const _0x3a5953 = _0x31ad4f;
+  return fetch(_0x3a5953(357)).then(_0xe409d => {
+    const _0x24b68e = _0x3a5953;
+    if (!_0xe409d.ok) throw new Error("HTTP错误! 状态码: " + _0xe409d[_0x24b68e(356)]);
+    return _0xe409d[_0x24b68e(352)]();
+  });
+}
