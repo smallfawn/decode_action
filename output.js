@@ -1,1857 +1,787 @@
-//Sat Jul 12 2025 03:57:04 GMT+0000 (Coordinated Universal Time)
+//Sat Jul 12 2025 04:00:31 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
-var shengzhuhd = function (_0x10f146) {
-  function _0x10954f(_0x9dbc48, _0x22aeac) {
-    var _0x7bea79 = _0x10f146.call(this, _0x9dbc48, _0x22aeac) || this;
-    _0x7bea79.showMessage = [UserZs.ins().postZsData];
-    _0x7bea79.updateMessage = [KFBattleRedPoint.ins().postRedPoint, DevildomRedPoint.ins().postRedPoint, KfArenaRedPoint.ins().postRedPoint];
-    return _0x7bea79;
+var peishirukou = function (_0x9e3181) {
+  function _0x353191(_0xa1e70e, _0x1c3215) {
+    var _0x1c6630 = _0x9e3181.call(this, _0xa1e70e, _0x1c3215) || this;
+    _0x1c6630.showMessage = [UserZs.ins().postZsData];
+    _0x1c6630.updateMessage = [KFBattleRedPoint.ins().postRedPoint, DevildomRedPoint.ins().postRedPoint, KfArenaRedPoint.ins().postRedPoint];
+    return _0x1c6630;
   }
-  __extends(_0x10954f, _0x10f146);
-  _0x10954f.prototype.checkShowIcon = function () {
+  __extends(_0x353191, _0x9e3181);
+  _0x353191.prototype.checkShowIcon = function () {
     {
-      var _0x49c5f2 = KFBossSys.ins().isOpen();
-      return _0x49c5f2;
+      var _0x23c4af = KFBossSys.ins().isOpen();
+      return _0x23c4af;
     }
   };
-  _0x10954f.prototype.checkShowRedPoint = function () {
-    return KFBattleRedPoint.ins().redPoint || DevildomRedPoint.ins().redPoint || KfArenaRedPoint.ins().redpoint;
+  _0x353191.prototype.checkShowRedPoint = function () {
+    {
+      return KFBattleRedPoint.ins().redPoint || DevildomRedPoint.ins().redPoint || KfArenaRedPoint.ins().redpoint;
+    }
   };
-  _0x10954f.prototype.tapExecute = function () {
-    ViewManager.ins().open(newshengzhugn);
+  _0x353191.prototype.tapExecute = function () {
+    ViewManager.ins().open(juesepeishizbyewanchupin);
   };
-  return _0x10954f;
+  return _0x353191;
 }(RuleIconBase);
-__reflect(shengzhuhd.prototype, "shengzhuhd");
-var newshengzhugn = function (_0x2fd446) {
-  function _0xb94e1() {
-    var _0x530961 = _0x2fd446.call(this) || this;
-    _0x530961.isTopLevel = true;
-    _0x530961.skinName = "<?xml version='1.0' encoding='utf-8'?> <e:Skin class=\"newgnmbxianshi\" width=\"580\" height=\"930\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:ns1=\"*\" xmlns:w=\"http://ns.egret.com/wing\"> <e:Rect left=\"0\" right=\"0\" top=\"0\" bottom=\"0\" fillAlpha=\"0.6\"/> <e:Image top=\"0\" bottom=\"0\" source=\"tongyongmianbanbg2\" width=\"580\" horizontalCenter=\"0\" scale9Grid=\"15,12,2,3\"/> <e:Group width=\"556\" horizontalCenter=\"0\" bottom=\"58\"> <e:Image source=\"bantoumingkuang4\" x=\"0\" top=\"0\" bottom=\"0\" width=\"278\" height=\"90\"/> <e:Image source=\"bantoumingkuang4\" scaleX=\"-1\" right=\"0\" top=\"0\" bottom=\"0\" width=\"278\" height=\"90\"/> </e:Group> <e:Image width=\"570\" horizontalCenter=\"0\" source=\"tongyongmianbanbg\" scale9Grid=\"19,12,14,25\" top=\"44\" bottom=\"155\"/> <e:ViewStack id=\"viewStack\" width=\"580\" selectedIndex=\"1\" top=\"52\" bottom=\"162\" horizontalCenter=\"0\">\n\n<ns1:BaseComponent id=\"anewxgna\" skinName=\"newxgna\" className=\"anewxgna\" name=\"圣主神剑\" left=\"0\" right=\"10\" top=\"-50\" bottom=\"-120\" visible=\"false\"/> <ns1:BaseComponent id=\"anewxgnb\" skinName=\"newxgnb\" className=\"anewxgnb\" name=\"圣主神甲\" left=\"0\" right=\"10\" top=\"-50\" bottom=\"-120\" visible=\"false\"/> <ns1:BaseComponent id=\"anewxgnc\" skinName=\"newxgnc\" className=\"anewxgnc\" name=\"圣主骷髅\" left=\"0\" right=\"10\" top=\"-50\" bottom=\"-120\" visible=\"false\"/> <ns1:BaseComponent id=\"anewxgnd\" skinName=\"newxgnd\" className=\"anewxgnd\" name=\"圣主剑意\" left=\"0\" right=\"10\" top=\"-50\" bottom=\"-120\" visible=\"false\"/> <ns1:BaseComponent id=\"anewxgne\" skinName=\"newxgne\" className=\"anewxgne\" name=\"圣主天使\" left=\"0\" right=\"10\" top=\"-50\" bottom=\"-120\" visible=\"false\"/> </e:ViewStack> <e:TabBar id=\"tab\" itemRendererSkinName=\"BtnTab0Skin\" dataProvider=\"{viewStack}\" selectedIndex=\"0\" horizontalCenter=\"0\" bottom=\"112\"> <e:layout> <e:HorizontalLayout gap=\"-10\"/> </e:layout> </e:TabBar> <ns1:BaseComponent id=\"roleSelect\" y=\"0\" skinName=\"RoleSelectPanelSkin\" className=\"RoleSelectPanel\" width=\"580\" horizontalCenter=\"0\"/> <e:Group horizontalCenter=\"47\" touchEnabled=\"false\" bottom=\"139\"> <e:Image id=\"redPoint0\" source=\"zjmhongdian\" x=\"123\" y=\"0\" visible=\"false\"/> <e:Image id=\"redPoint1\" source=\"zjmhongdian\" x=\"0\" y=\"0\" visible=\"false\"/> <e:Image id=\"redPoint2\" source=\"zjmhongdian\" x=\"0\" y=\"0\" visible=\"false\"/> <e:Image id=\"redPoint3\" source=\"zjmhongdian\" x=\"0\" y=\"0\" visible=\"false\"/> <e:Image id=\"redPoint4\" source=\"zjmhongdian\" x=\"0\" y=\"0\" visible=\"false\"/> <e:layout> <e:HorizontalLayout gap=\"87\"/> </e:layout> </e:Group> <e:Image id=\"title\" y=\"10\" horizontalCenter=\"-155\" source=\"shengzhutitle\"/> <e:Button id=\"seeRule\" label=\"按钮\" icon=\"wenhao\" skinName=\"Btn0Skin\" horizontalCenter=\"-246\" y=\"8\" scaleX=\"0.9\" scaleY=\"0.9\"/> <e:Button id=\"closeBtn\" label=\"按钮\" skinName=\"Btn0Skin\" icon=\"chatclose\" y=\"46\" scaleX=\"0.8\" scaleY=\"0.8\" horizontalCenter=\"266\"/> </e:Skin>";
-    return _0x530961;
+__reflect(peishirukou.prototype, "peishirukou");
+var juesepeishizbyewanchupin = function (_0x501ee6) {
+  function _0x260abc() {
+    {
+      var _0x5d5f56 = _0x501ee6.call(this) || this;
+      _0x5d5f56.roleIndex = 0;
+      _0x5d5f56.oldIndex = 0;
+      _0x5d5f56.roleSelectVis = true;
+      _0x5d5f56.skinName = "juesepeishiskin";
+      _0x5d5f56.isTopLevel = true;
+      _0x5d5f56.addExclusionWin(egret.getQualifiedClassName(SmeltEquipTotalWin));
+      return _0x5d5f56;
+    }
   }
-  __extends(_0xb94e1, _0x2fd446);
-  _0xb94e1.prototype.open = function () {
-    for (var _0x59b062 = [], _0x501a8e = 0; _0x501a8e < arguments.length; _0x501a8e++) {
-      _0x59b062[_0x501a8e] = arguments[_0x501a8e];
-    }
-    this.viewStack.selectedIndex = 0;
-    this.tab.dataProvider = this.viewStack;
-    _0x59b062 = _0x59b062 ? _0x59b062[0] : 0;
-    this.roleSelect.setCurRole(_0x59b062);
-    this.addChangeEvent(this.roleSelect, this.onChange);
-    this.addChangeEvent(this.tab, this.onTabTouch);
-    this.addChangingEvent(this.tab, this.onTabTouching);
-    this.addTouchEvent(this.seeRule, this.onTap);
-    this.addTouchEvent(this.closeBtn, this.onClick);
-    this.observe(UserBag.ins().postItemDel, this.updateRedPoint);
-    this.observe(UserBag.ins().postItemCountChange, this.updateRedPoint);
-    this.observe(Heirloom.ins().postHeirloomInfo, this.updateRedPoint);
-    this.observe(ZhuZai.ins().postZhuZaiInfo, this.updateRedPoint);
-    this.observe(ChuanShiShenQi.ins().postChuanShiInfo, this.updateRedPoint);
-    this.setOpenIndex(0);
-  };
-  _0xb94e1.prototype.onTap = function (_0x374908) {
-    switch (_0x374908.target) {
-      case this.seeRule:
-        ViewManager.ins().open(CommonHelpWin, ConfgMgr.HelpInfoConfig[104].text);
-    }
-  };
-  _0xb94e1.prototype.onTabTouching = function (_0x3b38b8) {
-    this.checkTabIsOpen(this.tab.selectedIndex) || _0x3b38b8.preventDefault();
-  };
-  _0xb94e1.openCheck = function () {
+  __extends(_0x260abc, _0x501ee6);
+  _0x260abc.prototype.initUI = function () {};
+  _0x260abc.prototype.open = function () {
     {
-      for (var _0x1c5958 = 0; _0x1c5958 < arguments.length; _0x1c5958++) {}
-      if (UserZs.ins().lv < ConfgMgr.ZhuZaiEquipBaseConfig.openchuanshilv) {
-        if (!(1 < ConfgMgr.ZhuZaiEquipBaseConfig.openchuanshiday)) {
-          UserTips.ins().showTips("传世装备" + ConfgMgr.ZhuZaiEquipBaseConfig.openchuanshilv + "转开启");
-          return false;
-        }
-        if (GameServer.serverOpenDay + 1 < ConfgMgr.ZhuZaiEquipBaseConfig.openchuanshiday) {
-          UserTips.ins().showTips("传世装备开服第" + ConfgMgr.ZhuZaiEquipBaseConfig.openchuanshiday + "天并达到" + ConfgMgr.ZhuZaiEquipBaseConfig.openzhuanshenglv + "转开启");
-          return false;
-        }
-      } else {
-        if (1 < ConfgMgr.ZhuZaiEquipBaseConfig.openchuanshiday && GameServer.serverOpenDay + 1 < ConfgMgr.ZhuZaiEquipBaseConfig.openchuanshiday) {
-          UserTips.ins().showTips("传世装备开服第" + ConfgMgr.ZhuZaiEquipBaseConfig.openchuanshiday + "天开启");
-          return false;
-        }
-      }
-      return true;
+      this.addTouchEvent(this.closeBtn, this.onClick);
+      _0x501ee6[0] ? this.oldIndex = this.tab.selectedIndex = this.viewStack.selectedIndex = _0x501ee6[0] : this.oldIndex = this.tab.selectedIndex = this.viewStack.selectedIndex = 0;
+      this.addTouchEvent(this, this.onClick);
+      this.addChangingEvent(this.tab, this.checkIsOpen);
+      this.setOpenIndex(0);
     }
   };
-  _0xb94e1.prototype.checkTabIsOpen = function (_0x19144a) {
-    {
-      if (0 == _0x19144a) {
-        return true;
+  _0x260abc.prototype.close = function () {
+    for (var _0x10dc05 = [], _0xbe9fd3 = 0; _0xbe9fd3 < arguments.length; _0xbe9fd3++) {
+      _0x10dc05[_0xbe9fd3] = arguments[_0xbe9fd3];
+    }
+    var _0x47baa4 = ViewManager.ins().getView(UIView2);
+    if (_0x47baa4) {
+      {
+        _0x47baa4.closeNav(UIView2.NAV_ROLE);
       }
-      if (1 == _0x19144a) {
-        {
-          if (!ZhuZai.ins().ZhuZaiIsOpen()) {
-            UserTips.ins().showTips("开服第" + ConfgMgr.ZhuZaiEquipBaseConfig.openserverday + "天并达到" + ConfgMgr.ZhuZaiEquipBaseConfig.openzhuanshenglv + "转开启");
-            return false;
-          }
-        }
-      } else {
-        if (2 == _0x19144a && !ChuanShiShenQi.ins().ShenWuIsOpen()) {
-          0 < ConfgMgr.ChuanShiShenQiConfig.openzhuanshenglv ? UserTips.ins().showTips("开服第" + ConfgMgr.ChuanShiShenQiConfig.openserverday + "天并达到" + ConfgMgr.ChuanShiShenQiConfig.openzhuanshenglv + "转开启") : UserTips.ins().showTips("开服第" + ConfgMgr.ChuanShiShenQiConfig.openserverday + "天开启");
-          return false;
-        }
-      }
-      return true;
+    }
+    for (var _0x3ecd2f = this.viewStack.numChildren, _0x412f59 = 0; _0x3ecd2f > _0x412f59; _0x412f59++) {
+      this.viewStack.getChildAt(_0x412f59) instanceof eui.Group || this.viewStack.getChildAt(_0x412f59).close();
     }
   };
-  _0xb94e1.prototype.onTabTouch = function (_0x21c2b3) {
+  _0x260abc.prototype.checkIsOpen = function (_0x292458) {
     this.setOpenIndex(this.tab.selectedIndex);
+    this.viewStack.selectedIndex = this.tab.selectedIndex;
+    this.viewStack.getElementAt(this.oldIndex).close();
   };
-  _0xb94e1.prototype.onChange = function (_0x869702) {
-    this.setRoleId(this.roleSelect.getCurRole());
+  _0x260abc.prototype.setOpenIndex = function (_0x2e030b) {
+    if (this.oldIndex && 1 == this.oldIndex && this.oldIndex != _0x2e030b && this.getWingPanelInfo()) {
+      this.doOpenHintWin(1, this.tab.selectedIndex);
+      return void (this.tab.selectedIndex = this.oldIndex);
+    }
+    switch (_0x2e030b) {
+      case 0:
+        this.XuemaiPanel.open();
+        break;
+      case 1:
+        this.HunhuanEquipPanel.open();
+    }
   };
-  _0xb94e1.prototype.setRoleId = function (_0x13de85) {
-    this.zhuzaiPanel.curRole = _0x13de85;
-    this.setOpenIndex(this.viewStack.selectedIndex);
-  };
-  _0xb94e1.prototype.setOpenIndex = function (_0x56f68e) {
+  _0x260abc.prototype.onClick = function (_0x11c716) {
     {
-      switch (_0x56f68e) {
-        case 0:
-          this.roleSelect.hideRole();
-          this.anewxgna.open();
-          this.title.source = "shengzhutitle";
-          this.seeRule.visible = false;
-        case 1:
-          this.roleSelect.hideRole();
-          this.anewxgnb.open();
-          this.title.source = "shengzhutitle";
-          this.seeRule.visible = false;
-        case 2:
-          this.roleSelect.hideRole();
-          this.anewxgnc.open();
-          this.title.source = "shengzhutitle";
-          this.seeRule.visible = false;
-        case 3:
-          this.roleSelect.hideRole();
-          this.anewxgnd.open();
-          this.title.source = "shengzhutitle";
-          this.seeRule.visible = false;
-        case 4:
-          this.roleSelect.hideRole();
-          this.anewxgne.open();
-          this.title.source = "shengzhutitle";
-          this.seeRule.visible = false;
+      switch (_0x11c716.target) {
+        case this.closeBtn:
+        case this.closeBtn0:
+          ViewManager.ins().close(this);
       }
-      this.updateRedPoint();
     }
   };
-  _0xb94e1.prototype.updateRedPoint = function () {
-    {
-      for (var _0x51dea2 = this.roleSelect.getCurRole(), _0x1926a6 = false, _0x3670f2 = false, _0x54b7f7 = 0; _0x54b7f7 < SubRoles.ins().subRolesLen; _0x54b7f7++) {
-        {
-          var _0x47bd5e = SubRoles.ins().getSubRoleByIndex(_0x54b7f7);
-          if (_0x47bd5e) {
-            for (var _0x54a271 = false, _0x4c426c = 0; 8 > _0x4c426c; _0x4c426c++) {
-              {
-                var _0x27599f = this.getInitInfoEx(_0x47bd5e, _0x4c426c);
-                var _0x5d8a1f;
-                _0x5d8a1f = _0x27599f.lv ? ConfgMgr.HeirloomEquipConfig[_0x27599f.slot][_0x27599f.lv] : ConfgMgr.HeirloomEquipFireConfig[_0x4c426c + 1];
-                _0x27599f = 0;
-                var _0x5af67f = _0x27599f;
-                if (_0x5d8a1f) {
-                  {
-                    _0x5d8a1f = _0x5d8a1f.expend;
-                    if (!_0x5d8a1f) {
-                      continue;
-                    }
-                    _0x27599f = (_0x54a271 = UserBag.ins().getBagItemById(_0x5d8a1f.id)) ? _0x54a271.count : 0;
-                    _0x5af67f = _0x5d8a1f.count;
-                  }
-                }
-                if (_0x27599f >= _0x5af67f) {
-                  _0x54a271 = true;
-                  break;
-                }
-                _0x54a271 = false;
-              }
-            }
-            (_0x47bd5e = ZhuZai.ins().roleIsMayUse(_0x51dea2)) && (_0x3670f2 = true);
-            1 == _0x54a271 && (_0x1926a6 = true);
-            0 == this.viewStack.selectedIndex ? this.roleSelect.showRedPoint(_0x54b7f7, _0x54a271) : this.roleSelect.showRedPoint(_0x54b7f7, _0x47bd5e);
-          }
-        }
-      }
-      this.redPoint0.visible = _0x1926a6;
-      0 == this.viewStack.selectedIndex ? this.redPoint1.visible = _0x3670f2 : 1 == this.viewStack.selectedIndex && (this.redPoint1.visible = ZhuZai.ins().roleIsMayUse(_0x51dea2));
-      this.redPoint2.visible = ChuanShiShenQi.ins().ChuanShiIsMayCaozuo();
-    }
-  };
-  _0xb94e1.prototype.getInitInfoEx = function (_0x2d0ccd, _0x5c2f2c) {
-    {
-      return _0x2d0ccd.heirloom.getInfoBySolt(_0x5c2f2c);
-    }
-  };
-  _0xb94e1.prototype.onClick = function (_0x12d65c) {
-    switch (_0x12d65c.target) {
-      case this.closeBtn:
-        ViewManager.ins().close(this);
-    }
-  };
-  _0xb94e1.prototype.close = function () {
-    this.removeTouchEvent(this.seeRule, this.onTap);
-    this.removeTouchEvent(this.roleSelect, this.onChange);
-    this.removeTouchEvent(this.tab, this.onTabTouch);
-    this.removeTouchEvent(this.tab, this.onTabTouching);
-    this.removeTouchEvent(this.closeBtn, this.onClick);
-    this.removeObserve();
-  };
-  return _0xb94e1;
+  return _0x260abc;
 }(BaseEuiView);
-BaseEuiView;
-__reflect(newshengzhugn.prototype, "newshengzhugn");
-ViewManager.ins().reg(newshengzhugn, LayerManager.UI_Main);
-var anewxgna = function (_0x3d75f9) {
-  function _0x161deb() {
-    var _0x40f85d = _0x3d75f9.call(this) || this;
-    _0x40f85d._cost = 0;
-    _0x40f85d.isTopLevel = true;
-    _0x40f85d.skinName = "<?xml version='1.0' encoding='utf-8'?> <e:Skin class=\"newxgna\" width=\"580\" height=\"930\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:w=\"http://ns.egret.com/wing\" xmlns:ns1=\"*\" xmlns:euiextension=\"euiextension.*\" > <e:Rect width=\"600\" height=\"930\" horizontalCenter=\"0\" fillAlpha=\"1\"/> <e:Group left=\"0\" right=\"0\" top=\"0\" bottom=\"-4\"> <e:Image top=\"40\" left=\"0\" source=\"tongyongmianbanbg\" scale9Grid=\"19,12,14,25\" right=\"0\" bottom=\"120\"/> <e:Group top=\"8\" left=\"8\" right=\"8\" bottom=\"8\"> <e:Rect left=\"0\" right=\"0\" bottom=\"0\" top=\"0\" fillAlpha=\"0\"/> <e:Image source=\"szbg01\" left=\"0\" right=\"0\" height=\"554\" verticalCenter=\"-50\"/> <e:Group left=\"0\" right=\"0\" height=\"554\" verticalCenter=\"-50\"> <e:Image source=\"\" horizontalCenter=\"0\" id=\"shenshoueff\" y=\"85\" scaleX=\"0.9\" scaleY=\"0.9\"/> <e:Image source=\"\" horizontalCenter=\"0\" id=\"shenshoueff1\" y=\"85\" scaleX=\"0.9\" scaleY=\"0.9\"/> </e:Group> <e:Group left=\"0\" right=\"0\" height=\"554\" verticalCenter=\"-50\">\n<ns1:BaseComponent id=\"item0\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" x=\"25\" y=\"150\"/>\n<ns1:BaseComponent id=\"item1\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" x=\"25\" y=\"250\"/>\n<ns1:BaseComponent id=\"item2\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" x=\"25\" y=\"350\"/>\n<ns1:BaseComponent id=\"item3\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" x=\"25\" y=\"450\"/>\n<ns1:BaseComponent id=\"item4\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" right=\"25\" y=\"150\"/>\n<ns1:BaseComponent id=\"item5\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" right=\"25\" y=\"250\"/>\n<ns1:BaseComponent id=\"item6\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" right=\"25\" y=\"350\"/>\n<ns1:BaseComponent id=\"item7\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" right=\"25\" y=\"450\"/> </e:Group> <e:Group id=\"maxbox1\" left=\"-2\" right=\"-5\" bottom=\"118\" height=\"130\"> <e:Image source=\"attrnewbg_png\" left=\"0\" right=\"0\" height=\"130\"/> <e:Label id=\"curAttr0\" text=\"生命：1008666\\n攻击：100866\\n物防：26666\\n魔防：26666\" y=\"25\" size=\"15\" textColor=\"0x9f946d\" lineSpacing=\"6\" width=\"148\" x=\"30\"/> <e:Label id=\"curAttr1\" text=\"生命：1008666\\n攻击：100866\\n物防：26666\\n魔防：26666\" y=\"25\" size=\"15\" textColor=\"0xcdea2e\" lineSpacing=\"6\" width=\"148\" x=\"200\"/> <e:Group horizontalCenter=\"165\" y=\"10\"> <e:Image source=\"2610000_png\" width=\"30\" height=\"30\" id=\"itemicon\" y=\"0\"/> <e:Label id=\"itemname\" text=\"凡·离卦（10/10）\" y=\"10\" textColor=\"0xff0000\" size=\"15\" x=\"40\" scaleX=\"1\" scaleY=\"1\"/> <e:Button id=\"Upbntss\" label=\"提升套装\" skinName=\"newBtn1Skin\" width=\"120\" height=\"50\" right=\"30\" y=\"35\" scaleX=\"1\" scaleY=\"1\"/> </e:Group> </e:Group> <e:Group id=\"maxbox2\" left=\"-2\" right=\"-5\" bottom=\"118\" height=\"130\" visible=\"false\"> <e:Image source=\"attrnewbg_png\" left=\"0\" right=\"0\" height=\"130\"/> <e:Label id=\"curAttr2\" text=\"生  命：1008666\\n攻  击：100866\\n物  防：26666\\n魔  防：26666\" y=\"25\" size=\"15\" textColor=\"0x9f946d\" lineSpacing=\"6\" width=\"148\" horizontalCenter=\"0\"/> </e:Group> </e:Group> <ns1:BaseComponent id=\"powerPanel\" skinName=\"PowerPanelSkin\" className=\"PowerPanel\" y=\"140\" horizontalCenter=\"10\"/> </e:Group>\n<ns1:BaseComponent id=\"roleSelect\" y=\"0\" skinName=\"RoleSelectPanelSkin\" className=\"RoleSelectPanel\"  width=\"580\" horizontalCenter=\"0\" /> <e:Button id=\"closeBtn\" label=\"按钮\" skinName=\"Btn0Skin\" icon=\"chatclose\" y=\"46\" scaleX=\"0.8\" scaleY=\"0.8\" right=\"-5\" /> <e:Image source=\"title_qinglongshengzhuang_png\" x=\"65\" y=\"11\"/> </e:Skin>";
-    _0x40f85d._indexid = 0;
-    return _0x40f85d;
-  }
-  __extends(_0x161deb, _0x3d75f9);
-  _0x161deb.prototype.open = function () {
+__reflect(juesepeishizbyewanchupin.prototype, "juesepeishizbyewanchupin");
+ViewManager.ins().reg(juesepeishizbyewanchupin, LayerManager.UI_Main);
+var XuemaiPanel = function (_0x28f9a3) {
+  function _0x13dbbb() {
     {
-      this.addTouchEvent(this.closeBtn, this.closeMenus);
+      var _0x2d0098 = _0x28f9a3.call(this) || this;
+      _0x2d0098._cost = 0;
+      _0x2d0098.isTopLevel = true;
+      _0x2d0098.skinName = "Xuemaiskin";
+      return _0x2d0098;
+    }
+  }
+  __extends(_0x13dbbb, _0x28f9a3);
+  _0x13dbbb.prototype.init = function () {};
+  _0x13dbbb.prototype.open = function () {
+    {
       this.roleSelect.setCurRole(this.curRole);
       this.addChangeEvent(this.roleSelect, this.sonChange);
       this.roleSelect.parent.touchEnabled = true;
       SubRoles.ins().getSubRoleByIndex(0);
       this.roleSelect.setCurRole(0);
       this.observe(Dress.ins().postDressInfo, this.edata);
-      this.observe(Dress.ins().postDressInfo, this.Demomc);
-      this.observe(GameLogic.ins().postSubRoleChange, this.getDressInfo);
+      this.observe(GameLogic.ins().postSubRoleChange, this.getpassInfo);
       this.observe(UserBag.ins().postItemAdd, this.edata);
       this.observe(UserBag.ins().postItemDel, this.edata);
       this.observe(UserBag.ins().postItemCountChange, this.edata);
-      this.addTouchEvent(this.item0, this.closeMenu);
-      this.addTouchEvent(this.item1, this.closeMenu);
-      this.addTouchEvent(this.item2, this.closeMenu);
-      this.addTouchEvent(this.item3, this.closeMenu);
-      this.addTouchEvent(this.item4, this.closeMenu);
-      this.addTouchEvent(this.item5, this.closeMenu);
-      this.addTouchEvent(this.item6, this.closeMenu);
-      this.addTouchEvent(this.item7, this.closeMenu);
-      this.addTouchEvent(this.Upbntss, this.closeMenu);
-      this.ringEff = null;
-      this.ringEff1 = null;
-      this._pY = -55533;
+      this.addTouchEvent(this.item0, this.onlikes);
+      this.addTouchEvent(this.item1, this.onlikes);
+      this.addTouchEvent(this.item2, this.onlikes);
+      this.addTouchEvent(this.item3, this.onlikes);
+      this.addTouchEvent(this.item4, this.onlikes);
+      this.addTouchEvent(this.item5, this.onlikes);
+      this.addTouchEvent(this.item6, this.onlikes);
+      this.addTouchEvent(this.item7, this.onlikes);
+      this.addTouchEvent(this.upGradeBtn, this.closeMenu);
       this._curRole = 0;
-      this.item0.Selecte.visible = 1;
+      this._indexid = 0;
       this.edata();
-      this.Demomc();
     }
   };
-  _0x161deb.prototype.sonChange = function (_0xa5653c) {
+  _0x13dbbb.prototype.close = function (_0x51b6cf) {};
+  _0x13dbbb.prototype.sonChange = function (_0x2c17b3) {
     this._curRole = this.roleSelect.getCurRole();
     this.edata();
-    this.Demomc();
   };
-  _0x161deb.prototype.getDressInfo = function () {
-    Dress.ins().sendDressInfoReq();
-  };
-  _0x161deb.prototype.Demomc = function () {
-    this._pY = -55533;
-    this.mcefat();
-    var _0x42b808 = this.Viewdata();
-    if (_0x42b808 < 1) {
-      {
-        this._Hover = [FilterUtil.grayFilter];
-      }
-    } else {
-      this._Hover = null;
-    }
-    this.JIhuoeff();
-  };
-  _0x161deb.prototype.JIhuoeff = function () {
-    this._pY = 450;
-    var _0x135f80 = {
-      loop: false
-    };
-    var _0x526bed = {
-      scaleX: 0.5,
-      scaleY: 0.5
-    };
-    var _0x31f0d7 = {
-      scaleX: 0.8,
-      scaleY: 0.8
-    };
-    var _0x589ade = {
-      scaleX: 1,
-      scaleY: 1
-    };
-    var _0x71ffa1 = {
-      scaleX: 1.3,
-      scaleY: 1.3
-    };
-    var _0x17d948 = {
-      visible: 0
-    };
-    this.ringEff || (this.ringEff = new MovieClip());
-    this.ringEff.scaleX = 0.3;
-    this.ringEff.scaleY = 0.3;
-    this.ringEff.x = 290;
-    this.ringEff.y = 350;
-    this.shenshoueff.parent.addChild(this.ringEff);
-    this.ringEff.playFile(RES_DIR_EFF + "", -1);
-    this.ringEff.filters = this._Hover;
-    egret.Tween.removeTweens(this.ringEff);
-    egret.Tween.get(this.ringEff, _0x135f80).to(_0x526bed, 1000).to(_0x31f0d7, 1000).to(_0x589ade, 1000).to(_0x71ffa1, 1000).to(_0x17d948, 1000);
-    egret.setTimeout(this.mcefat, this, 0);
-  };
-  _0x161deb.prototype.mcefat = function () {
-    this.ringEff1 || (this.ringEff1 = new MovieClip());
-    this.ringEff1.scaleX = -1;
-    this.ringEff1.scaleY = 1;
-    this.ringEff1.x = 300;
-    this.ringEff1.y = 200;
-    this.shenshoueff1.parent.addChild(this.ringEff1);
-    this.ringEff1.playFile(RES_DIR_EFF + "shengzhutx01", -1);
-    this.ringEff1.filters = this._Hover;
-  };
-  _0x161deb.prototype.edata = function (_0x370558) {
-    var _0x344899 = this.Listdate();
-    var _0x18ad21 = ConfgMgr.agnbaseconfig;
-    var _0x26ee09 = 0;
-    var _0x2eb0be = ConfgMgr.agnsjconfig;
-    this._maxlv = _0x18ad21.maxlv;
-    this._openzs = _0x18ad21.zslv;
-    this._openday = _0x18ad21.openday;
-    for (x = 0; x < _0x344899.length; x++) {
-      {
-        var _0x1b4df7 = _0x344899[x].lv;
-        this["item" + x].Icon.source = _0x18ad21.itemicon[x] + "_png";
-        this["item" + x].lvNum.text = _0x1b4df7;
-        this["BedEff" + x] || (this["BedEff" + x] = new MovieClip());
-        this["BedEff" + x].scaleX = this["BedEff" + x].scaleY = 0.9;
-        if (_0x1b4df7 < 1) {
+  _0x13dbbb.prototype.Bsdate = function () {
+    {
+      this.curRole = this.roleSelect.getCurRole();
+      var _0x33df57 = Dress.ins();
+      this.listInfo = [];
+      for (var _0x146c64 in ConfgMgr.hatzgnyijhsjconfig) if (SubRoles.ins().getSubRoleByIndex(this.curRole).job == ConfgMgr.hatzgnyijhsjconfig[_0x146c64].juesezhiye) {
+        var _0x23960b = new DressItemInfo();
+        var _0x2b2370 = ConfgMgr.hatzgnyijhsjconfig[_0x146c64];
+        var _0x107523 = _0x2b2370.id;
+        if (_0x33df57.timeInfo[_0x107523]) {
           {
-            this["BedEff" + x].x = -33335;
-            this["BedEff" + x].y = -33336;
-            this["item" + x].Icon.filters = [FilterUtil.grayFilter];
+            _0x23960b.lv = _0x33df57.timeInfo[_0x107523].lv;
           }
         } else {
-          this["BedEff" + x].x = -40;
-          this["BedEff" + x].y = -40;
-          this["item" + x].Icon.filters = null;
-          var _0x26ee09 = parseInt(_0x26ee09) + UserBag.getAttrPower(AttributeData.transformAttr(_0x2eb0be[x][_0x1b4df7].attr));
+          _0x23960b.lv = 0;
         }
-        this["item" + x].klmaceff.parent.addChild(this["BedEff" + x]);
-        this["BedEff" + x].playFile(RES_DIR_EFF + "shengzhujheff", -1);
-        if (x == this._indexid) {
-          {
-            this._lv = _0x344899[x].lv;
-            this._id = _0x344899[x].id;
-            if (this._lv < this._maxlv) {
-              var _0x4d0f93 = ConfgMgr.agnsjconfig[x];
-              if (this._lv < 1) {
-                {
-                  var _0x409dbe = ConfgMgr.agnsjconfig[x][1];
-                  this._item = _0x409dbe.itemid;
-                  this._count = _0x409dbe.count;
-                  this._num = UserBag.ins().getBagGoodsCountById(0, this._item);
-                  this.curAttr0.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x18ad21.attr), 0, 1, ": ");
-                  this.curAttr1.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x409dbe.attr), 0, 1, ": ");
-                  this.itemicon.source = ConfgMgr.ItemConfig[this._item].icon + "_png";
-                  this.itemname.text = ConfgMgr.ItemConfig[this._item].name + "(" + this._num + "/" + this._count + ")";
-                  this.maxbox1.visible = 1;
-                  this.maxbox2.visible = 0;
-                }
-              } else {
-                {
-                  var _0x409dbe = ConfgMgr.agnsjconfig[x][parseInt(this._lv) + 1];
-                  this._item = _0x409dbe.itemid;
-                  this._count = _0x409dbe.count;
-                  this._num = UserBag.ins().getBagGoodsCountById(0, this._item);
-                  this.curAttr0.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x4d0f93[this._lv].attr), 0, 1, ": ");
-                  this.curAttr1.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x409dbe.attr), 0, 1, ": ");
-                  this.itemicon.source = ConfgMgr.ItemConfig[this._item].icon + "_png";
-                  this.itemname.text = ConfgMgr.ItemConfig[this._item].name + "(" + this._num + "/" + this._count + ")";
-                  this.maxbox1.visible = 1;
-                  this.maxbox2.visible = 0;
-                }
+        _0x23960b.id = _0x107523;
+        _0x23960b.job = _0x2b2370.juesezhiye;
+        this.listInfo.push(_0x23960b);
+      }
+      return this.listInfo;
+    }
+  };
+  _0x13dbbb.prototype.getpassInfo = function () {};
+  _0x13dbbb.prototype.edata = function (_0x325aa1) {
+    {
+      var _0x4eb31f = this.Bsdate();
+      var _0x31755c = 0;
+      var _0x2eec29 = ConfgMgr.Xuemaiupconfig;
+      for (x = 0; x < _0x4eb31f.length; x++) {
+        {
+          var _0x55c65b = _0x4eb31f[x].lv;
+          this["xuemaiMC" + x] || (this["xuemaiMC" + x] = new MovieClip(), this["xuemaiMC" + x].scaleX = this["xuemaiMC" + x].scaleY = 1, this["xuemaiMC" + x].x = -60, this["xuemaiMC" + x].y = -55);
+          this["xuemaiMC" + x].playFile(RES_DIR_EFF + "kuangbao" + x, -1);
+          this["item" + x].equip.parent.addChild(this["xuemaiMC" + x]);
+          if (_0x55c65b < 1) {
+            {
+              this["xuemaiMC" + x].filters = [FilterUtil.grayFilter];
+            }
+          } else {
+            this["xuemaiMC" + x].filters = null;
+          }
+          this["item" + x].redPoint.visible = 0;
+          this["item" + x].isSelected.visible = 0;
+          if (x == this._indexid) {
+            var _0x12678a = ["|C:0x53FF53&T:卍█卧龙出世█卐冰霜定乾坤Ω剑|", "|C:0x53FF53&T:卍█卧龙出世█卐冰霜定乾坤Ω甲|", "|C:0x53FF53&T:卍█卧龙出世█卐冰霜定乾坤Ω盔|", "|C:0x53FF53&T:卍█卧龙出世█卐冰霜定乾坤Ω链|", "|C:0x53FF53&T:卍█卧龙出世█卐冰霜定乾坤Ω镯|", "|C:0x53FF53&T:卍█卧龙出世█卐冰霜定乾坤Ω带|", "|C:0x53FF53&T:卍█卧龙出世█卐冰霜定乾坤Ω戒|", "|C:0x53FF53&T:卍█卧龙出世█卐冰霜定乾坤Ω靴|"];
+            this.xmlv.textFlow = TextFlowMaker.generateTextFlow1(_0x12678a[x] + "|C:0xB766AD&T: Lv: " + _0x55c65b + "|");
+            this["item" + x].isSelected.visible = 1;
+            var _0x4721dc = _0x2eec29[x + 1][_0x55c65b];
+            var _0x46cdd7 = _0x2eec29[x + 1][_0x55c65b + 1];
+            this.attr0.text = this.getattrlv(_0x4721dc.attr);
+            var _0x31755c = parseInt(_0x31755c) + UserBag.getAttrPower(AttributeData.transformAttr(_0x2eec29[x + 1][_0x55c65b].attr));
+            if (_0x46cdd7) {
+              {
+                this.addAttr0.text = this.getattrlv(_0x46cdd7.attr);
+                this.addAttr0.visible = 1;
+                this.upGradeBtn.visible = this.costGroup.visible = 1;
+                this.nexmanlv.visible = 0;
+                this._lv = _0x55c65b;
+                this._item = _0x46cdd7.itemid;
+                this._count = _0x46cdd7.count;
+                this._num = UserBag.ins().getBagGoodsCountById(0, this._item);
+                this.icon.source = ConfgMgr.ItemConfig[this._item].icon + "_png";
+                this.countLabel.text = ConfgMgr.ItemConfig[this._item].name + "(" + this._num + "/" + this._count + ")";
+                this._openid = _0x4eb31f[x].id;
+                _0x55c65b < 1 ? this.upGradeBtn.label = "激  活" : this.upGradeBtn.label = "进  阶";
+                this._num < this._count ? this.countLabel.textColor = "0xf58220" : this.countLabel.textColor = "0xff0012";
               }
             } else {
-              {
-                var _0x409dbe = ConfgMgr.agnsjconfig[x][this._maxlv];
-                this.maxbox1.visible = 0;
-                this.maxbox2.visible = 1;
-                this.curAttr2.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x409dbe.attr), 0, 1, ": ");
-              }
+              this.upGradeBtn.visible = this.costGroup.visible = this.addAttr0.visible = 0;
+              this.nexmanlv.visible = 1;
             }
+            this.powerPanel.setPower(_0x31755c);
           }
         }
       }
     }
-    this.powerPanel.setPower(_0x26ee09);
   };
-  _0x161deb.prototype.Viewdata = function (_0x5e0d4c) {
-    var _0x184116 = this.Listdate();
-    for (x = 0; x < _0x184116.length; x++) {
-      {
-        if (_0x184116[x].lv < 1) {
+  _0x13dbbb.prototype.getattrlv = function (_0x35686f) {
+    {
+      var _0x365f8f = AttributeData.getAttStr(AttributeData.transformAttr(_0x35686f), 0, 1, ":");
+      return _0x365f8f;
+    }
+  };
+  _0x13dbbb.prototype.getattrnexlv = function (_0x9088a0, _0x505e51) {
+    {
+      var _0x18e5e7 = 0;
+      if (_0x9088a0[_0x18e5e7].type == _0x505e51[_0x18e5e7].type && _0x9088a0[_0x18e5e7].value != _0x505e51[_0x18e5e7].value) {
+        {
+          var _0x4ea98c = _0x9088a0[_0x18e5e7].value;
+          var _0x35cd82 = _0x505e51[_0x18e5e7].value;
+          var _0x1ada9c = _0x35cd82 - _0x4ea98c;
+          var _0xbe48e1 = _0x9088a0[_0x18e5e7].type;
+          var _0x299b6d = this.Getattrsuanshu(_0x1ada9c, _0xbe48e1);
+          return _0x299b6d;
+        }
+      } else {
+        {
           return 0;
-          break;
         }
       }
     }
-    return 1;
   };
-  _0x161deb.prototype.Listdate = function () {
-    this.curRole = this.roleSelect.getCurRole();
-    var _0x20c875 = Dress.ins();
-    this.listInfo = [];
-    for (var _0xe57df0 in ConfgMgr.agnjhconfig) if (SubRoles.ins().getSubRoleByIndex(this.curRole).job == ConfgMgr.agnjhconfig[_0xe57df0].roletype) {
-      {
-        var _0x462108 = new DressItemInfo();
-        var _0xe1c68c = ConfgMgr.agnjhconfig[_0xe57df0];
-        var _0x5c6416 = _0xe1c68c.id;
-        _0x462108.lv = 0;
-        _0x462108.id = _0x5c6416;
-        _0x462108.job = _0xe1c68c.roletype;
-        _0x20c875.timeInfo[_0x5c6416] && (_0x462108.timer = _0x20c875.timeInfo[_0x5c6416].invalidtime, _0x462108.lv = _0x20c875.timeInfo[_0x5c6416].lv);
-        this.listInfo.push(_0x462108);
+  _0x13dbbb.prototype.Getattrsuanshu = function (_0x4d7f7f, _0x4b660d) {
+    if (_0x4b660d == 11) {
+      var _0x545791 = _0x4d7f7f / 100 + "%";
+    } else {
+      if (_0x4b660d == 12) {
+        var _0x1ef1e5 = _0x4d7f7f / 100;
+        var _0x545791 = _0x1ef1e5.toFixed(1) + "%";
+      } else {
+        {
+          var _0x545791 = _0x4d7f7f;
+        }
       }
     }
-    return this.listInfo;
+    return _0x545791;
   };
-  _0x161deb.prototype.closeMenu = function (_0x481e69) {
+  _0x13dbbb.prototype.getattrnewnum = function (_0x2bef96) {};
+  _0x13dbbb.prototype.closeMenu = function (_0x1aec17) {
+    if (this._num < this._count) {
+      return void UserTips.ins().showTips("|C:0xFFFF00&T:  物品道具不足！！！！！！|");
+    }
+    this._lv < 1 ? Dress.ins().JiezhikongjianUserReq(this._openid, 5) : Dress.ins().JiezhikongjianLevelUp(this._openid);
+  };
+  _0x13dbbb.prototype.getBaolv = function (_0x138aef) {
     {
-      switch (_0x481e69.currentTarget) {
-        case this.item0:
-          this.ViewSelect(0);
-          break;
-        case this.item1:
-          this.ViewSelect(1);
-          break;
-        case this.item2:
-          this.ViewSelect(2);
-          break;
-        case this.item3:
-          this.ViewSelect(3);
-          break;
-        case this.item4:
-          this.ViewSelect(4);
-          break;
-        case this.item5:
-          this.ViewSelect(5);
-          break;
-        case this.item6:
-          this.ViewSelect(6);
-          break;
-        case this.item7:
-          this.ViewSelect(7);
-          break;
-        case this.Upbntss:
-          if (UserZs.ins().lv < this._openzs) {
-            return void UserTips.ins().showTips("|C:0xf3311e&T:转生等级达" + this._openzs + "开启|");
-          }
-          if (GameServer.serverOpenDay + 1 < this._openday) {
-            return void UserTips.ins().showTips("|C:0xf3311e&T:开服" + this._openday + "开启|");
-          }
-          if (this._num < this._count) {
-            void UserTips.ins().showTips("|C:0xf3311e&T:所需物品道具不足！！！|");
-            return SoundManager.ins().playEffect("wupindaojubuzubgm");
-          }
-          if (this._lv >= this._maxlv) {
-            return void UserTips.ins().showTips("|C:0xf3311e&T:满阶|");
-          }
-          if (this._lv < 1) {
-            Dress.ins().JiezhikongjianUserReq(this._id, 6);
-          } else {
-            {
-              Dress.ins().JiezhikongjianLevelUp(this._id);
-            }
-          }
-      }
+      var _0x11bbcd = this.Bsdate();
+      var _0x7d4d22 = _0x11bbcd[_0x138aef].lv;
+      return _0x7d4d22;
     }
   };
-  _0x161deb.prototype.ViewSelect = function (_0x3e5e87) {
-    for (x = 0; x < 8; x++) {
-      _0x3e5e87 == x ? this["item" + x].Selecte.visible = 1 : this["item" + x].Selecte.visible = 0;
-    }
-    this._indexid = _0x3e5e87;
-    this.edata();
-  };
-  _0x161deb.prototype.closeMenus = function (_0x30f462) {
+  _0x13dbbb.prototype.onlikes = function (_0x14b872) {
     {
-      ViewManager.ins().close(this);
       SoundManager.ins().playEffect(SoundUtil.WINDOW);
-    }
-  };
-  return _0x161deb;
-}(BaseEuiView);
-__reflect(anewxgna.prototype, "anewxgna");
-ViewManager.ins().reg(anewxgna, LayerManager.UI_Main);
-var anewxgnb = function (_0xe8dc88) {
-  function _0x2f12ed() {
-    {
-      var _0x12c9e1 = _0xe8dc88.call(this) || this;
-      _0x12c9e1._cost = 0;
-      _0x12c9e1.isTopLevel = true;
-      _0x12c9e1.skinName = "<?xml version='1.0' encoding='utf-8'?> <e:Skin class=\"newxgnb\" width=\"580\" height=\"930\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:w=\"http://ns.egret.com/wing\" xmlns:ns1=\"*\" xmlns:euiextension=\"euiextension.*\" > <e:Rect width=\"600\" height=\"930\" horizontalCenter=\"0\" fillAlpha=\"1\"/> <e:Group left=\"0\" right=\"0\" top=\"0\" bottom=\"-4\"> <e:Image top=\"40\" left=\"0\" source=\"tongyongmianbanbg\" scale9Grid=\"19,12,14,25\" right=\"0\" bottom=\"120\"/> <e:Group top=\"8\" left=\"8\" right=\"8\" bottom=\"8\"> <e:Rect left=\"0\" right=\"0\" bottom=\"0\" top=\"0\" fillAlpha=\"0\"/> <e:Image source=\"szbg02\" left=\"0\" right=\"0\" height=\"554\" verticalCenter=\"-50\"/> <e:Group left=\"0\" right=\"0\" height=\"554\" verticalCenter=\"-50\"> <e:Image source=\"\" horizontalCenter=\"0\" id=\"shenshoueff\" y=\"85\" scaleX=\"0.9\" scaleY=\"0.9\"/> <e:Image source=\"\" horizontalCenter=\"0\" id=\"shenshoueff1\" y=\"85\" scaleX=\"0.9\" scaleY=\"0.9\"/> </e:Group> <e:Group left=\"0\" right=\"0\" height=\"554\" verticalCenter=\"-50\">\n<ns1:BaseComponent id=\"item0\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" x=\"25\" y=\"150\"/>\n<ns1:BaseComponent id=\"item1\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" x=\"25\" y=\"250\"/>\n<ns1:BaseComponent id=\"item2\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" x=\"25\" y=\"350\"/>\n<ns1:BaseComponent id=\"item3\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" x=\"25\" y=\"450\"/>\n<ns1:BaseComponent id=\"item4\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" right=\"25\" y=\"150\"/>\n<ns1:BaseComponent id=\"item5\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" right=\"25\" y=\"250\"/>\n<ns1:BaseComponent id=\"item6\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" right=\"25\" y=\"350\"/>\n<ns1:BaseComponent id=\"item7\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" right=\"25\" y=\"450\"/> </e:Group> <e:Group id=\"maxbox1\" left=\"-2\" right=\"-5\" bottom=\"118\" height=\"130\"> <e:Image source=\"attrnewbg_png\" left=\"0\" right=\"0\" height=\"130\"/> <e:Label id=\"curAttr0\" text=\"生命：1008666\\n攻击：100866\\n物防：26666\\n魔防：26666\" y=\"25\" size=\"15\" textColor=\"0x9f946d\" lineSpacing=\"6\" width=\"148\" x=\"30\"/> <e:Label id=\"curAttr1\" text=\"生命：1008666\\n攻击：100866\\n物防：26666\\n魔防：26666\" y=\"25\" size=\"15\" textColor=\"0xcdea2e\" lineSpacing=\"6\" width=\"148\" x=\"200\"/> <e:Group horizontalCenter=\"165\" y=\"10\"> <e:Image source=\"2610000_png\" width=\"30\" height=\"30\" id=\"itemicon\" y=\"0\"/> <e:Label id=\"itemname\" text=\"凡·离卦（10/10）\" y=\"10\" textColor=\"0xff0000\" size=\"15\" x=\"40\" scaleX=\"1\" scaleY=\"1\"/> <e:Button id=\"Upbntss\" label=\"提升套装\" skinName=\"newBtn1Skin\" width=\"120\" height=\"50\" right=\"30\" y=\"35\" scaleX=\"1\" scaleY=\"1\"/> </e:Group> </e:Group> <e:Group id=\"maxbox2\" left=\"-2\" right=\"-5\" bottom=\"118\" height=\"130\" visible=\"false\"> <e:Image source=\"attrnewbg_png\" left=\"0\" right=\"0\" height=\"130\"/> <e:Label id=\"curAttr2\" text=\"生  命：1008666\\n攻  击：100866\\n物  防：26666\\n魔  防：26666\" y=\"25\" size=\"15\" textColor=\"0x9f946d\" lineSpacing=\"6\" width=\"148\" horizontalCenter=\"0\"/> </e:Group> </e:Group> <ns1:BaseComponent id=\"powerPanel\" skinName=\"PowerPanelSkin\" className=\"PowerPanel\" y=\"140\" horizontalCenter=\"10\"/> </e:Group>\n<ns1:BaseComponent id=\"roleSelect\" y=\"0\" skinName=\"RoleSelectPanelSkin\" className=\"RoleSelectPanel\"  width=\"580\" horizontalCenter=\"0\" /> <e:Button id=\"closeBtn\" label=\"按钮\" skinName=\"Btn0Skin\" icon=\"chatclose\" y=\"46\" scaleX=\"0.8\" scaleY=\"0.8\" right=\"-5\" /> <e:Image source=\"title_qinglongshengzhuang_png\" x=\"65\" y=\"11\"/> </e:Skin>";
-      _0x12c9e1._indexid = 0;
-      return _0x12c9e1;
-    }
-  }
-  __extends(_0x2f12ed, _0xe8dc88);
-  _0x2f12ed.prototype.open = function () {
-    this.addTouchEvent(this.closeBtn, this.closeMenus);
-    this.roleSelect.setCurRole(this.curRole);
-    this.addChangeEvent(this.roleSelect, this.sonChange);
-    this.roleSelect.parent.touchEnabled = true;
-    SubRoles.ins().getSubRoleByIndex(0);
-    this.roleSelect.setCurRole(0);
-    this.observe(Dress.ins().postDressInfo, this.edata);
-    this.observe(Dress.ins().postDressInfo, this.Demomc);
-    this.observe(GameLogic.ins().postSubRoleChange, this.getDressInfo);
-    this.observe(UserBag.ins().postItemAdd, this.edata);
-    this.observe(UserBag.ins().postItemDel, this.edata);
-    this.observe(UserBag.ins().postItemCountChange, this.edata);
-    this.addTouchEvent(this.item0, this.closeMenu);
-    this.addTouchEvent(this.item1, this.closeMenu);
-    this.addTouchEvent(this.item2, this.closeMenu);
-    this.addTouchEvent(this.item3, this.closeMenu);
-    this.addTouchEvent(this.item4, this.closeMenu);
-    this.addTouchEvent(this.item5, this.closeMenu);
-    this.addTouchEvent(this.item6, this.closeMenu);
-    this.addTouchEvent(this.item7, this.closeMenu);
-    this.addTouchEvent(this.Upbntss, this.closeMenu);
-    this.ringEff = null;
-    this.ringEff1 = null;
-    this._pY = -55533;
-    this._curRole = 0;
-    this.item0.Selecte.visible = 1;
-    this.edata();
-    this.Demomc();
-  };
-  _0x2f12ed.prototype.sonChange = function (_0x12c6ae) {
-    this._curRole = this.roleSelect.getCurRole();
-    this.edata();
-    this.Demomc();
-  };
-  _0x2f12ed.prototype.getDressInfo = function () {
-    Dress.ins().sendDressInfoReq();
-  };
-  _0x2f12ed.prototype.Demomc = function () {
-    this._pY = -55533;
-    this.mcefat();
-    var _0x11f419 = this.Viewdata();
-    _0x11f419 < 1 ? this._Hover = [FilterUtil.grayFilter] : this._Hover = null;
-    this.JIhuoeff();
-  };
-  _0x2f12ed.prototype.JIhuoeff = function () {
-    this._pY = 450;
-    var _0x419613 = {
-      loop: false
-    };
-    var _0x4b1934 = {
-      scaleX: 0.5,
-      scaleY: 0.5
-    };
-    var _0x17233f = {
-      scaleX: 0.8,
-      scaleY: 0.8
-    };
-    var _0x503f18 = {
-      scaleX: 1,
-      scaleY: 1
-    };
-    var _0x3fddbc = {
-      scaleX: 1.3,
-      scaleY: 1.3
-    };
-    var _0x164def = {
-      visible: 0
-    };
-    this.ringEff || (this.ringEff = new MovieClip());
-    this.ringEff.scaleX = 0.3;
-    this.ringEff.scaleY = 0.3;
-    this.ringEff.x = 290;
-    this.ringEff.y = 350;
-    this.shenshoueff.parent.addChild(this.ringEff);
-    this.ringEff.playFile(RES_DIR_EFF + "", -1);
-    this.ringEff.filters = this._Hover;
-    egret.Tween.removeTweens(this.ringEff);
-    egret.Tween.get(this.ringEff, _0x419613).to(_0x4b1934, 1000).to(_0x17233f, 1000).to(_0x503f18, 1000).to(_0x3fddbc, 1000).to(_0x164def, 1000);
-    egret.setTimeout(this.mcefat, this, 0);
-  };
-  _0x2f12ed.prototype.mcefat = function () {
-    this.ringEff1 || (this.ringEff1 = new MovieClip());
-    this.ringEff1.scaleX = -1;
-    this.ringEff1.scaleY = 1;
-    this.ringEff1.x = 300;
-    this.ringEff1.y = 200;
-    this.shenshoueff1.parent.addChild(this.ringEff1);
-    this.ringEff1.playFile(RES_DIR_EFF + "shengzhutx02", -1);
-    this.ringEff1.filters = this._Hover;
-  };
-  _0x2f12ed.prototype.edata = function (_0x1a8f68) {
-    var _0x213db1 = this.Listdate();
-    var _0x4b2c9f = ConfgMgr.bgnbaseconfig;
-    var _0x2458d8 = 0;
-    var _0x420934 = ConfgMgr.bgnsjconfig;
-    this._maxlv = _0x4b2c9f.maxlv;
-    this._openzs = _0x4b2c9f.zslv;
-    this._openday = _0x4b2c9f.openday;
-    for (x = 0; x < _0x213db1.length; x++) {
-      var _0x3914a3 = _0x213db1[x].lv;
-      this["item" + x].Icon.source = _0x4b2c9f.itemicon[x] + "_png";
-      this["item" + x].lvNum.text = _0x3914a3;
-      this["BedEff" + x] || (this["BedEff" + x] = new MovieClip());
-      this["BedEff" + x].scaleX = this["BedEff" + x].scaleY = 0.9;
-      if (_0x3914a3 < 1) {
-        this["BedEff" + x].x = -33335;
-        this["BedEff" + x].y = -33336;
-        this["item" + x].Icon.filters = [FilterUtil.grayFilter];
-      } else {
-        {
-          this["BedEff" + x].x = -40;
-          this["BedEff" + x].y = -40;
-          this["item" + x].Icon.filters = null;
-          var _0x2458d8 = parseInt(_0x2458d8) + UserBag.getAttrPower(AttributeData.transformAttr(_0x420934[x][_0x3914a3].attr));
-        }
-      }
-      this["item" + x].klmaceff.parent.addChild(this["BedEff" + x]);
-      this["BedEff" + x].playFile(RES_DIR_EFF + "shengzhujheff", -1);
-      if (x == this._indexid) {
-        {
-          this._lv = _0x213db1[x].lv;
-          this._id = _0x213db1[x].id;
-          if (this._lv < this._maxlv) {
-            var _0x50a54a = ConfgMgr.bgnsjconfig[x];
-            if (this._lv < 1) {
-              {
-                var _0x1e7f25 = ConfgMgr.bgnsjconfig[x][1];
-                this._item = _0x1e7f25.itemid;
-                this._count = _0x1e7f25.count;
-                this._num = UserBag.ins().getBagGoodsCountById(0, this._item);
-                this.curAttr0.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x4b2c9f.attr), 0, 1, ": ");
-                this.curAttr1.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x1e7f25.attr), 0, 1, ": ");
-                this.itemicon.source = ConfgMgr.ItemConfig[this._item].icon + "_png";
-                this.itemname.text = ConfgMgr.ItemConfig[this._item].name + "(" + this._num + "/" + this._count + ")";
-                this.maxbox1.visible = 1;
-                this.maxbox2.visible = 0;
-              }
-            } else {
-              {
-                var _0x1e7f25 = ConfgMgr.bgnsjconfig[x][parseInt(this._lv) + 1];
-                this._item = _0x1e7f25.itemid;
-                this._count = _0x1e7f25.count;
-                this._num = UserBag.ins().getBagGoodsCountById(0, this._item);
-                this.curAttr0.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x50a54a[this._lv].attr), 0, 1, ": ");
-                this.curAttr1.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x1e7f25.attr), 0, 1, ": ");
-                this.itemicon.source = ConfgMgr.ItemConfig[this._item].icon + "_png";
-                this.itemname.text = ConfgMgr.ItemConfig[this._item].name + "(" + this._num + "/" + this._count + ")";
-                this.maxbox1.visible = 1;
-                this.maxbox2.visible = 0;
-              }
-            }
-          } else {
-            var _0x1e7f25 = ConfgMgr.bgnsjconfig[x][this._maxlv];
-            this.maxbox1.visible = 0;
-            this.maxbox2.visible = 1;
-            this.curAttr2.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x1e7f25.attr), 0, 1, ": ");
-          }
-        }
-      }
-    }
-    this.powerPanel.setPower(_0x2458d8);
-  };
-  _0x2f12ed.prototype.Viewdata = function (_0x38d0b5) {
-    var _0x5935be = this.Listdate();
-    for (x = 0; x < _0x5935be.length; x++) {
-      if (_0x5935be[x].lv < 1) {
-        {
-          return 0;
-          break;
-        }
-      }
-    }
-    return 1;
-  };
-  _0x2f12ed.prototype.Listdate = function () {
-    {
-      this.curRole = this.roleSelect.getCurRole();
-      var _0x1293ac = Dress.ins();
-      this.listInfo = [];
-      for (var _0x2f806a in ConfgMgr.bgnjhconfig) if (SubRoles.ins().getSubRoleByIndex(this.curRole).job == ConfgMgr.bgnjhconfig[_0x2f806a].roletype) {
-        var _0x5da26d = new DressItemInfo();
-        var _0x1a2aa4 = ConfgMgr.bgnjhconfig[_0x2f806a];
-        var _0x2c9114 = _0x1a2aa4.id;
-        _0x5da26d.lv = 0;
-        _0x5da26d.id = _0x2c9114;
-        _0x5da26d.job = _0x1a2aa4.roletype;
-        _0x1293ac.timeInfo[_0x2c9114] && (_0x5da26d.timer = _0x1293ac.timeInfo[_0x2c9114].invalidtime, _0x5da26d.lv = _0x1293ac.timeInfo[_0x2c9114].lv);
-        this.listInfo.push(_0x5da26d);
-      }
-      return this.listInfo;
-    }
-  };
-  _0x2f12ed.prototype.closeMenu = function (_0x2f5380) {
-    switch (_0x2f5380.currentTarget) {
-      case this.item0:
-        this.ViewSelect(0);
-        break;
-      case this.item1:
-        this.ViewSelect(1);
-        break;
-      case this.item2:
-        this.ViewSelect(2);
-        break;
-      case this.item3:
-        this.ViewSelect(3);
-        break;
-      case this.item4:
-        this.ViewSelect(4);
-        break;
-      case this.item5:
-        this.ViewSelect(5);
-        break;
-      case this.item6:
-        this.ViewSelect(6);
-        break;
-      case this.item7:
-        this.ViewSelect(7);
-        break;
-      case this.Upbntss:
-        if (UserZs.ins().lv < this._openzs) {
-          return void UserTips.ins().showTips("|C:0xf3311e&T:转生等级达" + this._openzs + "开启|");
-        }
-        if (GameServer.serverOpenDay + 1 < this._openday) {
-          return void UserTips.ins().showTips("|C:0xf3311e&T:开服" + this._openday + "开启|");
-        }
-        if (this._num < this._count) {
-          void UserTips.ins().showTips("|C:0xf3311e&T:所需物品道具不足！！！|");
-          return SoundManager.ins().playEffect("wupindaojubuzubgm");
-        }
-        if (this._lv >= this._maxlv) {
-          return void UserTips.ins().showTips("|C:0xf3311e&T:满阶|");
-        }
-        if (this._lv < 1) {
-          {
-            Dress.ins().JiezhikongjianUserReq(this._id, 6);
-          }
-        } else {
-          Dress.ins().JiezhikongjianLevelUp(this._id);
-        }
-    }
-  };
-  _0x2f12ed.prototype.ViewSelect = function (_0x2fe406) {
-    for (x = 0; x < 8; x++) {
-      _0x2fe406 == x ? this["item" + x].Selecte.visible = 1 : this["item" + x].Selecte.visible = 0;
-    }
-    this._indexid = _0x2fe406;
-    this.edata();
-  };
-  _0x2f12ed.prototype.closeMenus = function (_0xa0b10) {
-    ViewManager.ins().close(this);
-    SoundManager.ins().playEffect(SoundUtil.WINDOW);
-  };
-  return _0x2f12ed;
-}(BaseEuiView);
-__reflect(anewxgnb.prototype, "anewxgnb");
-ViewManager.ins().reg(anewxgnb, LayerManager.UI_Main);
-var anewxgnc = function (_0x4666f8) {
-  function _0x1f88e7() {
-    var _0x49e4b3 = _0x4666f8.call(this) || this;
-    _0x49e4b3._cost = 0;
-    _0x49e4b3.isTopLevel = true;
-    _0x49e4b3.skinName = "<?xml version='1.0' encoding='utf-8'?> <e:Skin class=\"newxgnc\" width=\"580\" height=\"930\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:w=\"http://ns.egret.com/wing\" xmlns:ns1=\"*\" xmlns:euiextension=\"euiextension.*\" > <e:Rect width=\"600\" height=\"930\" horizontalCenter=\"0\" fillAlpha=\"1\"/> <e:Group left=\"0\" right=\"0\" top=\"0\" bottom=\"-4\"> <e:Image top=\"40\" left=\"0\" source=\"tongyongmianbanbg\" scale9Grid=\"19,12,14,25\" right=\"0\" bottom=\"120\"/> <e:Group top=\"8\" left=\"8\" right=\"8\" bottom=\"8\"> <e:Rect left=\"0\" right=\"0\" bottom=\"0\" top=\"0\" fillAlpha=\"0\"/> <e:Image source=\"szbg03\" left=\"0\" right=\"0\" height=\"554\" verticalCenter=\"-50\"/> <e:Group left=\"0\" right=\"0\" height=\"554\" verticalCenter=\"-50\"> <e:Image source=\"\" horizontalCenter=\"0\" id=\"shenshoueff\" y=\"85\" scaleX=\"0.9\" scaleY=\"0.9\"/> <e:Image source=\"\" horizontalCenter=\"0\" id=\"shenshoueff1\" y=\"85\" scaleX=\"0.9\" scaleY=\"0.9\"/> </e:Group> <e:Group left=\"0\" right=\"0\" height=\"554\" verticalCenter=\"-50\">\n<ns1:BaseComponent id=\"item0\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" x=\"25\" y=\"150\"/>\n<ns1:BaseComponent id=\"item1\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" x=\"25\" y=\"250\"/>\n<ns1:BaseComponent id=\"item2\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" x=\"25\" y=\"350\"/>\n<ns1:BaseComponent id=\"item3\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" x=\"25\" y=\"450\"/>\n<ns1:BaseComponent id=\"item4\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" right=\"25\" y=\"150\"/>\n<ns1:BaseComponent id=\"item5\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" right=\"25\" y=\"250\"/>\n<ns1:BaseComponent id=\"item6\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" right=\"25\" y=\"350\"/>\n<ns1:BaseComponent id=\"item7\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" right=\"25\" y=\"450\"/> </e:Group> <e:Group id=\"maxbox1\" left=\"-2\" right=\"-5\" bottom=\"118\" height=\"130\"> <e:Image source=\"attrnewbg_png\" left=\"0\" right=\"0\" height=\"130\"/> <e:Label id=\"curAttr0\" text=\"生命：1008666\\n攻击：100866\\n物防：26666\\n魔防：26666\" y=\"25\" size=\"15\" textColor=\"0x9f946d\" lineSpacing=\"6\" width=\"148\" x=\"30\"/> <e:Label id=\"curAttr1\" text=\"生命：1008666\\n攻击：100866\\n物防：26666\\n魔防：26666\" y=\"25\" size=\"15\" textColor=\"0xcdea2e\" lineSpacing=\"6\" width=\"148\" x=\"200\"/> <e:Group horizontalCenter=\"165\" y=\"10\"> <e:Image source=\"2610000_png\" width=\"30\" height=\"30\" id=\"itemicon\" y=\"0\"/> <e:Label id=\"itemname\" text=\"凡·离卦（10/10）\" y=\"10\" textColor=\"0xff0000\" size=\"15\" x=\"40\" scaleX=\"1\" scaleY=\"1\"/> <e:Button id=\"Upbntss\" label=\"提升套装\" skinName=\"newBtn1Skin\" width=\"120\" height=\"50\" right=\"30\" y=\"35\" scaleX=\"1\" scaleY=\"1\"/> </e:Group> </e:Group> <e:Group id=\"maxbox2\" left=\"-2\" right=\"-5\" bottom=\"118\" height=\"130\" visible=\"false\"> <e:Image source=\"attrnewbg_png\" left=\"0\" right=\"0\" height=\"130\"/> <e:Label id=\"curAttr2\" text=\"生  命：1008666\\n攻  击：100866\\n物  防：26666\\n魔  防：26666\" y=\"25\" size=\"15\" textColor=\"0x9f946d\" lineSpacing=\"6\" width=\"148\" horizontalCenter=\"0\"/> </e:Group> </e:Group> <ns1:BaseComponent id=\"powerPanel\" skinName=\"PowerPanelSkin\" className=\"PowerPanel\" y=\"140\" horizontalCenter=\"10\"/> </e:Group>\n<ns1:BaseComponent id=\"roleSelect\" y=\"0\" skinName=\"RoleSelectPanelSkin\" className=\"RoleSelectPanel\"  width=\"580\" horizontalCenter=\"0\" /> <e:Button id=\"closeBtn\" label=\"按钮\" skinName=\"Btn0Skin\" icon=\"chatclose\" y=\"46\" scaleX=\"0.8\" scaleY=\"0.8\" right=\"-5\" /> <e:Image source=\"title_qinglongshengzhuang_png\" x=\"65\" y=\"11\"/> </e:Skin>";
-    _0x49e4b3._indexid = 0;
-    return _0x49e4b3;
-  }
-  __extends(_0x1f88e7, _0x4666f8);
-  _0x1f88e7.prototype.open = function () {
-    this.addTouchEvent(this.closeBtn, this.closeMenus);
-    this.roleSelect.setCurRole(this.curRole);
-    this.addChangeEvent(this.roleSelect, this.sonChange);
-    this.roleSelect.parent.touchEnabled = true;
-    SubRoles.ins().getSubRoleByIndex(0);
-    this.roleSelect.setCurRole(0);
-    this.observe(Dress.ins().postDressInfo, this.edata);
-    this.observe(Dress.ins().postDressInfo, this.Demomc);
-    this.observe(GameLogic.ins().postSubRoleChange, this.getDressInfo);
-    this.observe(UserBag.ins().postItemAdd, this.edata);
-    this.observe(UserBag.ins().postItemDel, this.edata);
-    this.observe(UserBag.ins().postItemCountChange, this.edata);
-    this.addTouchEvent(this.item0, this.closeMenu);
-    this.addTouchEvent(this.item1, this.closeMenu);
-    this.addTouchEvent(this.item2, this.closeMenu);
-    this.addTouchEvent(this.item3, this.closeMenu);
-    this.addTouchEvent(this.item4, this.closeMenu);
-    this.addTouchEvent(this.item5, this.closeMenu);
-    this.addTouchEvent(this.item6, this.closeMenu);
-    this.addTouchEvent(this.item7, this.closeMenu);
-    this.addTouchEvent(this.Upbntss, this.closeMenu);
-    this.ringEff = null;
-    this.ringEff1 = null;
-    this._pY = -55533;
-    this._curRole = 0;
-    this.item0.Selecte.visible = 1;
-    this.edata();
-    this.Demomc();
-  };
-  _0x1f88e7.prototype.sonChange = function (_0x46b130) {
-    this._curRole = this.roleSelect.getCurRole();
-    this.edata();
-    this.Demomc();
-  };
-  _0x1f88e7.prototype.getDressInfo = function () {
-    {
-      Dress.ins().sendDressInfoReq();
-    }
-  };
-  _0x1f88e7.prototype.Demomc = function () {
-    {
-      this._pY = -55533;
-      this.mcefat();
-      var _0x471d02 = this.Viewdata();
-      _0x471d02 < 1 ? this._Hover = [FilterUtil.grayFilter] : this._Hover = null;
-      this.JIhuoeff();
-    }
-  };
-  _0x1f88e7.prototype.JIhuoeff = function () {
-    {
-      this._pY = 450;
-      var _0xb0ffe2 = {
-        loop: false
-      };
-      var _0x415ddc = {
-        scaleX: 0.5,
-        scaleY: 0.5
-      };
-      var _0x4d5901 = {
-        scaleX: 0.8,
-        scaleY: 0.8
-      };
-      var _0x4be907 = {
-        scaleX: 1,
-        scaleY: 1
-      };
-      var _0x327953 = {
-        scaleX: 1.3,
-        scaleY: 1.3
-      };
-      var _0x1b1e5a = {
-        visible: 0
-      };
-      this.ringEff || (this.ringEff = new MovieClip());
-      this.ringEff.scaleX = 0.3;
-      this.ringEff.scaleY = 0.3;
-      this.ringEff.x = 290;
-      this.ringEff.y = 350;
-      this.shenshoueff.parent.addChild(this.ringEff);
-      this.ringEff.playFile(RES_DIR_EFF + "", -1);
-      this.ringEff.filters = this._Hover;
-      egret.Tween.removeTweens(this.ringEff);
-      egret.Tween.get(this.ringEff, _0xb0ffe2).to(_0x415ddc, 1000).to(_0x4d5901, 1000).to(_0x4be907, 1000).to(_0x327953, 1000).to(_0x1b1e5a, 1000);
-      egret.setTimeout(this.mcefat, this, 0);
-    }
-  };
-  _0x1f88e7.prototype.mcefat = function () {
-    this.ringEff1 || (this.ringEff1 = new MovieClip());
-    this.ringEff1.scaleX = -1;
-    this.ringEff1.scaleY = 1;
-    this.ringEff1.x = 300;
-    this.ringEff1.y = 200;
-    this.shenshoueff1.parent.addChild(this.ringEff1);
-    this.ringEff1.playFile(RES_DIR_EFF + "shengzhutx03", -1);
-    this.ringEff1.filters = this._Hover;
-  };
-  _0x1f88e7.prototype.edata = function (_0x299a4e) {
-    var _0x516ee2 = this.Listdate();
-    var _0x17dc86 = ConfgMgr.cgnbaseconfig;
-    var _0x1da513 = 0;
-    var _0x459a71 = ConfgMgr.cgnsjconfig;
-    this._maxlv = _0x17dc86.maxlv;
-    this._openzs = _0x17dc86.zslv;
-    this._openday = _0x17dc86.openday;
-    for (x = 0; x < _0x516ee2.length; x++) {
-      var _0x381645 = _0x516ee2[x].lv;
-      this["item" + x].Icon.source = _0x17dc86.itemicon[x] + "_png";
-      this["item" + x].lvNum.text = _0x381645;
-      this["BedEff" + x] || (this["BedEff" + x] = new MovieClip());
-      this["BedEff" + x].scaleX = this["BedEff" + x].scaleY = 0.9;
-      if (_0x381645 < 1) {
-        this["BedEff" + x].x = -33335;
-        this["BedEff" + x].y = -33336;
-        this["item" + x].Icon.filters = [FilterUtil.grayFilter];
-      } else {
-        {
-          this["BedEff" + x].x = -40;
-          this["BedEff" + x].y = -40;
-          this["item" + x].Icon.filters = null;
-          var _0x1da513 = parseInt(_0x1da513) + UserBag.getAttrPower(AttributeData.transformAttr(_0x459a71[x][_0x381645].attr));
-        }
-      }
-      this["item" + x].klmaceff.parent.addChild(this["BedEff" + x]);
-      this["BedEff" + x].playFile(RES_DIR_EFF + "shengzhujheff", -1);
-      if (x == this._indexid) {
-        this._lv = _0x516ee2[x].lv;
-        this._id = _0x516ee2[x].id;
-        if (this._lv < this._maxlv) {
-          var _0x316f3b = ConfgMgr.cgnsjconfig[x];
-          if (this._lv < 1) {
-            {
-              var _0x533a8c = ConfgMgr.cgnsjconfig[x][1];
-              this._item = _0x533a8c.itemid;
-              this._count = _0x533a8c.count;
-              this._num = UserBag.ins().getBagGoodsCountById(0, this._item);
-              this.curAttr0.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x17dc86.attr), 0, 1, ": ");
-              this.curAttr1.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x533a8c.attr), 0, 1, ": ");
-              this.itemicon.source = ConfgMgr.ItemConfig[this._item].icon + "_png";
-              this.itemname.text = ConfgMgr.ItemConfig[this._item].name + "(" + this._num + "/" + this._count + ")";
-              this.maxbox1.visible = 1;
-              this.maxbox2.visible = 0;
-            }
-          } else {
-            {
-              var _0x533a8c = ConfgMgr.cgnsjconfig[x][parseInt(this._lv) + 1];
-              this._item = _0x533a8c.itemid;
-              this._count = _0x533a8c.count;
-              this._num = UserBag.ins().getBagGoodsCountById(0, this._item);
-              this.curAttr0.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x316f3b[this._lv].attr), 0, 1, ": ");
-              this.curAttr1.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x533a8c.attr), 0, 1, ": ");
-              this.itemicon.source = ConfgMgr.ItemConfig[this._item].icon + "_png";
-              this.itemname.text = ConfgMgr.ItemConfig[this._item].name + "(" + this._num + "/" + this._count + ")";
-              this.maxbox1.visible = 1;
-              this.maxbox2.visible = 0;
-            }
-          }
-        } else {
-          {
-            var _0x533a8c = ConfgMgr.cgnsjconfig[x][this._maxlv];
-            this.maxbox1.visible = 0;
-            this.maxbox2.visible = 1;
-            this.curAttr2.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x533a8c.attr), 0, 1, ": ");
-          }
-        }
-      }
-    }
-    this.powerPanel.setPower(_0x1da513);
-  };
-  _0x1f88e7.prototype.Viewdata = function (_0x419518) {
-    var _0x12ed28 = this.Listdate();
-    for (x = 0; x < _0x12ed28.length; x++) {
-      if (_0x12ed28[x].lv < 1) {
-        {
-          return 0;
-          break;
-        }
-      }
-    }
-    return 1;
-  };
-  _0x1f88e7.prototype.Listdate = function () {
-    this.curRole = this.roleSelect.getCurRole();
-    var _0x1e4699 = Dress.ins();
-    this.listInfo = [];
-    for (var _0x130bb1 in ConfgMgr.cgnjhconfig) if (SubRoles.ins().getSubRoleByIndex(this.curRole).job == ConfgMgr.cgnjhconfig[_0x130bb1].roletype) {
-      {
-        var _0x1c7a75 = new DressItemInfo();
-        var _0x368188 = ConfgMgr.cgnjhconfig[_0x130bb1];
-        var _0x1a3a77 = _0x368188.id;
-        _0x1c7a75.lv = 0;
-        _0x1c7a75.id = _0x1a3a77;
-        _0x1c7a75.job = _0x368188.roletype;
-        _0x1e4699.timeInfo[_0x1a3a77] && (_0x1c7a75.timer = _0x1e4699.timeInfo[_0x1a3a77].invalidtime, _0x1c7a75.lv = _0x1e4699.timeInfo[_0x1a3a77].lv);
-        this.listInfo.push(_0x1c7a75);
-      }
-    }
-    return this.listInfo;
-  };
-  _0x1f88e7.prototype.closeMenu = function (_0x19e64f) {
-    {
-      switch (_0x19e64f.currentTarget) {
+      switch (_0x14b872.currentTarget) {
         case this.item0:
-          this.ViewSelect(0);
+          this._indexid = 0;
+          this.edata();
           break;
         case this.item1:
-          this.ViewSelect(1);
+          this._indexid = 1;
+          this.edata();
           break;
         case this.item2:
-          this.ViewSelect(2);
+          this._indexid = 2;
+          this.edata();
           break;
         case this.item3:
-          this.ViewSelect(3);
-          break;
-        case this.item4:
-          this.ViewSelect(4);
-          break;
-        case this.item5:
-          this.ViewSelect(5);
+          this._indexid = 3;
+          this.edata();
           break;
         case this.item6:
-          this.ViewSelect(6);
+          this._indexid = 6;
+          this.edata();
           break;
         case this.item7:
-          this.ViewSelect(7);
-          break;
-        case this.Upbntss:
-          if (UserZs.ins().lv < this._openzs) {
-            return void UserTips.ins().showTips("|C:0xf3311e&T:转生等级达" + this._openzs + "开启|");
-          }
-          if (GameServer.serverOpenDay + 1 < this._openday) {
-            return void UserTips.ins().showTips("|C:0xf3311e&T:开服" + this._openday + "开启|");
-          }
-          if (this._num < this._count) {
-            void UserTips.ins().showTips("|C:0xf3311e&T:所需物品道具不足！！！|");
-            return SoundManager.ins().playEffect("wupindaojubuzubgm");
-          }
-          if (this._lv >= this._maxlv) {
-            return void UserTips.ins().showTips("|C:0xf3311e&T:满阶|");
-          }
-          this._lv < 1 ? Dress.ins().JiezhikongjianUserReq(this._id, 6) : Dress.ins().JiezhikongjianLevelUp(this._id);
-      }
-    }
-  };
-  _0x1f88e7.prototype.ViewSelect = function (_0x2e0bf1) {
-    for (x = 0; x < 8; x++) {
-      {
-        if (_0x2e0bf1 == x) {
-          {
-            this["item" + x].Selecte.visible = 1;
-          }
-        } else {
-          {
-            this["item" + x].Selecte.visible = 0;
-          }
-        }
-      }
-    }
-    this._indexid = _0x2e0bf1;
-    this.edata();
-  };
-  _0x1f88e7.prototype.closeMenus = function (_0x18b16c) {
-    ViewManager.ins().close(this);
-    SoundManager.ins().playEffect(SoundUtil.WINDOW);
-  };
-  return _0x1f88e7;
-}(BaseEuiView);
-__reflect(anewxgnc.prototype, "anewxgnc");
-ViewManager.ins().reg(anewxgnc, LayerManager.UI_Main);
-var anewxgnd = function (_0x273309) {
-  function _0x20a350() {
-    var _0x7c6457 = _0x273309.call(this) || this;
-    _0x7c6457._cost = 0;
-    _0x7c6457.isTopLevel = true;
-    _0x7c6457.skinName = "<?xml version='1.0' encoding='utf-8'?> <e:Skin class=\"newxgnd\" width=\"580\" height=\"930\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:w=\"http://ns.egret.com/wing\" xmlns:ns1=\"*\" xmlns:euiextension=\"euiextension.*\" > <e:Rect width=\"600\" height=\"930\" horizontalCenter=\"0\" fillAlpha=\"1\"/> <e:Group left=\"0\" right=\"0\" top=\"0\" bottom=\"-4\"> <e:Image top=\"40\" left=\"0\" source=\"tongyongmianbanbg\" scale9Grid=\"19,12,14,25\" right=\"0\" bottom=\"120\"/> <e:Group top=\"8\" left=\"8\" right=\"8\" bottom=\"8\"> <e:Rect left=\"0\" right=\"0\" bottom=\"0\" top=\"0\" fillAlpha=\"0\"/> <e:Image source=\"szbg04\" left=\"0\" right=\"0\" height=\"554\" verticalCenter=\"-50\"/> <e:Group left=\"0\" right=\"0\" height=\"554\" verticalCenter=\"-50\"> <e:Image source=\"\" horizontalCenter=\"0\" id=\"shenshoueff\" y=\"85\" scaleX=\"0.9\" scaleY=\"0.9\"/> <e:Image source=\"\" horizontalCenter=\"0\" id=\"shenshoueff1\" y=\"85\" scaleX=\"0.9\" scaleY=\"0.9\"/> </e:Group> <e:Group left=\"0\" right=\"0\" height=\"554\" verticalCenter=\"-50\">\n<ns1:BaseComponent id=\"item0\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" x=\"25\" y=\"150\"/>\n<ns1:BaseComponent id=\"item1\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" x=\"25\" y=\"250\"/>\n<ns1:BaseComponent id=\"item2\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" x=\"25\" y=\"350\"/>\n<ns1:BaseComponent id=\"item3\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" x=\"25\" y=\"450\"/>\n<ns1:BaseComponent id=\"item4\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" right=\"25\" y=\"150\"/>\n<ns1:BaseComponent id=\"item5\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" right=\"25\" y=\"250\"/>\n<ns1:BaseComponent id=\"item6\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" right=\"25\" y=\"350\"/>\n<ns1:BaseComponent id=\"item7\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" right=\"25\" y=\"450\"/> </e:Group> <e:Group id=\"maxbox1\" left=\"-2\" right=\"-5\" bottom=\"118\" height=\"130\"> <e:Image source=\"attrnewbg_png\" left=\"0\" right=\"0\" height=\"130\"/> <e:Label id=\"curAttr0\" text=\"生命：1008666\\n攻击：100866\\n物防：26666\\n魔防：26666\" y=\"25\" size=\"15\" textColor=\"0x9f946d\" lineSpacing=\"6\" width=\"148\" x=\"30\"/> <e:Label id=\"curAttr1\" text=\"生命：1008666\\n攻击：100866\\n物防：26666\\n魔防：26666\" y=\"25\" size=\"15\" textColor=\"0xcdea2e\" lineSpacing=\"6\" width=\"148\" x=\"200\"/> <e:Group horizontalCenter=\"165\" y=\"10\"> <e:Image source=\"2610000_png\" width=\"30\" height=\"30\" id=\"itemicon\" y=\"0\"/> <e:Label id=\"itemname\" text=\"凡·离卦（10/10）\" y=\"10\" textColor=\"0xff0000\" size=\"15\" x=\"40\" scaleX=\"1\" scaleY=\"1\"/> <e:Button id=\"Upbntss\" label=\"提升套装\" skinName=\"newBtn1Skin\" width=\"120\" height=\"50\" right=\"30\" y=\"35\" scaleX=\"1\" scaleY=\"1\"/> </e:Group> </e:Group> <e:Group id=\"maxbox2\" left=\"-2\" right=\"-5\" bottom=\"118\" height=\"130\" visible=\"false\"> <e:Image source=\"attrnewbg_png\" left=\"0\" right=\"0\" height=\"130\"/> <e:Label id=\"curAttr2\" text=\"生  命：1008666\\n攻  击：100866\\n物  防：26666\\n魔  防：26666\" y=\"25\" size=\"15\" textColor=\"0x9f946d\" lineSpacing=\"6\" width=\"148\" horizontalCenter=\"0\"/> </e:Group> </e:Group> <ns1:BaseComponent id=\"powerPanel\" skinName=\"PowerPanelSkin\" className=\"PowerPanel\" y=\"140\" horizontalCenter=\"10\"/> </e:Group>\n<ns1:BaseComponent id=\"roleSelect\" y=\"0\" skinName=\"RoleSelectPanelSkin\" className=\"RoleSelectPanel\"  width=\"580\" horizontalCenter=\"0\" /> <e:Button id=\"closeBtn\" label=\"按钮\" skinName=\"Btn0Skin\" icon=\"chatclose\" y=\"46\" scaleX=\"0.8\" scaleY=\"0.8\" right=\"-5\" /> <e:Image source=\"title_qinglongshengzhuang_png\" x=\"65\" y=\"11\"/> </e:Skin>";
-    _0x7c6457._indexid = 0;
-    return _0x7c6457;
-  }
-  __extends(_0x20a350, _0x273309);
-  _0x20a350.prototype.open = function () {
-    this.addTouchEvent(this.closeBtn, this.closeMenus);
-    this.roleSelect.setCurRole(this.curRole);
-    this.addChangeEvent(this.roleSelect, this.sonChange);
-    this.roleSelect.parent.touchEnabled = true;
-    SubRoles.ins().getSubRoleByIndex(0);
-    this.roleSelect.setCurRole(0);
-    this.observe(Dress.ins().postDressInfo, this.edata);
-    this.observe(Dress.ins().postDressInfo, this.Demomc);
-    this.observe(GameLogic.ins().postSubRoleChange, this.getDressInfo);
-    this.observe(UserBag.ins().postItemAdd, this.edata);
-    this.observe(UserBag.ins().postItemDel, this.edata);
-    this.observe(UserBag.ins().postItemCountChange, this.edata);
-    this.addTouchEvent(this.item0, this.closeMenu);
-    this.addTouchEvent(this.item1, this.closeMenu);
-    this.addTouchEvent(this.item2, this.closeMenu);
-    this.addTouchEvent(this.item3, this.closeMenu);
-    this.addTouchEvent(this.item4, this.closeMenu);
-    this.addTouchEvent(this.item5, this.closeMenu);
-    this.addTouchEvent(this.item6, this.closeMenu);
-    this.addTouchEvent(this.item7, this.closeMenu);
-    this.addTouchEvent(this.Upbntss, this.closeMenu);
-    this.ringEff = null;
-    this.ringEff1 = null;
-    this._pY = -55533;
-    this._curRole = 0;
-    this.item0.Selecte.visible = 1;
-    this.edata();
-    this.Demomc();
-  };
-  _0x20a350.prototype.sonChange = function (_0x17bf69) {
-    this._curRole = this.roleSelect.getCurRole();
-    this.edata();
-    this.Demomc();
-  };
-  _0x20a350.prototype.getDressInfo = function () {
-    Dress.ins().sendDressInfoReq();
-  };
-  _0x20a350.prototype.Demomc = function () {
-    this._pY = -55533;
-    this.mcefat();
-    var _0x11a1e9 = this.Viewdata();
-    if (_0x11a1e9 < 1) {
-      this._Hover = [FilterUtil.grayFilter];
-    } else {
-      {
-        this._Hover = null;
-      }
-    }
-    this.JIhuoeff();
-  };
-  _0x20a350.prototype.JIhuoeff = function () {
-    this._pY = 450;
-    var _0x27b845 = {
-      loop: false
-    };
-    var _0x2ac76a = {
-      scaleX: 0.5,
-      scaleY: 0.5
-    };
-    var _0x4b76fa = {
-      scaleX: 0.8,
-      scaleY: 0.8
-    };
-    var _0x51e86c = {
-      scaleX: 1,
-      scaleY: 1
-    };
-    var _0x49cec4 = {
-      scaleX: 1.3,
-      scaleY: 1.3
-    };
-    var _0x1926f6 = {
-      visible: 0
-    };
-    this.ringEff || (this.ringEff = new MovieClip());
-    this.ringEff.scaleX = 0.3;
-    this.ringEff.scaleY = 0.3;
-    this.ringEff.x = 290;
-    this.ringEff.y = 350;
-    this.shenshoueff.parent.addChild(this.ringEff);
-    this.ringEff.playFile(RES_DIR_EFF + "", -1);
-    this.ringEff.filters = this._Hover;
-    egret.Tween.removeTweens(this.ringEff);
-    egret.Tween.get(this.ringEff, _0x27b845).to(_0x2ac76a, 1000).to(_0x4b76fa, 1000).to(_0x51e86c, 1000).to(_0x49cec4, 1000).to(_0x1926f6, 1000);
-    egret.setTimeout(this.mcefat, this, 0);
-  };
-  _0x20a350.prototype.mcefat = function () {
-    {
-      this.ringEff1 || (this.ringEff1 = new MovieClip());
-      this.ringEff1.scaleX = -1;
-      this.ringEff1.scaleY = 1;
-      this.ringEff1.x = 300;
-      this.ringEff1.y = 200;
-      this.shenshoueff1.parent.addChild(this.ringEff1);
-      this.ringEff1.playFile(RES_DIR_EFF + "shengzhutx04", -1);
-      this.ringEff1.filters = this._Hover;
-    }
-  };
-  _0x20a350.prototype.edata = function (_0x1ceda9) {
-    var _0x60246a = this.Listdate();
-    var _0x5d3056 = ConfgMgr.dgnbaseconfig;
-    var _0x1a8391 = 0;
-    var _0x29c95d = ConfgMgr.dgnsjconfig;
-    this._maxlv = _0x5d3056.maxlv;
-    this._openzs = _0x5d3056.zslv;
-    this._openday = _0x5d3056.openday;
-    for (x = 0; x < _0x60246a.length; x++) {
-      var _0x247c89 = _0x60246a[x].lv;
-      this["item" + x].Icon.source = _0x5d3056.itemicon[x] + "_png";
-      this["item" + x].lvNum.text = _0x247c89;
-      this["BedEff" + x] || (this["BedEff" + x] = new MovieClip());
-      this["BedEff" + x].scaleX = this["BedEff" + x].scaleY = 0.9;
-      if (_0x247c89 < 1) {
-        {
-          this["BedEff" + x].x = -33335;
-          this["BedEff" + x].y = -33336;
-          this["item" + x].Icon.filters = [FilterUtil.grayFilter];
-        }
-      } else {
-        {
-          this["BedEff" + x].x = -40;
-          this["BedEff" + x].y = -40;
-          this["item" + x].Icon.filters = null;
-          var _0x1a8391 = parseInt(_0x1a8391) + UserBag.getAttrPower(AttributeData.transformAttr(_0x29c95d[x][_0x247c89].attr));
-        }
-      }
-      this["item" + x].klmaceff.parent.addChild(this["BedEff" + x]);
-      this["BedEff" + x].playFile(RES_DIR_EFF + "shengzhujheff", -1);
-      if (x == this._indexid) {
-        this._lv = _0x60246a[x].lv;
-        this._id = _0x60246a[x].id;
-        if (this._lv < this._maxlv) {
-          var _0x4c9c20 = ConfgMgr.dgnsjconfig[x];
-          if (this._lv < 1) {
-            var _0x2a31ed = ConfgMgr.dgnsjconfig[x][1];
-            this._item = _0x2a31ed.itemid;
-            this._count = _0x2a31ed.count;
-            this._num = UserBag.ins().getBagGoodsCountById(0, this._item);
-            this.curAttr0.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x5d3056.attr), 0, 1, ": ");
-            this.curAttr1.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x2a31ed.attr), 0, 1, ": ");
-            this.itemicon.source = ConfgMgr.ItemConfig[this._item].icon + "_png";
-            this.itemname.text = ConfgMgr.ItemConfig[this._item].name + "(" + this._num + "/" + this._count + ")";
-            this.maxbox1.visible = 1;
-            this.maxbox2.visible = 0;
-          } else {
-            {
-              var _0x2a31ed = ConfgMgr.dgnsjconfig[x][parseInt(this._lv) + 1];
-              this._item = _0x2a31ed.itemid;
-              this._count = _0x2a31ed.count;
-              this._num = UserBag.ins().getBagGoodsCountById(0, this._item);
-              this.curAttr0.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x4c9c20[this._lv].attr), 0, 1, ": ");
-              this.curAttr1.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x2a31ed.attr), 0, 1, ": ");
-              this.itemicon.source = ConfgMgr.ItemConfig[this._item].icon + "_png";
-              this.itemname.text = ConfgMgr.ItemConfig[this._item].name + "(" + this._num + "/" + this._count + ")";
-              this.maxbox1.visible = 1;
-              this.maxbox2.visible = 0;
-            }
-          }
-        } else {
-          {
-            var _0x2a31ed = ConfgMgr.dgnsjconfig[x][this._maxlv];
-            this.maxbox1.visible = 0;
-            this.maxbox2.visible = 1;
-            this.curAttr2.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x2a31ed.attr), 0, 1, ": ");
-          }
-        }
-      }
-    }
-    this.powerPanel.setPower(_0x1a8391);
-  };
-  _0x20a350.prototype.Viewdata = function (_0x1fcf07) {
-    var _0x5a85cd = this.Listdate();
-    for (x = 0; x < _0x5a85cd.length; x++) {
-      {
-        if (_0x5a85cd[x].lv < 1) {
-          return 0;
-          break;
-        }
-      }
-    }
-    return 1;
-  };
-  _0x20a350.prototype.Listdate = function () {
-    this.curRole = this.roleSelect.getCurRole();
-    var _0x5103a2 = Dress.ins();
-    this.listInfo = [];
-    for (var _0xfdcd54 in ConfgMgr.dgnjhconfig) if (SubRoles.ins().getSubRoleByIndex(this.curRole).job == ConfgMgr.dgnjhconfig[_0xfdcd54].roletype) {
-      var _0x259470 = new DressItemInfo();
-      var _0x4bb074 = ConfgMgr.dgnjhconfig[_0xfdcd54];
-      var _0x353bf1 = _0x4bb074.id;
-      _0x259470.lv = 0;
-      _0x259470.id = _0x353bf1;
-      _0x259470.job = _0x4bb074.roletype;
-      _0x5103a2.timeInfo[_0x353bf1] && (_0x259470.timer = _0x5103a2.timeInfo[_0x353bf1].invalidtime, _0x259470.lv = _0x5103a2.timeInfo[_0x353bf1].lv);
-      this.listInfo.push(_0x259470);
-    }
-    return this.listInfo;
-  };
-  _0x20a350.prototype.closeMenu = function (_0x3512e0) {
-    {
-      switch (_0x3512e0.currentTarget) {
-        case this.item0:
-          this.ViewSelect(0);
-          break;
-        case this.item1:
-          this.ViewSelect(1);
-          break;
-        case this.item2:
-          this.ViewSelect(2);
-          break;
-        case this.item3:
-          this.ViewSelect(3);
+          this._indexid = 7;
+          this.edata();
           break;
         case this.item4:
-          this.ViewSelect(4);
+          this._indexid = 4;
+          this.edata();
           break;
         case this.item5:
-          this.ViewSelect(5);
-          break;
-        case this.item6:
-          this.ViewSelect(6);
-          break;
-        case this.item7:
-          this.ViewSelect(7);
-          break;
-        case this.Upbntss:
-          if (UserZs.ins().lv < this._openzs) {
-            return void UserTips.ins().showTips("|C:0xf3311e&T:转生等级达" + this._openzs + "开启|");
-          }
-          if (GameServer.serverOpenDay + 1 < this._openday) {
-            return void UserTips.ins().showTips("|C:0xf3311e&T:开服" + this._openday + "开启|");
-          }
-          if (this._num < this._count) {
-            void UserTips.ins().showTips("|C:0xf3311e&T:所需物品道具不足！！！|");
-            return SoundManager.ins().playEffect("wupindaojubuzubgm");
-          }
-          if (this._lv >= this._maxlv) {
-            return void UserTips.ins().showTips("|C:0xf3311e&T:满阶|");
-          }
-          this._lv < 1 ? Dress.ins().JiezhikongjianUserReq(this._id, 6) : Dress.ins().JiezhikongjianLevelUp(this._id);
+          this._indexid = 5;
+          this.edata();
       }
     }
   };
-  _0x20a350.prototype.ViewSelect = function (_0x11c2d7) {
-    for (x = 0; x < 8; x++) {
-      _0x11c2d7 == x ? this["item" + x].Selecte.visible = 1 : this["item" + x].Selecte.visible = 0;
-    }
-    this._indexid = _0x11c2d7;
-    this.edata();
-  };
-  _0x20a350.prototype.closeMenus = function (_0x38abc3) {
+  _0x13dbbb.prototype.closeMenus = function (_0x51f84e) {
     ViewManager.ins().close(this);
     SoundManager.ins().playEffect(SoundUtil.WINDOW);
   };
-  return _0x20a350;
-}(BaseEuiView);
-__reflect(anewxgnd.prototype, "anewxgnd");
-ViewManager.ins().reg(anewxgnd, LayerManager.UI_Main);
-var anewxgne = function (_0x485cea) {
-  function _0x4fe402() {
-    var _0x463bdc = _0x485cea.call(this) || this;
-    _0x463bdc._cost = 0;
-    _0x463bdc.isTopLevel = true;
-    _0x463bdc.skinName = "<?xml version='1.0' encoding='utf-8'?> <e:Skin class=\"newxgne\" width=\"580\" height=\"930\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:w=\"http://ns.egret.com/wing\" xmlns:ns1=\"*\" xmlns:euiextension=\"euiextension.*\" > <e:Rect width=\"600\" height=\"930\" horizontalCenter=\"0\" fillAlpha=\"1\"/> <e:Group left=\"0\" right=\"0\" top=\"0\" bottom=\"-4\"> <e:Image top=\"40\" left=\"0\" source=\"tongyongmianbanbg\" scale9Grid=\"19,12,14,25\" right=\"0\" bottom=\"120\"/> <e:Group top=\"8\" left=\"8\" right=\"8\" bottom=\"8\"> <e:Rect left=\"0\" right=\"0\" bottom=\"0\" top=\"0\" fillAlpha=\"0\"/> <e:Image source=\"szbg05\" left=\"0\" right=\"0\" height=\"554\" verticalCenter=\"-50\"/> <e:Group left=\"0\" right=\"0\" height=\"554\" verticalCenter=\"-50\"> <e:Image source=\"\" horizontalCenter=\"0\" id=\"shenshoueff\" y=\"85\" scaleX=\"0.9\" scaleY=\"0.9\"/> <e:Image source=\"\" horizontalCenter=\"0\" id=\"shenshoueff1\" y=\"85\" scaleX=\"0.9\" scaleY=\"0.9\"/> </e:Group> <e:Group left=\"0\" right=\"0\" height=\"554\" verticalCenter=\"-50\">\n<ns1:BaseComponent id=\"item0\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" x=\"25\" y=\"150\"/>\n<ns1:BaseComponent id=\"item1\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" x=\"25\" y=\"250\"/>\n<ns1:BaseComponent id=\"item2\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" x=\"25\" y=\"350\"/>\n<ns1:BaseComponent id=\"item3\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" x=\"25\" y=\"450\"/>\n<ns1:BaseComponent id=\"item4\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" right=\"25\" y=\"150\"/>\n<ns1:BaseComponent id=\"item5\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" right=\"25\" y=\"250\"/>\n<ns1:BaseComponent id=\"item6\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" right=\"25\" y=\"350\"/>\n<ns1:BaseComponent id=\"item7\" width=\"72\" height=\"72\" skinName=\"newshengzhuitemskin\" className=\"yewan2746602832\" right=\"25\" y=\"450\"/> </e:Group> <e:Group id=\"maxbox1\" left=\"-2\" right=\"-5\" bottom=\"118\" height=\"130\"> <e:Image source=\"attrnewbg_png\" left=\"0\" right=\"0\" height=\"130\"/> <e:Label id=\"curAttr0\" text=\"生命：1008666\\n攻击：100866\\n物防：26666\\n魔防：26666\" y=\"25\" size=\"15\" textColor=\"0x9f946d\" lineSpacing=\"6\" width=\"148\" x=\"30\"/> <e:Label id=\"curAttr1\" text=\"生命：1008666\\n攻击：100866\\n物防：26666\\n魔防：26666\" y=\"25\" size=\"15\" textColor=\"0xcdea2e\" lineSpacing=\"6\" width=\"148\" x=\"200\"/> <e:Group horizontalCenter=\"165\" y=\"10\"> <e:Image source=\"2610000_png\" width=\"30\" height=\"30\" id=\"itemicon\" y=\"0\"/> <e:Label id=\"itemname\" text=\"凡·离卦（10/10）\" y=\"10\" textColor=\"0xff0000\" size=\"15\" x=\"40\" scaleX=\"1\" scaleY=\"1\"/> <e:Button id=\"Upbntss\" label=\"提升套装\" skinName=\"newBtn1Skin\" width=\"120\" height=\"50\" right=\"30\" y=\"35\" scaleX=\"1\" scaleY=\"1\"/> </e:Group> </e:Group> <e:Group id=\"maxbox2\" left=\"-2\" right=\"-5\" bottom=\"118\" height=\"130\" visible=\"false\"> <e:Image source=\"attrnewbg_png\" left=\"0\" right=\"0\" height=\"130\"/> <e:Label id=\"curAttr2\" text=\"生  命：1008666\\n攻  击：100866\\n物  防：26666\\n魔  防：26666\" y=\"25\" size=\"15\" textColor=\"0x9f946d\" lineSpacing=\"6\" width=\"148\" horizontalCenter=\"0\"/> </e:Group> </e:Group> <ns1:BaseComponent id=\"powerPanel\" skinName=\"PowerPanelSkin\" className=\"PowerPanel\" y=\"140\" horizontalCenter=\"10\"/> </e:Group>\n<ns1:BaseComponent id=\"roleSelect\" y=\"0\" skinName=\"RoleSelectPanelSkin\" className=\"RoleSelectPanel\"  width=\"580\" horizontalCenter=\"0\" /> <e:Button id=\"closeBtn\" label=\"按钮\" skinName=\"Btn0Skin\" icon=\"chatclose\" y=\"46\" scaleX=\"0.8\" scaleY=\"0.8\" right=\"-5\" /> <e:Image source=\"title_qinglongshengzhuang_png\" x=\"65\" y=\"11\"/> </e:Skin>";
-    _0x463bdc._indexid = 0;
-    return _0x463bdc;
-  }
-  __extends(_0x4fe402, _0x485cea);
-  _0x4fe402.prototype.open = function () {
-    this.addTouchEvent(this.closeBtn, this.closeMenus);
-    this.roleSelect.setCurRole(this.curRole);
-    this.addChangeEvent(this.roleSelect, this.sonChange);
-    this.roleSelect.parent.touchEnabled = true;
-    SubRoles.ins().getSubRoleByIndex(0);
-    this.roleSelect.setCurRole(0);
-    this.observe(Dress.ins().postDressInfo, this.edata);
-    this.observe(Dress.ins().postDressInfo, this.Demomc);
-    this.observe(GameLogic.ins().postSubRoleChange, this.getDressInfo);
-    this.observe(UserBag.ins().postItemAdd, this.edata);
-    this.observe(UserBag.ins().postItemDel, this.edata);
-    this.observe(UserBag.ins().postItemCountChange, this.edata);
-    this.addTouchEvent(this.item0, this.closeMenu);
-    this.addTouchEvent(this.item1, this.closeMenu);
-    this.addTouchEvent(this.item2, this.closeMenu);
-    this.addTouchEvent(this.item3, this.closeMenu);
-    this.addTouchEvent(this.item4, this.closeMenu);
-    this.addTouchEvent(this.item5, this.closeMenu);
-    this.addTouchEvent(this.item6, this.closeMenu);
-    this.addTouchEvent(this.item7, this.closeMenu);
-    this.addTouchEvent(this.Upbntss, this.closeMenu);
-    this.ringEff = null;
-    this.ringEff1 = null;
-    this._pY = -55533;
-    this._curRole = 0;
-    this.item0.Selecte.visible = 1;
-    this.edata();
-    this.Demomc();
-  };
-  _0x4fe402.prototype.sonChange = function (_0x3e1e68) {
-    this._curRole = this.roleSelect.getCurRole();
-    this.edata();
-    this.Demomc();
-  };
-  _0x4fe402.prototype.getDressInfo = function () {
-    Dress.ins().sendDressInfoReq();
-  };
-  _0x4fe402.prototype.Demomc = function () {
-    this._pY = -55533;
-    this.mcefat();
-    var _0x5074c3 = this.Viewdata();
-    _0x5074c3 < 1 ? this._Hover = [FilterUtil.grayFilter] : this._Hover = null;
-    this.JIhuoeff();
-  };
-  _0x4fe402.prototype.JIhuoeff = function () {
-    {
-      this._pY = 450;
-      var _0x12988c = {
-        loop: false
-      };
-      var _0x209cde = {
-        scaleX: 0.5,
-        scaleY: 0.5
-      };
-      var _0x261b47 = {
-        scaleX: 0.8,
-        scaleY: 0.8
-      };
-      var _0x221107 = {
-        scaleX: 1,
-        scaleY: 1
-      };
-      var _0x569041 = {
-        scaleX: 1.3,
-        scaleY: 1.3
-      };
-      var _0xb1b661 = {
-        visible: 0
-      };
-      this.ringEff || (this.ringEff = new MovieClip());
-      this.ringEff.scaleX = 0.3;
-      this.ringEff.scaleY = 0.3;
-      this.ringEff.x = 290;
-      this.ringEff.y = 350;
-      this.shenshoueff.parent.addChild(this.ringEff);
-      this.ringEff.playFile(RES_DIR_EFF + "", -1);
-      this.ringEff.filters = this._Hover;
-      egret.Tween.removeTweens(this.ringEff);
-      egret.Tween.get(this.ringEff, _0x12988c).to(_0x209cde, 1000).to(_0x261b47, 1000).to(_0x221107, 1000).to(_0x569041, 1000).to(_0xb1b661, 1000);
-      egret.setTimeout(this.mcefat, this, 0);
-    }
-  };
-  _0x4fe402.prototype.mcefat = function () {
-    this.ringEff1 || (this.ringEff1 = new MovieClip());
-    this.ringEff1.scaleX = -1;
-    this.ringEff1.scaleY = 1;
-    this.ringEff1.x = 300;
-    this.ringEff1.y = 200;
-    this.shenshoueff1.parent.addChild(this.ringEff1);
-    this.ringEff1.playFile(RES_DIR_EFF + "shengzhutx05", -1);
-    this.ringEff1.filters = this._Hover;
-  };
-  _0x4fe402.prototype.edata = function (_0x5c3c35) {
-    var _0x7a095b = this.Listdate();
-    var _0x47a5b9 = ConfgMgr.egnbaseconfig;
-    var _0x5640e1 = 0;
-    var _0x43dfdd = ConfgMgr.egnsjconfig;
-    this._maxlv = _0x47a5b9.maxlv;
-    this._openzs = _0x47a5b9.zslv;
-    this._openday = _0x47a5b9.openday;
-    for (x = 0; x < _0x7a095b.length; x++) {
-      var _0x262728 = _0x7a095b[x].lv;
-      this["item" + x].Icon.source = _0x47a5b9.itemicon[x] + "_png";
-      this["item" + x].lvNum.text = _0x262728;
-      this["BedEff" + x] || (this["BedEff" + x] = new MovieClip());
-      this["BedEff" + x].scaleX = this["BedEff" + x].scaleY = 0.9;
-      if (_0x262728 < 1) {
-        this["BedEff" + x].x = -33335;
-        this["BedEff" + x].y = -33336;
-        this["item" + x].Icon.filters = [FilterUtil.grayFilter];
-      } else {
-        this["BedEff" + x].x = -40;
-        this["BedEff" + x].y = -40;
-        this["item" + x].Icon.filters = null;
-        var _0x5640e1 = parseInt(_0x5640e1) + UserBag.getAttrPower(AttributeData.transformAttr(_0x43dfdd[x][_0x262728].attr));
-      }
-      this["item" + x].klmaceff.parent.addChild(this["BedEff" + x]);
-      this["BedEff" + x].playFile(RES_DIR_EFF + "shengzhujheff", -1);
-      if (x == this._indexid) {
-        {
-          this._lv = _0x7a095b[x].lv;
-          this._id = _0x7a095b[x].id;
-          if (this._lv < this._maxlv) {
-            var _0x1343b2 = ConfgMgr.egnsjconfig[x];
-            if (this._lv < 1) {
-              var _0x3e4524 = ConfgMgr.egnsjconfig[x][1];
-              this._item = _0x3e4524.itemid;
-              this._count = _0x3e4524.count;
-              this._num = UserBag.ins().getBagGoodsCountById(0, this._item);
-              this.curAttr0.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x47a5b9.attr), 0, 1, ": ");
-              this.curAttr1.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x3e4524.attr), 0, 1, ": ");
-              this.itemicon.source = ConfgMgr.ItemConfig[this._item].icon + "_png";
-              this.itemname.text = ConfgMgr.ItemConfig[this._item].name + "(" + this._num + "/" + this._count + ")";
-              this.maxbox1.visible = 1;
-              this.maxbox2.visible = 0;
-            } else {
-              var _0x3e4524 = ConfgMgr.egnsjconfig[x][parseInt(this._lv) + 1];
-              this._item = _0x3e4524.itemid;
-              this._count = _0x3e4524.count;
-              this._num = UserBag.ins().getBagGoodsCountById(0, this._item);
-              this.curAttr0.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x1343b2[this._lv].attr), 0, 1, ": ");
-              this.curAttr1.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x3e4524.attr), 0, 1, ": ");
-              this.itemicon.source = ConfgMgr.ItemConfig[this._item].icon + "_png";
-              this.itemname.text = ConfgMgr.ItemConfig[this._item].name + "(" + this._num + "/" + this._count + ")";
-              this.maxbox1.visible = 1;
-              this.maxbox2.visible = 0;
-            }
-          } else {
-            var _0x3e4524 = ConfgMgr.egnsjconfig[x][this._maxlv];
-            this.maxbox1.visible = 0;
-            this.maxbox2.visible = 1;
-            this.curAttr2.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x3e4524.attr), 0, 1, ": ");
-          }
-        }
-      }
-    }
-    this.powerPanel.setPower(_0x5640e1);
-  };
-  _0x4fe402.prototype.Viewdata = function (_0xcd8db2) {
-    var _0x4f42fe = this.Listdate();
-    for (x = 0; x < _0x4f42fe.length; x++) {
-      {
-        if (_0x4f42fe[x].lv < 1) {
-          {
-            return 0;
-            break;
-          }
-        }
-      }
-    }
-    return 1;
-  };
-  _0x4fe402.prototype.Listdate = function () {
-    {
-      this.curRole = this.roleSelect.getCurRole();
-      var _0x5a418a = Dress.ins();
-      this.listInfo = [];
-      for (var _0x1b3e14 in ConfgMgr.egnjhconfig) if (SubRoles.ins().getSubRoleByIndex(this.curRole).job == ConfgMgr.egnjhconfig[_0x1b3e14].roletype) {
-        {
-          var _0x32185b = new DressItemInfo();
-          var _0x1019a7 = ConfgMgr.egnjhconfig[_0x1b3e14];
-          var _0x591297 = _0x1019a7.id;
-          _0x32185b.lv = 0;
-          _0x32185b.id = _0x591297;
-          _0x32185b.job = _0x1019a7.roletype;
-          _0x5a418a.timeInfo[_0x591297] && (_0x32185b.timer = _0x5a418a.timeInfo[_0x591297].invalidtime, _0x32185b.lv = _0x5a418a.timeInfo[_0x591297].lv);
-          this.listInfo.push(_0x32185b);
-        }
-      }
-      return this.listInfo;
-    }
-  };
-  _0x4fe402.prototype.closeMenu = function (_0x24703e) {
-    switch (_0x24703e.currentTarget) {
-      case this.item0:
-        this.ViewSelect(0);
-        break;
-      case this.item1:
-        this.ViewSelect(1);
-        break;
-      case this.item2:
-        this.ViewSelect(2);
-        break;
-      case this.item3:
-        this.ViewSelect(3);
-        break;
-      case this.item4:
-        this.ViewSelect(4);
-        break;
-      case this.item5:
-        this.ViewSelect(5);
-        break;
-      case this.item6:
-        this.ViewSelect(6);
-        break;
-      case this.item7:
-        this.ViewSelect(7);
-        break;
-      case this.Upbntss:
-        if (UserZs.ins().lv < this._openzs) {
-          return void UserTips.ins().showTips("|C:0xf3311e&T:转生等级达" + this._openzs + "开启|");
-        }
-        if (GameServer.serverOpenDay + 1 < this._openday) {
-          return void UserTips.ins().showTips("|C:0xf3311e&T:开服" + this._openday + "开启|");
-        }
-        if (this._num < this._count) {
-          void UserTips.ins().showTips("|C:0xf3311e&T:所需物品道具不足！！！|");
-          return SoundManager.ins().playEffect("wupindaojubuzubgm");
-        }
-        if (this._lv >= this._maxlv) {
-          return void UserTips.ins().showTips("|C:0xf3311e&T:满阶|");
-        }
-        this._lv < 1 ? Dress.ins().JiezhikongjianUserReq(this._id, 6) : Dress.ins().JiezhikongjianLevelUp(this._id);
-    }
-  };
-  _0x4fe402.prototype.ViewSelect = function (_0xd69598) {
-    {
-      for (x = 0; x < 8; x++) {
-        _0xd69598 == x ? this["item" + x].Selecte.visible = 1 : this["item" + x].Selecte.visible = 0;
-      }
-      this._indexid = _0xd69598;
-      this.edata();
-    }
-  };
-  _0x4fe402.prototype.closeMenus = function (_0x2041ad) {
-    ViewManager.ins().close(this);
-    SoundManager.ins().playEffect(SoundUtil.WINDOW);
-  };
-  return _0x4fe402;
-}(BaseEuiView);
-__reflect(anewxgne.prototype, "anewxgne");
-ViewManager.ins().reg(anewxgne, LayerManager.UI_Main);
-var newshengwuzhengduo = function (_0x2baec3) {
-  function _0x1d7ed1() {
-    return _0x2baec3.call(this) || this;
-  }
-  __extends(_0x1d7ed1, _0x2baec3);
-  _0x1d7ed1.prototype.open = function () {
-    this.addTouchEvent(this, this.onTouch);
-    this.observe(KFBattleRedPoint.ins().postRedPoint, this.refRedPoint);
-    this.observe(DevildomRedPoint.ins().postRedPoint, this.refRedPoint);
-    this.observe(KfArenaRedPoint.ins().postRedPoint, this.refRedPoint);
-    this.observe(KFBattleRedPoint.ins().postAnDianRedPoint, this.refRedPoint);
-    this.observe(KFBossSys.ins().postZhuZaiAttributionInfo, this.refRedPoint);
-    this.initData();
-    this.refRedPoint();
-  };
-  _0x1d7ed1.prototype.close = function () {
-    this.$onClose();
-    DisplayUtils.removeFromParent(this.kfBossMc);
-  };
-  _0x1d7ed1.prototype.onTouch = function (_0x2f4df0) {
-    switch (_0x2f4df0.target) {
-      case this.islands0:
-        if (UserBag.ins().getBagGoodsCountById(0, 122691204) < 4000000) {
-          return void UserTips.ins().showTips("|C:0xf3311e&T:必须拥有400万个蓝月传奇币才可以进入金之圣地|");
-        }
-        ViewManager.ins().open(uuomingtaBossWin);
-        break;
-      case this.islands1:
-        if (UserBag.ins().getBagGoodsCountById(0, 122691204) < 8000000) {
-          return void UserTips.ins().showTips("|C:0xf3311e&T:必须拥有800万个蓝月传奇币才可以进入雷之圣地|");
-        }
-        ViewManager.ins().open(vYBBossWin);
-        break;
-      case this.islands2:
-        if (UserBag.ins().getBagGoodsCountById(0, 122691204) < 12000000) {
-          return void UserTips.ins().showTips("|C:0xf3311e&T:必须拥有1200万个蓝月传奇币才可以进入光之圣地|");
-        }
-        ViewManager.ins().open(uiwangsdBossWin);
-        break;
-      case this.islands3:
-        if (UserBag.ins().getBagGoodsCountById(0, 122691204) < 16000000) {
-          return void UserTips.ins().showTips("|C:0xf3311e&T:必须拥有1600万个蓝月传奇币才可以进入风之圣地|");
-        }
-        ViewManager.ins().open(uuijinBossWin);
-        break;
-      case this.islands4:
-        if (UserBag.ins().getBagGoodsCountById(0, 122691204) < 20000000) {
-          return void UserTips.ins().showTips("|C:0xf3311e&T:必须拥有2000万个蓝月传奇币才可以进入水之圣地|");
-        }
-        ViewManager.ins().open(uiuquBossWin);
-    }
-  };
-  _0x1d7ed1.prototype.initData = function () {
-    var _0xaf367c = this;
-    this.islands0.currentState = "unlock";
-    this.islands0.title.source = "kfhalidom_left6";
-    this.islands0.island.source = "";
-    this.islands5.currentState = "unlock";
-    egret.callLater(function () {
-      _0xaf367c.islands5.title.source = "";
-      _0xaf367c.islands5.island.source = "";
-    }, this);
-    egret.callLater(function () {
-      _0xaf367c.islands1.title.source = "kfhalidom_left4";
-      _0xaf367c.islands1.island.source = "";
-    }, this);
-    this.kfBossMc || (this.kfBossMc = new MovieClip(), this.kfBossMc.scaleX = this.kfBossMc.scaleY = 0.45, this.kfBossMc.x = 0, this.kfBossMc.y = 35);
-    this.islands0.boossGroup.addChild(this.kfBossMc);
-    var _0x2b3ac7 = "dwdl1002";
-    this.kfBossMc.playFile(RES_DIR_MONSTER + _0x2b3ac7, -1);
-    this.kfBossMc1 || (this.kfBossMc1 = new MovieClip(), this.kfBossMc1.scaleX = this.kfBossMc1.scaleY = 0.45, this.kfBossMc1.x = 0, this.kfBossMc1.y = 35);
-    this.islands1.boossGroup.addChild(this.kfBossMc1);
-    var _0x47aff5 = "dwdl1001";
-    this.kfBossMc1.playFile(RES_DIR_MONSTER + _0x47aff5, -1);
-    this.kfBossMc4 || (this.kfBossMc4 = new MovieClip(), this.kfBossMc4.scaleX = this.kfBossMc4.scaleY = 0.45, this.kfBossMc4.x = 0, this.kfBossMc4.y = 35);
-    this.islands4.boossGroup.addChild(this.kfBossMc4);
-    var _0x2af0e9 = "dwdl1003";
-    this.kfBossMc4.playFile(RES_DIR_MONSTER + _0x2af0e9, -1);
-    this.kfBossMc5 || (this.kfBossMc5 = new MovieClip(), this.kfBossMc5.scaleX = this.kfBossMc5.scaleY = 0.45, this.kfBossMc5.x = 0, this.kfBossMc5.y = 35);
-    this.islands5.boossGroup.addChild(this.kfBossMc5);
-    var _0x453a02 = "";
-    this.kfBossMc5.playFile(RES_DIR_MONSTER + _0x453a02, -1);
-    this.kfBossMc3 || (this.kfBossMc3 = new MovieClip(), this.kfBossMc3.scaleX = this.kfBossMc3.scaleY = 0.45, this.kfBossMc3.x = 0, this.kfBossMc3.y = 35);
-    this.islands3.boossGroup.addChild(this.kfBossMc3);
-    var _0xe8eb6d = "dwdl1005";
-    this.kfBossMc3.playFile(RES_DIR_MONSTER + _0xe8eb6d, -1);
-    this.kfBossMc2 || (this.kfBossMc2 = new MovieClip(), this.kfBossMc2.scaleX = this.kfBossMc2.scaleY = 0.45, this.kfBossMc2.x = 0, this.kfBossMc2.y = 35);
-    this.islands2.boossGroup.addChild(this.kfBossMc2);
-    var _0x9a3145 = "dwdl1006";
-    this.kfBossMc2.playFile(RES_DIR_MONSTER + _0x9a3145, -1);
-    this.kfBossMc6 || (this.kfBossMc6 = new MovieClip(), this.kfBossMc6.scaleX = this.kfBossMc6.scaleY = 0.45, this.kfBossMc6.x = 0, this.kfBossMc6.y = 35);
-    this.islands6.boossGroup.addChild(this.kfBossMc6);
-    var _0x5e2877 = "";
-    this.kfBossMc6.playFile(RES_DIR_MONSTER + _0x5e2877, -1);
-    egret.callLater(function () {
-      {
-        _0xaf367c.islands2.title.source = "kfhalidom_left7";
-        _0xaf367c.islands2.island.source = "";
-      }
-    }, this);
-    egret.callLater(function () {
-      {
-        _0xaf367c.islands3.title.source = "kfhalidom_left1";
-        _0xaf367c.islands3.island.source = "";
-      }
-    }, this);
-    egret.callLater(function () {
-      _0xaf367c.islands4.title.source = "kfhalidom_left2";
-      _0xaf367c.islands4.island.source = "";
-    }, this);
-    egret.callLater(function () {
-      _0xaf367c.islands6.title.source = "";
-      _0xaf367c.islands6.island.source = "";
-    }, this);
-    this.islands1.currentState = "unlock";
-    this.islands2.currentState = "unlock";
-    this.islands3.currentState = "unlock";
-    this.islands4.currentState = "unlock";
-    this.islands5.currentState = "unlock";
-    this.islands6.currentState = "unlock";
-  };
-  _0x1d7ed1.prototype.refRedPoint = function () {
-    {
-      this.islands0.redPoint.visible = 1;
-      this.islands1.redPoint.visible = 1;
-      this.islands3.redPoint.visible = 1;
-      this.islands2.redPoint.visible = 1;
-      this.islands4.redPoint.visible = 1;
-      this.islands5.redPoint.visible = 0;
-      this.islands6.redPoint.visible = 0;
-    }
-  };
-  return _0x1d7ed1;
+  return _0x13dbbb;
 }(BaseView);
-__reflect(newshengwuzhengduo.prototype, "newshengwuzhengduo");
-var uuijinBossWin = function (_0x3242b9) {
-  function _0xba6f0() {
-    var _0x71712 = _0x3242b9.call(this) || this;
-    _0x71712.floorArr = [];
-    _0x71712.isTopLevel = true;
-    _0x71712.skinName = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin class=\"uuijinBossSkin\" width=\"580\" height=\"930\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:ns1=\"*\"\n        xmlns:w=\"http://ns.egret.com/wing\">\r\n<e:Group top=\"0\" width=\"580\" horizontalCenter=\"0\" bottom=\"0\">\n\t<e:Rect left=\"0\" right=\"0\" top=\"0\" bottom=\"0\" fillAlpha=\"0.6\" />\n\t<e:Image top=\"0\" bottom=\"0\" source=\"tongyongmianbanbg2\" width=\"580\" horizontalCenter=\"0\" scale9Grid=\"15,12,2,3\" />\n\t<e:Group width=\"556\" horizontalCenter=\"0\" bottom=\"58\">\n\t\t<e:Image source=\"bantoumingkuang4\" x=\"0\" top=\"0\" bottom=\"0\" width=\"278\" height=\"90\" />\n\t\t<e:Image source=\"bantoumingkuang4\" scaleX=\"-1\" right=\"0\" top=\"0\" bottom=\"0\" width=\"278\" height=\"90\" />\n\t</e:Group>\n\t<e:Image width=\"570\" horizontalCenter=\"0\" source=\"tongyongmianbanbg\" scale9Grid=\"19,12,14,25\" top=\"44\" bottom=\"120\" />\n\t<ns1:BaseComponent id=\"roleSelect\" y=\"0\" skinName=\"RoleSelectPanelSkin\" className=\"RoleSelectPanel\" width=\"580\"\n\t                   horizontalCenter=\"0\" currentState=\"nohead\" />\n\t<e:Image y=\"12\" left=\"65\" source=\"msjl\" />\n\t<e:Button id=\"seeRule\" label=\"按钮\" icon=\"wenhao\" skinName=\"Btn0Skin\" horizontalCenter=\"-259\" y=\"5\" scaleX=\"0.9\"\n\t          scaleY=\"0.9\" visible=\"false\"/>\n\t<e:Image source=\"\" scaleX=\"-1\" anchorOffsetX=\"0\" width=\"410\" anchorOffsetY=\"0\"\n\t         height=\"447\"  horizontalCenter=\"69\" bottom=\"294\"/>\n\t<e:Image verticalCenter=\"-45\" source=\"newdtbg2\" left=\"13\" right=\"13\"/>\n\t<e:Group width=\"417\" height=\"279\" left=\"0\" bottom=\"126\">\n\t\t<e:Image x=\"0\" y=\"61\" source=\"\" width=\"417\" anchorOffsetY=\"0\" height=\"216\" scale9Grid=\"22,12,138,72\" />\n\t\t<e:Label id=\"isChallenge\" text=\"未满足开启条件\" x=\"117.98000000000002\" y=\"242.64999999999998\" size=\"16\" textColor=\"0xd20506\"\n\t\t         bold=\"true\" scaleX=\"1\" scaleY=\"1\" />\n\t\t<e:Label id=\"RemainCount\" text=\"剩余归属次数：\" bottom=\"130\" horizontalCenter=\"80\" size=\"16\" bold=\"true\" scaleX=\"1\" scaleY=\"1\" textColor=\"0x89713c\" />\n\t\t<e:Button id=\"challengeBtn\" label=\"挑 战\" icon=\"swjd_btn\" skinName=\"Btn23Skin\" bottom=\"23\" horizontalCenter=\"80\" />\n\t</e:Group>\r\n\t<ns1:BaseComponent id=\"siwangmc3\" skinName=\"effskillpos\" width=\"200\" height=\"150\" top=\"-50\" left=\"60\" scaleX=\"2.5\" scaleY=\"2.5\"/>\n\t<e:Group id=\"bossGroup\" width=\"200\" height=\"200\" left=\"210\" verticalCenter=\"-50\"/>\n\t<e:Scroller width=\"139\" bottom=\"175\" top=\"95\" right=\"4300000\">\n\t\t<e:List id=\"listBoss\" top=\"614\" anchorOffsetX=\"0\" anchorOffsetY=\"0\" itemRendererSkinName=\"shenshoubosslist\"\n\t\t        horizontalCenter=\"-207.5\" bottom=\"126\">\n\t\t\t<e:ArrayCollection>\n\t\t\t\t<e:Array>\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t</e:Array>\n\t\t\t</e:ArrayCollection>\n\t\t\t<e:layout>\n\t\t\t\t<e:TileLayout verticalGap=\"6\" requestedColumnCount=\"1\" />\n\t\t\t</e:layout>\n\t\t</e:List>\n\t</e:Scroller>\r\n\t\t<e:Image source=\"teshuwenzibg\"  top=\"-5555\" x=\"70\" y=\"55\" scaleX=\"1.5\" scaleY=\"1.5\"/>\n\t\t<e:Label id=\"bossName\" text=\"暗殿：沙城之王(13转)\" width=\"370\" size=\"16\" textColor=\"0x9f500d\" bold=\"true\" horizontalCenter=\"0\" top=\"-7500000\" scaleX=\"1\" scaleY=\"1\" />\n\t<e:Image id=\"stateImage\" source=\"zdbossyijisha\" horizontalCenter=\"70\" verticalCenter=\"0\" />\r\n\t\t<e:Image source=\"niuquitemlongjiao\" left=\"100\" verticalCenter=\"72\" scaleX=\"1\" scale9Grid=\"187,4,4,24\"/>\r\n\t\t<e:Image source=\"shuxingbg\" left=\"35\" right=\"35\" verticalCenter=\"100\" bottom=\"285\"/>\n\t\t<e:List id=\"listItem\" itemRendererSkinName=\"ItemSkin\" horizontalCenter=\"0\" verticalCenter=\"130\" scaleX=\"0.8\"\n\t\t        scaleY=\"0.8\">\n\t\t\t<e:ArrayCollection>\n\t\t\t\t<e:Array>\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t</e:Array>\n\t\t\t</e:ArrayCollection>\n\t\t\t<e:layout>\n\t\t\t\t<e:HorizontalLayout gap=\"17\" />\n\t\t\t</e:layout>\n\t\t</e:List>\r\n\t<e:Group horizontalCenter=\"0\" verticalCenter=\"50\">\r\n\t\t<e:Image source=\"\"/>\r\n\t\t<e:Image x=\"31\" y=\"10\" source=\"\"/>\r\n\t\t<e:layout>\r\n\t\t<e:HorizontalLayout gap=\"-5\"/>\r\n\t\t</e:layout>\r\n\t</e:Group>\r\n\t\t<e:Label id=\"countdown\" text=\"05:59:24后刷新\" size=\"16\" textColor=\"0x00ff00\" horizontalCenter=\"0\" top=\"515\"/>\r\n\t<e:Group x=\"441\" y=\"0\">\r\n\t\t<e:Image source=\"\" x=\"64\" y=\"60\"/>\r\n\t</e:Group>\r\n\t<e:Image id=\"bossName\" left=\"25\" source=\"\" y=\"150\"/>\r\n\t\t<e:Button id=\"closeBtn\" label=\"按钮\" skinName=\"Btn0Skin\" icon=\"chatclose\" y=\"51\" scaleX=\"0.8\" scaleY=\"0.8\" right=\"5\" />\r\n</e:Group>\n</e:Skin>";
-    return _0x71712;
-  }
-  __extends(_0xba6f0, _0x3242b9);
-  _0xba6f0.prototype.initUI = function () {
-    this.bossImage = new MovieClip();
-    this.bossImage.scaleX = -1;
-    this.bossImage.scaleY = 1;
-    this.bossImage.x = 78;
-    this.bossImage.y = 220;
-    this.bossGroup.touchEnabled = this.bossGroup.touchChildren = false;
-    for (var _0x42afde in ConfgMgr.uuijinnuberconfig) this.floorArr.push(_0x42afde);
-    this.listFloorData = new eui.ArrayCollection();
-    this.listItem.itemRenderer = ItemBase;
-    this.listBoss.itemRenderer = KFAnDianBossItem;
-    this.listBossData = new eui.ArrayCollection();
-    this.listBoss.dataProvider = this.listBossData;
-  };
-  _0xba6f0.prototype.open = function () {
+__reflect(XuemaiPanel.prototype, "XuemaiPanel");
+var HunhuanEquipPanel = function (_0x4b1bed) {
+  function _0x1d475b() {
     {
-      for (var _0x3c5346 = [], _0x3e57cc = 0; _0x3e57cc < arguments.length; _0x3e57cc++) {
-        _0x3c5346[_0x3e57cc] = arguments[_0x3e57cc];
+      var _0x2bd99d = _0x4b1bed.call(this) || this;
+      _0x2bd99d._cost = 0;
+      _0x2bd99d.isTopLevel = true;
+      _0x2bd99d.skinName = "HunhuanEquipSkin";
+      return _0x2bd99d;
+    }
+  }
+  __extends(_0x1d475b, _0x4b1bed);
+  _0x1d475b.prototype.init = function () {};
+  _0x1d475b.prototype.open = function () {
+    this.ringEff || (this.ringEff = new MovieClip());
+    this.roleSelect.setCurRole(this.curRole);
+    this.addChangeEvent(this.roleSelect, this.sonChange);
+    this.roleSelect.parent.touchEnabled = true;
+    SubRoles.ins().getSubRoleByIndex(0);
+    this.roleSelect.setCurRole(0);
+    this.observe(Dress.ins().postDressInfo, this.edata);
+    this.observe(GameLogic.ins().postSubRoleChange, this.getDressInfo);
+    this.observe(UserBag.ins().postItemAdd, this.edata);
+    this.observe(UserBag.ins().postItemDel, this.edata);
+    this.observe(UserBag.ins().postItemCountChange, this.edata);
+    this.observe(GameLogic.ins().postSubRoleChange, this.getpassInfo);
+    this.addTouchEvent(this.item0, this.onlikes);
+    this.addTouchEvent(this.item1, this.onlikes);
+    this.addTouchEvent(this.item2, this.onlikes);
+    this.addTouchEvent(this.item3, this.onlikes);
+    this.addTouchEvent(this.item4, this.onlikes);
+    this.addTouchEvent(this.item5, this.onlikes);
+    this.addTouchEvent(this.upGradeBtn, this.closeMenu);
+    this._curRole = 0;
+    this._indexid = 0;
+    this.edata();
+  };
+  _0x1d475b.prototype.close = function (_0x4a2fb0) {};
+  _0x1d475b.prototype.sonChange = function (_0x49374f) {
+    this._curRole = this.roleSelect.getCurRole();
+    this.edata();
+  };
+  _0x1d475b.prototype.Bsdate = function () {
+    this.curRole = this.roleSelect.getCurRole();
+    var _0x402a45 = Dress.ins();
+    this.listInfo = [];
+    for (var _0x51dc8d in ConfgMgr.miaoshazbsjjhconfig) if (SubRoles.ins().getSubRoleByIndex(this.curRole).job == ConfgMgr.miaoshazbsjjhconfig[_0x51dc8d].sanzhiyepdrole) {
+      var _0x13303c = new DressItemInfo();
+      var _0x3faf4e = ConfgMgr.miaoshazbsjjhconfig[_0x51dc8d];
+      var _0x189ddf = _0x3faf4e.id;
+      if (_0x402a45.timeInfo[_0x189ddf]) {
+        {
+          _0x13303c.lv = _0x402a45.timeInfo[_0x189ddf].lv;
+        }
+      } else {
+        _0x13303c.lv = 0;
       }
-      KFBossSys.ins().sendADBossInfo();
-      this.bossGroup.addChild(this.bossImage);
-      this.listBoss.addEventListener(eui.ItemTapEvent.ITEM_TAP, this.onClickBoss, this);
-      this.addTouchEvent(this.seeRule, this.onGetItem);
-      this.addTouchEvent(this.challengeBtn, this.onGetItem);
-      this.addTouchEvent(this.closeBtn, this.closeMenu);
-      this.observe(KFBossSys.ins().postADAttributionInfo, this.setBossInfo);
-      this.observe(KFBossSys.ins().postADRedPoint, this.setData);
-      this.observe(KFBossSys.ins().postADBossRefTime, this.setData);
-      this.bosmc();
-      this.setData();
+      _0x13303c.id = _0x189ddf;
+      _0x13303c.job = _0x3faf4e.sanzhiyepdrole;
+      this.listInfo.push(_0x13303c);
+    }
+    return this.listInfo;
+  };
+  _0x1d475b.prototype.getpassInfo = function () {};
+  _0x1d475b.prototype.openeff = function (_0x53e6b9) {
+    {
+      this.removeMc(this.ringEff);
+      this.ringEff.scaleX = this.ringEff.scaleY = 1.2;
+      this.ringEff.x = 50;
+      this.ringEff.y = -150;
+      this.HHEff.parent && this.HHEff.parent.addChild(this.ringEff);
+      this.ringEff.playFile(RES_DIR_EFF + "hunhuans00" + (_0x53e6b9 + 1), -1);
     }
   };
-  _0xba6f0.prototype.closeMenu = function (_0x39e36b) {
+  _0x1d475b.prototype.removeMc = function (_0x50e1f4) {
+    _0x50e1f4 && (_0x50e1f4.dispose(), DisplayUtils.removeFromParent(_0x50e1f4));
+  };
+  _0x1d475b.prototype.edata = function (_0x44a4b8) {
+    var _0x547dfa = this.Bsdate();
+    var _0x3c2928 = 0;
+    var _0xb412d8 = ConfgMgr.Hunhuanupconfig;
+    for (x = 0; x < _0x547dfa.length; x++) {
+      {
+        this._delv = _0x547dfa[x].lv;
+        this._deid = _0x547dfa[x].id;
+        var _0x268a91 = _0x547dfa[x].lv;
+        this["item" + x].Icon.source = "hunhuan_n" + [x + 1] + "_png";
+        this["item" + x].level.text = "\n\n\n\nLv: " + _0x268a91;
+        this["item" + x].isSelected.visible = 0;
+        if (x == this._indexid) {
+          this["item" + x].isSelected.visible = 1;
+          var _0x1c0733 = _0xb412d8[x + 1][_0x268a91];
+          var _0x28db4c = _0xb412d8[x + 1][_0x268a91 + 1];
+          var _0x3c2928 = parseInt(_0x3c2928) + UserBag.getAttrPower(AttributeData.transformAttr(_0xb412d8[x + 1][_0x268a91].attr));
+          this.attr0.text = this.getattrlv(_0x1c0733.attr);
+          if (_0x28db4c) {
+            this.addAttr0.text = this.getattrlv(_0x28db4c.attr);
+            this.addAttr0.visible = 1;
+            this.upGradeBtn.visible = this.costGroup.visible = 1;
+            this.nexmanlv.visible = 0;
+            this._lv = _0x268a91;
+            this._item = _0x28db4c.itemid;
+            this._count = _0x28db4c.count;
+            this._num = UserBag.ins().getBagGoodsCountById(0, this._item);
+            this.icon.source = ConfgMgr.ItemConfig[this._item].icon + "_png";
+            this.countLabel.text = ConfgMgr.ItemConfig[this._item].name + "(" + this._num + "/" + this._count + ")";
+            this._openid = _0x547dfa[x].id;
+            _0x268a91 < 1 ? this.upGradeBtn.label = "激  活" : this.upGradeBtn.label = "升  级";
+            this._num < this._count ? this.countLabel.textColor = "0xd1c28f" : this.countLabel.textColor = "0xff0012";
+          } else {
+            this.upGradeBtn.visible = this.costGroup.visible = this.addAttr0.visible = 0;
+            this.nexmanlv.visible = 1;
+          }
+          this.openeff(x);
+          this.powerPanel.setPower(_0x3c2928);
+        }
+      }
+    }
+  };
+  _0x1d475b.prototype.getattrlv = function (_0x39858e) {
+    {
+      var _0x3e0cdf = AttributeData.getAttStr(AttributeData.transformAttr(_0x39858e), 0, 1, ": ");
+      return _0x3e0cdf;
+    }
+  };
+  _0x1d475b.prototype.getattrnexlv = function (_0x5b3cfe, _0x4458b3) {
+    var _0x552601 = 0;
+    if (_0x5b3cfe[_0x552601].type == _0x4458b3[_0x552601].type && _0x5b3cfe[_0x552601].value != _0x4458b3[_0x552601].value) {
+      var _0x475de2 = _0x5b3cfe[_0x552601].value;
+      var _0x11dc8f = _0x4458b3[_0x552601].value;
+      var _0x314c04 = _0x11dc8f - _0x475de2;
+      var _0x2afa98 = _0x5b3cfe[_0x552601].type;
+      var _0x13d2af = this.Getattrsuanshu(_0x314c04, _0x2afa98);
+      return _0x13d2af;
+    } else {
+      return 0;
+    }
+  };
+  _0x1d475b.prototype.Getattrsuanshu = function (_0x144e5, _0x1cdafb) {
+    if (_0x1cdafb == 7) {
+      var _0x192dba = _0x144e5 / 100 + "%";
+    } else {
+      if (_0x1cdafb == 20) {
+        var _0x1fbd04 = _0x144e5 / 100;
+        var _0x192dba = _0x1fbd04.toFixed(1) + "%";
+      } else {
+        var _0x192dba = _0x144e5;
+      }
+    }
+    return _0x192dba;
+  };
+  _0x1d475b.prototype.getattrnewnum = function (_0x13dd78) {};
+  _0x1d475b.prototype.closeMenu = function (_0x3f5721) {
+    if (this._num < this._count) {
+      return void UserTips.ins().showTips("|C:0xFFFF00&T:  物品道具不足|");
+    }
+    this._lv < 1 ? Dress.ins().JiezhikongjianUserReq(this._openid, 5) : Dress.ins().JiezhikongjianLevelUp(this._openid);
+  };
+  _0x1d475b.prototype.getBaolv = function (_0x953188) {
+    var _0x1c23af = this.Bsdate();
+    var _0x184837 = _0x1c23af[_0x953188].lv;
+    return _0x184837;
+  };
+  _0x1d475b.prototype.onlikes = function (_0x1bfa60) {
+    {
+      SoundManager.ins().playEffect(SoundUtil.WINDOW);
+      switch (_0x1bfa60.currentTarget) {
+        case this.item0:
+          this._indexid = 0;
+          this.edata();
+          break;
+        case this.item1:
+          this._indexid = 1;
+          this.edata();
+          break;
+        case this.item2:
+          this._indexid = 2;
+          this.edata();
+          break;
+        case this.item3:
+          this._indexid = 3;
+          this.edata();
+          break;
+        case this.item4:
+          this._indexid = 4;
+          this.edata();
+          break;
+        case this.item5:
+          this._indexid = 5;
+          this.edata();
+      }
+    }
+  };
+  _0x1d475b.prototype.closeMenus = function (_0x2f7fb3) {
     ViewManager.ins().close(this);
+    SoundManager.ins().playEffect(SoundUtil.WINDOW);
   };
-  _0xba6f0.prototype.bosmc = function () {
-    this.siwangmc3.visible = false;
+  return _0x1d475b;
+}(BaseView);
+__reflect(HunhuanEquipPanel.prototype, "HunhuanEquipPanel");
+var rrVVVsoushouIconRule = function (_0x179ca7) {
+  function _0x404818(_0x30bc69, _0x1967af) {
+    var _0x2e4cca = _0x179ca7.call(this, _0x30bc69, _0x1967af) || this;
+    _0x2e4cca.showMessage = [UserZs.ins().postZsData];
+    _0x2e4cca.updateMessage = [KFBattleRedPoint.ins().postRedPoint, DevildomRedPoint.ins().postRedPoint, KfArenaRedPoint.ins().postRedPoint];
+    return _0x2e4cca;
+  }
+  __extends(_0x404818, _0x179ca7);
+  _0x404818.prototype.checkShowIcon = function () {
+    return 1;
   };
-  _0xba6f0.prototype.onClickMenu = function (_0x4bdb4f) {
+  _0x404818.prototype.checkShowRedPoint = function () {
+    {
+      return 0;
+    }
+  };
+  _0x404818.prototype.getEffName = function (_0x4bad9c) {
+    this.effX = 38;
+    this.effY = 38;
+    return "actIconCircle";
+  };
+  _0x404818.prototype.tapExecute = function () {
+    ViewManager.ins().open(SuperVipWin7);
+  };
+  return _0x404818;
+}(RuleIconBase);
+__reflect(rrVVVsoushouIconRule.prototype, "rrVVVsoushouIconRule");
+var SuperVipWin7 = function (_0x33d317) {
+  function _0x331da2() {
+    return _0x33d317.call(this) || this;
+  }
+  __extends(_0x331da2, _0x33d317);
+  _0x331da2.prototype.initUI = function () {
+    _0x33d317.prototype.initUI.call(this);
+    this.skinName = "<?xml version='1.0' encoding='utf-8'?>\r\n<e:Skin class=\"gsvipSkin7\" currentState=\"default\" xmlns:e=\"http://ns.egret.com/eui\"\r\n        xmlns:w=\"http://ns.egret.com/wing\" xmlns:euiextension=\"euiextension.*\" xmlns:ns1=\"*\" height=\"930\" width=\"580\"    states=\"maoer,default,sswxfbxzf\" >\r\n\t<e:Rect id=\"bgClose\" left=\"0\" right=\"0\" top=\"0\" bottom=\"0\" fillAlpha=\"0.7\"/>\r\n\t<e:Group id=\"anigroup\"  horizontalCenter=\"0\" verticalCenter=\"0\" width=\"488\" height=\"600\">\r\n\t\t<e:Group id=\"tipGroup\" touchChildren=\"false\" touchEnabled=\"false\" horizontalCenter=\"0\" bottom=\"-40\">\r\n\t\t\t<e:Image source=\"bantoutiaobg\" height=\"30\" horizontalCenter=\"0\" scale9Grid=\"128,2,15,41\" width=\"300\"/>\r\n\t\t\t<e:Label text=\"点击空白区域关闭窗口\" size=\"20\" bold=\"true\" textColor=\"0x7E6437\" y=\"5\" horizontalCenter=\"0\"/>\r\n\t\t\t<e:Button id=\"closeBtn1\" y=\"-17\" skinName=\"Btn0Skin\" right=\"-10\" x=\"188\" visible=\"false\"/>\r\n\t\t</e:Group>\r\n\t\t<e:Image scale9Grid=\"18,14,12,20\" source=\"tongyongkuang3bg\"     top=\"0\" bottom=\"0\" left=\"0\" right=\"0\"/>\r\n\t\t<e:Image source=\"tongyongkuang3tou\" scale9Grid=\"66,0,271,47\"   left=\"0\" right=\"0\"/>\r\n\t\t<e:Image scale9Grid=\"66,0,271,47\" source=\"biaoti_gs_png\" horizontalCenter=\"0\"/>\r\n\t\t<e:Image   source=\"gsvipbg2_png\" top=\"48\" bottom=\"6\" left=\"6\" right=\"6\"/>\r\n\t\t<e:Image id=\"headImg\" y=\"66\" width=\"230\" height=\"230\" horizontalCenter=\"-98\" source=\"gshead256_jpg\"/>\r\n\t\t<e:Image width=\"250\" height=\"250\" y=\"56\" source=\"touxiangkuang3\" scale9Grid=\"32,28,1,1\" horizontalCenter=\"-98\"/>\r\n\t\t<e:Image x=\"218\" y=\"52\" source=\"gstou0\"/>\r\n\t\t<e:Image x=\"6\" y=\"195\" source=\"gstou1\"/>\r\n\t\t<e:Image source=\"gshead\" x=\"60\" y=\"38\"/>\r\n\t\t<e:Image source=\"gshead\" x=\"6\" y=\"-13\" rotation=\"40\" width=\"40\" height=\"38\"/>\r\n\t\t<e:Image source=\"gshead\" x=\"30\" y=\"34\" width=\"30\" height=\"28\" rotation=\"10\"/>\r\n\t\t<e:Image source=\"gshead\" x=\"23\" y=\"67\" width=\"20\" height=\"20\" rotation=\"50\"/>\r\n\t\t<e:Button id=\"closeBtn\" skinName=\"Btn0Skin\" icon=\"chatclose\" right=\"0\"/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\t\t<e:Group id=\"qq\" y=\"66\" x=\"287\">\r\n\t\t\t<e:Label text=\"\" size=\"20\" id=\"kfnamenel\" textColor=\"0xd1c28f\"/>\r\n\t\t\t<e:Image source=\"\" y=\"26\" id=\"kficons\" x=\"2\" includeIn=\"maoer,default\"/>\r\n\t\t\t<e:Label id=\"tag\" text=\"\" size=\"20\" y=\"29\" textColor=\"0xF8B141\" x=\"51\" includeIn=\"default,sswxfbxzf\" text.sswxfbxzf=\"\" size.sswxfbxzf=\"20\" x.sswxfbxzf=\"0\"/>\r\n\t\t\t<e:Label id=\"qqtxt\" text=\"\" size=\"24\" y=\"58\" textColor=\"0xf8b141\" x=\"26\"/>\r\n\r\n\t\t</e:Group>\r\n\r\n\r\n\r\n\t\t<e:Button id=\"copy\" label=\"\" skinName=\"Btn15Skin\" width=\"180\" height=\"50\" y=\"151\" x=\"281\" label.sswxfbxzf=\"\"/>\r\n\t\t<e:Group id=\"nopay0\" y=\"208\" x=\"286\" alpha=\"0\">\r\n\t\t\t<e:Label text=\"成为尊贵的超级会员\" size=\"18\" textColor=\"0xF8B141\"/>\r\n\t\t\t<e:Label y=\"22\" text=\"获取美女客服复制微信号\" size=\"18\" textColor=\"0xF8B141\" x=\"4\"/>\r\n\t\t\t<e:Button id=\"pey\" label=\"立刻充值\" skinName=\"Btn15Skin\" width=\"150\" height=\"50\" y=\"46\" x=\"6\"/>\r\n\t\t</e:Group>\r\n\r\n\r\n\t\t<e:Group y=\"316\" width=\"476\" x=\"6\">\r\n\t\t\t<e:Image scale9Grid=\"0,1,62,30\" source=\"gsbiaoti0\"/>\r\n\t\t\t<e:Image scale9Grid=\"0,1,62,30\" scaleX=\"-1\" source=\"gsbiaoti0\" right=\"0\"/>\r\n\t\t\t<e:Image y=\"4\" source=\"gsbiaoti2\" horizontalCenter=\"0\"/>\r\n\t\t</e:Group>\r\n\t\t<e:Group y=\"588\" width=\"476\" x=\"6\">\r\n\t\t\t<e:Image scale9Grid=\"0,1,62,30\" source=\"gsbiaoti0\" visible=\"false\"/>\r\n\t\t\t<e:Image scale9Grid=\"0,1,62,30\" scaleX=\"-1\" source=\"gsbiaoti0\" right=\"0\" visible=\"false\"/>\r\n\t\t\t<e:Image y=\"4\" horizontalCenter=\"0\" source=\"gsbiaoti3\" visible=\"false\"/>\r\n\t\t</e:Group>\r\n\t\t<e:Group y=\"348\" x=\"24\">\r\n\t\t\t<e:Group>\r\n\t\t\t\t<e:Image source=\"gsbiaoti1\"/>\r\n\t\t\t\t<e:Label y=\"5\" text=\"\" size=\"20\" textColor=\"0xf8b141\" id=\"tps1\" bold=\"true\" x=\"33\"/>\r\n\t\t\t\t<e:Image x=\"4\" y=\"2\" source=\"vip_v1_png\"/>\r\n\t\t\t</e:Group>\r\n\t\t\t<e:Label id=\"des0\" y=\"34\" text=\"\" size=\"18\" x=\"30\" textColor=\"0xd1c28f\"/>\r\n\t\t\t<e:Group y=\"60\">\r\n\t\t\t\t<e:Image source=\"gsbiaoti1\"/>\r\n\t\t\t\t<e:Label y=\"5\" text=\"\" id=\"tps2\" size=\"20\" textColor=\"0xF8B141\" bold=\"true\" x=\"33\"/>\r\n\t\t\t\t<e:Image x=\"4\" y=\"2\" source=\"vip_v2_png\"/>\r\n\t\t\t</e:Group>\r\n\t\t\t<e:Label id=\"des1\" y=\"94\" text=\"\" size=\"18\" x=\"30\" textColor=\"0xD1C28F\"/>\r\n\t\t\t<e:Group y=\"120\">\r\n\t\t\t\t<e:Image source=\"gsbiaoti1\"/>\r\n\t\t\t\t<e:Label y=\"5\" text=\"\" id=\"tps3\" size=\"20\" textColor=\"0xF8B141\" bold=\"true\" x=\"33\"/>\r\n\t\t\t\t<e:Image x=\"4\" y=\"2\" source=\"vip_v3_png\"/>\r\n\t\t\t</e:Group>\r\n\t\t\t<e:Label id=\"des2\" y=\"154\" text=\"\" size=\"18\" x=\"30\" textColor=\"0xD1C28F\"/>\r\n\t\t\t<e:Group y=\"180\">\r\n\t\t\t\t<e:Image source=\"gsbiaoti1\"/>\r\n\t\t\t\t<e:Label y=\"5\" text=\"\" id=\"tps4\" size=\"20\" textColor=\"0xF8B141\" bold=\"true\" x=\"33\"/>\r\n\t\t\t\t<e:Image x=\"4\" y=\"2\" source=\"vip_v4_png\"/>\r\n\t\t\t</e:Group>\r\n\t\t\t<e:Label id=\"des3\" y=\"214\" text=\"\" size=\"18\" x=\"30\" textColor=\"0xD1C28F\"/>\r\n\t\t</e:Group>\r\n\t\t<e:Group id=\"pay0\" y=\"626\" horizontalCenter=\"0\" visible.sswxfbxzf=\"false\" visible=\"false\">\r\n\t\t\t<e:Label text=\"您已成为最尊贵的超级会员\" size=\"22\" textColor=\"0xF8B141\" horizontalCenter=\"0\"/>\r\n\t\t\t<e:Label y=\"26\" text=\"立即添加专属VIP的微信号，享受美女客服最贴心的服务\" size=\"18\" textColor=\"0x2cc2f8\" horizontalCenter=\"0\" text.sswxfbxzf=\"立即添加专属VIP的微信号，享受美女客服最贴心的服务\"/>\r\n\t\t</e:Group>\r\n\t\t<e:Group id=\"nopay1\" y=\"626\" x=\"26\" visible=\"false\">\r\n\t\t\t<e:Label y=\"7\" text=\"充值达到2000元。\" size=\"18\" x=\"30\" textColor=\"0xD1C28F\" text.maoer=\"充值达到3000元。\"/>\r\n\r\n\t\t\t<e:Group>\r\n\r\n\r\n\t\t\t<e:Label y=\"150\" text=\"方法二：不限时间累计充值5000元。\" size=\"18\" textColor=\"0xD1C28F\" visible=\"false\"/>\r\n\t\t\t<e:layout>\r\n\t\t\t\t<e:VerticalLayout gap=\"10\"/>\r\n\t\t\t</e:layout>\r\n\t\t\t</e:Group>\r\n\t\t\t<e:Label id=\"cond1\" y=\"7\" text=\"（4990/5000）\" size=\"18\" x=\"310\" textColor=\"0xD1C28F\"/>\r\n\t\t\t<e:Group x=\"310\">\r\n\t\t\t\t<e:Label id=\"cond0\" y=\"30\" text=\"（0/2000）\" size=\"18\" textColor=\"0xD1C28F\" visible=\"false\"/>\r\n\r\n\r\n\t\t\t\t<e:Label id=\"cond2\" y=\"50\" text=\"（4000/5000）\" size=\"18\" x=\"20\" textColor=\"0xD1C28F\" visible=\"false\"/>\r\n\t\t\t\t<e:layout>\r\n\t\t\t\t<e:VerticalLayout gap=\"10\"/>\r\n\t\t\t\t</e:layout>\r\n\t\t\t</e:Group>\r\n\t\t</e:Group>\r\n\t\t<e:Group id=\"warnGroup\" x=\"289\" y=\"207\" width.sswxfbxzf=\"157\">\r\n\t\t\t<e:Label text=\"温馨提醒：\" textColor=\"0xff0000\" size=\"18\" width=\"169\" fontFamily=\"Microsoft YaHei\"/>\r\n\t\t\t<e:Label text=\"\" id=\"tips1\" x=\"1\" y=\"23\" size=\"16\" textColor=\"0xd1c28f\" fontFamily=\"Microsoft YaHei\" width.sswxfbxzf=\"157\" text.sswxfbxzf=\"添加客服QQ\\n领取超值豪礼！\"/>\r\n\t\t\t<e:layout>\r\n\t\t\t\t<e:VerticalLayout/>\r\n\t\t\t</e:layout>\r\n\t\t</e:Group>\r\n\r\n\r\n\r\n\t</e:Group>\r\n</e:Skin>";
+    this.list && (this.list.itemRenderer = ItemBase);
+    var _0x476a32 = ["gaore", "default"];
+    this.validateNow();
+  };
+  _0x331da2.prototype.open = function () {
+    this.addTouchEvent(this.closeBtn, this.onTap);
+    this.addTouchEvent(this.bgClose, this.onTap);
+    this.pey && this.addTouchEvent(this.pey, this.onTap);
+    this.copy && this.addTouchEvent(this.copy, this.onTap);
+    this.checkBoxAutoOpen && this.addTouchEvent(this.checkBoxAutoOpen, this.onCheckBoxAutoOpen);
+    this.observe(UserVip.ins().postSuperVipInfo, this.initView);
+    UserVip.ins().sendGetSuperVipInfo();
+    this.initView();
+  };
+  _0x331da2.prototype.initView = function () {
+    var _0x563f86 = ConfgMgr.meinvkefuconfig;
+    this.qqtxt.text = ["lycq123888"];
+    this.headImg.source = _0x563f86.icon;
+    this.kficons.source = _0x563f86.kficon;
+    this.copy.label = _0x563f86.desc6;
+    this.kfnamenel.text = _0x563f86.desc8;
+    this.tag.text = _0x563f86.desc7;
+    this.tips1.text = _0x563f86.desc5;
+    this.tps1.text = _0x563f86.desc1[0];
+    this.tps2.text = _0x563f86.desc2[0];
+    this.tps3.text = _0x563f86.desc3[0];
+    this.tps4.text = _0x563f86.desc4[0];
+    this.des0.text = _0x563f86.desc1[1];
+    this.des1.text = _0x563f86.desc2[1];
+    this.des2.text = _0x563f86.desc3[1];
+    this.des3.text = _0x563f86.desc4[1];
+  };
+  _0x331da2.prototype.updateAward = function () {
+    if (this.list) {
+      var _0x176f6a = LocationProperty.superVipAward;
+      if (_0x176f6a) {
+        {
+          var _0x1c5ee1 = _0x176f6a.split(/[:;]/);
+          var _0x324926 = [];
+          if (_0x1c5ee1.length > 1) {
+            for (var _0x59621f = 0; _0x59621f < _0x1c5ee1.length; _0x59621f += 2) {
+              var _0x4813c2 = new RewardData();
+              _0x4813c2.id = +_0x1c5ee1[_0x59621f];
+              _0x4813c2.type = ConfgMgr.ItemConfig[_0x4813c2.id] ? 1 : 0;
+              _0x4813c2.count = +_0x1c5ee1[_0x59621f + 1] || 1;
+              _0x324926.push(_0x4813c2);
+            }
+          }
+          this.list.dataProvider = new eui.ArrayCollection(_0x324926);
+        }
+      } else {
+        this.list.dataProvider = new eui.ArrayCollection();
+      }
+    }
+  };
+  _0x331da2.prototype.onTap = function (_0x461bc9) {
+    {
+      var _0x2ccd22 = _0x461bc9.currentTarget;
+      switch (_0x2ccd22) {
+        case this.closeBtn:
+        case this.bgClose:
+          ViewManager.ins().close(this);
+          break;
+        case this.pey:
+          Recharge.ins().showRechargeType(RechargeShowType.TYPE2);
+          ViewManager.ins().close(this);
+          break;
+        case this.copy:
+          if (PfActivity.ins().copyMsgToBoard(this.qqtxt.text)) {
+            UserTips.ins().showCenterTips("复制成功");
+            return true;
+          }
+          window.prompt && (DeviceUtils.IsMobile ? window.prompt("请长按链接复制微信号：", this.qqtxt.text) : window.prompt("请复制微信号：", this.qqtxt.text));
+      }
+    }
+  };
+  _0x331da2.prototype.onCheckBoxAutoOpen = function () {
+    {
+      Setting.ins().setBitValue(ClientSetBit.superVipIsAutoOpen, this.checkBoxAutoOpen.selected ? 1 : 0);
+    }
+  };
+  return _0x331da2;
+}(BaseEuiView);
+__reflect(SuperVipWin7.prototype, "SuperVipWin7");
+ViewManager.ins().reg(SuperVipWin7, LayerManager.UI_Popup);
+var puijinBossWin = function (_0x2c73a8) {
+  function _0x28d6cd() {
+    {
+      var _0xf4c4a4 = _0x2c73a8.call(this) || this;
+      _0xf4c4a4.floorArr = [];
+      _0xf4c4a4.isTopLevel = true;
+      _0xf4c4a4.skinName = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin class=\"puijinBossSkin\" width=\"580\" height=\"930\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:ns1=\"*\"\n        xmlns:w=\"http://ns.egret.com/wing\">\r\n<e:Group top=\"0\" width=\"580\" horizontalCenter=\"0\" bottom=\"0\">\n\t<e:Rect left=\"0\" right=\"0\" top=\"0\" bottom=\"0\" fillAlpha=\"0.6\" />\n\t<e:Image top=\"0\" bottom=\"0\" source=\"tongyongmianbanbg2\" width=\"580\" horizontalCenter=\"0\" scale9Grid=\"15,12,2,3\" />\n\t<e:Group width=\"556\" horizontalCenter=\"0\" bottom=\"58\">\n\t\t<e:Image source=\"bantoumingkuang4\" x=\"0\" top=\"0\" bottom=\"0\" width=\"278\" height=\"90\" />\n\t\t<e:Image source=\"bantoumingkuang4\" scaleX=\"-1\" right=\"0\" top=\"0\" bottom=\"0\" width=\"278\" height=\"90\" />\n\t</e:Group>\n\t<e:Image width=\"570\" horizontalCenter=\"0\" source=\"tongyongmianbanbg\" scale9Grid=\"19,12,14,25\" top=\"44\" bottom=\"120\" />\n\t<ns1:BaseComponent id=\"roleSelect\" y=\"0\" skinName=\"RoleSelectPanelSkin\" className=\"RoleSelectPanel\" width=\"580\"\n\t                   horizontalCenter=\"0\" currentState=\"nohead\" />\n\t<e:Image y=\"12\" left=\"65\" source=\"newdldldthh\" />\n\t<e:Button id=\"seeRule\" label=\"按钮\" icon=\"wenhao\" skinName=\"Btn0Skin\" horizontalCenter=\"-259\" y=\"5\" scaleX=\"0.9\"\n\t          scaleY=\"0.9\" visible=\"false\"/>\n\t<e:Image source=\"\" scaleX=\"-1\" anchorOffsetX=\"0\" width=\"410\" anchorOffsetY=\"0\"\n\t         height=\"447\"  horizontalCenter=\"69\" bottom=\"294\"/>\n\t<e:Image verticalCenter=\"-45\" source=\"dldlbgthh2\" left=\"13\" right=\"13\"/>\n\t<e:Group width=\"417\" height=\"279\" left=\"0\" bottom=\"126\">\n\t\t<e:Image x=\"0\" y=\"61\" source=\"\" width=\"417\" anchorOffsetY=\"0\" height=\"216\" scale9Grid=\"22,12,138,72\" />\n\t\t<e:Label id=\"isChallenge\" text=\"未满足开启条件\" x=\"117.98000000000002\" y=\"242.64999999999998\" size=\"16\" textColor=\"0xd20506\"\n\t\t         bold=\"true\" scaleX=\"1\" scaleY=\"1\" />\n\t\t<e:Label id=\"RemainCount\" text=\"剩余归属次数：\" bottom=\"130\" horizontalCenter=\"80\" size=\"16\" bold=\"true\" scaleX=\"1\" scaleY=\"1\" textColor=\"0x89713c\" />\n\t\t<e:Button id=\"challengeBtn\" label=\"挑 战\" icon=\"swjd_btn\" skinName=\"Btn23Skin\" bottom=\"23\" horizontalCenter=\"80\" />\n\t</e:Group>\r\n\t<ns1:BaseComponent id=\"siwangmc3\" skinName=\"effskillpos\" width=\"200\" height=\"150\" top=\"-50\" left=\"60\" scaleX=\"2.5\" scaleY=\"2.5\"/>\n\t<e:Group id=\"bossGroup\" width=\"200\" height=\"200\" left=\"210\" verticalCenter=\"-50\"/>\n\t<e:Scroller width=\"139\" bottom=\"175\" top=\"95\" right=\"4300000\">\n\t\t<e:List id=\"listBoss\" top=\"614\" anchorOffsetX=\"0\" anchorOffsetY=\"0\" itemRendererSkinName=\"shenshoubosslist\"\n\t\t        horizontalCenter=\"-207.5\" bottom=\"126\">\n\t\t\t<e:ArrayCollection>\n\t\t\t\t<e:Array>\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t</e:Array>\n\t\t\t</e:ArrayCollection>\n\t\t\t<e:layout>\n\t\t\t\t<e:TileLayout verticalGap=\"6\" requestedColumnCount=\"1\" />\n\t\t\t</e:layout>\n\t\t</e:List>\n\t</e:Scroller>\r\n\t\t<e:Image source=\"teshuwenzibg\"  top=\"-5555\" x=\"70\" y=\"55\" scaleX=\"1.5\" scaleY=\"1.5\"/>\n\t\t<e:Label id=\"bossName\" text=\"暗殿：沙城之王(13转)\" width=\"370\" size=\"16\" textColor=\"0x9f500d\" bold=\"true\" horizontalCenter=\"0\" top=\"-7500000\" scaleX=\"1\" scaleY=\"1\" />\n\t<e:Image id=\"stateImage\" source=\"zdbossyijisha\" horizontalCenter=\"70\" verticalCenter=\"0\" />\r\n\t\t<e:Image source=\"niuquitemlongjiao\" left=\"100\" verticalCenter=\"72\" scaleX=\"1\" scale9Grid=\"187,4,4,24\"/>\r\n\t\t<e:Image source=\"shuxingbg\" left=\"35\" right=\"35\" verticalCenter=\"100\" bottom=\"285\"/>\n\t\t<e:List id=\"listItem\" itemRendererSkinName=\"ItemSkin\" horizontalCenter=\"0\" verticalCenter=\"130\" scaleX=\"0.8\"\n\t\t        scaleY=\"0.8\">\n\t\t\t<e:ArrayCollection>\n\t\t\t\t<e:Array>\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t</e:Array>\n\t\t\t</e:ArrayCollection>\n\t\t\t<e:layout>\n\t\t\t\t<e:HorizontalLayout gap=\"17\" />\n\t\t\t</e:layout>\n\t\t</e:List>\r\n\t<e:Group horizontalCenter=\"0\" verticalCenter=\"50\">\r\n\t\t<e:Image source=\"\"/>\r\n\t\t<e:Image x=\"31\" y=\"10\" source=\"\"/>\r\n\t\t<e:layout>\r\n\t\t<e:HorizontalLayout gap=\"-5\"/>\r\n\t\t</e:layout>\r\n\t</e:Group>\r\n\t\t<e:Label id=\"countdown\" text=\"05:59:24后刷新\" size=\"16\" textColor=\"0x00ff00\" horizontalCenter=\"0\" top=\"515\"/>\r\n\t<e:Group x=\"441\" y=\"0\">\r\n\t\t<e:Image source=\"\" x=\"64\" y=\"60\"/>\r\n\t</e:Group>\r\n\t<e:Image id=\"bossName\" left=\"25\" source=\"\" y=\"150\"/>\r\n\t\t<e:Button id=\"closeBtn\" label=\"按钮\" skinName=\"Btn0Skin\" icon=\"chatclose\" y=\"51\" scaleX=\"0.8\" scaleY=\"0.8\" right=\"5\" />\r\n</e:Group>\n</e:Skin>";
+      return _0xf4c4a4;
+    }
+  }
+  __extends(_0x28d6cd, _0x2c73a8);
+  _0x28d6cd.prototype.initUI = function () {
+    {
+      this.bossImage = new MovieClip();
+      this.bossImage.scaleX = -1;
+      this.bossImage.scaleY = 1;
+      this.bossImage.x = 78;
+      this.bossImage.y = 220;
+      this.bossGroup.touchEnabled = this.bossGroup.touchChildren = false;
+      for (var _0xaf62ee in ConfgMgr.puijinnuberconfig) this.floorArr.push(_0xaf62ee);
+      this.listFloorData = new eui.ArrayCollection();
+      this.listItem.itemRenderer = ItemBase;
+      this.listBoss.itemRenderer = KFAnDianBossItem;
+      this.listBossData = new eui.ArrayCollection();
+      this.listBoss.dataProvider = this.listBossData;
+    }
+  };
+  _0x28d6cd.prototype.open = function () {
+    for (var _0x37fca6 = [], _0x5c44f8 = 0; _0x5c44f8 < arguments.length; _0x5c44f8++) {
+      _0x37fca6[_0x5c44f8] = arguments[_0x5c44f8];
+    }
+    KFBossSys.ins().sendADBossInfo();
+    this.bossGroup.addChild(this.bossImage);
+    this.listBoss.addEventListener(eui.ItemTapEvent.ITEM_TAP, this.onClickBoss, this);
+    this.addTouchEvent(this.seeRule, this.onGetItem);
+    this.addTouchEvent(this.challengeBtn, this.onGetItem);
+    this.addTouchEvent(this.closeBtn, this.closeMenu);
+    this.observe(KFBossSys.ins().postADAttributionInfo, this.setBossInfo);
+    this.observe(KFBossSys.ins().postADRedPoint, this.setData);
+    this.observe(KFBossSys.ins().postADBossRefTime, this.setData);
+    this.bosmc();
     this.setData();
   };
-  _0xba6f0.prototype.onClickBoss = function (_0x246826) {
-    this.currData = this.listBoss.dataProvider.getItemAt(_0x246826.itemIndex);
+  _0x28d6cd.prototype.closeMenu = function (_0x23f443) {
+    ViewManager.ins().close(this);
+  };
+  _0x28d6cd.prototype.bosmc = function () {
+    this.siwangmc3.visible = false;
+  };
+  _0x28d6cd.prototype.onClickMenu = function (_0x24b9b9) {
+    this.setData();
+  };
+  _0x28d6cd.prototype.onClickBoss = function (_0x4257f0) {
+    this.currData = this.listBoss.dataProvider.getItemAt(_0x4257f0.itemIndex);
     this.setBossInfo();
   };
-  _0xba6f0.prototype.setData = function () {
-    var _0x1e2897 = this.listBoss.parent;
-    _0x1e2897.stopAnimation();
-    this.listBoss.scrollV = 0;
-    var _0x480798 = KFBossSys.ins().ADBossInfo;
-    var _0x198f76 = [];
-    var _0x24745f = [];
-    var _0x33206f = [];
-    var _0xb4e08b = [];
-    var _0x56851b = [];
-    var _0x4556ee = [];
-    1000 * UserZs.ins().lv + Actor.level;
-    var _0x282a3b = 62;
-    var _0x3da7d0 = ConfgMgr.uuijinnuberconfig[_0x282a3b];
-    var _0x111d9a = _0x3da7d0.bossId;
-    for (var _0x5c94d7 in _0x480798) if (-1 != _0x111d9a.indexOf(_0x480798[_0x5c94d7].id)) {
-      {
-        var _0x2caa45 = _0x480798[_0x5c94d7].time - egret.getTimer() >> 0 > 0;
-        var _0x534209 = KFBossSys.ins().getLingLiBossOpen(_0x480798[_0x5c94d7].id);
-        if (_0x534209) {
-          _0x480798[_0x5c94d7].id;
-          var _0x557e8f = KFBossSys.ins().getBossRemindByIndex(_0x480798[_0x5c94d7].id);
-          _0x557e8f ? _0x2caa45 ? _0x33206f.push(_0x480798[_0x5c94d7]) : _0x24745f.push(_0x480798[_0x5c94d7]) : _0x2caa45 ? _0x56851b.push(_0x480798[_0x5c94d7]) : _0xb4e08b.push(_0x480798[_0x5c94d7]);
+  _0x28d6cd.prototype.setData = function () {
+    {
+      var _0x298c40 = this.listBoss.parent;
+      _0x298c40.stopAnimation();
+      this.listBoss.scrollV = 0;
+      var _0x2f7109 = KFBossSys.ins().ADBossInfo;
+      var _0x3163e5 = [];
+      var _0x59d6cd = [];
+      var _0x166d7f = [];
+      var _0x1b08d8 = [];
+      var _0x1a433d = [];
+      var _0x4bc8a8 = [];
+      1000 * UserZs.ins().lv + Actor.level;
+      var _0xe0c4ab = 64;
+      var _0x27076c = ConfgMgr.puijinnuberconfig[_0xe0c4ab];
+      var _0x660c7b = _0x27076c.bossId;
+      for (var _0x29ac4d in _0x2f7109) if (-1 != _0x660c7b.indexOf(_0x2f7109[_0x29ac4d].id)) {
+        var _0x5126d7 = _0x2f7109[_0x29ac4d].time - egret.getTimer() >> 0 > 0;
+        var _0x54e5fa = KFBossSys.ins().getLingLiBossOpen(_0x2f7109[_0x29ac4d].id);
+        if (_0x54e5fa) {
+          _0x2f7109[_0x29ac4d].id;
+          var _0x478eee = KFBossSys.ins().getBossRemindByIndex(_0x2f7109[_0x29ac4d].id);
+          _0x478eee ? _0x5126d7 ? _0x166d7f.push(_0x2f7109[_0x29ac4d]) : _0x59d6cd.push(_0x2f7109[_0x29ac4d]) : _0x5126d7 ? _0x1a433d.push(_0x2f7109[_0x29ac4d]) : _0x1b08d8.push(_0x2f7109[_0x29ac4d]);
         } else {
-          _0x4556ee.push(_0x480798[_0x5c94d7]);
+          _0x4bc8a8.push(_0x2f7109[_0x29ac4d]);
         }
       }
+      _0x59d6cd.sort(this.compareFn);
+      _0x166d7f.sort(this.compareFn);
+      _0x1b08d8.sort(this.compareFn);
+      _0x1a433d.sort(this.compareFn);
+      _0x4bc8a8.sort(this.compareFn);
+      _0x3163e5 = _0x59d6cd.concat(_0x166d7f, _0x1b08d8, _0x1a433d, _0x4bc8a8);
+      this.listBossData.replaceAll(_0x3163e5);
+      this.listFloorData.replaceAll(this.floorArr);
+      this.listBoss.selectedIndex = 0;
+      this.currData = this.listBoss.dataProvider.getItemAt(0);
+      this.setBossInfo();
     }
-    _0x24745f.sort(this.compareFn);
-    _0x33206f.sort(this.compareFn);
-    _0xb4e08b.sort(this.compareFn);
-    _0x56851b.sort(this.compareFn);
-    _0x4556ee.sort(this.compareFn);
-    _0x198f76 = _0x24745f.concat(_0x33206f, _0xb4e08b, _0x56851b, _0x4556ee);
-    this.listBossData.replaceAll(_0x198f76);
-    this.listFloorData.replaceAll(this.floorArr);
-    this.listBoss.selectedIndex = 0;
-    this.currData = this.listBoss.dataProvider.getItemAt(0);
-    this.setBossInfo();
   };
-  _0xba6f0.prototype.bosstimes = function () {
-    {
-      var _0x4372e4 = this.currData.time - egret.getTimer();
-      var _0x5dcc90 = DateUtils.getFormatBySecond(Math.floor(_0x4372e4 / 1000), 1);
-      if (_0x4372e4 > 0) {
-        this.countdown.text = _0x5dcc90 + " 后刷新";
+  _0x28d6cd.prototype.bosstimes = function () {
+    var _0x39423a = this.currData.time - egret.getTimer();
+    var _0x54c56c = DateUtils.getFormatBySecond(Math.floor(_0x39423a / 1000), 1);
+    if (_0x39423a > 0) {
+      {
+        this.countdown.text = _0x54c56c + " 后刷新";
         this.countdown.visible = true;
-      } else {
-        {
+      }
+    } else {
+      this.countdown.text = "";
+      this.countdown.visible = false;
+    }
+  };
+  _0x28d6cd.prototype.setBossInfo = function () {
+    if (this.currData) {
+      {
+        var _0x1fdd07 = ConfgMgr.DarkHallBossConfig[this.currData.id];
+        this.listItem.dataProvider = new eui.ArrayCollection(_0x1fdd07.belongRewardshow);
+        var _0x18edca = ConfgMgr.MonstersConfig[_0x1fdd07.bossId];
+        this.bossName.text = _0x18edca.name + "(" + _0x1fdd07.zsLevel + "转)";
+        this.RemainCount.textFlow = TextFlowMaker.generateTextFlow1("剩余BOSS归属次数: |C:447235&T:" + KFBossSys.ins().PJBossCount + "| 次");
+        var _0x2c4809 = this.currData.time - egret.getTimer() >> 0;
+        _0x2c4809 > 0 ? this.stateImage.source = "zdbossyijisha" : 0 >= _0x2c4809 ? this.stateImage.source = "zdbosskejisha" : this.stateImage.source = "";
+        this.bossImage.playFile(RES_DIR_MONSTER + ("monster" + _0x18edca.avatar + "_4s"), -1);
+        var _0x2fb57a = KFBossSys.ins().getLingLiBossOpen(this.currData.id);
+        var _0x45a0b4 = this.currData.time - egret.getTimer();
+        if (_0x45a0b4 > 0) {
+          var _0x3f082c = DateUtils.getFormatBySecond(Math.floor(_0x45a0b4 / 1000), 1);
+          this.countdown.text = _0x3f082c + " 后刷新";
+          this.countdown.visible = true;
+          this.bosstimes();
+        } else {
           this.countdown.text = "";
           this.countdown.visible = false;
         }
+        this.challengeBtn.visible = _0x2fb57a;
+        this.isChallenge.visible = !_0x2fb57a;
+        this.stateImage.visible = _0x2fb57a;
       }
     }
   };
-  _0xba6f0.prototype.setBossInfo = function () {
-    if (this.currData) {
-      var _0x3a4ae3 = ConfgMgr.DarkHallBossConfig[this.currData.id];
-      this.listItem.dataProvider = new eui.ArrayCollection(_0x3a4ae3.belongRewardshow);
-      var _0x21e70b = ConfgMgr.MonstersConfig[_0x3a4ae3.bossId];
-      this.bossName.text = _0x21e70b.name + "(" + _0x3a4ae3.zsLevel + "转)";
-      this.RemainCount.textFlow = TextFlowMaker.generateTextFlow1("剩余BOSS归属次数: |C:447235&T:" + KFBossSys.ins().UJBossCount + "| 次");
-      var _0x40d1e5 = this.currData.time - egret.getTimer() >> 0;
-      _0x40d1e5 > 0 ? this.stateImage.source = "zdbossyijisha" : 0 >= _0x40d1e5 ? this.stateImage.source = "zdbosskejisha" : this.stateImage.source = "";
-      this.bossImage.playFile(RES_DIR_MONSTER + ("monster" + _0x21e70b.avatar + "_4s"), -1);
-      var _0x555755 = KFBossSys.ins().getLingLiBossOpen(this.currData.id);
-      var _0x291eec = this.currData.time - egret.getTimer();
-      if (_0x291eec > 0) {
-        var _0x25c5e9 = DateUtils.getFormatBySecond(Math.floor(_0x291eec / 1000), 1);
-        this.countdown.text = _0x25c5e9 + " 后刷新";
-        this.countdown.visible = true;
-        this.bosstimes();
-      } else {
-        this.countdown.text = "";
-        this.countdown.visible = false;
-      }
-      this.challengeBtn.visible = _0x555755;
-      this.isChallenge.visible = !_0x555755;
-      this.stateImage.visible = _0x555755;
-    }
-  };
-  _0xba6f0.prototype.onGetItem = function (_0x57e6a6) {
-    switch (_0x57e6a6.currentTarget) {
+  _0x28d6cd.prototype.onGetItem = function (_0x59e135) {
+    switch (_0x59e135.currentTarget) {
       case this.seeRule:
         ViewManager.ins().open(CommonHelpWin, ConfgMgr.HelpInfoConfig[65535].text);
         break;
       case this.challengeBtn:
-        if (1 > KFBossSys.ins().UJBossCount) {
+        if (1 > KFBossSys.ins().PJBossCount) {
           void WarnWin.show("次数不足,请使用挑战卷", function () {
-            return void UserTips.ins().showTips("确定");
+            {
+              return void UserTips.ins().showTips("确定");
+            }
           }, this);
           return SoundManager.ins().playEffect("cishubuzubgm");
         }
@@ -1867,49 +797,49 @@ var uuijinBossWin = function (_0x3242b9) {
         this.currData && KFBossSys.ins().sendEnterADFb(this.currData.id);
     }
   };
-  _0xba6f0.prototype.compareFn = function (_0x13c115, _0x31cdf6) {
-    var _0x27b0a8 = ConfgMgr.DarkHallBossConfig[_0x13c115.id];
-    var _0x2f09ec = ConfgMgr.DarkHallBossConfig[_0x31cdf6.id];
-    return _0x27b0a8.zsLevel < _0x2f09ec.zsLevel ? 1 : _0x27b0a8.zsLevel > _0x2f09ec.zsLevel ? -1 : _0x27b0a8.level < _0x2f09ec.level ? 1 : _0x27b0a8.level > _0x2f09ec.level ? -1 : 0;
+  _0x28d6cd.prototype.compareFn = function (_0x5ce4e6, _0x43ad6d) {
+    var _0x3ee489 = ConfgMgr.DarkHallBossConfig[_0x5ce4e6.id];
+    var _0x165efe = ConfgMgr.DarkHallBossConfig[_0x43ad6d.id];
+    return _0x3ee489.zsLevel < _0x165efe.zsLevel ? 1 : _0x3ee489.zsLevel > _0x165efe.zsLevel ? -1 : _0x3ee489.level < _0x165efe.level ? 1 : _0x3ee489.level > _0x165efe.level ? -1 : 0;
   };
-  _0xba6f0.prototype.close = function () {
+  _0x28d6cd.prototype.close = function () {
     {
-      for (var _0x90fef8 = [], _0x175cf8 = 0; _0x175cf8 < arguments.length; _0x175cf8++) {
-        _0x90fef8[_0x175cf8] = arguments[_0x175cf8];
+      for (var _0x300ecc = [], _0x991db6 = 0; _0x991db6 < arguments.length; _0x991db6++) {
+        _0x300ecc[_0x991db6] = arguments[_0x991db6];
       }
     }
   };
-  return _0xba6f0;
+  return _0x28d6cd;
 }(BaseEuiView);
-__reflect(uuijinBossWin.prototype, "uuijinBossWin");
-ViewManager.ins().reg(uuijinBossWin, LayerManager.UI_Main);
-var uiwangsdBossWin = function (_0x3ef9f2) {
-  function _0x425de6() {
-    var _0x334611 = _0x3ef9f2.call(this) || this;
-    _0x334611.floorArr = [];
-    _0x334611.isTopLevel = true;
-    _0x334611.skinName = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin class=\"uiwangsdBossSkin\" width=\"580\" height=\"930\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:ns1=\"*\"\n        xmlns:w=\"http://ns.egret.com/wing\">\r\n<e:Group top=\"0\" width=\"580\" horizontalCenter=\"0\" bottom=\"0\">\n\t<e:Rect left=\"0\" right=\"0\" top=\"0\" bottom=\"0\" fillAlpha=\"0.6\" />\n\t<e:Image top=\"0\" bottom=\"0\" source=\"tongyongmianbanbg2\" width=\"580\" horizontalCenter=\"0\" scale9Grid=\"15,12,2,3\" />\n\t<e:Group width=\"556\" horizontalCenter=\"0\" bottom=\"58\">\n\t\t<e:Image source=\"bantoumingkuang4\" x=\"0\" top=\"0\" bottom=\"0\" width=\"278\" height=\"90\" />\n\t\t<e:Image source=\"bantoumingkuang4\" scaleX=\"-1\" right=\"0\" top=\"0\" bottom=\"0\" width=\"278\" height=\"90\" />\n\t</e:Group>\n\t<e:Image width=\"570\" horizontalCenter=\"0\" source=\"tongyongmianbanbg\" scale9Grid=\"19,12,14,25\" top=\"44\" bottom=\"120\" />\n\t<ns1:BaseComponent id=\"roleSelect\" y=\"0\" skinName=\"RoleSelectPanelSkin\" className=\"RoleSelectPanel\" width=\"580\"\n\t                   horizontalCenter=\"0\" currentState=\"nohead\" />\n\t<e:Image y=\"9\" left=\"65\" source=\"msjl\" />\n\t<e:Button id=\"seeRule\" label=\"按钮\" icon=\"wenhao\" skinName=\"Btn0Skin\" horizontalCenter=\"-259\" y=\"5\" scaleX=\"0.9\"\n\t          scaleY=\"0.9\" />\n\t<e:Image source=\"\" scaleX=\"-1\" anchorOffsetX=\"0\" width=\"410\" anchorOffsetY=\"0\"\n\t         height=\"447\"  horizontalCenter=\"69\" bottom=\"294\"/>\n\t<e:Image verticalCenter=\"-45\" source=\"newdtbg1\" left=\"13\" right=\"13\"/>\n\t<e:Group width=\"417\" height=\"279\" left=\"0\" bottom=\"1260000\">\n\t\t<e:Image x=\"0\" y=\"61\" source=\"\" width=\"417\" anchorOffsetY=\"0\" height=\"216\" scale9Grid=\"22,12,138,72\" />\n\t\t<e:List id=\"listItem\" itemRendererSkinName=\"ItemSkin\" horizontalCenter=\"0.5\" bottom=\"105\" x=\"72\" scaleX=\"0.8\"\n\t\t        scaleY=\"0.8\">\n\t\t\t<e:ArrayCollection>\n\t\t\t\t<e:Array>\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t</e:Array>\n\t\t\t</e:ArrayCollection>\n\t\t\t<e:layout>\n\t\t\t\t<e:HorizontalLayout gap=\"17\" />\n\t\t\t</e:layout>\n\t\t</e:List>\n\t\t<e:Label text=\"BOSS掉落\" x=\"163\" bottom=\"195\" size=\"16\" textColor=\"0xde7f04\" bold=\"true\" scaleX=\"1\" scaleY=\"1\" />\n\t\t<e:Label id=\"isChallenge\" text=\"未满足开启条件\" x=\"117.98000000000002\" y=\"242.64999999999998\" size=\"16\" textColor=\"0xd20506\"\n\t\t         bold=\"true\" scaleX=\"1\" scaleY=\"1\" />\n\t</e:Group>\n\t<e:Group id=\"bossGroup\" width=\"200\" height=\"200\" left=\"210\" verticalCenter=\"-150\"/>\r\n\t<ns1:BaseComponent id=\"siwangmc1\" skinName=\"effskillpos\" width=\"130\" height=\"100\" verticalCenter=\"-220\" left=\"-15\" scaleX=\"1.5\" scaleY=\"1.5\"/>\r\n\t<ns1:BaseComponent id=\"siwangmc2\" skinName=\"effskillpos\" width=\"130\" height=\"100\" verticalCenter=\"-220\" right=\"35\" scaleX=\"1.5\" scaleY=\"1.5\"/>\r\n\t<ns1:BaseComponent id=\"siwangmc3\" skinName=\"effskillpos\" width=\"200\" height=\"150\" verticalCenter=\"-200\" left=\"125\" scaleX=\"2\" scaleY=\"2\"/>\r\n<e:Image source=\"siwangliantiao\" left=\"10\" right=\"10\" verticalCenter=\"100\" scaleX=\"1\" scaleY=\"1\"/>\n\t<e:Scroller width=\"139\" bottom=\"175\" top=\"95\" right=\"-1143\">\n\t\t<e:List id=\"listBoss\" top=\"614\" anchorOffsetX=\"0\" anchorOffsetY=\"0\" itemRendererSkinName=\"shenshoubosslist\"\n\t\t        horizontalCenter=\"-207.5\" bottom=\"126\">\n\t\t\t<e:ArrayCollection>\n\t\t\t\t<e:Array>\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t</e:Array>\n\t\t\t</e:ArrayCollection>\n\t\t\t<e:layout>\n\t\t\t\t<e:TileLayout verticalGap=\"6\" requestedColumnCount=\"1\" />\n\t\t\t</e:layout>\n\t\t</e:List>\n\t</e:Scroller>\r\n\t\t<e:Image source=\"teshuwenzibg\"  top=\"-55555\" x=\"70\" y=\"55\" scaleX=\"1.5\" scaleY=\"1.5\"/>\n\t\t<e:Label id=\"bossName\" text=\"暗殿：沙城之王(13转)\" width=\"370\" size=\"16\" textColor=\"0x9f500d\" bold=\"true\" horizontalCenter=\"0\" top=\"-55575\" scaleX=\"1\" scaleY=\"1\" />\n\t<e:Image id=\"stateImage\" source=\"zdbossyijisha\" horizontalCenter=\"100\" verticalCenter=\"-100\" />\r\n\t\t<e:Group id=\"reward\" x=\"32\" verticalCenter=\"120\">\r\n\t\t\t<ns1:BaseComponent id=\"itemReward0\" skinName=\"ItemSkin\" className=\"ItemBase\" left=\"0\" bottom=\"44\"/>\r\n\t\t\t<ns1:BaseComponent id=\"itemReward1\" skinName=\"ItemSkin\" className=\"ItemBase\"  left=\"142\" bottom=\"-11\"/>\r\n\t\t\t<ns1:BaseComponent id=\"itemReward2\" skinName=\"ItemSkin\" className=\"ItemBase\"  left=\"292\" bottom=\"-11\"/>\r\n\t\t\t<ns1:BaseComponent id=\"itemReward3\" skinName=\"ItemSkin\" className=\"ItemBase\"  left=\"423\" bottom=\"44\"/>\r\n\t\t</e:Group>\n\t\t<e:Button id=\"challengeBtn\" label=\"挑 战\" skinName=\"Btn23Skin\" icon=\"swjd_btn\" bottom=\"140\" horizontalCenter=\"-8.5\" />\r\n\t<e:Image id=\"bossName\" left=\"40\" source=\"\" top=\"100\"/>\r\n\t<e:Image id=\"fbName\" source=\"\" right=\"10\" top=\"100\"/>\r\n\t<e:Group id=\"levelLock\" width=\"130\" height=\"29\" horizontalCenter=\"0\" verticalCenter=\"50\">\r\n\t\t<e:Image source=\"\" left=\"0\"/>\r\n\t\t<e:Image source=\"\" right=\"1\"/>\r\n\t\t<e:Label id=\"countdown\" text=\"05:59:24后刷新\" size=\"16\" textColor=\"0x00ff00\" horizontalCenter=\"0\" y=\"30\"/>\n\t\t<e:Label id=\"RemainCount\" text=\"剩余归属次数：\" bottom=\"-160\" horizontalCenter=\"0\" size=\"16\" bold=\"true\" scaleX=\"1\" scaleY=\"1\" textColor=\"0x89713c\" />\r\n\t</e:Group>\r\n\t\t<e:Button id=\"closeBtn\" label=\"按钮\" skinName=\"Btn0Skin\" icon=\"chatclose\" y=\"51\" scaleX=\"0.8\" scaleY=\"0.8\" right=\"5\" />\r\n</e:Group>\n</e:Skin>";
-    return _0x334611;
+__reflect(puijinBossWin.prototype, "puijinBossWin");
+ViewManager.ins().reg(puijinBossWin, LayerManager.UI_Main);
+var piwangsdBossWin = function (_0x15a452) {
+  function _0x19184a() {
+    var _0x20ac42 = _0x15a452.call(this) || this;
+    _0x20ac42.floorArr = [];
+    _0x20ac42.isTopLevel = true;
+    _0x20ac42.skinName = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin class=\"piwangsdBossSkin\" width=\"580\" height=\"930\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:ns1=\"*\"\n        xmlns:w=\"http://ns.egret.com/wing\">\r\n<e:Group top=\"0\" width=\"580\" horizontalCenter=\"0\" bottom=\"0\">\n\t<e:Rect left=\"0\" right=\"0\" top=\"0\" bottom=\"0\" fillAlpha=\"0.6\" />\n\t<e:Image top=\"0\" bottom=\"0\" source=\"tongyongmianbanbg2\" width=\"580\" horizontalCenter=\"0\" scale9Grid=\"15,12,2,3\" />\n\t<e:Group width=\"556\" horizontalCenter=\"0\" bottom=\"58\">\n\t\t<e:Image source=\"bantoumingkuang4\" x=\"0\" top=\"0\" bottom=\"0\" width=\"278\" height=\"90\" />\n\t\t<e:Image source=\"bantoumingkuang4\" scaleX=\"-1\" right=\"0\" top=\"0\" bottom=\"0\" width=\"278\" height=\"90\" />\n\t</e:Group>\n\t<e:Image width=\"570\" horizontalCenter=\"0\" source=\"tongyongmianbanbg\" scale9Grid=\"19,12,14,25\" top=\"44\" bottom=\"120\" />\n\t<ns1:BaseComponent id=\"roleSelect\" y=\"0\" skinName=\"RoleSelectPanelSkin\" className=\"RoleSelectPanel\" width=\"580\"\n\t                   horizontalCenter=\"0\" currentState=\"nohead\" />\n\t<e:Image y=\"9\" left=\"65\" source=\"newdldldthh\" />\n\t<e:Button id=\"seeRule\" label=\"按钮\" icon=\"wenhao\" skinName=\"Btn0Skin\" horizontalCenter=\"-259\" y=\"5\" scaleX=\"0.9\"\n\t          scaleY=\"0.9\" />\n\t<e:Image source=\"\" scaleX=\"-1\" anchorOffsetX=\"0\" width=\"410\" anchorOffsetY=\"0\"\n\t         height=\"447\"  horizontalCenter=\"69\" bottom=\"294\"/>\n\t<e:Image verticalCenter=\"-45\" source=\"dldlbgthh1\" left=\"13\" right=\"13\"/>\n\t<e:Group width=\"417\" height=\"279\" left=\"0\" bottom=\"1260000\">\n\t\t<e:Image x=\"0\" y=\"61\" source=\"\" width=\"417\" anchorOffsetY=\"0\" height=\"216\" scale9Grid=\"22,12,138,72\" />\n\t\t<e:List id=\"listItem\" itemRendererSkinName=\"ItemSkin\" horizontalCenter=\"0.5\" bottom=\"105\" x=\"72\" scaleX=\"0.8\"\n\t\t        scaleY=\"0.8\">\n\t\t\t<e:ArrayCollection>\n\t\t\t\t<e:Array>\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t</e:Array>\n\t\t\t</e:ArrayCollection>\n\t\t\t<e:layout>\n\t\t\t\t<e:HorizontalLayout gap=\"17\" />\n\t\t\t</e:layout>\n\t\t</e:List>\n\t\t<e:Label text=\"BOSS掉落\" x=\"163\" bottom=\"195\" size=\"16\" textColor=\"0xde7f04\" bold=\"true\" scaleX=\"1\" scaleY=\"1\" />\n\t\t<e:Label id=\"isChallenge\" text=\"未满足开启条件\" x=\"117.98000000000002\" y=\"242.64999999999998\" size=\"16\" textColor=\"0xd20506\"\n\t\t         bold=\"true\" scaleX=\"1\" scaleY=\"1\" />\n\t</e:Group>\n\t<e:Group id=\"bossGroup\" width=\"200\" height=\"200\" left=\"210\" verticalCenter=\"-150\"/>\r\n\t<ns1:BaseComponent id=\"siwangmc1\" skinName=\"effskillpos\" width=\"130\" height=\"100\" verticalCenter=\"-220\" left=\"-15\" scaleX=\"1.5\" scaleY=\"1.5\"/>\r\n\t<ns1:BaseComponent id=\"siwangmc2\" skinName=\"effskillpos\" width=\"130\" height=\"100\" verticalCenter=\"-220\" right=\"35\" scaleX=\"1.5\" scaleY=\"1.5\"/>\r\n\t<ns1:BaseComponent id=\"siwangmc3\" skinName=\"effskillpos\" width=\"200\" height=\"150\" verticalCenter=\"-200\" left=\"125\" scaleX=\"2\" scaleY=\"2\"/>\r\n<e:Image source=\"siwangliantiao\" left=\"10\" right=\"10\" verticalCenter=\"100\" scaleX=\"1\" scaleY=\"1\"/>\n\t<e:Scroller width=\"139\" bottom=\"175\" top=\"95\" right=\"-1143\">\n\t\t<e:List id=\"listBoss\" top=\"614\" anchorOffsetX=\"0\" anchorOffsetY=\"0\" itemRendererSkinName=\"shenshoubosslist\"\n\t\t        horizontalCenter=\"-207.5\" bottom=\"126\">\n\t\t\t<e:ArrayCollection>\n\t\t\t\t<e:Array>\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t</e:Array>\n\t\t\t</e:ArrayCollection>\n\t\t\t<e:layout>\n\t\t\t\t<e:TileLayout verticalGap=\"6\" requestedColumnCount=\"1\" />\n\t\t\t</e:layout>\n\t\t</e:List>\n\t</e:Scroller>\r\n\t\t<e:Image source=\"teshuwenzibg\"  top=\"-55555\" x=\"70\" y=\"55\" scaleX=\"1.5\" scaleY=\"1.5\"/>\n\t\t<e:Label id=\"bossName\" text=\"暗殿：沙城之王(13转)\" width=\"370\" size=\"16\" textColor=\"0x9f500d\" bold=\"true\" horizontalCenter=\"0\" top=\"-55575\" scaleX=\"1\" scaleY=\"1\" />\n\t<e:Image id=\"stateImage\" source=\"zdbossyijisha\" horizontalCenter=\"100\" verticalCenter=\"-100\" />\r\n\t\t<e:Group id=\"reward\" x=\"32\" verticalCenter=\"120\">\r\n\t\t\t<ns1:BaseComponent id=\"itemReward0\" skinName=\"ItemSkin\" className=\"ItemBase\" left=\"0\" bottom=\"44\"/>\r\n\t\t\t<ns1:BaseComponent id=\"itemReward1\" skinName=\"ItemSkin\" className=\"ItemBase\"  left=\"142\" bottom=\"-11\"/>\r\n\t\t\t<ns1:BaseComponent id=\"itemReward2\" skinName=\"ItemSkin\" className=\"ItemBase\"  left=\"292\" bottom=\"-11\"/>\r\n\t\t\t<ns1:BaseComponent id=\"itemReward3\" skinName=\"ItemSkin\" className=\"ItemBase\"  left=\"423\" bottom=\"44\"/>\r\n\t\t</e:Group>\n\t\t<e:Button id=\"challengeBtn\" label=\"挑 战\" skinName=\"Btn23Skin\" icon=\"swjd_btn\" bottom=\"140\" horizontalCenter=\"-8.5\" />\r\n\t<e:Image id=\"bossName\" left=\"40\" source=\"\" top=\"100\"/>\r\n\t<e:Image id=\"fbName\" source=\"\" right=\"10\" top=\"100\"/>\r\n\t<e:Group id=\"levelLock\" width=\"130\" height=\"29\" horizontalCenter=\"0\" verticalCenter=\"50\">\r\n\t\t<e:Image source=\"\" left=\"0\"/>\r\n\t\t<e:Image source=\"\" right=\"1\"/>\r\n\t\t<e:Label id=\"countdown\" text=\"05:59:24后刷新\" size=\"16\" textColor=\"0x00ff00\" horizontalCenter=\"0\" y=\"30\"/>\n\t\t<e:Label id=\"RemainCount\" text=\"剩余归属次数：\" bottom=\"-160\" horizontalCenter=\"0\" size=\"16\" bold=\"true\" scaleX=\"1\" scaleY=\"1\" textColor=\"0x89713c\" />\r\n\t</e:Group>\r\n\t\t<e:Button id=\"closeBtn\" label=\"按钮\" skinName=\"Btn0Skin\" icon=\"chatclose\" y=\"51\" scaleX=\"0.8\" scaleY=\"0.8\" right=\"5\" />\r\n</e:Group>\n</e:Skin>";
+    return _0x20ac42;
   }
-  __extends(_0x425de6, _0x3ef9f2);
-  _0x425de6.prototype.initUI = function () {
+  __extends(_0x19184a, _0x15a452);
+  _0x19184a.prototype.initUI = function () {
     this.bossImage = new MovieClip();
     this.bossImage.scaleX = -1;
     this.bossImage.scaleY = 1;
     this.bossImage.x = 78;
     this.bossImage.y = 165;
     this.bossGroup.touchEnabled = this.bossGroup.touchChildren = false;
-    for (var _0x50fa92 in ConfgMgr.uiwangbossnuberconfig) this.floorArr.push(_0x50fa92);
+    for (var _0x16ceb9 in ConfgMgr.piwangbossnuberconfig) this.floorArr.push(_0x16ceb9);
     this.listFloorData = new eui.ArrayCollection();
     this.listItem.itemRenderer = ItemBase;
     this.listBoss.itemRenderer = KFAnDianBossItem;
     this.listBossData = new eui.ArrayCollection();
     this.listBoss.dataProvider = this.listBossData;
   };
-  _0x425de6.prototype.open = function () {
+  _0x19184a.prototype.open = function () {
     {
-      for (var _0x54f3a2 = [], _0x5de326 = 0; _0x5de326 < arguments.length; _0x5de326++) {
-        _0x54f3a2[_0x5de326] = arguments[_0x5de326];
+      for (var _0x435821 = [], _0x364295 = 0; _0x364295 < arguments.length; _0x364295++) {
+        _0x435821[_0x364295] = arguments[_0x364295];
       }
       KFBossSys.ins().sendADBossInfo();
       this.bossGroup.addChild(this.bossImage);
@@ -1924,813 +854,159 @@ var uiwangsdBossWin = function (_0x3ef9f2) {
       this.setData();
     }
   };
-  _0x425de6.prototype.closeMenu = function (_0xf2cf26) {
+  _0x19184a.prototype.closeMenu = function (_0x441479) {
     ViewManager.ins().close(this);
   };
-  _0x425de6.prototype.onClickMenu = function (_0x272fdf) {
-    {
-      this.setData();
-    }
-  };
-  _0x425de6.prototype.onClickBoss = function (_0xe833d4) {
-    this.currData = this.listBoss.dataProvider.getItemAt(_0xe833d4.itemIndex);
-    this.setBossInfo();
-  };
-  _0x425de6.prototype.setData = function () {
-    var _0x428504 = this.listBoss.parent;
-    _0x428504.stopAnimation();
-    this.listBoss.scrollV = 0;
-    var _0x506953 = KFBossSys.ins().ADBossInfo;
-    var _0x18f9a1 = [];
-    var _0x45ad17 = [];
-    var _0x1ef99e = [];
-    var _0x1e0207 = [];
-    var _0x2100b9 = [];
-    var _0x4be613 = [];
-    1000 * UserZs.ins().lv + Actor.level;
-    var _0x2b9da3 = 61;
-    var _0x35c4d7 = ConfgMgr.uiwangbossnuberconfig[_0x2b9da3];
-    var _0xb99cf = _0x35c4d7.bossId;
-    for (var _0x492197 in _0x506953) if (-1 != _0xb99cf.indexOf(_0x506953[_0x492197].id)) {
-      var _0x3aec45 = _0x506953[_0x492197].time - egret.getTimer() >> 0 > 0;
-      var _0x47f6b9 = KFBossSys.ins().getLingLiBossOpen(_0x506953[_0x492197].id);
-      if (_0x47f6b9) {
-        {
-          _0x506953[_0x492197].id;
-          var _0x451cc8 = KFBossSys.ins().getBossRemindByIndex(_0x506953[_0x492197].id);
-          _0x451cc8 ? _0x3aec45 ? _0x1ef99e.push(_0x506953[_0x492197]) : _0x45ad17.push(_0x506953[_0x492197]) : _0x3aec45 ? _0x2100b9.push(_0x506953[_0x492197]) : _0x1e0207.push(_0x506953[_0x492197]);
-        }
-      } else {
-        _0x4be613.push(_0x506953[_0x492197]);
-      }
-    }
-    _0x45ad17.sort(this.compareFn);
-    _0x1ef99e.sort(this.compareFn);
-    _0x1e0207.sort(this.compareFn);
-    _0x2100b9.sort(this.compareFn);
-    _0x4be613.sort(this.compareFn);
-    _0x18f9a1 = _0x45ad17.concat(_0x1ef99e, _0x1e0207, _0x2100b9, _0x4be613);
-    this.listBossData.replaceAll(_0x18f9a1);
-    this.listFloorData.replaceAll(this.floorArr);
-    this.listBoss.selectedIndex = 0;
-    this.currData = this.listBoss.dataProvider.getItemAt(0);
-    this.setBossInfo();
-  };
-  _0x425de6.prototype.swsditem = function (_0x2b042f) {
-    var _0x2607f3 = ConfgMgr.DarkHallBossConfig[_0x2b042f];
-    var _0x246eb5 = _0x2607f3.belongRewardshow;
-    for (y = 0; y < _0x246eb5.length; y++) {
-      this["itemReward" + y].data = _0x246eb5[y];
-    }
-  };
-  _0x425de6.prototype.bossmacs = function () {
-    this.kfBossMc || (this.kfBossMc = new MovieClip(), this.kfBossMc.scaleX = this.kfBossMc.scaleY = 0.45, this.kfBossMc.x = 0, this.kfBossMc.y = 35);
-    this.siwangmc1.boossGroup.addChild(this.kfBossMc);
-    this.kfBossMc.playFile(RES_DIR_EFF + "dtxstx01", -1);
-    this.kfBossMc1 || (this.kfBossMc1 = new MovieClip(), this.kfBossMc1.scaleX = this.kfBossMc1.scaleY = 0.45, this.kfBossMc1.x = 0, this.kfBossMc1.y = 35);
-    this.siwangmc2.boossGroup.addChild(this.kfBossMc1);
-    this.kfBossMc1.playFile(RES_DIR_EFF + "dtxstx01", -1);
-    this.kfBossMc2 || (this.kfBossMc2 = new MovieClip(), this.kfBossMc2.scaleX = this.kfBossMc2.scaleY = 0.45, this.kfBossMc2.x = 0, this.kfBossMc2.y = 35);
-    this.siwangmc3.boossGroup.addChild(this.kfBossMc2);
-    this.kfBossMc2.playFile(RES_DIR_EFF + "dtxstx01", -1);
-  };
-  _0x425de6.prototype.setBossInfo = function () {
-    {
-      if (this.currData) {
-        {
-          var _0x51c3ce = this.currData.id;
-          var _0x39031f = ConfgMgr.DarkHallBossConfig[_0x51c3ce];
-          this.listItem.dataProvider = new eui.ArrayCollection(_0x39031f.belongRewardshow);
-          var _0x2b44c3 = ConfgMgr.MonstersConfig[_0x39031f.bossId];
-          this.bossName.text = _0x2b44c3.name + "(" + _0x39031f.zsLevel + "转)";
-          this.RemainCount.textFlow = TextFlowMaker.generateTextFlow1("剩余归属次数:|C:447235&T:" + KFBossSys.ins().UWBossCount + "|次");
-          var _0xdd7ff7 = this.currData.time - egret.getTimer() >> 0;
-          _0xdd7ff7 > 0 ? this.stateImage.source = "zdbossyijisha" : 0 >= _0xdd7ff7 ? this.stateImage.source = "zdbosskejisha" : this.stateImage.source = "";
-          this.bossImage.playFile(RES_DIR_MONSTER + ("monster" + _0x2b44c3.avatar + "_3s"), -1);
-          var _0x1e872a = KFBossSys.ins().getLingLiBossOpen(this.currData.id);
-          var _0x58f6c4 = this.currData.time - egret.getTimer();
-          if (_0x58f6c4 > 0) {
-            var _0x4cd610 = DateUtils.getFormatBySecond(Math.floor(_0x58f6c4 / 1000), 1);
-            this.countdown.text = _0x4cd610 + " 后刷新";
-            this.countdown.visible = true;
-            this.bosstimes();
-          } else {
-            this.countdown.text = "";
-            this.countdown.visible = false;
-          }
-          this.challengeBtn.visible = _0x1e872a;
-          this.isChallenge.visible = !_0x1e872a;
-          this.stateImage.visible = _0x1e872a;
-          this.swsditem(_0x51c3ce);
-          this.bossmacs();
-        }
-      }
-    }
-  };
-  _0x425de6.prototype.bosstimes = function () {
-    var _0x575bed = this.currData.time - egret.getTimer();
-    var _0x487850 = DateUtils.getFormatBySecond(Math.floor(_0x575bed / 1000), 1);
-    _0x575bed > 0 ? (this.countdown.text = _0x487850 + " 后刷新", this.countdown.visible = true) : (this.countdown.text = "", this.countdown.visible = false);
-  };
-  _0x425de6.prototype.onGetItem = function (_0x310401) {
-    switch (_0x310401.currentTarget) {
-      case this.seeRule:
-        ViewManager.ins().open(CommonHelpWin, ConfgMgr.HelpInfoConfig[65535].text);
-        break;
-      case this.challengeBtn:
-        d = KFBossSys.ins().UWBossCount;
-        KFBossSys.ins();
-        if (1 > d) {
-          return void WarnWin.show("挑战次数不足", function () {
-            return void UserTips.ins().showTips("确定");
-          }, this);
-        }
-        d = (KFBossSys.ins().ADBossEnterCD - egret.getTimer()) / 1000 >> 0;
-        if (0 < d) {
-          return void UserTips.ins().showTips("|C:0xf3311e&T:" + d + "秒后可以进入！");
-        }
-        if (0 < this.currData.time - egret.getTimer() >> 0) {
-          return void UserTips.ins().showTips("|C:0xf3311e&T:BOSS未复活，不可挑战！");
-        }
-        this.currData && KFBossSys.ins().sendEnterADFb(this.currData.id);
-    }
-  };
-  _0x425de6.prototype.compareFn = function (_0x460466, _0x113d5f) {
-    var _0x3c89e8 = ConfgMgr.DarkHallBossConfig[_0x460466.id];
-    var _0x3ae4b1 = ConfgMgr.DarkHallBossConfig[_0x113d5f.id];
-    return _0x3c89e8.zsLevel < _0x3ae4b1.zsLevel ? 1 : _0x3c89e8.zsLevel > _0x3ae4b1.zsLevel ? -1 : _0x3c89e8.level < _0x3ae4b1.level ? 1 : _0x3c89e8.level > _0x3ae4b1.level ? -1 : 0;
-  };
-  _0x425de6.prototype.close = function () {
-    {
-      for (var _0x3e015b = [], _0x50f230 = 0; _0x50f230 < arguments.length; _0x50f230++) {
-        _0x3e015b[_0x50f230] = arguments[_0x50f230];
-      }
-    }
-  };
-  return _0x425de6;
-}(BaseEuiView);
-__reflect(uiwangsdBossWin.prototype, "uiwangsdBossWin");
-ViewManager.ins().reg(uiwangsdBossWin, LayerManager.UI_Main);
-var uiuquBossWin = function (_0x575084) {
-  function _0x59cbe1() {
-    var _0x4201f9 = _0x575084.call(this) || this;
-    _0x4201f9.floorArr = [];
-    _0x4201f9.isTopLevel = true;
-    _0x4201f9.skinName = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin class=\"uiuquBossSkin\" width=\"580\" height=\"930\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:ns1=\"*\"\n        xmlns:w=\"http://ns.egret.com/wing\">\r\n<e:Group width=\"580\" height=\"930\" horizontalCenter=\"0\">\n\t<e:Rect left=\"0\" right=\"0\" top=\"0\" bottom=\"0\" fillAlpha=\"0.6\" />\n\t<e:Image top=\"0\" bottom=\"0\" source=\"tongyongmianbanbg2\" width=\"580\" horizontalCenter=\"0\" scale9Grid=\"15,12,2,3\" />\n\t<e:Group width=\"556\" horizontalCenter=\"0\" bottom=\"58\">\n\t\t<e:Image source=\"bantoumingkuang4\" x=\"0\" top=\"0\" bottom=\"0\" width=\"278\" height=\"90\" />\n\t\t<e:Image source=\"bantoumingkuang4\" scaleX=\"-1\" right=\"0\" top=\"0\" bottom=\"0\" width=\"278\" height=\"90\" />\n\t</e:Group>\n\t<e:Image width=\"570\" horizontalCenter=\"0\" source=\"tongyongmianbanbg\" scale9Grid=\"19,12,14,25\" top=\"44\" bottom=\"120\" />\n\t<ns1:BaseComponent id=\"roleSelect\" y=\"0\" skinName=\"RoleSelectPanelSkin\" className=\"RoleSelectPanel\" width=\"580\"\n\t                   horizontalCenter=\"0\" currentState=\"nohead\" />\n\t<e:Image y=\"12\" left=\"65\" source=\"msjl\" />\n\t<e:Button id=\"seeRule\" label=\"按钮\" icon=\"wenhao\" skinName=\"Btn0Skin\" horizontalCenter=\"-259\" y=\"5\" scaleX=\"0.9\"\n\t          scaleY=\"0.9\" />\n\t<e:Image source=\"\" scaleX=\"-1\" anchorOffsetX=\"0\" width=\"410\" anchorOffsetY=\"0\"\n\t         height=\"447\"  horizontalCenter=\"69\" bottom=\"294\"/>\n\t<e:Image top=\"50\" bottom=\"130\" source=\"newdtbg3\" left=\"13\" right=\"13\"/>\n\t<e:Group width=\"417\" height=\"279\" left=\"0\" bottom=\"126\">\n\t\t<e:Image x=\"0\" y=\"61\" source=\"\" width=\"417\" anchorOffsetY=\"0\" height=\"216\" scale9Grid=\"22,12,138,72\" />\n\t\t<e:Label id=\"isChallenge\" text=\"未满足开启条件\" x=\"117.98000000000002\" y=\"242.64999999999998\" size=\"16\" textColor=\"0xd20506\"\n\t\t         bold=\"true\" scaleX=\"1\" scaleY=\"1\" />\n\t\t<e:Label id=\"RemainCount\" text=\"剩余归属次数：\" bottom=\"130\" horizontalCenter=\"80\" size=\"16\" bold=\"true\" scaleX=\"1\" scaleY=\"1\" textColor=\"0x89713c\" />\n\t\t<e:Button id=\"challengeBtn\" label=\"挑 战\" icon=\"swjd_btn\" skinName=\"Btn23Skin\" bottom=\"23\" horizontalCenter=\"80\" />\n\t</e:Group>\r\n\t<ns1:BaseComponent id=\"siwangmc3\" skinName=\"effskillpos\" width=\"200\" height=\"150\" top=\"-50\" left=\"60\" scaleX=\"2.5\" scaleY=\"2.5\"/>\n\t<e:Group id=\"bossGroup\" width=\"200\" height=\"200\" left=\"210\" top=\"330\"/>\n\t<e:Scroller width=\"139\" bottom=\"175\" top=\"95\" right=\"4300000\">\n\t\t<e:List id=\"listBoss\" top=\"614\" anchorOffsetX=\"0\" anchorOffsetY=\"0\" itemRendererSkinName=\"shenshoubosslist\"\n\t\t        horizontalCenter=\"-207.5\" bottom=\"126\">\n\t\t\t<e:ArrayCollection>\n\t\t\t\t<e:Array>\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t</e:Array>\n\t\t\t</e:ArrayCollection>\n\t\t\t<e:layout>\n\t\t\t\t<e:TileLayout verticalGap=\"6\" requestedColumnCount=\"1\" />\n\t\t\t</e:layout>\n\t\t</e:List>\n\t</e:Scroller>\r\n\t\t<e:Image source=\"teshuwenzibg\"  top=\"-5555\" x=\"70\" y=\"55\" scaleX=\"1.5\" scaleY=\"1.5\"/>\n\t\t<e:Label id=\"bossName\" text=\"暗殿：沙城之王(13转)\" width=\"370\" size=\"16\" textColor=\"0x9f500d\" bold=\"true\" horizontalCenter=\"0\" top=\"-7500000\" scaleX=\"1\" scaleY=\"1\" />\n\t<e:Image id=\"stateImage\" source=\"zdbossyijisha\" horizontalCenter=\"70\" top=\"360\" />\r\n\t\t<e:Image source=\"niuquitemlongjiao\" left=\"100\" top=\"522\" scaleX=\"1\" scale9Grid=\"187,4,4,24\"/>\r\n\t\t<e:Image source=\"shuxingbg\" left=\"35\" right=\"35\" top=\"550\" bottom=\"285\"/>\n\t\t<e:List id=\"listItem\" itemRendererSkinName=\"ItemSkin\" horizontalCenter=\"0\" top=\"560\" scaleX=\"0.8\"\n\t\t        scaleY=\"0.8\">\n\t\t\t<e:ArrayCollection>\n\t\t\t\t<e:Array>\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t</e:Array>\n\t\t\t</e:ArrayCollection>\n\t\t\t<e:layout>\n\t\t\t\t<e:HorizontalLayout gap=\"17\" />\n\t\t\t</e:layout>\n\t\t</e:List>\r\n\t<e:Group horizontalCenter=\"0\" top=\"480\">\r\n\t\t<e:Image source=\"\"/>\r\n\t\t<e:Image x=\"31\" y=\"10\" source=\"\"/>\r\n\t\t<e:layout>\r\n\t\t<e:HorizontalLayout gap=\"-5\"/>\r\n\t\t</e:layout>\r\n\t</e:Group>\r\n\t\t<e:Label id=\"countdown\" text=\"05:59:24后刷新\" size=\"16\" textColor=\"0x00ff00\" horizontalCenter=\"0\" top=\"515\"/>\r\n\t<e:Group top=\"50\" horizontalCenter=\"0\">\r\n\t\t<e:Image source=\"\" top=\"0\" horizontalCenter=\"0\"/>\r\n\t\t<e:Image source=\"\" horizontalCenter=\"0\" verticalCenter=\"6\"/>\r\n\t</e:Group>\r\n\t<e:Group x=\"421\" y=\"20\">\r\n\t\t<e:Image source=\"\" x=\"64\" y=\"60\"/>\r\n\t\t<e:Image source=\"\" y=\"100\"/>\r\n\t</e:Group>\r\n\t<e:Image id=\"bossName\" left=\"25\" source=\"\" y=\"89\"/>\r\n\t\t<e:Button id=\"closeBtn\" label=\"按钮\" skinName=\"Btn0Skin\" icon=\"chatclose\" y=\"51\" scaleX=\"0.8\" scaleY=\"0.8\" right=\"5\" />\r\n</e:Group>\n</e:Skin>";
-    return _0x4201f9;
-  }
-  __extends(_0x59cbe1, _0x575084);
-  _0x59cbe1.prototype.initUI = function () {
-    this.bossImage = new MovieClip();
-    this.bossImage.scaleX = -1;
-    this.bossImage.scaleY = 1;
-    this.bossImage.x = 78;
-    this.bossImage.y = 165;
-    this.bossGroup.touchEnabled = this.bossGroup.touchChildren = false;
-    for (var _0x1eb41b in ConfgMgr.uqkjbossnuberconfig) this.floorArr.push(_0x1eb41b);
-    this.listFloorData = new eui.ArrayCollection();
-    this.listItem.itemRenderer = ItemBase;
-    this.listBoss.itemRenderer = KFAnDianBossItem;
-    this.listBossData = new eui.ArrayCollection();
-    this.listBoss.dataProvider = this.listBossData;
-  };
-  _0x59cbe1.prototype.open = function () {
-    {
-      for (var _0x1708bd = [], _0x5ce351 = 0; _0x5ce351 < arguments.length; _0x5ce351++) {
-        _0x1708bd[_0x5ce351] = arguments[_0x5ce351];
-      }
-      KFBossSys.ins().sendADBossInfo();
-      this.bossGroup.addChild(this.bossImage);
-      this.listBoss.addEventListener(eui.ItemTapEvent.ITEM_TAP, this.onClickBoss, this);
-      this.addTouchEvent(this.seeRule, this.onGetItem);
-      this.addTouchEvent(this.challengeBtn, this.onGetItem);
-      this.addTouchEvent(this.closeBtn, this.closeMenu);
-      this.observe(KFBossSys.ins().postADAttributionInfo, this.setBossInfo);
-      this.observe(KFBossSys.ins().postADRedPoint, this.setData);
-      this.observe(KFBossSys.ins().postADBossRefTime, this.setData);
-      this.bosmc();
-      this.setData();
-    }
-  };
-  _0x59cbe1.prototype.closeMenu = function (_0x514686) {
-    {
-      ViewManager.ins().close(this);
-    }
-  };
-  _0x59cbe1.prototype.bosmc = function () {
-    this.kfBossMc1 || (this.kfBossMc1 = new MovieClip(), this.kfBossMc1.scaleX = this.kfBossMc1.scaleY = 0.45, this.kfBossMc1.x = 0, this.kfBossMc1.y = 35);
-    this.siwangmc3.boossGroup.addChild(this.kfBossMc1);
-    this.kfBossMc1.playFile(RES_DIR_EFF + "demonCir8eff", -1);
-  };
-  _0x59cbe1.prototype.onClickMenu = function (_0x14dd5f) {
+  _0x19184a.prototype.onClickMenu = function (_0x5c6987) {
     this.setData();
   };
-  _0x59cbe1.prototype.onClickBoss = function (_0x20193d) {
-    {
-      this.currData = this.listBoss.dataProvider.getItemAt(_0x20193d.itemIndex);
-      this.setBossInfo();
-    }
+  _0x19184a.prototype.onClickBoss = function (_0x1df1f8) {
+    this.currData = this.listBoss.dataProvider.getItemAt(_0x1df1f8.itemIndex);
+    this.setBossInfo();
   };
-  _0x59cbe1.prototype.setData = function () {
-    var _0x33e43f = this.listBoss.parent;
-    _0x33e43f.stopAnimation();
+  _0x19184a.prototype.setData = function () {
+    var _0x5d8dad = this.listBoss.parent;
+    _0x5d8dad.stopAnimation();
     this.listBoss.scrollV = 0;
-    var _0x19351e = KFBossSys.ins().ADBossInfo;
-    var _0x31007f = [];
-    var _0x47efe6 = [];
-    var _0x3b8808 = [];
-    var _0x370445 = [];
-    var _0xf15964 = [];
-    var _0x2d42c5 = [];
+    var _0x1fc6bf = KFBossSys.ins().ADBossInfo;
+    var _0x522fdd = [];
+    var _0x34d023 = [];
+    var _0x4cc2c5 = [];
+    var _0x32f44c = [];
+    var _0x2220c3 = [];
+    var _0xaed96c = [];
     1000 * UserZs.ins().lv + Actor.level;
-    var _0x424acc = 63;
-    var _0x23198a = ConfgMgr.uqkjbossnuberconfig[_0x424acc];
-    var _0x4de590 = _0x23198a.bossId;
-    for (var _0x2a155c in _0x19351e) if (-1 != _0x4de590.indexOf(_0x19351e[_0x2a155c].id)) {
-      {
-        var _0x4f8cb0 = _0x19351e[_0x2a155c].time - egret.getTimer() >> 0 > 0;
-        var _0x59a3f9 = KFBossSys.ins().getLingLiBossOpen(_0x19351e[_0x2a155c].id);
-        if (_0x59a3f9) {
-          _0x19351e[_0x2a155c].id;
-          var _0x42edb5 = KFBossSys.ins().getBossRemindByIndex(_0x19351e[_0x2a155c].id);
-          _0x42edb5 ? _0x4f8cb0 ? _0x3b8808.push(_0x19351e[_0x2a155c]) : _0x47efe6.push(_0x19351e[_0x2a155c]) : _0x4f8cb0 ? _0xf15964.push(_0x19351e[_0x2a155c]) : _0x370445.push(_0x19351e[_0x2a155c]);
-        } else {
-          _0x2d42c5.push(_0x19351e[_0x2a155c]);
+    var _0x195e72 = 65;
+    var _0x50591c = ConfgMgr.piwangbossnuberconfig[_0x195e72];
+    var _0x2a970d = _0x50591c.bossId;
+    for (var _0x45da31 in _0x1fc6bf) if (-1 != _0x2a970d.indexOf(_0x1fc6bf[_0x45da31].id)) {
+      var _0x514e4a = _0x1fc6bf[_0x45da31].time - egret.getTimer() >> 0 > 0;
+      var _0xd9615a = KFBossSys.ins().getLingLiBossOpen(_0x1fc6bf[_0x45da31].id);
+      if (_0xd9615a) {
+        {
+          _0x1fc6bf[_0x45da31].id;
+          var _0x2560ca = KFBossSys.ins().getBossRemindByIndex(_0x1fc6bf[_0x45da31].id);
+          _0x2560ca ? _0x514e4a ? _0x4cc2c5.push(_0x1fc6bf[_0x45da31]) : _0x34d023.push(_0x1fc6bf[_0x45da31]) : _0x514e4a ? _0x2220c3.push(_0x1fc6bf[_0x45da31]) : _0x32f44c.push(_0x1fc6bf[_0x45da31]);
         }
+      } else {
+        _0xaed96c.push(_0x1fc6bf[_0x45da31]);
       }
     }
-    _0x47efe6.sort(this.compareFn);
-    _0x3b8808.sort(this.compareFn);
-    _0x370445.sort(this.compareFn);
-    _0xf15964.sort(this.compareFn);
-    _0x2d42c5.sort(this.compareFn);
-    _0x31007f = _0x47efe6.concat(_0x3b8808, _0x370445, _0xf15964, _0x2d42c5);
-    this.listBossData.replaceAll(_0x31007f);
+    _0x34d023.sort(this.compareFn);
+    _0x4cc2c5.sort(this.compareFn);
+    _0x32f44c.sort(this.compareFn);
+    _0x2220c3.sort(this.compareFn);
+    _0xaed96c.sort(this.compareFn);
+    _0x522fdd = _0x34d023.concat(_0x4cc2c5, _0x32f44c, _0x2220c3, _0xaed96c);
+    this.listBossData.replaceAll(_0x522fdd);
     this.listFloorData.replaceAll(this.floorArr);
     this.listBoss.selectedIndex = 0;
     this.currData = this.listBoss.dataProvider.getItemAt(0);
     this.setBossInfo();
   };
-  _0x59cbe1.prototype.bosstimes = function () {
-    var _0x5da871 = this.currData.time - egret.getTimer();
-    var _0x4ecfb7 = DateUtils.getFormatBySecond(Math.floor(_0x5da871 / 1000), 1);
-    _0x5da871 > 0 ? (this.countdown.text = _0x4ecfb7 + " 后刷新", this.countdown.visible = true) : (this.countdown.text = "", this.countdown.visible = false);
+  _0x19184a.prototype.swsditem = function (_0x180ca1) {
+    var _0x579db5 = ConfgMgr.DarkHallBossConfig[_0x180ca1];
+    var _0x4903bb = _0x579db5.belongRewardshow;
+    for (y = 0; y < _0x4903bb.length; y++) {
+      this["itemReward" + y].data = _0x4903bb[y];
+    }
   };
-  _0x59cbe1.prototype.setBossInfo = function () {
+  _0x19184a.prototype.bossmacs = function () {
+    this.kfBossMc || (this.kfBossMc = new MovieClip(), this.kfBossMc.scaleX = this.kfBossMc.scaleY = 0.45, this.kfBossMc.x = 0, this.kfBossMc.y = 35);
+    this.siwangmc1.boossGroup.addChild(this.kfBossMc);
+    this.kfBossMc.playFile(RES_DIR_EFF + "dtxstx02", -1);
+    this.kfBossMc1 || (this.kfBossMc1 = new MovieClip(), this.kfBossMc1.scaleX = this.kfBossMc1.scaleY = 0.45, this.kfBossMc1.x = 0, this.kfBossMc1.y = 35);
+    this.siwangmc2.boossGroup.addChild(this.kfBossMc1);
+    this.kfBossMc1.playFile(RES_DIR_EFF + "dtxstx02", -1);
+  };
+  _0x19184a.prototype.setBossInfo = function () {
     if (this.currData) {
-      var _0x3ead05 = ConfgMgr.DarkHallBossConfig[this.currData.id];
-      this.listItem.dataProvider = new eui.ArrayCollection(_0x3ead05.belongRewardshow);
-      var _0x5e3b90 = ConfgMgr.MonstersConfig[_0x3ead05.bossId];
-      this.bossName.text = _0x5e3b90.name + "(" + _0x3ead05.zsLevel + "转)";
-      this.RemainCount.textFlow = TextFlowMaker.generateTextFlow1("剩余归属次数:|C:447235&T:" + KFBossSys.ins().UQBossCount + "|次");
-      var _0x4ba23b = this.currData.time - egret.getTimer() >> 0;
-      _0x4ba23b > 0 ? this.stateImage.source = "zdbossyijisha" : 0 >= _0x4ba23b ? this.stateImage.source = "zdbosskejisha" : this.stateImage.source = "";
-      this.bossImage.playFile(RES_DIR_MONSTER + ("monster" + _0x5e3b90.avatar + "_4s"), -1);
-      var _0x565cff = KFBossSys.ins().getLingLiBossOpen(this.currData.id);
-      var _0x5390c9 = this.currData.time - egret.getTimer();
-      if (_0x5390c9 > 0) {
-        var _0x48a538 = DateUtils.getFormatBySecond(Math.floor(_0x5390c9 / 1000), 1);
-        this.countdown.text = _0x48a538 + " 后刷新";
-        this.countdown.visible = true;
-        this.bosstimes();
+      var _0x344efa = this.currData.id;
+      var _0x17d7a7 = ConfgMgr.DarkHallBossConfig[_0x344efa];
+      this.listItem.dataProvider = new eui.ArrayCollection(_0x17d7a7.belongRewardshow);
+      var _0x9395a6 = ConfgMgr.MonstersConfig[_0x17d7a7.bossId];
+      this.bossName.text = _0x9395a6.name + "(" + _0x17d7a7.zsLevel + "转)";
+      this.RemainCount.textFlow = TextFlowMaker.generateTextFlow1("剩余归属次数:|C:447235&T:" + KFBossSys.ins().PWBossCount + "|次");
+      var _0x29b9de = this.currData.time - egret.getTimer() >> 0;
+      _0x29b9de > 0 ? this.stateImage.source = "zdbossyijisha" : 0 >= _0x29b9de ? this.stateImage.source = "zdbosskejisha" : this.stateImage.source = "";
+      this.bossImage.playFile(RES_DIR_MONSTER + ("monster" + _0x9395a6.avatar + "_3s"), -1);
+      var _0x3ee788 = KFBossSys.ins().getLingLiBossOpen(this.currData.id);
+      var _0x1579c7 = this.currData.time - egret.getTimer();
+      if (_0x1579c7 > 0) {
+        {
+          var _0x45a738 = DateUtils.getFormatBySecond(Math.floor(_0x1579c7 / 1000), 1);
+          this.countdown.text = _0x45a738 + " 后刷新";
+          this.countdown.visible = true;
+          this.bosstimes();
+        }
       } else {
         this.countdown.text = "";
         this.countdown.visible = false;
       }
-      this.challengeBtn.visible = _0x565cff;
-      this.isChallenge.visible = !_0x565cff;
-      this.stateImage.visible = _0x565cff;
+      this.challengeBtn.visible = _0x3ee788;
+      this.isChallenge.visible = !_0x3ee788;
+      this.stateImage.visible = _0x3ee788;
+      this.swsditem(_0x344efa);
+      this.bossmacs();
     }
   };
-  _0x59cbe1.prototype.onGetItem = function (_0x4a218a) {
-    switch (_0x4a218a.currentTarget) {
-      case this.seeRule:
-        ViewManager.ins().open(CommonHelpWin, ConfgMgr.HelpInfoConfig[65535].text);
-        break;
-      case this.challengeBtn:
-        if (1 > KFBossSys.ins().UQBossCount) {
-          return void WarnWin.show("挑战次数不足", function () {
-            return void UserTips.ins().showTips("确定");
-          }, this);
-        }
-        d = (KFBossSys.ins().ADBossEnterCD - egret.getTimer()) / 1000 >> 0;
-        if (0 < d) {
-          return void UserTips.ins().showTips("|C:0xf3311e&T:" + d + "秒后可以进入！");
-        }
-        if (0 < this.currData.time - egret.getTimer() >> 0) {
-          return void UserTips.ins().showTips("|C:0xf3311e&T:BOSS未复活，不可挑战！");
-        }
-        this.currData && KFBossSys.ins().sendEnterADFb(this.currData.id);
-    }
-  };
-  _0x59cbe1.prototype.compareFn = function (_0x11baf7, _0x54b5ba) {
+  _0x19184a.prototype.bosstimes = function () {
     {
-      var _0x3d7061 = ConfgMgr.DarkHallBossConfig[_0x11baf7.id];
-      var _0xa46a2f = ConfgMgr.DarkHallBossConfig[_0x54b5ba.id];
-      return _0x3d7061.zsLevel < _0xa46a2f.zsLevel ? 1 : _0x3d7061.zsLevel > _0xa46a2f.zsLevel ? -1 : _0x3d7061.level < _0xa46a2f.level ? 1 : _0x3d7061.level > _0xa46a2f.level ? -1 : 0;
-    }
-  };
-  _0x59cbe1.prototype.close = function () {
-    {
-      for (var _0x4b9c16 = [], _0x47921d = 0; _0x47921d < arguments.length; _0x47921d++) {
-        _0x4b9c16[_0x47921d] = arguments[_0x47921d];
-      }
-    }
-  };
-  return _0x59cbe1;
-}(BaseEuiView);
-__reflect(uiuquBossWin.prototype, "uiuquBossWin");
-ViewManager.ins().reg(uiuquBossWin, LayerManager.UI_Main);
-var uuomingtaBossWin = function (_0x180a1a) {
-  function _0x144c65() {
-    var _0x5f1a61 = _0x180a1a.call(this) || this;
-    _0x5f1a61.floorArr = [];
-    _0x5f1a61.isTopLevel = true;
-    _0x5f1a61.skinName = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin class=\"uuomingtaBossSkin\" width=\"580\" height=\"930\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:ns1=\"*\"\n        xmlns:w=\"http://ns.egret.com/wing\">\r\n<e:Group width=\"580\" height=\"930\" horizontalCenter=\"0\">\n\t<e:Rect left=\"0\" right=\"0\" top=\"0\" bottom=\"0\" fillAlpha=\"0.6\" />\n\t<e:Image top=\"0\" bottom=\"0\" source=\"tongyongmianbanbg2\" width=\"580\" horizontalCenter=\"0\" scale9Grid=\"15,12,2,3\" />\n\t<e:Group width=\"556\" horizontalCenter=\"0\" bottom=\"58\">\n\t\t<e:Image source=\"bantoumingkuang4\" x=\"0\" top=\"0\" bottom=\"0\" width=\"278\" height=\"90\" />\n\t\t<e:Image source=\"bantoumingkuang4\" scaleX=\"-1\" right=\"0\" top=\"0\" bottom=\"0\" width=\"278\" height=\"90\" />\n\t</e:Group>\n\t<e:Image width=\"570\" horizontalCenter=\"0\" source=\"tongyongmianbanbg\" scale9Grid=\"19,12,14,25\" top=\"44\" bottom=\"120\" />\n\t<ns1:BaseComponent id=\"roleSelect\" y=\"0\" skinName=\"RoleSelectPanelSkin\" className=\"RoleSelectPanel\" width=\"580\"\n\t                   horizontalCenter=\"0\" currentState=\"nohead\" />\n\t<e:Image y=\"12\" left=\"53\" source=\"msjl\" />\n\t<e:Button id=\"seeRule\" label=\"按钮\" visible=\"false\" icon=\"wenhao\" skinName=\"Btn0Skin\" horizontalCenter=\"-259\" y=\"5\" scaleX=\"0.9\"\n\t          scaleY=\"0.9\" />\n\t<e:Image source=\"\" scaleX=\"-1\" anchorOffsetX=\"0\" width=\"410\" anchorOffsetY=\"0\"\n\t         height=\"447\"  horizontalCenter=\"69\" bottom=\"294\"/>\n\t<e:Image top=\"50\" source=\"newdtbg4\" left=\"13\" right=\"13\"/>\n\t<e:Group width=\"417\" height=\"279\" left=\"0\" bottom=\"126\">\n\t\t<e:Image x=\"0\" y=\"61\" source=\"\" width=\"417\" anchorOffsetY=\"0\" height=\"216\" scale9Grid=\"22,12,138,72\" />\n\t\t<e:Label id=\"isChallenge\" text=\"未满足开启条件\" x=\"117.98000000000002\" y=\"242.64999999999998\" size=\"16\" textColor=\"0xd20506\"\n\t\t         bold=\"true\" scaleX=\"1\" scaleY=\"1\" />\n\t\t</e:Group>\n\t<e:Group id=\"bossGroup\" width=\"200\" height=\"200\" left=\"230\" top=\"250\"/>\n\t<e:Scroller left=\"50\" top=\"470\" right=\"50\">\n\t\t<e:List id=\"listBoss\" top=\"614\" anchorOffsetX=\"0\" anchorOffsetY=\"0\" itemRendererSkinName=\"duomingtabosslist\"\n\t\t        horizontalCenter=\"-207.5\" bottom=\"126\">\n\t\t\t<e:ArrayCollection>\n\t\t\t\t<e:Array>\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t</e:Array>\n\t\t\t</e:ArrayCollection>\n\t\t\t<e:layout>\r\n\t\t<e:HorizontalLayout horizontalAlign=\"center\" gap=\"40\"/>\n\t\t\t</e:layout>\n\t\t</e:List>\n\t</e:Scroller>\r\n\t\t<e:Image source=\"title_bg_sk\"  top=\"50\" horizontalCenter=\"0\" scaleX=\"1\" scaleY=\"1\"/>\n\t\t<e:Label id=\"bossName\" text=\"暗殿：沙城之王(13转)\" size=\"16\" horizontalCenter=\"0\" textColor=\"0xff0000\" bold=\"true\" top=\"75\" scaleX=\"1\" scaleY=\"1\" />\n\t<e:Image id=\"stateImage\" source=\"zdbossyijisha\" horizontalCenter=\"140\" top=\"300\" />\r\n\t\t<e:Button id=\"closeBtn\" label=\"按钮\" skinName=\"Btn0Skin\" icon=\"chatclose\" y=\"51\" scaleX=\"0.8\" scaleY=\"0.8\" right=\"5\" />\n\t<e:Image source=\"bnt_open_boss_left\" left=\"200\" top=\"595\" />\n\t<e:Image source=\"bnt_open_boss_right\" right=\"200\" top=\"595\" />\n\t\t<e:Button id=\"challengeBtn\" label=\"挑 战\" scaleX=\"0.7\" scaleY=\"0.7\" skinName=\"DLBtn0Skin\" top=\"606\" horizontalCenter=\"0\" />\n\t<e:Image source=\"itembg\" right=\"12\" left=\"12\" top=\"645\" height=\"160\" />\n\t\t<e:Label text=\"BOSS掉落\" size=\"16\" textColor=\"0xde7f04\" top=\"660\" bold=\"true\" scaleX=\"1\" horizontalCenter=\"0\" scaleY=\"1\" />\n\t<e:Image source=\"left_fu\" left=\"100\" top=\"663\" />\n\t<e:Image source=\"right_fu\" right=\"100\" top=\"663\" />\n\t\t<e:Label id=\"RemainCount\" text=\"剩余归属次数：\" top=\"620\" horizontalCenter=\"-180\" size=\"16\" bold=\"true\" scaleX=\"1\" scaleY=\"1\" textColor=\"0x89713c\" visible=\"true\"/>\n\t\t<e:Scroller horizontalCenter=\"0\" height=\"95\" top=\"700\" left=\"20\" right=\"20\">\r\n\t<e:List id=\"listItem\" itemRendererSkinName=\"ItemSkin\" horizontalCenter=\"0\" top=\"0\" left=\"0\" bottom=\"0\" right=\"0\" scaleX=\"0.8\"\n\t\t        scaleY=\"0.8\">\n\t\t\t<e:ArrayCollection>\n\t\t\t\t<e:Array>\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t</e:Array>\n\t\t\t</e:ArrayCollection>\n\t\t\t<e:layout>\n\t\t\t\t<e:HorizontalLayout gap=\"17\" />\n\t\t\t</e:layout>\n\t\t</e:List>\n</e:Scroller>\r\n</e:Group>\r\n\t</e:Skin>";
-    return _0x5f1a61;
-  }
-  __extends(_0x144c65, _0x180a1a);
-  _0x144c65.prototype.initUI = function () {
-    this.bossImage = new MovieClip();
-    this.bossImage.scaleX = -1;
-    this.bossImage.scaleY = 1;
-    this.bossImage.x = 78;
-    this.bossImage.y = 165;
-    this.bossGroup.touchEnabled = this.bossGroup.touchChildren = false;
-    for (var _0x5f2c2a in ConfgMgr.uuomingtabossnuberconfig) this.floorArr.push(_0x5f2c2a);
-    this.listFloorData = new eui.ArrayCollection();
-    this.listItem.itemRenderer = ItemBase;
-    this.listBoss.itemRenderer = KFAnDianBossItem;
-    this.listBossData = new eui.ArrayCollection();
-    this.listBoss.dataProvider = this.listBossData;
-  };
-  _0x144c65.prototype.open = function () {
-    for (var _0x124eb8 = [], _0x567e13 = 0; _0x567e13 < arguments.length; _0x567e13++) {
-      _0x124eb8[_0x567e13] = arguments[_0x567e13];
-    }
-    KFBossSys.ins().sendADBossInfo();
-    this.bossGroup.addChild(this.bossImage);
-    this.listBoss.addEventListener(eui.ItemTapEvent.ITEM_TAP, this.onClickBoss, this);
-    this.addTouchEvent(this.seeRule, this.onGetItem);
-    this.addTouchEvent(this.challengeBtn, this.onGetItem);
-    this.addTouchEvent(this.closeBtn, this.closeMenu);
-    this.observe(KFBossSys.ins().postADAttributionInfo, this.setBossInfo);
-    this.observe(KFBossSys.ins().postADRedPoint, this.setData);
-    this.observe(KFBossSys.ins().postADBossRefTime, this.setData);
-    this.setData();
-  };
-  _0x144c65.prototype.closeMenu = function (_0x5950d1) {
-    ViewManager.ins().close(this);
-  };
-  _0x144c65.prototype.onClickMenu = function (_0xa4954a) {
-    this.setData();
-  };
-  _0x144c65.prototype.onClickBoss = function (_0xb9f4a9) {
-    this.currData = this.listBoss.dataProvider.getItemAt(_0xb9f4a9.itemIndex);
-    this.setBossInfo();
-  };
-  _0x144c65.prototype.setData = function () {
-    var _0x59bced = this.listBoss.parent;
-    _0x59bced.stopAnimation();
-    this.listBoss.scrollV = 0;
-    var _0x1b91fd = KFBossSys.ins().ADBossInfo;
-    var _0x469e32 = [];
-    var _0x5871ef = [];
-    var _0x114e2b = [];
-    var _0x2f2fa2 = [];
-    var _0x312dab = [];
-    var _0xa2139 = [];
-    1000 * UserZs.ins().lv + Actor.level;
-    var _0x3af642 = 59;
-    var _0x3296da = ConfgMgr.uuomingtabossnuberconfig[_0x3af642];
-    var _0x1b7d0e = _0x3296da.bossId;
-    for (var _0x129b3b in _0x1b91fd) if (-1 != _0x1b7d0e.indexOf(_0x1b91fd[_0x129b3b].id)) {
-      {
-        var _0x1c63a9 = _0x1b91fd[_0x129b3b].time - egret.getTimer() >> 0 > 0;
-        var _0x5d7d7f = KFBossSys.ins().getLingLiBossOpen(_0x1b91fd[_0x129b3b].id);
-        if (_0x5d7d7f) {
-          _0x1b91fd[_0x129b3b].id;
-          var _0x5264fd = KFBossSys.ins().getBossRemindByIndex(_0x1b91fd[_0x129b3b].id);
-          _0x5264fd ? _0x1c63a9 ? _0x114e2b.push(_0x1b91fd[_0x129b3b]) : _0x5871ef.push(_0x1b91fd[_0x129b3b]) : _0x1c63a9 ? _0x312dab.push(_0x1b91fd[_0x129b3b]) : _0x2f2fa2.push(_0x1b91fd[_0x129b3b]);
-        } else {
-          _0xa2139.push(_0x1b91fd[_0x129b3b]);
-        }
-      }
-    }
-    _0x5871ef.sort(this.compareFn);
-    _0x114e2b.sort(this.compareFn);
-    _0x2f2fa2.sort(this.compareFn);
-    _0x312dab.sort(this.compareFn);
-    _0xa2139.sort(this.compareFn);
-    _0x469e32 = _0x5871ef.concat(_0x114e2b, _0x2f2fa2, _0x312dab, _0xa2139);
-    this.listBossData.replaceAll(_0x469e32);
-    this.listFloorData.replaceAll(this.floorArr);
-    this.listBoss.selectedIndex = 0;
-    this.currData = this.listBoss.dataProvider.getItemAt(0);
-    this.setBossInfo();
-  };
-  _0x144c65.prototype.setBossInfo = function () {
-    {
-      if (this.currData) {
-        var _0x312b48 = ConfgMgr.DarkHallBossConfig[this.currData.id];
-        this.listItem.dataProvider = new eui.ArrayCollection(_0x312b48.belongRewardshow);
-        var _0x1f2f6a = ConfgMgr.MonstersConfig[_0x312b48.bossId];
-        this.bossName.text = _0x1f2f6a.name;
-        this.RemainCount.textFlow = TextFlowMaker.generateTextFlow1("剩余归属次数:|C:447235&T:" + KFBossSys.ins().UABossCount + "|次");
-        var _0xf065e0 = this.currData.time - egret.getTimer() >> 0;
-        _0xf065e0 > 0 ? this.stateImage.source = "zdbossyijisha" : 0 >= _0xf065e0 ? this.stateImage.source = "zdbosskejisha" : this.stateImage.source = "";
-        this.bossImage.playFile(RES_DIR_MONSTER + ("monster" + _0x1f2f6a.avatar + "_3s"), -1);
-        var _0xe605b0 = KFBossSys.ins().getLingLiBossOpen(this.currData.id);
-        this.challengeBtn.visible = _0xe605b0;
-        this.isChallenge.visible = !_0xe605b0;
-        this.stateImage.visible = _0xe605b0;
-      }
-    }
-  };
-  _0x144c65.prototype.onGetItem = function (_0x39a100) {
-    switch (_0x39a100.currentTarget) {
-      case this.seeRule:
-        ViewManager.ins().open(CommonHelpWin, ConfgMgr.HelpInfoConfig[65535].text);
-        break;
-      case this.challengeBtn:
-        if (1 > KFBossSys.ins().UABossCount) {
-          return void WarnWin.show("挑战次数不足", function () {
-            return void UserTips.ins().showTips("确定");
-          }, this);
-        }
-        d = (KFBossSys.ins().ADBossEnterCD - egret.getTimer()) / 1000 >> 0;
-        if (0 < d) {
-          return void UserTips.ins().showTips("|C:0xf3311e&T:" + d + "秒后可以进入！");
-        }
-        if (0 < this.currData.time - egret.getTimer() >> 0) {
-          return void UserTips.ins().showTips("|C:0xf3311e&T:BOSS未复活，不可挑战！");
-        }
-        this.currData && KFBossSys.ins().sendEnterADFb(this.currData.id);
-    }
-  };
-  _0x144c65.prototype.compareFn = function (_0x5d27b3, _0x2d50c8) {
-    {
-      var _0x186fd7 = ConfgMgr.DarkHallBossConfig[_0x5d27b3.id];
-      var _0x5baab9 = ConfgMgr.DarkHallBossConfig[_0x2d50c8.id];
-      return _0x186fd7.zsLevel < _0x5baab9.zsLevel ? 1 : _0x186fd7.zsLevel > _0x5baab9.zsLevel ? -1 : _0x186fd7.level < _0x5baab9.level ? 1 : _0x186fd7.level > _0x5baab9.level ? -1 : 0;
-    }
-  };
-  _0x144c65.prototype.close = function () {
-    {
-      for (var _0x11c2cb = [], _0x50dc0a = 0; _0x50dc0a < arguments.length; _0x50dc0a++) {
-        _0x11c2cb[_0x50dc0a] = arguments[_0x50dc0a];
-      }
-    }
-  };
-  return _0x144c65;
-}(BaseEuiView);
-__reflect(uuomingtaBossWin.prototype, "uuomingtaBossWin");
-ViewManager.ins().reg(uuomingtaBossWin, LayerManager.UI_Main);
-var vYBBossWin = function (_0x1cc2bc) {
-  function _0x5aaaca() {
-    {
-      var _0x4ffcd2 = _0x1cc2bc.call(this) || this;
-      _0x4ffcd2.floorArr = [];
-      _0x4ffcd2.isTopLevel = true;
-      _0x4ffcd2.skinName = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<e:Skin class=\"vianyiBossSkin\" width=\"580\" height=\"930\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:ns1=\"*\"\n        xmlns:w=\"http://ns.egret.com/wing\">\r\n<e:Group width=\"580\" height=\"930\" horizontalCenter=\"0\">\n\t<e:Rect left=\"0\" right=\"0\" top=\"0\" bottom=\"0\" fillAlpha=\"0.6\" />\n\t<e:Image top=\"0\" bottom=\"0\" source=\"tongyongmianbanbg2\" width=\"580\" horizontalCenter=\"0\" scale9Grid=\"15,12,2,3\" />\n\t<e:Group width=\"556\" horizontalCenter=\"0\" bottom=\"58\">\n\t\t<e:Image source=\"bantoumingkuang4\" x=\"0\" top=\"0\" bottom=\"0\" width=\"278\" height=\"90\" />\n\t\t<e:Image source=\"bantoumingkuang4\" scaleX=\"-1\" right=\"0\" top=\"0\" bottom=\"0\" width=\"278\" height=\"90\" />\n\t</e:Group>\n\t<e:Image width=\"570\" horizontalCenter=\"0\" source=\"tongyongmianbanbg\" scale9Grid=\"19,12,14,25\" top=\"44\" bottom=\"120\" />\n\t<ns1:BaseComponent id=\"roleSelect\" y=\"0\" skinName=\"RoleSelectPanelSkin\" className=\"RoleSelectPanel\" width=\"580\"\n\t                   horizontalCenter=\"0\" currentState=\"nohead\" />\n\t<e:Image y=\"12\" left=\"65\" source=\"msjl\" />\n\t<e:Button id=\"seeRule\" label=\"按钮\" icon=\"wenhao\" skinName=\"Btn0Skin\" horizontalCenter=\"-259\" y=\"5\" scaleX=\"0.9\"\n\t          scaleY=\"0.9\" />\n\t<e:Image source=\"\" scaleX=\"-1\" anchorOffsetX=\"0\" width=\"410\" anchorOffsetY=\"0\"\n\t         height=\"447\"  horizontalCenter=\"69\" bottom=\"294\"/>\n\t<e:Image top=\"50\" bottom=\"130\" source=\"worldbossbg_png\" left=\"13\" right=\"13\"/>\n\t<e:Group width=\"417\" height=\"279\" left=\"0\" bottom=\"126\">\n\t\t<e:Image x=\"0\" y=\"61\" source=\"\" width=\"417\" anchorOffsetY=\"0\" height=\"216\" scale9Grid=\"22,12,138,72\" />\n\t\t<e:List id=\"listItem\" itemRendererSkinName=\"ItemSkin\" horizontalCenter=\"0.5\" bottom=\"105\" x=\"72\" scaleX=\"0.8\"\n\t\t        scaleY=\"0.8\">\n\t\t\t<e:ArrayCollection>\n\t\t\t\t<e:Array>\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t</e:Array>\n\t\t\t</e:ArrayCollection>\n\t\t\t<e:layout>\n\t\t\t\t<e:HorizontalLayout gap=\"17\" />\n\t\t\t</e:layout>\n\t\t</e:List>\n\t\t<e:Label text=\"BOSS掉落\" x=\"163\" bottom=\"195\" size=\"16\" textColor=\"0xde7f04\" bold=\"true\" scaleX=\"1\" scaleY=\"1\" />\n\t\t<e:Label id=\"isChallenge\" text=\"未满足开启条件\" x=\"117.98000000000002\" y=\"242.64999999999998\" size=\"16\" textColor=\"0xd20506\"\n\t\t         bold=\"true\" scaleX=\"1\" scaleY=\"1\" />\n\t\t<e:Button id=\"challengeBtn\" label=\"挑 战\" skinName=\"Btn1Skin\" bottom=\"10\" horizontalCenter=\"-8.5\" />\n\t</e:Group>\n\t<e:Group id=\"bossGroup\" width=\"200\" height=\"200\" left=\"145\" bottom=\"350\"/>\r\n<e:Image right=\"135\" bottom=\"130\" source=\"tielian\" />\r\n<e:Image right=\"70\" bottom=\"130\" source=\"tielian\" />\r\n<e:Image right=\"135\" top=\"50\" source=\"tielian\" />\r\n<e:Image right=\"70\" top=\"50\" source=\"tielian\" />\r\n<e:Image source=\"shensbosslist\" width=\"155\" right=\"35\" top=\"86\" bottom=\"166\"/>\n\t<e:Scroller width=\"139\" bottom=\"175\" top=\"95\" right=\"43\">\n\t\t<e:List id=\"listBoss\" top=\"614\" anchorOffsetX=\"0\" anchorOffsetY=\"0\" itemRendererSkinName=\"shenshoubosslist\"\n\t\t        horizontalCenter=\"-207.5\" bottom=\"126\">\n\t\t\t<e:ArrayCollection>\n\t\t\t\t<e:Array>\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t\t<e:Object null=\"null\" />\n\t\t\t\t</e:Array>\n\t\t\t</e:ArrayCollection>\n\t\t\t<e:layout>\n\t\t\t\t<e:TileLayout verticalGap=\"6\" requestedColumnCount=\"1\" />\n\t\t\t</e:layout>\n\t\t</e:List>\n\t</e:Scroller>\r\n\t\t<e:Image source=\"teshuwenzibg\"  top=\"55\" x=\"70\" y=\"55\" scaleX=\"1.5\" scaleY=\"1.5\"/>\n\t\t<e:Label id=\"bossName\" text=\"暗殿：沙城之王(13转)\" width=\"370\" size=\"16\" textColor=\"0x9f500d\" bold=\"true\" horizontalCenter=\"0\" top=\"75\" scaleX=\"1\" scaleY=\"1\" />\n\t<e:Image id=\"stateImage\" source=\"zdbossyijisha\" horizontalCenter=\"50\" bottom=\"340\" />\r\n<e:Group left=\"12\" right=\"12\" top=\"50\" bottom=\"127\">\r\n<e:Rect left=\"0\" right=\"0\" top=\"0\" bottom=\"0\" fillAlpha=\"1\"/>\r\n<e:Group id=\"bossGroup2\" height=\"460\" width=\"282\" x=\"0\" y=\"220\">\r\n\t\t<e:Image id=\"bossBtn10\" x=\"0\" source=\"btn_bg2_png\" anchorOffsetY=\"0\" width=\"280\" top=\"0\" bottom=\"0\"/>\r\n\t\t<e:Label text=\"埋骨地\" size=\"16\" textColor=\"0x00FF00\" horizontalCenter=\"0\" verticalCenter=\"50\" bold=\"true\" visible=\"false\"/>\r\n\t\t<e:Image source=\"\" left=\"199\" verticalCenter=\"-82.5\"/>\r\n\r\n\t\t<e:List id=\"award10\" y=\"350\" itemRendererSkinName=\"ItemSkin\" scaleX=\"0.7\" scaleY=\"0.7\" horizontalCenter=\"0.5\">\r\n\t\t\t<e:ArrayCollection>\r\n\t\t\t\t<e:Array>\r\n\t\t\t\t\t<e:Object null=\"\"/>\r\n\t\t\t\t\t<e:Object null=\"\"/>\r\n\t\t\t\t\t<e:Object null=\"\"/>\r\n\t\t\t\t</e:Array>\r\n\t\t\t</e:ArrayCollection>\r\n\r\n\t\t\t<e:layout>\r\n\t\t\t<e:HorizontalLayout/>\r\n\t\t\t</e:layout>\r\n\t\t</e:List>\r\n\r\n\r\n\t\t<e:Group y=\"290\" horizontalCenter=\"0\" locked=\"true\">\r\n\t\t\t<e:Image x=\"0\" y=\"0\" source=\"\"/>\r\n\t\t\t<e:Image x=\"10\" y=\"10\" source=\"\"/>\r\n\t\t\t<e:layout>\r\n\t\t\t\t<e:HorizontalLayout gap=\"-5\"/>\r\n\t\t\t</e:layout>\r\n\t\t</e:Group>\r\n\t\t<e:Group id=\"timeLabelGroup10\" x=\"54\" y=\"323\" width=\"175\">\r\n\t\t\t<e:Image y=\"-4\" anchorOffsetX=\"0\" width=\"68\" anchorOffsetY=\"0\" height=\"28\" source=\"bantoutiaoboss\" scaleX=\"-1\" x=\"89\"/>\r\n\t\t\t<e:Image y=\"-4\" anchorOffsetX=\"0\" width=\"68\" anchorOffsetY=\"0\" height=\"28\" source=\"bantoutiaoboss\" x=\"82\"/>\r\n\t\t\t<e:Label id=\"countdown10\" text=\"05:59:24后刷新\" y=\"0\" size=\"16\" textColor=\"0x00FF00\" horizontalCenter=\"0\"/>\r\n\t\t</e:Group>\r\n\t</e:Group>\r\n<e:Group id=\"bossGroup3\" height=\"461\" x=\"280\" y=\"219\">\r\n\t\t<e:Image id=\"bossBtn9\" x=\"0\" source=\"btn_bg3_png\" anchorOffsetY=\"0\" width=\"280\" top=\"0\" bottom=\"0\"/>\r\n\r\n\t\t<e:List id=\"award9\" y=\"350\" itemRendererSkinName=\"ItemSkin\" scaleX=\"0.7\" scaleY=\"0.7\" horizontalCenter=\"0.5\">\r\n\t\t\t<e:ArrayCollection>\r\n\t\t\t\t<e:Array>\r\n\t\t\t\t\t<e:Object null=\"\"/>\r\n\t\t\t\t\t<e:Object null=\"\"/>\r\n\t\t\t\t\t<e:Object null=\"\"/>\r\n\t\t\t\t</e:Array>\r\n\t\t\t</e:ArrayCollection>\r\n\r\n\t\t\t<e:layout>\r\n\t\t\t<e:HorizontalLayout/>\r\n\t\t\t</e:layout>\r\n\t\t</e:List>\r\n\t\t<e:Group y=\"290\" horizontalCenter=\"0\" locked=\"true\">\r\n\t\t\t<e:Image x=\"0\" y=\"0\" source=\"\"/>\r\n\t\t\t<e:Image x=\"10\" y=\"10\" source=\"\"/>\r\n\t\t\t<e:layout>\r\n\t\t\t<e:HorizontalLayout gap=\"-5\"/>\r\n\t\t\t</e:layout>\r\n\t\t</e:Group>\r\n\t\t<e:Group id=\"timeLabelGroup9\" x=\"52\" y=\"323\" width=\"175\">\r\n\t\t\t<e:Image y=\"-4\" anchorOffsetX=\"0\" width=\"68\" anchorOffsetY=\"0\" height=\"28\" source=\"bantoutiaoboss\" scaleX=\"-1\" x=\"89\"/>\r\n\t\t\t<e:Image y=\"-4\" anchorOffsetX=\"0\" width=\"68\" anchorOffsetY=\"0\" height=\"28\" source=\"bantoutiaoboss\" x=\"82\"/>\r\n\t\t\t<e:Label id=\"countdown9\" text=\"05:59:24后刷新\" y=\"0\" size=\"16\" textColor=\"0x00FF00\" horizontalCenter=\"0\"/>\r\n\t\t</e:Group>\r\n\t\t<e:Label text=\"炼狱岛\" size=\"16\" textColor=\"0x00FF00\" horizontalCenter=\"0\" verticalCenter=\"50\" bold=\"true\" x=\"109\" y=\"269\" visible=\"false\"/>\r\n\t\t<e:Image source=\"\" right=\"48\" verticalCenter=\"-144\"/>\r\n\r\n\r\n\t</e:Group>\r\n<e:Group id=\"bossGroup1\" anchorOffsetY=\"0\" height=\"335\" x=\"0\" y=\"0\">\r\n\t\t<e:Image id=\"bossBtn8\" x=\"1\" source=\"btn_bg1_png\" width=\"560\" anchorOffsetY=\"0\" top=\"0\" bottom=\"0\"/>\r\n\r\n\t\t<e:List id=\"award8\" y=\"198.61\" itemRendererSkinName=\"ItemSkin\" scaleX=\"0.7\" scaleY=\"0.7\" horizontalCenter=\"0.5\">\r\n\t\t\t<e:ArrayCollection>\r\n\t\t\t\t<e:Array>\r\n\t\t\t\t\t<e:Object null=\"\"/>\r\n\t\t\t\t\t<e:Object null=\"\"/>\r\n\t\t\t\t\t<e:Object null=\"\"/>\r\n\t\t\t\t\t<e:Object null=\"\"/>\r\n\t\t\t\t\t<e:Object null=\"\"/>\r\n\t\t\t\t\t<e:Object null=\"\"/>\r\n\t\t\t\t</e:Array>\r\n\t\t\t</e:ArrayCollection>\r\n\r\n\t\t<e:layout>\r\n\t\t\t<e:HorizontalLayout/>\r\n\t\t</e:layout>\r\n\t\t</e:List>\r\n\t\t<e:Group y=\"168\" x=\"218\">\r\n\t\t\t<e:Image x=\"0\" y=\"0\" source=\"\"/>\r\n\t\t\t<e:Image x=\"10\" y=\"10\" source=\"\"/>\r\n\t\t\t<e:layout>\r\n\t\t\t<e:HorizontalLayout gap=\"-5\"/>\r\n\t\t\t</e:layout>\r\n\t\t</e:Group>\r\n\r\n\t\t<e:Group id=\"timeLabelGroup8\" x=\"194\" y=\"268.61\" anchorOffsetX=\"0\" width=\"175\">\r\n\t\t\t<e:Image y=\"-4\" anchorOffsetX=\"0\" width=\"68\" anchorOffsetY=\"0\" height=\"28\" source=\"bantoutiaoboss\" scaleX=\"-1\" x=\"91.68\"/>\r\n\t\t\t<e:Image y=\"-4\" anchorOffsetX=\"0\" width=\"68\" anchorOffsetY=\"0\" height=\"28\" source=\"bantoutiaoboss\" x=\"84.68\"/>\r\n\r\n\t\t<e:Label id=\"countdown8\" text=\"05:59:24后刷新\" y=\"0\" size=\"16\" textColor=\"0x00ff00\" horizontalCenter=\"0\"/>\r\n\t\t</e:Group>\r\n\t\t<e:Image x=\"249\" y=\"296\" source=\"\"/>\r\n\t\t<e:Image id=\"decoImg\" x=\"283\" y=\"328\" source=\"\" anchorOffsetX=\"34\" anchorOffsetY=\"32\"/>\r\n\t\t<e:Label text=\"迷离境\" size=\"16\" textColor=\"0x00FF00\" horizontalCenter=\"0\" verticalCenter=\"-10\" bold=\"true\" visible=\"false\"/>\r\n\t\t<e:Image source=\"\" right=\"75\" top=\"19\"/>\r\n\t</e:Group>\r\n</e:Group>\r\n\t\t<e:Button id=\"closeBtn\" label=\"按钮\" skinName=\"Btn0Skin\" icon=\"chatclose\" y=\"48\" scaleX=\"0.8\" scaleY=\"0.8\" right=\"0\" />\r\n\t<e:Group left=\"12\" right=\"12\" height=\"48\" bottom=\"126\" anchorOffsetY=\"0\">\r\n\t\t<e:Image width=\"280\" x=\"0\" top=\"0\" bottom=\"0\" source=\"bantoumingkuang3\"/>\r\n\t\t<e:Image width=\"280\" scaleX=\"-1\" top=\"0\" bottom=\"0\" right=\"0\" source=\"bantoumingkuang3\"/>\r\n\t\t<e:Label id=\"RemainCount\" text=\"6\" size=\"16\" textColor=\"0xff5500\" verticalCenter=\"0\" horizontalCenter=\"0\"/>\r\n\t</e:Group>\r\n</e:Group>\n</e:Skin>";
-      return _0x4ffcd2;
-    }
-  }
-  __extends(_0x5aaaca, _0x1cc2bc);
-  _0x5aaaca.prototype.initUI = function () {
-    {
-      this.bossImage = new MovieClip();
-      this.bossImage.scaleX = -1;
-      this.bossImage.scaleY = 1;
-      this.bossImage.x = 78;
-      this.bossImage.y = 165;
-      this.bossGroup.touchEnabled = this.bossGroup.touchChildren = false;
-      this.lastPos1 = new egret.Point();
-      this.lastPos1.x = this.bossGroup1.x;
-      this.lastPos1.y = this.bossGroup1.y;
-      this.lastPos2 = new egret.Point();
-      this.lastPos2.x = this.bossGroup2.x;
-      this.lastPos2.y = this.bossGroup2.y;
-      this.lastPos3 = new egret.Point();
-      this.lastPos3.x = this.bossGroup3.x;
-      this.lastPos3.y = this.bossGroup3.y;
-      for (var _0x4ce423 in ConfgMgr.vybossnuberconfig) this.floorArr.push(_0x4ce423);
-      this.listFloorData = new eui.ArrayCollection();
-      this.listItem.itemRenderer = ItemBase;
-      this.award10.itemRenderer = ItemBase;
-      this.award9.itemRenderer = ItemBase;
-      this.award8.itemRenderer = ItemBase;
-      this.listBoss.itemRenderer = KFAnDianBossItem;
-      this.listBossData = new eui.ArrayCollection();
-      this.listBoss.dataProvider = this.listBossData;
-    }
-  };
-  _0x5aaaca.prototype.startTween = function () {
-    this.bossGroup1.x = 2;
-    this.bossGroup1.y = -323;
-    this.bossGroup1.alpha = 0;
-    this.bossGroup2.x = -188;
-    this.bossGroup2.y = 300;
-    this.bossGroup2.alpha = 0;
-    this.bossGroup3.x = 482;
-    this.bossGroup3.y = 300;
-    this.bossGroup3.alpha = 0;
-    var _0x226032 = 110;
-    var _0x3e1fe9 = 200;
-    var _0x452c85 = {
-      scaleX: 2.5,
-      scaleY: 2.5,
-      alpha: 0
-    };
-    egret.Tween.get(this.bossGroup1).wait(_0x226032).to({
-      x: this.lastPos1.x,
-      y: this.lastPos1.y,
-      alpha: 1
-    }, _0x3e1fe9, egret.Ease.quadIn);
-    egret.Tween.get(this.bossGroup2).wait(_0x226032).to({
-      x: this.lastPos2.x,
-      y: this.lastPos2.y,
-      alpha: 1
-    }, _0x3e1fe9, egret.Ease.quadIn);
-    egret.Tween.get(this.bossGroup3).wait(_0x226032).to({
-      x: this.lastPos3.x,
-      y: this.lastPos3.y,
-      alpha: 1
-    }, _0x3e1fe9, egret.Ease.quadIn);
-    this.decoImg.scaleX = this.decoImg.scaleY = this.decoImg.alpha = 1;
-    egret.Tween.get(this.decoImg).wait(_0x226032 + _0x3e1fe9).to(_0x452c85, 500, egret.Ease.quadOut);
-  };
-  _0x5aaaca.prototype.open = function () {
-    {
-      for (var _0x3cc406 = [], _0x1a991a = 0; _0x1a991a < arguments.length; _0x1a991a++) {
-        _0x3cc406[_0x1a991a] = arguments[_0x1a991a];
-      }
-      KFBossSys.ins().sendADBossInfo();
-      this.bossGroup.addChild(this.bossImage);
-      this.listBoss.addEventListener(eui.ItemTapEvent.ITEM_TAP, this.onClickBoss, this);
-      this.addTouchEvent(this.seeRule, this.onGetItem);
-      this.addTouchEvent(this.challengeBtn, this.onGetItem);
-      this.addTouchEvent(this.closeBtn, this.closeMenu);
-      this.observe(KFBossSys.ins().postADAttributionInfo, this.setBossInfo);
-      this.observe(KFBossSys.ins().postADRedPoint, this.setData);
-      this.observe(KFBossSys.ins().postADBossRefTime, this.setData);
-      this.addTouchEvent(this.bossBtn8, this.onTouchs);
-      this.addTouchEvent(this.bossBtn9, this.onTouchs);
-      this.addTouchEvent(this.bossBtn10, this.onTouchs);
-      this.startTween();
-      this.setData();
-    }
-  };
-  _0x5aaaca.prototype.closeMenu = function (_0x28609a) {
-    ViewManager.ins().close(this);
-  };
-  _0x5aaaca.prototype.onClickMenu = function (_0x30e826) {
-    this.setData();
-  };
-  _0x5aaaca.prototype.onClickBoss = function (_0xcf9ec4) {
-    this.currData = this.listBoss.dataProvider.getItemAt(_0xcf9ec4.itemIndex);
-    this.setBossInfo();
-  };
-  _0x5aaaca.prototype.setData = function () {
-    {
-      var _0x94df9b = this.listBoss.parent;
-      _0x94df9b.stopAnimation();
-      this.listBoss.scrollV = 0;
-      var _0x430e3c = KFBossSys.ins().ADBossInfo;
-      var _0x2e29e5 = [];
-      var _0x241ad4 = [];
-      var _0x34af9f = [];
-      var _0x567ce0 = [];
-      var _0x59acd5 = [];
-      var _0x1a577e = [];
-      1000 * UserZs.ins().lv + Actor.level;
-      var _0x8d6230 = 60;
-      var _0x2129d6 = ConfgMgr.vybossnuberconfig[_0x8d6230];
-      var _0x29ce1b = _0x2129d6.bossId;
-      for (var _0x528a32 in _0x430e3c) if (-1 != _0x29ce1b.indexOf(_0x430e3c[_0x528a32].id)) {
+      var _0x2253e0 = this.currData.time - egret.getTimer();
+      var _0x2a0422 = DateUtils.getFormatBySecond(Math.floor(_0x2253e0 / 1000), 1);
+      if (_0x2253e0 > 0) {
         {
-          var _0x5848c7 = _0x430e3c[_0x528a32].time - egret.getTimer() >> 0 > 0;
-          var _0x212942 = KFBossSys.ins().getLingLiBossOpen(_0x430e3c[_0x528a32].id);
-          if (_0x212942) {
-            _0x430e3c[_0x528a32].id;
-            var _0x3dfb2e = KFBossSys.ins().getBossRemindByIndex(_0x430e3c[_0x528a32].id);
-            _0x3dfb2e ? _0x5848c7 ? _0x34af9f.push(_0x430e3c[_0x528a32]) : _0x241ad4.push(_0x430e3c[_0x528a32]) : _0x5848c7 ? _0x59acd5.push(_0x430e3c[_0x528a32]) : _0x567ce0.push(_0x430e3c[_0x528a32]);
-          } else {
-            _0x1a577e.push(_0x430e3c[_0x528a32]);
+          this.countdown.text = _0x2a0422 + " 后刷新";
+          this.countdown.visible = true;
+        }
+      } else {
+        {
+          this.countdown.text = "";
+          this.countdown.visible = false;
+        }
+      }
+    }
+  };
+  _0x19184a.prototype.onGetItem = function (_0x3fe99b) {
+    {
+      switch (_0x3fe99b.currentTarget) {
+        case this.seeRule:
+          ViewManager.ins().open(CommonHelpWin, ConfgMgr.HelpInfoConfig[65535].text);
+          break;
+        case this.challengeBtn:
+          d = KFBossSys.ins().PWBossCount;
+          KFBossSys.ins();
+          if (1 > d) {
+            return void WarnWin.show("挑战次数不足", function () {
+              {
+                return void UserTips.ins().showTips("确定");
+              }
+            }, this);
           }
-        }
-      }
-      _0x241ad4.sort(this.compareFn);
-      _0x34af9f.sort(this.compareFn);
-      _0x567ce0.sort(this.compareFn);
-      _0x59acd5.sort(this.compareFn);
-      _0x1a577e.sort(this.compareFn);
-      _0x2e29e5 = _0x241ad4.concat(_0x34af9f, _0x567ce0, _0x59acd5, _0x1a577e);
-      this.listBossData.replaceAll(_0x2e29e5);
-      this.listFloorData.replaceAll(this.floorArr);
-      this.listBoss.selectedIndex = 0;
-      this.currData = this.listBoss.dataProvider.getItemAt(0);
-      this.bosscurrData1();
-      this.bosscurrData2();
-      this.bosscurrData3();
-      this.setBossInfo();
-    }
-  };
-  _0x5aaaca.prototype.bosscurrData1 = function (_0x25162c) {
-    var _0x134a62 = this.listBoss.dataProvider.getItemAt(0);
-    if (_0x134a62.id == 169) {
-      this.currData1 = _0x134a62;
-    } else {
-      if (_0x134a62.id == 170) {
-        this.currData2 = _0x134a62;
-      } else {
-        _0x134a62.id == 171 && (this.currData3 = _0x134a62);
-      }
-    }
-  };
-  _0x5aaaca.prototype.bosscurrData2 = function (_0x1f0e5f) {
-    var _0x452367 = this.listBoss.dataProvider.getItemAt(1);
-    if (_0x452367.id == 169) {
-      this.currData1 = _0x452367;
-    } else {
-      if (_0x452367.id == 170) {
-        this.currData2 = _0x452367;
-      } else {
-        _0x452367.id == 171 && (this.currData3 = _0x452367);
-      }
-    }
-  };
-  _0x5aaaca.prototype.bosscurrData3 = function (_0x5d1db7) {
-    {
-      var _0x23ad3c = this.listBoss.dataProvider.getItemAt(2);
-      if (_0x23ad3c.id == 169) {
-        this.currData1 = _0x23ad3c;
-      } else {
-        if (_0x23ad3c.id == 170) {
-          this.currData2 = _0x23ad3c;
-        } else {
-          _0x23ad3c.id == 171 && (this.currData3 = _0x23ad3c);
-        }
-      }
-    }
-  };
-  _0x5aaaca.prototype.onTouchs = function (_0x231bb5) {
-    switch (_0x231bb5.target) {
-      case this.bossBtn8:
-        var _0x126c77 = this.currData1.time - egret.getTimer();
-        if (_0x126c77 > 0) {
-          return void UserTips.ins().showTips("|C:0xf3311e&T:BOSS未复活，不可挑战！");
-        }
-        ViewManager.ins().open(KFBYBossShowWin, 169);
-        break;
-      case this.bossBtn9:
-        var _0x126c77 = this.currData2.time - egret.getTimer();
-        if (_0x126c77 > 0) {
-          return void UserTips.ins().showTips("|C:0xf3311e&T:BOSS未复活，不可挑战！");
-        }
-        ViewManager.ins().open(KFBYBossShowWin, 170);
-        break;
-      case this.bossBtn10:
-        var _0x126c77 = this.currData3.time - egret.getTimer();
-        if (_0x126c77 > 0) {
-          return void UserTips.ins().showTips("|C:0xf3311e&T:BOSS未复活，不可挑战！");
-        }
-        ViewManager.ins().open(KFBYBossShowWin, 171);
-    }
-  };
-  _0x5aaaca.prototype.bosstimes1 = function () {
-    var _0x2f750e = this.currData1.time - egret.getTimer();
-    var _0x23194c = DateUtils.getFormatBySecond(Math.floor(_0x2f750e / 1000), 1);
-    _0x2f750e > 0 ? this.countdown8.text = _0x23194c + " 后刷新" : this.countdown8.text = "已刷新";
-  };
-  _0x5aaaca.prototype.BYbosstimes = function () {
-    if (this.currData1) {
-      var _0x586765 = KFBossSys.ins().getLingLiBossOpen(this.currData1.id);
-      var _0x36be56 = this.currData1.time - egret.getTimer();
-      if (_0x36be56 > 0) {
-        {
-          var _0x2c5784 = DateUtils.getFormatBySecond(Math.floor(_0x36be56 / 1000), 1);
-          this.countdown8.text = _0x2c5784 + " 后刷新";
-        }
-      } else {
-        this.countdown8.text = "已刷新";
-      }
-    }
-  };
-  _0x5aaaca.prototype.bosstimes2 = function () {
-    var _0x17bbc3 = this.currData2.time - egret.getTimer();
-    var _0x3b4c8f = DateUtils.getFormatBySecond(Math.floor(_0x17bbc3 / 1000), 1);
-    _0x17bbc3 > 0 ? this.countdown9.text = _0x3b4c8f + " 后刷新" : this.countdown9.text = "已刷新";
-  };
-  _0x5aaaca.prototype.BYbosstimes2 = function () {
-    if (this.currData2) {
-      {
-        var _0x4ccb04 = KFBossSys.ins().getLingLiBossOpen(this.currData2.id);
-        var _0x18abef = this.currData2.time - egret.getTimer();
-        if (_0x18abef > 0) {
-          var _0x82bcb9 = DateUtils.getFormatBySecond(Math.floor(_0x18abef / 1000), 1);
-          this.countdown9.text = _0x82bcb9 + " 后刷新";
-        } else {
-          this.countdown9.text = "已刷新";
-        }
-      }
-    }
-  };
-  _0x5aaaca.prototype.bosstimes3 = function () {
-    var _0x1925d3 = this.currData3.time - egret.getTimer();
-    var _0x32f94d = DateUtils.getFormatBySecond(Math.floor(_0x1925d3 / 1000), 1);
-    if (_0x1925d3 > 0) {
-      {
-        this.countdown10.text = _0x32f94d + " 后刷新";
-      }
-    } else {
-      {
-        this.countdown10.text = "已刷新";
-      }
-    }
-  };
-  _0x5aaaca.prototype.BYbosstimes3 = function () {
-    {
-      if (this.currData3) {
-        var _0x48823e = KFBossSys.ins().getLingLiBossOpen(this.currData3.id);
-        var _0x240204 = this.currData3.time - egret.getTimer();
-        if (_0x240204 > 0) {
-          var _0x567d92 = DateUtils.getFormatBySecond(Math.floor(_0x240204 / 1000), 1);
-          this.countdown10.text = _0x567d92 + " 后刷新";
-        } else {
-          {
-            this.countdown10.text = "已刷新";
+          d = (KFBossSys.ins().ADBossEnterCD - egret.getTimer()) / 1000 >> 0;
+          if (0 < d) {
+            return void UserTips.ins().showTips("|C:0xf3311e&T:" + d + "秒后可以进入！");
           }
-        }
+          if (0 < this.currData.time - egret.getTimer() >> 0) {
+            return void UserTips.ins().showTips("|C:0xf3311e&T:BOSS未复活，不可挑战！");
+          }
+          this.currData && KFBossSys.ins().sendEnterADFb(this.currData.id);
       }
     }
   };
-  _0x5aaaca.prototype.setBossInfo = function () {
+  _0x19184a.prototype.compareFn = function (_0x2c9ace, _0xebb4d5) {
     {
-      if (this.currData) {
-        {
-          var _0x7cbf75 = ConfgMgr.DarkHallBossConfig[this.currData.id];
-          this.listItem.dataProvider = new eui.ArrayCollection(_0x7cbf75.belongRewardshow);
-          var _0x36b35f = ConfgMgr.DarkHallBossConfig[171];
-          this.award10.dataProvider = new eui.ArrayCollection(_0x36b35f.belongRewardshow);
-          var _0x5b40d3 = ConfgMgr.DarkHallBossConfig[170];
-          this.award9.dataProvider = new eui.ArrayCollection(_0x5b40d3.belongRewardshow);
-          var _0x35797a = ConfgMgr.DarkHallBossConfig[169];
-          this.award8.dataProvider = new eui.ArrayCollection(_0x35797a.belongRewardshow);
-          var _0x23ba57 = ConfgMgr.MonstersConfig[_0x7cbf75.bossId];
-          this.bossName.text = _0x23ba57.name + "(" + _0x7cbf75.zsLevel + "转)";
-          this.RemainCount.textFlow = TextFlowMaker.generateTextFlow1("剩余归属次数:|C:447235&T:" + KFBossSys.ins().VYBossCount + "|次");
-          var _0x352291 = this.currData.time - egret.getTimer() >> 0;
-          _0x352291 > 0 ? this.stateImage.source = "zdbossyijisha" : 0 >= _0x352291 ? this.stateImage.source = "zdbosskejisha" : this.stateImage.source = "";
-          this.bossImage.playFile(RES_DIR_MONSTER + ("monster" + _0x23ba57.avatar + "_4s"), -1);
-          this.BYbosstimes();
-          this.BYbosstimes2();
-          this.BYbosstimes3();
-          this.challengeBtn.visible = s;
-          this.isChallenge.visible = !s;
-          this.stateImage.visible = s;
-        }
-      }
+      var _0x20685c = ConfgMgr.DarkHallBossConfig[_0x2c9ace.id];
+      var _0x3ae0b3 = ConfgMgr.DarkHallBossConfig[_0xebb4d5.id];
+      return _0x20685c.zsLevel < _0x3ae0b3.zsLevel ? 1 : _0x20685c.zsLevel > _0x3ae0b3.zsLevel ? -1 : _0x20685c.level < _0x3ae0b3.level ? 1 : _0x20685c.level > _0x3ae0b3.level ? -1 : 0;
     }
   };
-  _0x5aaaca.prototype.onGetItem = function (_0xdc3d94) {
-    switch (_0xdc3d94.currentTarget) {
-      case this.seeRule:
-        ViewManager.ins().open(CommonHelpWin, ConfgMgr.HelpInfoConfig[65535].text);
-        break;
-      case this.challengeBtn:
-        if (0 == KFBossSys.ins().VYBossCount && KFBossSys.ins().ADBossBuyCount < ConfgMgr.CrossBossBase.darkhallbossbuyBelongCount) {
-          return void WarnWin.show("确定花费<font color='#FFB82A'>" + ConfgMgr.CrossBossBase.darkhallbossbuyBelongCountPrice + "元宝</font>购买1次归属次数吗？\n" + ("今日已购买：" + KFBossSys.ins().ADBossBuyCount + "/" + ConfgMgr.CrossBossBase.darkhallbossbuyBelongCount), function () {
-            {
-              KFBossSys.ins().sendBuyCount();
-            }
-          }, this);
-        }
-        if (0 == KFBossSys.ins().VYBossCount && KFBossSys.ins().ADBossBuyCount == ConfgMgr.CrossBossBase.darkhallbossbuyBelongCount) {
-          return void UserTips.ins().showTips("|C:0xf3311e&T:次数不足！");
-        }
-        var _0x23458d = (KFBossSys.ins().ADBossEnterCD - egret.getTimer()) / 1000 >> 0;
-        if (_0x23458d > 0) {
-          return void UserTips.ins().showTips("|C:0xf3311e&T:" + _0x23458d + "秒后可以进入！");
-        }
-        var _0x294d2f = this.currData.time - egret.getTimer() >> 0;
-        if (_0x294d2f > 0) {
-          return void UserTips.ins().showTips("|C:0xf3311e&T:BOSS未复活，不可挑战！");
-        }
-        this.currData && KFBossSys.ins().sendEnterADFb(this.currData.id);
+  _0x19184a.prototype.close = function () {
+    for (var _0x19eadb = [], _0x42b7b9 = 0; _0x42b7b9 < arguments.length; _0x42b7b9++) {
+      _0x19eadb[_0x42b7b9] = arguments[_0x42b7b9];
     }
   };
-  _0x5aaaca.prototype.compareFn = function (_0x213e37, _0x108a5b) {
-    var _0x59f3b3 = ConfgMgr.DarkHallBossConfig[_0x213e37.id];
-    var _0x3075b8 = ConfgMgr.DarkHallBossConfig[_0x108a5b.id];
-    return _0x59f3b3.zsLevel < _0x3075b8.zsLevel ? 1 : _0x59f3b3.zsLevel > _0x3075b8.zsLevel ? -1 : _0x59f3b3.level < _0x3075b8.level ? 1 : _0x59f3b3.level > _0x3075b8.level ? -1 : 0;
-  };
-  _0x5aaaca.prototype.close = function () {
-    for (var _0x2eaef1 = [], _0x1621f4 = 0; _0x1621f4 < arguments.length; _0x1621f4++) {
-      _0x2eaef1[_0x1621f4] = arguments[_0x1621f4];
-    }
-  };
-  return _0x5aaaca;
+  return _0x19184a;
 }(BaseEuiView);
-__reflect(vYBBossWin.prototype, "vYBBossWin");
-ViewManager.ins().reg(vYBBossWin, LayerManager.UI_Main);
+__reflect(piwangsdBossWin.prototype, "piwangsdBossWin");
+ViewManager.ins().reg(piwangsdBossWin, LayerManager.UI_Main);
