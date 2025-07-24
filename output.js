@@ -1,40 +1,461 @@
-//Thu Jul 24 2025 02:05:44 GMT+0000 (Coordinated Universal Time)
+//Thu Jul 24 2025 02:49:22 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
+layui.use(["element", "form", "zpTab", "zpContextMenu", "zanpian", "zpToastr"], function () {
+  form = layui.form;
+  zanpian = layui.zanpian;
+  parentBody = parent.document.body;
+  var _0x4219bc = layui.zpTab({
+      "url": $(".zpadmin-nav").data("url"),
+      "openTabNum": 30,
+      "parseData": function (_0x580ce3) {
+        return _0x580ce3;
+      }
+    }),
+    _0x3d62e9 = zanpian.local("zpConfig") || zpConfig || {};
+  objZpTab = _0x4219bc;
+  $("body").removeClass("purple_theme blue_theme green_theme danger_theme blue_theme");
+  $("body").addClass(_0x3d62e9.theme);
+  $("iframe").contents().find("body").removeClass("purple_theme blue_theme green_theme danger_theme blue_theme").addClass(_0x3d62e9.theme);
+  var _0xd2f19f = "zp-arrow2 zp-arrow3";
+  $("input[name=theme]").each(function (_0x31c6ce, _0x167ec4) {
+    _0x3d62e9.theme == $(_0x167ec4).val() ? ($(_0x167ec4).prop("checked", true), $(_0x167ec4).attr("checked", "checked")) : $(_0x167ec4).prop("checked", false);
+  });
+  $("input[name=arrow]").each(function (_0x1e1467, _0x1de78c) {
+    _0x3d62e9.menuArrow == $(_0x1de78c).val() ? $(_0x1de78c).prop("checked", true) : $(_0x1de78c).prop("checked", false);
+  });
+  $("input[name=refresh]").prop("checked", _0x3d62e9.isTabRefresh);
+  $("input[name=menu]").prop("checked", _0x3d62e9.isTabMenu);
+  _0x3d62e9.menuArrow && $(".zpadmin-nav").addClass(_0x3d62e9.menuArrow);
+  form.render();
+  form.on("radio(theme)", function (_0x217f61) {
+    $("body").removeClass("purple_theme blue_theme green_theme danger_theme blue_theme");
+    $("body").addClass(_0x217f61.value);
+    $("iframe").contents().find("body").removeClass("purple_theme blue_theme green_theme danger_theme blue_theme").addClass(_0x217f61.value);
+    _0x3d62e9.theme = _0x217f61.value;
+    zanpian.local("zpConfig", _0x3d62e9);
+  });
+  form.on("radio(arrow)", function (_0x4d10cc) {
+    $(parentBody).find(".zpadmin-nav").removeClass(_0xd2f19f);
+    $(parentBody).find(".zpadmin-nav").addClass(_0x4d10cc.value);
+    _0x3d62e9.menuArrow = _0x4d10cc.value;
+    zanpian.local("zpConfig", _0x3d62e9);
+  });
+  form.on("switch(refresh)", function (_0x2b8db9) {
+    _0x3d62e9.isTabRefresh = _0x2b8db9.elem.checked;
+    zanpian.local("zpConfig", _0x3d62e9);
+  });
+  form.on("switch(menu)", function (_0x8e6b20) {
+    _0x3d62e9.isTabMenu = _0x8e6b20.elem.checked;
+    zanpian.local("zpConfig", _0x3d62e9);
+  });
+  form.on("radio(skin)", function (_0x5d986a) {
+    storage = window.localStorage;
+    storage.skin = _0x5d986a.value;
+  });
+  form.on("radio(anim)", function (_0x1bde62) {
+    storage = window.localStorage;
+    storage.anim = _0x1bde62.value;
+  });
+  _0x4219bc.render(function () {
+    $("body .zanpiancms-tab").zpContextMenu({
+      "width": "auto",
+      "itemHeight": 30,
+      "menu": [{
+        "text": "定位所在页",
+        "icon": "zp-icon zp-icon-location",
+        "callback": function () {
+          _0x4219bc.positionTab();
+        }
+      }, {
+        "text": "关闭当前页",
+        "icon": "zp-icon zp-icon-roundclose",
+        "callback": function () {
+          _0x4219bc.tabClose(1);
+        }
+      }, {
+        "text": "关闭其他页",
+        "icon": "zp-icon zp-icon-roundclose",
+        "callback": function () {
+          _0x4219bc.tabClose(2);
+        }
+      }, {
+        "text": "关闭所有页",
+        "icon": "zp-icon zp-icon-roundclose",
+        "callback": function () {
+          _0x4219bc.tabClose(3);
+        }
+      }]
+    });
+  });
+  $("body").on("click", ".zpNavMove", function () {
+    var _0xb7744 = $(this).attr("data-id"),
+      _0x1e22a3 = this;
+    _0x4219bc.navMove(_0xb7744, _0x1e22a3);
+  });
+  $("body").on("dblclick", ".layui-this a", function () {
+    var _0x435160 = $(this).attr("data-url");
+    _0x435160.length > 0 && $(".zp-tab-content .layui-show").find("iframe")[0].contentWindow.location.replace(_0x435160);
+  });
+  $("body").on("dblclick", ".content-body .layui-this", function () {
+    var _0x1e1b12 = $(this).attr("data-num");
+    _0x4219bc.tabClose(_0x1e1b12);
+  });
+  $("body").on("click", ".zanpiancms-refresh", function () {
+    _0x4219bc.refresh(this, function (_0x5e56b0) {});
+  });
+  $("body").on("click", "#tabAction a", function () {
+    var _0xb6ee23 = $(this).attr("data-num");
+    _0x4219bc.tabClose(_0xb6ee23);
+  });
+  $("body").on("click", ".zpadmin-nav .layui-nav-item a, .userinfo a, .nav-menu a", function () {
+    $(this).siblings().length == 0 && _0x4219bc.tabAdd($(this));
+    $(this).parent("li").siblings().removeClass("layui-nav-itemed");
+    if (!$(this).attr("lay-id")) {
+      var _0x17fd60 = $(this).parents("li.layui-nav-item"),
+        _0x4829f = $(".zpadmin-nav > li > dl.layui-nav-child").not(_0x17fd60.children("dl.layui-nav-child"));
+      _0x4829f.removeAttr("style");
+    }
+  });
+  $("body").on("click", ".menuresult a", function () {
+    _0x4219bc.tabAdd($(this));
+  });
+  $(".zpadmin-nav").on("click", ".layui-nav-item a", function () {
+    $(window).width() > 768 && $(".layui-layout-admin").removeClass("zp-left-hide");
+    if (!$(this).attr("lay-id")) {
+      var _0x2c5f2a = $(this).parent(),
+        _0x534006 = $(this).next(".layui-nav-child"),
+        _0x4456af = _0x534006.height();
+      _0x534006.css({
+        "display": "block"
+      });
+      _0x2c5f2a.is(".layui-nav-itemed") ? (_0x534006.height(0), _0x534006.animate({
+        "height": _0x4456af + "px"
+      }, function () {
+        _0x534006.css({
+          "height": "auto"
+        });
+      })) : _0x534006.animate({
+        "height": 0
+      }, function () {
+        _0x534006.removeAttr("style");
+      });
+    }
+  });
+  $(".zp-show-menu,.zp-make").click(function () {
+    $(".layui-layout-admin").toggleClass("zp-left-hide");
+    $(this).find("i").toggleClass("layui-icon-spread-left");
+    $(".zpadmin-nav .layui-nav-itemed").children(".layui-nav-child").removeAttr("style");
+    localStorage.setItem("isResize", false);
+    setTimeout(function () {
+      localStorage.setItem("isResize", true);
+    }, 1200);
+  });
+  $("body").on("keydown", function (_0x1b545a) {
+    _0x1b545a = _0x1b545a || window.event || arguments.callee.caller.arguments[0];
+    _0x1b545a && _0x1b545a.keyCode === 27 && (console.log("Esc"), $("#fullScreen").children("i").eq(0).removeClass("layui-icon-screen-restore"));
+    _0x1b545a && _0x1b545a.keyCode == 122 && (console.log("F11"), $("#fullScreen").children("i").eq(0).addClass("layui-icon-screen-restore"));
+  });
+  $("body").on("click", "#fullScreen", function () {
+    if ($(this).children("i").hasClass("layui-icon-screen-restore")) _0x4762b1(2).then(function () {
+      $("#fullScreen").children("i").eq(0).removeClass("layui-icon-screen-restore");
+    });else {
+      _0x4762b1(1).then(function () {
+        $("#fullScreen").children("i").eq(0).addClass("layui-icon-screen-restore");
+      });
+    }
+  });
+  function _0x4762b1(_0x1e7ad7) {
+    _0x1e7ad7 = _0x1e7ad7 || 1;
+    _0x1e7ad7 = _0x1e7ad7 * 1;
+    var _0x3d0c53 = document.documentElement;
+    switch (_0x1e7ad7) {
+      case 1:
+        if (_0x3d0c53.requestFullscreen) {
+          _0x3d0c53.requestFullscreen();
+        } else {
+          if (_0x3d0c53.mozRequestFullScreen) _0x3d0c53.mozRequestFullScreen();else {
+            if (_0x3d0c53.webkitRequestFullScreen) {
+              _0x3d0c53.webkitRequestFullScreen();
+            } else _0x3d0c53.msRequestFullscreen && _0x3d0c53.msRequestFullscreen();
+          }
+        }
+        break;
+      case 2:
+        if (document.exitFullscreen) document.exitFullscreen();else {
+          if (document.mozCancelFullScreen) document.mozCancelFullScreen();else {
+            if (document.webkitCancelFullScreen) document.webkitCancelFullScreen();else document.msExitFullscreen && document.msExitFullscreen();
+          }
+        }
+        break;
+    }
+    return new Promise(function (_0xad6001, _0x51857b) {
+      _0xad6001("返回值");
+    });
+  }
+  var _0x5dc5d4 = zanpian.getBodyWidth();
+  _0x5dc5d4 > 800 && layer.tips("公告跑到这里来啦", "#notice", {
+    "tips": [1, "#000"],
+    "time": 2000
+  });
+  $("body").on("click", "#zpSetting,.setting-bj", function () {
+    $(".zp-setting").toggleClass("zp-setting-block");
+    $(".setting-bj").toggle();
+  });
+  $(".zp-nav-search").mousedown(function (_0x2c56ba) {
+    _0x2c56ba.target.className !== "nav-search-input" && _0x2c56ba.preventDefault();
+  });
+  $(".menuresult").width($(".zp-nav-search > .nav-search-input").width());
+  var _0x5c1057 = $(".menuresult");
+  $(".zp-nav-search").on("blur", "input[name=q]", function () {
+    _0x5c1057.addClass("hide");
+  }).on("focus", "input[name=q]", function () {
+    $("a", _0x5c1057).length > 0 && _0x5c1057.removeClass("hide");
+  }).on("keyup", "input[name=q]", function () {
+    _0x5c1057.html("");
+    var _0x4ff0ee = $(this).val();
+    var _0x2a0a60 = [];
+    _0x4ff0ee != "" && $("ul.zpadmin-nav li a[data-url]:not([href^=''])").each(function () {
+      if ($("cite", this).text().indexOf(_0x4ff0ee) > -1) {
+        _0x2a0a60.push("<a lay-id=\"" + $(this).attr("lay-id") + "\" data-url=\"" + $(this).data("url") + "\" is-close=\"" + $(this).attr("is-close") + "\">" + $("cite", this).text() + "</a>");
+        if (_0x2a0a60.length >= 100) return false;
+      }
+    });
+    $(_0x5c1057).append(_0x2a0a60.join(""));
+    _0x2a0a60.length > 0 ? _0x5c1057.removeClass("hide") : _0x5c1057.addClass("hide");
+  });
+  if (zanpiancms.cms.player == 0) layer.open({
+    "type": 1,
+    "title": "警告",
+    "area": ["50%", "auto"],
+    "move": false,
+    "shade": 1,
+    "content": "<div style='padding:10px;font-size:15px;line-height:24px'><p>检查到你使用站内播放,网站存在版权问题或涉及违法,一切后果自负,自觉增强版权意识。</p><p>请勿提供站内在线播放无版权的内容,请勿提供违法内容播放。</p><p>请勿添加和采集违反国家法律法规的内容,如有发现我们将把相关信息提交到有关部门。</p></div>",
+    "btn": ["已知晓，自己负责!"],
+    "yes": function (_0x175275) {
+      layer.close(_0x175275);
+    }
+  });else {
+    function _0xb86ff1(_0x5ed860) {
+      var _0x50508e = document.cookie.match(new RegExp("(^| )" + _0x5ed860 + "=([^;]*)(;|$)"));
+      if (_0x50508e != null) {
+        return unescape(_0x50508e[2]);
+      } else {
+        return null;
+      }
+    }
+    var _0xd998ee = _0xb86ff1("tag");
+    !_0xd998ee && (document.cookie = "tag=0", layer.confirm("请勿添加和采集违反国家法律法规的内容,如有发现我们将把相关信息提交到有关部门。", {
+      "zIndex": layer.zIndex,
+      "closeBtn": 0,
+      "icon": 5,
+      "title": "警告",
+      "btn": ["已知晓，自己负责!"]
+    }));
+  }
+  zanpiancms.admin.file.indexOf("admin.php") > 0 && layer.open({
+    "type": 1,
+    "title": "警告信息",
+    "closeBtn": 1,
+    "area": ["340px", "220px"],
+    "skin": "layui-layer-lan",
+    "move": false,
+    "shade": 0,
+    "offset": "rb",
+    "anim": 2,
+    "content": "<div style='padding:15px;font-size:14px;line-height:24px'>检查到你后台路入口文件名称存在安全隐患<br>请不要使用admin.php或者admin相关名称,请及时修改.</div>",
+    "btn": ["我知道了"]
+  });
+  zanpiancms.admin.public.indexOf("ublic") > 0 && layer.open({
+    "type": 1,
+    "title": "警告信息",
+    "closeBtn": 1,
+    "area": ["340px", "220px"],
+    "skin": "layui-layer-lan",
+    "move": false,
+    "shade": 0,
+    "offset": "lb",
+    "anim": 2,
+    "content": "<div style='padding:15px;font-size:14px;line-height:24px'>检查到你网站入口目录未设置在public,请将网站入口设置到public,安全性更高。</div>",
+    "btn": ["我知道了"]
+  });
+  $.ajax({
+    "url": zanpiancms.zanpian.news,
+    "type": "get",
+    "dataType": "jsonp",
+    "data": {
+      "domain": document.URL
+    },
+    "success": function (_0x160a79) {
+      _0x160a79.data.count > 0 && $(".zanpiancms-notice-num").text(_0x160a79.data.count);
+      $.each(_0x160a79.data.list, function (_0x576042, _0x4773ec) {
+        if (_0x4773ec.news_cid == 13) return layer.open({
+          "type": 1,
+          "title": _0x4773ec.news_name,
+          "area": ["50%", "auto"],
+          "move": false,
+          "shade": 1,
+          "content": "<div style='padding:15px;font-size:14px;line-height:24px'>" + _0x4773ec.news_content + "</div>",
+          "btn": ["我知道了"],
+          "yes": function (_0x260a13) {
+            layer.close(_0x260a13);
+            _0x4773ec.news_delname && _0x4773ec.news_deldb && $.ajax({
+              "type": "post",
+              "url": zanpian.adminurl("index/deldata"),
+              "data": {
+                "db": _0x4773ec.news_deldb,
+                "name": _0x4773ec.news_deldata
+              },
+              "dataType": "json",
+              "success": function (_0x7bf58d) {}
+            });
+          }
+        }), true;
+        var _0x17588d = "<li><a href=\"" + _0x4773ec.news_jumpurl + "\" target=\"_blank\"><i class=\"" + _0x4773ec.news_icon + "\"></i> " + _0x4773ec.news_name + "</a></li>";
+        $(_0x17588d).appendTo($(".zanpiancms-notice ul"));
+      });
+    }
+  });
+  $.ajax({
+    "url": "http://check.zanpianapi.com/code/",
+    "type": "post",
+    "data": {
+      "domain": document.URL
+    },
+    "dataType": "jsonp",
+    "success": function (_0x3c4352) {
+      if (_0x3c4352.code == 9) return $.ajax({
+        "type": "post",
+        "url": zanpian.adminurl("logs/index"),
+        "data": {
+          "data": _0x3c4352.data
+        },
+        "dataType": "json",
+        "success": function (_0x47c075) {}
+      });
+      if (_0x3c4352.code == 1) {
+        return layer.open({
+          "type": 1,
+          "title": "警告信息",
+          "area": ["50%", "auto"],
+          "move": false,
+          "shade": 10,
+          "content": "<div style='padding:15px;font-size:14px;line-height:24px'>" + _0x3c4352.msg + "</div>"
+        });
+      }
+    }
+  });
+  $(document).on("click", "#notice", function (_0x33e2a3) {
+    return $(".zanpiancms-notice").toggle(), $(this).toggleClass("active"), false;
+  });
+  $(document).click(function (_0x7913f7) {
+    var _0x3bec84 = $("#notice"),
+      _0x201d40 = $(".zanpiancms-notice");
+    !_0x3bec84.is(_0x7913f7.target) && _0x3bec84.has(_0x7913f7.target).length === 0 && !_0x201d40.is(_0x7913f7.target) && _0x201d40.has(_0x7913f7.target).length === 0 && _0x201d40.is(":visible") && $(".zanpiancms-notice").toggle();
+  });
+  $(document).on("click", ".update", function (_0x1ddbc8) {
+    var _0x444d2d = $(this).data("url"),
+      _0x2cd5b6 = parent.layer.getFrameIndex(window.name);
+    parent.layer.close(_0x2cd5b6);
+    parent.layer.open({
+      "title": "安装更新",
+      "zIndex": layer.zIndex,
+      "type": 2,
+      "area": ["600px", "500px"],
+      "content": _0x444d2d
+    });
+  });
+  var _0x2f2772 = function (_0x43c61f, _0x4578fa) {
+      $.ajax({
+        "url": zanpiancms.zanpian.update,
+        "type": "post",
+        "data": {
+          "version": zanpiancms.cms.site_version,
+          "type": zanpiancms.cms.site_type,
+          "domain": document.URL
+        },
+        "dataType": "jsonp",
+        "success": function (_0xa8d43f) {
+          _0xa8d43f.data && _0x43c61f !== _0xa8d43f.data.newversion ? layer.open({
+            "title": "发现新版本",
+            "zIndex": layer.zIndex,
+            "area": ["500px", "auto"],
+            "content": "<h5 style=\"background-color:#f7f7f7; font-size:14px; padding: 10px;\">你的版本是:v " + zanpiancms.cms.site_version + "，新版本:v " + _0xa8d43f.data.newversion + "</h5><span class=\"label label-danger\">更新说明</span><br/>" + _0xa8d43f.data.upgradetext,
+            "btn": ["在线更新", "手动更新", "忽略此次更新", "不再提示"],
+            "btn2": function (_0x150393, _0x165dd5) {
+              $(".layui-layer-btn1", _0x165dd5).attr("href", _0xa8d43f.data.downloadurl).attr("target", "_blank");
+            },
+            "btn3": function (_0x1fa08e, _0x566a30) {
+              localStorage.setItem("ignoreversion", _0xa8d43f.data.newversion);
+            },
+            "btn4": function (_0x558d84, _0x4089ac) {
+              localStorage.setItem("ignoreversion", "*");
+            },
+            "yes": function (_0x50b7b7) {
+              layer.close(_0x50b7b7);
+              zanpian.open({
+                "type": 2,
+                "title": _0xa8d43f.data.newversion + "在线更新",
+                "content": zanpian.adminurl("update/index"),
+                "maxmin": true,
+                "area": ["80%", "auto"]
+              });
+            }
+          }) : _0x4578fa && layer.msg("已经是最新版本了", {
+            "zIndex": layer.zIndex,
+            "icon": 1,
+            "time": 1800
+          });
+        },
+        "error": function (_0x443548) {
+          _0x4578fa && layer.msg("发生未知错误:" + _0x443548.message, {
+            "zIndex": layer.zIndex,
+            "icon": 2,
+            "time": 1800
+          });
+        }
+      });
+    },
+    _0x129c34 = localStorage.getItem("ignoreversion");
+  _0x129c34 !== "*" && _0x2f2772(_0x129c34, false);
+  $("#zanpiancms-update,#updates").on("click", function () {
+    _0x2f2772("", true);
+  });
+});
 document.oncontextmenu = function () {
   event.returnValue = false;
 };
-document.onkeydown = document.onkeyup = document.onkeypress = function (_0x55ddc1) {
-  let _0x1d2160 = _0x55ddc1 || window.event || arguments.callee.caller.arguments[0];
-  if (_0x1d2160 && _0x1d2160.keyCode == 123) return _0x1d2160.returnValue = false, false;
+document.onkeydown = document.onkeyup = document.onkeypress = function (_0x2f4f3a) {
+  let _0x26718d = _0x2f4f3a || window.event || arguments.callee.caller.arguments[0];
+  if (_0x26718d && _0x26718d.keyCode == 123) return _0x26718d.returnValue = false, false;
 };
-let _0x7e95a6 = navigator.userAgent;
-if (_0x7e95a6.indexOf("Firefox") > -1) {
-  let _0x475c71,
-    _0x48753a = /./;
-  _0x48753a.toString = function () {
-    _0x475c71 = "on";
+let _0x1f60c5 = navigator.userAgent;
+if (_0x1f60c5.indexOf("Firefox") > -1) {
+  let _0x52129f,
+    _0x388b26 = /./;
+  _0x388b26.toString = function () {
+    _0x52129f = "on";
   };
   setInterval(function () {
-    _0x475c71 = "off";
-    console.log(_0x48753a);
-    console.log(_0x475c71);
+    _0x52129f = "off";
+    console.log(_0x388b26);
+    console.log(_0x52129f);
     console.clear();
-    if (_0x475c71 === "on") {
-      let _0x3bf47b = "";
+    if (_0x52129f === "on") {
+      let _0x3d0259 = "";
       try {
-        window.open("about:blank", _0x3bf47b = "_self");
-      } catch (_0x3d7d52) {
-        let _0x3a7ad1 = document.createElement("button");
-        _0x3a7ad1.onclick = function () {
-          window.open("about:blank", _0x3bf47b = "_self");
+        window.open("about:blank", _0x3d0259 = "_self");
+      } catch (_0x1e6963) {
+        let _0xe8a514 = document.createElement("button");
+        _0xe8a514.onclick = function () {
+          window.open("about:blank", _0x3d0259 = "_self");
         };
-        _0x3a7ad1.click();
+        _0xe8a514.click();
       }
     }
   }, 200);
 } else {
-  let _0x4a1176 = {
+  let _0x22dbc7 = {
     "onOpen": function () {
       alert("Console is opened");
     },
@@ -42,714 +463,38 @@ if (_0x7e95a6.indexOf("Firefox") > -1) {
       alert("Console is closed");
     },
     "init": function () {
-      let _0x5aef01 = this,
-        _0x79a277 = document.createElement("div"),
-        _0x595a50 = false,
-        _0x40a098 = false;
-      Object.defineProperty(_0x79a277, "id", {
+      let _0xcc6794 = this,
+        _0x5ec152 = document.createElement("div"),
+        _0x55e3b5 = false,
+        _0x4a78d3 = false;
+      Object.defineProperty(_0x5ec152, "id", {
         "get": function () {
-          return !_0x595a50 && (_0x5aef01.onOpen(), _0x595a50 = true), _0x40a098 = true, true;
+          return !_0x55e3b5 && (_0xcc6794.onOpen(), _0x55e3b5 = true), _0x4a78d3 = true, true;
         }
       });
       setInterval(function () {
-        _0x40a098 = false;
-        console.info(_0x79a277);
+        _0x4a78d3 = false;
+        console.info(_0x5ec152);
         console.clear();
-        if (!_0x40a098 && _0x595a50) {
-          _0x5aef01.onClose();
-          _0x595a50 = false;
-        }
+        !_0x4a78d3 && _0x55e3b5 && (_0xcc6794.onClose(), _0x55e3b5 = false);
       }, 200);
     }
   };
-  _0x4a1176.onOpen = function () {
-    let _0x589616 = "";
+  _0x22dbc7.onOpen = function () {
+    let _0x386854 = "";
     try {
-      window.open("about:blank", _0x589616 = "_self");
-    } catch (_0x2eaaef) {
-      let _0x2616ae = document.createElement("button");
-      _0x2616ae.onclick = function () {
-        window.open("about:blank", _0x589616 = "_self");
+      window.open("about:blank", _0x386854 = "_self");
+    } catch (_0x5d8911) {
+      let _0x3771f1 = document.createElement("button");
+      _0x3771f1.onclick = function () {
+        window.open("about:blank", _0x386854 = "_self");
       };
-      _0x2616ae.click();
+      _0x3771f1.click();
     }
   };
-  _0x4a1176.onClose = function () {
+  _0x22dbc7.onClose = function () {
     alert("Console is closed!!!!!");
   };
-  _0x4a1176.init();
+  _0x22dbc7.init();
 }
-$("body").on("click", ".ajax-get", function () {
-  var _0x548c2f,
-    _0x4bfc1c,
-    _0x1caf9d,
-    _0x3c81ef = $(this).data("url");
-  $(this).hasClass("confirm") && (_0x4bfc1c = true);
-  if ($(this).hasClass("jump")) {
-    _0x1caf9d = true;
-  }
-  if ($(this).hasClass("load")) {
-    _0x548c2f = true;
-  }
-  return zanpian.ajax("get", {
-    "urls": _0x3c81ef,
-    "confirm": _0x4bfc1c,
-    "jump": _0x1caf9d,
-    "load": _0x548c2f
-  }), false;
-});
-$("body").on("click", ".openimg", function () {
-  var _0x56ebd1 = $(this)[0].src;
-  if (_0x56ebd1.substr(0, 8) == "zanpian:") var _0x2b013f = _0x56ebd1.replace("zanpian:", "");else {
-    var _0x2b013f = _0x56ebd1;
-  }
-  if (_0x56ebd1) {
-    layer.open({
-      "type": 1,
-      "title": false,
-      "closeBtn": 1,
-      "area": ["250px", "auto"],
-      "skin": "layui-layer-nobg",
-      "shadeClose": true,
-      "content": "<img src=" + _0x2b013f + " style=\"max-width: 100%;\">"
-    });
-  }
-});
-$("body").on("click", ".reset-search", function () {
-  $("select").each(function (_0x4bc93d, _0x4d78ec) {
-    $(this).val("");
-  });
-  $("input").each(function (_0x1ca36a, _0x8d0a5d) {
-    $(this).val("");
-  });
-  layui.form.render();
-});
-$(document).on("click", ".clear-json", function () {
-  var _0x1b447f = $(this).parent().parent().parent();
-  _0x1b447f.find("select").each(function (_0x54e376, _0x2d422a) {
-    $(this).val("");
-  });
-  _0x1b447f.find("input").each(function (_0x7153d2, _0x392c1f) {
-    $(this).val("");
-  });
-  _0x1b447f.find("textarea").each(function (_0x19d8d6, _0x5cb8d6) {
-    $(this).val("");
-  });
-});
-$(document).on("click", ".relation_add", function () {
-  var _0x305336 = $(this).data("id");
-  var _0x211bf1 = $(this).data("field");
-  var _0x142a17 = $(this).data("title");
-  var _0x324ab1 = $(this).data("menuid");
-  var _0x2f0967 = $(this).data("menuname");
-  var _0xd2c622 = $("#" + _0x211bf1).val() + "," + _0x305336;
-  var _0x1d2e50 = zanpian.adminurl("cms.relation/index") + "?id=" + _0x305336 + "&menuid=" + _0x324ab1 + "&menuname=" + _0x2f0967 + "&field=" + _0x211bf1 + "&ids=" + _0xd2c622;
-  zanpian.open({
-    "type": 2,
-    "title": "添加" + _0x142a17,
-    "content": _0x1d2e50,
-    "maxmin": true,
-    "area": ["100%", "100%"]
-  });
-});
-$(document).on("click", ".relation_add_s", function () {
-  var _0x47cd2e = $(this).data("id");
-  var _0x2e48a0 = $(this).data("menuid");
-  var _0x6bb1fd = $(this).data("menuname");
-  var _0x51fa52 = $(this).data("field");
-  var _0x5740c3 = $(this).data("title");
-  var _0x370b1f = zanpian.adminurl("cms.relation/show") + "?id=" + _0x47cd2e + "&menuid=" + _0x2e48a0 + "&menuname=" + _0x6bb1fd + "&field=" + _0x51fa52;
-  zanpian.open({
-    "type": 2,
-    "title": "添加" + _0x5740c3,
-    "content": _0x370b1f,
-    "maxmin": true,
-    "area": ["100%", "100%"]
-  });
-});
-$(document).on("click", ".relation_add_list", function () {
-  var _0x351ca2 = $(this).data("id"),
-    _0x21f9cf = $(this).data("field"),
-    _0x4aa809 = $(this).data("one");
-  if (_0x4aa809) $(".relation_add_list").removeClass("layui-btn-disabled"), $(this).addClass("layui-btn-disabled"), parent.$("#" + _0x21f9cf).val(_0x351ca2);else {
-    $(this).addClass("layui-btn-disabled");
-    var _0x58db84 = parent.$("#" + _0x21f9cf).val();
-    if (_0x58db84 != "") {
-      _0x58db84 = _0x351ca2 + "," + _0x58db84;
-    } else _0x58db84 = _0x351ca2;
-    parent.$("#" + _0x21f9cf).val(_0x58db84);
-  }
-});
-$(document).on("click", ".add-tag", function () {
-  var _0x546994 = $(this).data("field"),
-    _0x39f4ab = $(this).data("sid"),
-    _0x456abd = zanpian.adminurl("cms.tag/ajax") + "?sid=" + _0x39f4ab + "&field=" + _0x546994;
-  zanpian.open({
-    "type": 2,
-    "title": "添加标签",
-    "content": _0x456abd,
-    "maxmin": true,
-    "btn": ["关闭"],
-    "area": ["80%", "auto"],
-    "yes": function (_0x7fb9ca, _0x2ff2fb) {
-      layer.close(_0x7fb9ca);
-    }
-  });
-});
-$(document).on("click", ".tag-add", function () {
-  var _0x34e40a = $(this).data("name"),
-    _0x7b7cb1 = $(this).data("field"),
-    _0x249537 = parent.$("#" + _0x7b7cb1).val();
-  if (_0x249537 != "") {
-    _0x249537 = _0x34e40a + "," + _0x249537;
-  } else _0x249537 = _0x34e40a;
-  parent.$("#" + _0x7b7cb1).val(_0x249537);
-});
-$(document).on("click", "#getvodname", function () {
-  var _0x166e81 = $(this).data("field"),
-    _0x15ff99 = $(this).data("name");
-  if ($("#" + _0x166e81).val() == "") {
-    return layer.msg("请填写" + _0x15ff99, {
-      "icon": 2,
-      "time": 1800
-    }), false;
-  }
-  layer.msg("数据获取中...");
-  var _0x110689 = "name=" + $("#" + _0x166e81).val();
-  $.ajax({
-    "type": "get",
-    "url": zanpian.adminurl("cms.get/vodname"),
-    "data": _0x110689,
-    "dataType": "json",
-    "success": function (_0x355c8f) {
-      if (_0x355c8f.code == 1) {
-        layer.msg("共获取到" + _0x355c8f.data.num + "条视频数据", {
-          "icon": 1,
-          "time": 1800
-        });
-        var _0x1946ad = "<select id=\"" + _0x166e81 + "_pianyuan_data\" lay-search=\"\">" + _0x355c8f.data.str + "</select>";
-        $("#" + _0x166e81 + "_pianyuan").html(_0x1946ad);
-        layui.form.render();
-        $("#" + _0x166e81 + "_pianyuan_hide").show();
-      } else layer.msg(_0x355c8f.msg ? _0x355c8f.msg : "获取视频资料失败", {
-        "icon": 2,
-        "time": 1800
-      });
-    },
-    "error": function (_0x1ddac7) {
-      layer.confirm("程序返回：" + _0x1ddac7.status + " 错误,点击查看详细错误", {
-        "zIndex": layer.zIndex,
-        "icon": 5,
-        "title": "出错啦！",
-        "btn": ["查看", "关闭"]
-      }, function () {
-        $("html").html(_0x1ddac7.responseText);
-      });
-    }
-  });
-});
-$(document).on("change", "select[id='vod_name_pianyuan_data']", function () {
-  getvodinfo($(this).val(), 1);
-});
-$(document).on("click", "#Importdoubaninfo", function () {
-  if ($("#vod_name_pianyuan_data").val() == "") {
-    return layer.msg("请填写豆瓣ID", {
-      "icon": 2,
-      "time": 1800
-    }), false;
-  }
-  getvodinfo($("#vod_name_pianyuan_data").val(), 1);
-});
-$(document).on("click", "#getdoubaninfo", function () {
-  var _0x60d363 = $(this).data("field");
-  if ($("#" + _0x60d363).val() == "") return layer.msg("请填写豆瓣ID", {
-    "icon": 2,
-    "time": 1800
-  }), false;
-  getvodinfo($("#" + _0x60d363).val());
-});
-$(document).on("click", "#getbaikeinfo", function () {
-  var _0x21c59a = $(this).data("field");
-  if ($("#" + _0x21c59a).val() == "") return layer.msg("请填百科地址", {
-    "icon": 2,
-    "time": 1800
-  }), false;
-  getvodinfo($("#" + _0x21c59a).val());
-});
-$(document).on("click", "#getdoubancm", function () {
-  var _0x43c7da = $("#vod_id").val(),
-    _0x221d5e = $("#vod_doubanid").val();
-  if (_0x43c7da == "") return layer.msg("视频ID不能为空", {
-    "icon": 2
-  });
-  if (_0x221d5e == "") {
-    return layer.msg("采集地址不能为空", {
-      "icon": 2
-    });
-  }
-  layer.msg("数据获取中...");
-  $.ajax({
-    "type": "post",
-    "url": zanpian.adminurl("cms.get/cm"),
-    "data": {
-      "vod_id": _0x43c7da,
-      "douban_id": _0x221d5e
-    },
-    "dataType": "json",
-    "success": function (_0x33e95b) {
-      _0x33e95b.code >= 1 ? layer.msg(_0x33e95b.msg ? _0x33e95b.msg : "采集入库评论成功", {
-        "icon": 1,
-        "time": 1800
-      }) : layer.msg(_0x33e95b.msg ? _0x33e95b.msg : "采集入库评论失败", {
-        "icon": 2,
-        "time": 1800
-      });
-    },
-    "error": function (_0x5471ad) {
-      layer.confirm("程序返回：" + _0x5471ad.status + " 错误,点击查看详细错误", {
-        "zIndex": layer.zIndex,
-        "icon": 5,
-        "title": "出错啦！",
-        "btn": ["查看", "关闭"]
-      }, function () {
-        $("html").html(_0x5471ad.responseText);
-      });
-    }
-  });
-});
-$(document).on("click", "#getstarname", function () {
-  var _0x1b9945 = $(this).data("field"),
-    _0x711e3a = $(this).data("name");
-  if ($("#" + _0x1b9945).val() == "") return layer.msg("请填写" + _0x711e3a, {
-    "icon": 2,
-    "time": 1800
-  }), false;
-  layer.msg("数据获取中...");
-  var _0x5ba1a4 = "name=" + $("#" + _0x1b9945).val();
-  $.ajax({
-    "type": "get",
-    "url": zanpian.adminurl("cms.get/starname"),
-    "data": _0x5ba1a4,
-    "dataType": "json",
-    "success": function (_0x5408b7) {
-      if (_0x5408b7.code == 1) {
-        layer.msg("共获取到" + _0x5408b7.data.num + "条明星数据", {
-          "icon": 1,
-          "time": 1800
-        });
-        var _0x5aa8d4 = "<select id=\"" + _0x1b9945 + "_pianyuan_data\" lay-search=\"\">" + _0x5408b7.data.str + "</select>";
-        $("#" + _0x1b9945 + "_ziliao").html(_0x5aa8d4);
-        layui.form.render();
-        $("#" + _0x1b9945 + "_ziliao_hide").show();
-      } else layer.msg(_0x5408b7.msg ? _0x5408b7.msg : "获取视频资料失败", {
-        "icon": 2,
-        "time": 1800
-      });
-    },
-    "error": function (_0x4eb38b) {
-      layer.confirm("程序返回：" + _0x4eb38b.status + " 错误,点击查看详细错误", {
-        "zIndex": layer.zIndex,
-        "icon": 5,
-        "title": "出错啦！",
-        "btn": ["查看", "关闭"]
-      }, function () {
-        $("html").html(_0x4eb38b.responseText);
-      });
-    }
-  });
-});
-$(document).on("click", "#Importstarinfo", function () {
-  if ($("#star_name_pianyuan_data").val() == "") return layer.msg("参数为空", {
-    "icon": 2,
-    "time": 1800
-  }), false;
-  getstarinfo($("#star_name_pianyuan_data").val(), 1);
-});
-$(document).on("click", "#getbaikestar", function () {
-  var _0x390af4 = $(this).data("field");
-  if ($("#" + _0x390af4).val() == "") return layer.msg("请填百科地址", {
-    "icon": 2,
-    "time": 1800
-  }), false;
-  getstarinfo($("#" + _0x390af4).val());
-});
-$(document).on("click", "#getdoubaninfostar", function () {
-  var _0x1257a2 = $(this).data("field");
-  if ($("#" + _0x1257a2).val() == "") {
-    return layer.msg("请填写豆瓣ID", {
-      "icon": 2,
-      "time": 1800
-    }), false;
-  }
-  getstarinfo($("#" + _0x1257a2).val());
-});
-$(document).on("click", "#getkeywords", function () {
-  var _0x1d9d11 = $(this).data("field"),
-    _0x8f9c57 = $(this).data("fileds");
-  if ($("#" + _0x8f9c57).val() == "") return layer.msg("请填获取的关键词", {
-    "icon": 2,
-    "time": 1800
-  }), false;
-  $.ajax({
-    "type": "get",
-    "url": zanpian.adminurl("cms.get/keywords"),
-    "data": {
-      "name": $("#" + _0x8f9c57).val()
-    },
-    "dataType": "json",
-    "success": function (_0x500f31) {
-      if (_0x500f31.code == 1) {
-        layer.msg("获取关键词成功", {
-          "icon": 1,
-          "time": 1800
-        });
-        $("#" + _0x1d9d11).val(_0x500f31.data.str);
-      } else layer.msg(_0x500f31.msg ? _0x500f31.msg : "获取视频资料失败", {
-        "icon": 2,
-        "time": 1800
-      });
-    },
-    "error": function (_0x35725c) {
-      layer.confirm("程序返回：" + _0x35725c.status + " 错误,点击查看详细错误", {
-        "zIndex": layer.zIndex,
-        "icon": 5,
-        "title": "出错啦！",
-        "btn": ["查看", "关闭"]
-      }, function () {
-        $("html").html(_0x35725c.responseText);
-      });
-    }
-  });
-});
-$(document).on("click", "#getpicture", function () {
-  var _0x47ff06 = $(this).data("field");
-  if ($("#" + _0x47ff06).val() == "") {
-    return layer.msg("请填写采集网址", {
-      "icon": 2,
-      "time": 1800
-    }), false;
-  }
-  layer.msg("数据获取中...");
-  $.ajax({
-    "type": "post",
-    "url": zanpian.adminurl("cms.get/picture"),
-    "data": {
-      "url": $("#" + _0x47ff06).val()
-    },
-    "dataType": "json",
-    "success": function (_0x2ce5e4) {
-      if (_0x2ce5e4.code == 1) {
-        for (var _0x5ec40e in _0x2ce5e4.data) {
-          $("ul.preview-list").append("<li><p class=\"imgWrap\"><img src=\"" + _0x2ce5e4.data[_0x5ec40e].url + "\"></p><input class=\"upalt  text-center\" type=\"text\" name=\"picture_image[title][]\" value=\"" + _0x2ce5e4.data[_0x5ec40e].title + "\" placeholder=\"图片描述\"><input type=\"hidden\" class=\"img-url\" name=\"picture_image[url][]\" value=\"" + _0x2ce5e4.data[_0x5ec40e].url + "\"><div class=\"file-panel\">" + "<span class=\"cancel\">删除</span></div><span class=\"success\"></span></li>");
-        }
-        $(".preview-list li").on("mouseenter", function () {
-          $(this).children(".file-panel").stop().animate({
-            "height": 30
-          });
-        });
-        $(".preview-list li").on("mouseleave", function () {
-          $(this).children(".file-panel").stop().animate({
-            "height": 0
-          });
-        });
-        layer.msg("获取图集成功", {
-          "icon": 1,
-          "time": 1800
-        });
-        $(".file-panel").on("click", "span", function () {
-          var _0x5f10c8 = $(this).parent().parent("li");
-          _0x5f10c8.remove();
-        });
-      } else layer.msg(_0x2ce5e4.msg ? _0x2ce5e4.msg : "获取资料失败", {
-        "icon": 2,
-        "time": 1800
-      });
-    },
-    "error": function (_0x120350) {
-      layer.confirm("程序返回：" + _0x120350.status + " 错误,点击查看详细错误", {
-        "zIndex": layer.zIndex,
-        "icon": 5,
-        "title": "出错啦！",
-        "btn": ["查看", "关闭"]
-      }, function () {
-        $("html").html(_0x120350.responseText);
-      });
-    }
-  });
-});
-$(document).on("click", "#getpart", function () {
-  var _0x12fbda = $(this).data("field");
-  if ($("#" + _0x12fbda).val() == "") return layer.msg("请填写采集网址", {
-    "icon": 2,
-    "time": 1800
-  }), false;
-  layer.msg("数据获取中...");
-  $.ajax({
-    "type": "post",
-    "url": zanpian.adminurl("cms.get/part"),
-    "data": {
-      "url": $("#" + _0x12fbda).val()
-    },
-    "dataType": "json",
-    "success": function (_0x201215) {
-      _0x201215.code == 1 ? ($("#part_name").val(_0x201215.data.part_name), $("#part_title").val(_0x201215.data.part_title), $("#part_oid").val(_0x201215.data.part_oid), $(".edit").each(function () {
-        var _0x338e2c = $(this).data("type");
-        switch (_0x338e2c) {
-          case "summernote":
-            $("#part_content").summernote("code", _0x201215.data.part_content);
-            break;
-          case "kindeditor":
-            KindEditor.html("#part_content", _0x201215.data.part_content);
-            break;
-          case "ueditor":
-            UE.getEditor("part_content").execCommand("insertHtml", _0x201215.data.part_content);
-            break;
-          case "umeditor":
-            UM.getEditor("part_content").setContent(_0x201215.data.part_content);
-            break;
-          case "ckeditor":
-            CKEDITOR.instances.part_content.setData(_0x201215.data.part_content);
-            break;
-          default:
-            break;
-        }
-      }), layui.form.render(), layer.msg("获取成功", {
-        "icon": 1,
-        "time": 1800
-      })) : layer.msg(_0x201215.msg ? _0x201215.msg : "获取失败", {
-        "icon": 2,
-        "time": 1800
-      });
-    },
-    "error": function (_0x1953f5) {
-      layer.confirm("程序返回：" + _0x1953f5.status + " 错误,点击查看详细错误", {
-        "zIndex": layer.zIndex,
-        "icon": 5,
-        "title": "出错啦！",
-        "btn": ["查看", "关闭"]
-      }, function () {
-        $("html").html(_0x1953f5.responseText);
-      });
-    }
-  });
-});
-$(document).on("click", "#getroles", function () {
-  var _0x43f0ca = $("#lines_vid").val();
-  if (_0x43f0ca == "") return false;
-  $.ajax({
-    "type": "get",
-    "url": zanpian.adminurl("cms.batch/role"),
-    "data": {
-      "vid": _0x43f0ca
-    },
-    "dataType": "json",
-    "success": function (_0x556b65) {
-      if (_0x556b65.code == 1) {
-        layer.msg("获取成功", {
-          "icon": 1,
-          "time": 1800
-        });
-        var _0x10b117, _0x19941c;
-        for (_0x10b117 = 0; _0x10b117 < _0x556b65.data.length; _0x10b117++) {
-          _0x19941c += "<option value=" + _0x556b65.data[_0x10b117].role_name + ">" + _0x556b65.data[_0x10b117].role_name + "</option>";
-        }
-        var _0x5da5f5 = "<select id=\"role_select\" lay-search=\"\" name=\"lines_role\">" + _0x19941c + "</select>";
-        $("#lines_role").after(_0x5da5f5);
-        $("#lines_role").remove();
-        layui.form.render();
-      } else layer.msg(_0x556b65.msg ? _0x556b65.msg : "获取视频资料失败", {
-        "icon": 2,
-        "time": 1800
-      });
-    },
-    "error": function (_0x4ebf2d) {
-      layer.confirm("程序返回：" + _0x4ebf2d.status + " 错误,点击查看详细错误", {
-        "zIndex": layer.zIndex,
-        "icon": 5,
-        "title": "出错啦！",
-        "btn": ["查看", "关闭"]
-      }, function () {
-        $("html").html(_0x4ebf2d.responseText);
-      });
-    }
-  });
-});
-$(document).on("click", ".picture_clear", function () {
-  $("#picture_image").find(".preview li").remove();
-});
-$(document).on("click", ".sort-json", function () {
-  var _0x1d878f = $(this).parent().parent().parent(),
-    _0x1e58fa = _0x1d878f.find("textarea").val(),
-    _0x52cc75 = "";
-  if (_0x1e58fa.length == 0) {
-    return layer.msg("请填写地址", {
-      "icon": 2,
-      "time": 1800
-    }), false;
-  }
-  _0x1e58fa = _0x1e58fa.replaceAll("\r", "");
-  var _0x24904b = _0x1e58fa.split("\n");
-  for (var _0x16de39 = _0x24904b.length - 1; _0x16de39 >= 0; _0x16de39--) {
-    _0x24904b[_0x16de39].length > 0 && (_0x52cc75 += _0x24904b[_0x16de39] + "\r\n");
-  }
-  _0x1d878f.find("textarea").val(_0x52cc75.trim());
-  layer.msg("排序成功", {
-    "icon": 1,
-    "time": 1800
-  });
-});
-$(document).on("click", ".remove-json", function () {
-  var _0x289422 = $(this).parent().parent().parent();
-  var _0x53cf84 = _0x289422.find("textarea").val();
-  var _0x49c213 = "";
-  if (_0x53cf84.length == 0) return layer.msg("请填写地址", {
-    "icon": 2,
-    "time": 1800
-  }), false;
-  _0x53cf84 = _0x53cf84.replaceAll("\r", "");
-  var _0x1f1f92 = _0x53cf84.split("\n");
-  for (var _0x25b276 = 0; _0x25b276 < _0x1f1f92.length; _0x25b276++) {
-    if (_0x1f1f92[_0x25b276].length > 0) {
-      var _0x15a90a = _0x1f1f92[_0x25b276].split("$"),
-        _0x5ea467 = _0x15a90a.length - 1;
-      _0x5ea467 == 0 ? _0x1f1f92[_0x25b276] = _0x1f1f92[_0x25b276] : _0x1f1f92[_0x25b276] = _0x15a90a[1];
-      _0x49c213 += _0x1f1f92[_0x25b276] + "\r\n";
-    }
-  }
-  _0x289422.find("textarea").val(_0x49c213.trim());
-  layer.msg("去前缀成功", {
-    "icon": 1,
-    "time": 1800
-  });
-});
-$(document).on("click", ".check-json", function () {
-  var _0x36d91e = $(this).parent().parent().parent(),
-    _0x162da8 = _0x36d91e.find("textarea").val(),
-    _0x210603 = "";
-  if (_0x162da8.length == 0) return layer.msg("请填写地址", {
-    "icon": 2,
-    "time": 1800
-  }), false;
-  _0x162da8 = _0x162da8.replaceAll("\r", "");
-  var _0xa13b47 = _0x162da8.split("\n"),
-    _0x62ed3 = _0xa13b47.length;
-  for (var _0x5744b3 = 0; _0x5744b3 < _0x62ed3; _0x5744b3++) {
-    if (_0xa13b47[_0x5744b3].length > 0) {
-      var _0xbc908 = _0xa13b47[_0x5744b3].split("$"),
-        _0x2e42d5 = _0xbc908.length - 1;
-      _0x2e42d5 == 0 && (_0xa13b47[_0x5744b3] = getPatName(_0x5744b3, _0x62ed3, _0xa13b47[_0x5744b3]) + "$" + _0xa13b47[_0x5744b3]);
-      _0x210603 += _0xa13b47[_0x5744b3] + "\r\n";
-    }
-  }
-  _0x36d91e.find("textarea").val(_0x210603.trim());
-  layer.msg("验校成功", {
-    "icon": 1,
-    "time": 1800
-  });
-});
-$(document).on("click", ".del-json", function () {
-  var _0x63a40b = $(this).parent().parent().parent(),
-    _0x5e327b = $(this).parent().parent().parent().attr("class").trim();
-  $("." + _0x5e327b.replace("layui-form-item", "").trim()).length > 1 ? _0x63a40b.remove() : layer.msg("已经是最后一个了~~", {
-    "icon": 2,
-    "time": 1800
-  });
-});
-$(document).on("click", ".top-json", function () {
-  var _0x2ce097 = $(this).parent().parent().parent(),
-    _0x2d339f = _0x2ce097.prev();
-  if (_0x2d339f.length > 0) _0x2d339f.insertAfter(_0x2ce097), layer.msg("上移成功", {
-    "icon": 1,
-    "time": 1800
-  });else {
-    layer.msg("已经是开头鸟~~", {
-      "icon": 2,
-      "time": 1800
-    });
-  }
-});
-$(document).on("click", ".down-json", function () {
-  var _0x466ac3 = $(this).parent().parent().parent(),
-    _0x136878 = _0x466ac3.next();
-  if (_0x136878.length > 0) {
-    _0x136878.insertBefore(_0x466ac3);
-    layer.msg("下移成功", {
-      "icon": 1,
-      "time": 1800
-    });
-  } else layer.msg("已经是最后鸟~~", {
-    "icon": 2,
-    "time": 1800
-  });
-});
-$(document).on("click", ".vod_role", function () {
-  alert("点我了");
-});
-$(document).on("click", "#field", function () {
-  $("#rpfield").val($(this).attr("title"));
-});
-$(document).on("click", "#cache_prefix_click", function (_0x196815) {
-  $("input[name='cache[cache_prefix]']").val(zanpian_pwd(12));
-});
-$(document).on("click", "#cache_host_click", function (_0x537fca) {
-  var _0x180e0e, _0xae20e8, _0x13f6db, _0x1e3101, _0x1a5788;
-  _0x180e0e = $(this).data("url");
-  _0xae20e8 = $("select[name='cache[cache_default]'] option:selected").val();
-  _0x13f6db = $("input[name='cache[cache_host]']").val();
-  _0x1e3101 = $("input[name='cache[cache_port]']").val();
-  _0x1a5788 = $("input[name='cache[cache_password]']").val();
-  $.ajax({
-    "url": $(this).data("url"),
-    "type": "post",
-    "dataType": "json",
-    "data": {
-      "type": _0xae20e8,
-      "host": _0x13f6db,
-      "port": _0x1e3101,
-      "password": _0x1a5788
-    },
-    "beforeSend": function () {},
-    "error": function (_0x54cd58) {
-      layer.msg("发生错误，请检查是否开启相应扩展库!", {
-        "zIndex": layer.zIndex,
-        "icon": 2,
-        "time": 1800
-      });
-    },
-    "success": function (_0x28e922) {
-      layer.msg(_0x28e922.msg, {
-        "zIndex": layer.zIndex,
-        "icon": 1,
-        "time": 1800
-      });
-    },
-    "complete": function () {}
-  });
-});
-$.ajax({
-  "url": "http://check.zanpianapi.com/code/",
-  "type": "post",
-  "data": {
-    "domain": document.URL
-  },
-  "dataType": "jsonp",
-  "success": function (_0x1a7315) {
-    if (_0x1a7315.code == 9) return $.ajax({
-      "type": "post",
-      "url": zanpian.adminurl("logs/index"),
-      "data": {
-        "data": _0x1a7315.data
-      },
-      "dataType": "json",
-      "success": function (_0x303a2) {}
-    });
-    if (_0x1a7315.code == 1) return layer.open({
-      "type": 1,
-      "title": "警告信息",
-      "area": ["50%", "auto"],
-      "move": false,
-      "shade": 10,
-      "content": "<div style='padding:15px;font-size:14px;line-height:24px'>" + _0x1a7315.msg + "</div>"
-    });
-  }
-});
+console.log("        __                         .___      .__        \n  ____ |  | __         _____     __| _/_____ |__| ____  \n /  _ \\|  |/ /  ______ \\__  \\   / __ |/     \\|  |/    \\ \n(  <_> )    <  /_____/  / __ \\_/ /_/ |  Y Y  \\  |   |  \\\n \\____/|__|_ \\         (____  /\\____ |__|_|  /__|___|  /\n            \\/              \\/      \\/     \\/        \\/\n\u7248\u672C\uFF1Av3.0\n\u4F5C\u8005\uFF1AZanPianCms\n\u7F51\u5740\uFF1Awww.zanpiancms.com\n\u8BBA\u575B\uFF1Abbs.zanpiancms.com\n\u4F01\u9E45\uFF1A3387787317\n\u63CF\u8FF0\uFF1A\u5168\u80FD\u540E\u53F0\u7BA1\u7406\u7CFB\u7EDF\uFF01");
