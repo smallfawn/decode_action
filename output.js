@@ -1,293 +1,209 @@
-//Tue Oct 07 2025 05:26:45 GMT+0000 (Coordinated Universal Time)
+//Thu Oct 09 2025 11:01:43 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-var encode_version = "jsjiami.com.v5";
-var shenyou_spanl23 = function (_0x3e1a55) {
-  function _0x558fd1() {
-    var _0x4e51b8 = _0x3e1a55.call(this) || this;
-    _0x4e51b8.roleIndex = 0;
-    _0x4e51b8.oldIndex = 0;
-    _0x4e51b8.skinName = "shenyouboxskin23";
-    _0x4e51b8.isTopLevel = true;
-    return _0x4e51b8;
+class ResponseDecoder {
+  constructor() {
+    this.keyCache = new Map();
+    this.cacheExpiry = 3600000;
   }
-  __extends(_0x558fd1, _0x3e1a55);
-  _0x558fd1.prototype.initUI = function () {};
-  _0x558fd1.prototype.open = function () {
-    this.addTouchEvent(this.closeBtn, this.onClick);
-    this.oldIndex = this.tab.selectedIndex = this.viewStack.selectedIndex = _0x3e1a55[0] ? _0x3e1a55[0] : 0;
-    this.addTouchEvent(this, this.onClick);
-    this.addChangingEvent(this.tab, this.checkIsOpen);
-    this.setOpenIndex(0);
-  };
-  _0x558fd1.prototype.close = function () {
-    for (var _0x4146e0 = [], _0x5f4ddf = 0; _0x5f4ddf < arguments.length; _0x5f4ddf++) {
-      _0x4146e0[_0x5f4ddf] = arguments[_0x5f4ddf];
-    }
-    var _0x53228a = ViewManager.ins().getView(UIView2);
-    _0x53228a && _0x53228a.closeNav(UIView2.NAV_ROLE);
-    for (var _0xf850b9 = this.viewStack.numChildren, _0x42c970 = 0; _0xf850b9 > _0x42c970; _0x42c970++) {
-      this.viewStack.getChildAt(_0x42c970) instanceof eui.Group || this.viewStack.getChildAt(_0x42c970).close();
-    }
-  };
-  _0x558fd1.prototype.checkIsOpen = function (_0x13daf1) {
-    this.setOpenIndex(this.tab.selectedIndex);
-    this.viewStack.selectedIndex = this.tab.selectedIndex;
-    this.viewStack.getElementAt(this.oldIndex).close();
-  };
-  _0x558fd1.prototype.allclose = function (_0xf108dc) {
-    for (i = 1; i < 1; i++) {
-      this["tgwu" + i].close();
-    }
-  };
-  _0x558fd1.prototype.setOpenIndex = function (_0x37d353) {
-    if (this.oldIndex && 1 == this.oldIndex && this.oldIndex != _0x37d353 && this.getWingPanelInfo()) {
-      this.doOpenHintWin(1, this.tab.selectedIndex);
-      return void (this.tab.selectedIndex = this.oldIndex);
-    }
-    this.allclose();
-    switch (_0x37d353) {
-      case 0:
-        this.tgwu1.open();
-    }
-  };
-  _0x558fd1.prototype.onClick = function (_0x2dc487) {
-    switch (_0x2dc487.target) {
-      case this.closeBtn:
-      case this.closeBtn0:
-        ViewManager.ins().close(this);
-    }
-  };
-  return _0x558fd1;
-}(BaseEuiView);
-__reflect(shenyou_spanl23.prototype, "shenyou_spanl23");
-ViewManager.ins().reg(shenyou_spanl23, LayerManager.UI_Main);
-var shenyou1panl23 = function (_0x8100b9) {
-  function _0x202acd() {
-    var _0x4a67bc = _0x8100b9.call(this) || this,
-      _0x408c71 = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<e:Skin class=\"shenyou1skin\" width=\"580\" height=\"930\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:w=\"http://ns.egret.com/wing\"\r\n        xmlns:ns1=\"*\" xmlns:euiextension=\"euiextension.*\" >\r\n<e:Group top=\"0\" bottom=\"0\" width=\"580\" horizontalCenter=\"0\">\r\n<e:Group left=\"0\" right=\"0\" top=\"0\" bottom=\"-4\">\r\n<e:Image top=\"40\" left=\"0\" source=\"\" scale9Grid=\"19,12,14,25\" right=\"0\" bottom=\"0\"/>\r\n<e:Group id=\"xinb1\" top=\"0\" left=\"0\" right=\"0\" bottom=\"0\">\r\n<e:Rect left=\"0\" right=\"0\" bottom=\"0\" top=\"0\" fillAlpha=\"0\"/>\r\n<e:Image source=\"shenyou_bg\" left=\"0\" right=\"0\" bottom=\"0\" top=\"0\"/>\r\n<e:Group left=\"0\" right=\"0\" top=\"0\" bottom=\"0\">\r\n<e:Image source=\"\" left=\"0\" right=\"0\" bottom=\"0\"/>\r\n<e:Group id=\"bodyeff\" horizontalCenter=\"20\" verticalCenter=\"0\"/>\r\n</e:Group>\r\n<e:Group left=\"0\" top=\"220\" bottom=\"2\" width=\"110\">\r\n<e:Rect left=\"0\" right=\"0\" bottom=\"0\" top=\"0\" fillAlpha=\"0\"/>\r\n<e:Scroller scrollPolicyH=\"off\" left=\"10\" right=\"0\" top=\"0\" bottom=\"0\"><e:List id=\"list\" left=\"0\" y=\"-3\" itemRendererSkinName=\"shenyouItemSkin\">\r\n<e:layout>\r\n</e:layout>\r\n<e:ArrayCollection>\r\n<e:Array>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n<e:Object a=\"null\"/>\r\n</e:Array>\r\n</e:ArrayCollection>\r\n</e:List>\r\n</e:Scroller>\r\n</e:Group>\r\n<e:Group left=\"110\" right=\"0\" bottom=\"50\" shenyou_spanl=\"126\">\r\n<e:Image source=\"\" left=\"0\" right=\"0\" height=\"126\"/>\r\n\t\t<e:Label id=\"attr\" textColor=\"0x1adb3e\" lineSpacing=\"6\" left=\"15\" right=\"0\" verticalCenter=\"8.5\" size=\"18\"/>\r\n\t\t<e:Label id=\"attr1\" textColor=\"0x84ff00\" lineSpacing=\"6\" horizontalCenter=\"40\" right=\"0\" verticalCenter=\"8.5\" size=\"18\"/>\r\n\t\t<e:Label id=\"attr2\" textColor=\"0xd3c2c2\" lineSpacing=\"6\" horizontalCenter=\"0\" right=\"0\" verticalCenter=\"8.5\" size=\"18\" visible=\"false\"/>\r\n</e:Group>\r\n<e:Group width=\"160\" bottom=\"300\" right=\"0\">\r\n\t\t<e:Label id=\"costs\" textColor=\"0xe51515\" lineSpacing=\"6\"  bottom=\"60\" size=\"16\" right=\"10\" text=\"神佑 (100/100000)\"/>\r\n<e:Button id=\"changeBtn\" label=\"进  阶\" name=\"changeBtn\" skinName=\"Btn3Skin\" bottom=\"0\" width=\"120\" right=\"10\"/>\r\n</e:Group>\r\n</e:Group>\r\n</e:Group>\n\t<ns1:BaseComponent id=\"powerPanel\" skinName=\"PowerPanelSkin\" className=\"PowerPanel\" horizontalCenter=\"60\" top=\"130\"/><ns1:BaseComponent id=\"roleSelect\" y=\"0\" skinName=\"RoleSelectPanelSkin\" className=\"RoleSelectPanel\"  width=\"580\" horizontalCenter=\"0\" />\r\n</e:Group><e:Image id=\"biaoti\" y=\"8\" source=\"title_shenyou\" x=\"50\" scaleX=\"1.2\" scaleY=\"1.2\"/>\r\n\t\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</e:Skin>";
-    _0x4a67bc.skinName = _0x408c71;
-    _0x4a67bc.Totime = 60;
-    _0x4a67bc._curIndex = 0;
-    _0x4a67bc.Maxxing = 10;
-    _0x4a67bc.Indexid = 1;
-    _0x4a67bc.lastindex = 0;
-    return _0x4a67bc;
-  }
-  __extends(_0x202acd, _0x8100b9);
-  _0x202acd.prototype.childrenCreated = function () {
-    _0x8100b9.prototype.childrenCreated.call(this);
-    this.list.itemRenderer = shenyouItembarPanel;
-    this._col = new eui.ArrayCollection();
-    this.list.dataProvider = this._col;
-  };
-  _0x202acd.prototype.open = function () {
-    this.observe(Dress.ins().postDressInfo, this.update);
-    this.observe(UserBag.ins().postItemAdd, this.update);
-    this.observe(UserBag.ins().postItemDel, this.update);
-    this.observe(UserBag.ins().postItemCountChange, this.update);
-    this.roleSelect.setCurRole(this.curRole);
-    this.roleSelect.parent.touchEnabled = true;
-    SubRoles.ins().getSubRoleByIndex(0);
-    this.roleSelect.setCurRole(0);
-    this.curRole = 0;
-    this.addChangeEvent(this.roleSelect, this.onChange);
-    this.addChangeEvent(this.list, this.onList);
-    this.addTouchEvent(this.changeBtn, this.onClicks);
-    this.update();
-  };
-  _0x202acd.prototype.Ladbodyeff = function (_0x151ce6) {
-    var _0x151ce6 = SubRoles.ins().getSubRoleByIndex(this.curRole);
-    this.maceff || (this.maceff = new MovieClip());
-    this.bodyeff.addChild(this.maceff);
-    this.maceff.playFile("/resource/newUI/shenyou/1/shield_01" + (parseInt(this._curIndex) + 1), -1);
-  };
-  _0x202acd.prototype.onChange = function (_0xebfa5a) {
-    this.curRole = this.roleSelect.getCurRole();
-    this.update();
-  };
-  _0x202acd.prototype.Listdate = function (_0x29c43a) {
-    this.curRole = this.roleSelect.getCurRole();
-    var _0x55551e = Dress.ins();
-    this.listInfo = [];
-    var _0x4edb40 = ConfgMgr.shenyouid14cf;
-    for (var _0x437704 in _0x4edb40) if (SubRoles.ins().getSubRoleByIndex(this.curRole).job == _0x4edb40[_0x437704].roletype) {
-      var _0x3c1c8d = new DressItemInfo(),
-        _0x366085 = _0x4edb40[_0x437704],
-        _0xcc0d55 = _0x366085.id;
-      _0x3c1c8d.lv = 0;
-      _0x3c1c8d.id = _0xcc0d55;
-      _0x3c1c8d.uid = _0x366085.uid;
-      _0x3c1c8d.job = _0x366085.roletype;
-      _0x55551e.timeInfo[_0xcc0d55] && (_0x3c1c8d.timer = _0x55551e.timeInfo[_0xcc0d55].invalidtime, _0x3c1c8d.lv = _0x55551e.timeInfo[_0xcc0d55].lv);
-      this.listInfo.push(_0x3c1c8d);
-    }
-    return this.listInfo;
-  };
-  _0x202acd.prototype.update = function () {
-    var _0x529648 = ConfgMgr.shenyou14cf,
-      _0xe9a8dc = [],
-      _0x610377 = 0,
-      _0x4ea0f4 = this.Listdate();
-    this._col.replaceAll(_0xe9a8dc);
-    for (var _0x569f41 in _0x529648) {
-      _0xe9a8dc.push({
-        ling: _0x569f41 == this._curIndex ? 1 : 0,
-        item: _0x529648[_0x569f41].itemid,
-        id: _0x4ea0f4[_0x569f41].id,
-        lv: _0x4ea0f4[_0x569f41].lv
-      });
-    }
-    this._col.replaceAll(_0xe9a8dc);
-    this.Ladbodyeff();
-    var _0x459871 = _0x529648[this._curIndex];
-    this._lv = _0x4ea0f4[this._curIndex].lv;
-    this._lv = this._lv >= _0x459871.maxlevel ? _0x459871.maxlevel : this._lv;
-    this._maxvll = _0x459871.maxlevel;
-    var _0x20f3cb = [],
-      _0x198afe = [];
-    for (x = 0; x < _0x459871.type.length; x++) {
-      var _0x610377 = {},
-        _0x1ae7fb = {};
-      _0x610377.type = _0x1ae7fb.type = _0x459871.type[x];
-      _0x610377.value = this._lv < 1 ? 0 : this._lv == 1 ? _0x459871.attr[x] : parseInt(_0x459871.attr[x]) + parseInt(_0x459871.nexattr[x] * (parseInt(this._lv) - 1));
-      _0x1ae7fb.value = this._lv < 1 ? _0x459871.attr[x] : parseInt(_0x459871.attr[x]) + parseInt(_0x459871.nexattr[x] * this._lv);
-      _0x20f3cb[x] = _0x610377;
-      _0x198afe[x] = _0x1ae7fb;
-    }
-    this.attr.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x20f3cb), 0, 1, "：");
-    this.attr1.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x198afe), 0, 1, "：");
-    this.attr2.text = AttributeData.getAttStr(AttributeData.transformAttr(_0x20f3cb), 0, 1, "：");
-    this.powerPanel.setPower(UserBag.getAttrPower(AttributeData.transformAttr(_0x20f3cb)));
-    this._lv >= _0x459871.maxlevel ? (this.attr.visible = this.attr1.visible = 0, this.attr2.visible = 1) : (this.attr.visible = this.attr1.visible = 1, this.attr2.visible = 0);
-    this._bagcount = UserBag.ins().getBagGoodsCountById(0, _0x459871.itemid);
-    this.itemdata = ConfgMgr.ItemConfig[_0x459871.itemid];
-    this._coost = this._lv < 1 ? _0x459871.cost : parseInt(_0x459871.cost) + parseInt(_0x459871.excost * this._lv);
-    var _0x67998e = this._bagcount >= this._coost ? "23fa2d" : "fa7310";
-    this.costs.textFlow = TextFlowMaker.generateTextFlow1(this.itemdata.name + "(|C:0x" + _0x67998e + "&T:" + this._bagcount + "|/|C:0xfa10d6&T:" + this._coost + "|)");
-    this.currData = this.list.dataProvider.getItemAt(this._curIndex);
-  };
-  _0x202acd.prototype.onList = function (_0x499774) {
-    this._curIndex != this.list.selectedIndex && (this._curIndex = this.list.selectedIndex, this.update());
-  };
-  _0x202acd.prototype.close = function () {};
-  _0x202acd.prototype.removeMc = function (_0x465907) {
-    _0x465907 && (_0x465907.dispose(), DisplayUtils.removeFromParent(_0x465907));
-  };
-  _0x202acd.prototype.onClicks = function () {
-    if (this._lv >= this._maxvll) {
-      return void UserTips.ins().showCenterTips("|C:0xe29b0d&T:当前已满级|");
-    }
-    if (this._bagcount < this._coost) {
-      return void UserTips.ins().showCenterTips("|C:0xe29b0d&T:物品道具不足|");
-    }
-    this._lv < 1 ? Dress.ins().JiezhikongjianUserReq(this.currData.id, 121) : Dress.ins().JiezhikongjianLevelUp(this.currData.id);
-  };
-  return _0x202acd;
-}(BaseEuiView);
-__reflect(shenyou1panl23.prototype, "shenyou1panl23");
-(function (_0x246581, _0x37488a, _0x5306d0) {
-  var _0x2f26fb = function () {
-    var _0x1147b8 = true;
-    return function (_0x5da69b, _0x3140d2) {
-      var _0xe39e46 = _0x1147b8 ? function () {
-        if (_0x3140d2) {
-          var _0x59a865 = _0x3140d2.apply(_0x5da69b, arguments);
-          _0x3140d2 = null;
-          return _0x59a865;
-        }
-      } : function () {};
-      _0x1147b8 = false;
-      return _0xe39e46;
-    };
-  }();
-  var _0x161949 = _0x2f26fb(this, function () {
-    var _0x1b8664 = function () {
-        return "dev";
-      },
-      _0x16a74b = function () {
-        return "window";
+  extractKeyInfo(_0x29d9a0) {
+    try {
+      const _0x95dbb5 = _0x29d9a0.length - 16,
+        _0x42da13 = Math.floor(_0x95dbb5 / 4),
+        _0x518059 = Math.floor((_0x95dbb5 + 8) * 3 / 4),
+        _0x2978b0 = _0x29d9a0.substring(_0x42da13, _0x42da13 + 8),
+        _0xab9e61 = _0x29d9a0.substring(_0x518059, _0x518059 + 8),
+        _0x38c52e = _0x29d9a0.substring(0, _0x42da13) + _0x29d9a0.substring(_0x42da13 + 8, _0x518059) + _0x29d9a0.substring(_0x518059 + 8),
+        _0x3483b1 = {
+          success: true,
+          data: _0x38c52e,
+          keyHint: _0x2978b0,
+          saltHint: _0xab9e61
+        };
+      return _0x3483b1;
+    } catch (_0x853ec5) {
+      const _0x9b58e7 = {
+        success: false,
+        error: _0x853ec5.message
       };
-    var _0x32a485 = function () {
-      var _0x3a9efd = new RegExp("\\w+ *\\(\\) *{\\w+ *['|\"].+['|\"];? *}");
-      return !_0x3a9efd.test(_0x1b8664.toString());
-    };
-    var _0x51a3fd = function () {
-      var _0x58755c = new RegExp("(\\\\[x|u](\\w){2,4})+");
-      return _0x58755c.test(_0x16a74b.toString());
-    };
-    var _0x4bb0e2 = function (_0x822149) {
-      var _0x3d2c49 = ~-1 >> NaN;
-      if (_0x822149.indexOf("i" === _0x3d2c49)) {
-        _0x4b71c8(_0x822149);
-      }
-    };
-    var _0x4b71c8 = function (_0x33b4fb) {
-      var _0x3ff002 = ~-4 >> NaN;
-      if (_0x33b4fb.indexOf((true + "")[3]) !== _0x3ff002) {
-        _0x4bb0e2(_0x33b4fb);
-      }
-    };
-    if (!_0x32a485()) {
-      if (!_0x51a3fd()) {
-        _0x4bb0e2("indеxOf");
-      } else {
-        _0x4bb0e2("indexOf");
-      }
-    } else {
-      _0x4bb0e2("indеxOf");
+      return _0x9b58e7;
     }
-  });
-  _0x161949();
-  var _0x58b81d = function () {
-    var _0x380a08 = true;
-    return function (_0x5c8759, _0x20a3c2) {
-      var _0x4638e1 = _0x380a08 ? function () {
-        if (_0x20a3c2) {
-          var _0x1b1b2d = _0x20a3c2.apply(_0x5c8759, arguments);
-          _0x20a3c2 = null;
-          return _0x1b1b2d;
-        }
-      } : function () {};
-      _0x380a08 = false;
-      return _0x4638e1;
-    };
-  }();
-  var _0x2957cb = _0x58b81d(this, function () {
-    var _0x3e71eb = function () {};
-    var _0x6ab510 = typeof window !== "undefined" ? window : typeof process === "object" && typeof require === "function" && typeof global === "object" ? global : this;
-    if (!_0x6ab510.console) {
-      _0x6ab510.console = function (_0x478dfc) {
-        var _0x5306d0 = {};
-        _0x5306d0.log = _0x478dfc;
-        _0x5306d0.warn = _0x478dfc;
-        _0x5306d0.debug = _0x478dfc;
-        _0x5306d0.info = _0x478dfc;
-        _0x5306d0.error = _0x478dfc;
-        _0x5306d0.exception = _0x478dfc;
-        _0x5306d0.trace = _0x478dfc;
-        return _0x5306d0;
-      }(_0x3e71eb);
-    } else {
-      _0x6ab510.console.log = _0x3e71eb;
-      _0x6ab510.console.warn = _0x3e71eb;
-      _0x6ab510.console.debug = _0x3e71eb;
-      _0x6ab510.console.info = _0x3e71eb;
-      _0x6ab510.console.error = _0x3e71eb;
-      _0x6ab510.console.exception = _0x3e71eb;
-      _0x6ab510.console.trace = _0x3e71eb;
-    }
-  });
-  _0x2957cb();
-  _0x5306d0 = "al";
-  try {
-    _0x5306d0 += "ert";
-    _0x37488a = encode_version;
-    if (!(typeof _0x37488a !== "undefined" && _0x37488a === "jsjiami.com.v5")) {
-      _0x246581[_0x5306d0]("删除版本号，js会定期弹窗，还请支持我们的工作");
-    }
-  } catch (_0x4de500) {
-    _0x246581[_0x5306d0]("删除版本号，js会定期弹窗");
   }
-})(window);
-encode_version = "jsjiami.com.v5";
+  reconstructKey(_0x204c30, _0x520953, _0x1e0dda) {
+    const _0x409ab8 = _0x204c30 + _0x520953 + _0x1e0dda,
+      _0x1c2a79 = this.keyCache.get(_0x409ab8);
+    if (_0x1c2a79 && Date.now() < _0x1c2a79.expiry) {
+      return _0x1c2a79.key;
+    }
+    try {
+      if (_0x204c30.length !== 8 || _0x520953.length !== 8) {
+        return null;
+      }
+      const _0x5cfc75 = "KDown_" + _0x1e0dda + "_V3",
+        _0x2da8a1 = _0x204c30 + _0x520953 + _0x5cfc75,
+        _0x5809a7 = _0x204c30 + _0x520953,
+        _0x413266 = CryptoJS.PBKDF2(_0x2da8a1, _0x5809a7, {
+          keySize: 8,
+          iterations: 10000,
+          hasher: CryptoJS.algo.SHA256
+        });
+      this.keyCache.set(_0x409ab8, {
+        key: _0x413266,
+        expiry: Date.now() + this.cacheExpiry
+      });
+      return _0x413266;
+    } catch (_0x3c2c99) {
+      return null;
+    }
+  }
+  base64Decode(_0x157b1e) {
+    const _0x332844 = atob(_0x157b1e),
+      _0x573243 = new Uint8Array(_0x332844.length);
+    for (let _0x342d24 = 0; _0x342d24 < _0x332844.length; _0x342d24++) {
+      _0x573243[_0x342d24] = _0x332844.charCodeAt(_0x342d24);
+    }
+    return _0x573243;
+  }
+  async decrypt(_0x397110, _0x5e2a6c) {
+    try {
+      if (!_0x397110.encrypted || !_0x397110.data || !_0x397110.timestamp || !_0x397110.signature) {
+        throw new Error("加密响应格式错误");
+      }
+      const _0x50116a = this.verifySignature(_0x397110);
+      if (!_0x50116a) {
+        throw new Error("签名验证失败");
+      }
+      const _0x47b56f = Math.floor(Date.now() / 1000),
+        _0x357f18 = _0x5e2a6c || _0x397110.timestamp;
+      if (Math.abs(_0x47b56f - _0x357f18) > 300) {
+        throw new Error("响应时间戳无效");
+      }
+      const _0x2c5c77 = this.extractKeyInfo(_0x397110.data);
+      if (!_0x2c5c77.success) {
+        throw new Error("提取密钥信息失败: " + _0x2c5c77.error);
+      }
+      const _0xb83f3d = this.reconstructKey(_0x2c5c77.keyHint, _0x2c5c77.saltHint, _0x357f18);
+      if (!_0xb83f3d) {
+        throw new Error("密钥重构失败");
+      }
+      const _0x5acc29 = this.base64Decode(_0x2c5c77.data);
+      if (_0x5acc29.length < 16) {
+        throw new Error("数据长度不足");
+      }
+      const _0x7d50f7 = _0x5acc29.slice(0, 16),
+        _0x17a94f = _0x5acc29.slice(16),
+        _0x4a64f7 = CryptoJS.AES.decrypt(CryptoJS.lib.CipherParams.create({
+          ciphertext: CryptoJS.lib.WordArray.create(_0x17a94f)
+        }), _0xb83f3d, {
+          iv: CryptoJS.lib.WordArray.create(_0x7d50f7),
+          mode: CryptoJS.mode.CBC,
+          padding: CryptoJS.pad.Pkcs7
+        }),
+        _0x5cae4d = _0x4a64f7.toString(CryptoJS.enc.Utf8);
+      if (!_0x5cae4d) {
+        throw new Error("解密失败，可能是密钥错误");
+      }
+      const _0x27029c = JSON.parse(_0x5cae4d),
+        _0x354087 = {
+          success: true,
+          data: _0x27029c
+        };
+      return _0x354087;
+    } catch (_0x4f69ef) {
+      const _0x1b9918 = {
+        success: false,
+        error: _0x4f69ef.message,
+        data: null
+      };
+      return _0x1b9918;
+    }
+  }
+  cleanExpiredCache() {
+    const _0x4444a6 = Date.now();
+    for (const [_0x10adc1, _0x4241e8] of this.keyCache.entries()) {
+      _0x4444a6 >= _0x4241e8.expiry && this.keyCache.delete(_0x10adc1);
+    }
+  }
+}
+const responseDecoder = new ResponseDecoder();
+setInterval(() => {
+  responseDecoder.cleanExpiredCache();
+}, 300000);
+async function decryptApiResponse(_0x4533ed, _0x482e3e) {
+  if (typeof _0x4533ed === "string") {
+    try {
+      const _0x4f17fb = await decryptAESString(_0x4533ed, _0x482e3e),
+        _0x4abd62 = {
+          success: true,
+          data: _0x4f17fb
+        };
+      return _0x4abd62;
+    } catch (_0x44dc07) {
+      return {
+        success: false,
+        error: "解密失败: " + _0x44dc07.message,
+        data: null
+      };
+    }
+  }
+  if (_0x4533ed.encrypted && _0x4533ed.data && _0x4533ed.timestamp && _0x4533ed.signature) {
+    return await responseDecoder.decrypt(_0x4533ed, _0x482e3e);
+  }
+  const _0x1778de = {
+    success: true,
+    data: _0x4533ed
+  };
+  return _0x1778de;
+}
+async function decryptAESString(_0x588c4f, _0xc9e5a6) {
+  try {
+    const _0x10ab17 = responseDecoder.extractKeyInfo(_0x588c4f);
+    if (!_0x10ab17.success) {
+      throw new Error("提取密钥信息失败: " + _0x10ab17.error);
+    }
+    const _0x49344b = responseDecoder.reconstructKey(_0x10ab17.keyHint, _0x10ab17.saltHint, _0xc9e5a6);
+    if (!_0x49344b) {
+      throw new Error("密钥重构失败");
+    }
+    const _0x11bf93 = responseDecoder.base64Decode(_0x10ab17.data);
+    if (_0x11bf93.length < 16) {
+      throw new Error("数据格式错误");
+    }
+    const _0x3021fc = _0x11bf93.slice(0, 16),
+      _0x2e64a0 = _0x11bf93.slice(16),
+      _0x8eb35a = CryptoJS.AES.decrypt(CryptoJS.lib.CipherParams.create({
+        ciphertext: CryptoJS.lib.WordArray.create(_0x2e64a0)
+      }), _0x49344b, {
+        iv: CryptoJS.lib.WordArray.create(_0x3021fc),
+        mode: CryptoJS.mode.CBC,
+        padding: CryptoJS.pad.Pkcs7
+      });
+    if (!_0x8eb35a || _0x8eb35a.sigBytes === 0) {
+      throw new Error("解密失败 - 解密结果为空");
+    }
+    let _0x369bf5;
+    try {
+      _0x369bf5 = _0x8eb35a.toString(CryptoJS.enc.Utf8);
+      if (!_0x369bf5) {
+        const _0x581c08 = _0x8eb35a.toString(CryptoJS.enc.Latin1);
+        _0x369bf5 = decodeURIComponent(escape(_0x581c08));
+      }
+    } catch (_0x41e152) {
+      try {
+        const _0x390328 = _0x8eb35a.toString(CryptoJS.enc.Latin1);
+        _0x369bf5 = decodeURIComponent(escape(_0x390328));
+      } catch (_0x3215ab) {
+        throw new Error("解密后数据编码转换失败");
+      }
+    }
+    if (!_0x369bf5) {
+      throw new Error("解密失败 - 解密后文本为空");
+    }
+    const _0x5d196c = JSON.parse(_0x369bf5);
+    return _0x5d196c;
+  } catch (_0x169d12) {
+    throw new Error("解密失败: " + _0x169d12.message);
+  }
+}
+window.ResponseDecoder = ResponseDecoder;
+window.decryptApiResponse = decryptApiResponse;
