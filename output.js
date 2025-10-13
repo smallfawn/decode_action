@@ -1,4 +1,4 @@
-//Mon Oct 13 2025 11:59:32 GMT+0000 (Coordinated Universal Time)
+//Mon Oct 13 2025 12:07:34 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
 var __wxAppCode__ = __wxAppCode__ || {};
