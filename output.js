@@ -1,1087 +1,1133 @@
-//Sun Nov 16 2025 06:23:35 GMT+0000 (Coordinated Universal Time)
+//Sat Nov 22 2025 10:52:32 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
-const x_0x284d1f = {
-  km: ""
-};
-let x_0x257dd7 = "https://www.2eva.cn";
-let x_0x2272ef = [];
+var _0x23a4f = 11;
+const qs = require("\u0071\u0075\u0065\u0072\u0079\u0073\u0074\u0072\u0069\u006E\u0067");
+_0x23a4f = 0;
+var _0xa73c = 1;
+const axios = require("\u0061\u0078\u0069\u006F\u0073");
+_0xa73c = 14;
+const querystring = require("\u0071\u0075\u0065\u0072\u0079\u0073\u0074\u0072\u0069\u006E\u0067");
 const {
-  SocksProxyAgent: x_0x41ec73
-} = require("socks-proxy-agent");
-const x_0x1cf3d4 = require("axios");
-const x_0x2afc0c = "kwai-android aegon/4.28.0";
-require("dotenv").config();
-const x_0x4b6498 = "1##swLdgl:99#ecPp:-9#cmNt:-0#cmHs:-3#cmMnsl:-0";
-const x_0x28c938 = (_0x11bf7f, _0x1858e1 = "YYYY-MM-DD HH:mm:ss") => {
-  const _0x359d79 = _0x11bf7f.getFullYear();
-  const _0x26065d = String(_0x11bf7f.getMonth() + 1).padStart(2, "0");
-  const _0x12a285 = String(_0x11bf7f.getDate()).padStart(2, "0");
-  const _0x2a7fdd = String(_0x11bf7f.getHours()).padStart(2, "0");
-  const _0x31228c = String(_0x11bf7f.getMinutes()).padStart(2, "0");
-  const _0x1c1aae = String(_0x11bf7f.getSeconds()).padStart(2, "0");
-  return _0x1858e1.replace("YYYY", _0x359d79).replace("MM", _0x26065d).replace("DD", _0x12a285).replace("HH", _0x2a7fdd).replace("mm", _0x31228c).replace("ss", _0x1c1aae);
-};
-generateLocalIp = async (_0x3ca533 = 1, _0x352bdc = "C") => {
-  const _0xa38f5 = () => Math.floor(Math.random() * 256);
-  switch (_0x352bdc.toUpperCase()) {
-    case "A":
-      return "10." + _0xa38f5() + "." + _0xa38f5() + "." + _0xa38f5();
-    case "B":
-      const _0x35fd52 = 16 + Math.floor(Math.random() * 16);
-      return "172." + _0x35fd52 + "." + _0xa38f5() + "." + _0xa38f5();
-    case "C":
-    default:
-      return "192.168." + _0x3ca533 + "." + _0xa38f5();
+  '\u0053\u006F\u0063\u006B\u0073\u0050\u0072\u006F\u0078\u0079\u0041\u0067\u0065\u006E\u0074': SocksProxyAgent
+} = require("\u0073\u006F\u0063\u006B\u0073\u002D\u0070\u0072\u006F\u0078\u0079\u002D\u0061\u0067\u0065\u006E\u0074");
+function generateRandomInteractionMessage() {
+  const _0xff_0x7fe = ["\u544A\u5E7F\u770B\u89C2\u5728\u6B63".split("").reverse().join(""), "\u8BA4\u771F\u89C2\u770B\u4E2D\u002E\u002E\u002E", "\u5BB9\u5185\u544A\u5E7F\u89C8\u6D4F".split("").reverse().join(""), "\u4E3A\u884C\u6237\u7528\u62DF\u6A21".split("").reverse().join(""), "\u544A\u5E7F\u9891\u89C6\u770B\u89C2".split("").reverse().join(""), "\u6001\u72B6\u8DC3\u6D3B\u6301\u4FDD".split("").reverse().join(""), "\u4E2D\u89C8\u6D4F\u544A\u5E7F".split("").reverse().join(""), "\u6B63\u5E38\u89C2\u770B\u65F6\u957F"];
+  return _0xff_0x7fe[Math['\u0066\u006C\u006F\u006F\u0072'](Math['\u0072\u0061\u006E\u0064\u006F\u006D']() * _0xff_0x7fe['\u006C\u0065\u006E\u0067\u0074\u0068'])];
+}
+const isDevMode = process['\u0065\u006E\u0076']['\u0044\u0045\u0056\u005F\u004D\u004F\u0044\u0045'] === "\u0031" || process['\u0065\u006E\u0076']['\u0044\u0045\u0056\u005F\u004D\u004F\u0044\u0045'] === "eurt".split("").reverse().join("");
+function getEnvNumber(envKey, defaultValue) {
+  var _0xd1g;
+  const _0xe71e = parseInt(process['\u0065\u006E\u0076'][envKey], 10);
+  _0xd1g = 8;
+  return isNaN(_0xe71e) ? defaultValue : _0xe71e;
+}
+const KSLOW_REWARD_THRESHOLD = getEnvNumber("\u004B\u0053\u004C\u004F\u0057\u005F\u0052\u0045\u0057\u0041\u0052\u0044\u005F\u0054\u0048\u0052\u0045\u0053\u0048\u004F\u004C\u0044", 10);
+const KSROUNDS = getEnvNumber("\u004B\u0053\u0052\u004F\u0055\u004E\u0044\u0053", 35);
+const KSCOIN_LIMIT = getEnvNumber("\u004B\u0053\u0043\u004F\u0049\u004E\u005F\u004C\u0049\u004D\u0049\u0054", 500000);
+var _0xgaa0d = 9;
+const KSLOW_REWARD_LIMIT = getEnvNumber("\u004B\u0053\u004C\u004F\u0057\u005F\u0052\u0045\u0057\u0041\u0052\u0044\u005F\u004C\u0049\u004D\u0049\u0054", 3);
+_0xgaa0d = 7;
+function getTasksToExecute() {
+  const _0xe4e58e = process['\u0065\u006E\u0076']['\u0054\u0061\u0073\u006B'];
+  if (!_0xe4e58e) {
+    console['\u006C\u006F\u0067']("\u672A\u8BBE\u7F6E\u0054\u0061\u0073\u006B\u73AF\u5883\u53D8\u91CF\uFF0C\u5C06\u6267\u884C\u6240\u6709\u4EFB\u52A1\u0020\u0028\u0066\u006F\u006F\u0064\u002C\u0020\u0062\u006F\u0078\u002C\u0020\u006C\u006F\u006F\u006B\u0029");
+    return ["\u0066\u006F\u006F\u0064", "\u0062\u006F\u0078", "\u006C\u006F\u006F\u006B"];
   }
-};
-class x_0x36338c {
-  constructor(_0x676087) {
-    this.index = x_0x370ecc.userIdx++;
-    this.nickname = this.index;
-    this.totalCoin = 0;
-    this.allCash = 0;
-    this.user = _0x676087.split("#");
-    this.ck = this.user[0];
-    this.salt = this.user[1];
-    this.sock = null;
-    const _0x168d84 = {
-      name: "鐪嬪箍鍛婂緱閲戝竵",
-      businessId: 672,
-      posId: 24067,
-      subPageId: 100026367,
-      pageId: 11101,
-      requestSceneType: 1,
-      taskType: 1
-    };
-    this.lookAdInfo = _0x168d84;
-    const _0x211a70 = {
-      name: "瀹濈骞垮憡",
-      businessId: 606,
-      posId: 20346,
-      subPageId: 100024064,
-      pageId: 11101,
-      requestSceneType: 1,
-      taskType: 1
-    };
-    this.boxAdInfo = _0x211a70;
-    const _0xe9fb1e = {
-      name: "楗ˉ骞垮憡",
-      businessId: 9362,
-      posId: 24067,
-      subPageId: 100026367,
-      pageId: 11101,
-      requestSceneType: 7,
-      taskType: 2
-    };
-    this.foodAdInfo = _0xe9fb1e;
-    const _0x2c905f = {
-      name: "鎼滅储骞垮憡",
-      businessId: 7076,
-      posId: 216268,
-      subPageId: 100161537,
-      pageId: 11014,
-      requestSceneType: 1,
-      taskType: 1,
-      linkUrl: "eyJwYWdlSWQiOiAxMTAxNCwgInN1YlBhZ2VJZCI6IDEwMDE2MTUzNywgInBvc0lkIjogMjE2MjY4LCAiYnVzaW5lc3NJZCI6IDcwNzYsICJleHRQYXJhbXMiOiAiIiwgImN1c3RvbURhdGEiOiB7ImV4aXRJbmZvIjogeyJ0b2FzdERlc2MiOiBudWxsLCAidG9hc3RJbWdVcmwiOiBudWxsfX0sICJwZW5kYW50VHlwZSI6IDEsICJkaXNwbGF5VHlwZSI6IDIsICJzaW5nbGVQYWdlSWQiOiAwLCAic2luZ2xlU3ViUGFnZUlkIjogMCwgImNoYW5uZWwiOiAwLCAiY291bnRkb3duUmVwb3J0IjogZmFsc2UsICJ0aGVtZVR5cGUiOiAwLCAibWl4ZWRBZCI6IHRydWUsICJmdWxsTWl4ZWQiOiB0cnVlLCAiYXV0b1JlcG9ydCI6IHRydWUsICJmcm9tVGFza0NlbnRlciI6IHRydWUsICJzZWFyY2hJbnNwaXJlU2NoZW1lSW5mbyI6IG51bGwsICJhbW91bnQiOiAwfQ=="
-    };
-    this.ssAdInfo = _0x2c905f;
-    this.adinfo = {};
-    this.userId = null;
-    this.did = null;
-    this.socks5 = null;
-    this.adaddnum = 0;
-    this.wwip = "";
-    this.nwip = "192.168.31.57";
-    this.adtype = [];
-    this.cookies = "";
+  var _0x6d837b = 10;
+  const _0x7ae = _0xe4e58e['\u0073\u0070\u006C\u0069\u0074']("\u002C")['\u006D\u0061\u0070'](task => task['\u0074\u0072\u0069\u006D']()['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']())['\u0066\u0069\u006C\u0074\u0065\u0072'](Boolean);
+  _0x6d837b = 5;
+  var _0x54eb1b = 13;
+  const _0xb9ef9e = ["\u0066\u006F\u006F\u0064", "xob".split("").reverse().join(""), "kool".split("").reverse().join("")];
+  _0x54eb1b = 13;
+  const _0x183c = _0x7ae['\u0066\u0069\u006C\u0074\u0065\u0072'](task => _0xb9ef9e['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073'](task));
+  if (_0x183c['\u006C\u0065\u006E\u0067\u0074\u0068'] === 0) {
+    console['\u006C\u006F\u0067']("\u0054\u0061\u0073\u006B\u73AF\u5883\u53D8\u91CF\u4E2D\u6CA1\u6709\u6709\u6548\u4EFB\u52A1\uFF0C\u5C06\u6267\u884C\u6240\u6709\u4EFB\u52A1\u0020\u0028\u0066\u006F\u006F\u0064\u002C\u0020\u0062\u006F\u0078\u002C\u0020\u006C\u006F\u006F\u006B\u0029");
+    return ["\u0066\u006F\u006F\u0064", "\u0062\u006F\u0078", "kool".split("").reverse().join("")];
   }
-  async getAccountBasicInfo() {
-    x_0x370ecc.wait(4000);
+  console['\u006C\u006F\u0067']("\u4ECE\u0054\u0061\u0073\u006B\u73AF\u5883\u53D8\u91CF\u4E2D\u89E3\u6790\u5230\u8981\u6267\u884C\u7684\u4EFB\u52A1\u003A\u0020" + _0x183c['\u006A\u006F\u0069\u006E']("\u002C\u0020"));
+  return _0x183c;
+}
+function getAccountConfigsFromEnv() {
+  const _0xd163d = [];
+  var _0x23dc = 12;
+  const _0x45c7c = new Set();
+  _0x23dc = 8;
+  if (process['\u0065\u006E\u0076']['\u006B\u0073\u0063\u006B']) {
+    const ksckValue = process['\u0065\u006E\u0076']['\u006B\u0073\u0063\u006B'];
+    const configStrings = ksckValue['\u0073\u0070\u006C\u0069\u0074']("\u0026")['\u006D\u0061\u0070'](config => config['\u0074\u0072\u0069\u006D']())['\u0066\u0069\u006C\u0074\u0065\u0072'](Boolean);
+    _0xd163d['\u0070\u0075\u0073\u0068'](...configStrings);
+  }
+  for (let i = 1; i <= 666; i++) {
+    var _0xb4f92d = 11;
+    const _0x8e294a = `ksck${i}`;
+    _0xb4f92d = 6;
+    if (process['\u0065\u006E\u0076'][_0x8e294a]) {
+      const ksckValue = process['\u0065\u006E\u0076'][_0x8e294a];
+      const configStrings = ksckValue['\u0073\u0070\u006C\u0069\u0074']("\u0026")['\u006D\u0061\u0070'](config => config['\u0074\u0072\u0069\u006D']())['\u0066\u0069\u006C\u0074\u0065\u0072'](Boolean);
+      _0xd163d['\u0070\u0075\u0073\u0068'](...configStrings);
+    }
+  }
+  const _0xg74af = [];
+  for (const _0xb81cge of _0xd163d) {
+    if (!_0x45c7c['\u0068\u0061\u0073'](_0xb81cge)) {
+      _0x45c7c['\u0061\u0064\u0064'](_0xb81cge);
+      _0xg74af['\u0070\u0075\u0073\u0068'](_0xb81cge);
+    }
+  }
+  console['\u006C\u006F\u0067'](`从ksck及ksck1到ksck666环境变量中解析到 ${_0xg74af['\u006C\u0065\u006E\u0067\u0074\u0068']} 个唯一配置`);
+  return _0xg74af;
+}
+const accountConfigs = getAccountConfigsFromEnv();
+const accountCount = accountConfigs['\u006C\u0065\u006E\u0067\u0074\u0068'];
+var _0x6b5ba;
+const tasksToExecute = getTasksToExecute();
+_0x6b5ba = 6;
+console['\u006C\u006F\u0067']("\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D\u003D");
+console['\u006C\u006F\u0067']("\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u2B50\u0020\u5FEB\u624B\u6781\u901F\u7248\u767D\u5AD6\u0073\u0076\u0069\u0070\u4E13\u7528\u0020\u2B50\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020");
+console['\u006C\u006F\u0067']("\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\uD83C\uDFC6\u0020\u53CD\u6B63\u767D\u5AD6\u0020\u80FD\u7528\u5C31\u884C\u0020\u5931\u6548\u627E\u6211\u6263\u6263\u0020\u0031\u0031\u0036\u0030\u0037\u0033\u0035\u0035\u0039\u0032\u0020\uD83C\uDFC6\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020");
+console['\u006C\u006F\u0067']("\uDF89\uD83C\uFF01\u529F\u6210\u52A8\u542F\u641E\u5F00\u641E\u5F00\uFF0C\u6210\u5B8C\u5316\u59CB\u521D\u7EDF\u7CFB \uDF89\uD83C================".split("").reverse().join(""));
+console['\u006C\u006F\u0067']("\uFF1A\u7F6E\u914D\u91CF\u53D8\u5883\u73AF\u5230\u6D4B\u68C0 \uDC8E\uD83D".split("").reverse().join("") + accountCount + "\u4E2A\u8D26\u53F7");
+console['\u006C\u006F\u0067']("\uD83C\uDFAF\u0020\u5C06\u6267\u884C\u4EE5\u4E0B\u4EFB\u52A1\uFF1A" + tasksToExecute['\u006A\u006F\u0069\u006E']("\u002C\u0020"));
+console['\u006C\u006F\u0067'](`🎯 配置参数：轮数=${KSROUNDS}, 金币上限=${KSCOIN_LIMIT}, 低奖励阈值=${KSLOW_REWARD_THRESHOLD}, 连续低奖励上限=${KSLOW_REWARD_LIMIT}`);
+if (accountCount > (process['\u0065\u006E\u0076']['\u004D\u0041\u0058\u005F\u0043\u004F\u004E\u0043\u0055\u0052\u0052\u0045\u004E\u0043\u0059'] || 999)) {
+  console['\u006C\u006F\u0067'](" \u5230\u6D4B\u68C0 :\u8BEF\u9519".split("").reverse().join("") + accountCount + "\u0020\u4E2A\u8D26\u53F7\u914D\u7F6E\uFF0C\u6700\u591A\u53EA\u5141\u8BB8" + (process['\u0065\u006E\u0076']['\u004D\u0041\u0058\u005F\u0043\u004F\u004E\u0043\u0055\u0052\u0052\u0045\u004E\u0043\u0059'] || 999) + "\u4E2A");
+  process['\u0065\u0078\u0069\u0074'](1);
+}
+function generateKuaishouDid() {
+  try {
+    const _0xd5f = length => {
+      const _0x3g4a6d = "\u0030\u0031\u0032\u0033\u0034\u0035\u0036\u0037\u0038\u0039\u0061\u0062\u0063\u0064\u0065\u0066";
+      var _0xd08e = 14;
+      let _0x5_0xd57 = "";
+      _0xd08e = 3;
+      for (let i = 0; i < length; i++) {
+        _0x5_0xd57 += _0x3g4a6d['\u0063\u0068\u0061\u0072\u0041\u0074'](Math['\u0066\u006C\u006F\u006F\u0072'](Math['\u0072\u0061\u006E\u0064\u006F\u006D']() * _0x3g4a6d['\u006C\u0065\u006E\u0067\u0074\u0068']));
+      }
+      return _0x5_0xd57;
+    };
+    var _0x_0xa65;
+    const _0xg47g = _0xd5f(16);
+    _0x_0xa65 = 3;
+    const _0xd8b5cg = "_DIORDNA".split("").reverse().join("") + _0xg47g;
+    return _0xd8b5cg;
+  } catch (error) {
+    console['\u006C\u006F\u0067']("\u751F\u6210\u0064\u0069\u0064\u5931\u8D25\u003A\u0020" + error['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']);
+    const _0x9fd = Date['\u006E\u006F\u0077']()['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067'](16)['\u0074\u006F\u0055\u0070\u0070\u0065\u0072\u0043\u0061\u0073\u0065']();
+    return "\u0041\u004E\u0044\u0052\u004F\u0049\u0044\u005F" + _0x9fd['\u0073\u0075\u0062\u0073\u0074\u0072\u0069\u006E\u0067'](0, 16);
+  }
+}
+async function sendRequest(requestOptions, proxyUrl = null, description = "tseuqeR nwonknU".split("").reverse().join("")) {
+  var _0x47bae = 14;
+  const _0x4dd = {
+    ...requestOptions
+  };
+  _0x47bae = 10;
+  let _0xc255e = null;
+  if (proxyUrl) {
     try {
-      const _0x70a191 = {
-        url: "https://nebula.kuaishou.com/rest/n/nebula/activity/earn/overview/basicInfo?source=bottom_guide_first",
-        method: "GET",
-        timeout: 12000,
-        headers: {}
+      _0xc255e = new SocksProxyAgent(proxyUrl);
+      if (isDevMode) {}
+    } catch (proxyError) {
+      console['\u006C\u006F\u0067']("\u005B\u9519\u8BEF\u005D\u0020" + description + "(\u6548\u65E0LRU\u7406\u4EE3 ".split("").reverse().join("") + proxyError['\u006D\u0065\u0073\u0073\u0061\u0067\u0065'] + "\u0029\uFF0C\u5C1D\u8BD5\u76F4\u8FDE\u6A21\u5F0F");
+      if (isDevMode) {
+        console['\u006C\u006F\u0067']("\u005B\u8C03\u8BD5\u005D\u0020\u4EE3\u7406\u65E0\u6548\uFF0C\u81EA\u52A8\u5207\u6362\u5230\u76F4\u8FDE\u6A21\u5F0F");
+      }
+    }
+  } else {
+    if (isDevMode) {
+      console['\u006C\u006F\u0067']("\u5F0F\u6A21\u8FDE\u76F4\u7528\u4F7F\uFF0C\u7406\u4EE3\u7F6E\u914D\u672A ]\u8BD5\u8C03[".split("").reverse().join(""));
+    }
+  }
+  if (isDevMode) {
+    var _0xf3337c;
+    const _0x8916e = _0x4dd['\u006D\u0065\u0074\u0068\u006F\u0064'] || "\u0047\u0045\u0054";
+    _0xf3337c = 3;
+  }
+  try {
+    var _0x7c_0x0bf = 5;
+    const _0x7da5dd = {
+      '\u006D\u0065\u0074\u0068\u006F\u0064': _0x4dd['\u006D\u0065\u0074\u0068\u006F\u0064'] || "\u0047\u0045\u0054",
+      "url": _0x4dd['\u0075\u0072\u006C'],
+      "headers": _0x4dd['\u0068\u0065\u0061\u0064\u0065\u0072\u0073'] || {},
+      '\u0064\u0061\u0074\u0061': _0x4dd['\u0062\u006F\u0064\u0079'] || _0x4dd['\u0066\u006F\u0072\u006D'],
+      '\u0074\u0069\u006D\u0065\u006F\u0075\u0074': _0x4dd['\u0074\u0069\u006D\u0065\u006F\u0075\u0074'] || 30000,
+      ...(_0xc255e && {
+        "httpAgent": _0xc255e,
+        '\u0068\u0074\u0074\u0070\u0073\u0041\u0067\u0065\u006E\u0074': _0xc255e
+      })
+    };
+    _0x7c_0x0bf = 7;
+    var _0x017c = 13;
+    const _0x5636c = await axios(_0x7da5dd);
+    _0x017c = 6;
+    return {
+      '\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0065': _0x5636c,
+      "body": _0x5636c['\u0064\u0061\u0074\u0061']
+    };
+  } catch (error) {
+    if (error['\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0065']) {
+      return {
+        '\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0065': error['\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0065'],
+        '\u0062\u006F\u0064\u0079': null
       };
-      _0x70a191.headers["User-Agent"] = x_0x2afc0c;
-      _0x70a191.headers.Cookie = this.ck;
-      _0x70a191.headers["Content-Type"] = "application/x-www-form-urlencoded";
-      const {
-        data: _0x49dad6
-      } = await x_0x1cf3d4.request(_0x70a191);
-      if (_0x49dad6 && _0x49dad6.result === 1 && _0x49dad6.data) {
-        {
-          this.nickname = "[" + this.index + "] " + _0x49dad6.data.userData?.["nickname"];
-          this.totalCoin = _0x49dad6.data.totalCoin;
-          this.allCash = _0x49dad6.data.totalCash;
-          x_0x370ecc.log("璐﹀彿[" + this.nickname + "] 💰 褰撳墠閲戝竵: " + this.totalCoin + "，💸 褰�鍓嶄綑棰�: " + this.allCash);
-        }
-      }
-    } catch (_0x2e9b30) {
-      {
-        x_0x370ecc.log("璐﹀彿[" + this.nickname + "] 鑾峰彇璐︽埛淇℃伅澶辫触: " + _0x2e9b30);
-      }
-    }
-  }
-  checkCookieVariables() {
-    const _0x409dba = ["kpn", "kpf", "userId", "did", "c", "appver", "language", "mod", "did_tag", "egid", "oDid", "androidApiLevel", "newOc", "browseType", "socName", "ftt", "abi", "userRecoBit", "device_abi", "grant_browse_type", "iuid", "rdid", "isp", "thermal", "net", "kcv", "app", "bottom_navigation", "ver", "android_os", "boardPlatform", "slh", "country_code", "nbh", "hotfix_ver", "did_gt", "keyconfig_state", "cdid_tag", "sys", "max_memory", "cold_launch_time_ms", "oc", "sh", "deviceBit", "ddpi", "is_background", "sw", "apptype", "icaver", "totalMemory", "sbh", "darkMode", "earphoneMode"];
-    const _0x459366 = this.ck;
-    const _0x39bdb5 = {};
-    if (_0x459366) {
-      _0x459366.split(";").forEach(_0x3ce037 => {
-        {
-          const [_0x1a50b4, _0x3d5be7] = _0x3ce037.trim().split("=");
-          _0x39bdb5[_0x1a50b4] = _0x3d5be7;
-        }
-      });
-    }
-    const _0x3b22be = {};
-    _0x409dba.forEach(_0x4747cf => {
-      {
-        _0x3b22be[_0x4747cf] = _0x39bdb5[_0x4747cf];
-      }
-    });
-    let _0xb6a853 = /kuaishou\.api_st=([^;]+)/;
-    let _0x28d73f = _0x459366.match(new RegExp(_0xb6a853, ""));
-    this.api_st = _0x28d73f[1] || "";
-    _0x409dba.forEach(_0x4bb11a => {
-      const _0x3fd260 = _0x39bdb5[_0x4bb11a];
-      if (_0x3fd260 !== undefined) {
-        {
-          this[_0x4bb11a] = _0x3fd260;
-        }
-      }
-    });
-    return _0x3b22be;
-  }
-  getOaid() {
-    const _0x53b4c1 = this.ck;
-    const _0x190d31 = {};
-    if (_0x53b4c1) {
-      {
-        _0x53b4c1.split(";").forEach(_0x1bcebe => {
-          {
-            const [_0x2ef9c2, _0x49a88f] = _0x1bcebe.trim().split("=");
-            _0x190d31[_0x2ef9c2] = _0x49a88f;
-          }
-        });
-      }
-    }
-    return _0x190d31.oaid || "9e4bb0e5bc326fb1";
-  }
-  getNwip() {
-    const _0x452559 = this.ck;
-    const _0x38ee69 = {};
-    if (_0x452559) {
-      {
-        _0x452559.split(";").forEach(_0x55cab5 => {
-          const [_0x14c029, _0x1d973d] = _0x55cab5.trim().split("=");
-          _0x38ee69[_0x14c029] = _0x1d973d;
-        });
-      }
-    }
-    return _0x38ee69.nwip || generateLocalIp();
-  }
-  getKsadtype() {
-    const _0x43b3f2 = this.ck;
-    const _0x2e48eb = {};
-    if (_0x43b3f2) {
-      _0x43b3f2.split(";").forEach(_0x42644f => {
-        {
-          const [_0x219323, _0x34c725] = _0x42644f.trim().split("=");
-          _0x2e48eb[_0x219323] = _0x34c725;
-        }
-      });
-    }
-    const _0x2be766 = _0x2e48eb.ksadtype || x_0x2272ef;
-    return _0x2be766.split(",");
-  }
-  getOsVersion() {
-    const _0x49032d = this.ck;
-    const _0x2f4e61 = {};
-    if (_0x49032d) {
-      {
-        _0x49032d.split(";").forEach(_0xe70879 => {
-          {
-            const [_0x701772, _0x23322d] = _0xe70879.trim().split("=");
-            _0x2f4e61[_0x701772] = _0x23322d;
-          }
-        });
-      }
-    }
-    return _0x2f4e61.osVersion || 10;
-  }
-  async getIP() {
-    if (this.user.length > 2) {
-      this.sock = this.user[2];
-      if (this.sock && (this.sock.includes("socks5://") || this.sock.includes("socks://"))) {
-        try {
-          {
-            this.socks5 = new x_0x41ec73(this.sock);
-            const _0x5614d3 = {
-              url: "https://www.2eva.cn/api/health",
-              method: "GET",
-              timeout: 30000,
-              httpAgent: this.socks5,
-              httpsAgent: this.socks5,
-              proxy: false,
-              headers: {}
-            };
-            _0x5614d3.headers["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36";
-            let {
-              data: _0x13953a
-            } = await x_0x1cf3d4.request(_0x5614d3);
-            this.wwip = _0x13953a.ip;
-            this.nwip = await this.getNwip();
-            x_0x370ecc.log("璐﹀彿[" + this.nickname + "] 澶栫綉IP:[" + this.wwip + "," + this.nwip + "]");
-            return;
-          }
-        } catch (_0x13a848) {
-          this.socks5 = null;
-          console.log("璐﹀彿[" + this.nickname + "]sock5浠ｇ悊閿欒");
-        }
-      }
-    }
-    try {
-      const _0x3969a8 = {
-        url: "https://www.2eva.cn/api/health",
-        method: "GET",
-        timeout: 30000
-      };
-      let {
-        data: _0x3ac591
-      } = await x_0x1cf3d4.request(_0x3969a8);
-      this.wwip = _0x3ac591.ip;
-      this.nwip = await this.getNwip();
-      x_0x370ecc.log("璐﹀彿[" + this.nickname + "] 浠ｇ悊涓嶅瓨鍦╘x20閲囩敤鐩磋繛妯″紡[" + this.wwip + "," + this.nwip + "]");
-    } catch (_0x2b4ca5) {
-      {
-        x_0x370ecc.log("璐﹀彿[" + this.nickname + "] 缃戠粶鑾峰彇澶辫触");
-      }
-    }
-  }
-  async run() {
-    this.cookies = this.checkCookieVariables();
-    this.adtype = this.getKsadtype();
-    if (!this.salt) {
-      {
-        return x_0x370ecc.log("璐﹀彿['" + this.nickname + "'] salt涓�瀛樺湪");
-      }
-    }
-    if (!x_0x370ecc.failadnumobj.hasOwnProperty(this.salt)) {
-      x_0x370ecc.failadnumobj[this.salt] = 0;
-    }
-    if (x_0x370ecc.failadnumobj[this.salt] >= x_0x370ecc.failadnum) {
-      {
-        return x_0x370ecc.log("🙅 璐﹀彿['" + this.nickname + "'] 杩�缁�" + x_0x370ecc.failadnumobj[this.salt] + "娆′綆浠峰€�骞垮憡锛屽仠姝㈡湰杞繍琛�");
-      }
-    }
-    await this.getIP();
-    await this.getAccountBasicInfo();
-    this.oaid = this.getOaid();
-    this.osVersion = this.getOsVersion();
-    x_0x370ecc.log("璐﹀彿[" + this.nickname + " 骞�鍛婅澶囨爣璇哰" + this.oaid + "]]鑾峰彇绯荤粺鐗堟湰 [" + this.osVersion + "],骞垮憡绫诲瀷[" + this.adtype + "]");
-    if (this.adtype.includes("food")) {
-      const _0x119c89 = x_0x370ecc.foodcount;
-      this.adaddnum = 0;
-      let _0x551ed5 = 0;
-      for (let _0x384828 = 1; _0x384828 <= _0x119c89; _0x384828++) {
-        {
-          let _0x2d65fc = await this.loadAd("food");
-          if (!_0x2d65fc) {
-            x_0x370ecc.log("璐﹀彿[" + this.nickname + "] " + x_0x370ecc.wheelNum + "/" + _0x384828 + "/" + _0x119c89 + " [楗ˉ骞垮憡] 鑾峰彇骞垮憡淇℃伅澶辫触锛岃烦杩囨湰娆＄湅骞垮憡");
-            continue;
-          }
-          await x_0x370ecc.wait(Math.floor(Math.random() * 4 + 4) * 1000);
-          const _0x416082 = Math.floor((_0x2d65fc.watchAdTime + Math.floor(Math.random() * 4 + 4) * 1000) / 1000);
-          x_0x370ecc.log("璐﹀彿[" + this.nickname + "] " + x_0x370ecc.wheelNum + "/" + _0x384828 + "/" + _0x119c89 + " [楗ˉ骞垮憡] 骞垮憡" + _0x2d65fc.watchAdTime / 1000 + "绉抃x20闅忔満" + _0x416082 + "绉�");
-          await x_0x370ecc.wait(_0x416082 * 1000);
-          const {
-            neoAmount: _0x4b27a2,
-            status: _0x5a781f
-          } = await this.subAd(_0x2d65fc.cid, _0x2d65fc.llsid, _0x2d65fc.adExtInfo, Date.now(), _0x416082, _0x2d65fc.materialTime, _0x2d65fc.watchAdTime);
-          if (_0x5a781f == 2) {
-            {
-              return;
-            }
-          }
-          if (_0x5a781f == 3) {
-            {
-              x_0x370ecc.failadnumobj[this.salt] = 9999999;
-              return;
-            }
-          }
-          const _0x336363 = Math.floor(Math.random() * 23 + 15);
-          x_0x370ecc.log("璐﹀彿[" + this.nickname + "] " + x_0x370ecc.wheelNum + "/" + _0x384828 + "/" + _0x119c89 + " [楗ˉ骞垮憡] 鉁匼x20鑾峰彇閲戝竵[" + _0x4b27a2 + "] 绛夊緟[" + _0x336363 + "绉抅");
-          if (_0x4b27a2 < 20) {
-            {
-              x_0x370ecc.log("璐﹀彿[" + this.nickname + "] " + x_0x370ecc.wheelNum + "/" + _0x384828 + "/" + _0x119c89 + " [楗ˉ骞垮憡] 鉂孿x20棰嗗彇閲戝竵涓嶈冻20 绛�寰匸" + _0x336363 + "绉抅杩涘叆涓嬩竴杞�");
-              x_0x370ecc.failadnumobj[this.salt] = x_0x370ecc.failadnumobj[this.salt] + 1;
-              await x_0x370ecc.wait(_0x336363 * 1000);
-              break;
-            }
-          } else {
-            {
-              x_0x370ecc.failadnumobj[this.salt] = 0;
-              this.adaddnum = this.adaddnum + 1;
-              _0x551ed5++;
-              await x_0x370ecc.wait(_0x336363 * 1000);
-            }
-          }
-        }
-      }
-    }
-    if (this.adtype.includes("box")) {
-      const _0x31ccc1 = x_0x370ecc.boxcount;
-      let _0x2efa74 = 0;
-      this.adaddnum = 0;
-      for (let _0x22e169 = 1; _0x22e169 <= _0x31ccc1; _0x22e169++) {
-        {
-          let _0xda80cb = await this.loadAd("box");
-          if (!_0xda80cb) {
-            x_0x370ecc.log("璐﹀彿[" + this.nickname + "] " + x_0x370ecc.wheelNum + "/" + _0x22e169 + "/" + _0x31ccc1 + " [瀹濈骞垮憡] 鑾峰彇骞垮憡淇℃伅澶辫触锛岃烦杩囨湰娆″疂绠卞箍鍛�");
-            continue;
-          }
-          await x_0x370ecc.wait(Math.floor(Math.random() * 4 + 4) * 1000);
-          const _0x1c2aa0 = Math.floor((_0xda80cb.watchAdTime + Math.floor(Math.random() * 4 + 4) * 1000) / 1000);
-          x_0x370ecc.log("璐﹀彿[" + this.nickname + "] " + x_0x370ecc.wheelNum + "/" + _0x22e169 + "/" + _0x31ccc1 + " [瀹濈骞垮憡] 骞垮憡" + _0xda80cb.watchAdTime / 1000 + "绉抃x20闅忔満" + _0x1c2aa0 + "绉�");
-          await x_0x370ecc.wait(_0x1c2aa0 * 1000);
-          const {
-            neoAmount: _0x561595,
-            status: _0x13bf1d
-          } = await this.subAd(_0xda80cb.cid, _0xda80cb.llsid, _0xda80cb.adExtInfo, Date.now(), _0x1c2aa0, _0xda80cb.materialTime, _0xda80cb.watchAdTime);
-          if (_0x13bf1d == 3) {
-            {
-              x_0x370ecc.failadnumobj[this.salt] = 9999999;
-              return;
-            }
-          }
-          if (_0x13bf1d == 2) {
-            return;
-          }
-          const _0x31f78a = Math.floor(Math.random() * 23 + 15);
-          x_0x370ecc.log("璐﹀彿[" + this.nickname + "] " + x_0x370ecc.wheelNum + "/" + _0x22e169 + "/" + _0x31ccc1 + " [瀹濈骞垮憡] 鉁匼x20鑾峰彇閲戝竵[" + _0x561595 + "] 绛夊緟[" + _0x31f78a + "绉抅");
-          if (_0x561595 < 20) {
-            x_0x370ecc.log("璐﹀彿[" + this.nickname + "] " + x_0x370ecc.wheelNum + "/" + _0x22e169 + "/" + _0x31ccc1 + " [瀹濈骞垮憡] 鉂岄鍙栭噾甯佷笉瓒�20 绛夊緟[" + _0x31f78a + "绉抅杩涘叆涓嬩竴杞�");
-            x_0x370ecc.failadnumobj[this.salt] = x_0x370ecc.failadnumobj[this.salt] + 1;
-            break;
-          } else {
-            {
-              x_0x370ecc.failadnumobj[this.salt] = 0;
-              this.adaddnum = this.adaddnum + 1;
-              _0x2efa74++;
-              await x_0x370ecc.wait(_0x31f78a * 1000);
-            }
-          }
-        }
-      }
-    }
-    if (this.adtype.includes("look")) {
-      const _0x552a8c = x_0x370ecc.lookcount;
-      let _0x477966 = 0;
-      this.adaddnum = 0;
-      for (let _0x4bde85 = 1; _0x4bde85 <= _0x552a8c; _0x4bde85++) {
-        let _0xd0af24 = await this.loadAd("look");
-        if (!_0xd0af24) {
-          {
-            x_0x370ecc.log("璐﹀彿[" + this.nickname + "] " + x_0x370ecc.wheelNum + "/" + _0x4bde85 + "/" + _0x552a8c + " [鐪嬪箍鍛奭 鑾�鍙栧箍鍛婁俊鎭け璐ワ紝璺宠繃鏈鐪嬪箍鍛�");
-            continue;
-          }
-        }
-        await x_0x370ecc.wait(Math.floor(Math.random() * 4 + 4) * 1000);
-        const _0x85a72e = Math.floor((_0xd0af24.watchAdTime + Math.floor(Math.random() * 4 + 4) * 1000) / 1000);
-        x_0x370ecc.log("璐﹀彿[" + this.nickname + "] " + x_0x370ecc.wheelNum + "/" + _0x4bde85 + "/" + _0x552a8c + " [鐪嬪箍鍛奭 骞�鍛�" + _0xd0af24.watchAdTime / 1000 + "绉抃x20闅忔満" + _0x85a72e + "绉�");
-        await x_0x370ecc.wait(_0x85a72e * 1000);
-        const {
-          neoAmount: _0x39dcdf,
-          status: _0x543da8
-        } = await this.subAd(_0xd0af24.cid, _0xd0af24.llsid, _0xd0af24.adExtInfo, Date.now(), _0x85a72e, _0xd0af24.materialTime, _0xd0af24.watchAdTime);
-        if (_0x543da8 == 3) {
-          {
-            x_0x370ecc.failadnumobj[this.salt] = 9999999;
-            return;
-          }
-        }
-        if (_0x543da8 == 2) {
-          {
-            return;
-          }
-        }
-        const _0x4a4308 = Math.floor(Math.random() * 23 + 15);
-        x_0x370ecc.log("璐﹀彿[" + this.nickname + "] " + x_0x370ecc.wheelNum + "/" + _0x4bde85 + "/" + _0x552a8c + " [鐪嬪箍鍛奭 鉁� 鑾�鍙栭噾甯乕" + _0x39dcdf + "] 绛夊緟[" + _0x4a4308 + "绉抅");
-        if (_0x39dcdf < 20) {
-          x_0x370ecc.log("璐﹀彿[" + this.nickname + "] " + x_0x370ecc.wheelNum + "/" + _0x4bde85 + "/" + _0x552a8c + " [鐪嬪箍鍛奭 鉂� 棰�鍙栭噾甯佷笉瓒�20 绛夊緟[" + _0x4a4308 + "绉抅杩涘叆涓嬩竴杞�");
-          x_0x370ecc.failadnumobj[this.salt] = x_0x370ecc.failadnumobj[this.salt] + 1;
-          await x_0x370ecc.wait(_0x4a4308 * 1000);
-          break;
-        } else {
-          x_0x370ecc.failadnumobj[this.salt] = 0;
-          this.adaddnum = this.adaddnum + 1;
-          _0x477966++;
-          await x_0x370ecc.wait(_0x4a4308 * 1000);
-        }
-      }
-    }
-    if (this.adtype.includes("search")) {
-      {
-        const _0x201b22 = x_0x370ecc.sscount;
-        let _0x27656a = 0;
-        this.adaddnum = 0;
-        for (let _0x4b6946 = 1; _0x4b6946 <= _0x201b22; _0x4b6946++) {
-          let _0x30ff53 = await this.loadAd("ss");
-          if (!_0x30ff53) {
-            {
-              x_0x370ecc.log("璐﹀彿[" + this.nickname + "] " + x_0x370ecc.wheelNum + "/" + _0x4b6946 + "/" + _0x201b22 + " [鎼滅储骞垮憡] 鑾峰彇骞垮憡淇℃伅澶辫触锛岃烦杩囨湰娆＄湅骞垮憡");
-              continue;
-            }
-          }
-          await x_0x370ecc.wait(Math.floor(Math.random() * 4 + 4) * 1000);
-          const _0xbd8b73 = Math.floor((_0x30ff53.watchAdTime + Math.floor(Math.random() * 4 + 4) * 1000) / 1000);
-          x_0x370ecc.log("璐﹀彿[" + this.nickname + "] " + x_0x370ecc.wheelNum + "/" + _0x4b6946 + "/" + _0x201b22 + " [鎼滅储骞垮憡] 骞垮憡" + _0x30ff53.watchAdTime / 1000 + "绉抃x20闅忔満" + _0xbd8b73 + "绉�");
-          await x_0x370ecc.wait(_0xbd8b73 * 1000);
-          const {
-            neoAmount: _0x45ec68,
-            status: _0x560d9a
-          } = await this.subAd(_0x30ff53.cid, _0x30ff53.llsid, _0x30ff53.adExtInfo, Date.now(), _0xbd8b73, _0x30ff53.materialTime, _0x30ff53.watchAdTime);
-          if (_0x560d9a == 3) {
-            x_0x370ecc.failadnumobj[this.salt] = 9999999;
-            return;
-          }
-          if (_0x560d9a == 2) {
-            return;
-          }
-          const _0x5c1bb5 = Math.floor(Math.random() * 23 + 15);
-          x_0x370ecc.log("璐﹀彿[" + this.nickname + "] " + x_0x370ecc.wheelNum + "/" + _0x4b6946 + "/" + _0x201b22 + " [鎼滅储骞垮憡] 鉁匼x20鑾峰彇閲戝竵[" + _0x45ec68 + "] 绛夊緟[" + _0x5c1bb5 + "绉抅");
-          if (_0x45ec68 < 20) {
-            x_0x370ecc.log("璐﹀彿[" + this.nickname + "] " + x_0x370ecc.wheelNum + "/" + _0x4b6946 + "/" + _0x201b22 + " [鎼滅储骞垮憡] 鉂孿x20棰嗗彇閲戝竵涓嶈冻20 绛�寰匸" + _0x5c1bb5 + "绉抅杩涘叆涓嬩竴杞�");
-            x_0x370ecc.failadnumobj[this.salt] = x_0x370ecc.failadnumobj[this.salt] + 1;
-            await x_0x370ecc.wait(_0x5c1bb5 * 1000);
-            break;
-          } else {
-            x_0x370ecc.failadnumobj[this.salt] = 0;
-            this.adaddnum = this.adaddnum + 1;
-            _0x27656a++;
-            await x_0x370ecc.wait(_0x5c1bb5 * 1000);
-          }
-        }
-      }
-    }
-    await this.getAccountBasicInfo();
-    x_0x370ecc.log("璐﹀彿[" + this.nickname + "] " + x_0x370ecc.wheelNum + "杞甛x20鎵€鏈�浠诲姟瀹屾垚锛�");
-  }
-  async loadReqParams(_0x131f53, _0x15f053, _0x4e7871) {
-    let _0x472062 = {
-      mod: this.mod,
-      appver: this.appver,
-      language: this.language,
-      ud: this.userId,
-      did_tag: this.did_tag,
-      egid: this.egid,
-      kpf: this.kpf,
-      oDid: this.oDid,
-      kpn: this.kpn,
-      newOc: this.newOc,
-      androidApiLevel: this.androidApiLevel,
-      browseType: this.browseType,
-      socName: this.socName,
-      c: this.c,
-      abi: this.abi,
-      ftt: this.ftt,
-      userRecoBit: this.userRecoBit,
-      device_abi: this.device_abi,
-      grant_browse_type: this.grant_browse_type,
-      iuid: this.iuid,
-      rdid: this.rdid,
-      did: this.did,
-      earphoneMode: this.earphoneMode,
-      isp: this.isp,
-      thermal: this.thermal,
-      net: this.net,
-      kcv: this.kcv,
-      app: this.app,
-      bottom_navigation: this.bottom_navigation,
-      ver: this.ver,
-      android_os: this.android_os,
-      boardPlatform: this.boardPlatform,
-      slh: this.slh,
-      country_code: this.country_code,
-      nbh: this.nbh,
-      hotfix_ver: this.hotfix_ver,
-      did_gt: this.did_gt,
-      keyconfig_state: this.keyconfig_state,
-      cdid_tag: this.cdid_tag,
-      sys: this.sys,
-      max_memory: this.max_memory,
-      cold_launch_time_ms: this.cold_launch_time_ms,
-      oc: this.oc,
-      sh: this.sh,
-      deviceBit: this.deviceBit,
-      ddpi: this.ddpi,
-      is_background: this.is_background,
-      sw: this.sw,
-      apptype: this.apptype,
-      icaver: this.icaver,
-      totalMemory: this.totalMemory,
-      sbh: this.sbh,
-      darkMode: this.darkMode
+    } else if (error['\u0072\u0065\u0071\u0075\u0065\u0073\u0074']) {
+      if (error['\u006E\u0061\u006D\u0065'] === "\u0041\u0067\u0067\u0072\u0065\u0067\u0061\u0074\u0065\u0045\u0072\u0072\u006F\u0072" && Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](error['\u0065\u0072\u0072\u006F\u0072\u0073'])) {
+        console['\u006C\u006F\u0067']("\u005B\u8C03\u8BD5\u005D\u0020" + description + "\nrorrEetagerggA :\u8BEF\u9519\u6C42\u8BF7 ".split("").reverse().join("") + error['\u0065\u0072\u0072\u006F\u0072\u0073']['\u006D\u0061\u0070']((err, index) => "[  ".split("").reverse().join("") + index + " ]".split("").reverse().join("") + (err?.message || err))['\u006A\u006F\u0069\u006E']("\u000A"));
+      } else {}
+    } else {}
+    return {
+      '\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0065': null,
+      '\u0062\u006F\u0064\u0079': null
     };
-    try {
-      const _0xdc3098 = x_0x370ecc.queryStr(_0x15f053) + "&" + x_0x370ecc.queryStr(_0x472062);
-      const _0x341096 = Buffer.from(_0x131f53).toString("base64");
-      const _0x2ffa13 = Buffer.from(_0x4e7871).toString("base64");
-      const _0x190455 = Buffer.from(_0xdc3098).toString("base64");
-      let {
-        data: _0x1d5234
-      } = await x_0x1cf3d4.request({
-        url: x_0x257dd7 + "/api/ksjs/ksjs_km/nssig",
-        headers: {
-          ...x_0x284d1f,
-          nickname: encodeURIComponent(this.nickname),
-          userid: this.userId,
-          salt: this.salt
-        },
-        method: "POST",
-        data: {
-          path: _0x341096,
-          salt: _0x2ffa13,
-          data: _0x190455
-        }
-      });
-      if (_0x1d5234.code === 0) {
-        const _0x30e4ff = {
-          sig: _0x1d5234.data.sig,
-          __NS_xfalcon: "",
-          __NStokensig: _0x1d5234.data.nstokensig,
-          __NS_sig3: _0x1d5234.data.nssig3
+  }
+}
+async function testProxyConnectivity(proxyUrl, description = "\u4EE3\u7406\u8FDE\u901A\u6027\u68C0\u6D4B") {
+  if (!proxyUrl) {
+    return {
+      "ok": true,
+      '\u006D\u0073\u0067': "✅ 未配置代理（直连模式）",
+      '\u0069\u0070': "\u006C\u006F\u0063\u0061\u006C\u0068\u006F\u0073\u0074"
+    };
+  }
+  const {
+    '\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0065': baiduResponse,
+    '\u0062\u006F\u0064\u0079': baiduResult
+  } = await sendRequest({
+    '\u006D\u0065\u0074\u0068\u006F\u0064': "GET",
+    '\u0075\u0072\u006C': "\u0068\u0074\u0074\u0070\u0073\u003A\u002F\u002F\u0068\u0074\u0074\u0070\u0062\u0069\u006E\u002E\u006F\u0072\u0067\u002F\u0069\u0070",
+    '\u0068\u0065\u0061\u0064\u0065\u0072\u0073': {
+      "\u0055\u0073\u0065\u0072\u002D\u0041\u0067\u0065\u006E\u0074": "\u0050\u0072\u006F\u0078\u0079\u0054\u0065\u0073\u0074\u0065\u0072\u002F\u0031\u002E\u0030"
+    },
+    '\u0074\u0069\u006D\u0065\u006F\u0075\u0074': 8000
+  }, proxyUrl, description + "moc.udiab \u2192 ".split("").reverse().join(""));
+  if (baiduResult) {
+    return {
+      '\u006F\u006B': true,
+      '\u006D\u0073\u0067': `✅ SOCKS5代理正常，成功访问 baidu.com，出口IP: ${baiduResult['\u006F\u0072\u0069\u0067\u0069\u006E']}`,
+      "ip": baiduResult['\u006F\u0072\u0069\u0067\u0069\u006E']
+    };
+  }
+}
+var _0x4b4fg = 9;
+const usedProxies = new Set();
+_0x4b4fg = 6;
+async function getAccountBasicInfo(cookie, proxyUrl, accountId = "\u003F", _0x65f7bd) {
+  const {
+    "body": result
+  } = await sendRequest({
+    '\u006D\u0065\u0074\u0068\u006F\u0064': "\u0047\u0045\u0054",
+    '\u0075\u0072\u006C': "\u0068\u0074\u0074\u0070\u0073\u003A\u002F\u002F\u006E\u0065\u0062\u0075\u006C\u0061\u002E\u006B\u0075\u0061\u0069\u0073\u0068\u006F\u0075\u002E\u0063\u006F\u006D\u002F\u0072\u0065\u0073\u0074\u002F\u006E\u002F\u006E\u0065\u0062\u0075\u006C\u0061\u002F\u0061\u0063\u0074\u0069\u0076\u0069\u0074\u0079\u002F\u0065\u0061\u0072\u006E\u002F\u006F\u0076\u0065\u0072\u0076\u0069\u0065\u0077\u002F\u0062\u0061\u0073\u0069\u0063\u0049\u006E\u0066\u006F\u003F\u0073\u006F\u0075\u0072\u0063\u0065\u003D\u0062\u006F\u0074\u0074\u006F\u006D\u005F\u0067\u0075\u0069\u0064\u0065\u005F\u0066\u0069\u0072\u0073\u0074",
+    '\u0068\u0065\u0061\u0064\u0065\u0072\u0073': {
+      "Host": "nebula.kuaishou.com",
+      "\u0055\u0073\u0065\u0072\u002D\u0041\u0067\u0065\u006E\u0074": "\u006B\u0077\u0061\u0069\u002D\u0061\u006E\u0064\u0072\u006F\u0069\u0064\u0020\u0061\u0065\u0067\u006F\u006E\u002F\u0033\u002E\u0035\u0036\u002E\u0030",
+      "Cookie": cookie,
+      "\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065": "\u0061\u0070\u0070\u006C\u0069\u0063\u0061\u0074\u0069\u006F\u006E\u002F\u0078\u002D\u0077\u0077\u0077\u002D\u0066\u006F\u0072\u006D\u002D\u0075\u0072\u006C\u0065\u006E\u0063\u006F\u0064\u0065\u0064"
+    },
+    '\u0074\u0069\u006D\u0065\u006F\u0075\u0074': 12000
+  }, proxyUrl, "\u8D26\u53F7\u005B" + accountId + "\u606F\u4FE1\u672C\u57FA\u53D6\u83B7 ]".split("").reverse().join(""));
+  if (result && result['\u0072\u0065\u0073\u0075\u006C\u0074'] === 1 && result['\u0064\u0061\u0074\u0061']) {
+    return {
+      '\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065': result['\u0064\u0061\u0074\u0061']['\u0075\u0073\u0065\u0072\u0044\u0061\u0074\u0061']?.nickname || null,
+      "totalCoin": result['\u0064\u0061\u0074\u0061']['\u0074\u006F\u0074\u0061\u006C\u0043\u006F\u0069\u006E'] ?? null,
+      '\u0061\u006C\u006C\u0043\u0061\u0073\u0068': result['\u0064\u0061\u0074\u0061']['\u0061\u006C\u006C\u0043\u0061\u0073\u0068'] ?? null
+    };
+  }
+  return null;
+}
+function centerAlign(text, width) {
+  text = String(text);
+  if (text['\u006C\u0065\u006E\u0067\u0074\u0068'] >= width) {
+    return text['\u0073\u0075\u0062\u0073\u0074\u0072\u0069\u006E\u0067'](0, width);
+  }
+  const _0x6_0xaaa = width - text['\u006C\u0065\u006E\u0067\u0074\u0068'];
+  var _0xge7e8f = 10;
+  const _0x2b4d = Math['\u0066\u006C\u006F\u006F\u0072'](_0x6_0xaaa / 2);
+  _0xge7e8f = 2;
+  var _0x62f;
+  const _0xdff = _0x6_0xaaa - _0x2b4d;
+  _0x62f = 10;
+  return "\u0020"['\u0072\u0065\u0070\u0065\u0061\u0074'](_0x2b4d) + text + "\u0020"['\u0072\u0065\u0070\u0065\u0061\u0074'](_0xdff);
+}
+class KuaishouAdTask {
+  constructor({
+    '\u0069\u006E\u0064\u0065\u0078': index,
+    '\u0073\u0061\u006C\u0074': salt,
+    "cookie": cookie,
+    '\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065': nickname = "",
+    '\u0070\u0072\u006F\u0078\u0079\u0055\u0072\u006C': proxyUrl = null,
+    '\u0074\u0061\u0073\u006B\u0073\u0054\u006F\u0045\u0078\u0065\u0063\u0075\u0074\u0065': tasksToExecute = ["\u0066\u006F\u006F\u0064", "\u0062\u006F\u0078", "\u006C\u006F\u006F\u006B"],
+    '\u0072\u0065\u006D\u0061\u0072\u006B': remark = ""
+  }) {
+    this['\u0069\u006E\u0064\u0065\u0078'] = index;
+    this['\u0073\u0061\u006C\u0074'] = salt;
+    this['\u0063\u006F\u006F\u006B\u0069\u0065'] = cookie;
+    this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065'] = nickname || remark || "\u53F7\u8D26".split("").reverse().join("") + index;
+    this['\u0072\u0065\u006D\u0061\u0072\u006B'] = remark;
+    this['\u0070\u0072\u006F\u0078\u0079\u0055\u0072\u006C'] = proxyUrl;
+    this['\u0063\u006F\u0069\u006E\u004C\u0069\u006D\u0069\u0074'] = KSCOIN_LIMIT;
+    this['\u0063\u006F\u0069\u006E\u0045\u0078\u0063\u0065\u0065\u0064\u0065\u0064'] = false;
+    this['\u0074\u0061\u0073\u006B\u0073\u0054\u006F\u0045\u0078\u0065\u0063\u0075\u0074\u0065'] = tasksToExecute;
+    this['\u0065\u0078\u0074\u0072\u0061\u0063\u0074\u0043\u006F\u006F\u006B\u0069\u0065\u0049\u006E\u0066\u006F']();
+    this['\u0068\u0065\u0061\u0064\u0065\u0072\u0073'] = {
+      "Host": "nebula.kuaishou.com",
+      "Connection": "\u006B\u0065\u0065\u0070\u002D\u0061\u006C\u0069\u0076\u0065",
+      "\u0055\u0073\u0065\u0072\u002D\u0041\u0067\u0065\u006E\u0074": "\u004D\u006F\u007A\u0069\u006C\u006C\u0061\u002F\u0035\u002E\u0030\u0020\u0028\u004C\u0069\u006E\u0075\u0078\u003B\u0020\u0041\u006E\u0064\u0072\u006F\u0069\u0064\u0020\u0031\u0030\u003B\u0020\u004D\u0049\u0020\u0038\u0020\u004C\u0069\u0074\u0065\u0020\u0042\u0075\u0069\u006C\u0064\u002F\u0051\u004B\u0051\u0031\u002E\u0031\u0039\u0030\u0039\u0031\u0030\u002E\u0030\u0030\u0032\u003B\u0020\u0077\u0076\u0029\u0020\u0041\u0070\u0070\u006C\u0065\u0057\u0065\u0062\u004B\u0069\u0074\u002F\u0035\u0033\u0037\u002E\u0033\u0036\u0020\u0028\u004B\u0048\u0054\u004D\u004C\u002C\u0020\u006C\u0069\u006B\u0065\u0020\u0047\u0065\u0063\u006B\u006F\u0029\u0020\u0056\u0065\u0072\u0073\u0069\u006F\u006E\u002F\u0034\u002E\u0030\u0020\u0043\u0068\u0072\u006F\u006D\u0065\u002F\u0038\u0037\u002E\u0030\u002E\u0034\u0032\u0038\u0030\u002E\u0031\u0030\u0031\u0020\u004D\u006F\u0062\u0069\u006C\u0065\u0020\u0053\u0061\u0066\u0061\u0072\u0069\u002F\u0035\u0033\u0037\u002E\u0033\u0036",
+      '\u0043\u006F\u006F\u006B\u0069\u0065': this['\u0063\u006F\u006F\u006B\u0069\u0065'],
+      "content-type": "application/json"
+    };
+    this['\u0074\u0061\u0073\u006B\u0052\u0065\u0070\u006F\u0072\u0074\u0050\u0061\u0074\u0068'] = "troper/ksat/da/r/tser/".split("").reverse().join("");
+    this['\u0073\u0074\u0061\u0072\u0074\u0054\u0069\u006D\u0065'] = Date['\u006E\u006F\u0077']();
+    this['\u0065\u006E\u0064\u0054\u0069\u006D\u0065'] = this['\u0073\u0074\u0061\u0072\u0074\u0054\u0069\u006D\u0065'] - 30000;
+    this['\u0071\u0075\u0065\u0072\u0079\u0050\u0061\u0072\u0061\u006D\u0073'] = "=revppa&)11 IM(imoaiX=dom".split("").reverse().join("") + this['\u0061\u0070\u0070\u0076\u0065\u0072'] + "\u0026\u0065\u0067\u0069\u0064\u003D" + this['\u0065\u0067\u0069\u0064'] + "=did&".split("").reverse().join("") + this['\u0064\u0069\u0064'];
+    this['\u0074\u0061\u0073\u006B\u0043\u006F\u006E\u0066\u0069\u0067\u0073'] = {
+      '\u0062\u006F\u0078': {
+        '\u006E\u0061\u006D\u0065': "宝箱广告",
+        '\u0062\u0075\u0073\u0069\u006E\u0065\u0073\u0073\u0049\u0064': 606,
+        '\u0070\u006F\u0073\u0049\u0064': 20346,
+        "subPageId": 100024064,
+        '\u0072\u0065\u0071\u0075\u0065\u0073\u0074\u0053\u0063\u0065\u006E\u0065\u0054\u0079\u0070\u0065': 1,
+        '\u0074\u0061\u0073\u006B\u0054\u0079\u0070\u0065': 1
+      },
+      "look": {
+        '\u006E\u0061\u006D\u0065': "看广告得金币",
+        "businessId": 672,
+        '\u0070\u006F\u0073\u0049\u0064': 24067,
+        '\u0073\u0075\u0062\u0050\u0061\u0067\u0065\u0049\u0064': 100026367,
+        "requestSceneType": 1,
+        '\u0074\u0061\u0073\u006B\u0054\u0079\u0070\u0065': 1
+      },
+      '\u0066\u006F\u006F\u0064': {
+        "name": "饭补广告",
+        '\u0062\u0075\u0073\u0069\u006E\u0065\u0073\u0073\u0049\u0064': 9362,
+        '\u0070\u006F\u0073\u0049\u0064': 24067,
+        '\u0073\u0075\u0062\u0050\u0061\u0067\u0065\u0049\u0064': 100026367,
+        "requestSceneType": 7,
+        '\u0074\u0061\u0073\u006B\u0054\u0079\u0070\u0065': 2
+      }
+    };
+    this['\u0074\u0061\u0073\u006B\u0053\u0074\u0061\u0074\u0073'] = {};
+    this['\u0074\u0061\u0073\u006B\u0073\u0054\u006F\u0045\u0078\u0065\u0063\u0075\u0074\u0065']['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](taskKey => {
+      if (this['\u0074\u0061\u0073\u006B\u0043\u006F\u006E\u0066\u0069\u0067\u0073'][taskKey]) {
+        this['\u0074\u0061\u0073\u006B\u0053\u0074\u0061\u0074\u0073'][taskKey] = {
+          '\u0073\u0075\u0063\u0063\u0065\u0073\u0073': 0,
+          '\u0066\u0061\u0069\u006C\u0065\u0064': 0,
+          '\u0074\u006F\u0074\u0061\u006C\u0052\u0065\u0077\u0061\u0072\u0064': 0
         };
-        Object.assign(_0x472062, _0x30e4ff);
-        return _0x472062;
-      } else {
-        {
-          console.log("鑾峰彇nssig澶�璐�");
-          console.log(_0x1d5234);
-          return null;
+      }
+    });
+    this['\u006C\u006F\u0077\u0052\u0065\u0077\u0061\u0072\u0064\u0053\u0074\u0072\u0065\u0061\u006B'] = 0;
+    this['\u006C\u006F\u0077\u0052\u0065\u0077\u0061\u0072\u0064\u0054\u0068\u0072\u0065\u0073\u0068\u006F\u006C\u0064'] = KSLOW_REWARD_THRESHOLD;
+    this['\u006C\u006F\u0077\u0052\u0065\u0077\u0061\u0072\u0064\u004C\u0069\u006D\u0069\u0074'] = KSLOW_REWARD_LIMIT;
+    this['\u0073\u0074\u006F\u0070\u0041\u006C\u006C\u0054\u0061\u0073\u006B\u0073'] = false;
+    this['\u0074\u0061\u0073\u006B\u004C\u0069\u006D\u0069\u0074\u0052\u0065\u0061\u0063\u0068\u0065\u0064'] = {};
+    this['\u0074\u0061\u0073\u006B\u0073\u0054\u006F\u0045\u0078\u0065\u0063\u0075\u0074\u0065']['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](taskKey => {
+      if (this['\u0074\u0061\u0073\u006B\u0043\u006F\u006E\u0066\u0069\u0067\u0073'][taskKey]) {
+        this['\u0074\u0061\u0073\u006B\u004C\u0069\u006D\u0069\u0074\u0052\u0065\u0061\u0063\u0068\u0065\u0064'][taskKey] = false;
+      }
+    });
+  }
+  async checkCoinLimit() {
+    try {
+      const accountInfo = await getAccountBasicInfo(this['\u0063\u006F\u006F\u006B\u0069\u0065'], this['\u0070\u0072\u006F\u0078\u0079\u0055\u0072\u006C'], this['\u0069\u006E\u0064\u0065\u0078']);
+      if (accountInfo && accountInfo['\u0074\u006F\u0074\u0061\u006C\u0043\u006F\u0069\u006E']) {
+        const currentCoin = parseInt(accountInfo['\u0074\u006F\u0074\u0061\u006C\u0043\u006F\u0069\u006E']);
+        if (currentCoin >= this['\u0063\u006F\u0069\u006E\u004C\u0069\u006D\u0069\u0074']) {
+          console['\u006C\u006F\u0067'](`⚠️ 账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 金币已达 ${currentCoin}，超过 ${this['\u0063\u006F\u0069\u006E\u004C\u0069\u006D\u0069\u0074']} 阈值，将停止任务`);
+          this['\u0063\u006F\u0069\u006E\u0045\u0078\u0063\u0065\u0065\u0064\u0065\u0064'] = true;
+          this['\u0073\u0074\u006F\u0070\u0041\u006C\u006C\u0054\u0061\u0073\u006B\u0073'] = true;
+          return true;
         }
       }
-    } catch (_0x200a91) {
-      console.log("鍔犺浇nssig澶�璐�");
-      return null;
+      return false;
+    } catch (error) {
+      console['\u006C\u006F\u0067'](`账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 金币检查异常: ${error['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']}`);
+      return false;
     }
   }
-  async encsign(_0x4947fb) {
+  extractCookieInfo() {
     try {
-      const _0x529a50 = Buffer.from(JSON.stringify(_0x4947fb)).toString("base64");
-      const _0x2870e2 = {
-        data: _0x529a50
+      const egidMatch = this['\u0063\u006F\u006F\u006B\u0069\u0065']['\u006D\u0061\u0074\u0063\u0068'](new RegExp('\u0065\u0067\u0069\u0064\u003D\u0028\u005B\u005E\u003B\u005D\u002B\u0029', ""));
+      const didMatch = this['\u0063\u006F\u006F\u006B\u0069\u0065']['\u006D\u0061\u0074\u0063\u0068'](new RegExp(")+];^[(=did".split("").reverse().join(""), ""));
+      const userIdMatch = this['\u0063\u006F\u006F\u006B\u0069\u0065']['\u006D\u0061\u0074\u0063\u0068'](new RegExp('\u0075\u0073\u0065\u0072\u0049\u0064\u003D\u0028\u005B\u005E\u003B\u005D\u002B\u0029', ""));
+      const apiStMatch = this['\u0063\u006F\u006F\u006B\u0069\u0065']['\u006D\u0061\u0074\u0063\u0068'](new RegExp('\u006B\u0075\u0061\u0069\u0073\u0068\u006F\u0075\u005C\u002E\u0061\u0070\u0069\u005F\u0073\u0074\u003D\u0028\u005B\u005E\u003B\u005D\u002B\u0029', ""));
+      var _0xf977c = 7;
+      const appverMatch = this['\u0063\u006F\u006F\u006B\u0069\u0065']['\u006D\u0061\u0074\u0063\u0068'](new RegExp('\u0061\u0070\u0070\u0076\u0065\u0072\u003D\u0028\u005B\u005E\u003B\u005D\u002B\u0029', ""));
+      _0xf977c = 8;
+      this['\u0065\u0067\u0069\u0064'] = egidMatch ? egidMatch[1] : "";
+      this['\u0064\u0069\u0064'] = didMatch ? didMatch[1] : "";
+      this['\u0075\u0073\u0065\u0072\u0049\u0064'] = userIdMatch ? userIdMatch[1] : "";
+      this['\u006B\u0075\u0061\u0069\u0073\u0068\u006F\u0075\u0041\u0070\u0069\u0053\u0074'] = apiStMatch ? apiStMatch[1] : "";
+      this['\u0061\u0070\u0070\u0076\u0065\u0072'] = appverMatch ? appverMatch[1] : "\u0031\u0033\u002E\u0037\u002E\u0032\u0030\u002E\u0031\u0030\u0034\u0036\u0038";
+      if (!this['\u0065\u0067\u0069\u0064'] || !this['\u0064\u0069\u0064']) {
+        console['\u006C\u006F\u0067'](`账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} cookie格式可能无 egid 或 did，但继续尝试...`);
+      }
+    } catch (error) {
+      console['\u006C\u006F\u0067'](`账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 解析cookie失败: ${error['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']}`);
+    }
+  }
+  getTaskStats() {
+    return this['\u0074\u0061\u0073\u006B\u0053\u0074\u0061\u0074\u0073'];
+  }
+  printTaskStats() {
+    console['\u006C\u006F\u0067'](`\n账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 任务执行统计:`);
+    for (const [taskKey, stats] of Object['\u0065\u006E\u0074\u0072\u0069\u0065\u0073'](this['\u0074\u0061\u0073\u006B\u0053\u0074\u0061\u0074\u0073'])) {
+      var _0x72g3b;
+      const taskName = this['\u0074\u0061\u0073\u006B\u0043\u006F\u006E\u0066\u0069\u0067\u0073'][taskKey]['\u006E\u0061\u006D\u0065'];
+      _0x72g3b = 4;
+      console['\u006C\u006F\u0067'](`  ${taskName}: 成功${stats['\u0073\u0075\u0063\u0063\u0065\u0073\u0073']}次, 失败${stats['\u0066\u0061\u0069\u006C\u0065\u0064']}次, 总奖励${stats['\u0074\u006F\u0074\u0061\u006C\u0052\u0065\u0077\u0061\u0072\u0064']}金币`);
+    }
+  }
+  async retryOperation(operation, description, maxRetries = 3, delay = 2000) {
+    let attempts = 0;
+    let lastError = null;
+    while (attempts < maxRetries) {
+      try {
+        var _0x5465f = 7;
+        const result = await operation();
+        _0x5465f = '\u006C\u0061\u0069\u0065\u006E\u006B';
+        if (result) {
+          return result;
+        }
+        lastError = new Error(description + "\u679C\u7ED3\u7A7A\u56DE\u8FD4 ".split("").reverse().join(""));
+      } catch (error) {
+        lastError = error;
+        console['\u006C\u006F\u0067'](`账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} ${description} 异常: ${error['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']}`);
+      }
+      attempts++;
+      if (attempts < maxRetries) {
+        console['\u006C\u006F\u0067'](`账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} ${description} 失败，重试 ${attempts}/${maxRetries}`);
+        await new Promise(resolve => setTimeout(resolve, delay));
+      }
+    }
+    if (isDevMode && lastError) {}
+    return null;
+  }
+  async getAdInfo(taskConfig) {
+    try {
+      var _0x9d0gd;
+      const adPath = "da/dexim/drawer/e/tser/".split("").reverse().join("");
+      _0x9d0gd = 8;
+      const formData = {
+        '\u0065\u006E\u0063\u0044\u0061\u0074\u0061': "\u007C\u0065\u006E\u0063\u0044\u0061\u0074\u0061\u007C",
+        '\u0073\u0069\u0067\u006E': "\u007C\u0073\u0069\u0067\u006E\u007C",
+        '\u0063\u0073': "\u0066\u0061\u006C\u0073\u0065",
+        "client_key": "\u0032\u0061\u0063\u0032\u0061\u0037\u0036\u0064",
+        '\u0076\u0069\u0064\u0065\u006F\u004D\u006F\u0064\u0065\u006C\u0043\u0072\u006F\u0077\u0064\u0054\u0061\u0067': "1_23",
+        "os": "\u0061\u006E\u0064\u0072\u006F\u0069\u0064",
+        "\u006B\u0075\u0061\u0069\u0073\u0068\u006F\u0075\u002E\u0061\u0070\u0069\u005F\u0073\u0074": this['\u006B\u0075\u0061\u0069\u0073\u0068\u006F\u0075\u0041\u0070\u0069\u0053\u0074'],
+        '\u0075\u0051\u0061\u0054\u0061\u0067': "1##swLdgl:99#ecPp:-9#cmNt:-0#cmHs:-3#cmMnsl:-0"
       };
-      const {
-        data: _0x11f80b
-      } = await x_0x1cf3d4.request({
-        url: x_0x257dd7 + "/api/ksjs/ksjs_km/encsign",
-        headers: {
-          ...x_0x284d1f,
-          nickname: encodeURIComponent(this.nickname),
-          userid: this.userId,
-          salt: this.salt
+      var _0x8a84c = 11;
+      const queryData = {
+        "earphoneMode": "\u0031",
+        '\u006D\u006F\u0064': "Xiaomi(23116PN5BC)",
+        '\u0061\u0070\u0070\u0076\u0065\u0072': this['\u0061\u0070\u0070\u0076\u0065\u0072'],
+        '\u0069\u0073\u0070': "\u0043\u0055\u0043\u0043",
+        "language": "\u007A\u0068\u002D\u0063\u006E",
+        '\u0075\u0064': this['\u0075\u0073\u0065\u0072\u0049\u0064'],
+        '\u0064\u0069\u0064\u005F\u0074\u0061\u0067': "\u0030",
+        "net": "WIFI",
+        '\u006B\u0063\u0076': "1599",
+        '\u0061\u0070\u0070': "\u0030",
+        '\u006B\u0070\u0066': "ANDROID_PHONE",
+        "ver": "\u0031\u0031\u002E\u0036",
+        '\u0061\u006E\u0064\u0072\u006F\u0069\u0064\u005F\u006F\u0073': "\u0030",
+        '\u0062\u006F\u0061\u0072\u0064\u0050\u006C\u0061\u0074\u0066\u006F\u0072\u006D': "pineapple",
+        "kpn": "\u004E\u0045\u0042\u0055\u004C\u0041",
+        "androidApiLevel": "\u0033\u0035",
+        '\u0063\u006F\u0075\u006E\u0074\u0072\u0079\u005F\u0063\u006F\u0064\u0065': "\u0063\u006E",
+        '\u0073\u0079\u0073': "\u0041\u004E\u0044\u0052\u004F\u0049\u0044\u005F\u0031\u0035",
+        "sw": "\u0031\u0030\u0038\u0030",
+        "sh": "2400",
+        '\u0061\u0062\u0069': "arm64",
+        "userRecoBit": "\u0030"
+      };
+      _0x8a84c = "pcpgkc".split("").reverse().join("");
+      const requestBody = {
+        "appInfo": {
+          '\u0061\u0070\u0070\u0049\u0064': "\u006B\u0075\u0061\u0069\u0073\u0068\u006F\u0075\u005F\u006E\u0065\u0062\u0075\u006C\u0061",
+          '\u006E\u0061\u006D\u0065': "\u5FEB\u624B\u6781\u901F\u7248",
+          '\u0070\u0061\u0063\u006B\u0061\u0067\u0065\u004E\u0061\u006D\u0065': "\u0063\u006F\u006D\u002E\u006B\u0075\u0061\u0069\u0073\u0068\u006F\u0075\u002E\u006E\u0065\u0062\u0075\u006C\u0061",
+          '\u0076\u0065\u0072\u0073\u0069\u006F\u006E': this['\u0061\u0070\u0070\u0076\u0065\u0072'],
+          "versionCode": -1
         },
-        method: "POST",
-        data: _0x2870e2
+        "deviceInfo": {
+          '\u006F\u0073\u0054\u0079\u0070\u0065': 1,
+          "osVersion": "15",
+          '\u0064\u0065\u0076\u0069\u0063\u0065\u0049\u0064': this['\u0064\u0069\u0064'],
+          "screenSize": {
+            "width": 1080,
+            '\u0068\u0065\u0069\u0067\u0068\u0074': 2249
+          },
+          '\u0066\u0074\u0074': ""
+        },
+        '\u0075\u0073\u0065\u0072\u0049\u006E\u0066\u006F': {
+          '\u0075\u0073\u0065\u0072\u0049\u0064': this['\u0075\u0073\u0065\u0072\u0049\u0064'],
+          '\u0061\u0067\u0065': 0,
+          '\u0067\u0065\u006E\u0064\u0065\u0072': ""
+        },
+        '\u0069\u006D\u0070\u0049\u006E\u0066\u006F': [{
+          '\u0070\u0061\u0067\u0065\u0049\u0064': 11101,
+          '\u0073\u0075\u0062\u0050\u0061\u0067\u0065\u0049\u0064': taskConfig['\u0073\u0075\u0062\u0050\u0061\u0067\u0065\u0049\u0064'],
+          "action": 0,
+          "browseType": 3,
+          '\u0069\u006D\u0070\u0045\u0078\u0074\u0044\u0061\u0074\u0061': "\u007B\u007D",
+          '\u006D\u0065\u0064\u0069\u0061\u0045\u0078\u0074\u0044\u0061\u0074\u0061': "{}"
+        }]
+      };
+      const encodedBody = Buffer['\u0066\u0072\u006F\u006D'](JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079'](requestBody))['\u0074\u006F\u0053\u0074\u0072\u0069\u006E\u0067']("\u0062\u0061\u0073\u0065\u0036\u0034");
+      let encsign = await this['\u0067\u0065\u0074\u0053\u0069\u0067\u006E'](encodedBody);
+      formData['\u0065\u006E\u0063\u0044\u0061\u0074\u0061'] = encsign['\u0065\u006E\u0063\u0064\u0061\u0074\u0061'];
+      formData['\u0073\u0069\u0067\u006E'] = encsign['\u0073\u0069\u0067\u006E'];
+      let nesig = await this['\u0072\u0065\u0071\u0075\u0065\u0073\u0074\u0053\u0069\u0067\u006E\u0053\u0065\u0072\u0076\u0069\u0063\u0065']({
+        '\u0075\u0072\u006C\u0070\u0061\u0074\u0068': adPath,
+        '\u0072\u0065\u0071\u0064\u0061\u0074\u0061': qs['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079'](formData) + "\u0026" + qs['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079'](queryData),
+        "api_client_salt": this['\u0073\u0061\u006C\u0074']
       });
-      if (_0x11f80b.code === 0) {
-        return _0x11f80b.data;
-      } else {
-        console.log("鑾峰彇encsign澶�璐�", _0x11f80b.msg);
-        x_0x370ecc.log(_0x11f80b.msg);
+      var _0x953b;
+      const finalQueryData = {
+        ...queryData,
+        '\u0073\u0069\u0067': nesig['\u0073\u0069\u0067'],
+        '\u005F\u005F\u004E\u0053\u005F\u0073\u0069\u0067\u0033': nesig['\u005F\u005F\u004E\u0053\u005F\u0073\u0069\u0067\u0033'],
+        "__NS_xfalcon": "",
+        '\u005F\u005F\u004E\u0053\u0074\u006F\u006B\u0065\u006E\u0073\u0069\u0067': nesig['\u005F\u005F\u004E\u0053\u0074\u006F\u006B\u0065\u006E\u0073\u0069\u0067']
+      };
+      _0x953b = 17;
+      const url = "moc.uohsiauk.e.ipa//:sptth".split("").reverse().join("") + adPath + "\u003F" + querystring['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079'](finalQueryData);
+      const {
+        '\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0065': response,
+        '\u0062\u006F\u0064\u0079': result
+      } = await sendRequest({
+        '\u006D\u0065\u0074\u0068\u006F\u0064': "\u0050\u004F\u0053\u0054",
+        '\u0075\u0072\u006C': url,
+        '\u0068\u0065\u0061\u0064\u0065\u0072\u0073': {
+          "\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065": "application/x-www-form-urlencoded; charset=UTF-8",
+          '\u0048\u006F\u0073\u0074': "api.e.kuaishou.com",
+          "User-Agent": "\u006B\u0077\u0061\u0069\u002D\u0061\u006E\u0064\u0072\u006F\u0069\u0064\u0020\u0061\u0065\u0067\u006F\u006E\u002F\u0033\u002E\u0035\u0036\u002E\u0030",
+          '\u0043\u006F\u006F\u006B\u0069\u0065': "=ts_ipa_uohsiauk".split("").reverse().join("") + this['\u006B\u0075\u0061\u0069\u0073\u0068\u006F\u0075\u0041\u0070\u0069\u0053\u0074']
+        },
+        "form": formData,
+        '\u0074\u0069\u006D\u0065\u006F\u0075\u0074': 12000
+      }, this['\u0070\u0072\u006F\u0078\u0079\u0055\u0072\u006C'], `账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 获取广告`);
+      if (!result) {
         return null;
       }
-    } catch (_0x11a2b0) {
-      console.log("鍔犺浇encsign 澶辫触");
+      if (result['\u0065\u0072\u0072\u006F\u0072\u004D\u0073\u0067'] === "KO".split("").reverse().join("") && result['\u0066\u0065\u0065\u0064\u0073'] && result['\u0066\u0065\u0065\u0064\u0073'][0] && result['\u0066\u0065\u0065\u0064\u0073'][0]['\u0061\u0064']) {
+        var _0x4ca98a;
+        const caption = result['\u0066\u0065\u0065\u0064\u0073'][0]['\u0063\u0061\u0070\u0074\u0069\u006F\u006E'] || result['\u0066\u0065\u0065\u0064\u0073'][0]['\u0061\u0064']?.caption || "";
+        _0x4ca98a = 4;
+        if (caption) {
+          console['\u006C\u006F\u0067'](`✅ 账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 成功获取到广告信息：${caption}`);
+        }
+        var _0xd3156e = 8;
+        const expTag = result['\u0066\u0065\u0065\u0064\u0073'][0]['\u0065\u0078\u0070\u005F\u0074\u0061\u0067'] || "";
+        _0xd3156e = 16;
+        const llsid = expTag['\u0073\u0070\u006C\u0069\u0074']("\u002F")[1]?.split("\u005F")?.[0] || "";
+        return {
+          '\u0063\u0069\u0064': result['\u0066\u0065\u0065\u0064\u0073'][0]['\u0061\u0064']['\u0063\u0072\u0065\u0061\u0074\u0069\u0076\u0065\u0049\u0064'],
+          '\u006C\u006C\u0073\u0069\u0064': llsid
+        };
+      }
+      if (isDevMode) {}
+      return null;
+    } catch (error) {
+      console['\u006C\u006F\u0067'](error);
+      console['\u006C\u006F\u0067'](`❌ 账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 获取广告异常: ${error['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']}`);
       return null;
     }
   }
-  loadAdInfo(_0x3eccbc) {
-    let _0x3c2ea0 = "{\"openH5AdCount\":\"2\",\"sessionLookedCompletedCount\":\"1\",\"sessionType\":\"1\",\"neoParams\":\"\",\"searchKey\":\"\",\"triggerType\":\"2\",\"disableReportToast\":\"true\",\"businessEnterAction\":\"7\"}";
-    if (_0x3eccbc == "look") {
-      this.adinfo = this.lookAdInfo;
-    }
-    if (_0x3eccbc == "food") {
-      {
-        this.adinfo = this.foodAdInfo;
-      }
-    }
-    if (_0x3eccbc == "box") {
-      this.adinfo = this.boxAdInfo;
-    }
-    if (_0x3eccbc == "ss") {
-      {
-        this.adinfo = this.ssAdInfo;
-        const _0x58ad11 = {
-          openH5AdCount: 0,
-          sessionLookedCompletedCount: 0,
-          sessionType: "1",
-          searchKey: x_0x370ecc.searchkeyword,
-          triggerType: "2",
-          disableReportToast: true,
-          businessEnterAction: "7",
-          neoParams: this.adinfo.linkUrl
-        };
-        _0x3c2ea0 = JSON.stringify(_0x58ad11);
-      }
-    }
-    const _0x459602 = {
-      appId: "kuaishou_nebula",
-      name: "蹇墜鏋侀€�鐗�",
-      packageName: "com.kuaishou.nebula",
-      version: this.appver,
-      versionCode: -1
-    };
-    const _0x50a045 = {
-      width: 1080,
-      height: 2068
-    };
-    const _0x5c71d7 = {
-      latitude: 0,
-      longitude: 0
-    };
-    let _0x4f6180 = {
-      appInfo: _0x459602,
-      deviceInfo: {
-        oaid: this.oaid,
-        osType: 1,
-        osVersion: this.getOsVersion(),
-        language: this.language,
-        deviceId: "" + this.did,
-        screenSize: _0x50a045,
-        ftt: "",
-        supportGyroscope: true
-      },
-      networkInfo: {
-        ip: this.nwip,
-        connectionType: 100
-      },
-      geoInfo: _0x5c71d7,
-      userInfo: {
-        userId: this.userId,
-        age: 0,
-        gender: ""
-      },
-      impInfo: [{
-        pageId: this.adinfo.pageId || 11101,
-        subPageId: this.adinfo.subPageId,
-        action: 0,
-        width: 0,
-        height: 0,
-        browseType: _0x3eccbc == "ss" ? 4 : this.browseType,
-        requestSceneType: this.adinfo.requestSceneType,
-        lastReceiveAmount: 0,
-        impExtData: _0x3c2ea0,
-        mediaExtData: "{}",
-        session: x_0x370ecc.uuid()
-      }],
-      adClientInfo: "{\"ipdxIP\":\"" + this.wwip + "\"}"
-    };
-    return _0x4f6180;
-  }
-  async loadAd(_0x194d23) {
-    const _0x2c38fc = this.loadAdInfo(_0x194d23);
-    const _0x1b322f = await this.encsign(_0x2c38fc);
-    if (_0x1b322f == null) {
-      {
-        x_0x370ecc.log("鑾峰彇encsign澶�璐�");
-        return;
-      }
-    }
-    const _0x14fa86 = {
-      encData: _0x1b322f.encdata,
-      sign: _0x1b322f.sign,
-      cs: false,
-      client_key: "2ac2a76d",
-      videoModelCrowdTag: "1_23",
-      watchStage: "android",
-      os: "android",
-      "kuaishou.api_st": this.api_st,
-      uQaTag: x_0x4b6498
-    };
-    const _0x306bc3 = await this.loadReqParams("/rest/e/reward/mixed/ad", _0x14fa86, this.salt);
-    if (_0x306bc3 == null) {
-      {
-        x_0x370ecc.log("鑾峰彇骞垮憡淇℃伅澶辫触");
-        return;
-      }
-    }
+  async generateSignature(creativeId, llsid, taskKey, taskConfig) {
     try {
-      {
-        let {
-          data: _0x428f12
-        } = await x_0x1cf3d4.request({
-          url: "https://api.e.kuaishou.com/rest/e/reward/mixed/ad",
-          params: _0x306bc3,
-          httpAgent: this.socks5,
-          httpsAgent: this.socks5,
-          proxy: false,
-          timeout: 30000,
-          method: "POST",
-          headers: {
-            Host: "api.e.kuaishou.com",
-            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-            Cookie: "kuaishou.api_st=" + this.api_st + ";__NSWJ=;region_ticket=RT_66898EB2122EC01C6A99E8FCCB4887F9C156DFC294E9FD56AD0156AECEB24C4EC69BFDFE7",
-            "User-Agent": x_0x2afc0c,
-            "X-Client-Info": "model=" + this.mod + ";os=Android;nqe-score=22;network=" + this.net + ";signal-strength=4;"
-          },
-          data: _0x14fa86
-        });
-        if (_0x428f12.errorMsg === "OK" && _0x428f12.feeds && _0x428f12.feeds[0] && _0x428f12.feeds[0].ad) {
-          {
-            const _0x40cb3f = _0x428f12.feeds[0].caption || _0x428f12.feeds[0].ad?.["caption"] || "";
-            if (_0x40cb3f) {
-              {
-                let _0x25c2e5 = "璐﹀彿[" + this.nickname + "] 鎴愬姛鑾峰彇鍒板箍鍛婁俊鎭細" + _0x40cb3f;
-                if (_0x428f12?.["feeds"][0]?.["ad"]?.["extData"]) {
-                  const _0x107bf1 = JSON.parse(_0x428f12?.["feeds"][0]?.["ad"]["extData"]);
-                  _0x25c2e5 = "璐﹀彿[" + this.nickname + "] 鑾峰彇鍒板箍鍛婁俊鎭細" + _0x40cb3f + "锛岄璁¤幏寰梉" + _0x107bf1.awardCoin + "]閲�甯�";
-                }
-                x_0x370ecc.log(_0x25c2e5);
-              }
-            } else {
-              {
-                x_0x370ecc.log("璐﹀彿[" + this.nickname + "] 鑾峰彇骞垮憡淇℃伅澶辫触");
-                return null;
-              }
-            }
-            const _0x173ab8 = _0x428f12.feeds[0].exp_tag || "";
-            const _0x5bb13e = _0x173ab8.split("/")[1]?.["split"]("_")?.[0] || "";
-            if (_0x428f12.feeds[0].streamManifest) {
-              const _0x3462a8 = {
-                cid: _0x428f12.feeds[0].ad.creativeId,
-                llsid: _0x5bb13e,
-                adExtInfo: _0x428f12.feeds[0].ad.adDataV2.inspireAdInfo.adExtInfo,
-                materialTime: _0x428f12.feeds[0].streamManifest.adaptationSet[0].duration,
-                watchAdTime: _0x428f12.feeds[0].ad.adDataV2.inspireAdInfo.inspireAdBillTime
-              };
-              return _0x3462a8;
-            } else {
-              const _0x5acfdb = {
-                cid: _0x428f12.feeds[0].ad.creativeId,
-                llsid: _0x5bb13e,
-                adExtInfo: _0x428f12.feeds[0].ad.adDataV2.inspireAdInfo.adExtInfo,
-                materialTime: 3000,
-                watchAdTime: _0x428f12.feeds[0].ad.adDataV2.inspireAdInfo.inspireAdBillTime
-              };
-              return _0x5acfdb;
-            }
+      var _0x95f62f = 10;
+      const bizData = JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({
+        '\u0062\u0075\u0073\u0069\u006E\u0065\u0073\u0073\u0049\u0064': taskConfig['\u0062\u0075\u0073\u0069\u006E\u0065\u0073\u0073\u0049\u0064'],
+        '\u0065\u006E\u0064\u0054\u0069\u006D\u0065': this['\u0065\u006E\u0064\u0054\u0069\u006D\u0065'],
+        '\u0065\u0078\u0074\u0050\u0061\u0072\u0061\u006D\u0073': "",
+        "mediaScene": "\u0076\u0069\u0064\u0065\u006F",
+        "neoInfos": [{
+          '\u0063\u0072\u0065\u0061\u0074\u0069\u0076\u0065\u0049\u0064': creativeId,
+          '\u0065\u0078\u0074\u0049\u006E\u0066\u006F': "",
+          '\u006C\u006C\u0073\u0069\u0064': llsid,
+          '\u0072\u0065\u0071\u0075\u0065\u0073\u0074\u0053\u0063\u0065\u006E\u0065\u0054\u0079\u0070\u0065': taskConfig['\u0072\u0065\u0071\u0075\u0065\u0073\u0074\u0053\u0063\u0065\u006E\u0065\u0054\u0079\u0070\u0065'],
+          "taskType": taskConfig['\u0074\u0061\u0073\u006B\u0054\u0079\u0070\u0065'],
+          "watchExpId": "",
+          "watchStage": 0
+        }],
+        "pageId": 11101,
+        '\u0070\u006F\u0073\u0049\u0064': taskConfig['\u0070\u006F\u0073\u0049\u0064'],
+        "reportType": 0,
+        '\u0073\u0065\u0073\u0073\u0069\u006F\u006E\u0049\u0064': "",
+        "startTime": this['\u0073\u0074\u0061\u0072\u0074\u0054\u0069\u006D\u0065'],
+        "subPageId": taskConfig['\u0073\u0075\u0062\u0050\u0061\u0067\u0065\u0049\u0064']
+      });
+      _0x95f62f = 7;
+      const postData = "=rtSzib".split("").reverse().join("") + encodeURIComponent(bizData) + "=ts_ipa.uohsiauk&d67a2ca2=yek_tneilc&eslaf=sc&".split("").reverse().join("") + this['\u006B\u0075\u0061\u0069\u0073\u0068\u006F\u0075\u0041\u0070\u0069\u0053\u0074'];
+      var _0xf5b0cb;
+      const urlData = this['\u0071\u0075\u0065\u0072\u0079\u0050\u0061\u0072\u0061\u006D\u0073'] + "\u0026" + postData;
+      _0xf5b0cb = 7;
+      const signResult = await this['\u0072\u0065\u0071\u0075\u0065\u0073\u0074\u0053\u0069\u0067\u006E\u0053\u0065\u0072\u0076\u0069\u0063\u0065']({
+        "urlpath": this['\u0074\u0061\u0073\u006B\u0052\u0065\u0070\u006F\u0072\u0074\u0050\u0061\u0074\u0068'],
+        "reqdata": urlData,
+        '\u0061\u0070\u0069\u005F\u0063\u006C\u0069\u0065\u006E\u0074\u005F\u0073\u0061\u006C\u0074': this['\u0073\u0061\u006C\u0074']
+      }, `账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 生成报告签名`);
+      return {
+        "sig": signResult['\u0073\u0069\u0067'],
+        '\u0073\u0069\u0067\u0033': signResult['\u005F\u005F\u004E\u0053\u005F\u0073\u0069\u0067\u0033'],
+        "sigtoken": signResult['\u005F\u005F\u004E\u0053\u0074\u006F\u006B\u0065\u006E\u0073\u0069\u0067'],
+        "post": postData
+      };
+    } catch (error) {
+      console['\u006C\u006F\u0067'](error);
+      console['\u006C\u006F\u0067'](`❌ 账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 生成签名异常: ${error['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']}`);
+      return null;
+    }
+  }
+  async submitReport(sig, sig3, sigtoken, postData, taskKey, taskConfig) {
+    try {
+      var _0x55a94f;
+      const url = "\u0068\u0074\u0074\u0070\u0073\u003A\u002F\u002F\u0061\u0070\u0069\u002E\u0065\u002E\u006B\u0075\u0061\u0069\u0073\u0068\u006F\u0075\u002E\u0063\u006F\u006D" + this['\u0074\u0061\u0073\u006B\u0052\u0065\u0070\u006F\u0072\u0074\u0050\u0061\u0074\u0068'] + "\u003F" + (this['\u0071\u0075\u0065\u0072\u0079\u0050\u0061\u0072\u0061\u006D\u0073'] + "\u0026\u0073\u0069\u0067\u003D" + sig + "\u0026\u005F\u005F\u004E\u0053\u005F\u0073\u0069\u0067\u0033\u003D" + sig3 + "\u0026\u005F\u005F\u004E\u0053\u005F\u0078\u0066\u0061\u006C\u0063\u006F\u006E\u003D\u0026\u005F\u005F\u004E\u0053\u0074\u006F\u006B\u0065\u006E\u0073\u0069\u0067\u003D" + sigtoken);
+      _0x55a94f = 16;
+      const {
+        '\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0065': response,
+        '\u0062\u006F\u0064\u0079': result
+      } = await sendRequest({
+        "method": "POST",
+        "url": url,
+        "headers": {
+          "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+          '\u0048\u006F\u0073\u0074': "\u0061\u0070\u0069\u002E\u0065\u002E\u006B\u0075\u0061\u0069\u0073\u0068\u006F\u0075\u002E\u0063\u006E",
+          "User-Agent": "kwai-android aegon/3.56.0",
+          "\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065": "application/x-www-form-urlencoded"
+        },
+        "body": postData,
+        '\u0074\u0069\u006D\u0065\u006F\u0075\u0074': 12000
+      }, this['\u0070\u0072\u006F\u0078\u0079\u0055\u0072\u006C'], `账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 提交任务`);
+      if (!result) {
+        return {
+          '\u0073\u0075\u0063\u0063\u0065\u0073\u0073': false,
+          '\u0072\u0065\u0077\u0061\u0072\u0064': 0
+        };
+      }
+      if (result['\u0072\u0065\u0073\u0075\u006C\u0074'] === 1) {
+        const reward = result['\u0064\u0061\u0074\u0061']?.neoAmount || 0;
+        console['\u006C\u006F\u0067'](`💰 账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} ${taskConfig['\u006E\u0061\u006D\u0065']}获得${reward}金币奖励！`);
+        if (reward <= this['\u006C\u006F\u0077\u0052\u0065\u0077\u0061\u0072\u0064\u0054\u0068\u0072\u0065\u0073\u0068\u006F\u006C\u0064']) {
+          this['\u006C\u006F\u0077\u0052\u0065\u0077\u0061\u0072\u0064\u0053\u0074\u0072\u0065\u0061\u006B']++;
+          this['\u0064\u0069\u0064'] = generateKuaishouDid();
+          console['\u006C\u006F\u0067'](`⚠️ 账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 金币奖励(${reward})低于阈值(${this['\u006C\u006F\u0077\u0052\u0065\u0077\u0061\u0072\u0064\u0054\u0068\u0072\u0065\u0073\u0068\u006F\u006C\u0064']})，模拟下载应用提升权重，当前连续低奖励次数：${this['\u006C\u006F\u0077\u0052\u0065\u0077\u0061\u0072\u0064\u0053\u0074\u0072\u0065\u0061\u006B']}/${this['\u006C\u006F\u0077\u0052\u0065\u0077\u0061\u0072\u0064\u004C\u0069\u006D\u0069\u0074']}`);
+          if (this['\u006C\u006F\u0077\u0052\u0065\u0077\u0061\u0072\u0064\u0053\u0074\u0072\u0065\u0061\u006B'] >= this['\u006C\u006F\u0077\u0052\u0065\u0077\u0061\u0072\u0064\u004C\u0069\u006D\u0069\u0074']) {
+            console['\u006C\u006F\u0067'](`🏁 账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 连续${this['\u006C\u006F\u0077\u0052\u0065\u0077\u0061\u0072\u0064\u004C\u0069\u006D\u0069\u0074']}次奖励≤${this['\u006C\u006F\u0077\u0052\u0065\u0077\u0061\u0072\u0064\u0054\u0068\u0072\u0065\u0073\u0068\u006F\u006C\u0064']}，停止全部任务`);
+            this['\u0073\u0074\u006F\u0070\u0041\u006C\u006C\u0054\u0061\u0073\u006B\u0073'] = true;
           }
         } else {
-          x_0x370ecc.log("璐﹀彿[" + this.nickname + "] 鑾峰彇骞垮憡淇℃伅澶辫触");
-          return null;
+          this['\u006C\u006F\u0077\u0052\u0065\u0077\u0061\u0072\u0064\u0053\u0074\u0072\u0065\u0061\u006B'] = 0;
         }
+        return {
+          "success": true,
+          "reward": reward
+        };
       }
-    } catch (_0x5e6d17) {
-      console.log("鍔犺浇骞垮憡淇℃伅澶辫触");
-      return null;
+      if ([20107, 20108, 1003, 415]['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073'](result['\u0072\u0065\u0073\u0075\u006C\u0074'])) {
+        console['\u006C\u006F\u0067'](`⚠️ 账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} ${taskConfig['\u006E\u0061\u006D\u0065']} 已达上限`);
+        this['\u0074\u0061\u0073\u006B\u004C\u0069\u006D\u0069\u0074\u0052\u0065\u0061\u0063\u0068\u0065\u0064'][taskKey] = true;
+        return {
+          '\u0073\u0075\u0063\u0063\u0065\u0073\u0073': false,
+          '\u0072\u0065\u0077\u0061\u0072\u0064': 0
+        };
+      }
+      console['\u006C\u006F\u0067'](`❌ 账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} ${taskConfig['\u006E\u0061\u006D\u0065']} 奖励失败，result=${result['\u0072\u0065\u0073\u0075\u006C\u0074']} msg=${result['\u0064\u0061\u0074\u0061'] || ""}`);
+      if (isDevMode) {}
+      return {
+        "success": false,
+        '\u0072\u0065\u0077\u0061\u0072\u0064': 0
+      };
+    } catch (error) {
+      console['\u006C\u006F\u0067'](`❌ 账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 提交任务异常: ${error['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']}`);
+      return {
+        "success": false,
+        '\u0072\u0065\u0077\u0061\u0072\u0064': 0
+      };
     }
   }
-  async subAd(_0x32ae51, _0x413974, _0x186d9b, _0x12eca1, _0x5f5664, _0x55bc5d, _0x5e29e0) {
-    const _0x16e423 = _0x12eca1 + _0x5f5664 * 1000;
-    const _0x35a97f = {
-      bizStr: JSON.stringify({
-        businessId: this.adinfo.businessId,
-        endTime: _0x16e423,
-        extParams: "",
-        mediaScene: "video",
-        neoInfos: [{
-          clientExtInfo: "{\"serialPaySuccess\":false}",
-          creativeId: _0x32ae51,
-          extInfo: "",
-          llsid: _0x413974,
-          adExtInfo: _0x186d9b,
-          materialTime: _0x55bc5d,
-          watchAdTime: _0x5e29e0,
-          requestSceneType: this.adinfo.requestSceneType,
-          taskType: this.adinfo.taskType,
-          watchExpId: "",
-          watchStage: 0
-        }],
-        pageId: this.adinfo.pageId || 11101,
-        posId: this.adinfo.posId,
-        reportType: 0,
-        sessionId: "adNeo-" + this.userId + "-" + this.adinfo.subPageId + "-" + _0x12eca1,
-        startTime: _0x12eca1,
-        subPageId: this.adinfo.subPageId
-      }),
-      cs: false,
-      client_key: "2ac2a76d",
-      videoModelCrowdTag: "1_52",
-      os: "android",
-      "kuaishou.api_st": this.api_st
+  async getSign(requestData) {
+    try {
+      const {
+        "response": response,
+        '\u0062\u006F\u0064\u0079': result
+      } = await sendRequest({
+        '\u006D\u0065\u0074\u0068\u006F\u0064': "\u0050\u004F\u0053\u0054",
+        '\u0075\u0072\u006C': "\u0068\u0074\u0074\u0070\u0073\u003A\u002F\u002F\u006B\u0073\u002E\u0079\u0075\u0062\u0069\u006E\u0038\u002E\u0064\u0070\u0064\u006E\u0073\u002E\u006F\u0072\u0067\u002F\u0065\u006E\u0063\u0073\u0069\u0067\u006E",
+        '\u0062\u006F\u0064\u0079': JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079']({
+          "data": requestData
+        }),
+        '\u0068\u0065\u0061\u0064\u0065\u0072\u0073': {
+          "\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065": "application/json"
+        }
+      });
+      if (result['\u0073\u0074\u0061\u0074\u0075\u0073']) {
+        return result['\u0064\u0061\u0074\u0061'];
+      }
+    } catch (error) {}
+  }
+  async requestSignService(requestData, description) {
+    var _0x47789f = 6;
+    let returnData = {};
+    _0x47789f = 7;
+    var _0xb2a = 5;
+    let newreqdata = {
+      "path": requestData['\u0075\u0072\u006C\u0070\u0061\u0074\u0068'],
+      "data": requestData['\u0072\u0065\u0071\u0064\u0061\u0074\u0061'],
+      "salt": requestData['\u0061\u0070\u0069\u005F\u0063\u006C\u0069\u0065\u006E\u0074\u005F\u0073\u0061\u006C\u0074']
     };
-    const _0x7fff7b = await this.loadReqParams("/rest/r/ad/task/report", _0x35a97f, this.salt);
-    if (_0x7fff7b == null) {
-      console.log("鑾峰彇sign澶辫触 璇�閲嶈瘯");
-      return 0;
+    _0xb2a = "occdhc".split("").reverse().join("");
+    const {
+      "response": response,
+      '\u0062\u006F\u0064\u0079': result
+    } = await sendRequest({
+      "method": "\u0050\u004F\u0053\u0054",
+      "url": "\u0068\u0074\u0074\u0070\u0073\u003A\u002F\u002F\u006B\u0073\u002E\u0079\u0075\u0062\u0069\u006E\u0038\u002E\u0064\u0070\u0064\u006E\u0073\u002E\u006F\u0072\u0067\u002F\u006E\u0073\u0073\u0069\u0067",
+      '\u0068\u0065\u0061\u0064\u0065\u0072\u0073': {
+        "\u0043\u006F\u006E\u0074\u0065\u006E\u0074\u002D\u0054\u0079\u0070\u0065": "\u0061\u0070\u0070\u006C\u0069\u0063\u0061\u0074\u0069\u006F\u006E\u002F\u006A\u0073\u006F\u006E",
+        "User-Agent": "Mozilla/5.0"
+      },
+      "body": JSON['\u0073\u0074\u0072\u0069\u006E\u0067\u0069\u0066\u0079'](newreqdata),
+      "timeout": 15000
+    }, null, description + "\uFF08\u7B7E\u540D\u670D\u52A1\uFF09");
+    if (result) {
+      let __NS_sig3 = result['\u0064\u0061\u0074\u0061']['\u006E\u0073\u0073\u0069\u0067\u0033'];
+      let __NStokensig = result['\u0064\u0061\u0074\u0061']['\u006E\u0073\u0074\u006F\u006B\u0065\u006E\u0073\u0069\u0067'];
+      Object['\u0061\u0073\u0073\u0069\u0067\u006E'](returnData, {
+        "__NS_sig3": __NS_sig3,
+        '\u005F\u005F\u004E\u0053\u0074\u006F\u006B\u0065\u006E\u0073\u0069\u0067': __NStokensig,
+        "sig": result['\u0064\u0061\u0074\u0061']['\u0073\u0069\u0067']
+      });
+      return returnData;
+    }
+  }
+  async executeTask(taskKey) {
+    const taskConfig = this['\u0074\u0061\u0073\u006B\u0043\u006F\u006E\u0066\u0069\u0067\u0073'][taskKey];
+    if (!taskConfig) {
+      console['\u006C\u006F\u0067'](`❌ 账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 未知任务: ${taskKey}`);
+      return false;
+    }
+    if (this['\u0074\u0061\u0073\u006B\u004C\u0069\u006D\u0069\u0074\u0052\u0065\u0061\u0063\u0068\u0065\u0064'][taskKey]) {
+      return false;
     }
     try {
-      let {
-        data: _0x17a4f1
-      } = await x_0x1cf3d4.request({
-        url: "https://api.e.kuaishou.com/rest/r/ad/task/report",
-        httpAgent: this.socks5,
-        httpsAgent: this.socks5,
-        proxy: false,
-        timeout: 30000,
-        params: _0x7fff7b,
-        method: "POST",
-        headers: {
-          Host: "api.e.kuaishou.com",
-          "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-          Cookie: "kuaishou.api_st=" + this.api_st,
-          "User-Agent": x_0x2afc0c,
-          "X-Client-Info": "model=" + this.mod + ";os=Android;nqe-score=22;network=" + this.net + ";signal-strength=4;"
-        },
-        data: _0x35a97f
-      });
-      if ([20107, 20108, 1003, 415].includes(_0x17a4f1.result)) {
-        console.log("⚠️ 宸茶揪涓婇檺");
-        console.log(_0x17a4f1);
-        const _0x124ac4 = {
-          neoAmount: 0,
-          status: 3
-        };
-        return _0x124ac4;
+      const adInfo = await this['\u0072\u0065\u0074\u0072\u0079\u004F\u0070\u0065\u0072\u0061\u0074\u0069\u006F\u006E'](() => this['\u0067\u0065\u0074\u0041\u0064\u0049\u006E\u0066\u006F'](taskConfig), `获取${taskConfig['\u006E\u0061\u006D\u0065']}信息`, 3);
+      if (!adInfo) {
+        this['\u0074\u0061\u0073\u006B\u0053\u0074\u0061\u0074\u0073'][taskKey]['\u0066\u0061\u0069\u006C\u0065\u0064']++;
+        return false;
       }
-      if (_0x17a4f1.message == "鎴愬姛") {
-        const _0x4d7513 = {
-          neoAmount: _0x17a4f1.data.neoAmount,
-          status: 1
-        };
-        return _0x4d7513;
+      var _0x92c1d;
+      const watchTime = Math['\u0066\u006C\u006F\u006F\u0072'](Math['\u0072\u0061\u006E\u0064\u006F\u006D']() * 10000) + 30000;
+      _0x92c1d = 11;
+      console['\u006C\u006F\u0067'](`🔍 账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} ==>${taskConfig['\u006E\u0061\u006D\u0065']} ${generateRandomInteractionMessage()} ${Math['\u0072\u006F\u0075\u006E\u0064'](watchTime / 1000)} 秒`);
+      await new Promise(resolve => setTimeout(resolve, watchTime));
+      const signature = await this['\u0072\u0065\u0074\u0072\u0079\u004F\u0070\u0065\u0072\u0061\u0074\u0069\u006F\u006E'](() => this['\u0067\u0065\u006E\u0065\u0072\u0061\u0074\u0065\u0053\u0069\u0067\u006E\u0061\u0074\u0075\u0072\u0065'](adInfo['\u0063\u0069\u0064'], adInfo['\u006C\u006C\u0073\u0069\u0064'], taskKey, taskConfig), `生成${taskConfig['\u006E\u0061\u006D\u0065']}签名`, 3);
+      if (!signature) {
+        this['\u0074\u0061\u0073\u006B\u0053\u0074\u0061\u0074\u0073'][taskKey]['\u0066\u0061\u0069\u006C\u0065\u0064']++;
+        return false;
+      }
+      var _0xbcg = 15;
+      const submitResult = await this['\u0072\u0065\u0074\u0072\u0079\u004F\u0070\u0065\u0072\u0061\u0074\u0069\u006F\u006E'](() => this['\u0073\u0075\u0062\u006D\u0069\u0074\u0052\u0065\u0070\u006F\u0072\u0074'](signature['\u0073\u0069\u0067'], signature['\u0073\u0069\u0067\u0033'], signature['\u0073\u0069\u0067\u0074\u006F\u006B\u0065\u006E'], signature['\u0070\u006F\u0073\u0074'], taskKey, taskConfig), `提交${taskConfig['\u006E\u0061\u006D\u0065']}报告`, 3);
+      _0xbcg = "fdeodm".split("").reverse().join("");
+      if (submitResult?.success) {
+        this['\u0074\u0061\u0073\u006B\u0053\u0074\u0061\u0074\u0073'][taskKey]['\u0073\u0075\u0063\u0063\u0065\u0073\u0073']++;
+        this['\u0074\u0061\u0073\u006B\u0053\u0074\u0061\u0074\u0073'][taskKey]['\u0074\u006F\u0074\u0061\u006C\u0052\u0065\u0077\u0061\u0072\u0064'] += submitResult['\u0072\u0065\u0077\u0061\u0072\u0064'] || 0;
+        return true;
+      }
+      this['\u0074\u0061\u0073\u006B\u0053\u0074\u0061\u0074\u0073'][taskKey]['\u0066\u0061\u0069\u006C\u0065\u0064']++;
+      return false;
+    } catch (error) {
+      console['\u006C\u006F\u0067'](`❌ 账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 任务异常(${taskKey}): ${error['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']}`);
+      this['\u0074\u0061\u0073\u006B\u0053\u0074\u0061\u0074\u0073'][taskKey]['\u0066\u0061\u0069\u006C\u0065\u0064']++;
+      return false;
+    }
+  }
+  async executeAllTasksByPriority() {
+    const results = {};
+    for (const taskKey of this['\u0074\u0061\u0073\u006B\u0073\u0054\u006F\u0045\u0078\u0065\u0063\u0075\u0074\u0065']) {
+      if (this['\u0073\u0074\u006F\u0070\u0041\u006C\u006C\u0054\u0061\u0073\u006B\u0073']) {
+        break;
+      }
+      if (!this['\u0074\u0061\u0073\u006B\u0043\u006F\u006E\u0066\u0069\u0067\u0073'][taskKey]) {
+        console['\u006C\u006F\u0067'](`⚠️ 账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 跳过未知任务: ${taskKey}`);
+        continue;
+      }
+      console['\u006C\u006F\u0067'](`🚀 账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 开始任务：${this['\u0074\u0061\u0073\u006B\u0043\u006F\u006E\u0066\u0069\u0067\u0073'][taskKey]['\u006E\u0061\u006D\u0065']}`);
+      results[taskKey] = await this['\u0065\u0078\u0065\u0063\u0075\u0074\u0065\u0054\u0061\u0073\u006B'](taskKey);
+      if (this['\u0073\u0074\u006F\u0070\u0041\u006C\u006C\u0054\u0061\u0073\u006B\u0073']) {
+        break;
+      }
+      if (taskKey !== this['\u0074\u0061\u0073\u006B\u0073\u0054\u006F\u0045\u0078\u0065\u0063\u0075\u0074\u0065'][this['\u0074\u0061\u0073\u006B\u0073\u0054\u006F\u0045\u0078\u0065\u0063\u0075\u0074\u0065']['\u006C\u0065\u006E\u0067\u0074\u0068'] - 1]) {
+        var _0x80d = 15;
+        const waitTime = Math['\u0066\u006C\u006F\u006F\u0072'](Math['\u0072\u0061\u006E\u0064\u006F\u006D']() * 8000) + 7000;
+        _0x80d = 6;
+        console['\u006C\u006F\u0067'](`⏱ 账号[${this['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${this['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + this['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 下一个任务，随机等待 ${Math['\u0072\u006F\u0075\u006E\u0064'](waitTime / 1000)} 秒`);
+        await new Promise(resolve => setTimeout(resolve, waitTime));
+      }
+    }
+    return results;
+  }
+}
+function parseAccountConfig(configString, _0x61fe, _0xd3ce5e, _0x7_0x989) {
+  var _0x3b860d;
+  const _0x544fb = String(configString || "")['\u0074\u0072\u0069\u006D']()['\u0073\u0070\u006C\u0069\u0074']("\u0023");
+  _0x3b860d = 6;
+  if (_0x544fb['\u006C\u0065\u006E\u0067\u0074\u0068'] < 2) {
+    return null;
+  }
+  _0x61fe = "";
+  var _0xac7eef = 15;
+  _0xd3ce5e = "";
+  _0xac7eef = "odleiq".split("").reverse().join("");
+  _0x7_0x989 = "";
+  let _0x9a4b = null;
+  if (_0x544fb['\u006C\u0065\u006E\u0067\u0074\u0068'] === 2) {
+    _0xd3ce5e = _0x544fb[0];
+    _0x7_0x989 = _0x544fb[1];
+  } else if (_0x544fb['\u006C\u0065\u006E\u0067\u0074\u0068'] === 3) {
+    if (new RegExp('\u0073\u006F\u0063\u006B\u0073\u0035\u003A\u005C\u002F\u005C\u002F', '\u0069')['\u0074\u0065\u0073\u0074'](_0x544fb[2])) {
+      _0xd3ce5e = _0x544fb[0];
+      _0x7_0x989 = _0x544fb[1];
+      _0x9a4b = _0x544fb[2];
+    } else {
+      _0x61fe = _0x544fb[0];
+      _0xd3ce5e = _0x544fb[1];
+      _0x7_0x989 = _0x544fb[2];
+    }
+  } else if (_0x544fb['\u006C\u0065\u006E\u0067\u0074\u0068'] >= 4) {
+    _0x61fe = _0x544fb[0];
+    _0xd3ce5e = _0x544fb[1];
+    _0x7_0x989 = _0x544fb['\u0073\u006C\u0069\u0063\u0065'](2, _0x544fb['\u006C\u0065\u006E\u0067\u0074\u0068'] - 1)['\u006A\u006F\u0069\u006E']("\u0023");
+    _0x9a4b = _0x544fb[_0x544fb['\u006C\u0065\u006E\u0067\u0074\u0068'] - 1];
+  }
+  if (_0x9a4b) {
+    if (_0x9a4b['\u0069\u006E\u0063\u006C\u0075\u0064\u0065\u0073']("\u007C")) {
+      console['\u006C\u006F\u0067'](`开始解析代理格式: ${_0x9a4b}`);
+      const _0x7g79c = _0x9a4b['\u0073\u0070\u006C\u0069\u0074']("\u007C");
+      if (_0x7g79c['\u006C\u0065\u006E\u0067\u0074\u0068'] >= 2) {
+        const [ip, port, username, password] = _0x7g79c;
+        _0x9a4b = `socks5://${username}:${password}@${ip}:${port}`;
       } else {
-        console.log(_0x17a4f1);
-        const _0x4dc46c = {
-          neoAmount: 0,
-          status: 2
-        };
-        return _0x4dc46c;
+        _0x9a4b = null;
+        console['\u006C\u006F\u0067'](`⚠️ 代理字段格式错误，忽略：${_0x9a4b}`);
       }
-    } catch (_0xe386d8) {
-      {
-        console.log(_0xe386d8);
-        const _0x5ab87c = {
-          neoAmount: 0,
-          status: 1
-        };
-        return _0x5ab87c;
+    } else if (!new RegExp("/\\/\\:5skcos^".split("").reverse().join(""), '\u0069')['\u0074\u0065\u0073\u0074'](_0x9a4b)) {
+      console['\u006C\u006F\u0067'](`⚠️ 代理字段不是 socks5:// URL，忽略：${_0x9a4b}`);
+      _0x9a4b = null;
+    }
+  }
+  return {
+    '\u0072\u0065\u006D\u0061\u0072\u006B': _0x61fe || "",
+    "salt": _0x7_0x989,
+    "cookie": _0xd3ce5e,
+    "proxyUrl": _0x9a4b
+  };
+}
+function loadAccountsFromEnv() {
+  var _0xf78ed = 8;
+  const _0x84a75d = getAccountConfigsFromEnv();
+  _0xf78ed = 9;
+  const _0xd9b = [];
+  for (const _0xd43e of _0x84a75d) {
+    const _0xb92e = parseAccountConfig(_0xd43e);
+    if (_0xb92e) {
+      _0xd9b['\u0070\u0075\u0073\u0068'](_0xb92e);
+    } else {
+      console['\u006C\u006F\u0067'](`账号格式错误：${_0xd43e}`);
+    }
+  }
+  _0xd9b['\u0066\u006F\u0072\u0045\u0061\u0063\u0068']((account, index) => {
+    account['\u0069\u006E\u0064\u0065\u0078'] = index + 1;
+  });
+  return _0xd9b;
+}
+async function concurrentExecute(items, concurrency, processor, _0x8b778b) {
+  const _0xb4ccb = new Array(items['\u006C\u0065\u006E\u0067\u0074\u0068']);
+  var _0x1f72f = 4;
+  _0x8b778b = 0;
+  _0x1f72f = 3;
+  async function _0xged5ae() {
+    while (true) {
+      const _0xc5864f = _0x8b778b++;
+      if (_0xc5864f >= items['\u006C\u0065\u006E\u0067\u0074\u0068']) {
+        return;
+      }
+      var _0xe16e;
+      const _0xde17be = items[_0xc5864f];
+      _0xe16e = 15;
+      try {
+        _0xb4ccb[_0xc5864f] = await processor(_0xde17be, _0xc5864f);
+      } catch (error) {
+        console['\u006C\u006F\u0067'](`并发执行异常（index=${_0xc5864f + 1}）：${error['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']}`);
+        _0xb4ccb[_0xc5864f] = null;
       }
     }
   }
+  const _0xdebce = Array['\u0066\u0072\u006F\u006D']({
+    '\u006C\u0065\u006E\u0067\u0074\u0068': Math['\u006D\u0069\u006E'](concurrency, items['\u006C\u0065\u006E\u0067\u0074\u0068'])
+  }, _0xged5ae);
+  await Promise['\u0061\u006C\u006C'](_0xdebce);
+  return _0xb4ccb;
 }
-function x_0x27d8b9(_0x5503a8) {
-  return new class {
-    constructor(_0x3060f7) {
-      {
-        this.userIdx = 1;
-        this.userList = [];
-        this.userCount = 0;
-        this.name = _0x3060f7;
-        this.time = 480;
-        this.time1 = 120;
-        this.sort = 1;
-        this.wheelNum = 0;
-        this.startTime = new Date().getTime();
-        this.log(this.name + ",寮€濮�!");
-        this.count = 999;
-        this.ip = 1;
-        this.failadnum = 3;
-        this.failadnumobj = {};
-        this.foodcount = 3;
-        this.boxcount = 3;
-        this.lookcount = 5;
+async function processAccount(accountConfig) {
+  if (accountConfig['\u0070\u0072\u006F\u0078\u0079\u0055\u0072\u006C']) {
+    console['\u006C\u006F\u0067'](`账号[${accountConfig['\u0069\u006E\u0064\u0065\u0078']}]${accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 🔌 测试代理连接中...`);
+    var _0x9324d = 5;
+    const _0x9f40e = await testProxyConnectivity(accountConfig['\u0070\u0072\u006F\u0078\u0079\u0055\u0072\u006C'], `账号[${accountConfig['\u0069\u006E\u0064\u0065\u0078']}]${accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""}`);
+    _0x9324d = 18;
+    console['\u006C\u006F\u0067'](`  - ${_0x9f40e['\u006F\u006B'] ? "\u2705\u0020\u4EE3\u7406\u9A8C\u8BC1\u901A\u8FC7\uFF0C\u0049\u0050\u003A\u0020" + _0x9f40e['\u0069\u0070'] : "\u8D25\u5931\u8BC1\u9A8C\u7406\u4EE3 \u274C".split("").reverse().join("")}: ${_0x9f40e['\u006D\u0073\u0067']}`);
+    if (_0x9f40e['\u006F\u006B'] && _0x9f40e['\u0069\u0070'] && _0x9f40e['\u0069\u0070'] !== "\u006C\u006F\u0063\u0061\u006C\u0068\u006F\u0073\u0074") {
+      if (usedProxies['\u0068\u0061\u0073'](_0x9f40e['\u0069\u0070'])) {
+        console['\u006C\u006F\u0067'](`\n⚠️ 存在相同代理IP（${_0x9f40e['\u0069\u0070']}），请立即检查！`);
+        process['\u0065\u0078\u0069\u0074'](1);
       }
+      usedProxies['\u0061\u0064\u0064'](_0x9f40e['\u0069\u0070']);
     }
-    checkEnv() {
-      {
-        const _0x5c76b6 = [];
-        if (this.isNode()) {
-          Object.keys(process.env).forEach(_0x16a24e => {
-            {
-              if (_0x16a24e.startsWith("ksck")) {
-                {
-                  _0x5c76b6.push(_0x16a24e);
-                }
-              }
-            }
-          });
-        }
-        let _0x5075f3 = [];
-        _0x5c76b6.forEach(_0x3b49e0 => {
-          const _0xb7d15c = (this.isNode() ? process.env[_0x3b49e0] : "") || "";
-          if (_0xb7d15c) {
-            {
-              _0x5075f3.push(_0xb7d15c);
-            }
-          }
-        });
-        const _0x4f9773 = _0x5075f3.join("&");
-        this.userList = _0x4f9773.split(["&", "\n"].find(_0x43dbd7 => {
-          {
-            return _0x4f9773.includes(_0x43dbd7);
-          }
-        }) || "&").filter(_0x15ca0b => {
-          {
-            return _0x15ca0b;
-          }
-        });
-        this.userCount = this.userList.length;
-        const _0x3ead10 = (this.isNode() ? process.env.KS_COUNT : 999) || 999;
-        this.count = _0x3ead10;
-        const _0x197efe = (this.isNode() ? process.env.KS_AD_TYPE : "look,box,food") || "look,box,food";
-        x_0x2272ef = _0x197efe;
-        const _0x5e8d66 = (this.isNode() ? process.env.KS_KM : "") || "";
-        x_0x284d1f.km = _0x5e8d66;
-        const _0x313db2 = (this.isNode() ? process.env.KS_TIME : 480) || 480;
-        this.time = Number(_0x313db2);
-        const _0x1362e8 = (this.isNode() ? process.env.KS_TIME1 : 120) || 120;
-        this.time1 = Number(_0x1362e8);
-        const _0x438fed = (this.isNode() ? process.env.KS_SORT : 0) || 0;
-        this.sort = Number(_0x438fed);
-        const _0x11cad6 = (this.isNode() ? process.env.KS_IP : 1) || 1;
-        this.ip = Number(_0x11cad6);
-        const _0x22d01f = (this.isNode() ? process.env.KS_FAIL_NUM : 3) || 3;
-        this.failadnum = Number(_0x22d01f);
-        this.log({
-          count: this.count,
-          time: this.time,
-          time1: this.time1,
-          sort: this.sort
-        });
-        const _0x3f607a = (this.isNode() ? process.env.KS_AD_NUM : "3,3,5,1") || "3,3,5,1";
-        const _0x4aa4d1 = _0x3f607a.split(",");
-        this.foodcount = Number(_0x4aa4d1[Math.min(0, _0x4aa4d1.length - 1)]);
-        this.boxcount = Number(_0x4aa4d1[Math.min(1, _0x4aa4d1.length - 1)]);
-        this.lookcount = Number(_0x4aa4d1[Math.min(2, _0x4aa4d1.length - 1)]);
-        this.sscount = Number(_0x4aa4d1[Math.min(3, _0x4aa4d1.length - 1)]);
-        this.log("鍏辨壘鍒�" + this.userCount + "涓处鍙�,杩愯" + this.count + "杞�,鍏ㄥ眬骞垮憡绫诲瀷涓�" + _0x197efe);
-        this.searchkeyword = (this.isNode() ? process.env.KS_SEARCH_KEYWORD : "鎹曢奔") || "鎹曢奔";
-        console.log("鎼滅储鍏抽敭璇嶏細" + this.searchkeyword);
-      }
+  } else {
+    console['\u006C\u006F\u0067'](`账号[${accountConfig['\u0069\u006E\u0064\u0065\u0078']}]${accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 未配置代理，走直连`);
+  }
+  console['\u006C\u006F\u0067'](`账号[${accountConfig['\u0069\u006E\u0064\u0065\u0078']}]${accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 🔍 获取账号信息中...`);
+  let _0xeg_0x9d7 = await getAccountBasicInfo(accountConfig['\u0063\u006F\u006F\u006B\u0069\u0065'], accountConfig['\u0070\u0072\u006F\u0078\u0079\u0055\u0072\u006C'], accountConfig['\u0069\u006E\u0064\u0065\u0078']);
+  var _0xf8def = 14;
+  let _0x7ga2e = _0xeg_0x9d7?.nickname || "\u8D26\u53F7" + accountConfig['\u0069\u006E\u0064\u0065\u0078'];
+  _0xf8def = 8;
+  if (_0xeg_0x9d7) {
+    var _0xc513a;
+    const _0xe331ae = _0xeg_0x9d7['\u0074\u006F\u0074\u0061\u006C\u0043\u006F\u0069\u006E'] != null ? _0xeg_0x9d7['\u0074\u006F\u0074\u0061\u006C\u0043\u006F\u0069\u006E'] : "\u672A\u77E5";
+    _0xc513a = "eifgge".split("").reverse().join("");
+    const _0xebdf = _0xeg_0x9d7['\u0061\u006C\u006C\u0043\u0061\u0073\u0068'] != null ? _0xeg_0x9d7['\u0061\u006C\u006C\u0043\u0061\u0073\u0068'] : "\u672A\u77E5";
+    console['\u006C\u006F\u0067'](`账号[${_0x7ga2e}] ✅ 登录成功，💰 当前金币: ${_0xe331ae}，💸 当前余额: ${_0xebdf}`);
+  } else {
+    console['\u006C\u006F\u0067'](`账号[${_0x7ga2e}] ❌ 基本信息获取失败，继续执行`);
+  }
+  const _0x1aa88g = new KuaishouAdTask({
+    ...accountConfig,
+    "nickname": _0x7ga2e,
+    '\u0074\u0061\u0073\u006B\u0073\u0054\u006F\u0045\u0078\u0065\u0063\u0075\u0074\u0065': tasksToExecute
+  });
+  await _0x1aa88g['\u0063\u0068\u0065\u0063\u006B\u0043\u006F\u0069\u006E\u004C\u0069\u006D\u0069\u0074']();
+  if (_0x1aa88g['\u0063\u006F\u0069\u006E\u0045\u0078\u0063\u0065\u0065\u0064\u0065\u0064']) {
+    console['\u006C\u006F\u0067'](`账号[${_0x1aa88g['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 初始金币已超过阈值，不执行任务`);
+    var _0xaa_0x427 = 2;
+    const finalAccountInfo = await getAccountBasicInfo(accountConfig['\u0063\u006F\u006F\u006B\u0069\u0065'], accountConfig['\u0070\u0072\u006F\u0078\u0079\u0055\u0072\u006C'], accountConfig['\u0069\u006E\u0064\u0065\u0078']);
+    _0xaa_0x427 = 0;
+    var _0xf66bbb;
+    const initialCoin = _0xeg_0x9d7?.totalCoin || 0;
+    _0xf66bbb = 15;
+    const finalCoin = finalAccountInfo?.totalCoin || 0;
+    var _0x2_0x8d9;
+    const coinChange = finalCoin - initialCoin;
+    _0x2_0x8d9 = 7;
+    var _0x9224g;
+    const initialCash = _0xeg_0x9d7?.allCash || 0;
+    _0x9224g = 11;
+    const finalCash = finalAccountInfo?.allCash || 0;
+    var _0xa_0xab0;
+    const cashChange = finalCash - initialCash;
+    _0xa_0xab0 = 0;
+    return {
+      '\u0069\u006E\u0064\u0065\u0078': accountConfig['\u0069\u006E\u0064\u0065\u0078'],
+      '\u0072\u0065\u006D\u0061\u0072\u006B': accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] || "\u65E0\u5907\u6CE8",
+      '\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065': _0x7ga2e,
+      '\u0069\u006E\u0069\u0074\u0069\u0061\u006C\u0043\u006F\u0069\u006E': initialCoin,
+      '\u0066\u0069\u006E\u0061\u006C\u0043\u006F\u0069\u006E': finalCoin,
+      '\u0063\u006F\u0069\u006E\u0043\u0068\u0061\u006E\u0067\u0065': coinChange,
+      '\u0069\u006E\u0069\u0074\u0069\u0061\u006C\u0043\u0061\u0073\u0068': initialCash,
+      '\u0066\u0069\u006E\u0061\u006C\u0043\u0061\u0073\u0068': finalCash,
+      "cashChange": cashChange,
+      "stats": _0x1aa88g['\u0067\u0065\u0074\u0054\u0061\u0073\u006B\u0053\u0074\u0061\u0074\u0073'](),
+      '\u0063\u006F\u0069\u006E\u004C\u0069\u006D\u0069\u0074\u0045\u0078\u0063\u0065\u0065\u0064\u0065\u0064': true
+    };
+  }
+  for (let _0x21472b = 0; _0x21472b < KSROUNDS; _0x21472b++) {
+    const _0x22g = Math['\u0066\u006C\u006F\u006F\u0072'](Math['\u0072\u0061\u006E\u0064\u006F\u006D']() * 8000) + 8000;
+    console['\u006C\u006F\u0067'](`账号[${_0x1aa88g['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} ⌛ 第${_0x21472b + 1}轮，先随机等待 ${Math['\u0072\u006F\u0075\u006E\u0064'](_0x22g / 1000)} 秒`);
+    console['\u006C\u006F\u0067'](`账号[${_0x1aa88g['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 🚀 开始第${_0x21472b + 1}轮任务`);
+    const _0xdge8d = await _0x1aa88g['\u0065\u0078\u0065\u0063\u0075\u0074\u0065\u0041\u006C\u006C\u0054\u0061\u0073\u006B\u0073\u0042\u0079\u0050\u0072\u0069\u006F\u0072\u0069\u0074\u0079']();
+    if (Object['\u0076\u0061\u006C\u0075\u0065\u0073'](_0xdge8d)['\u0073\u006F\u006D\u0065'](Boolean)) {
+      console['\u006C\u006F\u0067'](`账号[${_0x1aa88g['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} ✅ 第${_0x21472b + 1}轮执行完成`);
+    } else {
+      console['\u006C\u006F\u0067'](`账号[${_0x1aa88g['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} ⚠️ 第${_0x21472b + 1}轮没有成功任务`);
     }
-    isNode() {
-      {
-        return "undefined" != typeof module && !!module.exports;
-      }
-    }
-    queryStr(_0xacde7f) {
-      {
-        const _0x678dd = require("querystring");
-        return _0x678dd.stringify(_0xacde7f);
-      }
-    }
-    uuid() {
-      {
-        return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (_0x584738) {
-          {
-            var _0x2f5d01 = Math.random() * 16 | 0;
-            var _0x18d3cb = _0x584738 == "x" ? _0x2f5d01 : _0x2f5d01 & 3 | 8;
-            return _0x18d3cb.toString(16);
-          }
-        });
-      }
-    }
-    log(_0x371f15) {
-      {
-        const _0x4224f5 = new Date();
-        console.log(x_0x28c938(_0x4224f5, "MM-DD HH:mm:ss"), _0x371f15);
-      }
-    }
-    wait(_0x2c86d2) {
-      return new Promise(_0x1d1694 => {
-        return setTimeout(_0x1d1694, _0x2c86d2);
-      });
-    }
-    async done() {
-      {
-        const _0x27b9a0 = new Date().getTime();
-        const _0x450caa = (_0x27b9a0 - this.startTime) / 1000;
-        this.log(this.name + ",缁�鏉�!" + _0x450caa + "绉�");
-        if (this.isNode()) {
-          {
-            process.exit(1);
-          }
-        }
-      }
-    }
-  }(_0x5503a8);
-}
-const x_0x370ecc = new x_0x27d8b9("eva");
-async function x_0x148449() {
-  const _0x5c51a6 = {
-    url: "https://gitee.com/fxg1997/open/raw/master/ksNotice.json",
-    method: "GET"
-  };
-  const {
-    data: _0x5bbd9d
-  } = await x_0x1cf3d4.request(_0x5c51a6);
-  console.log("⚠️【鍏嶈矗澹版槑銆慭x0a------------------------------------------\n1銆佹鑴氭湰浠呯敤浜庡涔犵爺绌讹紝涓嶄繚璇佸叾鍚堟硶鎬с€�鍑嗙‘鎬с€�鏈夋晥鎬э紝璇锋牴鎹儏鍐佃嚜琛屽垽鏂紝鏈汉瀵规涓嶆壙鎷呬换浣曚繚璇佽矗浠汇€�\n2銆佺敱浜庢鑴氭湰浠呯敤浜庡涔犵爺绌讹紝鎮ㄥ繀椤诲湪涓嬭浇鍚嶾x2024 灏�鏃跺唴灏嗘墍鏈夊唴瀹逛粠鎮ㄧ殑璁＄畻鏈烘垨鎵嬫満鎴栦换浣曞瓨鍌ㄨ澶囦腑瀹屽叏鍒犻櫎锛岃嫢杩濆弽瑙勫畾寮曡捣浠讳綍浜嬩欢鏈汉瀵规鍧囦笉璐熻矗銆俓x0a3銆�璇峰嬁灏嗘鑴氭湰鐢ㄤ簬浠讳綍鍟嗕笟鎴栭潪娉曠洰鐨勶紝鑻ヨ繚鍙嶈瀹氳鑷瀵规璐熻矗銆俓x0a4銆�姝よ剼鏈秹鍙婂簲鐢ㄤ笌鏈汉鏃犲叧锛屾湰浜哄鍥犳寮曡捣鐨勪换浣曢殣绉佹硠婕忔垨鍏朵粬鍚庢灉涓嶆壙鎷呬换浣曡矗浠汇€�\n5銆佹湰浜哄浠讳綍鑴氭湰寮曞彂鐨勯棶棰樻涓嶈礋璐ｏ紝鍖呮嫭浣嗕笉闄愪簬鐢辫剼鏈敊璇紩璧风殑浠讳綍鎹熷け鍜屾崯瀹炽€�\n6銆佸鏋滀换浣曞崟浣嶆垨涓汉璁や负姝よ剼鏈彲鑳芥秹瀚屼镜鐘叾鏉冨埄锛屽簲鍙婃椂閫氱煡骞舵彁渚涜韩浠借瘉鏄庯紝鎵€鏈�鏉冭瘉鏄庯紝鎴戜滑灏嗗湪鏀跺埌璁よ瘉鏂囦欢纭鍚庡垹闄ゆ鑴氭湰銆俓x0a7銆�鎵€鏈�鐩存帴鎴栭棿鎺ヤ娇鐢ㄣ€�鏌ョ湅姝よ剼鏈殑浜哄潎搴旇浠旂粏闃呰姝ゅ０鏄庛€�鏈汉淇濈暀闅忔椂鏇存敼鎴栬ˉ鍏呮澹版槑鐨勬潈鍒┿€�涓€鏃�鎮ㄤ娇鐢ㄦ垨澶嶅埗浜嗘鑴氭湰锛屽嵆瑙嗕负鎮ㄥ凡鎺ュ彈姝ゅ厤璐ｅ０鏄庛€�\n------------------------------------------*/");
-  console.log(_0x5bbd9d);
-  console.log("鈺斺晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晽");
-  console.log("鈺慭x20                   📢 璐�鍗″湴鍧€鎻�绀篭x20鑰佺増鏈琝x20                    鈺�");
-  console.log("鈺犫晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨暎");
-  console.log("鈺慭x20                   璐�鍗″湴鍧€: 鍔�缇x20658120402                  鈺�");
-  console.log("鈺犫晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨暎");
-  console.log("鈺慭x20 ck妫€娴嬪湴鍧€: https://www.2eva.cn/cookies.html                鈺�");
-  console.log("鈺氣晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨暆");
-}
-const x_0x5970e7 = async () => {
-  let _0x35fc7b = true;
-  let _0x2a991c = x_0x370ecc.userCount;
-  for (let _0x348a97 in x_0x370ecc.failadnumobj) {
-    if (x_0x370ecc.failadnumobj[_0x348a97] < x_0x370ecc.failadnum) {
-      _0x35fc7b = false;
+    if (_0x1aa88g['\u0073\u0074\u006F\u0070\u0041\u006C\u006C\u0054\u0061\u0073\u006B\u0073']) {
+      console['\u006C\u006F\u0067'](`账号[${_0x1aa88g['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} 🏁 达到停止条件，终止后续轮次`);
       break;
     }
+    if (_0x21472b < KSROUNDS - 1) {
+      var _0xa6f;
+      const _0xbb_0x1a4 = Math['\u0066\u006C\u006F\u006F\u0072'](Math['\u0072\u0061\u006E\u0064\u006F\u006D']() * 10000) + 10000;
+      _0xa6f = 1;
+      console['\u006C\u006F\u0067'](`账号[${_0x1aa88g['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065']}]${accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} ⌛ 等待 ${Math['\u0072\u006F\u0075\u006E\u0064'](_0xbb_0x1a4 / 1000)} 秒进入下一轮`);
+      await new Promise(resolve => setTimeout(resolve, _0xbb_0x1a4));
+    }
   }
-  if (Object.keys(x_0x370ecc.failadnumobj).length < _0x2a991c) {
-    _0x35fc7b = false;
-  }
-  if (_0x35fc7b) {
-    x_0x370ecc.log("鎵€鏈�璐﹀彿杩炵画浣庝环鍊煎箍鍛婅秴杩�" + x_0x370ecc.failadnum + "娆★紝鍋滄杩愯");
-    x_0x370ecc.done();
+  const finalAccountInfo = await getAccountBasicInfo(accountConfig['\u0063\u006F\u006F\u006B\u0069\u0065'], accountConfig['\u0070\u0072\u006F\u0078\u0079\u0055\u0072\u006C'], accountConfig['\u0069\u006E\u0064\u0065\u0078']);
+  var _0xba91b;
+  const initialCoin = _0xeg_0x9d7?.totalCoin || 0;
+  _0xba91b = 7;
+  const finalCoin = finalAccountInfo?.totalCoin || 0;
+  var _0x2e_0xb24 = 16;
+  const coinChange = finalCoin - initialCoin;
+  _0x2e_0xb24 = 13;
+  var _0xabf1dd = 16;
+  const initialCash = _0xeg_0x9d7?.allCash || 0;
+  _0xabf1dd = 9;
+  const finalCash = finalAccountInfo?.allCash || 0;
+  var _0x2g61a;
+  const cashChange = finalCash - initialCash;
+  _0x2g61a = 9;
+  _0x1aa88g['\u0070\u0072\u0069\u006E\u0074\u0054\u0061\u0073\u006B\u0053\u0074\u0061\u0074\u0073']();
+  return {
+    '\u0069\u006E\u0064\u0065\u0078': accountConfig['\u0069\u006E\u0064\u0065\u0078'],
+    "remark": accountConfig['\u0072\u0065\u006D\u0061\u0072\u006B'] || "\u6CE8\u5907\u65E0".split("").reverse().join(""),
+    '\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065': _0x7ga2e,
+    "initialCoin": initialCoin,
+    '\u0066\u0069\u006E\u0061\u006C\u0043\u006F\u0069\u006E': finalCoin,
+    '\u0063\u006F\u0069\u006E\u0043\u0068\u0061\u006E\u0067\u0065': coinChange,
+    '\u0069\u006E\u0069\u0074\u0069\u0061\u006C\u0043\u0061\u0073\u0068': initialCash,
+    '\u0066\u0069\u006E\u0061\u006C\u0043\u0061\u0073\u0068': finalCash,
+    '\u0063\u0061\u0073\u0068\u0043\u0068\u0061\u006E\u0067\u0065': cashChange,
+    "stats": _0x1aa88g['\u0067\u0065\u0074\u0054\u0061\u0073\u006B\u0053\u0074\u0061\u0074\u0073'](),
+    '\u0063\u006F\u0069\u006E\u004C\u0069\u006D\u0069\u0074\u0045\u0078\u0063\u0065\u0065\u0064\u0065\u0064': _0x1aa88g['\u0063\u006F\u0069\u006E\u0045\u0078\u0063\u0065\u0065\u0064\u0065\u0064']
+  };
+}
+function printAccountsSummary(accountResults, _0x587dff, _0x1ef2c, _0xf1968c, _0xdg_0x2c3, _0xcecdd) {
+  if (!accountResults['\u006C\u0065\u006E\u0067\u0074\u0068']) {
+    console['\u006C\u006F\u0067']("\u000A\u6CA1\u6709\u53EF\u663E\u793A\u7684\u8D26\u53F7\u4FE1\u606F\u3002");
     return;
   }
-  x_0x370ecc.wheelNum++;
-  x_0x370ecc.userIdx = 1;
-  if (x_0x370ecc.sort == 1) {
-    for (let _0x38c05d of x_0x370ecc.userList) {
-      {
-        await new x_0x36338c(_0x38c05d).run();
-        const _0x1b7d36 = Math.floor(Math.random() * 20 + 30);
-        await x_0x370ecc.wait(_0x1b7d36);
-      }
+  const _0x8b4ff = accountResults['\u0072\u0065\u0064\u0075\u0063\u0065']((sum, account) => {
+    return sum + (parseInt(account['\u0069\u006E\u0069\u0074\u0069\u0061\u006C\u0043\u006F\u0069\u006E']) || 0);
+  }, 0);
+  const _0xe5g = accountResults['\u0072\u0065\u0064\u0075\u0063\u0065']((sum, account) => {
+    return sum + (parseInt(account['\u0066\u0069\u006E\u0061\u006C\u0043\u006F\u0069\u006E']) || 0);
+  }, 0);
+  const _0x8_0x4fc = _0xe5g - _0x8b4ff;
+  const _0xc5c38b = accountResults['\u0072\u0065\u0064\u0075\u0063\u0065']((sum, account) => {
+    return sum + (parseFloat(account['\u0069\u006E\u0069\u0074\u0069\u0061\u006C\u0043\u0061\u0073\u0068']) || 0);
+  }, 0);
+  const _0xacafbb = accountResults['\u0072\u0065\u0064\u0075\u0063\u0065']((sum, account) => {
+    return sum + (parseFloat(account['\u0066\u0069\u006E\u0061\u006C\u0043\u0061\u0073\u0068']) || 0);
+  }, 0);
+  const _0x3561cb = _0xacafbb - _0xc5c38b;
+  var _0x75e;
+  _0x587dff = 0;
+  _0x75e = 3;
+  _0x1ef2c = 0;
+  _0xf1968c = 0;
+  accountResults['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](account => {
+    if (account['\u0073\u0074\u0061\u0074\u0073']) {
+      Object['\u0076\u0061\u006C\u0075\u0065\u0073'](account['\u0073\u0074\u0061\u0074\u0073'])['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](stat => {
+        _0x587dff += stat['\u0073\u0075\u0063\u0063\u0065\u0073\u0073'] + stat['\u0066\u0061\u0069\u006C\u0065\u0064'];
+        _0x1ef2c += stat['\u0073\u0075\u0063\u0063\u0065\u0073\u0073'];
+        _0xf1968c += stat['\u0074\u006F\u0074\u0061\u006C\u0052\u0065\u0077\u0061\u0072\u0064'];
+      });
     }
-  } else {
-    {
-      await Promise.all(x_0x370ecc.userList.map(_0x5a01f9 => new x_0x36338c(_0x5a01f9).run()));
-    }
+  });
+  const _0xf4gce = _0x587dff > 0 ? (_0x1ef2c / _0x587dff * 100)['\u0074\u006F\u0046\u0069\u0078\u0065\u0064'](1) : "\u0030\u002E\u0030";
+  const _0x77g2a = accountResults['\u0066\u0069\u006C\u0074\u0065\u0072'](account => account['\u0063\u006F\u0069\u006E\u004C\u0069\u006D\u0069\u0074\u0045\u0078\u0063\u0065\u0065\u0064\u0065\u0064'])['\u006C\u0065\u006E\u0067\u0074\u0068'];
+  console['\u006C\u006F\u0067']("\u000A\u000A" + "\u003D"['\u0072\u0065\u0070\u0065\u0061\u0074'](80));
+  console['\u006C\u006F\u0067']("\u007C" + centerAlign("\u0020\u0020\u0020\u0020\u0020\u0020\u5FEB\u624B\u517B\u53F7\u4EFB\u52A1\u6267\u884C\u7ED3\u679C\u6C47\u603B\u8868\u0020\u0020\u0020\u0020\u0020\u0020", 78) + "\u007C");
+  console['\u006C\u006F\u0067']("\u003D"['\u0072\u0065\u0070\u0065\u0061\u0074'](80));
+  console['\u006C\u006F\u0067']("\u007C" + ("\u603B\u8D26\u53F7\u6570\u003A\u0020" + accountResults['\u006C\u0065\u006E\u0067\u0074\u0068'])['\u0070\u0061\u0064\u0045\u006E\u0064'](22) + ("\u8D85\u8FC7\u91D1\u5E01\u9608\u503C\u8D26\u53F7\u003A\u0020" + _0x77g2a)['\u0070\u0061\u0064\u0045\u006E\u0064'](22) + (" :\u6570\u52A1\u4EFB\u603B".split("").reverse().join("") + _0x587dff)['\u0070\u0061\u0064\u0045\u006E\u0064'](22) + (" :\u7387\u529F\u6210\u52A1\u4EFB".split("").reverse().join("") + _0xf4gce + "\u0025")['\u0070\u0061\u0064\u0045\u006E\u0064'](10) + "\u007C");
+  console['\u006C\u006F\u0067']("\u007C" + ("\u603B\u91D1\u5E01\u53D8\u5316\u003A\u0020" + _0x8_0x4fc)['\u0070\u0061\u0064\u0045\u006E\u0064'](26) + (" :\u52B1\u5956\u5E01\u91D1\u603B".split("").reverse().join("") + _0xf1968c)['\u0070\u0061\u0064\u0045\u006E\u0064'](26) + (" :\u5316\u53D8\u989D\u4F59\u603B".split("").reverse().join("") + _0x3561cb['\u0074\u006F\u0046\u0069\u0078\u0065\u0064'](2))['\u0070\u0061\u0064\u0045\u006E\u0064'](24) + "\u007C");
+  console['\u006C\u006F\u0067']("\u002D"['\u0072\u0065\u0070\u0065\u0061\u0074'](80));
+  var _0x3_0x769 = 8;
+  const _0x7853f = ["\u5E8F\u53F7", "\u6CE8\u5907".split("").reverse().join(""), "\u8D26\u53F7\u6635\u79F0", "\u5E01\u91D1\u59CB\u521D".split("").reverse().join(""), "\u6700\u7EC8\u91D1\u5E01", "\u91D1\u5E01\u53D8\u5316", "\u521D\u59CB\u4F59\u989D", "\u6700\u7EC8\u4F59\u989D", "\u5316\u53D8\u989D\u4F59".split("").reverse().join("")];
+  _0x3_0x769 = 10;
+  var _0x6ced = 7;
+  const _0x5eaga = [6, 16, 16, 12, 12, 12, 12, 12, 12];
+  _0x6ced = "gngjop".split("").reverse().join("");
+  var _0x58891b = 4;
+  _0xdg_0x2c3 = "\u007C";
+  _0x58891b = 1;
+  _0x7853f['\u0066\u006F\u0072\u0045\u0061\u0063\u0068']((header, index) => {
+    _0xdg_0x2c3 += centerAlign(header, _0x5eaga[index]) + "\u007C";
+  });
+  console['\u006C\u006F\u0067'](_0xdg_0x2c3);
+  var _0x948d;
+  _0xcecdd = "\u007C";
+  _0x948d = 14;
+  _0x5eaga['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](width => {
+    _0xcecdd += "\u002D"['\u0072\u0065\u0070\u0065\u0061\u0074'](width) + "\u007C";
+  });
+  console['\u006C\u006F\u0067'](_0xcecdd);
+  accountResults['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](account => {
+    let _0xf3_0x688 = "\u007C";
+    _0xf3_0x688 += centerAlign(account['\u0069\u006E\u0064\u0065\u0078'], _0x5eaga[0]) + "\u007C";
+    _0xf3_0x688 += centerAlign(account['\u0072\u0065\u006D\u0061\u0072\u006B'], _0x5eaga[1]) + "\u007C";
+    var _0xda89c = 1;
+    const _0xcccb = (account['\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065'] || "\u002D") + (account['\u0063\u006F\u0069\u006E\u004C\u0069\u006D\u0069\u0074\u0045\u0078\u0063\u0065\u0065\u0064\u0065\u0064'] ? "\u0020\u26A0\uFE0F" : "");
+    _0xda89c = 1;
+    _0xf3_0x688 += centerAlign(_0xcccb['\u0073\u0075\u0062\u0073\u0074\u0072\u0069\u006E\u0067'](0, _0x5eaga[2] - 2), _0x5eaga[2]) + "\u007C";
+    _0xf3_0x688 += centerAlign(account['\u0069\u006E\u0069\u0074\u0069\u0061\u006C\u0043\u006F\u0069\u006E'], _0x5eaga[3]) + "\u007C";
+    _0xf3_0x688 += centerAlign(account['\u0066\u0069\u006E\u0061\u006C\u0043\u006F\u0069\u006E'], _0x5eaga[4]) + "\u007C";
+    const _0xg30f = account['\u0063\u006F\u0069\u006E\u0043\u0068\u0061\u006E\u0067\u0065'] >= 0 ? "\u002B" + account['\u0063\u006F\u0069\u006E\u0043\u0068\u0061\u006E\u0067\u0065'] : account['\u0063\u006F\u0069\u006E\u0043\u0068\u0061\u006E\u0067\u0065'];
+    _0xf3_0x688 += centerAlign(_0xg30f, _0x5eaga[5]) + "\u007C";
+    _0xf3_0x688 += centerAlign(account['\u0069\u006E\u0069\u0074\u0069\u0061\u006C\u0043\u0061\u0073\u0068'], _0x5eaga[6]) + "\u007C";
+    _0xf3_0x688 += centerAlign(account['\u0066\u0069\u006E\u0061\u006C\u0043\u0061\u0073\u0068'], _0x5eaga[7]) + "\u007C";
+    var _0x1b92g = 17;
+    const _0xc91b5c = account['\u0063\u0061\u0073\u0068\u0043\u0068\u0061\u006E\u0067\u0065'] >= 0 ? "\u002B" + account['\u0063\u0061\u0073\u0068\u0043\u0068\u0061\u006E\u0067\u0065']['\u0074\u006F\u0046\u0069\u0078\u0065\u0064'](2) : account['\u0063\u0061\u0073\u0068\u0043\u0068\u0061\u006E\u0067\u0065']['\u0074\u006F\u0046\u0069\u0078\u0065\u0064'](2);
+    _0x1b92g = 6;
+    _0xf3_0x688 += centerAlign(_0xc91b5c, _0x5eaga[8]) + "\u007C";
+    console['\u006C\u006F\u0067'](_0xf3_0x688);
+  });
+  console['\u006C\u006F\u0067']("\u003D"['\u0072\u0065\u0070\u0065\u0061\u0074'](80));
+  console['\u006C\u006F\u0067']("\u007C" + centerAlign("\u0020\u0020\u0020\u0020\u0020\u0020\u4EFB\u52A1\u6267\u884C\u5B8C\u6210\uFF0C\u8BF7\u67E5\u770B\u8BE6\u7EC6\u7ED3\u679C\u0020\u0020\u0020\u0020\u0020\u0020", 78) + "\u007C");
+  console['\u006C\u006F\u0067']("\u003D"['\u0072\u0065\u0070\u0065\u0061\u0074'](80));
+}
+(async () => {
+  const accounts = loadAccountsFromEnv();
+  console['\u006C\u006F\u0067'](`共找到 ${accounts['\u006C\u0065\u006E\u0067\u0074\u0068']} 个有效账号`);
+  if (!accounts['\u006C\u0065\u006E\u0067\u0074\u0068']) {
+    process['\u0065\u0078\u0069\u0074'](1);
   }
-  if (x_0x370ecc.wheelNum < x_0x370ecc.count) {
-    const _0x37e9dd = Math.floor(Math.random() * x_0x370ecc.time1 + x_0x370ecc.time);
-    x_0x370ecc.log("绗�" + x_0x370ecc.wheelNum + "娆′换鍔″畬鎴怽x20绛夊緟" + _0x37e9dd + "绉掑悗缁х画鎵ц");
-    await x_0x370ecc.wait(_0x37e9dd * 1000);
-    await x_0x5970e7();
-  } else {
-    {
-      x_0x370ecc.log("鎵€鏈�浠诲姟瀹屾垚");
-      x_0x370ecc.done();
+  var _0x24181a = 10;
+  const maxConcurrency = getEnvNumber("YCNERRUCNOC_XAM".split("").reverse().join(""), 888);
+  _0x24181a = 14;
+  console['\u006C\u006F\u0067'](`\n防黑并发：${maxConcurrency}    防黑轮数：${KSROUNDS}\n`);
+  const results = [];
+  await concurrentExecute(accounts, maxConcurrency, async account => {
+    console['\u006C\u006F\u0067'](`\n—— 🚀 开始账号[${account['\u0069\u006E\u0064\u0065\u0078']}]${account['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + account['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} ——`);
+    try {
+      var _0x233a8d = 11;
+      const result = await processAccount(account);
+      _0x233a8d = 6;
+      results['\u0070\u0075\u0073\u0068']({
+        '\u0069\u006E\u0064\u0065\u0078': account['\u0069\u006E\u0064\u0065\u0078'],
+        "remark": account['\u0072\u0065\u006D\u0061\u0072\u006B'] || "\u65E0\u5907\u6CE8",
+        '\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065': result?.nickname || `账号${account['\u0069\u006E\u0064\u0065\u0078']}`,
+        "initialCoin": result?.initialCoin || 0,
+        "finalCoin": result?.finalCoin || 0,
+        '\u0063\u006F\u0069\u006E\u0043\u0068\u0061\u006E\u0067\u0065': result?.coinChange || 0,
+        "initialCash": result?.initialCash || 0,
+        "finalCash": result?.finalCash || 0,
+        "cashChange": result?.cashChange || 0,
+        '\u0073\u0074\u0061\u0074\u0073': result?.stats || {},
+        '\u0063\u006F\u0069\u006E\u004C\u0069\u006D\u0069\u0074\u0045\u0078\u0063\u0065\u0065\u0064\u0065\u0064': result?.coinLimitExceeded || false
+      });
+    } catch (error) {
+      console['\u006C\u006F\u0067'](`账号[${account['\u0069\u006E\u0064\u0065\u0078']}]${account['\u0072\u0065\u006D\u0061\u0072\u006B'] ? "\uFF08" + account['\u0072\u0065\u006D\u0061\u0072\u006B'] + "\uFF09" : ""} ❌ 执行异常：${error['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']}`);
+      results['\u0070\u0075\u0073\u0068']({
+        "index": account['\u0069\u006E\u0064\u0065\u0078'],
+        '\u0072\u0065\u006D\u0061\u0072\u006B': account['\u0072\u0065\u006D\u0061\u0072\u006B'] || "\u6CE8\u5907\u65E0".split("").reverse().join(""),
+        '\u006E\u0069\u0063\u006B\u006E\u0061\u006D\u0065': `账号${account['\u0069\u006E\u0064\u0065\u0078']}`,
+        "initialCoin": 0,
+        '\u0066\u0069\u006E\u0061\u006C\u0043\u006F\u0069\u006E': 0,
+        '\u0063\u006F\u0069\u006E\u0043\u0068\u0061\u006E\u0067\u0065': 0,
+        "initialCash": 0,
+        '\u0066\u0069\u006E\u0061\u006C\u0043\u0061\u0073\u0068': 0,
+        '\u0063\u0061\u0073\u0068\u0043\u0068\u0061\u006E\u0067\u0065': 0,
+        '\u0065\u0072\u0072\u006F\u0072': error['\u006D\u0065\u0073\u0073\u0061\u0067\u0065']
+      });
     }
-  }
-};
-!(async () => {
-  await x_0x148449();
-  x_0x370ecc.checkEnv();
-  await x_0x5970e7();
-})().catch(_0x565306 => {
-  return x_0x370ecc.log(_0x565306);
-}).finally(() => {
-  return x_0x370ecc.done();
-});
+  });
+  results['\u0073\u006F\u0072\u0074']((a, b) => a['\u0069\u006E\u0064\u0065\u0078'] - b['\u0069\u006E\u0064\u0065\u0078']);
+  console['\u006C\u006F\u0067']("\u3002\u6210\u5B8C\u90E8\u5168\n".split("").reverse().join(""), "\u2705");
+  console['\u006C\u006F\u0067']("\u000A\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u0020\u8D26\u53F7\u4FE1\u606F\u6C47\u603B\u0020\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D\u002D");
+  printAccountsSummary(results);
+})();
