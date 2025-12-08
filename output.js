@@ -1,1347 +1,1840 @@
-//Wed Dec 03 2025 07:18:36 GMT+0000 (Coordinated Universal Time)
+//Mon Dec 08 2025 00:38:56 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-"use strict";
-
-const _FrjyjH = [0, 1, 4290772992, 1597334677, 2246822507, 13, 3266489909, 16, 8, 2654435761, 2, null, "length", "c", "e", 5, "f", void 0, !1, !0, "d", "j", 4, 3, "pow", 32, "jr6FS3", "l", "i", "fromCh", "arCode", 20, "h", "indexO", "g", "a", "k", "slice", "b", "define", "Proper", "ty", "value", "concat", "HzqU0U", 512, "012345", 15, 6, 63, 10, 1023, 2047, 31, 128, 2097151, 18, 7, 12, 255, 24, 22, 11, 17, 28, 39, 19, 64, 65535, "o", "n", "apply", "push", "../red", "acted.", "js", "ball", "ZOGyx4", "type", "arg", "toStri", "config", "urable", "protot", "ype", "RWbc4D", "R2aYLH", "PrtH", "OYaQB8", "eqjv", "mMkoEe", "z8a8", "create", "throw", "method", "return", "normal", "done", "suspen", "call", "next", "_invok", "t", "__awai", "resolv", "then", "iterat", "or", "delega", "te", "\u2092\u1424", "reveal", "Veil", "comple", "tion", "tryEnt", "ries", "attemp", "tVeil", "forEac", "functi", "on", "constr", "uctor", "Genera", "torFun", "ction", "displa", "yName", "name", "totype", "Of", "setPro", "terato", "r", "isGene", "ratorF", "unctio", "tor", "ng", "reset", "sent", "_sent", "dispat", "chExce", "ption", "z", "root", "prev", "captur", "eVeil", "\uA668\uA668", "abrupt", "=", ";", " ", "break", "contin", "ue", "rval", "end", "result", "Name", "nextVe", "il"];
-function CXOtql() {}
-function vaomrtM(CXOtql, vaomrtM, rKBbGH) {
-  switch (CXOtql) {
-    case _FrjyjH[26]:
-      return vaomrtM / rKBbGH;
-    case _FrjyjH[44] + _FrjyjH[13]:
-      return vaomrtM + rKBbGH;
-  }
-}
-function rKBbGH() {}
-function zfh7DV(vaomrtM, rKBbGH = _FrjyjH[1]) {
-  Object[_FrjyjH[39] + _FrjyjH[40] + _FrjyjH[41]](vaomrtM, _FrjyjH[12], {
-    [_FrjyjH[42]]: rKBbGH,
-    [_FrjyjH[81] + _FrjyjH[82]]: _FrjyjH[18]
-  });
-  return !("SWmRLq" in CXOtql) ? vaomrtM : "2Os8mQ";
-}
-function XGolUD(vaomrtM, zfh7DV) {
-  if (!("JMjT5R3" in CXOtql) && "FaHk96" in rKBbGH) {
-    XGolUD();
-  }
-  function XGolUD() {
-    var vaomrtM = function (vaomrtM, XGolUD) {
-        var vaQv87 = [],
-          CXOtql = vaomrtM.length;
-        nZdYbC(vaomrtM.sort((vaomrtM, XGolUD) => vaomrtM - XGolUD), zfh7DV(vaQv87, [], _FrjyjH[0], CXOtql, vaomrtM, XGolUD));
-        return vaQv87;
-      },
-      zfh7DV = function (vaomrtM, XGolUD, vaQv87, CXOtql, rKBbGH, yYoOojT) {
-        var LOQiiyK = _FrjyjH[11];
-        if (yYoOojT < _FrjyjH[0]) return;
-        if (yYoOojT === _FrjyjH[0]) return vaomrtM.push(XGolUD);
-        for (var YdscQPl = vaQv87; YdscQPl < CXOtql; YdscQPl++) {
-          if (rKBbGH[YdscQPl] > yYoOojT) break;
-          if (YdscQPl > vaQv87 && rKBbGH[YdscQPl] === rKBbGH[YdscQPl - _FrjyjH[1]]) continue;
-          nZdYbC(LOQiiyK = Array.from(XGolUD), LOQiiyK.push(rKBbGH[YdscQPl]), zfh7DV(vaomrtM, LOQiiyK, YdscQPl + _FrjyjH[1], CXOtql, rKBbGH, yYoOojT - rKBbGH[YdscQPl]));
+var _0xodQ = "jsjiami.com.v7";
+(function (_0x84d951, _0x1aa31e, _0x5dc3f6, _0x1682a3, _0x2d4422, _0x56ded2, _0x1a8a92) {
+  _0x84d951 = _0x84d951 >> 9;
+  _0x56ded2 = "hs";
+  _0x1a8a92 = "hs";
+  return function (_0x2446ec, _0x42b370, _0x38b4ef, _0x49d7c3, _0x5d41ab) {
+    const _0x1dd462 = _0x28c6;
+    _0x49d7c3 = "tfi";
+    _0x56ded2 = _0x49d7c3 + _0x56ded2;
+    _0x5d41ab = "up";
+    _0x1a8a92 += _0x5d41ab;
+    _0x56ded2 = _0x38b4ef(_0x56ded2);
+    _0x1a8a92 = _0x38b4ef(_0x1a8a92);
+    _0x38b4ef = 0;
+    const _0xfbd8bd = _0x2446ec();
+    while (true && --_0x1682a3 + _0x42b370) {
+      try {
+        _0x49d7c3 = parseInt(_0x1dd462(323, "a1o7")) / 1 * (-parseInt(_0x1dd462(528, "1Edn")) / 2) + -parseInt(_0x1dd462(439, "MOJV")) / 3 + -parseInt(_0x1dd462(370, "W&MU")) / 4 + parseInt(_0x1dd462(464, "rsxD")) / 5 + parseInt(_0x1dd462(427, "0&YM")) / 6 + -parseInt(_0x1dd462(362, "1Edn")) / 7 * (-parseInt(_0x1dd462(337, "QcAt")) / 8) + parseInt(_0x1dd462(324, "3plx")) / 9;
+      } catch (_0x5190fb) {
+        _0x49d7c3 = _0x38b4ef;
+      } finally {
+        _0x5d41ab = _0xfbd8bd[_0x56ded2]();
+        if (_0x84d951 <= _0x1682a3) {
+          _0x38b4ef ? _0x2d4422 ? _0x49d7c3 = _0x5d41ab : _0x2d4422 = _0x5d41ab : _0x38b4ef = _0x5d41ab;
+        } else {
+          if (_0x38b4ef == _0x2d4422.replace(/[ynGWtFEkTHegYMSXNQp=]/g, "")) {
+            if (_0x49d7c3 === _0x42b370) {
+              _0xfbd8bd["un" + _0x56ded2](_0x5d41ab);
+              break;
+            }
+            _0xfbd8bd[_0x1a8a92](_0x5d41ab);
+          }
         }
+      }
+    }
+  }(_0x5dc3f6, _0x1aa31e, function (_0x58e247, _0x178aa8, _0x5d9a90, _0x5e1fec, _0x1925c3, _0x7430af, _0x309208) {
+    _0x178aa8 = "split";
+    _0x58e247 = arguments[0];
+    _0x58e247 = _0x58e247[_0x178aa8]("");
+    _0x5d9a90 = "reverse";
+    _0x58e247 = _0x58e247[_0x5d9a90]("v");
+    _0x5e1fec = "join";
+    1764065;
+    return _0x58e247[_0x5e1fec]("");
+  });
+}(102400, 943807, _0x481b, 202), _0x481b) && (_0xodQ = 202);
+function _0x28c6(_0x1669c5, _0x56aeca) {
+  const _0x481b6c = _0x481b();
+  _0x28c6 = function (_0x28c677, _0x5c50cf) {
+    _0x28c677 = _0x28c677 - 304;
+    let _0x5ce02c = _0x481b6c[_0x28c677];
+    if (_0x28c6.UELKXZ === undefined) {
+      var _0x32d559 = function (_0x24f3af) {
+        const _0x232ce2 = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=";
+        let _0xcaad05 = "",
+          _0x38475d = "";
+        for (let _0x7a6db = 0, _0x2b00e4, _0xc878bc, _0x12b7f9 = 0; _0xc878bc = _0x24f3af.charAt(_0x12b7f9++); ~_0xc878bc && (_0x2b00e4 = _0x7a6db % 4 ? _0x2b00e4 * 64 + _0xc878bc : _0xc878bc, _0x7a6db++ % 4) ? _0xcaad05 += String.fromCharCode(255 & _0x2b00e4 >> (-2 * _0x7a6db & 6)) : 0) {
+          _0xc878bc = _0x232ce2.indexOf(_0xc878bc);
+        }
+        for (let _0x3f272c = 0, _0x4ab180 = _0xcaad05.length; _0x3f272c < _0x4ab180; _0x3f272c++) {
+          _0x38475d += "%" + ("00" + _0xcaad05.charCodeAt(_0x3f272c).toString(16)).slice(-2);
+        }
+        return decodeURIComponent(_0x38475d);
       };
-    console.log(vaomrtM);
-  }
-  zfh7DV |= _FrjyjH[0];
-  var vaQv87 = (vaomrtM & 4194303) * zfh7DV;
-  if (!("wfrBf5s" in CXOtql) && vaomrtM & _FrjyjH[2]) vaQv87 += (vaomrtM & _FrjyjH[2]) * zfh7DV | _FrjyjH[0];
-  return !("eVHKbD" in CXOtql) ? vaQv87 | _FrjyjH[0] : "c67DRS";
-}
-var vaQv87 = Math.imul || XGolUD;
-function yYoOojT(vaomrtM, rKBbGH, zfh7DV) {
-  zfh7DV = zfh7DV || _FrjyjH[23];
-  var XGolUD = 457203672428,
-    yYoOojT = 1937139049,
-    LOQiiyK = 1785951845,
-    l7zoMMv = vaomrtM.length * _FrjyjH[53] + (vaomrtM.charCodeAt(_FrjyjH[0]) || _FrjyjH[0]) * _FrjyjH[63];
-  rKBbGH = rKBbGH ^ l7zoMMv ^ XGolUD;
-  var RDM6lw = XGolUD ^ rKBbGH,
-    vUU7_bh = 1103547991 ^ rKBbGH,
-    NMD8smg = yYoOojT ^ rKBbGH,
-    VOxnCT = LOQiiyK ^ rKBbGH;
-  for (var X1qT3H = _FrjyjH[0], YECQ0VE; X1qT3H < vaomrtM.length; X1qT3H++) {
-    nZdYbC(YECQ0VE = vaomrtM.charCodeAt(X1qT3H), RDM6lw = vaQv87(RDM6lw ^ YECQ0VE, _FrjyjH[9]), vUU7_bh = vaQv87(vUU7_bh ^ YECQ0VE, _FrjyjH[3]), NMD8smg = vaQv87(NMD8smg ^ YECQ0VE, _FrjyjH[4]), VOxnCT = vaQv87(VOxnCT ^ YECQ0VE, _FrjyjH[6]));
-    if (X1qT3H % _FrjyjH[22] === _FrjyjH[0]) {
-      nZdYbC(RDM6lw ^= NMD8smg >>> _FrjyjH[57], vUU7_bh ^= VOxnCT >>> _FrjyjH[62], NMD8smg ^= RDM6lw >>> _FrjyjH[5], VOxnCT ^= vUU7_bh >>> _FrjyjH[15]);
-    }
-    if (X1qT3H % _FrjyjH[10] === _FrjyjH[1]) {
-      var _pIbv2 = vaQv87(XGolUD ^ X1qT3H, _FrjyjH[3]);
-      nZdYbC(RDM6lw ^= _pIbv2, vUU7_bh ^= _pIbv2 >>> _FrjyjH[8]);
-    }
-  }
-  for (var xtmnhDk = _FrjyjH[0]; xtmnhDk < zfh7DV; xtmnhDk++) {
-    nZdYbC(RDM6lw = vaQv87(RDM6lw ^ RDM6lw >>> _FrjyjH[7], _FrjyjH[4]) ^ vaQv87(vUU7_bh ^ vUU7_bh >>> _FrjyjH[5], _FrjyjH[6]), vUU7_bh = vaQv87(vUU7_bh ^ vUU7_bh >>> _FrjyjH[7], _FrjyjH[4]) ^ vaQv87(NMD8smg ^ NMD8smg >>> _FrjyjH[5], _FrjyjH[6]), NMD8smg = vaQv87(NMD8smg ^ NMD8smg >>> _FrjyjH[7], _FrjyjH[4]) ^ vaQv87(VOxnCT ^ VOxnCT >>> _FrjyjH[5], _FrjyjH[6]), VOxnCT = vaQv87(VOxnCT ^ VOxnCT >>> _FrjyjH[7], _FrjyjH[4]) ^ vaQv87(RDM6lw ^ RDM6lw >>> _FrjyjH[5], _FrjyjH[6]));
-    var L_hYG1 = vaQv87(XGolUD ^ xtmnhDk, _FrjyjH[3]);
-    nZdYbC(RDM6lw ^= L_hYG1, vUU7_bh ^= L_hYG1 >>> _FrjyjH[8], NMD8smg ^= L_hYG1 >>> _FrjyjH[7], VOxnCT ^= L_hYG1 >>> _FrjyjH[60]);
-  }
-  var X587TsW = vaQv87(RDM6lw ^ NMD8smg, _FrjyjH[9]),
-    hIz62bK = vaQv87(vUU7_bh ^ VOxnCT, _FrjyjH[3]),
-    tj8eE4 = vaQv87(XGolUD ^ X587TsW, _FrjyjH[6]);
-  return !("PWcZBR" in CXOtql) ? 4294967296 * (_FrjyjH[55] & hIz62bK) + ((X587TsW ^ tj8eE4) >>> _FrjyjH[0]) : "4UY71g";
-}
-function LOQiiyK(CXOtql, vaomrtM, zfh7DV = new RegExp(" |\\n|;|,|\\{|\\}|\\(|\\)|\\.|\\[|\\]", _FrjyjH[34]), XGolUD) {
-  var LOQiiyK = CXOtql[_FrjyjH[80] + _FrjyjH[139]]()["replac" + _FrjyjH[14]](zfh7DV, ""),
-    evXxJf = "veil1",
-    GhB9Os = vaomrtM;
-  for (var z0ANW0 = _FrjyjH[0]; z0ANW0 < (XGolUD || _FrjyjH[10]); z0ANW0++) {
-    if ("m1l6CT" in rKBbGH) {
-      DMdPZAw();
-    }
-    function DMdPZAw() {
-      var CXOtql = function (CXOtql) {
-        nZdYbC(this.capacity = CXOtql, this.length = _FrjyjH[0], this.map = {}, this.head = _FrjyjH[11], this.tail = _FrjyjH[11]);
+      const _0x184e75 = function (_0x414305, _0xbf78d0) {
+        let _0x3d2417 = [],
+          _0x3944a1 = 0,
+          _0x152ec7,
+          _0xc2ee31 = "";
+        _0x414305 = _0x32d559(_0x414305);
+        let _0x1ceb05;
+        for (_0x1ceb05 = 0; _0x1ceb05 < 256; _0x1ceb05++) {
+          _0x3d2417[_0x1ceb05] = _0x1ceb05;
+        }
+        for (_0x1ceb05 = 0; _0x1ceb05 < 256; _0x1ceb05++) {
+          _0x3944a1 = (_0x3944a1 + _0x3d2417[_0x1ceb05] + _0xbf78d0.charCodeAt(_0x1ceb05 % _0xbf78d0.length)) % 256;
+          _0x152ec7 = _0x3d2417[_0x1ceb05];
+          _0x3d2417[_0x1ceb05] = _0x3d2417[_0x3944a1];
+          _0x3d2417[_0x3944a1] = _0x152ec7;
+        }
+        _0x1ceb05 = 0;
+        _0x3944a1 = 0;
+        for (let _0x595cb8 = 0; _0x595cb8 < _0x414305.length; _0x595cb8++) {
+          _0x1ceb05 = (_0x1ceb05 + 1) % 256;
+          _0x3944a1 = (_0x3944a1 + _0x3d2417[_0x1ceb05]) % 256;
+          _0x152ec7 = _0x3d2417[_0x1ceb05];
+          _0x3d2417[_0x1ceb05] = _0x3d2417[_0x3944a1];
+          _0x3d2417[_0x3944a1] = _0x152ec7;
+          _0xc2ee31 += String.fromCharCode(_0x414305.charCodeAt(_0x595cb8) ^ _0x3d2417[(_0x3d2417[_0x1ceb05] + _0x3d2417[_0x3944a1]) % 256]);
+        }
+        return _0xc2ee31;
       };
-      nZdYbC(CXOtql.prototype.get = function (CXOtql) {
-        var vaomrtM = this.map[CXOtql];
-        return vaomrtM ? (this.remove(vaomrtM), this.insert(vaomrtM.key, vaomrtM.val), vaomrtM.val) : -_FrjyjH[1];
-      }, CXOtql.prototype.put = function (CXOtql, vaomrtM) {
-        this.map[CXOtql] ? (this.remove(this.map[CXOtql]), this.insert(CXOtql, vaomrtM)) : this.length === this.capacity ? (this.remove(this.head), this.insert(CXOtql, vaomrtM)) : (this.insert(CXOtql, vaomrtM), this.length++);
-      }, CXOtql.prototype.remove = function (CXOtql) {
-        var vaomrtM = CXOtql.prev,
-          zfh7DV = CXOtql.next;
-        if (zfh7DV) zfh7DV.prev = vaomrtM;
-        if (vaomrtM) vaomrtM.next = zfh7DV;
-        if (this.head === CXOtql) this.head = zfh7DV;
-        if (this.tail === CXOtql) this.tail = vaomrtM;
-        delete this.map[CXOtql.key];
-      }, CXOtql.prototype.insert = function (CXOtql, vaomrtM) {
-        var zfh7DV = new List(CXOtql, vaomrtM);
-        nZdYbC(!this.tail ? (this.tail = zfh7DV, this.head = zfh7DV) : (this.tail.next = zfh7DV, zfh7DV.prev = this.tail, this.tail = zfh7DV), this.map[CXOtql] = zfh7DV);
-      }, console.log(CXOtql));
+      _0x28c6.NJMqqM = _0x184e75;
+      _0x1669c5 = arguments;
+      _0x28c6.UELKXZ = true;
     }
-    GhB9Os ^= vaQv87(LOQiiyK.length + z0ANW0, _FrjyjH[9]);
-  }
-  return yYoOojT(LOQiiyK + evXxJf, GhB9Os, XGolUD);
-}
-function nZdYbC() {
-  nZdYbC = function () {};
+    const _0x259b62 = _0x481b6c[0],
+      _0x4b08cf = _0x28c677 + _0x259b62,
+      _0x22b8e9 = _0x1669c5[_0x4b08cf];
+    !_0x22b8e9 ? (_0x28c6.VkPlpp === undefined && (_0x28c6.VkPlpp = true), _0x5ce02c = _0x28c6.NJMqqM(_0x5ce02c, _0x5c50cf), _0x1669c5[_0x4b08cf] = _0x5ce02c) : _0x5ce02c = _0x22b8e9;
+    return _0x5ce02c;
+  };
+  return _0x28c6(_0x1669c5, _0x56aeca);
 }
 (function () {
-  var CXOtql = function (hvx6dTJ, lAhsEPG, WoGtSep) {
-      for (var PeVNp87 = lAhsEPG[_FrjyjH[12]], J4NWyB = PeVNp87 - WoGtSep, Pvqtdk = [], wxQseDW = _FrjyjH[0]; wxQseDW < hvx6dTJ[_FrjyjH[12]];) {
-        var s0T7UZ = _FrjyjH[0],
-          M_zKM0 = _FrjyjH[1],
-          VmUYhMZ;
-        for (;;) {
-          VmUYhMZ = lAhsEPG[_FrjyjH[33] + _FrjyjH[16]](hvx6dTJ[wxQseDW++]);
-          if (s0T7UZ += M_zKM0 * (VmUYhMZ % WoGtSep), VmUYhMZ < WoGtSep) {
-            Pvqtdk[_FrjyjH[72]](s0T7UZ | _FrjyjH[0]);
-            break;
-          }
-          nZdYbC(s0T7UZ += WoGtSep * M_zKM0, M_zKM0 *= J4NWyB);
-        }
+  'use strict';
+
+  const _0x38cdb4 = _0x28c6,
+    _0x35e983 = {
+      yKhNp: function (_0x3f5468, _0x122cd5) {
+        return _0x3f5468(_0x122cd5);
+      },
+      CXsMY: _0x38cdb4(322, "!a3D"),
+      dHtEp: function (_0x3a3573, _0x39cfd5) {
+        return _0x3a3573 !== _0x39cfd5;
+      },
+      OqaVp: _0x38cdb4(593, "FLxX"),
+      HAJUO: _0x38cdb4(334, "$wVr"),
+      YopRM: _0x38cdb4(525, "myJ0"),
+      rWmxe: _0x38cdb4(314, "iURu"),
+      uYXMG: _0x38cdb4(527, "EbDk"),
+      GaFQJ: _0x38cdb4(513, "iURu"),
+      eovfC: function (_0x5af167, _0x3c6dd9, _0x324974) {
+        return _0x5af167(_0x3c6dd9, _0x324974);
+      },
+      tJhpO: _0x38cdb4(341, "f#ew"),
+      Pfavx: _0x38cdb4(413, "f6Na"),
+      wLkJU: _0x38cdb4(491, "5(f4"),
+      HesYt: function (_0x33dbe0, _0x1293cc) {
+        return _0x33dbe0 !== _0x1293cc;
+      },
+      DRceQ: _0x38cdb4(382, "!a3D"),
+      jQzpT: _0x38cdb4(315, "^X[A"),
+      FvGlk: _0x38cdb4(367, "[do#"),
+      xUzGD: _0x38cdb4(416, "myJ0"),
+      GoKXj: function (_0x1c3cf5, _0x4fe72c) {
+        return _0x1c3cf5 === _0x4fe72c;
+      },
+      qGuEM: _0x38cdb4(631, "NUlB"),
+      CLYJb: function (_0x269125, _0xb05bd7) {
+        return _0x269125 ^ _0xb05bd7;
+      },
+      ujbdU: function (_0x4bcbf8, _0x5a1fc7) {
+        return _0x4bcbf8 ^ _0x5a1fc7;
+      },
+      WnfZy: _0x38cdb4(356, "5(f4"),
+      ANvmV: _0x38cdb4(340, "MOJV"),
+      LIptw: _0x38cdb4(429, "myJ0"),
+      RhUtm: function (_0x56157b, _0x5329cf) {
+        return _0x56157b !== _0x5329cf;
+      },
+      VnarN: _0x38cdb4(503, "^l^B"),
+      esZHh: _0x38cdb4(529, "]J@g"),
+      fdfpP: _0x38cdb4(364, "%JJ#"),
+      Ktkmr: _0x38cdb4(628, "xiIB"),
+      RDsrF: _0x38cdb4(445, "P^b*"),
+      KFPUl: function (_0x211712, _0x5658d3, _0xae6ee0) {
+        return _0x211712(_0x5658d3, _0xae6ee0);
+      },
+      qAItt: _0x38cdb4(552, "rjJS"),
+      xzIPn: function (_0x5e28d3, _0x5292b9) {
+        return _0x5e28d3(_0x5292b9);
+      },
+      SfgJc: _0x38cdb4(623, "%C^Z"),
+      AdqtI: _0x38cdb4(351, "CkRL"),
+      axNpI: function (_0x381040, _0x29c583) {
+        return _0x381040 !== _0x29c583;
+      },
+      HLctu: _0x38cdb4(477, "r3Af"),
+      thPwb: _0x38cdb4(332, "FLxX"),
+      apWaN: _0x38cdb4(336, "^l^B"),
+      jmKas: _0x38cdb4(428, "[do#"),
+      eKaAs: _0x38cdb4(518, "y7h2"),
+      VWBSH: _0x38cdb4(559, "rjJS"),
+      YaemW: _0x38cdb4(327, "7Lom"),
+      fHeHJ: function (_0x29bf6a, _0x53aece) {
+        return _0x29bf6a === _0x53aece;
+      },
+      WHOPu: _0x38cdb4(486, "Rv!S"),
+      WHiir: _0x38cdb4(488, "NUlB"),
+      kCSfA: _0x38cdb4(548, "@P0M"),
+      UroLY: _0x38cdb4(380, "myJ0"),
+      jHWco: _0x38cdb4(479, "rsxD"),
+      MeOSt: _0x38cdb4(611, ")[Hi"),
+      XXnik: function (_0x219512, _0x1cb81d) {
+        return _0x219512(_0x1cb81d);
+      },
+      MmIFh: _0x38cdb4(306, "POnp"),
+      NgEEJ: _0x38cdb4(378, "lzi#"),
+      EzzfI: function (_0x14c5db) {
+        return _0x14c5db();
+      },
+      VsjIA: _0x38cdb4(400, "Kv63"),
+      DXmGu: _0x38cdb4(456, "MOJV"),
+      vihUJ: _0x38cdb4(441, "jcE2"),
+      nGunG: _0x38cdb4(338, "iURu"),
+      pjzqI: _0x38cdb4(376, "WDis"),
+      UMrEg: _0x38cdb4(424, "B[tJ"),
+      vKaME: _0x38cdb4(579, "^X[A"),
+      VwSRc: _0x38cdb4(320, "WDis"),
+      axzKa: _0x38cdb4(447, "%JJ#"),
+      MuiYa: _0x38cdb4(395, ")[Hi"),
+      ZeHEd: _0x38cdb4(466, "POnp"),
+      YTmEu: _0x38cdb4(592, "]J@g"),
+      MobOJ: function (_0x5a375f) {
+        return _0x5a375f();
       }
-      return Pvqtdk;
-    },
-    XGolUD = "SUu\u0402fSHJXyyJXAfCAFCALCAMCAcCAt5AT5A75Ax5Aw5A65AN5Ak5Ae5Al5AP5A8~AJ~AZ~A\u0402~Aa~Az~An~Af~AF~AL~AM~Ac~AtgATgA7gAxgAwgA6gANgAkgAegAlgAPgA8dAJdAZdA\u0402dAadAzdAndAfdAFdALdAMdAcdAt=AT=A7=Ax=Aw=A6=dJLjyuSSJXyfCJXdJNv^uSSJXyFCJXdzlW3uSSJXyLCJXdt7KyuSSJXyMCJXdflhyuSSJXycCJXdaM2<uSSJXyt5JXSLCJX8Sk5JXdJ7|3uSS6ySFCMGnSeT7D\u0402H06yMG\u0402HJXnSuSSJX8Se5JXnSuSSJX8Sl5JXnSuSSJX8SP5JXnSuSSJX8S8~JXnSuSSJX8SJ~JXnSuSSJX8SZ~JXnSuSSJX8S\u0402~JXnSuSSJX8Sa~JXnSuSSJX8Sz~JXnSuSSJX8Sn~JXnSuSSJX8Sf~JXnSuSSJX8SF~JXdFMV^uSS6y96yJXdPlwS^uSS6y96yJXnSuSCJXSyMGKMG6yDJX6yJXNS6qJXnSuSC6ynS6yJXEfESfC\u0402HSyk<7S\u0402Hk<MGnSMGJXSk5MGnSaxS\u0402H7SMG\u0402H6y<JX6yJXNSlmJXSy6ySk5\u0402HnSThk<7S\u0402Hk<MGJS6yMG6ynS6yJXNSzbJXSyMG-y\u0402HSk5tCnS7\u0402Sz57StCz5k<6S\u0402H^k<Sk5z5nSThl~7Sz5l~tCJSMGtCk<W\u0402Hk<MGnSFS6yJS6yuZY<6ynS6yJXNSNhJXnSuq^6ynS6yJXE\u04022nSu-^MGnSMGJX8SL~JXdkPlS^uSS6y96yJXSfC6ySyMGSk5k<nSfotC7Sk<tC\u0402HJSMG\u0402HMG7S6yMGJXSk5MGnSaxS\u0402H7SMG\u0402H6y3JX6yJXNS8tSJXnSuSC6ySy\u0402HK\u0402HMGD6yMG6yNSw>6ynSuSCMGnSMG6yEnBSfCk<SytC7Sk<tC\u0402HnS\u0402H6ySk5\u0402HnSaxSk<7S\u0402Hk<MG36yMG6ynS6yJXNSPJSJXSy6yJS6yu\u0402-d6ySyMGD6yMG6ynS6yJXnSyMG~MG6yDJX6yJXNSPZSJXnSuK^6ynS6yJXEf7SnSuZ^^MGnSMGJX8SM~JXnSuSCJXUulUCMGKMG6yDJX6yJXNS6aSJXnSuSC6ynS6yJXELwSSfC\u0402HUulUCk<7S\u0402Hk<MGnSMGJXSk5MGnSaxS\u0402H7SMG\u0402H6y<JX6yJXNS7FSJXSyMGSk5k<nSxJStC7Sk<tC\u0402HJSMG\u0402HMG2\u0402HSk5z5nSJBl~7Sz5l~tCJSMGtCk<W\u0402Hk<MGnSFS6ySk5\u0402HnScVk<7S\u0402Hk<MG+6yMG6ynS6yJXNSaeSJXnSuy^6ynS6yJXEtLSnSu7^^MGnSMGJX8Sc~JXnSue7SHJXnSGMGUulUCk<8ST5k<nSk<\u0402H+MG\u0402HMGhMPSMGnS^k<wS\u0402HST5k<+\u0402Hk<\u0402HnS\u0402HMGNS88^MGnS^k<wS\u0402HnS\u0402HMGEet^ST5k<Sk5z5nSxZSl~7Sz5l~tCJSk<tCk<nSk<MGKMG6yDJX6yJXNSnZ^JXUulUC6ySk5\u0402HnSxZSk<7S\u0402Hk<MGJS6yMG6ynS6yJXNSk7^JXnSufG^6ynS6yJXEa\u0402^nSuS^MGnSMGJX8StgJXSfC6ynSGMGUulUCk<8S75k<nSk<\u0402H+MG\u0402HMGh8z^MGnS^k<wS\u0402HS75k<+\u0402Hk<\u0402HnS\u0402HMGNST6^MGnS^k<wS\u0402HnS\u0402HMGEZn^S75k<JSk<uZSUk<nSk<MG7S6yMGJXSk5MGnSTZS\u0402H7SMG\u0402H6y+JX6yJXNSMf^JXnSuX^6ynS6yJXENk^nSuq^MGnSMGJX8STgJXdZZPS^uSS6y96yJXnSuSCJXUuTz^<MGKMG6yDJX6yJXNSxl^JXnSuSC6ynS6yJXEfM^SfC\u0402HUuTz^<k<7S\u0402Hk<MGnSMGJXSk5MGnSaxS\u0402H7SMG\u0402H6y<JX6yJXNSztXJXnSG6yUuTz^<\u0402HJS\u0402HuT9U\u0402H8Sx5\u0402HnS\u0402HMG<6yMG6ynS6yJXNS8TXJXnS^MGwS6ySx5MG<6yMG6ynS6yJXNS87XJXSx56ySk5\u0402HnSfBk<7S\u0402Hk<MGJS6yMG6ynS6yJXNST\u0402XJXnSuC^6ynS6yJXEl\u0402XnSufG^MGnSMGJX8S7gJXSfC6ynSGMGSyk<8Sw5k<nSk<\u0402H+MG\u0402HMGhxzXMGnS^k<wS\u0402HSw5k<+\u0402Hk<\u0402HnS\u0402HMGNSz6XMGnS^k<wS\u0402HnS\u0402HMGEZNXSw5k<Sk5z5nSkhl~7Sz5l~tCJSk<tCk<nSk<MG7S6yMGJXSk5MGnSNJS\u0402H7SMG\u0402H6y+JX6yJXNSMkXJXnSu\u0402^^6ynS6yJXENFXnSuv^MGnSMGJX8SxgJXSfC6ynSGMGSyk<8S65k<nSk<\u0402H+MG\u0402HMGhtMXMGnS^k<wS\u0402HS65k<+\u0402Hk<\u0402HnS\u0402HMGhZ8yMGnSG\u0402HS65tCSk5l~nSzo7d7Sl~7dz5JStCz5tC8S65tCnStCk<+\u0402Hk<\u0402HnS\u0402HMGhetyMGnS^k<wS\u0402HS65k<+\u0402Hk<\u0402HnS\u0402HMGNSMJyMGnS^k<wS\u0402HnS\u0402HMGEfZyS65k<Sk5z5nSw0l~7Sz5l~tCJSk<tCk<nSk<MG7S6yMGJXSk5MGnSNJS\u0402H7SMG\u0402H6y+JX6yJXNSZzyJXSy6ySk5\u0402HnSxJSk<7S\u0402Hk<MGJS6yMG6ySk5\u0402HnScok<7S\u0402Hk<MGJS6yMG6ynS^\u0402HwSMG<6yMG6ynS6yJXNSleyJXSyMGSk5k<nSxJStC7Sk<tC\u0402HJSMG\u0402HMGSk5k<nScotC7Sk<tC\u0402HJSMG\u0402HMGSk5k<nStYtC7Sk<tC\u0402HJSMG\u0402HMG2\u0402HSk5z5nSJBl~7Sz5l~tCJSMGtCk<W\u0402Hk<MGnSFS6ySk5\u0402HnSxDk<7S\u0402Hk<MG+6yMG6ynS6yJXNScLyJXnSu+^6ynS6yJXEklynSu-^MGnSMGJX8SwgJXnSuSCJXUuN^~MGKMG6yDJX6yJXNSncyJXnSuSC6ynS6yJXEl8GSfC\u0402HUuN^~k<7S\u0402Hk<MGnSMGJXSk5MGnSaxS\u0402H7SMG\u0402H6y<JX6yJXNSt\u0402GJXSfCMGUuN^~\u0402HSk5tCnSnrz57StCz5k<JS\u0402Hk<\u0402H7SMG\u0402H6ySk5\u0402HnSNJSk<7S\u0402Hk<MG+6yMG6ynS6yJXNSZxGJXnSuX^6ynS6yJXEMxGnSuwH^MGnSMGJX8S6gJXSfC6ynSGMGSyk<8SN5k<nSk<\u0402H+MG\u0402HMGha6GMGnS^k<wS\u0402HSN5k<+\u0402Hk<\u0402HnS\u0402HMGNS6nGMGnS^k<wS\u0402HnS\u0402HMGE7fGSN5k<Sk5z5nS7ZSl~7Sz5l~tCJSk<tCk<nSk<MG7S6yMGJXSk5MGnSNJS\u0402H7SMG\u0402H6y+JX6yJXNSTMGJXSfCMGSy\u0402HSk5tCnSxJSz57StCz5k<JS\u0402Hk<\u0402HJS\u0402HuFUy\u0402H7SMG\u0402H6ySk5\u0402HnSaxSk<7S\u0402Hk<MG+6yMG6ynS6yJXNS\u0402PGJXnSuw5^6ynS6yJXEcPGnSuu^MGnSMGJX8SNgJXnSuSCJXUuMxXUMGKMG6yDJX6yJXNSlt3JXnSuSC6ynS6yJXETT3SfC\u0402HUuMxXUk<7S\u0402Hk<MGnSMGJXSk5MGnSaxS\u0402H7SMG\u0402H6y<JX6yJXNSaa3JXSfCMGUuMxXU\u0402HSk5tCnSkDz57StCz5k<JS\u0402Hk<\u0402H7SMG\u0402H6ySk5\u0402HnSaxSk<7S\u0402Hk<MG<6yMG6ynS6yJXNSew3JXdPJt^^uSSMG9MG6ynS6yJXNSMz3JXnSuG^6ynS6yJXEN63nSu+^MGnSMGJX8SkgJXnSuSCJXSyMGKMG6yDJX6yJXNS\u0402f3JXnSuSC6ynS6yJXEwk3SfC\u0402HSyk<7S\u0402Hk<MGnSMGJXSk5MGnSaxS\u0402H7SMG\u0402H6y<JX6yJXNS6P3JXUuN-HMG-3\u0402HSyk<6S\u0402H^k<Sk5tCnSxJSz57StCz5k<6S\u0402Hyk<Sk5z5nSLtSl~7Sz5l~tCJSMGtCk<W\u0402Hk<MGnSFS6ynS6yJXNSw\u0402HJXSfCMGUuN-Hk<-3tCSyz56StC^z5Sk5l~nSxJS7d7Sl~7dz56StCyz5Sk57dnSLtSf=7S7df=l~JSk<l~z5WtCz5k<nSFS\u0402HSk5tCnSMrz57StCz5k<JS\u0402Hk<\u0402H7SMG\u0402H6ySk5\u0402HnSNJSk<7S\u0402Hk<MG+6yMG6ynS6yJXNSnxHJXnSuX^6ynS6yJXE7aHnSu6H^MGnSMGJX8SegJXnSuSCJXUuMxXUMGKMG6yDJX6yJXNSJ6HJXnSuSC6ynS6yJXEwnHSfC\u0402HUuMxXUk<7S\u0402Hk<MGnSMGJXSk5MGnSaxS\u0402H7SMG\u0402H6y+JX6yJXh8lHJXSfCMGUuMxXU\u0402HSk5tCnScoz57StCz5k<JS\u0402Hk<\u0402H7SMG\u0402H6ySfC\u0402HUuMxXUk<Sk5z5nScol~7Sz5l~tCJSk<tCk<7S\u0402Hk<MG<6yMG6ynS6yJXhZJ<JXSfCMGUuMxXU\u0402HSk5tCnScoz57StCz5k<JS\u0402Hk<\u0402H7SMG\u0402H6ySk5\u0402HnSaxSk<7S\u0402Hk<MG+6yMG6yNSPt<6yUuMxXUMGSk5k<nScotC7Sk<tC\u0402HJSMG\u0402HMGnSMG6ynS6yJXNSxT<JXnSuy^6ynS6yJXE8Z<nSuZ^^MGnSMGJX8SlgJXnSuSCJXSyMGKMG6yDJX6yJXNSF\u0402<JXnSuSC6ynS6yJXElx<SfC\u0402HSyk<7S\u0402Hk<MGnSMGJXSk5MGnSaxS\u0402H7SMG\u0402H6y<JX6yJXNSfz<JXSy6yUuI5MG+6yMG6ynS6yJXNSe6<JXnSufG^6ynS6yJXEzn<nSuy^MGnSMGJX8SPgJXSfC6yUue8^5\u0402HnSua^^k<nS^tC0\u0402Hk<tCMG7S6yMGJXSk5MGnS6Y\u0402H7SMG\u0402H6y+JX6yJXNSZM<JXSy6ySk5\u0402HnSM7Sk<7S\u0402Hk<MGJS6yMG6ySk5\u0402HnSl0k<7S\u0402Hk<MGJS6yMG6ynSy\u0402H~\u0402HMG+6yMG6ynS6yJXNSxP<JXnSufG^6ynS6yJXE8c<nSuwG^MGnSMGJX8S8dJXnSwSJXUuMxXUMGSk5k<nST8StC7Sk<tC\u0402HJSMG\u0402HMG2\u0402HSk5z5nSJBl~7Sz5l~tCJSMGtCk<W\u0402Hk<MGnSFS6yJS6yuxJ^H6yxSJX6yJXNST\u0402UJXSy6yJS6yuLd=6ynS^\u0402HwSMG+6yMG6ynS6yJXNS\u0402xUJXnSuX^6ynS6yJXEcxUnSuZS^MGnSMGJX8SJdJXUuNhUJXSk5MGnSntS\u0402H7SMG\u0402H6yJSJX6yJXSk5MGnS7Y\u0402H7SMG\u0402H6y+JX6yJXh6fUJXUuNhU6ySk5\u0402HnSntSk<7S\u0402Hk<MGJS6yMG6ySk5\u0402HnS78Sk<7S\u0402Hk<MG+6yMG6ynS6yJXhzeUJXnSuSS6yUuNhUMGSk5k<nSntStC7Sk<tC\u0402HJSMG\u0402HMG+6yMG6ynS6yJXhPcUJXUulUCMGSk5k<nSxZStC7Sk<tC\u0402HJSMG\u0402HMG-y\u0402HSk5tCnSP|z57StCz5k<6S\u0402H^k<Sk5z5nSMol~7Sz5l~tCJSMGtCk<W\u0402Hk<MGnSFS6ynS6yJXhfJCJXUuNhU6yJS6yuFaXU6ySk5\u0402HnSZTSk<7S\u0402Hk<MG<6yMG6ynS6yJXNSeTCJXnSuq^6ynS6yJXEzZCnSu7^^MGnSMGJX8SZdJXSyJXSk5MGnSlh\u0402H7SMG\u0402H6yJSJX6yJXNScaCJXUuMxXU6ySk5\u0402HnScok<7S\u0402Hk<MGJS6yMG6ynSGMGD6yMG6ynS6yJXNS\u0402nCJXnS^6yUuMxXUMGSk5k<nScotC7Sk<tC\u0402HJSMG\u0402HMGJSMGuxJ^HMG36yMG6ynS6yJXNSwNCJXnSu6H^6ynS6yJXEJfCnSu\u0402^^MGnSMGJX8S\u0402dJXUunVH6y2MGJS6yuNmU\u0402HWMG\u0402H6ynSFSJXSk5MGnSZr\u0402H7SMG\u0402H6y<JX6yJXNSLcCJXUulUCMGSk5k<nSxZStC7Sk<tC\u0402HJSMG\u0402HMG-y\u0402HSk5tCnS8rz57StCz5k<6S\u0402H^k<Sk5z5nSMol~7Sz5l~tCJSMGtCk<W\u0402Hk<MGnSFS6ynS6yJXNSP85JXnSuwH^6ynS6yJXEft5nSuzH^MGnSMGJX8SadJXnSuSCJXUuMG=MGKMG6yDJX6yJXNS6Z5JXnSuSC6ynS6yJXEL75SfC\u0402HUuMG=k<7S\u0402Hk<MGnSMGJXSk5MGnSaxS\u0402H7SMG\u0402H6y<JX6yJXNSc65JXnSu7F^W6yUuMxXU\u0402HSk5tCnScoz57StCz5k<JS\u0402Hk<\u0402H2k<Sk5l~nSJB7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGD6yMG6ynS6yJXNSJN5JXnSuZ^^6ynS6yJXELN5nSuZ^^MGnSMGJX8SzdJXUuLIg6y-3MGSk5k<nS\u0402BtC7Sk<tC\u0402H6SMG^\u0402HnSuMJX~\u0402H6SMGy\u0402HSk5tCnS\u04022z57StCz5k<JS6yk<\u0402HWMG\u0402H6ynSFSJXUuwW=6y-3MGSk5k<nS\u0402BtC7Sk<tC\u0402H6SMG^\u0402HSk5k<nSNYtC7Sk<tC\u0402H6SMGy\u0402HSk5tCnS\u04022z57StCz5k<JS6yk<\u0402HWMG\u0402H6ynSFSJXUuLIg6y-yMGSk5k<nS\u0402BtC7Sk<tC\u0402H6SMG^\u0402HSk5tCnS6hz57StCz5k<JS6yk<\u0402HWMG\u0402H6ynSFSJXSk5MGnSNY\u0402H7SMG\u0402H6y+JX6yJXhnz~JXnSuMJX~6yUuwW=\u0402H-yk<Sk5z5nS\u0402Bl~7Sz5l~tC6Sk<^tCSk5l~nS6h7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMG+6yMG6ynS6yJXNSk6~JXnSufG^6ynS6yJXEan~nSuzH^MGnSMGJX8SndJXUuLIg6y-yMGSk5k<nS\u0402BtC7Sk<tC\u0402H6SMG^\u0402HSk5tCnSLBz57StCz5k<JS6yk<\u0402HWMG\u0402H6ynSFSJXUuwW=6y-yMGSk5k<nS\u0402BtC7Sk<tC\u0402H6SMG^\u0402HSk5tCnSLBz57StCz5k<JS6yk<\u0402HWMG\u0402H6ynSFSJXUuwLSG\u0402H2k<Sk5l~nSz27d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMG-y\u0402HnSJ^k<6S\u0402H^k<Sk5z5nSJBl~7Sz5l~tCJSMGtCk<W\u0402Hk<MGnSFS6y-3MGnS3\u0402H6SMG^\u0402HnS+\u0402H6SMGy\u0402HSk5tCnS6>z57StCz5k<JS6yk<\u0402HWMG\u0402H6ynSFSJX8SfdJXUuMxXU6y-yMGSk5k<nSfbtC7Sk<tC\u0402H6SMG^\u0402HSk5tCnST8Sz57StCz5k<JS6yk<\u0402HWMG\u0402H6ynSFSJX8SFdJXSFd6ySfdMG6S6yuzGXMGnSMGJXSFd6ySk5\u0402HnS7>k<7S\u0402Hk<MGJS6yMG6ySk5\u0402HnSnBk<7S\u0402Hk<MGSk5k<nSl>tC7Sk<tC\u0402H6S6y\u0402HMGnSMGJXUuMxXU6ySk5\u0402HnSkDk<7S\u0402Hk<MGJS6yMG6y-yMGSFd\u0402H6SMG^\u0402HSk5tCnSJbz57StCz5k<JS6yk<\u0402HWMG\u0402H6ynSFSJXSFd6y-yMGnSuaTXX\u0402H6SMG^\u0402HJS6yu7a^5\u0402HWMG\u0402H6ynSFSJX8SLdJXnSvexwTxJ3flPkzLgJX8SMdJXnSvMkefnJ37c77cTXJX8ScdJXdMzJ^^uSS6y96yJXSLd6y2MGSk5tCnSarz57StCz5k<JS6yk<\u0402HWMG\u0402H6ynSFSJXSLd6y-3MGnS^\u0402H6SMG^\u0402HnS^\u0402H6SMGy\u0402HSk5tCnSf7Sz57StCz5k<JS6yk<\u0402HWMG\u0402H6ynSFSJXSLd6y-3MGScd\u0402H6SMG^\u0402HnS^\u0402H6SMGy\u0402HSk5tCnSN8Sz57StCz5k<JS6yk<\u0402HWMG\u0402H6ynSFSJXSLd6y-3MGScd\u0402HUuwLSGtC-yz5SMdl~UuwLSG7dJS7duLJXX7dil~7dl~nSfd7d1l~7dl~6Sz5^l~JStCu+yl~Wz5l~tCnSFSk<i\u0402Hk<\u0402H6SMG^\u0402HScd\u0402HUuwLSGtC-yz5SMdl~UuwLSG7dJS7duLJXX7dil~7dl~nSfd7d1l~7dl~6Sz5^l~Sk5f=nSL48-7Sf=8-7dJStC7dl~Wz5l~tCnSFSk<i\u0402Hk<\u0402H6SMGy\u0402HJS6yuNSH\u0402HWMG\u0402H6ynSFSJXSLd6y2MGSk5tCnSfVz57StCz5k<JS6yk<\u0402HWMG\u0402H6ynSFSJXnS^6y~6yJXNS6Z=JXnSuwH^6ynS6yJXEZ7=nSufd^MGnSMGJX8St=JXdZeT^^uSS6y96yJXUuMxXU6ySk5\u0402HnSkDk<7S\u0402Hk<MGJS6yMG6y-yMGUuMxXUk<-ytCSfdz56StC^z5JSk<utn^=z5WtCz5k<nSFS\u0402H6SMG^\u0402HSk5tCnS87Sz57StCz5k<JS6yk<\u0402HWMG\u0402H6ynSFSJXd\u0402z\u0402^^uSS6y96yJXUuwLSG\u0402H2k<Sk5l~nSz27d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMG-y\u0402HnSJ^k<6S\u0402H^k<Sk5z5nSJBl~7Sz5l~tCJSMGtCk<W\u0402Hk<MGnSFS6y-3MGnS3\u0402H6SMG^\u0402HnS+\u0402H6SMGy\u0402HSk5tCnS6>z57StCz5k<JS6yk<\u0402HWMG\u0402H6ynSFSJX8ST=JXUuMxXU6y-yMGSk5k<nSFBtC7Sk<tC\u0402H6SMG^\u0402HSk5tCnST8Sz57StCz5k<JS6yk<\u0402HWMG\u0402H6ynSFSJX8S7=JXS7=6yST=MG6S6yuzGXMGnSMGJXS7=6ySk5\u0402HnSNhk<7S\u0402Hk<MGSk5k<nSP\u0402StC7Sk<tC\u0402H6S6y\u0402HMGnSMGJXS7=6yUuJcSG\u0402H-yk<aStCnSvLxwTxJ3wJnNLL+z56StCut5Hz5nSvPlwknJ3NMzMFLHz56StCu69Hz56Sk<^tCSk5l~nSe8S7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMG6S6yut53MGnSMGJXUuMxXU6ySk5\u0402HnSkDk<7S\u0402Hk<MGJS6yMG6y-yMGS7=\u0402H6SMG^\u0402HSk5tCnSJbz57StCz5k<JS6yk<\u0402HWMG\u0402H6ynSFSJXnSy6y~6yJX8Sx=JXS7=6y-3MGnSuTrH\u0402H6SMG^\u0402HdMca^^uSS\u0402H6SMGy\u0402HJS6yuZO-\u0402HWMG\u0402H6ynSFSJXS7=6y-yMGUuxO3\u0402H-yk<Sk5z5nSP8Sl~7Sz5l~tC6Sk<^tC5\u0402Hk<\u0402H6SMG^\u0402HSk5tCnSNDz57StCz5k<JS6yk<\u0402HWMG\u0402H6ynSFSJXSx=JXNSZ7-JXnSuK^6ynS6yJXEM7-nSu^^MGnSMGJX8Sw=JXUuMxXU6yJS6yutF^G6y-yMGUuMxXUk<-ytCST=z56StC^z5Sk57dnSeZSf=7S7df=l~JSk<l~z5WtCz5k<nSFS\u0402H6SMG^\u0402HSk5tCnS87Sz57StCz5k<JS6yk<\u0402HWMG\u0402H6ynSFSJXScC6ynSuzgUMG7S6yMGJX8S6=JXS6=JXNS8LjJXSt5MGSk5k<nSJ2tC7Sk<tC\u0402HSMCtCS6=z5nSuSSl~Se57dTSl~7dl~Sl57dTSl~7dl~SP57dTSl~7dl~S8~7dTSl~7dl~SJ~7dTSl~7dl~SZ~7dTSl~7dl~S\u0402~7dTSl~7dl~Sa~7dTSl~7dl~Sz~7dTSl~7dl~Sn~7dTSl~7dl~Sf~7dTSl~7dl~SF~7dTSl~7dl~SL~7dTSl~7dl~SM~7dTSl~7dl~Sc~7dTSl~7dl~Stg7dTSl~7dl~STg7dTSl~7dl~S7g7dTSl~7dl~Sxg7dTSl~7dl~Swg7dTSl~7dl~S6g7dTSl~7dl~SNg7dTSl~7dl~Skg7dTSl~7dl~Seg7dTSl~7dl~Slg7dTSl~7dl~SPg7dTSl~7dl~S8d7dTSl~7dl~SJd7dTSl~7dl~SZd7dTSl~7dl~S\u0402d7dTSl~7dl~Sad7dTSl~7dl~Szd7dTSl~7dl~Snd7dTSl~7dl~nSuwH^7dTSl~7dl~Sw=7dTSl~7dl~Sk5f=nSFV8-7Sf=8-7dTSl~7dl~TSz5l~z57StCz5k<nS8z~tCrMG\u0402Hk<tC6ynS6yJXvy8E6ynSuFjUk<UucbHz5Kz5tCDk<tCk<NSacjk<nSuZ7^HtCUucbHl~JSl~uwyUl~Kl~z5DtCz5tCnStCk<NSk8vk<dZTvyuSStCnStCk<Entvd7ZvyuSSz5nSz5k<8SfCk<nSk<\u0402HSfCk<S8EtC7Sk<tC\u0402HB\u0402HGy8E6yS8Ek<Kk<\u0402HB\u0402HGy8E6yS8E\u0402HNSe\u0402v\u0402HnSuFjUk<UucbHz5Kz5tCDk<tCk<nSk<\u0402HNSlav\u0402HS8Ek<JSk<u\u0402v~k<UucbHtC+k<tCk<nSk<\u0402HNSPzv\u0402HS8Ek<UucbHtCJStCuxT^CtC<k<tCk<nSk<\u0402HNStnv\u0402HnSuZ7^Hk<nSk<\u0402HElnvS8Ez5Kz5tCnStC\u0402HB\u0402HGAwAnSuo^\u0402HnSuq^k<+\u0402Hk<\u0402H~\u0402HMGNSlLWMG-Nv\u0402HnSucZ^3k<6S\u0402H^k<nSux6S3k<6S\u0402Hyk<nSul-3k<6S\u0402H3k<nSuey3k<6S\u0402H<k<nSuneSCk<6S\u0402HCk<nSuc93k<6S\u0402H~k<nSu\u0402v~k<6S\u0402Hdk<nSulSUk<6S\u0402Hpk<nSutE<k<6S\u0402Hjk<nSuJu3k<6S\u0402Hsk<nSuFNSgk<6S\u0402H+k<nSuNmUk<6S\u0402HQk<nSuPlS3k<6S\u0402HRk<nSuttXUk<6S\u0402HKk<nSu\u0402l^3k<6S\u0402HEk<nSuz7^3k<6S\u0402H1k<nSuk8SGk<6S\u0402H9k<nSu\u0402tSGk<6S\u0402Hok<nSuTm5k<6S\u0402Hbk<nSutX5k<6S\u0402H2k<nSuPh3k<6S\u0402HVk<nSu8>dk<6S\u0402Hrk<nSucTSUk<6S\u0402H4k<nSuZ1dk<6S\u0402HBk<nSuZ^Ck<6S\u0402HtSk<nSunTS3k<6S\u0402HTSk<nSuLH=k<6S\u0402H7Sk<nSukG3k<6S\u0402HxSk<nSuNSHk<6S\u0402HwSk<nSu7Hdk<6S\u0402H6Sk<nSue7SCk<6S\u0402HNSk<nSulLS3k<6S\u0402HkSk<nSuTrHk<6S\u0402HeSk<nSu\u0402FS3k<6S\u0402HlSk<nSuF3Uk<6S\u0402HPSk<nSua7SGk<6S\u0402H8^k<nSukAgk<6S\u0402HJ^k<nSuwG3k<6S\u0402HZ^k<nSuTbCk<6S\u0402H\u0402^k<nSuDUk<6S\u0402Ha^k<nSuM|3k<6S\u0402Hz^k<nSukx^3k<6S\u0402Hn^k<nSuk<Ik<6S\u0402Hf^k<nSuNN^3k<6S\u0402HF^k<nSukk^Gk<6S\u0402HL^k<nSuZ8S~k<6S\u0402HM^k<nSutf^mk<6S\u0402Hc^k<nSu7q3k<6S\u0402HtXk<nSuMxXUk<6S\u0402HTXk<nSunZ^3k<6S\u0402H7Xk<nSunb5k<6S\u0402HxXk<nSuFjUk<6S\u0402HwXk<nSuN>3k<6S\u0402H6Xk<nSu7+3k<6S\u0402HNXk<nSulL^5k<6S\u0402HkXk<nSuPw^3k<6S\u0402HeXk<nSunPSUk<6S\u0402HlXk<nSuxT^Ck<6S\u0402HPXk<nSukn^Hk<6S\u0402H8yk<nSuJd5k<6S\u0402HJyk<nSuMz^gk<6S\u0402HZyk<nSut|3k<6S\u0402H\u0402yk<nSueZ^3k<6S\u0402Hayk<nSucnX3k<6S\u0402Hzyk<nSuZG3k<6S\u0402Hnyk<nSuNLSHk<6S\u0402Hfyk<nSut5Hk<6S\u0402HFyk<nSuTMSHk<6S\u0402HLyk<nSuO3k<6S\u0402HMyk<nSue7SHk<6S\u0402Hcyk<nSu6X+k<6S\u0402HtGk<nSuPfSCk<6S\u0402HTGk<nSu6i3k<6S\u0402H7Gk<nSuxlS=k<6S\u0402HxGk<nSun7S3k<6S\u0402HwGk<nSuNe^3k<6S\u0402H6Gk<nSutn^=k<6S\u0402HNGk<nSuL03k<6S\u0402HkGk<nSut53k<6S\u0402HeGk<nSuC~k<6S\u0402HlGk<nSuw=3k<6S\u0402HPGk<nSuNJ^3k<6S\u0402H83k<nSueTS3k<6S\u0402HJ3k<nSunQ=k<6S\u0402HZ3k<nSuftS3k<6S\u0402H\u04023k<nSun8^3k<6S\u0402Ha3k<nSuZ~Hk<6S\u0402Hz3k<nSuti3k<6S\u0402Hn3k<nSuND3k<6S\u0402Hf3k<nSulUCk<6S\u0402HF3k<nSufr3k<6S\u0402HL3k<nSunpgk<6S\u0402HM3k<nSuanS3k<6S\u0402Hc3k<nSuxu-k<6S\u0402HtHk<nSuLN^Hk<6S\u0402HTHk<nSuk2Ck<6S\u0402H7Hk<nSuz~dk<6S\u0402HxHk<nSuLM^=k<6S\u0402HwHk<nSuT2gk<6S\u0402H6Hk<nSulD3k<6S\u0402HNHk<nSuM7^3k<6S\u0402HkHk<nSuNoGk<6S\u0402HeHk<nSuNP^Uk<6S\u0402HlHk<nSuL>jk<6S\u0402HPHk<nSuZt^3k<6S\u0402H8<k<nSulrjk<6S\u0402HJ<k<nSuSCk<6S\u0402HZ<k<nSu8GGk<6S\u0402H\u0402<k<nSuNM^3k<6S\u0402Ha<k<nSukxSdk<6S\u0402Hz<k<nSuwr3k<6S\u0402Hn<k<nSu8Ksk<6S\u0402Hf<k<nSuf6^3k<6S\u0402HF<k<nSueB3k<6S\u0402HL<k<nSuM5<k<6S\u0402HM<k<nSult^3k<6S\u0402Hc<k<nSu\u0402-dk<6S\u0402HtUk<nSuw6^3k<6S\u0402HTUk<nSu\u0402h<k<6S\u0402H7Uk<nSuaEUk<6S\u0402HxUk<nSuFUyk<6S\u0402HwUk<nSunfSCk<6S\u0402H6Uk<nSu69Hk<6S\u0402HNUk<nSuzL^Ck<6S\u0402HkUk<nSutc^gk<6S\u0402HeUk<nSunJXyk<6S\u0402HlUk<nSunZXHk<6S\u0402HPUk<nSuMJX~k<6S\u0402H8Ck<nSuLe^3k<6S\u0402HJCk<nSuzTXCk<6S\u0402HZCk<nSu\u04027X<k<6S\u0402H\u0402Ck<nSuPCyk<6S\u0402HaCk<nSu7aS3k<6S\u0402HzCk<nSuJo~k<6S\u0402HnCk<nSu633k<6S\u0402HfCk<nSuFaXUk<6S\u0402HFCk<nSu8L^3k<6S\u0402HLCk<nSuN03k<6S\u0402HMCk<nSutJ^3k<6S\u0402HcCk<nSuxRHk<6S\u0402Ht5k<nSulKCk<6S\u0402HT5k<nSunB3k<6S\u0402H75k<nSu8g3k<6S\u0402Hx5k<nSuxJ^Hk<6S\u0402Hw5k<nSuxTS3k<6S\u0402H65k<nSuPZS5k<6S\u0402HN5k<nSuZfX3k<6S\u0402Hk5k<nSuTnS3k<6S\u0402He5k<nSukz^3k<6S\u0402Hl5k<nSuFl^<k<6S\u0402HP5k<nSukw^Hk<6S\u0402H8~k<nSulMS-k<6S\u0402HJ~k<nSu6l^3k<6S\u0402HZ~k<nSuZO-k<6S\u0402H\u0402~k<nSuFT^=k<6S\u0402Ha~k<nSux5dk<6S\u0402Hz~k<nSu\u0402|Uk<6S\u0402Hn~k<nSuMO3k<6S\u0402Hf~k<nSu8T^<k<6S\u0402HF~k<nSu8ryk<6S\u0402HL~k<nSunIHk<6S\u0402HM~k<nSuzz^3k<6S\u0402Hc~k<nSuka^3k<6S\u0402Htgk<nSuJQ5k<6S\u0402HTgk<nSuZW3k<6S\u0402H7gk<nSulk^3k<6S\u0402Hxgk<nSuLZX~k<6S\u0402Hwgk<nSuk\u0402^Uk<6S\u0402H6gk<nSutNSpk<6S\u0402HNgk<nSuFiCk<6S\u0402Hkgk<nSuw0Gk<6S\u0402Hegk<nSuk|3k<6S\u0402Hlgk<nSuxiGk<6S\u0402HPgk<nSuz+=k<6S\u0402H8dk<nSuLV3k<6S\u0402HJdk<nSuft^3k<6S\u0402HZdk<nSutj3k<6S\u0402H\u0402dk<nSutJS3k<6S\u0402Hadk<nSuakS3k<6S\u0402Hzdk<nSu7L^3k<6S\u0402Hndk<nSucNX3k<6S\u0402Hfdk<nSuwt^3k<6S\u0402HFdk<nSucYGk<6S\u0402HLdk<nSultS3k<6S\u0402HMdk<nSuNkS3k<6S\u0402Hcdk<nSu80Ck<6S\u0402Ht=k<nSutwXVk<6S\u0402HT=k<nSuLkS~k<6S\u0402H7=k<nSueJSdk<6S\u0402Hx=k<nSufcS+k<6S\u0402Hw=k<nSul6XUk<6S\u0402H6=k<nSulTX3k<6S\u0402HN=k<nSufc^Qk<6S\u0402Hk=k<nSuMnSGk<6S\u0402He=k<nSuPn^Ck<6S\u0402Hl=k<nSue13k<6S\u0402HP=k<nSuco3k<6S\u0402H8pk<nSut-3k<6S\u0402HJpk<nSucsyk<6S\u0402HZpk<nSunZSCk<6S\u0402H\u0402pk<nSu8WGk<6S\u0402Hapk<nSulgHk<6S\u0402Hzpk<nSu\u0402aX5k<6S\u0402Hnpk<nSuT\u0402Sok<6S\u0402Hfpk<nSu6j3k<6S\u0402HFpk<nSua\u0402XCk<6S\u0402HLpk<nSu\u0402j3k<6S\u0402HMpk<nSuPP^yk<6S\u0402Hcpk<nSuMPS3k<6S\u0402Ht-k<nSutZX3k<6S\u0402HT-k<nSuwtX3k<6S\u0402H7-k<nSuk<yk<6S\u0402Hx-k<nSuxeS3k<6S\u0402Hw-k<nSuZnX3k<6S\u0402H6-k<nSuPeS~k<6S\u0402HN-k<nSu8SGk<6S\u0402Hk-k<nSu7F^Wk<6S\u0402He-k<nSukZSHk<6S\u0402Hl-k<nSuxJX3k<6S\u0402HP-k<nSuwNXdk<6S\u0402H8jk<nSutF^Gk<6S\u0402HJjk<nSuzA3k<6S\u0402HZjk<nSuT\u0402^Gk<6S\u0402H\u0402jk<nSu6Y~k<6S\u0402Hajk<nSun43k<6S\u0402Hzjk<nSuPEgk<6S\u0402Hnjk<nSuZVyk<6S\u0402Hfjk<nSutv3k<6S\u0402HFjk<nSultX3k<6S\u0402HLjk<nSu7Cpk<6S\u0402HMjk<nSuZNX3k<6S\u0402Hcjk<nSuLJ^3k<6S\u0402Htvk<nSuzaSWk<6S\u0402HTvk<nSunw^yk<6S\u0402H7vk<nSuJlS3k<6S\u0402Hxvk<nSuf6X3k<6S\u0402Hwvk<nSul6^3k<6S\u0402H6vk<8SwA\u0402HdPLW^uSSk<8SFCk<nSk<\u0402HSFCk<9k<\u0402HB\u0402HGSwAMGBMGGya16yyz1MGAn1SFCtC9tCk<8Sn1k<dL8K3uSStCystC8SLCtCnStCk<SLCtCSa1z5Sz1l~0tCz5l~k<Bk<Gyc16yytmMGSsk<yLCk<ATmSc1tCnSlOz5jtCz5tC8Sc1tCnStCk<Sn1k<Sc1tCJSk<tCk<8STmk<STmk<Bk<GyNm6yAkmAemAlmAPmA89AJ9AZ9A\u04029Aa9Az9An9Af9AF9AL9Sk5\u0402H8Skm\u0402HaS\u0402HdnwY3uSSk<yRk<6S\u0402Hu7+3k<dF6Y3uSSk<yEk<6S\u0402Huwr3k<dMNY3uSSk<y9k<6S\u0402Hul-3k<dtFY3uSSk<ybk<6S\u0402HultX3k<d7LY3uSSk<yVk<6S\u0402Hu8L^3k<dwMY3uSSk<y4k<6S\u0402Huae^3k<dNcY3uSSk<ytSk<6S\u0402Huzz^3k<detb3uSSk<y7Sk<6S\u0402HukG3k<dPTb3uSSk<ywSk<6S\u0402HultS3k<dJ\u0402b3uSSk<yNSk<6S\u0402Hun8^3k<d\u0402ab3uSSk<yeSk<6S\u0402Hu\u0402FS3k<dzzb3uSSk<yPSk<6S\u0402HucB3k<dfnb3uSSk<yJ^k<6S\u0402HueZ^3k<dLfb3uSSk<y\u0402^k<6S\u0402HuM7^3k<dcFb3uSSk<yz^k<6S\u0402HunJS3k<dTlb3uSSk<yf^k<6S\u0402Huft^3k<dxPb3uSSk<yL^k<6S\u0402Hut|3k<d68h3uSSk<yc^k<6S\u0402HulTX3k<dkJh3uSSk<yTXk<6S\u0402HuLV3k<dlZh3uSSk<yxXk<6S\u0402HuPw^3k<deah3uSSk<y6Xk<6S\u0402Hut-3k<dPzh3uSSk<ykXk<6S\u0402HucnX3k<dJNh3uSSk<ylXk<6S\u0402HuPm3k<d\u0402kh3uSSk<y8yk<6S\u0402HuO3k<dzeh3uSSk<yZyk<6S\u0402HulD3k<8Sem\u0402HnS^\u0402H8Slm\u0402HnSy\u0402H8SPm\u0402HnSa\u0402FF8y\u0402H8S89\u0402HnSle8p\u0402H8SJ9\u0402HUuwLSGk<-3tCnS3z56StC^z5nSeSz56StCyz5JSk<u8myz5WtCz5k<nSFS\u0402H8SZ9\u0402H-+\u0402HnS<k<6S\u0402H^k<nSpk<6S\u0402Hyk<nSyk<6S\u0402H3k<nSCk<6S\u0402H<k<nSsk<6S\u0402HCk<nS3k<6S\u0402H~k<nSjk<6S\u0402Hdk<nS~k<6S\u0402Hpk<nS^k<6S\u0402Hjk<nSdk<6S\u0402Hsk<8S\u04029\u0402HnS^\u0402H8Sa9\u0402HSemk<-3tCSa9z56StC^z5SNmz5Skm7dnScbf=7S7df=l~JSz5l~z56StCyz5Skm7dnSeJSf=7S7df=l~JSk<l~z5WtCz5k<nSFS\u0402HNSl8m\u0402HSNmk<-ytCSa9z56StC^z5Skm7dnSF2f=7S7df=l~JSk<l~z5WtCz5k<nSFS\u0402H8Sz9\u0402HS\u04029\u0402HSa9k<S\u04029tCSkml~nScb7d7Sl~7dz5JStCz5tCXk<tCk<JS\u0402Hk<\u0402H8Sn9\u0402HSemtC-3z5Sem7d-3f=Slm8-6Sf=^8-S898-6Sf=y8-SkmLvnSx>Zu7SLvZuwjJS7dwj8-Wf=8-7dnSFSl~Semf=-38-Sz9wj6S8-^wjSn9wj6S8-ywjSkmZunSa4N+7SZuN+LvJSf=LvwjW8-wjf=nSFS7d\u0402Sl~7dl~6Sz5^l~SZ9l~6Sz5yl~Skmf=nSJo8-7Sf=8-7dJStC7dl~Wz5l~tCnSFSk<8Slmk<nSk<\u0402HSemtC-3z5Sem7d-3f=Semwj-3LvSPmZu6SLv^ZuSJ9Zu6SLvyZuSkmcinSx>aI7SciaIN+JSwjN+ZuWLvZuwjnSFS8-6Sf=^8-Sz98-SemLv-3ZunS<N+6SZu^N+Sn9N+6SZuyN+SkmaInSn2eR7SaIeRciJSLvciN+WZuN+LvnSFSwjR8-wj8-6Sf=y8-JS7duae^38-Wf=8-7dnSFSl~6Sz5^l~SZ9l~6Sz5yl~Skmf=nSab8-7Sf=8-7dJStC7dl~Wz5l~tCnSFSk<8SPmk<nSk<\u0402HSemtC-3z5Slml~6Sz5^l~Sem7d-3f=SPm8-6Sf=^8-nS~8-6Sf=y8-SkmLvnSzVZu7SLvZuwjJS7dwj8-Wf=8-7dnSFSl~6Sz5yl~Skmf=nS68S8-7Sf=8-7dJStC7dl~Wz5l~tCnSFSk<Sz9tCSJ9z5itCz5tCTSk<tCk<8Slmk<nSk<\u0402HSemtC-3z5SPml~6Sz5^l~Sem7d-3f=Slm8-6Sf=^8-nS<8-6Sf=y8-SkmLvnS8tSZu7SLvZuwjJS7dwj8-Wf=8-7dnSFSl~6Sz5yl~Skmf=nSn7S8-7Sf=8-7dJStC7dl~Wz5l~tCnSFSk<Semz5-3l~Sz97d6Sl~^7dS897d6Sl~y7dJSz5ucB37dWl~7dz5nSFStCjk<tCk<8SPmk<nSk<\u0402HSlmk<nS^tC=k<tCk<8Slmk<nSk<\u0402HSPmk<nS^tC=k<tCk<8SPmk<nSk<\u0402HSa9k<TSk<y\u0402H8Sa9\u0402Hj\u0402Hy\u0402HE8zEnS^\u0402H8Sf9\u0402HnS<\u0402HSf9k<^\u0402Hk<\u0402HNS\u0402TO\u0402HSemtC-3z5Slml~6Sz5^l~S89l~6Sz5yl~Skmf=nSnTS8-7Sf=8-7dJStC7dl~Wz5l~tCnSFSk<Semz5-3l~SPm7d6Sl~^7dnSC7d6Sl~y7dSkm8-nSl\u0402Swj7S8-wjf=JSz5f=7dWl~7dz5nSFStC\u0402Sk<tCk<SZ9tCXk<tCk<8Slmk<nSk<\u0402HSemtC-3z5Sem7d-3f=SPm8-SJ9wji8-wj8-6Sf=^8-Slm8-nS3wjtS8-wj8-6Sf=y8-JS7duft^38-Wf=8-7dnSFSl~6Sz5^l~SZ9l~6Sz5yl~JStCunJS3l~Wz5l~tCnSFSk<8SPmk<nSk<\u0402HSlmk<Semz5-3l~nSkNNU7d6Sl~^7dSPmf=If=7d6Sl~y7dSkm8-nSn2wj7S8-wjf=JSz5f=7dWl~7dz5nSFStC\u0402Sk<tCk<Semz5-3l~Semf=-38-Slmwj6S8-^wjnS<wj6S8-ywjSkmZunST0N+7SZuN+LvJSf=LvwjW8-wjf=nSFS7d6Sl~^7dSPm7d6Sl~y7dSkm8-nSzTSwj7S8-wjf=JSz5f=7dWl~7dz5nSFStCTSk<tCk<8Slmk<nSk<\u0402HSemtC-3z5Sem7d-3f=SPm8-6Sf=^8-Semwj-3LvSlmZu6SLv^ZunSpZu6SLvyZuSkmcinSPJSaI7SciaIN+JSwjN+ZuWLvZuwjnSFS8-6Sf=y8-SkmLvnSzTSZu7SLvZuwjJS7dwj8-Wf=8-7dnSFSl~6Sz5^l~Sem7d-3f=SPm8-nS~wjR8-wj8-6Sf=^8-Slm8-6Sf=y8-SkmLvnSk0Zu7SLvZuwjJS7dwj8-Wf=8-7dnSFSl~6Sz5yl~Skmf=nSk|8-7Sf=8-7dJStC7dl~Wz5l~tCnSFSk<8SPmk<nSk<\u0402HSlmk<nS^tC=k<tCk<8Slmk<nSk<\u0402HSPmk<nS^tC=k<tCk<8SPmk<nSk<\u0402HSf9k<TSk<y\u0402H8Sf9\u0402Hj\u0402Hy\u0402HEatmSemz5-3l~Slm7d6Sl~^7dSPm7d6Sl~y7dSkm8-nSk0wj7S8-wjf=JSz5f=7dWl~7dz5nSFStC-yz5nS9l~6Sz5^l~Skmf=nSJB8-7Sf=8-7dJStC7dl~Wz5l~tCnSFSk<-3tCnSjz56StC^z5nSua^^z56StCyz5Skm7dnSt|f=7S7df=l~JSk<l~z5WtCz5k<nSFS\u0402H8SF9\u0402HnSy\u0402H8SL9\u0402HSemk<-3tCSL9z56StC^z5nSCz56StCyz5Skm7dnSeJSf=7S7df=l~JSk<l~z5WtCz5k<nSFS\u0402HNSF7Y\u0402HSemtC-3z5Sem7d-3f=Semwj-3LvSlmZu6SLv^ZuSJ9Zu6SLvyZuJSwjuPm3ZuWLvZuwjnSFS8-6Sf=^8-Semwj-3LvSPmZu6SLv^ZunS<Zu6SLvyZuSkmcinStZSaI7SciaIN+JSwjN+ZuWLvZuwjnSFS8-6Sf=y8-SkmLvnSfTSZu7SLvZuwjJS7dwj8-Wf=8-7dnSFSl~6Sz5^l~SZ9l~6Sz5yl~Skmf=nSab8-7Sf=8-7dJStC7dl~Wz5l~tCnSFSk<8Slmk<nSk<\u0402HSemtC-3z5Sem7d-3f=SPm8-S89wji8-wj8-6Sf=^8-Semwj-3LvSlmZu6SLv^ZunS3Zu6SLvyZuSkmcinSe\u0402SaI7SciaIN+JSwjN+ZuWLvZuwjnSFS8-6Sf=y8-SkmLvnSe|Zu7SLvZuwjJS7dwj8-Wf=8-7dnSFSl~6Sz5^l~SZ9l~6Sz5yl~JStCunJS3l~Wz5l~tCnSFSk<8SPmk<nSk<\u0402HSF9k<Sem7d-3f=Slm8-6Sf=^8-SPm8-6Sf=y8-JS7dut|38-Wf=8-7dnSFSl~-y7dnS9f=6S7d^f=JSl~uNmUf=W7df=l~nSFSz5-3l~nSj7d6Sl~^7dnSua^^7d6Sl~y7dJSz5uk\u0402^U7dWl~7dz5nSFStCTSk<tCk<8SF9k<nSk<\u0402HSL9k<TSk<y\u0402H8SL9\u0402Hj\u0402Hy\u0402HELNOSF9k<-3tCnS^z56StC^z5nSeSz56StCyz5Skm7dnS6>f=7S7df=l~JSk<l~z5WtCz5k<nSFS\u0402HB\u0402HGylY6yyPYMGSRk<y8bk<SlYk<SPYtCxSk<tCk<Bk<Gy\u0402b6yyabMGSEk<yzbk<S\u0402bk<SabtCXk<tCk<Bk<GyFb6yyLbMGS9k<yMbk<SFbk<SLbtCik<tCk<Bk<GyTh6yy7hMGSbk<yxhk<SThk<S7htCtSk<tCk<Bk<GyNh6yykhMGSVk<yehk<SNhk<SkhtCXk<tCk<Bk<Gy826yyJ2MGS4k<yZ2k<S82k<SJ2tCTSk<tCk<Bk<Gyz26yyn2MGStSk<yf2k<Sz2k<Sn2tCgk<tCk<Bk<GyM26yyc2MGS7Sk<yt|k<SM2k<Sc2tC\u0402Sk<tCk<Bk<Gyx|6yyw|MGSwSk<y6|k<Sx|k<Sw|tC=k<tCk<Bk<Gye|6yyl|MGSNSk<yP|k<Se|k<Sl|tC\u0402Sk<tCk<Bk<GyZV6yy\u0402VMGSeSk<yaVk<SZVk<S\u0402VtCtSk<tCk<Bk<GyfV6yyFVMGSPSk<yLVk<SfVk<SFVtCik<tCk<Bk<Gyt06yyT0MGSJ^k<y70k<St0k<ST0tCik<tCk<Bk<Gy606yyN0MGS\u0402^k<yk0k<S60k<SN0tCRk<tCk<Bk<GyP06yy8rMGSz^k<yJrk<SP0k<S8rtCXk<tCk<Bk<Gyar6yyzrMGSf^k<ynrk<Sark<SzrtCTSk<tCk<Bk<GyLr6yyMrMGSL^k<ycrk<SLrk<SMrtC\u0402Sk<tCk<Bk<Gy7D6yyxDMGSc^k<ywDk<S7Dk<SxDtCRk<tCk<Bk<GykD6yyeDMGSTXk<ylDk<SkDk<SeDtCjk<tCk<Bk<GyJ46yyZ4MGSxXk<y\u04024k<nSuo^tCnSu+^z5+tCz5tC~tCk<NSkahk<SJ4tCSZ4z5tStCz5tCBtCGyM46yyc4MGS6Xk<yt>k<SM4k<Sc4tC\u0402Sk<tCk<Bk<Gyx>6yyw>MGSkXk<y6>k<Sx>k<Sw>tC\u0402Sk<tCk<Bk<Gye>6yyl>MGSlXk<yP>k<Se>k<Sl>tCik<tCk<Bk<GyZB6yy\u0402BMGS8yk<yaBk<SZBk<S\u0402BtCtSk<tCk<Bk<GyfB6yyFBMGSZyk<yLBk<SfBk<SFBtCRk<tCk<Bk<Gyt8S6yAT8SA78SAx8SSk5\u0402H8ST8S\u0402HaS\u0402HdZL23uSSk<yzyk<6S\u0402HuJp3k<8S78S\u0402HnSulSXk<UuMxXUtCJStCuNLSHtCTSk<tCk<-ytCnSulSXz5St8Sl~TSz5l~z5nSuJ^^l~TSz5l~z56StC^z5JSk<ukx^3z5WtCz5k<nSFS\u0402H8Sx8S\u0402HS78Sk<-3tCnS3z56StC^z5Sx8Sz5ST8S7dnScbf=7S7df=l~JSz5l~z56StCyz5JSk<uJp3z5WtCz5k<nSFS\u0402HNS7e2\u0402HSx8Sl~27dST8SwjnSwYLv7SwjLv8-JSl~8-f=W7df=l~nSFSz5-yl~nSulS^7d6Sl~^7dST8S8-nSFtSwj7S8-wjf=JSz5f=7dWl~7dz5nSFStC2z5ST8Sf=nStD8-7Sf=8-7dJStC7dl~Wz5l~tCnSFSk<nSk<\u0402HEPe2nSuSStCnStC\u0402HB\u0402HGyl8S6yyP8SMGSzyk<y8tSk<Sl8Sk<SP8StC+k<tCk<Bk<Gy\u0402tS6yyatSMGyztS\u0402HAntSSk5tC8SntStCUuMxXUz5S\u0402tSl~nSuJ^^7dTSl~7dl~SatS7dTSl~7dl~nSuJw^57dTSl~7dl~SztS7dTSl~7dl~SntSf=nSe>8-7Sf=8-7dTSl~7dl~SntSf=nSLTS8-7Sf=8-7d6Sz57dl~nSl~tCGyMtS6yyctSMGAtJSATJSA7JSSLCk<8StJSk<SMtStC9tCk<8STJSk<ZS8FVUuMx^Uz5StJS7dnS\u0402tSf=7S7df=l~7Sz5l~tCj^tCk<nSytC1k<tCk<UuMx^Ul~StJSf=nSPD8-7Sf=8-7d7Sl~7dz5j^z5tCnS3z51tCz5tCUuMx^U7dStJS8-nS7|wj7S8-wjf=7S7df=l~j^l~z5nS<l~1z5l~z5itCz5tCTSk<tCk<UuMx^Ul~StJSf=nScB8-7Sf=8-7d7Sl~7dz5j^z5tCnSCz51tCz5tCTSk<tCk<UuMx^Ul~StJSf=nS828-7Sf=8-7d7Sl~7dz5j^z5tCnS~z51tCz5tCTSk<tCk<UuMx^Ul~StJSf=nSxY8-7Sf=8-7d7Sl~7dz5j^z5tCnSdz51tCz5tCTSk<tCk<UuMx^Uz5StJS7dnSk8Sf=7S7df=l~7Sz5l~tCnSpz51tCz5tCTSk<tCk<UuMx^Ul~StJSf=nSJr8-7Sf=8-7d7Sl~7dz5j^z5tCnSjz51tCz5tCUuMx^U7dStJS8-nSlJSwj7S8-wjf=7S7df=l~j^l~z5nSsl~1z5l~z5itCz5tCTSk<tCk<8S7JSk<S7JSk<SctStC+k<tCk<NS\u0402nVk<EfMVElkVSTJSz5-yl~STJSf=28-JSf=uZnX3wjW8-wjf=nSFS7d6Sl~^7dJSz5u8WG7dWl~7dz5nSFStCE\u0402MVZSGOk<>yfTSk<STJSz5-yl~STJSf=28-JSf=uZnX3wjW8-wjf=nSFS7d6Sl~^7dJSz5u8WG7dWl~7dz5nSFStCZSGEzx|GAMTSAcTSAtZSATZSA7ZSAxZSAwZSA6ZSANZSAkZSAeZSAlZSAPZSA87SAJ7SAZ7SA\u04027SAa7SAz7SAn7SAf7SAF7SSLCMG8SMTSMGaSMGSMTSk<nSN\u0402StC7Sk<tC\u0402H6SMGu7L^3\u0402HSMTSk<nS6\u0402StC7Sk<tC\u0402H6SMGucZ^3\u0402HdkZaS3uSS\u0402H6SMGuwt^3\u0402HSMTSk<nST|tC7Sk<tC\u0402H6SMGu633\u0402Hdx\u0402aS3uSS\u0402H6SMGufMS3\u0402HSMTSk<nSa7StC7Sk<tC\u0402H6SMGuNd3\u0402HSMTSk<nS\u0402xStC7Sk<tC\u0402H6SMGukz^3\u0402HSMTSk<nSk>tC7Sk<tC\u0402H6SMGuNJ^3\u0402HdcxaS3uSS\u0402H6SMGue13\u0402HdfwaS3uSS\u0402H6SMGuxTS3\u0402HSMTSk<nScbtC7Sk<tC\u0402H6SMGuNe^3\u0402HSMTSk<nS7DtC7Sk<tC\u0402H6SMGuco3\u0402HnSuTIC\u0402H6SMGuwtX3\u0402HSMTSk<nS7JStC7Sk<tC\u0402H6SMGuxeS3\u0402HSMTSk<nS6|tC7Sk<tC\u0402H6SMGuMa^3\u0402HSMTSk<nSx|tC7Sk<tC\u0402H6SMGu7g3\u0402HSMTSk<nSJBtC7Sk<tC\u0402H6SMGuN03\u0402Hd\u04026aS3uSS\u0402H6SMGult^3\u0402HdPnaS3uSS\u0402H6SMGuz7^3\u0402HdNfaS3uSS\u0402H6SMGulLS3\u0402Hd7FaS3uSS\u0402H6SMGu6j3\u0402HdMeaS3uSS\u0402H6SMGue93\u0402HdnlaS3uSS\u0402H6SMGutj3\u0402HdZPaS3uSS\u0402H6SMGu23\u0402H8ScTSMGUuZDUMG8StZSMGUuN-HMG8STZSMGUuMQ3MG8S7ZSMGZSctaS2MG8SxZSMGStZSMGSMTSk<nSJTStC7Sk<tC\u0402HJSMG\u0402HMGSMTSk<nSJBtC7Sk<tC\u0402HJSMG\u0402HMG8SwZSMGSwZS\u0402H-yk<SwZStC6Sk<^tCSMTSl~nSx|7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMG8S6ZSMGSxZS\u0402H-yk<S6ZSz5-yl~ScTS7dSMTS8-nST>wj7S8-wjf=JS7df=7d6Sl~^7dSMTS8-nSMowj7S8-wjf=JSz5f=7dWl~7dz5nSFStC6Sk<^tCJS\u0402Hu8WGtCWk<tC\u0402HnSFSMGSTZSMGSMTSk<nSJTStC7Sk<tC\u0402HJSMG\u0402HMGJSMGuNmUMG8SNZSMGSxZS\u0402H-yk<ScTSz5-3l~SNZSf=-y8-aSwj6S8-^wjSMTSZunSx|N+7SZuN+LvJSf=LvwjW8-wjf=nSFS7d6Sl~^7dScTS7dSMTS8-nSZbwj7S8-wjf=JS7df=7d6Sl~y7dSMTS8-nS\u0402Vwj7S8-wjf=JSz5f=7dWl~7dz5nSFStC6Sk<^tCSMTSl~nSP07d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGSxZS\u0402H-yk<ScTSz5-3l~SNZSf=-y8-2wj6S8-^wjSMTSZunSx|N+7SZuN+LvJSf=LvwjW8-wjf=nSFS7d6Sl~^7dScTS7dJS7duNd37d6Sl~y7dJSz5ufMS37dWl~7dz5nSFStC6Sk<^tCSMTSl~nSP07d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGSxZS\u0402H-yk<ScTSz5-3l~SNZSf=-y8-dlcaS^uSSwj6S8-^wjSMTSZunSx|N+7SZuN+LvJSf=LvwjW8-wjf=nSFS7d6Sl~^7dScTS7dSMTS8-nSwhwj7S8-wjf=JS7df=7d6Sl~y7dSMTS8-nS\u0402Vwj7S8-wjf=JSz5f=7dWl~7dz5nSFStC6Sk<^tCSMTSl~nSP07d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGSTZS\u0402H-3k<StZStCJStCuxT^CtC6Sk<^tCScTStCSMTSl~nSZ7S7d7Sl~7dz5JStCz5tC6Sk<ytCSMTSl~nSLtS7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMG8SkZSMGSxZS\u0402H-yk<SkZStCNSJc4tCScTSl~-37dSkZSf=SMTSwjnSt8SLv7SwjLv8-JSf=8-f=6S7d^f=nS^8-~8-f=6S7dyf=SMTSwjnS60Lv7SwjLv8-JSl~8-f=W7df=l~nSFSz5nSz5tC6Sk<^tCSMTSl~nSP07d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGSxZS\u0402H-yk<SkZStCNSP\u0402>tCScTSl~-37dSkZSf=JSf=uNR5f=6S7d^f=nSy8-~8-f=6S7dyf=SMTSwjnSthLv7SwjLv8-JSl~8-f=W7df=l~nSFSz5nSz5tC6Sk<^tCJS\u0402Hu8WGtCWk<tC\u0402HnSFSMGSxZS\u0402H-yk<SkZStCNSef>tCScTSl~-37dSkZSf=SMTSwjnSk\u0402SLv7SwjLv8-JSf=8-f=6S7d^f=nS^8-~8-f=6S7dyf=SMTSwjnSthLv7SwjLv8-JSl~8-f=W7df=l~nSFSz5nSz5tC6Sk<^tCSMTSl~nSP07d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGSTZS\u0402H-yk<StZStCSMTSl~nSJTS7d7Sl~7dz5JStCz5tC6Sk<^tCSMTSl~nSZo7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMG8SeZSMG-sMGScTS\u0402HSMTStCnSkZSz57StCz5k<JS\u0402Hk<\u0402H6SMG^\u0402HScTS\u0402HSMTStCnSN0z57StCz5k<JS\u0402Hk<\u0402H6SMGy\u0402HScTS\u0402HSMTStCnSLrz57StCz5k<JS\u0402Hk<\u0402H6SMG3\u0402HSMTSk<nSx\u0402StC7Sk<tC\u0402H6SMG<\u0402HScTS\u0402HSMTStCnSZ7Sz57StCz5k<JS\u0402Hk<\u0402H6SMGC\u0402HScTS\u0402HSMTStCnScrz57StCz5k<JS\u0402Hk<\u0402H6SMG~\u0402HScTS\u0402HJS\u0402HuMa^3\u0402H6SMGd\u0402HScTS\u0402HJS\u0402Hu7g3\u0402H6SMGp\u0402HScTS\u0402HSMTStCnSzbz57StCz5k<JS\u0402Hk<\u0402H6SMGj\u0402H8SlZSMGSeZS\u0402H-yk<dktwSyuSStC6Sk<^tCJS\u0402HuP=GtCWk<tC\u0402HnSFSMG8SPZSMGSxZS\u0402H-yk<SPZSz5~z5tC6Sk<^tCSMTSl~nSP07d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGSxZS\u0402H-yk<ScTSz5-3l~STZSf=-y8-StZSwjSMTSZunSJTSN+7SZuN+LvJSwjLvwj6S8-^wjSMTSZunS6ZSN+7SZuN+LvJSf=LvwjW8-wjf=nSFS7d6Sl~^7dSTZS7dSMTS8-nSJTSwj7S8-wjf=JS7df=7d6Sl~y7dSMTS8-nS\u0402Vwj7S8-wjf=JSz5f=7dWl~7dz5nSFStC6Sk<^tCSMTSl~nSP07d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGSxZS\u0402H-yk<nSGtCSTZSl~-y7dSTZSf=SMTSwjnSJTSLv7SwjLv8-JSf=8-f=6S7d^f=SMTSwjnS6ZSLv7SwjLv8-JSl~8-f=W7df=l~nSFSz5+tCz5tC6Sk<^tCJS\u0402Hu8WGtCWk<tC\u0402HnSFSMGSxZS\u0402H-yk<ScTSz5-3l~STZSf=-y8-2wj6S8-^wjJSf=uxlS=wjW8-wjf=nSFS7d6Sl~^7dS7ZS7dJS7duxT^C7d6Sl~y7dJSz5uxTS37dWl~7dz5nSFStC6Sk<^tCSMTSl~nSP07d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGSTZS\u0402H-3k<StZStC6Sk<^tCScTStCSMTSl~nSN07d7Sl~7dz5JStCz5tC6Sk<ytCJS\u0402Huk<ItCWk<tC\u0402HnSFSMG8S87SMGSxZS\u0402H-yk<S87StCNSNxtStCS87Sz5SMTS7dnSt8Sf=7S7df=l~JSz5l~z5nSy7d~7dl~+z5l~z5nSz5tC6Sk<^tCSMTSl~nSP07d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGSxZS\u0402H-yk<S87StCNSwNtStCS87Sz5SMTS7dnSk\u0402Sf=7S7df=l~JSz5l~z5nS^7d~7dl~+z5l~z5nSz5tC6Sk<^tCJS\u0402Hu8WGtCWk<tC\u0402HnSFSMGSxZS\u0402H-yk<ScTSz5-3l~StZS7dSMTS8-nSJTSwj7S8-wjf=JS7df=7dSMTS8-nSk>wj7S8-wjf=JS7df=7d6Sl~^7dStZS7d6Sl~y7dSMTS8-nSnowj7S8-wjf=JSz5f=7dWl~7dz5nSFStC6Sk<^tCSMTSl~nSP07d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGSxZS\u0402H-yk<ScTSz5-3l~STZS7dSMTS8-nSJTSwj7S8-wjf=JS7df=7dSMTS8-nSk>wj7S8-wjf=JS7df=7d6Sl~^7dSTZS7d6Sl~y7dSMTS8-nSzBwj7S8-wjf=JSz5f=7dWl~7dz5nSFStC6Sk<^tCSMTSl~nSP07d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGSxZS\u0402H-yk<ScTSz5-3l~S7ZS7dSMTS8-nSJTSwj7S8-wjf=JS7df=7dSMTS8-nSk>wj7S8-wjf=JS7df=7d6Sl~^7dS7ZS7d6Sl~y7dSMTS8-nSzBwj7S8-wjf=JSz5f=7dWl~7dz5nSFStC6Sk<^tCSMTSl~nSP07d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGaSMG8SJ7SMGSxZS\u0402H-yk<ScTSz5-3l~SJ7S7dJS7dunfSC7d6Sl~^7dSTZS7dSMTS8-nSJTSwj7S8-wjf=JS7df=7d6Sl~y7dSMTS8-nS60wj7S8-wjf=JSz5f=7dWl~7dz5nSFStC6Sk<^tCSMTSl~nSP07d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGSxZS\u0402H-yk<ScTSz5-3l~SJ7S7dJS7du\u0402v~7d6Sl~^7dSTZS7d6Sl~y7dJSz5uz7^37dWl~7dz5nSFStC6Sk<^tCJS\u0402Hu8WGtCWk<tC\u0402HnSFSMGSxZS\u0402H-yk<ScTSz5-3l~StZS7dSMTS8-nSJTSwj7S8-wjf=JS7df=7dSMTS8-nSx|wj7S8-wjf=JS7df=7dSMTS8-nScbwj7S8-wjf=JS7df=7d6Sl~^7dnSy7d6Sl~y7dJSz5uwt^37dWl~7dz5nSFStC6Sk<^tCSMTSl~nSP07d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGSxZS\u0402H-yk<ScTSz5-3l~StZS7dJS7duxT^C7dSMTS8-nS7JSwj7S8-wjf=JS7df=7dSMTS8-nScbwj7S8-wjf=JS7df=7d6Sl~^7dnS37d6Sl~y7dSMTS8-nS60wj7S8-wjf=JSz5f=7dWl~7dz5nSFStC6Sk<^tCSMTSl~nSP07d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGSxZS\u0402H-yk<ScTSz5-3l~StZS7dSMTS8-nSJTSwj7S8-wjf=JS7df=7dSMTS8-nS6|wj7S8-wjf=JS7df=7dSMTS8-nScbwj7S8-wjf=JS7df=7d6Sl~^7dnSy7d6Sl~y7dSMTS8-nSl8Swj7S8-wjf=JSz5f=7dWl~7dz5nSFStC6Sk<^tCSMTSl~nSP07d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGSxZS\u0402H-yk<ScTSz5-3l~STZS7dSMTS8-nSPhwj7S8-wjf=JS7df=7dSMTS8-nScbwj7S8-wjf=JS7df=7d6Sl~^7dnS<7d6Sl~y7dSMTS8-nSzBwj7S8-wjf=JSz5f=7dWl~7dz5nSFStC6Sk<^tCSMTSl~nSP07d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGSwZS\u0402HSMTStCnSJBz57StCz5k<JS\u0402Hk<\u0402HSMTStCnSJBz57StCz5k<JS\u0402Hk<\u0402H2k<SMTSl~nSJB7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMG8SZ7SMGSxZS\u0402H-yk<SZ7Sz5-yl~SMTSf=nS6\u0402S8-7Sf=8-7d6Sl~^7dJSz5uaEU7dWl~7dz5nSFStC6Sk<^tCSMTSl~nSP07d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGZSLf7Sdw6wS^uSSMG8S\u04027SMGSxZS\u0402H-yk<S\u04027Sz59z5tC6Sk<^tCSMTSl~nSP07d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGE8L7SZSctaSOMG>yMwSMGSxZSk<-ytCnSyl~~l~z56StC^z5JSk<u8WGz5WtCz5k<nSFS\u0402HZSctaSS7ZSMGSMTSk<nSJTStC7Sk<tC\u0402HJSMG\u0402HMGSMTSk<nSP0tC7Sk<tC\u0402HJSMG\u0402HMG8Sa7SMGS7ZS\u0402HSMTStCnSJTSz57StCz5k<JS\u0402Hk<\u0402HdllwS^uSSk<6S\u0402Hu8WGk<nSk<MGScTS\u0402H-3k<S7ZStCSMTSl~nSJTS7d7Sl~7dz5JStCz5tCSMTSl~nSP07d7Sl~7dz5JStCz5tC6Sk<^tCSa7StC6Sk<ytCSMTSl~nS\u0402r7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMG8Sz7SMGS7ZS\u0402HJS\u0402HuxT^C\u0402HSa7Sk<SMTSz5nSP0l~7Sz5l~tC6S\u0402HtCk<nSk<MGSxZS\u0402H-yk<Sz7StC6Sk<^tCJS\u0402Hu8WGtCWk<tC\u0402HnSFSMGaSMG8Sn7SMGZSzaxSSTZS\u0402H-<k<Sn7StC6Sk<^tCUucbHtCSMTSl~nSTD7d7Sl~7dz5JStCz5tC6Sk<ytCaStCnSucc^=z56StCut53z5nS^l~~l~z56StCuT2gz56Sk<3tCSMTSl~nSPh7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGSTZS\u0402HJS\u0402HuxT^C\u0402HSMTStCnSJBz57StCz5k<JS\u0402Hk<\u0402H-yk<Sn7StC6Sk<^tCSMTSl~nSx|7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMG8Sf7SMGSxZS\u0402H-yk<ScTSz5-3l~Sf7S7d6Sl~^7dSMTSf=nS708-7Sf=8-7d6Sl~y7dJSz5ue937dWl~7dz5nSFStC6Sk<^tCSMTSl~nSP07d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGEk6xSZSctaSOMG>y\u04026SMGSxZSk<-ytCnSyl~~l~z56StC^z5JSk<u8WGz5WtCz5k<nSFS\u0402HZSctaSSxZS\u0402H-yk<UuNnS<tC6Sk<^tCSMTSl~nScTS7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGSMTSk<nScbtC7Sk<tC\u0402HJSMG\u0402HMG8SF7SMGScTS\u0402H-3k<SF7StC6Sk<^tCScTSz5-3l~SxZS7dJS7duxJ^H7d6Sl~^7dnSvFMF\u0402zt3ezMJk8+7d6Sl~y7dJSz5u237dWl~7dz5nSFStC6Sk<ytCSMTSl~nSl|7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGNSLtaSMGnSuNH^k<8Sl5k<nSk<\u0402HnS\u0402HMGEwZaSZSGOMG>yL6SMGSyk<Ck<u8+3\u0402HnSuxp^k<8SP5k<nSk<\u0402HZSGGyTnS6yy7nSMGSTnSk<S7nStC+k<tCk<Bk<Gy6nS6yyNnSMGS6nSk<SNnStC+k<tCk<Bk<GylnS6yyPnSMGSlnSk<SPnStC+k<tCk<Bk<GyZNS6yy\u0402NSMGSZNSk<S\u0402NStC+k<tCk<Bk<GynNS6yyfNSMGSnNSk<SfNStC+k<tCk<Bk<GyMNS6yycNSMGSMNSk<ScNStC+k<tCk<Bk<Gy7fS6yyxfSMGS7fSk<SxfStC+k<tCk<Bk<GyNfS6yykfSMGSNfSk<SkfStC<k<tCk<Bk<GyPfS6yy8kSMGSPfSk<S8kStC+k<tCk<Bk<Gy\u0402kS6yyakSMGS\u0402kSk<SakStCxSk<tCk<Bk<GyfkS6yyFkSMGSfkSk<SFkStCik<tCk<Bk<GnSuo^\u0402HnSu3^k<+\u0402Hk<\u0402H~\u0402HMGNSNtwSMGGywFS6ySlZStC-yz5SwFSl~6Sz5^l~SMTSf=nSMo8-7Sf=8-7dJStC7dl~Wz5l~tCnSFSk<~k<\u0402HNSaawS\u0402HSwFSz5-yl~nSu6P^X7d6Sl~^7dJSz5uf8X57dWl~7dz5nSFStC~tCk<nSk<\u0402HNST6wS\u0402HSwFSk<UucbHtCSMTSl~nSLV7d7Sl~7dz5JStCz5tC<k<tCk<nSk<\u0402HB\u0402HGAlFSAPFSSMTSMG8SlFSMGSTZS\u0402H-3k<StZStCSlFSl~nSJTS7d7Sl~7dz5JStCz5tC6Sk<^tCScTStCSlFSl~nSJV7d7Sl~7dz5JStCz5tC6Sk<ytCSlFSl~nSLtS7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMG8SPFSMGSPFSMGnS^k<wS\u0402H+MG\u0402HMGBMGGGAaeSAzeSAneSAfeSAFeSALeSAMeSAceSSLCMG8SaeSMGaSMGdnTFS3uSS\u0402H6SMGuTnS3\u0402HnSu6FSs\u0402H6SMGuM|3\u0402HSaeSk<nSTJStC7Sk<tC\u0402H6SMGuFE3\u0402HnSu8ry\u0402H6SMGun7S3\u0402HnSuxVG\u0402H6SMGucNX3\u0402HnSuxZ^3\u0402H6SMGuftS3\u0402HSaeSk<nSeYtC7Sk<tC\u0402H6SMGu7aS3\u0402HSaeSk<nSMbtC7Sk<tC\u0402H6SMGutJ^3\u0402HSaeSk<nSnVtC7Sk<tC\u0402H6SMGu\u0402j3\u0402Hdk\u0402FS3uSS\u0402H6SMGuka^3\u0402HdxaFS<uSS\u0402H6SMGueo3\u0402HdNzFSyuSS\u0402H6SMGuZfX3\u0402HnSuaSG\u0402H6SMGuJu3\u0402HSaeSk<nSZxStC7Sk<tC\u0402H6SMGun43\u0402HSaeSk<nS6JStC7Sk<tC\u0402H6SMGuND3\u0402HSaeSk<nSw8StC7Sk<tC\u0402H6SMGuw6^3\u0402HSaeSk<nSFbtC7Sk<tC\u0402H6SMGuf6^3\u0402HnSuzq=\u0402H6SMGunTS3\u0402HnSu8x^U\u0402H6SMGuZNX3\u0402HSaeSk<nSztStC7Sk<tC\u0402H6SMGuMO3\u0402HSaeSk<nSnBtC7Sk<tC\u0402H6SMGutv3\u0402HSaeSk<nStJStC7Sk<tC\u0402H6SMGuzA3\u0402Hdf6FS3uSS\u0402H6SMGuxJX3\u0402Hd\u0402NFS3uSS\u0402H6SMGu\u0402l^3\u0402HdPfFS3uSS\u0402H6SMGueTS3\u0402HdNFFS3uSS\u0402H6SMGutZX3\u0402Hd7LFS3uSS\u0402H6SMGuPlS3\u0402H8SzeSMGdMlFS^uSS\u0402H9\u0402HMG8SneSMGSzeS\u0402H-<k<SneStC6Sk<^tCptC6Sk<ytCd\u0402zeS^uSStC6Sk<3tCJS\u0402Hueo3tCWk<tC\u0402HnSFSMG8SfeSMGSzeS\u0402H-yk<SfeStC6Sk<^tCSaeSl~nS7h7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGUuMxXU\u0402H-yk<SzeStCSaeSl~nSP>7d7Sl~7dz5JStCz5tC6Sk<^tCSaeSl~nST8S7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMG8SFeSMGUuMxXU\u0402H-yk<SzeStCSaeSl~nS847d7Sl~7dz5JStCz5tC6Sk<^tCJS\u0402HuZ1dtCWk<tC\u0402HnSFSMG8SLeSMGSLeS\u0402HSzeSk<SaeSz5nSL7Sl~7Sz5l~tCJSk<tCk<6S\u0402HuzGXk<nSk<MGSLeS\u0402HSzeSk<JSk<uw6^3k<SaeSz5nS7Dl~7Sz5l~tC6S\u0402HtCk<nSk<MGSLeS\u0402HSzeSk<SaeSz5nS\u0402ol~7Sz5l~tCJSk<tCk<SaeSz5nSPZSl~7Sz5l~tC6S\u0402HtCk<nSk<MGSFeS\u0402H-yk<SLeStC6Sk<^tCSaeSl~nSJb7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGUuMxXU\u0402H-yk<SaeSz5nSZxSl~7Sz5l~tC6Sk<^tCJS\u0402HuZ1dtCWk<tC\u0402HnSFSMG8SMeSMGSMeS\u0402HSaeStCnSN|z57StCz5k<SaeSz5nS7Dl~7Sz5l~tC6S\u0402HtCk<nSk<MGSMeS\u0402HSzeSk<SaeSz5nSx8Sl~7Sz5l~tCJSk<tCk<6S\u0402HuzGXk<nSk<MGSFeS\u0402H-yk<SMeStC6Sk<^tCSaeSl~nSJb7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGUuMxXU\u0402H-yk<SaeSz5nSZxSl~7Sz5l~tC6Sk<^tCSaeSl~nST8S7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMG8SceSMGSceS\u0402HSzeSk<JSk<uZNX3k<6S\u0402HuzGXk<nSk<MGSceS\u0402HSaeStCnS8xSz57StCz5k<SaeSz5nSP\u0402Sl~7Sz5l~tC6S\u0402HtCk<nSk<MGSceS\u0402HSzeSk<SaeSz5nSZ2l~7Sz5l~tCJSk<tCk<SaeSz5nS7Dl~7Sz5l~tC6S\u0402HtCk<nSk<MGSFeS\u0402H-yk<SceStC6Sk<^tCSaeSl~nSJb7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGSFeS\u0402HSaeStCnS7>z57StCz5k<JS\u0402Hk<\u0402HSzeSk<SaeSz5nS\u04024l~7Sz5l~tCJSk<tCk<SaeSz5nSl>l~7Sz5l~tC6S\u0402HtCk<nSk<MGSFeS\u0402HSaeStCnSt\u0402Sz57StCz5k<6S\u0402HuzGXk<nSk<MGSFeS\u0402HSzeSk<SaeSz5nSeDl~7Sz5l~tCJSk<tCk<SaeSz5nS7Dl~7Sz5l~tC6S\u0402HtCk<nSk<MGUuMxXU\u0402HSaeStCnSkDz57StCz5k<JS\u0402Hk<\u0402H-yk<SFeStC6Sk<^tCSaeSl~nSJb7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGSzeS\u0402H-3k<SLeStCSaeSl~nS7D7d7Sl~7dz5JStCz5tC6Sk<^tCSzeStCSaeSl~nSFo7d7Sl~7dz5JStCz5tC6Sk<ytCJS\u0402HuxJX3tCWk<tC\u0402HnSFSMGNSFefSMGSzeSk<-3tCSLeSz5JSz5uzGXz56StC^z5SaeSl~nS6JS7d7Sl~7dz56StCyz5SaeS7dnS6Df=7S7df=l~JSk<l~z5WtCz5k<nSFS\u0402HnS\u0402HMGNSPcfSMGSzeSk<-3tCSMeSz5JSz5u8SGz56StC^z5SaeSl~nSN|7d7Sl~7dz56StCyz5SaeS7dnSaBf=7S7df=l~JSk<l~z5WtCz5k<nSFS\u0402HnS\u0402HMGNSt7kSMGSzeSk<-3tCSMeSz5JSz5uzGXz56StC^z5SzeSz5JSz5unTS3z56StCyz5SaeS7dnS\u04027Sf=7S7df=l~JSk<l~z5WtCz5k<nSFS\u0402HnS\u0402HMGNSMzkSMGSzeSk<-3tCSceSz5JSz5uzGXz56StC^z5SzeSz5SaeS7dnSn4f=7S7df=l~JSz5l~z56StCyz5SaeS7dnSFrf=7S7df=l~JSk<l~z5WtCz5k<nSFS\u0402HnS\u0402HMGNSFFkSMGSzeSk<-3tCSceSz5SaeS7dnS7Df=7S7df=l~JSz5l~z56StC^z5SzeSz5SaeS7dnSZ2f=7S7df=l~JSz5l~z56StCyz5JSk<uPlS3z5WtCz5k<nSFS\u0402HnS\u0402HMGNS6lkSMGUuI5\u0402HSaeStCnSt\u0402Sz57StCz5k<JS\u0402Hk<\u0402HSFeSk<+\u0402Hk<\u0402HnS\u0402HMGNSctFSMGSzeSk<-3tCUuI5z5SaeS7dnStJSf=7S7df=l~JSz5l~z56StC^z5SFeSz56StCyz5SaeS7dnSZBf=7S7df=l~JSk<l~z5WtCz5k<nSFS\u0402HnS\u0402HMGhzTFSMGnSuK^k<8S8~k<nSk<\u0402HnS\u0402HMGGykMS6yyeMSMGnSuo^k<nSuo^tC+k<tCk<NSN\u0402FSk<SkMSz5SeMSl~7Sz5l~tCBtCGyaPS6yyzPSMGSaPSk<SzPStCxSk<tCk<Bk<GyFPS6yyLPSMGyMPS\u0402HSFPSz5SLPSl~SMPS7d0z5l~7dtCBtCGyTcS6ySTcSk<9k<\u0402HB\u0402HGywcS6yy6cSMGSwcSk<S6cStC+k<tCk<Bk<GyecS6yylcSMGSecSk<SlcStC+k<tCk<Bk<GyJ8^6yyZ8^MGSJ8^k<SZ8^tC+k<tCk<Bk<Gyz8^6yyn8^MGSz8^k<Sn8^tC+k<tCk<Bk<GyL8^6yyM8^MGSL8^k<SM8^tC+k<tCk<Bk<GATt^nS^\u0402H~\u0402HMG8STt^MGdFPFS3uSSMGBMGGy6t^6yyNt^MGAkt^STt^k<NSc8eSk<dkTeS^uSStCnStCk<ElteSdZzeS^uSSz5nSz5k<8Skt^k<nSyz5~z5tC8STt^tCnStCk<Skt^k<Bk<GA\u0402J^AaJ^SLCMG8S\u0402J^MGSNt^MGNSJzeSMGSNt^k<-3tCS6t^z56StC^z5nSJXz56StCyz5S\u0402J^7dnS7JSf=7S7df=l~JSk<l~z5WtCz5k<nSFS\u0402H8SaJ^\u0402HnSGk<8SNt^k<nSk<\u0402HSaJ^\u0402HB\u0402HGGAxT^AwT^A6T^ANT^AkT^AeT^AlT^APT^A8Z^SaeSMG8SxT^MGdJzlS^uSSMGy6HMG8SwT^MGSwT^\u0402H9\u0402HMG8S6T^MGS6T^\u0402HS6T^k<SxT^z5nSLol~7Sz5l~tCJSk<tCk<hFFeSk<aStCnStCk<SxT^z5nSLol~7Sz5l~tC6S\u0402HtCk<nSk<MG8SNT^MG-pMGSzeS\u0402HSxT^tCnSNZSz57StCz5k<JS\u0402Hk<\u0402H6SMG^\u0402HSzeS\u0402HSxT^tCnSZVz57StCz5k<JS\u0402Hk<\u0402H6SMGy\u0402HSxT^k<nSx0tC7Sk<tC\u0402H6SMG3\u0402HSzeS\u0402HSxT^tCnSz7Sz57StCz5k<JS\u0402Hk<\u0402H6SMG<\u0402HSzeS\u0402HSxT^tCnS8bz57StCz5k<JS\u0402Hk<\u0402H6SMGC\u0402HSzeS\u0402HSxT^tCnSnbz57StCz5k<JS\u0402Hk<\u0402H6SMG~\u0402HSzeS\u0402HSxT^tCnSzrz57StCz5k<JS\u0402Hk<\u0402H6SMGd\u0402H8SkT^MGnS^MG8SeT^MGSzeS\u0402H-3k<SeT^tC6Sk<^tCSkT^tCSxT^l~nScb7d7Sl~7dz5JStCz5tC6Sk<ytCSxT^l~nSf27d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGNS8zlSMGSneS\u0402HSxT^tCnSk>z57StCz5k<JS\u0402Hk<\u0402HJS\u0402HuxT^C\u0402H-yk<SneStC6Sk<^tCSxT^l~nS6|7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMG8SlT^MGSkT^MGSeT^\u0402HJSMG\u0402HMG8SPT^MGSNT^MGSPT^\u0402HJSMG\u0402HMGhzPLSMGSlT^\u0402HnS\u0402HMG8S8Z^MGSlT^\u0402HSneStC-yz5SneSl~6Sz5^l~JStCuxiGl~Wz5l~tCnSFSk<SxT^z5nStYl~7Sz5l~tC6S\u0402HtCk<nSk<MGSlT^\u0402HS8Z^tCJStCuNmUtC-yz5S8Z^l~6Sz5^l~SxT^f=nS6|8-7Sf=8-7dJStC7dl~Wz5l~tCnSFSk<6S\u0402HuNmUk<nSk<MGSNT^\u0402HSlT^k<SPT^tC6S\u0402HtCk<nSk<MGSeT^\u0402HTS\u0402HyMG8SeT^MGjMGyMGEkaLSGS6HMGywT^MGA77^Ax7^SLCMG8Sx7^MGZS6llSSzeStC-3z5UuZDUl~6Sz5^l~SzeSl~Sx7^f=nSftS8-7Sf=8-7dJSl~7dl~SzeS7dJS7duFE37dTSl~7dl~nSuf=X7dTSl~7dl~6Sz5yl~Sx7^f=nSxh8-7Sf=8-7dJStC7dl~Wz5l~tCnSFSk<9k<\u0402H8S77^\u0402HnS\u0402HMGEcMlSZSGOMG>y8\u0402^MGSyk<8S77^k<nSk<\u0402HZSGS77^MGBMGGAa\u0402^Az\u0402^An\u0402^Sk5MG8Sa\u0402^MGaSMGdlcMS3uSS\u0402HyeH\u0402H6SMGu6i3\u0402Hd8JPS3uSS\u0402HyPH\u0402H6SMGueB3\u0402HSa\u0402^k<nSNJStC7Sk<tC\u0402H6SMGuN7X3\u0402H8Sz\u0402^MGUuN-H\u0402H-yk<SytC6Sk<^tCSa\u0402^l~nS6ZS7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMG8Sn\u0402^MGSz\u0402^\u0402H-3k<Sn\u0402^tCSa\u0402^l~nSk>7d7Sl~7dz5JStCz5tCSa\u0402^l~nS7D7d7Sl~7dz5JStCz5tC6Sk<^tCnSunVHtC6Sk<ytCSa\u0402^l~nSwZS7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGNSakMSMGnSuA^k<8SJ~k<nSk<\u0402HnS\u0402HMGSz\u0402^\u0402H-3k<SfCz5Sn\u0402^l~Sa\u0402^f=nSlh8-7Sf=8-7dJSl~7dl~7Sz5l~tC6Sk<^tCSz\u0402^tCJStCuN7X3tC6Sk<ytCSa\u0402^l~nSao7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGNSecMSMGnSuq^k<8SZ~k<nSk<\u0402HnS\u0402HMGGyTx^6yy7x^MGSeHk<yxx^k<STx^k<S7x^tC<k<tCk<Bk<GyNx^6yykx^MGSPHk<yex^k<SNx^k<Skx^tC<k<tCk<Bk<GA8a^AJa^AZa^A\u0402a^nSuo^MGnSuo^\u0402H+MG\u0402HMGNSxl8^MGSk5\u0402H8S8a^\u0402HaS\u0402Hdwl8^3uSSk<yZ<k<6S\u0402Hue43k<dNP8^3uSSk<ya<k<6S\u0402Hufr3k<S8a^tCnSe0z57StCz5k<6S\u0402Hu\u0402ZX3k<S8a^tCnSZtSz57StCz5k<6S\u0402HuLJ^3k<S8a^tCnSZ4z57StCz5k<6S\u0402HuPh3k<de8t^3uSSk<yn<k<6S\u0402Huw=3k<8SJa^\u0402HZS6e8^SJa^k<-3tCnSuSCz5Sy7dK7dl~Dz5l~z5NSLLPSz5nSuSCl~nSl~z5EPlPSSfCf=Sy8-7Sf=8-7dnS7dz56StC^z5S8a^l~nSaxS7d7Sl~7dz56StCyz5JSk<ue43z5WtCz5k<nSFS\u0402HNST\u0402cS\u0402HSJa^tC-3z5Syl~S8a^f=nSctS8-7Sf=8-7dJSl~7dl~6Sz5^l~Syl~S8a^f=nSPY8-7Sf=8-7dJSl~7dl~6Sz5yl~S8a^f=nSc7S8-7Sf=8-7dJStC7dl~Wz5l~tCnSFSk<nSk<\u0402HNS6\u0402cS\u0402HGUuMxXUk<-ytCSJa^z5JSz5u\u0402ZX3z56StC^z5S8a^7dnST8Sf=7S7df=l~JSk<l~z5WtCz5k<nSFS\u0402H8SZa^\u0402HSZa^k<JSk<ux6S3k<SJa^tCS8a^l~nSf47d7Sl~7dz5JStCz5tCS8a^l~nSatS7d7Sl~7dz56Sk<z5tCnStC\u0402HSZa^k<JSk<ux6S3k<nSuZVytCS8a^l~nSlY7d7Sl~7dz56Sk<z5tCnStC\u0402HUuMxXUk<S8a^z5nSkDl~7Sz5l~tCJSk<tCk<-ytCSZa^z56StC^z5S8a^7dnSJbf=7S7df=l~JSk<l~z5WtCz5k<nSFS\u0402HSyk<-ytCSZa^z56StC^z5S8a^7dnSkhf=7S7df=l~JSk<l~z5WtCz5k<nSFS\u0402H8S\u0402a^\u0402HS\u0402a^\u0402HJS\u0402Hu\u04027X<\u0402HSJa^k<S8a^z5nSMBl~7Sz5l~tCJSk<tCk<xS\u0402Hk<\u0402HNS678^\u0402HnSua^^tC8S\u0402~tCnStCk<nSk<\u0402HSJa^k<-3tCSZa^z5JSz5u8M^gz56StC^z5nS^z56StCyz5S8a^7dnSJ7Sf=7S7df=l~JSk<l~z5WtCz5k<nSFS\u0402HNSZn8^\u0402HnS^k<SZa^tCS8a^l~nS8B7d7Sl~7dz5JStCz5tC+k<tCk<nSk<\u0402HNSkN8^\u0402HnSuC^tC8Sa~tCnStCk<nSk<\u0402HUuMxXUk<S8a^z5nSkDl~7Sz5l~tCJSk<tCk<-ytCSZa^z56StC^z5JSk<uC~z5WtCz5k<nSFS\u0402HETl8^ZSGO\u0402H>yLz^\u0402HnSufd^tC8Sz~tCnStCk<ZSGGyt6^6yyT6^MGSZ<k<y76^k<St6^k<ST6^tC<k<tCk<Bk<Gy66^6yyN6^MGSa<k<yk6^k<S66^k<SN6^tC<k<tCk<Bk<GyP6^6yy8n^MGSn<k<yJn^k<SP6^k<S8n^tC+k<tCk<Bk<GAan^Azn^Ann^Afn^Sk5MG8San^MGaSMGSan^k<nSe0tC7Sk<tC\u0402H6SMGuwMS3\u0402HSan^k<nSPZStC7Sk<tC\u0402H6SMGuN>3\u0402HSan^k<nSJxStC7Sk<tC\u0402H6SMGuxp3\u0402H8Szn^MGUuMxXU\u0402H-yk<Szn^tCJStCuwMS3tC6Sk<^tCSan^l~nST8S7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMG8Snn^MGSnn^\u0402H-3k<San^z5nSlOl~7Sz5l~tC6Sk<^tCSzn^tCSan^l~nSkJS7d7Sl~7dz5JStCz5tC6Sk<ytCSan^l~nSJ47d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGUuMxXU\u0402HSan^tCnSkDz57StCz5k<JS\u0402Hk<\u0402H-yk<Snn^tC6Sk<^tCJS\u0402HuJo~tCWk<tC\u0402HnSFSMGUuMxXU\u0402HSan^tCnSkDz57StCz5k<JS\u0402Hk<\u0402H-yk<UuMxXUz5-yl~Szn^7dJS7duxp37d6Sl~^7dJSz5uN6Sd7dWl~7dz5nSFStC6Sk<^tCSan^l~nSt07d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMG8Sfn^MGUuMxXU\u0402HSan^tCnSkDz57StCz5k<JS\u0402Hk<\u0402H-yk<Snn^tC6Sk<^tCSan^l~nS87S7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGSfn^MGBMGGAxN^AwN^A6N^ANN^AkN^AeN^Sk5MG8SxN^MGaSMGSxN^k<nSa2tC7Sk<tC\u0402H6SMGunZ^3\u0402HSxN^k<nSxJStC7Sk<tC\u0402H6SMGuzk^3\u0402Hd8NT^3uSS\u0402HyM<\u0402H6SMGul6^3\u0402H8SwN^MG-CMGnS^\u0402H6SMG^\u0402HnS^\u0402H6SMGy\u0402HnS^\u0402H6SMG3\u0402HnS^\u0402H6SMG<\u0402H8S6N^MGUu\u0402h<MG8SNN^MGSNN^MGSwN^\u0402HSxN^tCnSwJSz57StCz5k<JS\u0402Hk<\u0402HJSMG\u0402HMG8SkN^MGSNN^\u0402HdZkT^^uSSk<SwN^tCSxN^l~nSwJS7d7Sl~7dz5JStCz5tC6S\u0402HtCk<nSk<MGSyMGSwN^\u0402HJS\u0402Huzk^3\u0402HJSMG\u0402HMG8SeN^MGSNN^\u0402HSkN^k<SwN^tCSxN^l~nSwJS7d7Sl~7dz5JStCz5tC6S\u0402HtCk<nSk<MGSwN^\u0402H-3k<S6N^tCnS<z5JStCz5tC6Sk<^tCnS^tC6Sk<ytCSxN^l~nSt>7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGNSPnT^MGnSu3^k<8Sn~k<nSk<\u0402HnS\u0402HMGGyzf^6yynf^MGSM<k<yff^k<Szf^k<Snf^tC<k<tCk<Bk<GS6N^\u0402HnS<k<JS\u0402Hk<MGTSMGyMG6S\u0402Hk<MGjMGyMGGAtk^ATk^A7k^Axk^Awk^A6k^ANk^Akk^Sk5MG8Stk^MGaSMGStk^k<nSMVtC7Sk<tC\u0402H6SMGuey3\u0402HStk^k<nSz4tC7Sk<tC\u0402H6SMGuf6X3\u0402HStk^k<nSaTStC7Sk<tC\u0402H6SMGuL7X3\u0402HnSul8S5\u0402H6SMGunB3\u0402HStk^k<nSl0tC7Sk<tC\u0402H6SMGuanS3\u0402HnSux\u0402^U\u0402H6SMGulk^3\u0402HStk^k<nSw\u0402StC7Sk<tC\u0402H6SMGuxZS3\u0402HStk^k<nSwDtC7Sk<tC\u0402H6SMGuNM^3\u0402HStk^k<nS8otC7Sk<tC\u0402H6SMGuJJX3\u0402HnSu8\u0402X<\u0402H6SMGuMPS3\u0402HdJa\u0402^3uSS\u0402Hy7U\u0402H6SMGuNN^3\u0402H8STk^MGUuF=3\u0402H2k<5\u0402Hk<\u0402HStk^tCnSN>z57StCz5k<JS\u0402Hk<\u0402HhkNZ^\u0402HnSuSSk<nSk<\u0402H2k<Stk^l~nSc27d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMG8S7k^MG-KMGSTk^\u0402HStk^tCnSw>z57StCz5k<JS\u0402Hk<\u0402H6SMG^\u0402HSTk^\u0402HStk^tCnSc4z57StCz5k<JS\u0402Hk<\u0402H6SMGy\u0402HSTk^\u0402HJS\u0402HuL7X3\u0402H6SMG3\u0402HSTk^\u0402HStk^tCnSLbz57StCz5k<JS\u0402Hk<\u0402H6SMG<\u0402HSTk^\u0402HStk^tCnST\u0402Sz57StCz5k<JS\u0402Hk<\u0402H6SMGC\u0402HSTk^\u0402HStk^tCnSM2z57StCz5k<JS\u0402Hk<\u0402H6SMG~\u0402HSTk^\u0402HJS\u0402HuxZS3\u0402H6SMGd\u0402HStk^k<nS\u0402TStC7Sk<tC\u0402H6SMGp\u0402HSTk^\u0402HStk^tCnSPOz57StCz5k<JS\u0402Hk<\u0402H6SMGj\u0402HSTk^\u0402HJS\u0402HuJJX3\u0402H6SMGs\u0402HStk^k<nSJtStC7Sk<tC\u0402H6SMG+\u0402HnSuwnXg\u0402H6SMGQ\u0402HSTk^\u0402HStk^tCnSfrz57StCz5k<JS\u0402Hk<\u0402H6SMGR\u0402H8Sxk^MGnS^MG8Swk^MGSxk^MG8S6k^MGSwk^MGS6k^\u0402HJS\u0402HuxJ^H\u0402HxSMG\u0402HMGNS8a\u0402^MGS6k^MGSwk^\u0402HJSMG\u0402HMG8SNk^MGSTk^\u0402H-3k<SfCz5SNk^l~7Sz5l~tC6Sk<^tCStk^z5nSTZSl~7Sz5l~tC6Sk<ytCStk^l~nSMtS7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMGNSJJ\u0402^MGS7k^k<-ytCSNk^z56StC^z5Stk^7dnSMof=7S7df=l~JSk<l~z5WtCz5k<nSFS\u0402HnS\u0402HMGEfZ\u0402^SNk^tC-yz5S7k^l~6Sz5^l~JStCu8GGl~Wz5l~tCnSFSk<nSk<MG8Skk^MGSkk^MGNSf\u0402\u0402^MGnSuwG^k<8Sf~k<nSk<\u0402HnS\u0402HMGSwk^\u0402HTS\u0402HyMG8Swk^MGjMGyMGEMN7^GyMF^6yycF^MGS7Uk<yte^k<SMF^k<ScF^tC+k<tCk<Bk<GAxe^Awe^A6e^Sk5MG8Sxe^MGaSMGnSuzaSLS\u0402H6SMGuti3\u0402HdZfa^3uSS\u0402Hy6U\u0402H6SMGut43\u0402HdaFa^3uSS\u0402HykU\u0402H6SMGu6l^3\u0402HdnLa^3uSS\u0402HylU\u0402H6SMGuz<3\u0402HdFMa^3uSS\u0402Hy8C\u0402H6SMGuk|3\u0402HSxe^k<nSF4tC7Sk<tC\u0402H6SMGuL03\u0402HnSuLvK\u0402H6SMGuZW3\u0402HnSuezSd\u0402H6SMGuJlS3\u0402H8Swe^MGUuMxXU\u0402H-yk<nSuq^tC6Sk<^tCSxe^l~nST8S7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMG8S6e^MGS6e^\u0402HSwe^k<Sxe^z5nSF7Sl~7Sz5l~tCJSk<tCk<6S\u0402Huw6XGk<nSk<MGSwe^\u0402H-3k<S6e^tCSxe^l~nS\u0402b7d7Sl~7dz5JStCz5tC6Sk<^tCUuNhUtCJStCuFaXUtC6Sk<ytCJS\u0402Hut43tCWk<tC\u0402HnSFSMGhTFx^MGSwe^k<-3tCS6e^z5Sxe^7dnSntSf=7S7df=l~JSz5l~z56StC^z5UuNhUz5Sxe^7dnSntSf=7S7df=l~JSz5l~z56StCyz5Sxe^7dnSehf=7S7df=l~JSk<l~z5WtCz5k<nSFS\u0402HnS\u0402HMGhTcx^MGSwe^k<-3tCS6e^z5Sxe^7dnSlDf=7S7df=l~JSz5l~z56StC^z5UuNhUz5Sxe^7dnSlDf=7S7df=l~JSz5l~z56StCyz5JSk<uz<3z5WtCz5k<nSFS\u0402HnS\u0402HMGhk7a^MGSwe^k<-3tCS6e^z5Sxe^7dnS8TSf=7S7df=l~JSz5l~z56StC^z5Swe^z5Sxe^7dnSlZSf=7S7df=l~JSz5l~z56StCyz5Sxe^7dnSw|f=7S7df=l~JSk<l~z5WtCz5k<nSFS\u0402HnS\u0402HMGhLaa^MGS6e^\u0402HJS\u0402HuwfXH\u0402HSwe^k<Sxe^z5nSL2l~7Sz5l~tCJSk<tCk<<\u0402Hk<\u0402HnS\u0402HMGhfna^MGS6e^\u0402HSxe^tCnSaVz57StCz5k<JS\u0402Hk<\u0402HSwe^k<Sxe^z5nSM4l~7Sz5l~tCJSk<tCk<<\u0402Hk<\u0402HnS\u0402HMGNSJfa^MGnSu63^k<8SF~k<nSk<\u0402HnS\u0402HMGGyzL^6yynL^MGS6Uk<yfL^k<SzL^k<SnL^tC<k<tCk<Bk<GyML^6yycL^MGSkUk<ytl^k<SML^k<ScL^tC<k<tCk<Bk<Gyxl^6yywl^MGSlUk<y6l^k<Sxl^k<Swl^tC<k<tCk<Bk<Gyel^6yyll^MGS8Ck<yPl^k<Sel^k<Sll^tC<k<tCk<Bk<GAZM^A\u0402M^AaM^Sk5MG8SZM^MGaSMGdLlw^3uSS\u0402Hy\u0402C\u0402H6SMGuLe^3\u0402HdcPw^3uSS\u0402HyzC\u0402H6SMGuakS3\u0402H8S\u0402M^MGUuJcSG\u0402H-yk<S7=tCSZM^l~nSPZS7d7Sl~7dz5JStCz5tC6Sk<^tCSZM^l~nSFTS7d7Sl~7dz5JS\u0402Hz5tCWk<tC\u0402HnSFSMG8SaM^MGS\u0402M^k<-3tCSaM^z5SZM^7dnSMTSf=7S7df=l~JSz5l~z56StC^z5nSvLxwTxJ3wJnNLL+z56StCyz5SZM^7dnSkYf=7S7df=l~JSk<l~z5WtCz5k<nSFS\u0402HNSZlw^\u0402HS\u0402M^tC-3z5SaM^l~SZM^f=nSTY8-7Sf=8-7dJSl~7dl~6Sz5^l~nSvPlwknJ3NMzMFLHl~6Sz5yl~SZM^f=nS8V8-7Sf=8-7dJStC7dl~Wz5l~tCnSFSk<nSk<\u0402H8Sx=\u0402HnS\u0402HMGGyLM^6yyMM^MGS\u0402Ck<ycM^k<SLM^k<SMM^tC+k<tCk<Bk<Gy7P^6yyxP^MGSzCk<ywP^k<S7P^k<SxP^tC+k<tCk<Bk<Gu\u0402kXlSZXxyn^nXeXZXn^xywyn^Z^Zyl^n^PSe^eXcXxytXxXZyf^eScXZyx^JycX7^e^eXf^t^fXf^nX7^xXeXTyzyx^e^Zyf^fXZXJyZ^n^w^cXJyfXnXZywyZ^nXcXeXZXn^7^Zydmw^JyfXe^6SwS2fStSO-O-O2w^n^wynXZywyZ^JyZXxXn^wyn^Z^Zyl^n^a^fXn^Z^wyn^wXlSn^f^fXF^ZXeXZ^JyfXeXZyZXT^wyJyZ^n^eXfXn^wyJyfXZywyl^f^xXf^PXtSfXn^f^fXw^Jywyf^n^lXeXxyfXe^ULSTyLXlSzXzXNXN^TyfXfXw^8Xn^wXlSn^f^fXaXeSl^ty7^n^l^JycXlSJyfXn^ZXJyZ^n^fSfS2U+D1eScSL^w^zXZXeStXeSlXn^eX+2e^x^+tSw^wyxy8XwyP^L^ZXeSn^fXL^lXZXLXwyZyw^n^wyfXtXP^n^f^xXwyeXw^fXZywyJycXcXZXJyl^eXeSJyfXZywyZ^ZyxylScXn^OJ^xXZyZ^w^eXcXn^ZXfXZyw^l^JycXlSn^222WDUfSye^wyP^aycS7Xe^eXf^fXZywytXZ^Zyl^n^7^ZykXZXJyfXeXl^n^mxXZyxyn^M^fXJyx^cXn^k^ZX8^zXF^J^J^f^n^xXJ^eXxyfXPSe^wyZyZ^n^w^cXJytXlXwyeXeSe^fXn^Tyc^tytyNXzXLXJyfXe^PXt^xXn^w^fXeXZyZX7^ZXN^wyaXBdPXwywyZywyf^ZyZ^n^L^eXay8XPXTXeSt^7XZXnXtSUty2tylXlXDfXn^lSlSc^7yT^tXJ^eScXZyx^JycXL^x^cSn^xXfXaX8yZ^7ynXPX7^tX7^ZyNX7^L^L^f^z^wXN^L^aynXlSZXxXfXeXZyZXx^xy8^eScXxXZyZXf^fXwylSxXfXZywyaXVwX6SeXt^Z^lSZ^n^cS-tX-0l^6S2cS1xXxycXWxX-wXcSxyeXl^L^a^lSTXtXIZ^eXZX~lXeXxyfXe^\u0402Sm-w^t^BnXn^fXxXe^TXcSa^Jy7ylXZ^l^-fXx^wX-xXf^tyeScSW8^7yx^z^7yTXx^eXZXxyl^zXn^LXl^21ynXPXaXf^N^xXxXe^JywyPSZyxyn^F^fXkXZyx^cSn^xXfXmF^wywyJytXM^JywyeSlSZ^n^ZXfXf^wyJyZXxyZyZ^cXZyxXJycX8yfXZywyJyeSn^xXJyZXl^Jyf^n^ZXlSZ^n^wyJyx^cXn^w^lSf^e^NXN^k^f^T^f^n^f^f^eXZyZX8yfXZywyJyeSn^eSn^fXL^lXZXLXwyZyw^n^wyfXtXLSJyZ^n^f^tXn^2w^xXwyfXtSw^Jyw^w^cXtXtye^t^lXx^Jyf^eXUcXUw^yDxyeXf^w^cXJytXeXZXxXcXlSxyn^f^TylSwyLXeSf^n^fXF^fXfXwyeXx^lSfXn^fX8XP^7XfX+fStS1-ULX7yFXzXcSayxXwyn^JyfXn^PXcXn^Z^n^ZXfXTX8Xt^8^8^w^w^ZylXl^1tyeSn^c^Df^WZyfXZy8yfXwyeXZXeS8y7Xn^zXwyl^n^wyf^eXZyZXf^l^JycXlSn^fSx^xytXc^w^f^fXJyxXc^JyxyxyPXl^n^ZXfXN^eXf^fXn^ZXn^wyzXT^L^8XPXJyw^w^n^ZXxyPSe^eXcXxyfXtXw^n^n^x^8y8yZyxXcSJya^wyZ^JyfXxXe^n^f^2yDyDZy7ye^PS7^cXe^Jyf^e^cX-wycScXcSJyc^xXfXZy-nXxyDeXlSlSnX8ytXZ^x^ZycXDxXZyZXf^ZycXn^cXZyxXJyfXeXZyZXFXxXtyzyT^xXZyZXnXeXeSlSwyJyx^cXn^w^lSw^w^n^fXn^n^wyL^8XlXeSF^J^J^f^n^xXJ^eXZyWw^8yty8^x^a^L^wXF^PXeXxy-OylXJywyZXcSz^eXZXxyZylXZyayF^F^fXxXcXZyf^n^LXJyfXe^xXJycXcXF^PSZ^8^7yF^8^w^a^cXcXZyeSxXe^JyZXeSn^FXzXc^e^zXlSn^e^LXzXkXZyx^cSn^xXfXmT^lSZXxXfXeXZyZXM^n^e^Jyz^nXJyPSe^NXty7yxyzXJyc^tyL^x^cSn^xXfXF^L^PX7^TXTXeSP^8XeSlS2fStSWD+W8XaXT^xXwX8X8Xk^NXZXN^xyeXl^kXfXn^f^fX6S=l^JycXlSn^=M^8^TXlS8X7^lSPXPSaycSc^z^eXL^t^ZXtyw^wXtSlXcXe^tStyf^ZXZyZXn^xXcSf^wScXZyJyxyn^wyZXZyxyn^nXZywyZ^eXeXPS7Xwyzytyf^eXlXcSf^xyZyZ^l^JycXlSn^e^aynX8y8XN^ZXZyxyn^\u0402SeXZXfXn^wyZXJycXP^LSw^k^zyPSLXzyTyLSxytyz^wyNXlXwyeXfXJyx^cXn^PXx^L^7yLSlXn^x^xywyeXl^n^wyZ^JyfXxXe^NXn^xyeXJyUUw^t^aX7XF^8y8^f^fXwyeXZXeSeXnXtXnXlSZXxXfXeXZyZXmz^eXZXxyZylXIBm\u0402^mkXZXJyfXeXl^n^mxXZyxyn^M^m\u0402yn^t^n^xXlSfXn^f^xXwyeXw^fXwyLS8XwyLXwSlSfScXnXZy2wXt^f^lXt^wSfStXe^c^Jyw^+xyOe^fXZ^cXVwX6SeXt^Z^lSZ^n^cS-tX-0l^6S2cS1xXxycXWxX-wXcSbDn^x^ZXZ^x^+ZXWDZy+f^fXtXcXn^cXwXlSn^wytX8yn^cXn^xXfXZywyFXF^PSaXeSNX7XtycXPXFXZyZycXn^JyZXeXZXnXZykXZyx^cSn^xXfXmL^x^cSn^xXfXM^xXcXeXn^ZXfXTyn^eXeSe^fX6SlXeXZXxyZylXJ^J^w^wyZyfXZyJ^J^lSf^n^wyF^eSn^ZXfX7^xX7Xl^7XLXfXwyJyxXn^e^Jyf^a^ZXf^fXJyZXxXn^cXz^7Xl^Jywyn^fXlSwyZXmInXlSZXxXfXeXZyZXIBmayL^eXl^tyf^lSx^f^fXwyeXZXeSfXZy8yfXwyeXZXeS7^JyeSNXJyfXe^xXZyZyc^eXn^e^n^L^tynXdt^N^aylSwXeSn^fXLXwyZyfXZyfXtXw^n^L^nXlSZ^ZXnXcSnXeXcXfXn^wyJyf^L^ayxX7XPSz^P^8yeSn^fXPSZyZ^w^lSfXn^xy8yfXtXcXn^w^JyfXe^ZXJyZ^n^ZyTXl^L^lSaX8yL^LST^lSZXxXfXeXZyZXkXZyx^cSn^xXfXmTy7^NXN^P^ZyxXlSZ^n^ZXfXM^e^7yLSx^n^f^n^fX7^eXZ^n^ZylSfXeXZXw^lSfXF^eSl^L^l^wX8XfXPStX7XJyeXTXlXF^x^ZX8yl^wycXn^ZXeSfXe^8yP^tXeSeXfXtXZ^xyFXf^n^fXa^fXn^Z^w^wyZyfXZyfXtXw^n^xyn^nXeXZXn^LXwyZyw^n^wyfXtXn^wywyZywytXtyPXZ^eXa^NXe^P^8XPXTyZ^wyxXf^tXZ^x^ZycXf^JylXcXPSPXl^n^ZXfXc^a^eXF^lXfSw^ZywyfXf^n^cXn^ZXeXlSZ^w^Jyxy8yfXJywyfXJywyl^cXwyZyw^yxywyeXl^n^wyeXf^w^cXeXfXw^Jywyf^n^a^ZXfXeSn^fXPSZyZXfXn^t^fX7Xx^tyx^cSc^T^fXa^N^dmZ^Jyt^~JyeSn^6Sf^eXZXe^eXxyxyn^ZXn^T^7^FXZXw^wyZyxXn^f^f^7yay8yPXeStycSl^lXe^ZXZyxyn^J^Z^ZyxylScXn^f^LXT^7Xx^fXn^8yk^7^ZyP^l^LSL^e^eSn^fXPXcXn^Z^n^ZXfXFXtXa^xye^fXfXw^f^\u0402Sw^lSf^e^8yfXJyfXn^f^fXwyeXZXeSL^ayc^wyNXxXJycXcXn^wy\u0402^\u0402yOxXZyZXf^fXwylSxXfXZywyI=wyn^fXlSwyZXmfXe^eXf^=BImBPXxXTyFXZyf^n^cXnXF^LX8Xf^w^x^ZyxytXkXZyx^cSn^xXfXmTy7^NXN^F^cXcXPSZycXcXn^xXfXeXZyZXM^c^T^7Xt^JyPScSPSL^t^t^aXc^LX7X7^lSZ^JyayJywy8^w^cScXZyxXJycXe^Zyf^fXWDtS2xyPXZXw^tya^JyTXeSTyNXxXlStX7yL^eSn^fXa^fXn^Z^ZynXnXf^n^fXTyn^eXeSe^fXc^N^PXFXTXPXZyaXwywyUzXw^TyFXxXeSwX-Z^dmFSFSZXty-wXZ^tyeSxyZXZylX++22tS-xyTylXeSeSzylXkXZyx^cSn^xXfXmL^+wXlSLSLSNXtSDe^cSycXnXM^f^fXJywyfXf^z^eXfXe^tXWt^wXJyJyn^xyaye^wytXx^F^wywyJytXty8XZ^aye^2aX8^fXwXwX8yk^tyn^cSw^Zyw^eSn^fXLXa^cXyw^cSfXZXfSwXfSe^-fSxyn^t^xXn^w^fXeXZyZXa^eXZye^ZyF^c^P^f^T^T^c^eSt^a^x^ZXlSZ^x^n^wyfXZyN^ZylXn^wyPSJyf^n^Zyw^JyxXeXfXtXwXz^eSTXnX7ylScXJyk^w^e^JyZXfXZyZ^-x^n^eSeXZXLXJyfXe^wSlSfScXnXZy2wXt^f^lXt^wSfStXe^c^Jyw^+xyOe^fXZ^cXxyZyxXlSZ^n^ZXfX1DD+fSzy7^PSLSNX7yw^wyZyfXZyxXZycXx^x^x^n^nX1--n^WJy+tSxXUJyDWx^x^xyx^U-11JyD2x^1Wy+xXfSxX-D1xXbDn^x^ZXZ^x^+ZXWDZy+e^wyn^nXxXF^7^8^lSzXxXZyZXfXJyeXZXf^f^e^eXnXfXxXJycXcXnXlSZXxXfXeXZyZX+Z^zya^wXn^wXzXz^nXl^xyeXf^w^JyfXxXe^PXl^n^ZXfXw^7^ayN^wXwXPXlScSz^f^n^JywyxXe^L^+wXlSLSLSNXtSDe^cSycXnXfPQ",
-    vaQv87 = _FrjyjH[12],
-    yYoOojT = CXOtql(XGolUD, "S^XyG3H<UC5~gd=p-jvsu+iQIRWKqEA1m9OoYbh2|V0rD4>B8tJTZ7\u0402xawz6nNfkFeLlMPc", 48),
-    LOQiiyK = yYoOojT[vaQv87];
-  function sPbmyU(XGolUD) {
-    return XGolUD[_FrjyjH[13]][_FrjyjH[1]];
-  }
-  for (var loeAK8 = "", hvx6dTJ = LOQiiyK + (loeAK8 + !_FrjyjH[0])[vaQv87], lAhsEPG = {
-      [_FrjyjH[32]]: ""
-    }, vRJbtq = _FrjyjH[0]; vRJbtq < _FrjyjH[64]; vRJbtq++) loeAK8 += String[_FrjyjH[29] + _FrjyjH[30]](97 + Math.floor(26 * Math.random()));
-  var K0vmG5 = window,
-    WoGtSep = K0vmG5["Promis" + _FrjyjH[14]];
-  function PeVNp87(XGolUD) {
-    return yYoOojT[XGolUD[_FrjyjH[13]][_FrjyjH[0]]++] >> _FrjyjH[15];
-  }
-  function J4NWyB() {
-    var XGolUD = [_FrjyjH[1], {
-      [_FrjyjH[38]]: K0vmG5,
-      [_FrjyjH[27]]: _FrjyjH[11],
-      [_FrjyjH[36]]: [],
-      [_FrjyjH[13]]: [_FrjyjH[0]],
-      [_FrjyjH[16]]: void _FrjyjH[0]
-    }, void _FrjyjH[0]];
-    return {
-      [_FrjyjH[13]]: XGolUD,
-      [_FrjyjH[20]]: void _FrjyjH[0]
     };
-  }
-  function Pvqtdk(yYoOojT, LOQiiyK) {
-    if ("IcCJdp" + _FrjyjH[14] in rKBbGH) {
-      sPbmyU();
-    }
-    function sPbmyU() {
-      var yYoOojT = function (yYoOojT, sPbmyU) {
-          return LOQiiyK({}, yYoOojT, sPbmyU);
+  const _0x1438cf = {
+    DEFAULT_UID: "1",
+    DEFAULT_FLOWER: _0x35e983[_0x38cdb4(359, "myJ0")]
+  };
+  let _0x3f2d5b = localStorage[_0x38cdb4(375, "(JAQ")](_0x35e983[_0x38cdb4(345, "(JAQ")]) || _0x1438cf[_0x38cdb4(346, "1Edn")],
+    _0x54cc29 = localStorage[_0x38cdb4(615, "h1sR")]("lc") || _0x1438cf[_0x38cdb4(472, "$wVr")];
+  const _0x5a15fb = (_0xc36c26, _0x21f5e7 = 2000, _0x128634 = false) => {
+      const _0x2136f2 = _0x38cdb4,
+        _0x3b2fd6 = {
+          epzWu: function (_0x3e93c3, _0x373306) {
+            const _0x5cd0b8 = _0x28c6;
+            return _0x35e983[_0x5cd0b8(633, "(JAQ")](_0x3e93c3, _0x373306);
+          },
+          Ukiuj: _0x35e983[_0x2136f2(473, "%JJ#")],
+          ZIJZx: function (_0x28d2fa, _0x1d46ae) {
+            const _0x3769d4 = _0x2136f2;
+            return _0x35e983[_0x3769d4(540, "^X[A")](_0x28d2fa, _0x1d46ae);
+          },
+          hVIac: _0x35e983[_0x2136f2(329, "[do#")],
+          Mvrwv: _0x35e983[_0x2136f2(417, "@P0M")],
+          TfXvK: _0x35e983[_0x2136f2(536, "ng66")],
+          lVACM: _0x35e983[_0x2136f2(316, "POnp")],
+          htdSA: _0x35e983[_0x2136f2(504, "B[tJ")],
+          JdGVE: _0x35e983[_0x2136f2(556, "^X[A")],
+          uQwuJ: function (_0x3f795e, _0x354e7a, _0x32f073) {
+            return _0x35e983[_0x47f389(352, ")[Hi")](_0x3f795e, _0x354e7a, _0x32f073);
+          }
         },
-        LOQiiyK = function (yYoOojT, sPbmyU, loeAK8) {
-          var hvx6dTJ = {};
-          if (yYoOojT[sPbmyU + loeAK8] !== _FrjyjH[17]) return yYoOojT[sPbmyU + loeAK8];
-          if (sPbmyU === loeAK8) return _FrjyjH[19];
-          for (var CXOtql = _FrjyjH[0]; CXOtql < sPbmyU.length; CXOtql++) {
-            if (hvx6dTJ[sPbmyU[CXOtql]] === _FrjyjH[17]) hvx6dTJ[sPbmyU[CXOtql]] = _FrjyjH[0];
-            if (hvx6dTJ[loeAK8[CXOtql]] === _FrjyjH[17]) hvx6dTJ[loeAK8[CXOtql]] = _FrjyjH[0];
-            nZdYbC(hvx6dTJ[sPbmyU[CXOtql]]++, hvx6dTJ[loeAK8[CXOtql]]--);
-          }
-          for (var XGolUD in hvx6dTJ) if (hvx6dTJ[XGolUD] !== _FrjyjH[0]) {
-            yYoOojT[sPbmyU + loeAK8] = _FrjyjH[18];
-            return _FrjyjH[18];
-          }
-          for (var vaQv87 = _FrjyjH[1]; vaQv87 < sPbmyU.length; vaQv87++) if (LOQiiyK(yYoOojT, sPbmyU.substr(_FrjyjH[0], vaQv87), loeAK8.substr(_FrjyjH[0], vaQv87)) && LOQiiyK(yYoOojT, sPbmyU.substr(vaQv87), loeAK8.substr(vaQv87)) || LOQiiyK(yYoOojT, sPbmyU.substr(_FrjyjH[0], vaQv87), loeAK8.substr(loeAK8.length - vaQv87)) && LOQiiyK(yYoOojT, sPbmyU.substr(vaQv87), loeAK8.substr(_FrjyjH[0], loeAK8.length - vaQv87))) {
-            yYoOojT[sPbmyU + loeAK8] = _FrjyjH[19];
-            return _FrjyjH[19];
-          }
-          yYoOojT[sPbmyU + loeAK8] = _FrjyjH[18];
-          return _FrjyjH[18];
-        };
-      console.log(yYoOojT);
-    }
-    for (;;) {
-      var loeAK8 = yYoOojT[_FrjyjH[13]][_FrjyjH[1]];
-      if (!loeAK8) {
-        throw LOQiiyK;
-      }
-      if (loeAK8[_FrjyjH[21]]) {
-        if ("T5PVDJ" in rKBbGH) {
-          hvx6dTJ();
-        }
-        function hvx6dTJ() {
-          var yYoOojT = function (yYoOojT) {
-            nZdYbC(this.capacity = yYoOojT, this.length = _FrjyjH[0], this.map = {}, this.head = _FrjyjH[11], this.tail = _FrjyjH[11]);
+        _0x3fb64e = document[_0x2136f2(436, "QcAt")](_0x35e983[_0x2136f2(313, "@P0M")]);
+      _0x3fb64e[_0x2136f2(482, "f6Na")] = _0xc36c26;
+      _0x3fb64e[_0x2136f2(622, "[do#")][_0x2136f2(381, "rsxD")] = _0x2136f2(629, "7Lom") + (_0x128634 ? _0x35e983[_0x2136f2(483, "POnp")] : _0x35e983[_0x2136f2(369, "WDis")]) + _0x2136f2(401, "P^b*");
+      document[_0x2136f2(459, "EBic")][_0x2136f2(568, "MOJV")](_0x3fb64e);
+      _0x35e983[_0x2136f2(567, "E[Zg")](setTimeout, () => {
+        const _0x3c4382 = _0x2136f2,
+          _0x2886f0 = {
+            AkiLK: function (_0x27191b, _0x742d9e) {
+              const _0x54da4 = _0x28c6;
+              return _0x3b2fd6[_0x54da4(599, "@P0M")](_0x27191b, _0x742d9e);
+            },
+            CqmdJ: _0x3b2fd6[_0x3c4382(392, "q7T7")]
           };
-          nZdYbC(yYoOojT.prototype.get = function (yYoOojT) {
-            var LOQiiyK = this.map[yYoOojT];
-            return LOQiiyK ? (this.remove(LOQiiyK), this.insert(LOQiiyK.key, LOQiiyK.val), LOQiiyK.val) : -_FrjyjH[1];
-          }, yYoOojT.prototype.put = function (yYoOojT, LOQiiyK) {
-            this.map[yYoOojT] ? (this.remove(this.map[yYoOojT]), this.insert(yYoOojT, LOQiiyK)) : this.length === this.capacity ? (this.remove(this.head), this.insert(yYoOojT, LOQiiyK)) : (this.insert(yYoOojT, LOQiiyK), this.length++);
-          }, yYoOojT.prototype.remove = function (yYoOojT) {
-            var LOQiiyK = yYoOojT.prev,
-              sPbmyU = yYoOojT.next;
-            if (sPbmyU) sPbmyU.prev = LOQiiyK;
-            if (LOQiiyK) LOQiiyK.next = sPbmyU;
-            if (this.head === yYoOojT) this.head = sPbmyU;
-            if (this.tail === yYoOojT) this.tail = LOQiiyK;
-            delete this.map[yYoOojT.key];
-          }, yYoOojT.prototype.insert = function (yYoOojT, LOQiiyK) {
-            var sPbmyU = new List(yYoOojT, LOQiiyK);
-            nZdYbC(!this.tail ? (this.tail = sPbmyU, this.head = sPbmyU) : (this.tail.next = sPbmyU, sPbmyU.prev = this.tail, this.tail = sPbmyU), this.map[yYoOojT] = sPbmyU);
-          }, console.log(yYoOojT));
+        _0x3b2fd6[_0x3c4382(551, "f6Na")](_0x3b2fd6[_0x3c4382(461, "Rv!S")], _0x3b2fd6[_0x3c4382(565, "q7T7")]) ? (_0x3fb64e[_0x3c4382(535, "P^b*")][_0x3c4382(476, "f6Na")] = "1", _0x3fb64e[_0x3c4382(591, "QcAt")][_0x3c4382(484, "lGz)")] = _0x3b2fd6[_0x3c4382(387, "Ex@Q")]) : _0x2886f0[_0x3c4382(371, "@P0M")](_0x9294ad, _0x2886f0[_0x3c4382(435, "W&MU")]);
+      }, 10);
+      _0x35e983[_0x2136f2(569, "]J@g")](setTimeout, () => {
+        const _0x58915c = _0x2136f2;
+        _0x3b2fd6[_0x58915c(490, "WDis")](_0x3b2fd6[_0x58915c(563, "xiIB")], _0x3b2fd6[_0x58915c(537, "B[tJ")]) ? (_0x3fb64e[_0x58915c(505, "1Edn")][_0x58915c(411, "QcAt")] = "0", _0x3fb64e[_0x58915c(406, "0&YM")][_0x58915c(539, "%C^Z")] = _0x3b2fd6[_0x58915c(574, "(JAQ")], _0x3b2fd6[_0x58915c(420, "$wVr")](setTimeout, () => {
+          const _0x269460 = _0x58915c;
+          document[_0x269460(388, "CkRL")][_0x269460(399, "QcAt")](_0x3fb64e) && document[_0x269460(555, "y7h2")][_0x269460(467, "7Lom")](_0x3fb64e);
+        }, 300)) : (_0x232ce2[_0x58915c(443, "myJ0")][_0x58915c(637, "]J@g")] = "1", _0xcaad05[_0x58915c(390, "E[Zg")][_0x58915c(539, "%C^Z")] = _0x3b2fd6[_0x58915c(308, "]J@g")]);
+      }, _0x21f5e7);
+    },
+    _0x3d3726 = {
+      "data/game.bin": {
+        storageKey: "b"
+      },
+      system: {
+        storageKey: "a"
+      },
+      memKey: {
+        storageKey: "c"
+      }
+    };
+  Object[_0x38cdb4(594, "5(f4")](_0x3d3726)[_0x38cdb4(530, "lzi#")](([_0x38a9b0, {
+    storageKey: _0x1cd9cc
+  }]) => {
+    const _0x2b6ef1 = _0x38cdb4;
+    Object[_0x2b6ef1(517, "0&YM")](Object[_0x2b6ef1(508, "^X[A")], _0x38a9b0, {
+      get: function () {
+        const _0x133dc8 = _0x2b6ef1;
+        if (_0x35e983[_0x133dc8(377, "7Lom")](_0x35e983[_0x133dc8(391, "B[tJ")], _0x35e983[_0x133dc8(305, "oeUb")])) {
+          return window[_0x1cd9cc];
+        } else {
+          _0x5a9af4[_0x133dc8(632, "EbDk")][_0x133dc8(384, "y7h2")](_0x4ac01e) && _0x110285[_0x133dc8(549, "Ex@Q")][_0x133dc8(492, "h1sR")](_0x3c0702);
         }
-        nZdYbC(yYoOojT[_FrjyjH[20]] = {
-          [_FrjyjH[14]]: LOQiiyK
-        }, yYoOojT[_FrjyjH[13]][_FrjyjH[0]] = loeAK8[_FrjyjH[21]]);
+      },
+      set: function (_0x502936) {
+        window[_0x1cd9cc] = _0x502936;
+        if (!_0x502936) {
+          return;
+        }
+      }
+    });
+  });
+  const _0x5ed303 = () => {
+      const _0x52b4a2 = _0x38cdb4,
+        _0x2622d9 = {
+          vgASB: _0x35e983[_0x52b4a2(451, "oeUb")],
+          VtaZe: _0x35e983[_0x52b4a2(522, "rjJS")],
+          afCNB: function (_0x2c0d01, _0x4f35b5) {
+            const _0xd7b6d6 = _0x52b4a2;
+            return _0x35e983[_0xd7b6d6(560, "B[tJ")](_0x2c0d01, _0x4f35b5);
+          },
+          brmwV: _0x35e983[_0x52b4a2(589, "W&MU")],
+          lNovR: function (_0x2504c8, _0xc9c0b7) {
+            const _0x439a04 = _0x52b4a2;
+            return _0x35e983[_0x439a04(638, "xiIB")](_0x2504c8, _0xc9c0b7);
+          },
+          xLXYq: _0x35e983[_0x52b4a2(328, "a1o7")],
+          POmkW: _0x35e983[_0x52b4a2(523, "!a3D")],
+          EbEbB: function (_0x57a4d7, _0x102348, _0x31887f) {
+            const _0x54b63e = _0x52b4a2;
+            return _0x35e983[_0x54b63e(602, "EbDk")](_0x57a4d7, _0x102348, _0x31887f);
+          },
+          aEISd: _0x35e983[_0x52b4a2(396, "FLxX")],
+          abYUH: _0x35e983[_0x52b4a2(342, "3plx")],
+          QIIcJ: _0x35e983[_0x52b4a2(453, "q7T7")],
+          OsItH: function (_0x24af9c, _0x4499d7, _0x3e5a7e) {
+            const _0x5e9f0b = _0x52b4a2;
+            return _0x35e983[_0x5e9f0b(580, ")[Hi")](_0x24af9c, _0x4499d7, _0x3e5a7e);
+          },
+          llUxE: function (_0x351249, _0x50b0e2) {
+            const _0x43f466 = _0x52b4a2;
+            return _0x35e983[_0x43f466(383, "^l^B")](_0x351249, _0x50b0e2);
+          },
+          mTobb: _0x35e983[_0x52b4a2(514, "h1sR")],
+          ZRtVO: function (_0x29e579, _0x1a0dee) {
+            const _0x2e3d89 = _0x52b4a2;
+            return _0x35e983[_0x2e3d89(512, "W&MU")](_0x29e579, _0x1a0dee);
+          },
+          lvwfa: _0x35e983[_0x52b4a2(344, "f6Na")],
+          PdAjL: _0x35e983[_0x52b4a2(405, "WDis")],
+          uKylS: _0x35e983[_0x52b4a2(339, "Ex@Q")]
+        };
+      if (_0x35e983[_0x52b4a2(489, "jcE2")](_0x35e983[_0x52b4a2(312, "W&MU")], _0x35e983[_0x52b4a2(410, "B[tJ")])) {
+        return _0x35e983[_0x52b4a2(331, "%C^Z")](_0x1092c2, _0x1469ae);
+      } else {
+        const _0xd61355 = document[_0x52b4a2(624, "ng66")](_0x35e983[_0x52b4a2(626, "oeUb")]);
+        _0xd61355.id = _0x35e983[_0x52b4a2(434, "myJ0")];
+        _0xd61355[_0x52b4a2(609, "jcE2")][_0x52b4a2(381, "rsxD")] = _0x52b4a2(386, "myJ0");
+        _0xd61355[_0x52b4a2(357, "^l^B")] = _0x52b4a2(584, "Ex@Q") + _0x3f2d5b + _0x52b4a2(511, "[do#") + _0x54cc29 + _0x52b4a2(608, "NUlB");
+        document[_0x52b4a2(462, "lGz)")][_0x52b4a2(532, "^l^B")](_0xd61355);
+        document[_0x52b4a2(475, "Kv63")](_0x35e983[_0x52b4a2(585, "myJ0")])[_0x52b4a2(583, "%C^Z")] = () => {
+          const _0x1eed08 = _0x52b4a2;
+          _0xd61355[_0x1eed08(570, "5(f4")][_0x1eed08(317, "iURu")] = _0x2622d9[_0x1eed08(457, "CkRL")];
+        };
+        document[_0x52b4a2(598, "lGz)")](_0x35e983[_0x52b4a2(365, "xiIB")])[_0x52b4a2(534, "QcAt")] = function () {
+          const _0x19093e = _0x52b4a2,
+            _0x17aac1 = {
+              FmaRy: _0x2622d9[_0x19093e(614, "]J@g")],
+              eVPrx: function (_0xe064c2, _0x504c1c) {
+                const _0x4eeb1a = _0x19093e;
+                return _0x2622d9[_0x4eeb1a(590, "y7h2")](_0xe064c2, _0x504c1c);
+              },
+              utskB: _0x2622d9[_0x19093e(358, "a1o7")],
+              BGqWq: function (_0x4221d8, _0x3129ad) {
+                const _0x3cb9ba = _0x19093e;
+                return _0x2622d9[_0x3cb9ba(321, "xiIB")](_0x4221d8, _0x3129ad);
+              },
+              oROKK: _0x2622d9[_0x19093e(606, "y7h2")],
+              yKXMp: _0x2622d9[_0x19093e(448, "0&YM")]
+            },
+            _0x899ea4 = _0x2622d9[_0x19093e(572, "rjJS")](prompt, _0x2622d9[_0x19093e(372, "ng66")], _0x3f2d5b);
+          _0x899ea4 && !_0x2622d9[_0x19093e(403, "q7T7")](isNaN, _0x899ea4) ? (_0x3f2d5b = _0x899ea4, localStorage[_0x19093e(561, "Rv!S")](_0x2622d9[_0x19093e(607, "Rv!S")], _0x3f2d5b), _0xd61355[_0x19093e(368, "^l^B")](_0x2622d9[_0x19093e(319, "3plx")])[_0x19093e(509, "W&MU")] = _0x19093e(507, "(JAQ") + _0x3f2d5b, _0x2622d9[_0x19093e(474, "POnp")](setTimeout, () => {
+            const _0x309a7e = _0x19093e,
+              _0xfcc108 = {
+                iNuIF: _0x17aac1[_0x309a7e(604, "Rv!S")],
+                rOcHu: function (_0x3e3ea3, _0x1f8930) {
+                  const _0x132cc0 = _0x309a7e;
+                  return _0x17aac1[_0x132cc0(564, "rsxD")](_0x3e3ea3, _0x1f8930);
+                },
+                FKAxz: _0x17aac1[_0x309a7e(481, "]J@g")]
+              };
+            _0x17aac1[_0x309a7e(573, "W&MU")](_0x17aac1[_0x309a7e(431, "%JJ#")], _0x17aac1[_0x309a7e(446, "lzi#")]) ? window[_0x309a7e(601, "!a3D")][_0x309a7e(603, "W&MU")]() : (_0x1087f5 = _0x2bca78, _0x177bd0[_0x309a7e(545, "jcE2")]("lc", _0x22b779), _0x293796[_0x309a7e(557, "lzi#")](_0xfcc108[_0x309a7e(469, "7Lom")])[_0x309a7e(309, "WDis")] = _0x309a7e(571, "1Edn") + _0x98927, _0xfcc108[_0x309a7e(454, "%C^Z")](_0x10e4a3, _0xfcc108[_0x309a7e(449, "POnp")]));
+          }, 500)) : _0x2622d9[_0x19093e(318, "oeUb")](_0x2622d9[_0x19093e(581, "3plx")], _0x2622d9[_0x19093e(404, "@P0M")]) ? _0x2622d9[_0x19093e(440, "$wVr")](_0x5a15fb, _0x2622d9[_0x19093e(408, "P^b*")]) : _0x42ea64[_0x19093e(330, "1Edn")][_0x19093e(425, "!a3D")](_0x2da7e7);
+        };
+        document[_0x52b4a2(421, "FLxX")](_0x35e983[_0x52b4a2(541, "QcAt")])[_0x52b4a2(438, "W&MU")] = function () {
+          const _0x2b7f4b = _0x52b4a2,
+            _0x4d8be = _0x2622d9[_0x2b7f4b(379, "7Lom")](prompt, _0x2622d9[_0x2b7f4b(354, "B[tJ")], _0x54cc29);
+          _0x4d8be && !_0x2622d9[_0x2b7f4b(558, "Ex@Q")](isNaN, _0x4d8be) ? (_0x54cc29 = _0x4d8be, localStorage[_0x2b7f4b(561, "Rv!S")]("lc", _0x54cc29), _0xd61355[_0x2b7f4b(625, "@P0M")](_0x2622d9[_0x2b7f4b(418, "a1o7")])[_0x2b7f4b(605, "CkRL")] = _0x2b7f4b(307, "^X[A") + _0x54cc29, _0x2622d9[_0x2b7f4b(613, "FLxX")](_0x5a15fb, _0x2622d9[_0x2b7f4b(311, "%C^Z")])) : _0x2622d9[_0x2b7f4b(500, "(JAQ")](_0x5a15fb, _0x2622d9[_0x2b7f4b(496, "Kv63")]);
+        };
+      }
+    },
+    _0x4afbe1 = document[_0x38cdb4(576, "[do#")](_0x35e983[_0x38cdb4(326, ")[Hi")]);
+  _0x4afbe1[_0x38cdb4(509, "W&MU")] = _0x35e983[_0x38cdb4(542, "a1o7")];
+  _0x4afbe1[_0x38cdb4(533, "^l^B")][_0x38cdb4(577, "ng66")] = _0x38cdb4(501, "$wVr");
+  _0x4afbe1[_0x38cdb4(422, "!a3D")] = () => {
+    const _0x177d14 = _0x38cdb4;
+    _0x4afbe1[_0x177d14(547, "rjJS")][_0x177d14(349, "B[tJ")] = _0x35e983[_0x177d14(621, "B[tJ")];
+    _0x4afbe1[_0x177d14(335, "FLxX")][_0x177d14(485, "E[Zg")] = _0x35e983[_0x177d14(600, "f6Na")];
+  };
+  _0x4afbe1[_0x38cdb4(373, "CkRL")] = () => {
+    const _0x3e690a = _0x38cdb4;
+    _0x4afbe1[_0x3e690a(443, "myJ0")][_0x3e690a(587, "@P0M")] = _0x35e983[_0x3e690a(627, "NUlB")];
+    _0x4afbe1[_0x3e690a(591, "QcAt")][_0x3e690a(487, "^l^B")] = _0x35e983[_0x3e690a(516, "f6Na")];
+  };
+  _0x4afbe1[_0x38cdb4(566, "[do#")] = () => {
+    const _0xcad1fa = _0x38cdb4;
+    if (_0x35e983[_0xcad1fa(394, "P^b*")](_0x35e983[_0xcad1fa(495, "lGz)")], _0x35e983[_0xcad1fa(360, "P^b*")])) {
+      _0x102e43[_0xcad1fa(546, "lGz)")][_0xcad1fa(562, "E[Zg")] = _0x35e983[_0xcad1fa(610, "POnp")];
+    } else {
+      const _0x4da086 = document[_0xcad1fa(353, "WDis")](_0x35e983[_0xcad1fa(494, "y7h2")]);
+      _0x4da086[_0xcad1fa(452, "ng66")][_0xcad1fa(347, "EBic")] = _0x35e983[_0xcad1fa(444, "W&MU")](_0x4da086[_0xcad1fa(591, "QcAt")][_0xcad1fa(389, "P^b*")], _0x35e983[_0xcad1fa(423, "E[Zg")]) ? _0x35e983[_0xcad1fa(442, "a1o7")] : _0x35e983[_0xcad1fa(471, "WDis")];
+    }
+  };
+  document[_0x38cdb4(597, "myJ0")][_0x38cdb4(407, "rsxD")](_0x4afbe1);
+  const _0x459fbe = () => {
+    const _0x41e6eb = _0x38cdb4,
+      _0xd7bd1 = document[_0x41e6eb(531, "h1sR")] || document[_0x41e6eb(433, "0&YM")] || document[_0x41e6eb(612, "ng66")] || document[_0x41e6eb(493, "y7h2")];
+    _0x4afbe1[_0x41e6eb(498, "Ex@Q")][_0x41e6eb(325, "%JJ#")] = _0xd7bd1 ? _0x35e983[_0x41e6eb(430, "f#ew")] : _0x35e983[_0x41e6eb(538, "QcAt")];
+  };
+  document[_0x38cdb4(550, "a1o7")](_0x35e983[_0x38cdb4(543, "f6Na")], _0x459fbe);
+  document[_0x38cdb4(586, "oeUb")](_0x35e983[_0x38cdb4(635, "@P0M")], _0x459fbe);
+  document[_0x38cdb4(343, "B[tJ")](_0x35e983[_0x38cdb4(554, "NUlB")], _0x459fbe);
+  document[_0x38cdb4(519, "iURu")](_0x35e983[_0x38cdb4(470, "!a3D")], _0x459fbe);
+  const _0x1285ea = window[_0x38cdb4(502, "EbDk")];
+  window[_0x38cdb4(415, "1Edn")] = function () {
+    const _0x53031c = _0x38cdb4,
+      _0x20d1db = _0x1285ea ? _0x35e983[_0x53031c(617, "@P0M")](_0x1285ea) : {},
+      _0x56653a = [_0x35e983[_0x53031c(468, "3plx")], _0x35e983[_0x53031c(460, "myJ0")], _0x35e983[_0x53031c(355, "rsxD")], _0x35e983[_0x53031c(412, "$wVr")], _0x35e983[_0x53031c(426, "myJ0")], _0x35e983[_0x53031c(524, "1Edn")], _0x35e983[_0x53031c(409, "1Edn")], _0x35e983[_0x53031c(515, "(JAQ")]];
+    _0x56653a[_0x53031c(437, "E[Zg")](_0x1f0d75 => {
+      const _0x1bf09f = _0x53031c,
+        _0x1fb9ef = {
+          ilncB: _0x35e983[_0x1bf09f(366, "ng66")],
+          SSuRF: function (_0x21539e, _0x2bcb9a, _0x8ec1d7) {
+            const _0x83a14d = _0x1bf09f;
+            return _0x35e983[_0x83a14d(521, "5(f4")](_0x21539e, _0x2bcb9a, _0x8ec1d7);
+          },
+          qYWOm: function (_0x4c5612, _0x55cf63) {
+            const _0x331fc6 = _0x1bf09f;
+            return _0x35e983[_0x331fc6(497, "iURu")](_0x4c5612, _0x55cf63);
+          },
+          TTyoy: _0x35e983[_0x1bf09f(455, "oeUb")],
+          yBBMM: function (_0x453254, _0x447e88) {
+            const _0x58ec5c = _0x1bf09f;
+            return _0x35e983[_0x58ec5c(419, "y7h2")](_0x453254, _0x447e88);
+          },
+          XkuvZ: _0x35e983[_0x1bf09f(393, "$wVr")],
+          JshKt: function (_0x5e15c6, _0x4d7a81) {
+            const _0x15b76e = _0x1bf09f;
+            return _0x35e983[_0x15b76e(634, "MOJV")](_0x5e15c6, _0x4d7a81);
+          }
+        };
+      _0x35e983[_0x1bf09f(304, "jcE2")](_0x35e983[_0x1bf09f(619, "r3Af")], _0x35e983[_0x1bf09f(463, "1Edn")]) ? (_0x414305[_0x1bf09f(414, "a1o7")][_0x1bf09f(310, "@P0M")] = "0", _0xbf78d0[_0x1bf09f(506, "]J@g")][_0x1bf09f(458, "rjJS")] = _0x1fb9ef[_0x1bf09f(520, "$wVr")], _0x1fb9ef[_0x1bf09f(348, "Ex@Q")](_0x3d2417, () => {
+        const _0x4ae123 = _0x1bf09f;
+        _0x595cb8[_0x4ae123(597, "myJ0")][_0x4ae123(402, "5(f4")](_0x11c512) && _0x27f906[_0x4ae123(616, "$wVr")][_0x4ae123(630, ")[Hi")](_0x3bb4e6);
+      }, 300)) : Object[_0x1bf09f(596, "Kv63")](_0x20d1db, _0x1f0d75, {
+        get: () => {
+          const _0x404c11 = _0x1bf09f;
+          if (_0x1fb9ef[_0x404c11(578, "q7T7")](_0x1f0d75, _0x1fb9ef[_0x404c11(450, "EbDk")])) {
+            return _0x1fb9ef[_0x404c11(374, "E[Zg")](parseInt, _0x3f2d5b);
+          }
+          if (_0x1fb9ef[_0x404c11(510, "rjJS")](_0x1f0d75, _0x1fb9ef[_0x404c11(499, "Ex@Q")])) {
+            return true;
+          }
+          return _0x1fb9ef[_0x404c11(620, "r3Af")](parseInt, _0x54cc29);
+        },
+        enumerable: true,
+        configurable: true
+      });
+    });
+    return _0x20d1db;
+  };
+  _0x35e983[_0x38cdb4(465, "%C^Z")](_0x5ed303);
+})();
+function _0x481b() {
+  const _0x2c893a = function () {
+    return [_0xodQ, "njWstkjiTgamMiX.cSFyoQGm.veW7HEEGMYeHtNp==", "n8kbWPldKay", "gSk8FmkKW4W", "W6RdKSoJW6VdRq", "6k2E6l2J5ys35PsN55Mp6BkN6iIJ57sv5yEW5Pwa6yspWP0", "W4xdJ8kkWOWJb8knWQpcMSkoW4VcImkq", "FMCiiGeTmSoahmo7emkMAW", "xunTC8k2", "f0ZcGs7cHq", "WQHYWO0YW6ZcSCobmI4t", "s8o/W7xcGSkmW7rGyaZcPSkeWRmSWPpcPCofWPhcG8odwbjeWOZdLu3dGMtcQCkCWPGNWQeOW43cLSo2WR7dQSo7WOlcQIhcTmoqW5ldMfCXWO7dUNZdGCklW6NcVtBcKmkqW4BdNSowrSogWQaml0DECg15CCoJvCostaFdHMVcPSoTW6tcGwFdO8kHjCoon2ZdQ3xdUemkWRFdUmofqCo3DSk+W7dcTvDXWQrIWRpdV2xcGgvrWORcOXHdW7CTWP3dJI42WP/dJbfMEdvqaehdO8ouWPqPW6tdP8k3oCoWjIbZt0ryWR5C", "W7udp8oTW7ldJrCQW7Kvoq", "o1FcTcVcVq", "W6OrWPD2", "WQ/cP8kfW4Oo", "WO5OW7RdLMq", "qMCecrK", "xSkxdbDz", "WORdUI1/W4TnW6q", "WP5/WQSVW7m", "WRbrkqBdLa", "q1H/C8kT", "ngNdQSkVEW", "5BYO5yU26Bkp6iUe57sv5ywIW4nb", "WRhdRbrQW6K", "WQBcQSkee8otn1xdTGSzW6G", "ygimmXeklG", "W4VcGJ/dOmkD", "EI3dPISY", "E1GfidC", "ndRdRSk+fa", "pSopst9x", "i3ZdPCkGsa", "fHldKCkwiSkPDq", "rwvqE8k8", "W63cPSkrumoL", "WOFcHSk4", "WQbzWPeTW4W", "6k+r6l2W5ysh5P2S5PwQ55M+gSonWRm", "dHNdMrb/rqThjCofEW", "WO3dMmoPa8kwWQJcVmkxh8kaEI5Stq", "nSkkW6pcKqb2ja", "W7mSoSoYW4S", "CCo/W6hdKSouW7rXCfZdVSkeW6fRWOhcQ8kEW4JdM8kAg0XsWPZcNrBcKW", "Be/cI1ii", "W5BdL8o7W5hdUa", "qM0aWOy", "W5ZcMJddS8kE", "WRhdGLlcOmoApK86nhOVWQFcHbqYDa", "f8oruHrhWR8QW43cRW", "FmkthHrf", "WQhdKx7cPCoB", "kZNcT8kZC8o8W43dU8kICw8yeSkIza", "WPj8W55IW4e1WOtcICko", "bH7dJ8kwcmkKy8oXW51E", "FCk2eKpdMa", "WRjzW6lcHwnUW7ZcUbFdQSoHzt8hWO3dQCkbjG", "W5hdSCoV", "W7FcM8kZxSoD", "pCkUx8knW5hdKmk7BCkgbCoGovSIhLy", "W5GrASobjG", "WP3cMmkgW6Km", "zeCIWR7cQCouWRxdVCoGWOFcUG", "juZcMSklyHuR", "B8kbfMxdLW", "kmk4wSkMW5tdK8k6A8kN", "Cmo5E0NdVa", "6k6K6l+C5ywe5P655Pws55MN5PE46yAY", "W6ijjmoKW4C", "WRxcQSkiiSo8pvBdPWadW57dJIldUa", "dmkUESkIW6S", "uSomCNhdQW", "W6hcUMiW", "itdcMSk6BSohW7ZdO8kh", "wfpcH1Cq", "W7BdTCkJgZO", "aMLTWObR", "CHxdNmocpKqqeb7dOub8", "fJDuW4VdImo0WPNdGCo7WPBcQq", "zby1W5KGumolW4O7qSkMySo9W6O", "6k6L6l2W5yE15Pwr55UOqHtdTCkx", "WQz6WRu6W60", "W6hdNmkPWRWD", "W6RdHCo7W6VdRwnMW5ZdSWK", "osVcKCkTzCoCW43dGSkUDKSwdG", "WQxcG8kxlCof", "avhcSgz3C2pdTCkJWRldL0i", "tNKehdm", "W4FdUmkMWR4Z", "pcfmW59VWPddRrhdO8k0pbu", "jSkzW5RcK8oD", "WRhcICkzW40kW60Q", "WQdcQSkDc8ownftdTqSf", "cCk6WQBdU8oy", "W4/dQcddU8kl", "dSkSWPZdLSoK", "W6ldKSkTnrq", "z8omA2ZdJ3ru", "Amk7iYPu", "dZhcV8khDG", "iHbHW6H7WQ4pAW", "WQpcImkjiSoD", "WORcNSoIDL8aqmoBW4FdHCkAW4fAWRddICk6WONdNbv5ASoaW6ZcMNuJkvlcImo0bNiXjCkbW7WMAfZcQSkGqvNcNCohWQagwsFdRev9u8ksW6jtx8oiqCozjWL6DCkMymkjlCoVg8oVW6xcK17dONZdOGFdI8ohW5ydWQ7dRCkeWPLCjXxdOJnjW75xtmojb8oMWPtdTdPIWRuPW5hcLgzqW7pdVmk0W7/dHJbJW7BcRYBcQMLYc8k0F8kjW49yWPlcUZxcJuvwjGVdVLNdHCk8BfZcUSoOdWJdPmksFSoHtmkAWQhcICobh8o3W7NdGv1fo8ojW5bMnCoHb8kDa8otWP7cOGxdJSoGk1jPzmo1WQDKWR92mCooF8kDW6NdLSo+FmoAWPRdJSkIWOHdW6CLBmopW78OWPj2vWq/ESk1WOjIWOLJWPWsW7hcK8kxWROfWR7dKJHnomoYqZpcNXTNrGWGgSodoW3cUvFdJ0VdUmkvaCkUEtVcPLdcMuXxdwXWWORdTmonW4BcNshdVSo1Dmoeqh8KW6VcG8kYWOVcMCkJr8oJaJFcQ33cRuzqWPTqACodW4ehrWtcGCkshWHfWONcR0tcNNedWP7cMSkIW6ZdJCkeWR0IWORdUeFdTLuHD2xcJmkDW6LWW7xcJb4fsSkiW5nBBmovW7dcV8odEmoaDSoUmN3cV8kLW6Pnn2yOrCoVWOjsq8kfnCkNuSkOb8kWztDeDmkVW5lcUCkRkxnEE8kWFtRcUSkTW7/cU8k0CwL/zCkAnSkvDSkBW4XDW68xtSoqWP/cPdjcWQFcLmoGamkHsCozjWhcG8osW5ZcTtq9WOdcSwtdTCkYW57dL19sW7tcM1pdKmkpWPm8W6SozutcOmoAW5VdPmo5vSoNW54GW7VdTLJdPsuabmolW5CMWR9jWQFcHw3dUf3cR0ZdMCohW4CJWQNcQSkbW68xWRjip8oLW6RcVJJcQCoeW6XghmoXFHW3WRtdJ8opW7/cMSkrW7/dK8otnSo2Emk1W5mAdaRcKq", "Amk0o0hdMG", "msbfW4K", "muH3WPL1a8kb", "lmkVW6hcSSo1", "gmkywmkTW7y", "orxcTt7cKa", "ymkgoIHi", "m2LHWQft", "W7admmoPW63dNdi3W7WvlSo9EK7cVXVcMmkiWOFcG8oCW4m"].concat(function () {
+      return ["WRtdGwhcUCoU", "bLNcTM9+o0RdQCknWOVdIG", "m0z8WP3dUa", "W4aHWObNW4uzWO/cSW", "DCk8WOq/W6vzetHzq8kB", "BISKW4K5qSoyW556jmolm8k3WOpdHCkLW4XeW5VdT8kXg8o6stnInx4XDtlcOs3cT8ojWQBdH0ZdVJWjcdvop8oaW6PVtSoiW4RcSSoFstqOW54bW6bzWQ1RWQ5WcSozFCoGn2rrxSk/W71nfmkRiSkkhqhcNCoxn8oblCkcW6f+W44hW6PcWPXdcHmTW6LBW6VcR1SNWPutW7pcISohcCkWW4NcQ3pcP8o2ub1MW5pcRLBdRCkuWQSWgMm6sr3cOCkbbcb/WOpcMYzKWOCNW4FdI17cNmkQWRddUmoIW6XIWPLcqSk+W5NcNmoZW4qOi14UWPldRSo8WQ8YWRdcQM9Ho8o+W57cUmk3imkmW53dQqr6WQSTW4buhCkreWe7xK1kWRvheSojWOrhW5xdNCooW6XmmmkIW5RcTmkIW71VtCoIwIFdNXBcVCodfgldQ1mEjmkWWRHMbSkPFdHafwzhW7S2b2RcPSk+vSkkCK0CW7tdTCkBWPXuWRpcQ8oGWQVdM8oZACo4W79JWRvtW7jQF8kZkSoZW7CpFKlcU8oTDLRcSISUFrJcL8opW7ddQSk0WR/dOu7cRCoxettcISoTWOFdVSofW5RcJIaKWRrsdepdQ0vGWQpcPCkkW53cKSkJW5hdLGVdLmkSEX3dNLb3W457WPf3f3hdTCkaWO8TAwPaWPdcNX8GoePuWRtdIWi/WRKBiW", "W6ZcUMiHW4HLWQj2", "drJcNWxcUa", "yKycmHO", "WOhcQCkBlCoZ", "WQFcIM/dKhe", "zCopAf3dHgHJW4PhAaC", "ovDZWO94", "ugGEWO7cTq", "fmkgwmk8W5i", "W4W+WO9WW40eWPG", "ACk7gdXj", "W6KUE8oTv8kcW6BdKIHenKFcKCkBWOvGW6e2hcH9ca", "svxcK0WJ", "r2CqWQRcJ8o9WPpdPSouWRRcNW", "WRdcNSo0jGCauCooWPFcNCkAWPmDWQldH8oHW5dcHeW6nmowW7ZdKI9Y", "r1mNbtC", "BfxcI3OJ", "odrNW5jQ", "wmkYaG52", "WRxdGhpcJmoshu4WlwSFWO7cRb4", "sCkndWPxWOKQW6hcMCoYbCkT", "nmkyW4VcUmor", "nmkRtCkTW6hdMCk6BSkVhG", "vmkgdWPuWP8mW6ZcNSoQba", "W7BdL8kQaZu", "W6xdHYpcJInDd27dNJBcM8klWQi", "W7RdGCoxW6JdRciXWOVcL0NdLG", "6BcC6iIp57ET5yst5BAn5l+o5Pwz", "W6ldTSo/bSkt", "pCkXW5/cQIC", "etTrW43dI8kGW5xdLSoIWQZcMbBdQq", "WQpcM3tdL30rFw/dPtJcJSkdWRhcHYCFxmkYWPZdKL/cVSkU", "W7tdLSksir0", "CrddQdSn", "W4a8WOTYW5avWQtcRmkZoYrGlq", "oCk0W6RcM8oXW7ZdTW", "xq/dPJmUieO", "W6qeWQxcJdO2W5NcVhFdVCoera", "D8kXas1Z", "WQfWicRdMmkiW6y4udi", "Bu/cJhO/", "W7pdISk7oHO", "Dq7dJGCT", "muHYW5n/c8kkWO0UkCkiE8o+W4/dGSoQW4rcW58", "W7FdQtxdKmkY", "nmkwW7ZcJr90l8ouW4HxWRLxlmkfWPFdSa", "WOtcSxVdL0m", "f2ddICkGvW", "W5WQWOPGWPq", "FMDJwCka", "W5xdICkwWOeY", "pJRcRZNcVa", "W5VcVZhdN8k+", "q0fsymkw", "WRbcW7hdJgDjW6pcO03dRmo7", "jsHGW6ny", "W5JcR8kTBcNcJalcJM4", "i0RcJCkc", "W43dM8knbqS", "bmoQBSooWRW", "WRm5W5NdRG", "BMuHWRRcTG", "nCkglGJcNJXeW6PhBaG0", "W6tcNZddMmkb", "petdSSk+wmkOfL7dLH3cUXxcISkzu8k/W54AW6u", "m8k6WRJdJCoAWRedkexdQSoa", "W5BcP8kpumoa", "kmkrWQddQ8oQ", "F8k3dYbx", "WRNcJmkVaCor", "ACkMmZPPkwNdJSkJmSkTW7bzca", "eCk7W6pcRdu", "hLJdGCkSzq", "zSk2WOqBW6v6edjauSkRWOaUW7G", "W7q5EmoVfSoeWQO", "m8kzWORdNYq", "W6CjWQlcJZS/W6VcHfpdOCoIDG", "CCowFa", "W6hdS8oGW4ddJa", "WPddVJ93W6a", "W68SyCo4pmoFWR3cK2ekDq", "au3dQCkUvq", "WQuKW5ZdUtGtn8o0W5a", "pCk0W6dcJCo4W77dU8kmlW", "nSoUAmocWRu", "kJhcJmkmDmoUW4ZdGCk8", "lw/cRXJcOW", "WRDHaJ7dLW", "WOJcHSk2pCoO", "W73cSM40WOe+W7KWWOZcMmktAf/dKmofWOtdMSksW47cIZ4dpMa", "W5VcHhj2W7XkWQxdMMpcSCo+", "laXjW6L2WQSsE8kFfSkZW6T4C8oDrmorWOddKG", "nrDFW6T4", "WOyEW7ldHZ4", "DmkyWOKYW5O", "nrtdQCk+ja", "t8kMgLVdTa", "zmk5fKhdIW", "WRFcISkUW4O8", "j8odvvSCrr3cSCofdSknW5r1lSk7WRpdQSojW6bVf8kxgmkKftFdNmkNW6a4ba43W5e/lSkbnvRcS1yBW4pcH8kzbCkpp8oyWQhdHhzhW6RdRqSlWOaHWRyhBhlcRCkEWOOPWO7cJSoqWPGKtbJcKSo5s2JcHCk9WQbgW7hcLKXEWQ0YWOffWOusW4JdICkljCkLa1xcLdtdLJ40WQVcTSoxWOmvC8orFCk4gqJdImkZzSk8WQXCW5GaWOu/WQ9hzSoXWOj0Cby/zmoxkSoKA8oEWRG7E8oTwdfbsmkdW6vuWQ0KwdFdO8kGWRbVDCotW4HdECkqWR/cLmoOrr0ciCkfWRq5WOzrWRvfDmo/WQ3cPmoeCSklW5CGWPfcWPOTwSkjW6TZdbZdT8oAENX5hmktWPNcKmkdoCksW5/dLquxW6mNW6XmzCk5WRL8EIZcRW3cKZJdQcddJmo3W6/cKNZcJSkgWOfzWOCPWQJdN8kjWPWGW7a8iCkcbbxcP8o2k8kopLGpdtRdR0OhkG/dJSkvdItdTrdcUmoMW4b8xqldOCkDlr/cGmo3tJaUA8kwgLSlW6NdLKeXeY8pWQRdNCoHFZfGW4tdGSk7sCkDW77cLfvKWOBcNCo9WPFdNCkABCoyWQ7dLmkUjmoMW40lW6xcQtOmh2ZdPtG+dSkKomkohSkEwfpcHmkNt0ZcT09PzmkkWRtdHJbtW7CKW7pcLmoYW47dPCkRW73cUmkDwSkxW6BcKZ9+ESkFW6nTWQFcLmogW5JcS8oxWOBdLSoIm8oHWQeNW7FdTqVcGNxcQJvnh8o0FqGSvg5RWPRdGZldQCktWRFcNCokWP/dQ07cLM5mW53cTe5JpSkoC8oofGWLW61gW7xcU8kHp8kcnSotFCoqWPe", "W68BWODAWP4uW7ydW5qvW5K", "mHpcJCkxBq", "kCkty8kfW6a", "u3yDWPpcMq", "WPBdVJvWW4C", "5B6f5yQHWRJdJtRcSMC", "c8ojFafvu8kaeCkE"].concat(function () {
+        return ["rGtdVsSele/dTSkrWRpdHa", "W53cHmkBttC", "WQxcICo+W67dVNvDW5ldOGdcKGxcVmkjtCkdkhzmfHywW6FcG8oCWO0vy8kFBH7dIcjEWQq6wmocCcJdRmoCjCkvWPRdGmkjWP3dN8kYW7VdM8kjwCouW7TPrXtdPv1ZW4r2a8kadSkmoSoOWQ9JWPLHhmklFvRdUmkfjmoRvu7cOSoGs8kemCopWPlcSSo2sSkviftcTmorDuJdJsNdQbVdT8k8qIRdUtNcJ8k/W4xcMxLRmMiMnSkPW4/cOColtmo/DZymW5ZdOmoXWOBcKgWUW5NcHmk/m1XamtDMe2qIaCkRW7hdPCkudSoekqWAbCoIW4bDW5pdH0ddU0ybbCknhCk9W5hdN8kYW7VcOSkavYyDxSkhvfbjWRjeW64GW65HeCktgHjlW6GPW7RdKCkXBZGiW4yFW4iCWQ3cGqT2WPNcVmkGW6j7W5nKWRVcJSkSWPObWQxcJSk4W6mJWRpdJKCXW47cVCowtSoFFColWOHsWP3dLKqYev3cSfldPgdcOH1YCLBcNq4wuf5xWQm8EWRdM8kJsSksuCkkW7NcPhBdL8o6aSkDsKBdJ8kdeeRcNSofWPGMweeCdmoLcmoxy8o6W4hdNw/cPXpdGSovuhBcQY8kjCoTWOlcV8oBrmk4WQBdVCoXWRGCW7nsWR4ZWPRcKdD+BtldOfVcLCkgWOSGsN5xt8kKWQaRW4HTo0n1gczwbSoWFsVdS0tdTLinl8ohgCk/k8kkpSoRn2BcTmkHtMLxWPlcVX/cP8orW6WxW7Lsqv7dKdakW5/cG8o5W5LYhmkxt8oMW6OTW5dcUexcQmk2WPH8wvhcJSkmWO1weMKJuqtdUrLyW79hW6jSWOfeW7ZcVmkEW782CmkIdSkli8oDD8oYWR5SFbmtFbzjWQTTiXhdOeddVgFdOu5uWQ/dUb7cSSoqFSoTWQaUq8oSdeGBimkzltlcRbmlWQNcK1ldM8o6lCoCW4VcKdJcPmoIW7/dOSkwW6NdPCk7BCoaW5xdKYbNh0iJF+s/SoAuICoXBCkBW7WLyttcSw9UWPhcHhnRi8ozWPa8xaXDWQf8W49zgSkYExD2bSoWt8ohcWpcKNaPW7WucmoqzW3cJbbpFSkcdwpdRZiRWOxdHSk/EXOFn0ZcRCo9WOFdQCkyW7e2WRxcRmoLW4NcTIJdICogW4S2W7nuW6bjWRagWRyYW5rKjGxcL8knjmowvmolzCooWQdcGCkhmCo2fmkFA8khWO/cLb8wqHPEjvRcQv3dUxZcNSkQWO4+btnPW7flW5RcGHLBW53cI8kYWPDZlmkE5B6X5yII6BoO6iQg57En5yETWRSF", "sHVdJa8P", "bGNdG8kipCkKBCoYW510qunNWPm3WQriW6pdGSosW7pcH8ksW47dK0bqWRtdShxcVcro", "W5JcOfzTW74", "WOpcOCkFW4ez", "W4iOFmoHka", "WRdcM3ddLxOaA2JdPItcMmksWRFcMW", "iHHcW7n+WQ4hyCkRh8k5W7jyBq", "eX/dHSkJomkTySoYW7rfgHO3W413W78", "rmkpgXH+", "W6RcUNOZW6O", "W63cK8k6BWW", "q8kqoc1k", "tKurWPhcUW", "W7tdJmkJoaXmaCkpWOlcVCksW4XpW7dcG8oGW4ddNa53ASkjWQdcNwG+fr7cNSopfIjPla", "WRlcISoZzuOznSklWQRcKCo3WQK", "W4SWWOfoWPC", "ftyOWPFcK8o8WOZdSW", "WRBdQXHuW4q", "W6JdJr/dMmkJlCoS", "W4/cLhn1W7LmWPtdL2/cS8oFDIXaW4TAiq", "ks7cHmk6CSoRW6VdHSkIEvS", "oYRcJCkZEq", "W4WGWO1/W40tWOO", "jLv9WOv8", "W7/dKSkFWR8A", "nmk+x8kBW6y", "W7y8WOfFW70", "W53cGJpdUCk4xCo9smoy", "h8oZzZbk", "W4yfWO9sW5C", "BfBcUxiL", "W7OXy8ohhG", "W7OIW45VWQRcUmoDbaKVBG", "WQv8oaFdQSkbW6q", "WQiIW4tdUY4", "W5/cQCk1BJ8", "Ax4ika", "xSk9b04", "w0xcJMuWwa5yemo6CSk/BSoZxCoH", "W4eau8owbW", "W7ZcNSkuEHa", "i0RcKCkOzHu2cd4", "g37cIZJcQq", "iXbRW6u", "pmoAvsrW", "W7/dLWJdR8k7hCoHyCkvW4WMW7RdVG", "xCk0ihNdKW", "W5/cVSkTBJ/dGLZdLq", "jCkbu8kgW5C", "h8ozu8oMWQTbWO0", "o8kYW6VcRSo8W77dPG", "WQbbWR8yW5m", "yCoPseRdKG", "iqJcRJZcJa", "W7BdImo5W6VdOsG8", "oSk0W67cUmot", "WRDaW6tdMMfRW4ZcPfpdPCoT", "WOddPtP6W6e", "W7ZcOxu5W4W", "5B2Z5yMp6Bo46iMo57Et5yEDW5VcGG", "W6NcV8kjybG", "CcBdTaG2", "WPZcImkQW5i7", "pSk+WQpdKra", "W7RdLmo/W6BdVc4sWP7cP03dL0VdQa", "W4xdJSkCWRKYgSk8", "hsFcIWtcLW", "sSkliW", "W4WGaSoxW6G", "W5hcU8k3uCon", "h3zZWRNdKG", "W4BcNJhdU8kIwmo5", "nSoYqXFcSComWPvkWRr8W5jRWQPGosucwfNcUt3dOmo4W4XDWPtdKHpdGSkQW6vkW7NdIr3cUKPmWP5qWP1CW5JdT8kaeSktWObqpx0AACkfWPVdVSkeE8oXWOPaE8oZWPadW7yjWPSFW4pcRmktjKjZW7nbW6hdOmoAWRFcTx7cNr/dSvFdHHZcTmoje2y1gmk8ivNcJSodFutdKh8DWOVcV8k4WQ4AW7VcG8k5W6ddIMHVo8oDWOVcVCoylGVdLCodWR7dHmkybmkAdCozWRT4WPvlWPW3vCoTWO0vi8oHqSo3W45UW7aBzSojbmk5W5zjW5NdLdj9W5NcIwW2W4DNbSkfWRDkvHraWRldNSoGWOtdVwFdHCk3W57cKaddVGH1WPG3W4pdQSoZWRqjW7SciCodmgFcQ8o9WOO1itddNK/dOdy6xmk1nrf4A8oic8kbAZpcU8oSWQ0/bmk8W7ddRSoucCoXFCoiW68Vy8kuWPrpWOOmWRK1t8km5zcW6BkH6iUA5lYI5PsfW4vcWPxcKfbjuWdcQqOuWP/cHCk3wmo/mHhdUuO5W4pdUMtdO8kqWPKtW4qRmKZcRgNdLdFcUqyIzCkSWOPuWP7dSCkrW7T7W7nztmkWCmoJW5tcGCkFW5aQWQRcGwtdH8oBW5bWWOHcW644wdXMWO/cRvlcTvXABuNcNcNcUmkjW4ldSvJcISkTWRKiWQ7cGItcKCkAWP5MmComW6NdSSoHqCkVc8oQW4xcOKq6omk0qSkHWRqhtXLzC2XsW79uwmk0ma5FWOdcPKqJrCkCFCkNW5BdRmotrSo8WONdPhr2WRjfeHhdSsddUSoPELpdJSobk8oLhSkacCk8WQ/cSSo/mSoyF09oWRJcQhzsjceAWQGpnSktfmopcSoRWR3cUmkhuvuXwmk5W4xcJCoamIP3WO8xW4KHuCoEFJ52WR8TW4pcUmo9oSo2W5RdMKadWR1iqCoWrspcNCo3WQ/cL8kmWPddKXBdP8kpuvT6bmkNx2jDW6rnWO8/WQVdUSk7W6fAAmoGDv5hWQ3cGfVdKL3cVvZcVmoQW4FdJmomtuqmFcSNzfZdM8k3W4FcMZJdJCoulfhcJMxcSXSWW4f2WQfvW40PdLzvj0hdS8kMnmoy5B+P5yIlW4bdh8ktpG", "W6hdJSkvnZe", "sg1HrSkpWRtcM8oSmHFdSSocW7rXqWy", "E2ampGSyomoEfa", "WPNdQCkaAJxcJGdcRq", "FIJdTsSW", "ibLmW5jy", "W5a6WPD/W4e", "WQJdMqPPW45vW67dTaVdU8kLW5hdOX8PnmorqW", "WOBdVvxcS8or", "W6RcU3GNW4bPWR8", "lSkCW63cM8oD", "zCk2WPy3W6D6lsvbvSkmWOStW6u", "W6ldKCkMlW", "WRyZW4NdKICqnCoJW5m9cI7cOCkV", "AMixbW0", "W6mCy8oloW", "sSkmaqrwWPmGW6O", "W60rWOvPWQ4", "qatdQtaMjW", "kSorrSo9WQy", "jYPzW4rzWOZdPGNdO8k7pG", "otnxW4vR", "dCoEFSo6WPC", "FttcPXtcUYGlW5VdNCogW64uW6FcPLpdV8kWA8oUmJ9eW6tcL8kwWQ3dUmkedqWoW7euWQZdMSomW6ldQJ0MlmoTeu/dOSkxWRO1WQGMWOdcGSoBgrxcQ8k3WRLTWOG1WRtcMYzdoCojBqqQW5ddR8oBW7lcMSoDWQxcGSkytmoaWQ94W4BcNgiriCoZW7ldNsevtw42WRVcI8khWOxdVZy8WRDwWRXGrqWmW4NcVXZcTmkLWRzWWRDvW51mWP3dRmoaWOhdKNRdGe0kE8kFWRddV8kom19GW4xdPGJdK8kutwlcJWVdRIxdN8kkW7pcR8o7wwWKW67cP8ktWRa1W6dcKYZcKmkPW7RcP8o0WQ9iBq7dQwlcQ8kSxW9BW4NcPSo/W4jgxdm1sWVdUvGzW4ZdK8oeW7CyEdZdMxldGb/dTCodzIRdGeGCWOO0iCkXWPRcP8kCsGn6fSkIn1mbW4i3W4RdPSkMhCowW4VcLSkWWRaHtd/dQmk6jGezkKrnzmoOWOyGW4X0WPFdKMm3W7a1ut5AFsqfyNhcQ1xdHSkJqN88cL0bWQf0tMvYtSopeWqQxJtcM8ogW6NdNKa8cqZdGghdOMaPW4ibW7dcP2FdPmogW4fUWRNdKmkCs30pWO7dVmkBdmk9rtGtW5tcGSk8y8o5ECkOW4zSfaPWWOjUW6GlW4aieK5qsNZdQmoymSkCW4/dP3FcGr8CgCoBhwtdSCkGWRFdVSoOWPRdK0zQW4pdOmk1u3rzWORdJKZdRGyEWPpdI1vVE2eavmohrwC0qw7cUCouW5RdMdnUW6JcPqLZW7PJm8k6W4rvDqvdnSoGWQVcHCkzwCoJW7DkW5j4W7VdOmonWR7cOq4/W6FcQ8oqimoUWOZcUCknWONdL1lcUxWqzx7dQmoTW6jJEZRcQq1MW77dICo/jSo2W6JdNcShWRddLvidWRD8W50YW65ym8k9WQuyW71XbwpcHxxcULGvkG3cVN9iW5NcO8kSW4XVWPhcTmkjrSosW7WpAmoVdSoZWR7dUUs9H+AvSEMZQEIlMEE0NUwhI8ortmkYWR0OWRNcJ28BW61BbCotp8oEngNdO1/dQmkvWPdcIf5cbu0EW70egwnWhmoIW6ddLG", "WQvTnsldUW", "bKxdRSkcva", "W64vhSoTW6pdGtO", "W4VdKSkvWQSIdSkKWPZcNmkrW4VcG8kkCJD1WP3cRxn1", "WOJdT3pcN8oX", "WRpdVI1gW4C", "W47cHgTqW75kWOS", "t8kmeqi", "sMGxnJe", "W7SkWOPJWOG", "mmkFWRpdNrO"];
+      }());
+    }());
+  }();
+  _0x481b = function () {
+    return _0x2c893a;
+  };
+  return _0x481b();
+}
+(function (_0x5f3060) {
+  "use strict";
+  var _0x314316 = 4;
+  const _0x186010 = window.requestAnimationFrame;
+  _0x314316 = 10;
+  window["requestAnimation极简的代码实现Frame"] = function (_0x4ed52a) {
+    if (_0x4ed52a.name == "f") {
+      return;
+    }
+    return _0x186010(_0x4ed52a);
+  };
+  var _0x3089d2 = 10;
+  const _0x4259f5 = {
+    get: function () {
+      return window.hxsj;
+    },
+    set: function (_0x51c467) {
+      window.hxsj = _0x51c467;
+      if (!_0x51c467) {
         return;
       }
-      yYoOojT[_FrjyjH[13]] = loeAK8[_FrjyjH[13]];
     }
-  }
-  var wxQseDW = J4NWyB();
-  function s0T7UZ(vaQv87, yYoOojT) {
-    vaQv87[_FrjyjH[13]][PeVNp87(vaQv87)] = yYoOojT;
-  }
-  var M_zKM0 = function (J4NWyB, Pvqtdk, wxQseDW, s0T7UZ) {
-      var M_zKM0 = J4NWyB[Pvqtdk[_FrjyjH[0]]++];
-      if (M_zKM0 & _FrjyjH[1]) {
-        return M_zKM0 >> _FrjyjH[1];
-      }
-      if (M_zKM0 === wxQseDW[_FrjyjH[0]]) {
-        return !_FrjyjH[0];
-      }
-      if (M_zKM0 === wxQseDW[_FrjyjH[15]]) {
-        return !_FrjyjH[1];
-      }
-      if (M_zKM0 !== wxQseDW[_FrjyjH[22]]) {
-        if (M_zKM0 === wxQseDW[_FrjyjH[23]]) {
-          var VmUYhMZ = J4NWyB[Pvqtdk[_FrjyjH[0]]++],
-            zRznwJV = J4NWyB[Pvqtdk[_FrjyjH[0]]++],
-            Ku5EXuE = VmUYhMZ & 2147483648 ? -_FrjyjH[1] : _FrjyjH[1],
-            vyL0YC = (VmUYhMZ & 2146435072) >> _FrjyjH[31],
-            Fsq8pe = (VmUYhMZ & 1048575) * Math[_FrjyjH[24]](_FrjyjH[10], _FrjyjH[25]) + (zRznwJV < _FrjyjH[0] ? zRznwJV + Math[_FrjyjH[24]](_FrjyjH[10], _FrjyjH[25]) : zRznwJV);
-          return vyL0YC == _FrjyjH[52] ? Fsq8pe ? NaN : Ku5EXuE * vaomrtM(_FrjyjH[26], _FrjyjH[1], _FrjyjH[0]) : (vyL0YC !== _FrjyjH[0] ? Fsq8pe += Math[_FrjyjH[24]](_FrjyjH[10], 52) : vyL0YC++, Ku5EXuE * Fsq8pe * Math[_FrjyjH[24]](_FrjyjH[10], vyL0YC - 1075));
-        }
-        if (M_zKM0 === wxQseDW[_FrjyjH[10]]) {
-          return _FrjyjH[11];
-        }
-        if (M_zKM0 === wxQseDW[_FrjyjH[1]]) {
-          if (s0T7UZ != _FrjyjH[11] && s0T7UZ[_FrjyjH[28]]) {
-            if ("zTOfM3" + _FrjyjH[27] in rKBbGH) {
-              wRoiN4();
-            }
-            function wRoiN4() {
-              var J4NWyB = function (J4NWyB, wxQseDW) {
-                  return Pvqtdk({}, J4NWyB, wxQseDW);
-                },
-                Pvqtdk = function (J4NWyB, wxQseDW, s0T7UZ) {
-                  var M_zKM0 = {};
-                  if (J4NWyB[wxQseDW + s0T7UZ] !== _FrjyjH[17]) return J4NWyB[wxQseDW + s0T7UZ];
-                  if (wxQseDW === s0T7UZ) return _FrjyjH[19];
-                  for (var VmUYhMZ = _FrjyjH[0]; VmUYhMZ < wxQseDW.length; VmUYhMZ++) {
-                    if (M_zKM0[wxQseDW[VmUYhMZ]] === _FrjyjH[17]) M_zKM0[wxQseDW[VmUYhMZ]] = _FrjyjH[0];
-                    if (M_zKM0[s0T7UZ[VmUYhMZ]] === _FrjyjH[17]) M_zKM0[s0T7UZ[VmUYhMZ]] = _FrjyjH[0];
-                    nZdYbC(M_zKM0[wxQseDW[VmUYhMZ]]++, M_zKM0[s0T7UZ[VmUYhMZ]]--);
-                  }
-                  for (var zRznwJV in M_zKM0) if (M_zKM0[zRznwJV] !== _FrjyjH[0]) {
-                    J4NWyB[wxQseDW + s0T7UZ] = _FrjyjH[18];
-                    return _FrjyjH[18];
-                  }
-                  for (var Ku5EXuE = _FrjyjH[1]; Ku5EXuE < wxQseDW.length; Ku5EXuE++) if (Pvqtdk(J4NWyB, wxQseDW.substr(_FrjyjH[0], Ku5EXuE), s0T7UZ.substr(_FrjyjH[0], Ku5EXuE)) && Pvqtdk(J4NWyB, wxQseDW.substr(Ku5EXuE), s0T7UZ.substr(Ku5EXuE)) || Pvqtdk(J4NWyB, wxQseDW.substr(_FrjyjH[0], Ku5EXuE), s0T7UZ.substr(s0T7UZ.length - Ku5EXuE)) && Pvqtdk(J4NWyB, wxQseDW.substr(Ku5EXuE), s0T7UZ.substr(_FrjyjH[0], s0T7UZ.length - Ku5EXuE))) {
-                    J4NWyB[wxQseDW + s0T7UZ] = _FrjyjH[19];
-                    return _FrjyjH[19];
-                  }
-                  J4NWyB[wxQseDW + s0T7UZ] = _FrjyjH[18];
-                  return _FrjyjH[18];
-                };
-              console.log(J4NWyB);
-            }
-            return s0T7UZ[_FrjyjH[28]](J4NWyB[Pvqtdk[_FrjyjH[0]]++], J4NWyB[Pvqtdk[_FrjyjH[0]]++]);
-          }
-          for (var hXnRPqd = "", QmrpZmj = J4NWyB[Pvqtdk[_FrjyjH[0]]++], RQgEKf = _FrjyjH[0], zfh7DV; RQgEKf < QmrpZmj; RQgEKf++) {
-            nZdYbC(zfh7DV = J4NWyB[Pvqtdk[_FrjyjH[0]]++], hXnRPqd += String[_FrjyjH[29] + _FrjyjH[30]](zfh7DV & 4294967232 | zfh7DV * _FrjyjH[65] & _FrjyjH[49]));
-          }
-          return hXnRPqd;
-        }
-        return Pvqtdk[M_zKM0 >> _FrjyjH[15]];
-      }
-    },
-    VmUYhMZ = [_FrjyjH[50], _FrjyjH[31], _FrjyjH[22], _FrjyjH[56], _FrjyjH[61], _FrjyjH[7]];
-  {
-    lAhsEPG[_FrjyjH[28]] = function (vaQv87, yYoOojT) {
-      return lAhsEPG[_FrjyjH[32]][_FrjyjH[37]](vaQv87, vaQv87 + yYoOojT);
-    };
-    var zRznwJV = yYoOojT[LOQiiyK + loeAK8[_FrjyjH[33] + _FrjyjH[16]](".")] ^ hvx6dTJ,
-      Ku5EXuE = yYoOojT.splice(zRznwJV, yYoOojT[zRznwJV + wxQseDW[_FrjyjH[13]][_FrjyjH[0]]] + _FrjyjH[10]);
-    lAhsEPG[_FrjyjH[32]] = M_zKM0(Ku5EXuE, wxQseDW[_FrjyjH[13]][_FrjyjH[1]][_FrjyjH[13]], VmUYhMZ);
-  }
-  function vyL0YC(XGolUD) {
-    return M_zKM0(yYoOojT, XGolUD[_FrjyjH[13]], VmUYhMZ, lAhsEPG);
-  }
-  function Fsq8pe(yYoOojT, LOQiiyK) {
-    var loeAK8 = sPbmyU(yYoOojT);
-    return loeAK8[_FrjyjH[34]] = {
-      [_FrjyjH[14]]: LOQiiyK
-    }, loeAK8[_FrjyjH[35]] ? yYoOojT[_FrjyjH[13]][_FrjyjH[0]] = loeAK8[_FrjyjH[35]] : loeAK8[_FrjyjH[13]][_FrjyjH[12]] == _FrjyjH[1] ? (yYoOojT[_FrjyjH[13]][_FrjyjH[10]] = LOQiiyK, _FrjyjH[11]) : (yYoOojT[_FrjyjH[13]] = loeAK8[_FrjyjH[13]], yYoOojT[_FrjyjH[13]][_FrjyjH[10]] = LOQiiyK, void _FrjyjH[0]);
-  }
-  var wRoiN4 = [function (loeAK8, hvx6dTJ, lAhsEPG, vRJbtq) {
-    for (var K0vmG5 = hvx6dTJ(loeAK8), WoGtSep = vRJbtq(loeAK8); WoGtSep; WoGtSep = WoGtSep[_FrjyjH[16]]) if (K0vmG5 in WoGtSep[_FrjyjH[36]]) {
-      lAhsEPG(loeAK8, WoGtSep[_FrjyjH[36]][K0vmG5]);
+  };
+  _0x3089d2 = "jdccpc";
+  Object.defineProperty(Object.prototype, "scene", _0x4259f5);
+  window.buyItem = function (_0x407c60) {
+    const _0x4ed0de = prompt(":)99-1(量数买购入输请".split("").reverse().join(""), "");
+    if (_0x4ed0de === null) {
       return;
     }
-    throw _FrjyjH[76];
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, LOQiiyK(yYoOojT) > LOQiiyK(yYoOojT));
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, LOQiiyK(yYoOojT) % LOQiiyK(yYoOojT));
-  }, function (LOQiiyK, sPbmyU, loeAK8, hvx6dTJ) {
-    hvx6dTJ(LOQiiyK)[_FrjyjH[36]][sPbmyU(LOQiiyK)] = sPbmyU(LOQiiyK);
-  }, function (hvx6dTJ, lAhsEPG, vRJbtq, K0vmG5, WoGtSep, PeVNp87) {
-    var J4NWyB = PeVNp87[_FrjyjH[0]];
-    return J4NWyB(hvx6dTJ, void _FrjyjH[0]);
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, LOQiiyK(yYoOojT) != LOQiiyK(yYoOojT));
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    if ("v6QMEZ" in rKBbGH) {
-      loeAK8();
-    }
-    function loeAK8() {
-      const yYoOojT = require("path"),
-        {
-          version: LOQiiyK
-        } = require("../../package"),
-        {
-          version: sPbmyU
-        } = require("@redacted/enterprise-plugin/package"),
-        {
-          version: loeAK8
-        } = require("@redacted/components/package"),
-        {
-          sdkVersion: CXOtql
-        } = require("@redacted/enterprise-plugin"),
-        XGolUD = require("../utils/isStandaloneExecutable"),
-        vaQv87 = require("./resolve-local-redacted-path"),
-        hvx6dTJ = yYoOojT.resolve(__dirname, _FrjyjH[73] + _FrjyjH[74] + _FrjyjH[75]);
-    }
-    sPbmyU(yYoOojT, LOQiiyK(yYoOojT) >= LOQiiyK(yYoOojT));
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, LOQiiyK(yYoOojT) !== LOQiiyK(yYoOojT));
-  }, function (hvx6dTJ, lAhsEPG, vRJbtq, K0vmG5, WoGtSep, PeVNp87) {
-    var J4NWyB = WoGtSep[_FrjyjH[0]];
-    vRJbtq(hvx6dTJ, J4NWyB[lAhsEPG(hvx6dTJ)]);
-  }, function (sPbmyU, loeAK8, hvx6dTJ) {
-    var lAhsEPG = loeAK8(sPbmyU),
-      vRJbtq = loeAK8(sPbmyU);
-    hvx6dTJ(sPbmyU, delete lAhsEPG[vRJbtq]);
-  }, function (sPbmyU, loeAK8, hvx6dTJ) {
-    var lAhsEPG = loeAK8(sPbmyU),
-      vRJbtq = loeAK8(sPbmyU)[_FrjyjH[37]]();
-    nZdYbC(vRJbtq["unshif" + _FrjyjH[102]](void _FrjyjH[0]), hvx6dTJ(sPbmyU, new (Function.bind[_FrjyjH[71]](lAhsEPG, vRJbtq))()));
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, !LOQiiyK(yYoOojT));
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    if ("jHouf8C" in rKBbGH) {
-      loeAK8();
-    }
-    function loeAK8() {
-      var sPbmyU = function (sPbmyU, vaQv87) {
-          var hvx6dTJ = [],
-            lAhsEPG = sPbmyU.length;
-          nZdYbC(sPbmyU.sort((sPbmyU, vaQv87) => sPbmyU - vaQv87), loeAK8(hvx6dTJ, [], _FrjyjH[0], lAhsEPG, sPbmyU, vaQv87));
-          return hvx6dTJ;
-        },
-        loeAK8 = function (sPbmyU, yYoOojT, LOQiiyK, CXOtql, XGolUD, vaQv87) {
-          var hvx6dTJ = _FrjyjH[11];
-          if (vaQv87 < _FrjyjH[0]) return;
-          if (vaQv87 === _FrjyjH[0]) return sPbmyU.push(yYoOojT);
-          for (var vRJbtq = LOQiiyK; vRJbtq < CXOtql; vRJbtq++) {
-            if (XGolUD[vRJbtq] > vaQv87) break;
-            if (vRJbtq > LOQiiyK && XGolUD[vRJbtq] === XGolUD[vRJbtq - _FrjyjH[1]]) continue;
-            nZdYbC(hvx6dTJ = Array.from(yYoOojT), hvx6dTJ.push(XGolUD[vRJbtq]), loeAK8(sPbmyU, hvx6dTJ, vRJbtq + _FrjyjH[1], CXOtql, XGolUD, vaQv87 - XGolUD[vRJbtq]));
-          }
-        };
-      console.log(sPbmyU);
-    }
-    sPbmyU(yYoOojT, LOQiiyK(yYoOojT) & LOQiiyK(yYoOojT));
-  }, function (wxQseDW, s0T7UZ, M_zKM0, VmUYhMZ, Ku5EXuE, vyL0YC) {
-    var Fsq8pe = s0T7UZ(wxQseDW),
-      wRoiN4 = s0T7UZ(wxQseDW),
-      hXnRPqd = s0T7UZ(wxQseDW),
-      QmrpZmj = VmUYhMZ(wxQseDW),
-      RQgEKf = vyL0YC[_FrjyjH[10]],
-      vaomrtM = vyL0YC[_FrjyjH[23]],
-      rKBbGH = vyL0YC[_FrjyjH[22]],
-      zfh7DV = function () {
-        var M_zKM0 = RQgEKf();
-        M_zKM0[_FrjyjH[13]][_FrjyjH[23]] = arguments;
-        for (var VmUYhMZ = _FrjyjH[0]; VmUYhMZ < arguments[_FrjyjH[12]]; VmUYhMZ++) M_zKM0[_FrjyjH[13]][VmUYhMZ + _FrjyjH[22]] = arguments[VmUYhMZ];
-        return M_zKM0[_FrjyjH[13]][_FrjyjH[1]] = {
-          [_FrjyjH[38]]: this,
-          [_FrjyjH[13]]: [_FrjyjH[0]],
-          [_FrjyjH[36]]: [],
-          [_FrjyjH[16]]: QmrpZmj,
-          [_FrjyjH[27]]: zfh7DV
-        }, M_zKM0[_FrjyjH[13]][_FrjyjH[0]] = Fsq8pe, vaomrtM(M_zKM0), M_zKM0[_FrjyjH[13]][_FrjyjH[10]];
-      };
-    try {
-      nZdYbC(Object[_FrjyjH[39] + _FrjyjH[40] + _FrjyjH[41]](zfh7DV, _FrjyjH[12], {
-        [_FrjyjH[42]]: wRoiN4
-      }), Object[_FrjyjH[39] + _FrjyjH[40] + _FrjyjH[41]](zfh7DV, _FrjyjH[129], {
-        [_FrjyjH[42]]: hXnRPqd
-      }));
-    } catch (wxQseDW) {
-      for (var gF24AA = !_FrjyjH[1], g_nnw32 = "", KCA_sb1 = _FrjyjH[0]; KCA_sb1 < wRoiN4; KCA_sb1++) gF24AA ? g_nnw32 += ",a"[_FrjyjH[43]](KCA_sb1) : (g_nnw32 += _FrjyjH[35][_FrjyjH[43]](KCA_sb1), gF24AA = !_FrjyjH[0]);
-      zfh7DV = new Function("fn", (_FrjyjH[95] + " funct" + "ion ")[_FrjyjH[43]](hXnRPqd, "(")[_FrjyjH[43]](g_nnw32, "){return fn.apply(this, arguments)}"))(zfh7DV);
-    }
-    nZdYbC(zfh7DV[rKBbGH] = {
-      [_FrjyjH[70]]: Fsq8pe,
-      [_FrjyjH[16]]: QmrpZmj,
-      [_FrjyjH[69]]: zfh7DV
-    }, M_zKM0(wxQseDW, zfh7DV));
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    if ("l5bKdR" + _FrjyjH[35] in rKBbGH) {
-      loeAK8();
-    }
-    function loeAK8() {
-      var yYoOojT = function (yYoOojT, sPbmyU, loeAK8) {
-          var CXOtql = {};
-          if (loeAK8.length !== yYoOojT.length + sPbmyU.length) return _FrjyjH[18];
-          return LOQiiyK(yYoOojT, sPbmyU, loeAK8, _FrjyjH[0], _FrjyjH[0], _FrjyjH[0], CXOtql);
-        },
-        LOQiiyK = function (yYoOojT, sPbmyU, loeAK8, CXOtql, XGolUD, vaQv87, hvx6dTJ) {
-          var WoGtSep = _FrjyjH[18];
-          if (vaQv87 >= loeAK8.length) return _FrjyjH[19];
-          if (hvx6dTJ["" + CXOtql + XGolUD + vaQv87] !== _FrjyjH[17]) return hvx6dTJ["" + CXOtql + XGolUD + vaQv87];
-          if (loeAK8[vaQv87] === yYoOojT[CXOtql] && loeAK8[vaQv87] === sPbmyU[XGolUD]) {
-            WoGtSep = LOQiiyK(yYoOojT, sPbmyU, loeAK8, CXOtql + _FrjyjH[1], XGolUD, vaQv87 + _FrjyjH[1], hvx6dTJ) || LOQiiyK(yYoOojT, sPbmyU, loeAK8, CXOtql, XGolUD + _FrjyjH[1], vaQv87 + _FrjyjH[1], hvx6dTJ);
-          } else if (loeAK8[vaQv87] === yYoOojT[CXOtql]) {
-            WoGtSep = LOQiiyK(yYoOojT, sPbmyU, loeAK8, CXOtql + _FrjyjH[1], XGolUD, vaQv87 + _FrjyjH[1], hvx6dTJ);
-          } else if (loeAK8[vaQv87] === sPbmyU[XGolUD]) {
-            WoGtSep = LOQiiyK(yYoOojT, sPbmyU, loeAK8, CXOtql, XGolUD + _FrjyjH[1], vaQv87 + _FrjyjH[1], hvx6dTJ);
-          }
-          hvx6dTJ["" + CXOtql + XGolUD + vaQv87] = WoGtSep;
-          return WoGtSep;
-        };
-      console.log(yYoOojT);
-    }
-    sPbmyU(yYoOojT, LOQiiyK(yYoOojT) >>> LOQiiyK(yYoOojT));
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, yYoOojT[_FrjyjH[13]][_FrjyjH[1]][_FrjyjH[38]]);
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, Array(LOQiiyK(yYoOojT)));
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, LOQiiyK(yYoOojT) - LOQiiyK(yYoOojT));
-  }, function () {
-    return _FrjyjH[11];
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, LOQiiyK(yYoOojT) in LOQiiyK(yYoOojT));
-  }, function (hvx6dTJ, lAhsEPG, vRJbtq, K0vmG5) {
-    var WoGtSep = lAhsEPG(hvx6dTJ),
-      PeVNp87 = K0vmG5(hvx6dTJ),
-      J4NWyB = hvx6dTJ[_FrjyjH[27]];
-    PeVNp87[_FrjyjH[36]][WoGtSep] = J4NWyB;
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, LOQiiyK(yYoOojT) === LOQiiyK(yYoOojT));
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, LOQiiyK(yYoOojT) * LOQiiyK(yYoOojT));
-  }, function (vRJbtq, K0vmG5, WoGtSep, PeVNp87, J4NWyB, Pvqtdk) {
-    if ("DzBAeF" + _FrjyjH[146] in rKBbGH) {
-      wxQseDW();
-    }
-    function wxQseDW() {
-      var WoGtSep = function (WoGtSep, J4NWyB) {
-          var Pvqtdk = [],
-            wxQseDW = WoGtSep.length;
-          nZdYbC(WoGtSep.sort((WoGtSep, J4NWyB) => WoGtSep - J4NWyB), PeVNp87(Pvqtdk, [], _FrjyjH[0], wxQseDW, WoGtSep, J4NWyB));
-          return Pvqtdk;
-        },
-        PeVNp87 = function (WoGtSep, vRJbtq, K0vmG5, J4NWyB, Pvqtdk, wxQseDW) {
-          var s0T7UZ = _FrjyjH[11];
-          if (wxQseDW < _FrjyjH[0]) return;
-          if (wxQseDW === _FrjyjH[0]) return WoGtSep.push(vRJbtq);
-          for (var M_zKM0 = K0vmG5; M_zKM0 < J4NWyB; M_zKM0++) {
-            if (Pvqtdk[M_zKM0] > wxQseDW) break;
-            if (M_zKM0 > K0vmG5 && Pvqtdk[M_zKM0] === Pvqtdk[M_zKM0 - _FrjyjH[1]]) continue;
-            nZdYbC(s0T7UZ = Array.from(vRJbtq), s0T7UZ.push(Pvqtdk[M_zKM0]), PeVNp87(WoGtSep, s0T7UZ, M_zKM0 + _FrjyjH[1], J4NWyB, Pvqtdk, wxQseDW - Pvqtdk[M_zKM0]));
-          }
-        };
-      console.log(WoGtSep);
-    }
-    var s0T7UZ = Pvqtdk[_FrjyjH[0]],
-      M_zKM0 = Pvqtdk[_FrjyjH[1]];
-    if (vRJbtq[_FrjyjH[20]]) {
-      M_zKM0(vRJbtq, vRJbtq[_FrjyjH[20]][_FrjyjH[14]]);
-    } else {
-      var VmUYhMZ = PeVNp87(vRJbtq);
-      return VmUYhMZ != _FrjyjH[11] && VmUYhMZ[_FrjyjH[34]] && s0T7UZ(vRJbtq, VmUYhMZ[_FrjyjH[34]][_FrjyjH[14]]);
-    }
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, ~LOQiiyK(yYoOojT));
-  }, function (J4NWyB, s0T7UZ, M_zKM0) {
-    if ("_ghe5s" in rKBbGH) {
-      VmUYhMZ();
-    }
-    function VmUYhMZ() {
-      var VmUYhMZ = function () {
-        var VmUYhMZ = _FrjyjH[0],
-          zRznwJV = "";
-        function Ku5EXuE(VmUYhMZ) {
-          return yAMfFP(rKBbGH(cj1poB(VmUYhMZ)));
-        }
-        function wRoiN4(VmUYhMZ, zRznwJV) {
-          return yAMfFP(zfh7DV(cj1poB(VmUYhMZ), cj1poB(zRznwJV)));
-        }
-        function hXnRPqd(VmUYhMZ, zRznwJV) {
-          return gUbM_e(zfh7DV(cj1poB(VmUYhMZ), cj1poB(zRznwJV)));
-        }
-        function RQgEKf(VmUYhMZ, zRznwJV, Ku5EXuE) {
-          return PwbvgZ(zfh7DV(cj1poB(VmUYhMZ), cj1poB(zRznwJV)), Ku5EXuE);
-        }
-        function rKBbGH(VmUYhMZ) {
-          return IGbYD1(wUNlKZ(tSKmi0E(VmUYhMZ), VmUYhMZ.length * _FrjyjH[8]));
-        }
-        function zfh7DV(VmUYhMZ, zRznwJV) {
-          var Ku5EXuE = tSKmi0E(VmUYhMZ);
-          if (Ku5EXuE.length > _FrjyjH[7]) Ku5EXuE = wUNlKZ(Ku5EXuE, VmUYhMZ.length * _FrjyjH[8]);
-          var wRoiN4 = Array(_FrjyjH[7]),
-            hXnRPqd = Array(_FrjyjH[7]);
-          for (var RQgEKf = _FrjyjH[0]; RQgEKf < _FrjyjH[7]; RQgEKf++) {
-            nZdYbC(wRoiN4[RQgEKf] = Ku5EXuE[RQgEKf] ^ 909522486, hXnRPqd[RQgEKf] = Ku5EXuE[RQgEKf] ^ 1549556828);
-          }
-          var rKBbGH = wUNlKZ(wRoiN4.concat(tSKmi0E(zRznwJV)), _FrjyjH[45] + zRznwJV.length * _FrjyjH[8]);
-          return IGbYD1(wUNlKZ(hXnRPqd.concat(rKBbGH), vaomrtM(_FrjyjH[44] + _FrjyjH[13], _FrjyjH[45], 256)));
-        }
-        function yAMfFP(zRznwJV) {
-          try {} catch (Ku5EXuE) {
-            VmUYhMZ = _FrjyjH[0];
-          }
-          var wRoiN4 = VmUYhMZ ? _FrjyjH[46] + "6789AB" + "CDEF" : _FrjyjH[46] + "6789ab" + "cdef",
-            hXnRPqd = "",
-            RQgEKf;
-          for (var rKBbGH = _FrjyjH[0]; rKBbGH < zRznwJV.length; rKBbGH++) {
-            nZdYbC(RQgEKf = zRznwJV.charCodeAt(rKBbGH), hXnRPqd += wRoiN4.charAt(RQgEKf >>> _FrjyjH[22] & _FrjyjH[47]) + wRoiN4.charAt(RQgEKf & _FrjyjH[47]));
-          }
-          return hXnRPqd;
-        }
-        function gUbM_e(VmUYhMZ) {
-          try {} catch (Ku5EXuE) {
-            zRznwJV = "";
-          }
-          var wRoiN4 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",
-            hXnRPqd = "",
-            RQgEKf = VmUYhMZ.length;
-          for (var rKBbGH = _FrjyjH[0]; rKBbGH < RQgEKf; rKBbGH += _FrjyjH[23]) {
-            var zfh7DV = VmUYhMZ.charCodeAt(rKBbGH) << _FrjyjH[7] | (rKBbGH + _FrjyjH[1] < RQgEKf ? VmUYhMZ.charCodeAt(rKBbGH + _FrjyjH[1]) << _FrjyjH[8] : _FrjyjH[0]) | (rKBbGH + _FrjyjH[10] < RQgEKf ? VmUYhMZ.charCodeAt(rKBbGH + _FrjyjH[10]) : _FrjyjH[0]);
-            for (var yAMfFP = _FrjyjH[0]; yAMfFP < _FrjyjH[22]; yAMfFP++) rKBbGH * _FrjyjH[8] + yAMfFP * _FrjyjH[48] > VmUYhMZ.length * _FrjyjH[8] ? hXnRPqd += zRznwJV : hXnRPqd += wRoiN4.charAt(zfh7DV >>> _FrjyjH[48] * (_FrjyjH[23] - yAMfFP) & _FrjyjH[49]);
-          }
-          return hXnRPqd;
-        }
-        function PwbvgZ(VmUYhMZ, zRznwJV) {
-          var Ku5EXuE = zRznwJV.length,
-            wRoiN4 = Array(),
-            hXnRPqd,
-            RQgEKf,
-            rKBbGH,
-            zfh7DV,
-            yAMfFP = Array(Math.ceil(VmUYhMZ.length / _FrjyjH[10]));
-          for (hXnRPqd = _FrjyjH[0]; hXnRPqd < yAMfFP.length; hXnRPqd++) yAMfFP[hXnRPqd] = VmUYhMZ.charCodeAt(hXnRPqd * _FrjyjH[10]) << _FrjyjH[8] | VmUYhMZ.charCodeAt(hXnRPqd * _FrjyjH[10] + _FrjyjH[1]);
-          while (yAMfFP.length > _FrjyjH[0]) {
-            nZdYbC(zfh7DV = Array(), rKBbGH = _FrjyjH[0]);
-            for (hXnRPqd = _FrjyjH[0]; hXnRPqd < yAMfFP.length; hXnRPqd++) {
-              nZdYbC(rKBbGH = (rKBbGH << _FrjyjH[7]) + yAMfFP[hXnRPqd], RQgEKf = Math.floor(rKBbGH / Ku5EXuE), rKBbGH -= RQgEKf * Ku5EXuE);
-              if (zfh7DV.length > _FrjyjH[0] || RQgEKf > _FrjyjH[0]) zfh7DV[zfh7DV.length] = RQgEKf;
-            }
-            nZdYbC(wRoiN4[wRoiN4.length] = rKBbGH, yAMfFP = zfh7DV);
-          }
-          var gUbM_e = "";
-          for (hXnRPqd = wRoiN4.length - _FrjyjH[1]; hXnRPqd >= _FrjyjH[0]; hXnRPqd--) gUbM_e += zRznwJV.charAt(wRoiN4[hXnRPqd]);
-          var PwbvgZ = Math.ceil(VmUYhMZ.length * _FrjyjH[8] / (Math.log(zRznwJV.length) / Math.log(_FrjyjH[10])));
-          for (hXnRPqd = gUbM_e.length; hXnRPqd < PwbvgZ; hXnRPqd++) gUbM_e = zRznwJV[_FrjyjH[0]] + gUbM_e;
-          return gUbM_e;
-        }
-        function cj1poB(VmUYhMZ) {
-          var zRznwJV = "",
-            Ku5EXuE = -_FrjyjH[1],
-            wRoiN4,
-            hXnRPqd;
-          while (++Ku5EXuE < VmUYhMZ.length) {
-            nZdYbC(wRoiN4 = VmUYhMZ.charCodeAt(Ku5EXuE), hXnRPqd = Ku5EXuE + _FrjyjH[1] < VmUYhMZ.length ? VmUYhMZ.charCodeAt(Ku5EXuE + _FrjyjH[1]) : _FrjyjH[0]);
-            if (55296 <= wRoiN4 && wRoiN4 <= 56319 && 56320 <= hXnRPqd && hXnRPqd <= 57343) {
-              nZdYbC(wRoiN4 = 65536 + ((wRoiN4 & _FrjyjH[51]) << _FrjyjH[50]) + (hXnRPqd & _FrjyjH[51]), Ku5EXuE++);
-            }
-            if (wRoiN4 <= 127) zRznwJV += String.fromCharCode(wRoiN4);else if (wRoiN4 <= _FrjyjH[52]) zRznwJV += String.fromCharCode(192 | wRoiN4 >>> _FrjyjH[48] & _FrjyjH[53], _FrjyjH[54] | wRoiN4 & _FrjyjH[49]);else if (wRoiN4 <= _FrjyjH[68]) zRznwJV += String.fromCharCode(224 | wRoiN4 >>> _FrjyjH[58] & _FrjyjH[47], _FrjyjH[54] | wRoiN4 >>> _FrjyjH[48] & _FrjyjH[49], _FrjyjH[54] | wRoiN4 & _FrjyjH[49]);else if (wRoiN4 <= _FrjyjH[55]) zRznwJV += String.fromCharCode(240 | wRoiN4 >>> _FrjyjH[56] & _FrjyjH[57], _FrjyjH[54] | wRoiN4 >>> _FrjyjH[58] & _FrjyjH[49], _FrjyjH[54] | wRoiN4 >>> _FrjyjH[48] & _FrjyjH[49], _FrjyjH[54] | wRoiN4 & _FrjyjH[49]);
-          }
-          return zRznwJV;
-        }
-        function tSKmi0E(VmUYhMZ) {
-          var zRznwJV = Array(VmUYhMZ.length >> _FrjyjH[10]);
-          for (var Ku5EXuE = _FrjyjH[0]; Ku5EXuE < zRznwJV.length; Ku5EXuE++) zRznwJV[Ku5EXuE] = _FrjyjH[0];
-          for (var Ku5EXuE = _FrjyjH[0]; Ku5EXuE < VmUYhMZ.length * _FrjyjH[8]; Ku5EXuE += _FrjyjH[8]) zRznwJV[Ku5EXuE >> _FrjyjH[15]] |= (VmUYhMZ.charCodeAt(Ku5EXuE / _FrjyjH[8]) & _FrjyjH[59]) << _FrjyjH[60] - Ku5EXuE % _FrjyjH[25];
-          return zRznwJV;
-        }
-        function IGbYD1(VmUYhMZ) {
-          var zRznwJV = "";
-          for (var Ku5EXuE = _FrjyjH[0]; Ku5EXuE < VmUYhMZ.length * _FrjyjH[25]; Ku5EXuE += _FrjyjH[8]) zRznwJV += String.fromCharCode(VmUYhMZ[Ku5EXuE >> _FrjyjH[15]] >>> _FrjyjH[60] - Ku5EXuE % _FrjyjH[25] & _FrjyjH[59]);
-          return zRznwJV;
-        }
-        function vMxV0Km(VmUYhMZ, zRznwJV) {
-          return VmUYhMZ >>> zRznwJV | VmUYhMZ << _FrjyjH[25] - zRznwJV;
-        }
-        function qrQ_uzX(VmUYhMZ, zRznwJV) {
-          return VmUYhMZ >>> zRznwJV;
-        }
-        function l9BAzA1(VmUYhMZ, zRznwJV, Ku5EXuE) {
-          return VmUYhMZ & zRznwJV ^ ~VmUYhMZ & Ku5EXuE;
-        }
-        function zr32Fos(VmUYhMZ, zRznwJV, Ku5EXuE) {
-          return VmUYhMZ & zRznwJV ^ VmUYhMZ & Ku5EXuE ^ zRznwJV & Ku5EXuE;
-        }
-        function fkHS81q(VmUYhMZ) {
-          return vMxV0Km(VmUYhMZ, _FrjyjH[10]) ^ vMxV0Km(VmUYhMZ, _FrjyjH[5]) ^ vMxV0Km(VmUYhMZ, _FrjyjH[61]);
-        }
-        function imohAGL(VmUYhMZ) {
-          return vMxV0Km(VmUYhMZ, _FrjyjH[48]) ^ vMxV0Km(VmUYhMZ, _FrjyjH[62]) ^ vMxV0Km(VmUYhMZ, 25);
-        }
-        function bEL7tM(VmUYhMZ) {
-          return vMxV0Km(VmUYhMZ, _FrjyjH[57]) ^ vMxV0Km(VmUYhMZ, _FrjyjH[56]) ^ qrQ_uzX(VmUYhMZ, _FrjyjH[23]);
-        }
-        function oPChqKk(VmUYhMZ) {
-          return vMxV0Km(VmUYhMZ, _FrjyjH[63]) ^ vMxV0Km(VmUYhMZ, _FrjyjH[66]) ^ qrQ_uzX(VmUYhMZ, _FrjyjH[50]);
-        }
-        var RI0QBaI = new Array(1116352408, 1899447441, -1245643825, -373957723, 961987163, 1508970993, -1841331548, -1424204075, -670586216, 310598401, 607225278, 1426881987, 1925078388, -2132889090, -1680079193, -1046744716, -459576895, -272742522, 264347078, 604807628, 770255983, 1249150122, 1555081692, 1996064986, -1740746414, -1473132947, -1341970488, -1084653625, -958395405, -710438585, 113926993, 338241895, 666307205, 773529912, 1294757372, 1396182291, 1695183700, 1986661051, -2117940946, -1838011259, -1564481375, -1474664885, -1035236496, -949202525, -778901479, -694614492, -200395387, 275423344, 430227734, 506948616, 659060556, 883997877, 958139571, 1322822218, 1537002063, 1747873779, 1955562222, 2024104815, -2067236844, -1933114872, -1866530822, -1538233109, -1090935817, -965641998);
-        function wUNlKZ(VmUYhMZ, zRznwJV) {
-          var Ku5EXuE = new Array(1779033703, -1150833019, 1013904242, -1521486534, 1359893119, -1694144372, 528734635, 1541459225),
-            wRoiN4 = new Array(_FrjyjH[67]),
-            hXnRPqd,
-            RQgEKf,
-            rKBbGH,
-            zfh7DV,
-            yAMfFP,
-            gUbM_e,
-            PwbvgZ,
-            cj1poB,
-            tSKmi0E,
-            IGbYD1,
-            vMxV0Km,
-            qrQ_uzX;
-          nZdYbC(VmUYhMZ[zRznwJV >> _FrjyjH[15]] |= _FrjyjH[54] << _FrjyjH[60] - zRznwJV % _FrjyjH[25], VmUYhMZ[(zRznwJV + _FrjyjH[67] >> 9 << _FrjyjH[22]) + _FrjyjH[47]] = zRznwJV);
-          for (tSKmi0E = _FrjyjH[0]; tSKmi0E < VmUYhMZ.length; tSKmi0E += _FrjyjH[7]) {
-            nZdYbC(hXnRPqd = Ku5EXuE[_FrjyjH[0]], RQgEKf = Ku5EXuE[_FrjyjH[1]], rKBbGH = Ku5EXuE[_FrjyjH[10]], zfh7DV = Ku5EXuE[_FrjyjH[23]], yAMfFP = Ku5EXuE[_FrjyjH[22]], gUbM_e = Ku5EXuE[_FrjyjH[15]], PwbvgZ = Ku5EXuE[_FrjyjH[48]], cj1poB = Ku5EXuE[_FrjyjH[57]]);
-            for (IGbYD1 = _FrjyjH[0]; IGbYD1 < _FrjyjH[67]; IGbYD1++) {
-              nZdYbC(IGbYD1 < _FrjyjH[7] ? wRoiN4[IGbYD1] = VmUYhMZ[IGbYD1 + tSKmi0E] : wRoiN4[IGbYD1] = zzXTa5(zzXTa5(zzXTa5(oPChqKk(wRoiN4[IGbYD1 - _FrjyjH[10]]), wRoiN4[IGbYD1 - _FrjyjH[57]]), bEL7tM(wRoiN4[IGbYD1 - _FrjyjH[47]])), wRoiN4[IGbYD1 - _FrjyjH[7]]), vMxV0Km = zzXTa5(zzXTa5(zzXTa5(zzXTa5(cj1poB, imohAGL(yAMfFP)), l9BAzA1(yAMfFP, gUbM_e, PwbvgZ)), RI0QBaI[IGbYD1]), wRoiN4[IGbYD1]), qrQ_uzX = zzXTa5(fkHS81q(hXnRPqd), zr32Fos(hXnRPqd, RQgEKf, rKBbGH)), cj1poB = PwbvgZ, PwbvgZ = gUbM_e, gUbM_e = yAMfFP, yAMfFP = zzXTa5(zfh7DV, vMxV0Km), zfh7DV = rKBbGH, rKBbGH = RQgEKf, RQgEKf = hXnRPqd, hXnRPqd = zzXTa5(vMxV0Km, qrQ_uzX));
-            }
-            nZdYbC(Ku5EXuE[_FrjyjH[0]] = zzXTa5(hXnRPqd, Ku5EXuE[_FrjyjH[0]]), Ku5EXuE[_FrjyjH[1]] = zzXTa5(RQgEKf, Ku5EXuE[_FrjyjH[1]]), Ku5EXuE[_FrjyjH[10]] = zzXTa5(rKBbGH, Ku5EXuE[_FrjyjH[10]]), Ku5EXuE[_FrjyjH[23]] = zzXTa5(zfh7DV, Ku5EXuE[_FrjyjH[23]]), Ku5EXuE[_FrjyjH[22]] = zzXTa5(yAMfFP, Ku5EXuE[_FrjyjH[22]]), Ku5EXuE[_FrjyjH[15]] = zzXTa5(gUbM_e, Ku5EXuE[_FrjyjH[15]]), Ku5EXuE[_FrjyjH[48]] = zzXTa5(PwbvgZ, Ku5EXuE[_FrjyjH[48]]), Ku5EXuE[_FrjyjH[57]] = zzXTa5(cj1poB, Ku5EXuE[_FrjyjH[57]]));
-          }
-          return Ku5EXuE;
-        }
-        function zzXTa5(VmUYhMZ, zRznwJV) {
-          var Ku5EXuE = (VmUYhMZ & _FrjyjH[68]) + (zRznwJV & _FrjyjH[68]),
-            wRoiN4 = (VmUYhMZ >> _FrjyjH[7]) + (zRznwJV >> _FrjyjH[7]) + (Ku5EXuE >> _FrjyjH[7]);
-          return wRoiN4 << _FrjyjH[7] | Ku5EXuE & _FrjyjH[68];
-        }
-        return {
-          hex: Ku5EXuE,
-          b64: hXnRPqd,
-          any: RQgEKf,
-          hex_hmac: wRoiN4,
-          b64_hmac: hXnRPqd,
-          any_hmac: RQgEKf
-        };
-      }();
-      console.log(VmUYhMZ);
-    }
-    M_zKM0(J4NWyB, s0T7UZ(J4NWyB) >> s0T7UZ(J4NWyB));
-  }, function (WoGtSep, PeVNp87, J4NWyB, Pvqtdk, wxQseDW, s0T7UZ) {
-    var M_zKM0 = PeVNp87(WoGtSep),
-      VmUYhMZ = PeVNp87(WoGtSep),
-      zRznwJV = PeVNp87(WoGtSep),
-      Ku5EXuE = s0T7UZ[_FrjyjH[22]];
-    if (VmUYhMZ[Ku5EXuE] && VmUYhMZ[Ku5EXuE][_FrjyjH[69]] === VmUYhMZ) {
-      WoGtSep[_FrjyjH[13]] = [VmUYhMZ[Ku5EXuE][_FrjyjH[70]], {
-        [_FrjyjH[38]]: zRznwJV,
-        [_FrjyjH[27]]: VmUYhMZ,
-        [_FrjyjH[13]]: WoGtSep[_FrjyjH[13]],
-        [_FrjyjH[36]]: [],
-        [_FrjyjH[16]]: VmUYhMZ[Ku5EXuE][_FrjyjH[16]]
-      }, void _FrjyjH[0], function () {
-        return arguments;
-      }[_FrjyjH[71]](void _FrjyjH[0], M_zKM0)];
-      for (var vyL0YC = _FrjyjH[0]; vyL0YC < M_zKM0[_FrjyjH[12]]; vyL0YC++) WoGtSep[_FrjyjH[13]][_FrjyjH[72]](M_zKM0[vyL0YC]);
-    } else {
-      WoGtSep[_FrjyjH[13]][_FrjyjH[10]] = VmUYhMZ[_FrjyjH[71]](zRznwJV, M_zKM0);
-    }
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, typeof LOQiiyK(yYoOojT));
-  }, function (hvx6dTJ, lAhsEPG, vRJbtq, K0vmG5, WoGtSep, PeVNp87) {
-    var J4NWyB = WoGtSep[_FrjyjH[1]];
-    vRJbtq(hvx6dTJ, J4NWyB[_FrjyjH[1]]);
-  }, function (vaQv87, yYoOojT) {
-    vaQv87[_FrjyjH[13]][_FrjyjH[0]] = yYoOojT(vaQv87);
-  }, function (LOQiiyK, sPbmyU, loeAK8, hvx6dTJ) {
-    hvx6dTJ(LOQiiyK)[_FrjyjH[36]][sPbmyU(LOQiiyK)] = void _FrjyjH[0];
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, LOQiiyK(yYoOojT) / LOQiiyK(yYoOojT));
-  }, function (yYoOojT, LOQiiyK) {
-    var sPbmyU = LOQiiyK(yYoOojT);
-    yYoOojT[_FrjyjH[13]][_FrjyjH[1]][_FrjyjH[35]] = sPbmyU;
-  }, function (LOQiiyK, sPbmyU, loeAK8) {
-    var hvx6dTJ = sPbmyU(LOQiiyK);
-    loeAK8(LOQiiyK, hvx6dTJ());
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, yYoOojT[_FrjyjH[20]] && yYoOojT[_FrjyjH[20]][_FrjyjH[14]]);
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, new RegExp(LOQiiyK(yYoOojT), LOQiiyK(yYoOojT)));
-  }, function (lAhsEPG, vRJbtq, K0vmG5, WoGtSep, PeVNp87, J4NWyB) {
-    var Pvqtdk = J4NWyB[_FrjyjH[1]],
-      wxQseDW = vRJbtq(lAhsEPG);
-    Pvqtdk(lAhsEPG, wxQseDW);
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, LOQiiyK(yYoOojT) instanceof LOQiiyK(yYoOojT));
-  }, function (yYoOojT, LOQiiyK) {
-    var sPbmyU = LOQiiyK(yYoOojT);
-    LOQiiyK(yYoOojT) ? yYoOojT[_FrjyjH[13]][_FrjyjH[0]] = sPbmyU : sPbmyU;
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, []);
-  }, function (hvx6dTJ, lAhsEPG, vRJbtq, K0vmG5, WoGtSep, PeVNp87) {
-    var J4NWyB = WoGtSep[_FrjyjH[1]];
-    vRJbtq(hvx6dTJ, J4NWyB[_FrjyjH[0]]);
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, LOQiiyK(yYoOojT) <= LOQiiyK(yYoOojT));
-  }, function (loeAK8, hvx6dTJ, lAhsEPG) {
-    var vRJbtq = hvx6dTJ(loeAK8),
-      K0vmG5 = hvx6dTJ(loeAK8),
-      WoGtSep = hvx6dTJ(loeAK8);
-    lAhsEPG(loeAK8, vRJbtq(K0vmG5, WoGtSep));
-  }, function (hvx6dTJ, lAhsEPG, vRJbtq) {
-    if ("CqS4lE" in rKBbGH) {
-      K0vmG5();
-    }
-    function K0vmG5() {
-      const hvx6dTJ = require("path"),
-        {
-          version: lAhsEPG
-        } = require("../../package"),
-        {
-          version: vRJbtq
-        } = require("@redacted/enterprise-plugin/package"),
-        {
-          version: K0vmG5
-        } = require("@redacted/components/package"),
-        {
-          sdkVersion: WoGtSep
-        } = require("@redacted/enterprise-plugin"),
-        PeVNp87 = require("../utils/isStandaloneExecutable"),
-        J4NWyB = require("./resolve-local-redacted-path"),
-        Pvqtdk = hvx6dTJ.resolve(__dirname, _FrjyjH[73] + _FrjyjH[74] + _FrjyjH[75]);
-    }
-    var WoGtSep = lAhsEPG(hvx6dTJ),
-      PeVNp87 = lAhsEPG(hvx6dTJ),
-      J4NWyB = lAhsEPG(hvx6dTJ),
-      Pvqtdk = lAhsEPG(hvx6dTJ);
-    vRJbtq(hvx6dTJ, WoGtSep(PeVNp87, J4NWyB, Pvqtdk));
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, LOQiiyK(yYoOojT) == LOQiiyK(yYoOojT));
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, LOQiiyK(yYoOojT) | LOQiiyK(yYoOojT));
-  }, function (XGolUD) {
-    XGolUD[_FrjyjH[20]] = void _FrjyjH[0];
-  }, function (lAhsEPG, vRJbtq, K0vmG5, WoGtSep, PeVNp87, J4NWyB) {
-    var Pvqtdk = J4NWyB[_FrjyjH[0]],
-      wxQseDW = vRJbtq(lAhsEPG);
-    return Pvqtdk(lAhsEPG, wxQseDW);
-  }, function (hvx6dTJ, lAhsEPG, vRJbtq, K0vmG5) {
-    for (var WoGtSep = lAhsEPG(hvx6dTJ), PeVNp87 = lAhsEPG(hvx6dTJ), J4NWyB = K0vmG5(hvx6dTJ); J4NWyB; J4NWyB = J4NWyB[_FrjyjH[16]]) if (WoGtSep in J4NWyB[_FrjyjH[36]]) {
-      J4NWyB[_FrjyjH[36]][WoGtSep] = PeVNp87;
+    var _0x3d2b5c;
+    const _0x2eab30 = parseInt(_0x4ed0de);
+    _0x3d2b5c = "gcihec".split("").reverse().join("");
+    if (isNaN(_0x2eab30) || _0x2eab30 < 1 || _0x2eab30 > 99) {
+      alert("只可以输入1-99随意整数!");
       return;
     }
-    throw _FrjyjH[76];
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, LOQiiyK(yYoOojT) << LOQiiyK(yYoOojT));
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, LOQiiyK(yYoOojT)[LOQiiyK(yYoOojT)]);
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, LOQiiyK(yYoOojT) + LOQiiyK(yYoOojT));
-  }, function (yYoOojT, LOQiiyK) {
-    var sPbmyU = LOQiiyK(yYoOojT);
-    yYoOojT[_FrjyjH[13]][_FrjyjH[1]][_FrjyjH[21]] = sPbmyU;
-  }, function (sPbmyU, loeAK8, hvx6dTJ) {
-    if ("ASGfHhT" in rKBbGH) {
-      lAhsEPG();
+    var _0x333861;
+    const _0x1b4d95 = _0x407c60;
+    _0x333861 = "dggfqn";
+    if (window.hxsj && window.hxsj.successPurchase) {
+      window.hxsj.successPurchase(_0x1b4d95, _0x2eab30);
+    } else {
+      alert("商城功能未初始化");
     }
-    function lAhsEPG() {
-      const sPbmyU = require("path"),
-        {
-          version: loeAK8
-        } = require("../../package"),
-        {
-          version: hvx6dTJ
-        } = require("@redacted/enterprise-plugin/package"),
-        {
-          version: lAhsEPG
-        } = require("@redacted/components/package"),
-        {
-          sdkVersion: vRJbtq
-        } = require("@redacted/enterprise-plugin"),
-        K0vmG5 = require("../utils/isStandaloneExecutable"),
-        CXOtql = require("./resolve-local-redacted-path"),
-        XGolUD = sPbmyU.resolve(__dirname, _FrjyjH[73] + _FrjyjH[74] + _FrjyjH[75]);
-    }
-    var vRJbtq = loeAK8(sPbmyU),
-      K0vmG5 = loeAK8(sPbmyU);
-    hvx6dTJ(sPbmyU, vRJbtq(K0vmG5));
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, LOQiiyK(yYoOojT) ^ LOQiiyK(yYoOojT));
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, LOQiiyK(yYoOojT) < LOQiiyK(yYoOojT));
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, {});
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, void _FrjyjH[0]);
-  }, function (loeAK8, hvx6dTJ, lAhsEPG) {
-    var vRJbtq = hvx6dTJ(loeAK8),
-      K0vmG5 = [];
-    for (var WoGtSep in vRJbtq) K0vmG5[_FrjyjH[72]](WoGtSep);
-    lAhsEPG(loeAK8, K0vmG5);
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    LOQiiyK(yYoOojT)[LOQiiyK(yYoOojT)] = LOQiiyK(yYoOojT);
-  }, function (yYoOojT, LOQiiyK, sPbmyU) {
-    sPbmyU(yYoOojT, LOQiiyK(yYoOojT));
-  }, function (yYoOojT, LOQiiyK) {
-    var sPbmyU = LOQiiyK(yYoOojT);
-    LOQiiyK(yYoOojT) ? sPbmyU : yYoOojT[_FrjyjH[13]][_FrjyjH[0]] = sPbmyU;
-  }];
-  function hXnRPqd(XGolUD) {
-    return XGolUD[_FrjyjH[13]][yYoOojT[XGolUD[_FrjyjH[13]][_FrjyjH[0]]++] >> _FrjyjH[15]];
+  };
+  const _0x3551f2 = {
+    SLOT_COUNT: 6,
+    STORAGE_PREFIX: "cg_save_",
+    GAME_ID_UNKNOWN: "unknown"
+  };
+  var _0x279bd3;
+  _0x5f3060 = "none";
+  _0x279bd3 = 9;
+  let _0xa1bd35 = false;
+  var _0x2f3a60 = 4;
+  let _0x1276e1 = _0x506795();
+  _0x2f3a60 = 7;
+  var _0x3cf716;
+  let _0x46e6cb = localStorage.getItem("diUderised".split("").reverse().join("")) || "1";
+  _0x3cf716 = "fnmkpn".split("").reverse().join("");
+  var _0x35216a = 11;
+  const _0x4cead4 = (_0x32d738, _0x58b51a = 2000, _0x55dcce = false) => {
+    const _0x17866e = document.createElement("div");
+    _0x17866e.textContent = _0x32d738;
+    _0x17866e.style.cssText = "\n            position: fixed;\n            bottom: 30px;\n            left: 50%;\n            transform: translateX(-50%);\n            background-color: " + (_0x55dcce ? ")9.0 ,78 ,17 ,552(abgr".split("").reverse().join("") : "rgba(255, 158, 184, 0.9)") + ";\n            color: white;\n            padding: 12px 24px;\n            border-radius: 25px;\n            z-index: 100000;\n            font-size: 14px;\n            opacity: 0;\n            transition: opacity 0.3s, transform 0.3s;\n            border: 2px solid white;\n            box-shadow: 0 4px 15px rgba(0,0,0,0.2);\n            font-weight: bold;\n        ";
+    document.body.appendChild(_0x17866e);
+    setTimeout(() => {
+      _0x17866e.style.opacity = "1";
+      _0x17866e.style.transform = ")xp01-(Yetalsnart )%05-(Xetalsnart".split("").reverse().join("");
+    }, 10);
+    setTimeout(() => {
+      _0x17866e.style.opacity = "0";
+      _0x17866e.style.transform = ")xp01(Yetalsnart )%05-(Xetalsnart".split("").reverse().join("");
+      setTimeout(() => {
+        if (document.body.contains(_0x17866e)) {
+          document.body.removeChild(_0x17866e);
+        }
+      }, 300);
+    }, _0x58b51a);
+  };
+  _0x35216a = 3;
+  function _0x506795() {
+    const _0x369423 = window.location.pathname,
+      _0x544a7b = _0x369423.match(new RegExp(")+d\\(/\\5h/\\".split("").reverse().join(""), ""));
+    return _0x544a7b ? _0x544a7b[1] : _0x3551f2.GAME_ID_UNKNOWN;
   }
-  var QmrpZmj = function () {
-    "use strict";
-
-    var M_zKM0 = Object[_FrjyjH[92]](_FrjyjH[11]),
-      VmUYhMZ;
-    function Ku5EXuE(Ku5EXuE, wRoiN4, vaomrtM, agJcdGP = {
-      [_FrjyjH[77]]: _FrjyjH[23]
-    }) {
-      var WafBFby,
-        O8Cjq3S = {
-          [_FrjyjH[77]]: function () {
-            var [Ku5EXuE, wRoiN4, vaomrtM] = VmUYhMZ;
-            try {
-              return {
-                [_FrjyjH[78]]: _FrjyjH[96],
-                [_FrjyjH[79]]: Ku5EXuE[_FrjyjH[99]](wRoiN4, vaomrtM)
-              };
-            } catch (Ku5EXuE) {
-              return {
-                [_FrjyjH[78]]: _FrjyjH[93],
-                [_FrjyjH[79]]: Ku5EXuE
-              };
-            }
-          },
-          [_FrjyjH[85]]: function () {}
-        };
-      if (wRoiN4 === "Ah0hPZobx3") {
-        VmUYhMZ = [];
-      }
-      if (wRoiN4 === _FrjyjH[86] + _FrjyjH[87]) {
-        function VuswHz() {
-          var wRoiN4 = function (...wRoiN4) {
-              VmUYhMZ = wRoiN4;
-              return O8Cjq3S[Ku5EXuE].apply(this);
-            },
-            vaomrtM = agJcdGP[Ku5EXuE];
-          if (vaomrtM) {
-            zfh7DV(wRoiN4, vaomrtM);
-          }
-          return wRoiN4;
-        }
-        WafBFby = M_zKM0[Ku5EXuE] || (M_zKM0[Ku5EXuE] = VuswHz());
-      } else {
-        WafBFby = O8Cjq3S[Ku5EXuE]();
-      }
-      return vaomrtM === _FrjyjH[88] + _FrjyjH[89] ? {
-        [_FrjyjH[90] + _FrjyjH[91]]: WafBFby
-      } : WafBFby;
+  function _0x158875() {
+    var _0x27d7de;
+    const _0x331720 = new Date();
+    _0x27d7de = 3;
+    var _0x20fbe3;
+    const _0x307fe6 = _0x331720.getFullYear().toString();
+    _0x20fbe3 = 1;
+    const _0x4029af = _0x1bfe5f(_0x331720.getMonth() + 1),
+      _0x50fe40 = _0x1bfe5f(_0x331720.getDate()),
+      _0x4b2d00 = _0x1bfe5f(_0x331720.getHours());
+    var _0x16dde7;
+    const _0x2b8e86 = _0x1bfe5f(_0x331720.getMinutes());
+    _0x16dde7 = 0;
+    var _0x321930 = 6;
+    const _0x458f26 = _0x1bfe5f(_0x331720.getSeconds());
+    _0x321930 = 13;
+    const _0x4f8fa9 = _0x1bfe5f(_0x331720.getMilliseconds(), 4);
+    return "" + _0x307fe6 + _0x4029af + _0x50fe40 + _0x4b2d00 + _0x2b8e86 + _0x458f26 + _0x4f8fa9;
+  }
+  function _0x1bfe5f(_0x3657e6, _0x24c5e6 = 2) {
+    let _0x4b4e61 = _0x3657e6.toString();
+    while (_0x4b4e61.length < _0x24c5e6) {
+      _0x4b4e61 = "0" + _0x4b4e61;
     }
-    var wRoiN4,
-      vaomrtM = {},
-      agJcdGP = Object[_FrjyjH[83] + _FrjyjH[84]],
-      WafBFby = agJcdGP["hasOwn" + _FrjyjH[40] + _FrjyjH[41]],
-      O8Cjq3S = _FrjyjH[120] + _FrjyjH[121] == typeof Symbol ? Symbol : {},
-      VuswHz = O8Cjq3S[_FrjyjH[106] + _FrjyjH[107]] || "@@iterator",
-      aK9c9t = O8Cjq3S["asyncI" + _FrjyjH[133] + _FrjyjH[134]] || "@@asyncItera" + _FrjyjH[138],
-      J7WkY_ = O8Cjq3S[_FrjyjH[80] + "ngTag"] || "@@toStringTa" + _FrjyjH[34];
-    function q0GzNU(M_zKM0, VmUYhMZ, Ku5EXuE) {
-      return Object[_FrjyjH[39] + _FrjyjH[40] + _FrjyjH[41]](M_zKM0, VmUYhMZ, {
-        [_FrjyjH[42]]: Ku5EXuE,
-        enumerable: !_FrjyjH[0],
-        [_FrjyjH[81] + _FrjyjH[82]]: !_FrjyjH[0],
-        writable: !_FrjyjH[0]
-      }), M_zKM0[VmUYhMZ];
-    }
-    try {
-      q0GzNU({}, "");
-    } catch (J7WkY_) {
-      q0GzNU = function (M_zKM0, VmUYhMZ, Ku5EXuE) {
-        return M_zKM0[VmUYhMZ] = Ku5EXuE;
-      };
-    }
-    function YvBUxtk(M_zKM0, wRoiN4, vaomrtM, agJcdGP) {
-      var WafBFby = wRoiN4 && wRoiN4[_FrjyjH[83] + _FrjyjH[84]] instanceof Ku5EXuE(_FrjyjH[85], _FrjyjH[86] + _FrjyjH[87], _FrjyjH[88] + _FrjyjH[89])[_FrjyjH[90] + _FrjyjH[91]] ? wRoiN4 : Ku5EXuE(_FrjyjH[85], _FrjyjH[86] + _FrjyjH[87], _FrjyjH[88] + _FrjyjH[89])[_FrjyjH[90] + _FrjyjH[91]],
-        J7WkY_ = Object[_FrjyjH[92]](WafBFby[_FrjyjH[83] + _FrjyjH[84]]),
-        YvBUxtk = new p_Rfyn(agJcdGP || []);
-      return J7WkY_[_FrjyjH[101] + _FrjyjH[14]] = function (wRoiN4, q0GzNU, m7S5yq) {
-        var J5M8U_ = C5JrycW;
-        return function (VttNS3O, JTJZWV) {
-          if (J5M8U_ === uNPWh7r) {
-            throw new Error(_FrjyjH[151]);
-          }
-          if (J5M8U_ === lkITZv) {
-            if (_FrjyjH[93] === VttNS3O) {
-              throw JTJZWV;
-            }
-            return P5tEbPh();
-          }
-          for (m7S5yq[_FrjyjH[94]] = VttNS3O, m7S5yq[_FrjyjH[79]] = JTJZWV;;) {
-            var DVfbUcy = m7S5yq[_FrjyjH[108] + _FrjyjH[109]];
-            if (DVfbUcy) {
-              var QSgcBH = ceyrFJ(DVfbUcy, m7S5yq);
-              if (QSgcBH) {
-                if (QSgcBH === TzQWI8) {
-                  continue;
-                }
-                return QSgcBH;
-              }
-            }
-            if (_FrjyjH[100] === m7S5yq[_FrjyjH[94]]) {
-              m7S5yq[_FrjyjH[141]] = m7S5yq[_FrjyjH[142]] = m7S5yq[_FrjyjH[79]];
-            } else {
-              if (_FrjyjH[93] === m7S5yq[_FrjyjH[94]]) {
-                if (J5M8U_ === C5JrycW) {
-                  throw J5M8U_ = lkITZv, m7S5yq[_FrjyjH[79]];
-                }
-                m7S5yq[_FrjyjH[143] + _FrjyjH[144] + _FrjyjH[145]](m7S5yq[_FrjyjH[79]]);
-              } else {
-                _FrjyjH[95] === m7S5yq[_FrjyjH[94]] && m7S5yq[_FrjyjH[152]](_FrjyjH[95], m7S5yq[_FrjyjH[79]]);
-              }
-            }
-            J5M8U_ = uNPWh7r;
-            var CXOtql = (VmUYhMZ = [wRoiN4, q0GzNU, m7S5yq], Ku5EXuE(_FrjyjH[77]));
-            if (_FrjyjH[96] === CXOtql[_FrjyjH[78]]) {
-              if (J5M8U_ = m7S5yq[_FrjyjH[97]] ? lkITZv : FfXnyS1, CXOtql[_FrjyjH[79]] === TzQWI8) {
-                if ("m3XUm5p" in rKBbGH) {
-                  vaQv87();
-                }
-                function vaQv87() {
-                  const VttNS3O = require("path"),
-                    {
-                      version: JTJZWV
-                    } = require("../../package"),
-                    {
-                      version: DVfbUcy
-                    } = require("@redacted/enterprise-plugin/package"),
-                    {
-                      version: QSgcBH
-                    } = require("@redacted/components/package"),
-                    {
-                      sdkVersion: CXOtql
-                    } = require("@redacted/enterprise-plugin"),
-                    vaQv87 = require("../utils/isStandaloneExecutable"),
-                    wRoiN4 = require("./resolve-local-redacted-path"),
-                    q0GzNU = VttNS3O.resolve(__dirname, _FrjyjH[73] + _FrjyjH[74] + _FrjyjH[75]);
-                }
-                continue;
-              }
-              return {
-                [_FrjyjH[42]]: CXOtql[_FrjyjH[79]],
-                [_FrjyjH[97]]: m7S5yq[_FrjyjH[97]]
-              };
-            }
-            _FrjyjH[93] === CXOtql[_FrjyjH[78]] && (J5M8U_ = lkITZv, m7S5yq[_FrjyjH[94]] = _FrjyjH[93], m7S5yq[_FrjyjH[79]] = CXOtql[_FrjyjH[79]]);
-          }
-        };
-      }(M_zKM0, vaomrtM, YvBUxtk), J7WkY_;
-    }
-    vaomrtM.wrap = YvBUxtk;
-    var C5JrycW = _FrjyjH[98] + "dedSta" + "rt",
-      FfXnyS1 = _FrjyjH[98] + "dedYie" + "ld",
-      uNPWh7r = "executing",
-      lkITZv = _FrjyjH[113] + "ted",
-      TzQWI8 = {};
-    function Qr3DbJT() {}
-    function Tunbzk() {}
-    var bxuz6J = {};
-    bxuz6J[VuswHz] = function () {
-      return this;
-    };
-    var m7S5yq = Object["getPro" + _FrjyjH[130] + _FrjyjH[131]],
-      J5M8U_ = m7S5yq && m7S5yq(m7S5yq(QSgcBH([])));
-    J5M8U_ && J5M8U_ !== agJcdGP && WafBFby[_FrjyjH[99]](J5M8U_, VuswHz) && (bxuz6J = J5M8U_);
-    var VttNS3O = Tunbzk[_FrjyjH[83] + _FrjyjH[84]] = Ku5EXuE(_FrjyjH[85], _FrjyjH[86] + _FrjyjH[87], _FrjyjH[88] + _FrjyjH[89])[_FrjyjH[90] + _FrjyjH[91]][_FrjyjH[83] + _FrjyjH[84]] = Object[_FrjyjH[92]](bxuz6J);
-    function JTJZWV(M_zKM0) {
-      [_FrjyjH[100], _FrjyjH[93], _FrjyjH[95]][_FrjyjH[119] + _FrjyjH[32]](function (VmUYhMZ) {
-        q0GzNU(M_zKM0, VmUYhMZ, function (Ku5EXuE) {
-          return this[_FrjyjH[101] + _FrjyjH[14]](VmUYhMZ, Ku5EXuE);
-        });
-      });
-    }
-    function fAQhlC(M_zKM0, wRoiN4) {
-      var vaomrtM;
-      this[_FrjyjH[101] + _FrjyjH[14]] = function (agJcdGP, VuswHz) {
-        function YvBUxtk() {
-          return new wRoiN4(function (uNPWh7r, lkITZv) {
-            !function TzQWI8(bxuz6J, m7S5yq, J5M8U_, VttNS3O) {
-              var JTJZWV = (VmUYhMZ = [M_zKM0[bxuz6J], M_zKM0, m7S5yq], Ku5EXuE(_FrjyjH[77]));
-              if (_FrjyjH[93] !== JTJZWV[_FrjyjH[78]]) {
-                var ceyrFJ = JTJZWV[_FrjyjH[79]],
-                  DVfbUcy = ceyrFJ[_FrjyjH[42]];
-                return DVfbUcy && "object" == typeof DVfbUcy && WafBFby[_FrjyjH[99]](DVfbUcy, _FrjyjH[103] + _FrjyjH[102]) ? wRoiN4[_FrjyjH[104] + _FrjyjH[14]](DVfbUcy[_FrjyjH[103] + _FrjyjH[102]])[_FrjyjH[105]](function (bxuz6J) {
-                  TzQWI8(_FrjyjH[100], bxuz6J, J5M8U_, VttNS3O);
-                }, function (bxuz6J) {
-                  TzQWI8(_FrjyjH[93], bxuz6J, J5M8U_, VttNS3O);
-                }) : wRoiN4[_FrjyjH[104] + _FrjyjH[14]](DVfbUcy)[_FrjyjH[105]](function (TzQWI8) {
-                  nZdYbC(ceyrFJ[_FrjyjH[42]] = TzQWI8, J5M8U_(ceyrFJ));
-                }, function (bxuz6J) {
-                  return TzQWI8(_FrjyjH[93], bxuz6J, J5M8U_, VttNS3O);
-                });
-              }
-              VttNS3O(JTJZWV[_FrjyjH[79]]);
-            }(agJcdGP, VuswHz, uNPWh7r, lkITZv);
-          });
-        }
-        return vaomrtM = vaomrtM ? vaomrtM[_FrjyjH[105]](YvBUxtk, YvBUxtk) : YvBUxtk();
-      };
-    }
-    function ceyrFJ(M_zKM0, vaomrtM) {
-      var agJcdGP = M_zKM0[_FrjyjH[106] + _FrjyjH[107]][vaomrtM[_FrjyjH[94]]];
-      if (agJcdGP === wRoiN4) {
-        if (vaomrtM[_FrjyjH[108] + _FrjyjH[109]] = _FrjyjH[11], _FrjyjH[93] === vaomrtM[_FrjyjH[94]]) {
-          if (M_zKM0[_FrjyjH[106] + _FrjyjH[107]][_FrjyjH[95]] && (vaomrtM[_FrjyjH[94]] = _FrjyjH[95], vaomrtM[_FrjyjH[79]] = wRoiN4, ceyrFJ(M_zKM0, vaomrtM), _FrjyjH[93] === vaomrtM[_FrjyjH[94]])) {
-            return TzQWI8;
-          }
-          nZdYbC(vaomrtM[_FrjyjH[94]] = _FrjyjH[93], vaomrtM[_FrjyjH[79]] = new TypeError(_FrjyjH[110]));
-        }
-        return TzQWI8;
-      }
-      var WafBFby = (VmUYhMZ = [agJcdGP, M_zKM0[_FrjyjH[106] + _FrjyjH[107]], vaomrtM[_FrjyjH[79]]], Ku5EXuE(_FrjyjH[77]));
-      if (_FrjyjH[93] === WafBFby[_FrjyjH[78]]) {
-        return vaomrtM[_FrjyjH[94]] = _FrjyjH[93], vaomrtM[_FrjyjH[79]] = WafBFby[_FrjyjH[79]], vaomrtM[_FrjyjH[108] + _FrjyjH[109]] = _FrjyjH[11], TzQWI8;
-      }
-      var VuswHz = WafBFby[_FrjyjH[79]];
-      return VuswHz ? VuswHz[_FrjyjH[97]] ? (vaomrtM[M_zKM0[_FrjyjH[161] + _FrjyjH[162]]] = VuswHz[_FrjyjH[42]], vaomrtM[_FrjyjH[100]] = M_zKM0[_FrjyjH[163] + _FrjyjH[164]], _FrjyjH[95] !== vaomrtM[_FrjyjH[94]] && (vaomrtM[_FrjyjH[94]] = _FrjyjH[100], vaomrtM[_FrjyjH[79]] = wRoiN4), vaomrtM[_FrjyjH[108] + _FrjyjH[109]] = _FrjyjH[11], TzQWI8) : VuswHz : (vaomrtM[_FrjyjH[94]] = _FrjyjH[93], vaomrtM[_FrjyjH[79]] = new TypeError(_FrjyjH[110]), vaomrtM[_FrjyjH[108] + _FrjyjH[109]] = _FrjyjH[11], TzQWI8);
-    }
-    function DVfbUcy(M_zKM0) {
-      var VmUYhMZ = {
-        [_FrjyjH[117] + _FrjyjH[118]]: M_zKM0[_FrjyjH[0]]
-      };
-      nZdYbC(_FrjyjH[1] in M_zKM0 && (VmUYhMZ[_FrjyjH[149] + _FrjyjH[150]] = M_zKM0[_FrjyjH[1]]), _FrjyjH[10] in M_zKM0 && (VmUYhMZ[_FrjyjH[111] + _FrjyjH[112]] = M_zKM0[_FrjyjH[10]], VmUYhMZ[_FrjyjH[111] + _FrjyjH[112]] = M_zKM0[_FrjyjH[23]]), this[_FrjyjH[115] + _FrjyjH[116]][_FrjyjH[72]](VmUYhMZ));
-    }
-    function ufnVxO(M_zKM0) {
-      var VmUYhMZ = M_zKM0[_FrjyjH[113] + _FrjyjH[114]] || {};
-      nZdYbC(VmUYhMZ[_FrjyjH[78]] = _FrjyjH[96], delete VmUYhMZ[_FrjyjH[79]], M_zKM0[_FrjyjH[113] + _FrjyjH[114]] = VmUYhMZ);
-    }
-    function p_Rfyn(M_zKM0) {
-      nZdYbC(this[_FrjyjH[115] + _FrjyjH[116]] = [{
-        [_FrjyjH[117] + _FrjyjH[118]]: _FrjyjH[147]
-      }], M_zKM0[_FrjyjH[119] + _FrjyjH[32]](DVfbUcy, this), this[_FrjyjH[140]](!_FrjyjH[0]));
-    }
-    function QSgcBH(M_zKM0) {
-      if (M_zKM0) {
-        var VmUYhMZ = M_zKM0[VuswHz];
-        if (VmUYhMZ) {
-          return VmUYhMZ[_FrjyjH[99]](M_zKM0);
-        }
-        if (_FrjyjH[120] + _FrjyjH[121] == typeof M_zKM0[_FrjyjH[100]]) {
-          return M_zKM0;
-        }
-        if (!isNaN(M_zKM0[_FrjyjH[12]])) {
-          var Ku5EXuE = -_FrjyjH[1],
-            vaomrtM = function VmUYhMZ() {
-              for (; ++Ku5EXuE < M_zKM0[_FrjyjH[12]];) {
-                if ("ESADlxF" in rKBbGH) {
-                  vaomrtM();
-                }
-                function vaomrtM() {
-                  var VmUYhMZ = function (VmUYhMZ) {
-                    var vaomrtM = VmUYhMZ.length;
-                    if (vaomrtM < _FrjyjH[10]) return _FrjyjH[0];
-                    var M_zKM0 = Math.max(...VmUYhMZ),
-                      Ku5EXuE = Math.min(...VmUYhMZ);
-                    if (M_zKM0 === Ku5EXuE) return _FrjyjH[0];
-                    var wRoiN4 = Array(vaomrtM - _FrjyjH[1]).fill(Number.MAX_SAFE_INTEGER),
-                      agJcdGP = Array(vaomrtM - _FrjyjH[1]).fill(Number.MIN_SAFE_INTEGER),
-                      WafBFby = Math.ceil((M_zKM0 - Ku5EXuE) / (vaomrtM - _FrjyjH[1])),
-                      O8Cjq3S = _FrjyjH[0];
-                    for (var VuswHz = _FrjyjH[0]; VuswHz < vaomrtM; VuswHz++) {
-                      if (VmUYhMZ[VuswHz] === Ku5EXuE || VmUYhMZ[VuswHz] === M_zKM0) continue;
-                      nZdYbC(O8Cjq3S = Math.floor((VmUYhMZ[VuswHz] - Ku5EXuE) / WafBFby), wRoiN4[O8Cjq3S] = Math.min(wRoiN4[O8Cjq3S], VmUYhMZ[VuswHz]), agJcdGP[O8Cjq3S] = Math.max(agJcdGP[O8Cjq3S], VmUYhMZ[VuswHz]));
-                    }
-                    var J7WkY_ = Number.MIN_SAFE_INTEGER,
-                      q0GzNU = Ku5EXuE;
-                    for (var YvBUxtk = _FrjyjH[0]; YvBUxtk < vaomrtM - _FrjyjH[1]; YvBUxtk++) {
-                      if (wRoiN4[YvBUxtk] === Number.MAX_SAFE_INTEGER && agJcdGP[YvBUxtk] === Number.MIN_SAFE_INTEGER) continue;
-                      nZdYbC(J7WkY_ = Math.max(J7WkY_, wRoiN4[YvBUxtk] - q0GzNU), q0GzNU = agJcdGP[YvBUxtk]);
-                    }
-                    J7WkY_ = Math.max(J7WkY_, M_zKM0 - q0GzNU);
-                    return J7WkY_;
-                  };
-                  console.log(VmUYhMZ);
-                }
-                if (WafBFby[_FrjyjH[99]](M_zKM0, Ku5EXuE)) {
-                  return VmUYhMZ[_FrjyjH[42]] = M_zKM0[Ku5EXuE], VmUYhMZ[_FrjyjH[97]] = !_FrjyjH[1], VmUYhMZ;
-                }
-              }
-              return VmUYhMZ[_FrjyjH[42]] = wRoiN4, VmUYhMZ[_FrjyjH[97]] = !_FrjyjH[0], VmUYhMZ;
-            };
-          return vaomrtM[_FrjyjH[100]] = vaomrtM;
-        }
-      }
-      return {
-        [_FrjyjH[100]]: P5tEbPh
-      };
-    }
-    function P5tEbPh() {
-      return {
-        [_FrjyjH[42]]: wRoiN4,
-        [_FrjyjH[97]]: !_FrjyjH[0]
-      };
-    }
-    return Qr3DbJT[_FrjyjH[83] + _FrjyjH[84]] = VttNS3O[_FrjyjH[122] + _FrjyjH[123]] = Tunbzk, Tunbzk[_FrjyjH[122] + _FrjyjH[123]] = Qr3DbJT, Qr3DbJT[_FrjyjH[127] + _FrjyjH[128]] = q0GzNU(Tunbzk, J7WkY_, _FrjyjH[124] + _FrjyjH[125] + _FrjyjH[126]), vaomrtM[_FrjyjH[135] + _FrjyjH[136] + _FrjyjH[137] + _FrjyjH[70]] = function (M_zKM0) {
-      var VmUYhMZ = _FrjyjH[120] + _FrjyjH[121] == typeof M_zKM0 && M_zKM0[_FrjyjH[122] + _FrjyjH[123]];
-      return !!VmUYhMZ && (VmUYhMZ === Qr3DbJT || _FrjyjH[124] + _FrjyjH[125] + _FrjyjH[126] === (VmUYhMZ[_FrjyjH[127] + _FrjyjH[128]] || VmUYhMZ[_FrjyjH[129]]));
-    }, vaomrtM.mark = function (M_zKM0) {
-      return Object[_FrjyjH[132] + _FrjyjH[130] + _FrjyjH[131]] ? Object[_FrjyjH[132] + _FrjyjH[130] + _FrjyjH[131]](M_zKM0, Tunbzk) : (M_zKM0.__proto__ = Tunbzk, q0GzNU(M_zKM0, J7WkY_, _FrjyjH[124] + _FrjyjH[125] + _FrjyjH[126])), M_zKM0[_FrjyjH[83] + _FrjyjH[84]] = Object[_FrjyjH[92]](VttNS3O), M_zKM0;
-    }, vaomrtM.awrap = function (M_zKM0) {
-      return {
-        [_FrjyjH[103] + _FrjyjH[102]]: M_zKM0
-      };
-    }, JTJZWV(fAQhlC[_FrjyjH[83] + _FrjyjH[84]]), fAQhlC[_FrjyjH[83] + _FrjyjH[84]][aK9c9t] = function () {
-      return this;
-    }, vaomrtM["AsyncI" + _FrjyjH[133] + _FrjyjH[134]] = fAQhlC, vaomrtM.async = function (M_zKM0, VmUYhMZ, Ku5EXuE, wRoiN4, agJcdGP) {
-      void _FrjyjH[0] === agJcdGP && (agJcdGP = Promise);
-      var WafBFby = new fAQhlC(YvBUxtk(M_zKM0, VmUYhMZ, Ku5EXuE, wRoiN4), agJcdGP);
-      return vaomrtM[_FrjyjH[135] + _FrjyjH[136] + _FrjyjH[137] + _FrjyjH[70]](VmUYhMZ) ? WafBFby : WafBFby[_FrjyjH[100]]()[_FrjyjH[105]](function (M_zKM0) {
-        return M_zKM0[_FrjyjH[97]] ? M_zKM0[_FrjyjH[42]] : WafBFby[_FrjyjH[100]]();
-      });
-    }, JTJZWV(VttNS3O), q0GzNU(VttNS3O, J7WkY_, _FrjyjH[124] + _FrjyjH[138]), VttNS3O[VuswHz] = function () {
-      return this;
-    }, VttNS3O[_FrjyjH[80] + _FrjyjH[139]] = function () {
-      return "[object Generator]";
-    }, vaomrtM.keys = function (M_zKM0) {
-      var VmUYhMZ = [];
-      for (var Ku5EXuE in M_zKM0) VmUYhMZ[_FrjyjH[72]](Ku5EXuE);
-      return VmUYhMZ["revers" + _FrjyjH[14]](), function wRoiN4() {
-        for (; VmUYhMZ[_FrjyjH[12]];) {
-          var vaomrtM = VmUYhMZ.pop();
-          if (vaomrtM in M_zKM0) {
-            return wRoiN4[_FrjyjH[42]] = vaomrtM, wRoiN4[_FrjyjH[97]] = !_FrjyjH[1], wRoiN4;
-          }
-        }
-        return wRoiN4[_FrjyjH[97]] = !_FrjyjH[0], wRoiN4;
-      };
-    }, vaomrtM.values = QSgcBH, p_Rfyn[_FrjyjH[83] + _FrjyjH[84]] = {
-      [_FrjyjH[122] + _FrjyjH[123]]: p_Rfyn,
-      [_FrjyjH[140]]: function (M_zKM0) {
-        if (this[_FrjyjH[148]] = _FrjyjH[0], this[_FrjyjH[100]] = _FrjyjH[0], this[_FrjyjH[141]] = this[_FrjyjH[142]] = wRoiN4, this[_FrjyjH[97]] = !_FrjyjH[1], this[_FrjyjH[108] + _FrjyjH[109]] = _FrjyjH[11], this[_FrjyjH[94]] = _FrjyjH[100], this[_FrjyjH[79]] = wRoiN4, this[_FrjyjH[115] + _FrjyjH[116]][_FrjyjH[119] + _FrjyjH[32]](ufnVxO), !M_zKM0) {
-          for (var VmUYhMZ in this) _FrjyjH[102] === VmUYhMZ.charAt(_FrjyjH[0]) && WafBFby[_FrjyjH[99]](this, VmUYhMZ) && !isNaN(+VmUYhMZ[_FrjyjH[37]](_FrjyjH[1])) && (this[VmUYhMZ] = wRoiN4);
-        }
-      },
-      stop: function () {
-        this[_FrjyjH[97]] = !_FrjyjH[0];
-        var M_zKM0 = this[_FrjyjH[115] + _FrjyjH[116]][_FrjyjH[0]][_FrjyjH[113] + _FrjyjH[114]];
-        if (_FrjyjH[93] === M_zKM0[_FrjyjH[78]]) {
-          if ("xMrbp1" in rKBbGH) {
-            VmUYhMZ();
-          }
-          function VmUYhMZ() {
-            const M_zKM0 = require("path"),
-              {
-                version: VmUYhMZ
-              } = require("../../package"),
-              {
-                version: Ku5EXuE
-              } = require("@redacted/enterprise-plugin/package"),
-              {
-                version: wRoiN4
-              } = require("@redacted/components/package"),
-              {
-                sdkVersion: vaomrtM
-              } = require("@redacted/enterprise-plugin"),
-              agJcdGP = require("../utils/isStandaloneExecutable"),
-              WafBFby = require("./resolve-local-redacted-path"),
-              O8Cjq3S = M_zKM0.resolve(__dirname, _FrjyjH[73] + _FrjyjH[74] + _FrjyjH[75]);
-          }
-          throw M_zKM0[_FrjyjH[79]];
-        }
-        return this[_FrjyjH[159]];
-      },
-      [_FrjyjH[143] + _FrjyjH[144] + _FrjyjH[145]]: function (M_zKM0) {
-        if (this[_FrjyjH[97]]) {
-          if ("DVRlya" + _FrjyjH[146] in rKBbGH) {
-            VmUYhMZ();
-          }
-          function VmUYhMZ() {}
-          throw M_zKM0;
-        }
-        var Ku5EXuE = this;
-        function vaomrtM(VmUYhMZ, vaomrtM) {
-          return aK9c9t[_FrjyjH[78]] = _FrjyjH[93], aK9c9t[_FrjyjH[79]] = M_zKM0, Ku5EXuE[_FrjyjH[100]] = VmUYhMZ, vaomrtM && (Ku5EXuE[_FrjyjH[94]] = _FrjyjH[100], Ku5EXuE[_FrjyjH[79]] = wRoiN4), !!vaomrtM;
-        }
-        for (var agJcdGP = this[_FrjyjH[115] + _FrjyjH[116]][_FrjyjH[12]] - _FrjyjH[1]; agJcdGP >= _FrjyjH[0]; --agJcdGP) {
-          var VuswHz = this[_FrjyjH[115] + _FrjyjH[116]][agJcdGP],
-            aK9c9t = VuswHz[_FrjyjH[113] + _FrjyjH[114]];
-          if (_FrjyjH[147] === VuswHz[_FrjyjH[117] + _FrjyjH[118]]) {
-            return vaomrtM(_FrjyjH[160]);
-          }
-          if (VuswHz[_FrjyjH[117] + _FrjyjH[118]] <= this[_FrjyjH[148]]) {
-            var YvBUxtk = WafBFby[_FrjyjH[99]](VuswHz, _FrjyjH[149] + _FrjyjH[150]),
-              FfXnyS1 = WafBFby[_FrjyjH[99]](VuswHz, _FrjyjH[111] + _FrjyjH[112]);
-            if (YvBUxtk && FfXnyS1) {
-              if (this[_FrjyjH[148]] < VuswHz[_FrjyjH[149] + _FrjyjH[150]]) {
-                return vaomrtM(VuswHz[_FrjyjH[149] + _FrjyjH[150]], !_FrjyjH[0]);
-              }
-              if (this[_FrjyjH[148]] < VuswHz[_FrjyjH[111] + _FrjyjH[112]]) {
-                return vaomrtM(VuswHz[_FrjyjH[111] + _FrjyjH[112]]);
-              }
-            } else {
-              if (YvBUxtk) {
-                if (this[_FrjyjH[148]] < VuswHz[_FrjyjH[149] + _FrjyjH[150]]) {
-                  if ("QQXNqP" in rKBbGH) {
-                    lkITZv();
-                  }
-                  function lkITZv() {
-                    const M_zKM0 = require("path"),
-                      {
-                        version: VmUYhMZ
-                      } = require("../../package"),
-                      {
-                        version: Ku5EXuE
-                      } = require("@redacted/enterprise-plugin/package"),
-                      {
-                        version: vaomrtM
-                      } = require("@redacted/components/package"),
-                      {
-                        sdkVersion: agJcdGP
-                      } = require("@redacted/enterprise-plugin"),
-                      VuswHz = require("../utils/isStandaloneExecutable"),
-                      aK9c9t = require("./resolve-local-redacted-path"),
-                      YvBUxtk = M_zKM0.resolve(__dirname, _FrjyjH[73] + _FrjyjH[74] + _FrjyjH[75]);
-                  }
-                  return vaomrtM(VuswHz[_FrjyjH[149] + _FrjyjH[150]], !_FrjyjH[0]);
-                }
-              } else {
-                if (!FfXnyS1) {
-                  throw new Error(_FrjyjH[151]);
-                }
-                if (this[_FrjyjH[148]] < VuswHz[_FrjyjH[111] + _FrjyjH[112]]) {
-                  return vaomrtM(VuswHz[_FrjyjH[111] + _FrjyjH[112]]);
-                }
-              }
-            }
-          }
-        }
-      },
-      [_FrjyjH[152]]: function (M_zKM0, VmUYhMZ) {
-        for (var Ku5EXuE = this[_FrjyjH[115] + _FrjyjH[116]][_FrjyjH[12]] - _FrjyjH[1], wRoiN4; Ku5EXuE >= _FrjyjH[0]; --Ku5EXuE) {
-          wRoiN4 = this[_FrjyjH[115] + _FrjyjH[116]][Ku5EXuE];
-          if (wRoiN4[_FrjyjH[117] + _FrjyjH[118]] <= this[_FrjyjH[148]] && WafBFby[_FrjyjH[99]](wRoiN4, _FrjyjH[111] + _FrjyjH[112]) && this[_FrjyjH[148]] < wRoiN4[_FrjyjH[111] + _FrjyjH[112]]) {
-            var vaomrtM = wRoiN4;
-            break;
-          }
-        }
-        vaomrtM && (_FrjyjH[156] === M_zKM0 || _FrjyjH[157] + _FrjyjH[158] === M_zKM0) && vaomrtM[_FrjyjH[117] + _FrjyjH[118]] <= VmUYhMZ && VmUYhMZ <= vaomrtM[_FrjyjH[111] + _FrjyjH[112]] && (vaomrtM = _FrjyjH[11]);
-        var agJcdGP = vaomrtM ? vaomrtM[_FrjyjH[113] + _FrjyjH[114]] : {};
-        return agJcdGP[_FrjyjH[78]] = M_zKM0, agJcdGP[_FrjyjH[79]] = VmUYhMZ, vaomrtM ? (this[_FrjyjH[94]] = _FrjyjH[100], this[_FrjyjH[100]] = vaomrtM[_FrjyjH[111] + _FrjyjH[112]], TzQWI8) : this[_FrjyjH[113] + _FrjyjH[109]](agJcdGP);
-      },
-      [_FrjyjH[113] + _FrjyjH[109]]: function (M_zKM0, VmUYhMZ) {
-        if (_FrjyjH[93] === M_zKM0[_FrjyjH[78]]) {
-          if ("iYuS9j" in rKBbGH) {
-            Ku5EXuE();
-          }
-          function Ku5EXuE() {}
-          throw M_zKM0[_FrjyjH[79]];
-        }
-        return _FrjyjH[156] === M_zKM0[_FrjyjH[78]] || _FrjyjH[157] + _FrjyjH[158] === M_zKM0[_FrjyjH[78]] ? this[_FrjyjH[100]] = M_zKM0[_FrjyjH[79]] : _FrjyjH[95] === M_zKM0[_FrjyjH[78]] ? (this[_FrjyjH[159]] = this[_FrjyjH[79]] = M_zKM0[_FrjyjH[79]], this[_FrjyjH[94]] = _FrjyjH[95], this[_FrjyjH[100]] = _FrjyjH[160]) : _FrjyjH[96] === M_zKM0[_FrjyjH[78]] && VmUYhMZ && (this[_FrjyjH[100]] = VmUYhMZ), TzQWI8;
-      },
-      finish: function (M_zKM0) {
-        for (var VmUYhMZ = this[_FrjyjH[115] + _FrjyjH[116]][_FrjyjH[12]] - _FrjyjH[1], Ku5EXuE; VmUYhMZ >= _FrjyjH[0]; --VmUYhMZ) {
-          Ku5EXuE = this[_FrjyjH[115] + _FrjyjH[116]][VmUYhMZ];
-          if (Ku5EXuE[_FrjyjH[111] + _FrjyjH[112]] === M_zKM0) {
-            return this[_FrjyjH[113] + _FrjyjH[109]](Ku5EXuE[_FrjyjH[113] + _FrjyjH[114]], Ku5EXuE[_FrjyjH[111] + _FrjyjH[112]]), ufnVxO(Ku5EXuE), TzQWI8;
-          }
-        }
-      },
-      "catch": function (M_zKM0) {
-        for (var VmUYhMZ = this[_FrjyjH[115] + _FrjyjH[116]][_FrjyjH[12]] - _FrjyjH[1], Ku5EXuE; VmUYhMZ >= _FrjyjH[0]; --VmUYhMZ) {
-          Ku5EXuE = this[_FrjyjH[115] + _FrjyjH[116]][VmUYhMZ];
-          if (Ku5EXuE[_FrjyjH[117] + _FrjyjH[118]] === M_zKM0) {
-            var wRoiN4 = Ku5EXuE[_FrjyjH[113] + _FrjyjH[114]];
-            if (_FrjyjH[93] === wRoiN4[_FrjyjH[78]]) {
-              var vaomrtM = wRoiN4[_FrjyjH[79]];
-              ufnVxO(Ku5EXuE);
-            }
-            return vaomrtM;
-          }
-        }
-        throw new Error(_FrjyjH[151]);
-      },
-      [_FrjyjH[108] + "teYiel" + _FrjyjH[20]]: function (M_zKM0, VmUYhMZ, Ku5EXuE) {
-        return this[_FrjyjH[108] + _FrjyjH[109]] = {
-          [_FrjyjH[106] + _FrjyjH[107]]: QSgcBH(M_zKM0),
-          [_FrjyjH[161] + _FrjyjH[162]]: VmUYhMZ,
-          [_FrjyjH[163] + _FrjyjH[164]]: Ku5EXuE
-        }, _FrjyjH[100] === this[_FrjyjH[94]] && (this[_FrjyjH[79]] = wRoiN4), TzQWI8;
-      }
-    }, vaomrtM;
-  }();
-  function RQgEKf(lAhsEPG) {
-    var vRJbtq = [K0vmG5, [WoGtSep, QmrpZmj], yYoOojT],
-      PeVNp87 = [Fsq8pe, Pvqtdk, J4NWyB, RQgEKf, loeAK8, hXnRPqd],
-      wxQseDW;
-    for (;;) {
-      wxQseDW = wRoiN4[yYoOojT[lAhsEPG[_FrjyjH[13]][_FrjyjH[0]]++]];
+    return _0x4b4e61;
+  }
+  function _0x22e7a8() {
+    if (window.b && typeof window.b.url === "function") {
       try {
-        var M_zKM0 = wxQseDW(lAhsEPG, vyL0YC, s0T7UZ, sPbmyU, vRJbtq, PeVNp87);
-        if (M_zKM0 === _FrjyjH[11]) {
-          break;
-        }
-      } catch (vRJbtq) {
-        Pvqtdk(lAhsEPG, vRJbtq);
+        return window.b.url();
+      } catch (_0x29c7d1) {
+        console.log("法方他其试尝，败失用调)(lru.b".split("").reverse().join(""));
       }
     }
+    const _0x5ecd13 = document.querySelectorAll("script[src*=\"game.bin\"]");
+    if (_0x5ecd13.length > 0) {
+      return _0x5ecd13[0].src;
+    }
+    var _0x42ac62;
+    const _0xe64b1b = window.location.pathname.match(new RegExp(")+d\\(/\\5h/\\".split("").reverse().join(""), ""));
+    _0x42ac62 = 14;
+    if (_0xe64b1b) {
+      return "https://m.66rpg.com/h5/" + _0xe64b1b[1] + "/game.bin";
+    }
+    return null;
   }
-  RQgEKf(wxQseDW);
+  const _0x5aa90c = () => {
+    const _0x40b7ca = document.createElement("div");
+    _0x40b7ca.id = "cgControlPanel";
+    _0x40b7ca.style.cssText = "\n            position: fixed;\n            top: 50%;\n            left: 50%;\n            transform: translate(-50%, -50%);\n            width: 90%;\n            max-width: 700px;\n            max-height: 90vh;\n            overflow-y: auto;\n            background: rgba(255, 255, 255, 0.9);\n            border-radius: 16px;\n            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);\n            z-index: 99999;\n            display: none;\n            flex-direction: column;\n            padding: 15px;\n            font-family: 'Microsoft YaHei', sans-serif;\n            backdrop-filter: blur(10px);\n            border: 2px solid #ff9eb8;\n        ";
+    _0x40b7ca.innerHTML = "\n            <div style=\"display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; border-bottom: 2px dashed #a8d8极简的代码实现ff; padding-bottom: 10px;\">\n                <div>\n                    <h1 style=\"font-size: 24px; color: #ff6b9d; margin: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);\">橙光织梦多功能</h1>\n                    <div style=\"display: flex; gap: 15px; margin-top: 5px;\">\n                        <div style=\"font-size: 14px; color: #666;\">\n                            <span style=\"font-weight: bold; color: #6bc5ff;\">游戏ID:</span> " + _0x1276e1 + "\n                        </div>\n                    </div>\n                </div>\n                <div>\n                    <button id=\"cgClosePanel\" style=\"background: none; border: none; font-size: 24px; cursor: pointer; color: #ff6b9d;\">×</button>\n                </div>\n            </div>\n            \n            <div style=\"display: flex; justify-content: space-around; margin-bottom: 15px; border-bottom: 2px dashed #a8d8ff; padding-bottom: 10px;\">\n                <button id=\"cgTabBasic\" class=\"cg-tab\" style=\"\n                    padding: 8px 20px;\n                    border: none;\n                    background: rgba(255, 158, 184, 0.2);\n                    font-size: 16px;\n                    cursor: pointer;\n                    border-radius: 8px;\n                    transition: all 0.3s;\n                    color: #ff3d7f;\n                    font-weight: bold;\n                \">基础功能</button>\n                <button id=\"cgTabSave\" class=\"cg-tab\" style=\"\n                    padding: 8px 20px;\n                    border: none;\n                    background: none;\n                    font-size: 16px;\n                    cursor: pointer;\n                    border-radius: 8极简的代码实现px;\n                    transition: all 0.3s;\n                    color: #ff6b9d;\n                    font-weight: bold;\n                \">存档管理</button>\n                <button id=\"cgTabValues\" class=\"cg-tab\" style=\"\n                    padding: 8px 20px;\n                    border: none;\n                    background: none;\n                    font-size: 16px;\n                    cursor: pointer;\n                    border-radius: 8px;\n                    transition: all 0.3s;\n                    color: #ff6b9d;\n                    font-weight: bold;\n                \">数值修改</button>\n            </div>\n            \n            <div id=\"cgBasicSection\" style=\"\n                margin-bottom: 20px;\n                padding: 15px;\n                background: rgba(255, 255, 255, 0.7);\n                border-radius: 12px;\n                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);\n                border: 2px solid #a8d8ff;\n                backdrop-filter: blur(5px);\n            \">\n                <div style=\"display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between;\">\n                    <div style=\"flex: 1; min-width: 200px;\">\n                        <div style=\"\n                            font-size: 20px;\n                            font-weight: bold;\n                            color: #ff6b9d;\n                            margin-bottom: 15px;\n                            padding-bottom: 8px;\n                            border-bottom: 2px dashed #a8d8ff;\n                            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);\n                        \">商城功能</div>\n                        <button id=\"cgShopToggle\" style=\"\n                            background: linear-gradient(135deg, #a8d8ff 0%, #6bc5ff 100%);\n                            color: white;\n                            border: none;\n                            border-radius: 12px;\n                            padding: 12px 20px;\n                            margin: 8px 0;\n                            font-size: 16px;\n                            cursor: pointer;\n                            transition: all 0.3s ease;\n                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n                            border: 2px solid rgba(255, 255, 255, 0.5);\n                            font-weight: bold;\n                            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);\n                            width: 100%;\n                        \">商城开关: " + (_0xa1bd35 ? "开启" : "闭关".split("").reverse().join("")) + "</button>\n                        \n                        <button id=\"cgModifyAccumulated\" style=\"\n                            background: linear-gradient(135deg, #b5ff9e 0%, #6bff6b 100%);\n                            color: white;\n                            border: none;\n                            border-radius: 12px;\n                            padding: 12px 20px;\n                            margin: 8px 0;\n                            font-size: 16px;\n                            cursor: pointer;\n                            transition: all 0.3s ease;\n                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n                            border: 2px solid rgba(255, 255, 255, 0.5);\n                            font-weight: bold;\n                            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);\n                            width: 100%;\n                        \">修改累充</button>\n                        \n                        <button id=\"cgFullscreen\" style=\"\n                            background: linear-gradient(135deg, #ffd59e 0%, #ffb56b 100%);\n                            color: white;\n                            border: none;\n                            border-radius: 12px;\n                            padding: 12px 20px;\n                            margin: 8px 0;\n                            font-size: 16px;\n                            cursor: pointer;\n                            transition: all 0.3s ease;\n                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n                            border: 2px solid rgba(255, 255, 255, 0.5);\n                            font-weight: bold;\n                            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);\n                            width: 100%;\n                        \">全屏切换</button>\n                        \n                        <button id=\"cgDownloadBin\" style=\"\n                            background: linear-gradient(135deg, #ff9eb8 0%, #ff6b9d 100%);\n                            color: white;\n                            border: none;\n                            border-radius: 12px;\n                            padding: 12px 20px;\n                            margin: 8px 0;\n                            font-size: 16px;\n                            cursor: pointer;\n                            transition: all 0.3s ease;\n                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n                            border: 2px solid rgba(255, 255, 255, 0.5);\n                            font-weight: bold;\n                            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);\n                            width: 100%;\n                        \">下载bin文件</button>\n                        \n                        <!-- 商城物品区域 -->\n                        <div id=\"cgShopItemsContainer\" style=\"margin-top: 15px; display: none; border-top: 1px dashed #a8d8ff; padding-top: 10px;\">\n                            <div style=\"font-size: 16px; font-weight: bold; color: #ff6b9d; margin-bottom: 10px;\">商城物品</div>\n                            <div id=\"cgShopItems\" style=\"display: flex; flex-wrap: wrap; gap: 8px;\"></div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            \n            <div id=\"cgSaveSection\" style=\"\n                margin-bottom: 20px;\n                padding: 15px;\n                background: rgba(255, 255, 255, 0.7);\n                border-radius: 12px;\n                box-shadow: 0 2px 10px rgba(0, 0, 0, 极简的代码实现0.1);\n                display: none;\n                border: 2px solid #a8d8ff;\n                backdrop-filter: blur(5px);\n            \">\n                <div style=\"\n                    font-size: 20px;\n                    font-weight: bold;\n                    color: #ff6b9d;\n                    margin-bottom: 15px;\n                    padding-bottom: 8px;\n                    border-bottom: 2px dashed #a8d8ff;\n                    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);\n                \">存档管理</div>\n                <div style=\"display: flex; justify-content: space-between; margin-bottom: 15px;\">\n                    <button id=\"cgSaveMode\" style=\"\n                        background: linear-gradient(135deg, #a8d8ff 0%, #6bc5ff 100%);\n                        color: white;\n                        border: none;\n                        border-radius: 12px;\n                        padding: 12px 20px;\n                        font-size: 16px;\n                        cursor: pointer;\n                        transition: all 0.3s ease;\n                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n                        border: 2px solid rgba(255, 255, 255, 0.5);\n                        font-weight: bold;\n                        text-shadow: 1px 1px 2px rgba(0,0,0,0.2);\n                        width: 48%;\n                    \">存档模式</button>\n                    <button id=\"cgLoadMode\" style=\"\n                        background: linear-gradient(135deg, #b5ff9e 0%, #6bff6b 100%);\n                        color: white;\n                        border: none;\n                        border-radius: 12px;\n                        padding: 12px 20px;\n                        font-size: 16px;\n                        cursor: pointer;\n                        transition: all 0.3s ease;\n                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n                        border: 2px solid rgba(255, 255, 255, 0.5);\n                        font-weight: bold;\n                        text-shadow: 1px 1px 2px rgba(0,0,0,0.2);\n                        width: 48%;\n                    \">读档模式</button>\n                </div>\n                \n                <div id=\"cgSlotContainer\" style=\"width: 100%;\">\n                    " + Array(_0x3551f2.SLOT_COUNT).fill().map((_0x193f1f, _0x555db7) => "\n                        <div id=\"cgSlot" + (_0x555db7 + 1) + "\" class=\"cg-slot\" style=\"\n                            display: flex;\n                            flex-direction: column;\n                            align-items: flex-start;\n                            justify-content: center;\n                            width: 100%;\n                            min-height: 80px;\n                            background: rgba(255, 255, 255, 0.8);\n                            border-radius: 12px;\n                            margin: 5px 0;\n                            padding: 12px;\n                            cursor: pointer;\n                            transition: all 0.2s;\n                            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);\n                            position: relative;\n                            overflow: hidden;\n                            box-sizing: border-box;\n                            border: 2px solid #a8d8ff;\n                        \">\n                            <button class=\"cg-delete-slot\" style=\"\n                                position: absolute;\n                                top: 8px;\n                                right: 8px;\n                                background: rgba(255, 71, 87, 0.8);\n                                color: white;\n                                border: none;\n                                border-radius: 50%;\n                                width: 20px;\n                                height: 20px;\n                                font-size: 12px;\n                                cursor: pointer;\n                                display: none;\n                                align-items: center;\n                                justify-content: center;\n                                z-index: 1;\n                                transition: all 0.2s;\n                            \" title=\"删除存档\">×</button>\n                            <div style=\"display: flex; justify-content: space-between; width: 100%;\">\n                                <div style=\"font-weight: bold; font-size: 16px; color: #ff6b9d;\">存档 " + (_0x555db7 + 1) + "</div>\n                                <div class=\"cg-slot-time\" style=\"font-size: 12px; color: #666;\">空</div>\n                            </div>\n                            <div class=\"cg-slot-info\" style=\"margin-top: 8px; width: 100%;\">\n                                <div class=\"cg-game-name\" style=\"font-size: 14px; color: #333; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;\">未使用</div>\n                                <div class=\"cg-story-name\" style=\"font-size: 12px; color: #666; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;\"></div>\n                            </div>\n                            <div class=\"cg-slot-preview-bar\" style=\"position: absolute; bottom: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, #a8d8ff 0%, #ff9eb8 100%);\"></div>\n                        </div>\n                    ").join("") + "\n                </div>\n                \n                <div style=\"margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap;\">\n                    <button id=\"cgDownloadSave\" style=\"\n                        background: linear-gradient(135deg, #ff9eb8 0%, #ff6b9d 100%);\n                        color: white;\n                        border: none;\n                        border-radius: 12px;\n                        padding: 12px 20px;\n                        font-size: 16px;\n                        cursor: pointer;\n                        transition: all 0.3s ease;\n                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n                        border: 2px solid rgba(255, 255, 255, 0.5);\n                        font-weight: bold;\n                        text-shadow: 1px 1px 2px rgba(0,0,0,0.2);\n                        flex: 1;\n                        min-width: 120px;\n                    \">下载存档</button>\n                    <button id=\"cgLoadSave\" style=\"\n                        background: linear-gradient(135deg, #ff9eb8 0%, #ff6b9d 100%);\n                        color: white;\n                        border: none;\n                        border-radius: 12px;\n                        padding: 12px 20px;\n                        font-size: 16px;\n                        cursor: pointer;\n                        transition: all 0.3s ease;\n                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n                        border: 2px solid rgba(255, 255, 255, 0.5);\n                        font-weight: bold;\n                        text-shadow: 1px 1px 2px rgba(0,0,0,0.2);\n                        flex: 1;\n                        min-width: 120px;\n                    \">读取存档文件</button>\n                    <button id=\"cgClearCurrent\" style=\"\n                        background: linear-gradient(135deg, #ffd59e 0%, #ffb56b 100%);\n                        color: white;\n                        border: none;\n                        border-radius: 12px;\n                        padding: 12px 20px;\n                        font-size: 16px;\n                        cursor: pointer;\n                        transition: all 0.3s ease;\n                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n                        border: 2px solid rgba(255, 255, 255, 0.5);\n                        font-weight: bold;\n                        text-shadow: 1px 1px 2px rgba(0,0,0,0.2);\n                        flex: 1;\n                        min-width: 120px;\n                    \">清除当前存档</button>\n                    <button id=\"cgClearData\" style=\"\n                        background: linear-gradient(135deg, #ff9e9e 0%, #ff6b6b 100%);\n                        color: white;\n                        border: none;\n                        border-radius: 12px;\n                        padding: 12px 20px;\n                        font-size: 16px;\n                        cursor: pointer;\n                        transition: all 0.3s ease;\n                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n                        border: 2px solid rgba(255, 255, 255, 0.5);\n                        font-weight: bold;\n                        text-shadow: 1px 1px 2px rgba(0,0,0,0.2);\n                        flex: 1;\n                        min-width: 120px;\n                    \">清除所有数据</button>\n                </div>\n            </div>\n            \n            <div id=\"cgValuesSection\" style=\"\n                margin-bottom: 20px;\n                padding: 15px;\n                background: rgba(255, 255, 255, 0.7);\n                border-radius: 12px;\n                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);\n                display: none;\n                border: 2px solid #a8d8ff;\n                backdrop-filter: blur(5px);\n            \">\n                <div style=\"\n                    font-size: 20px;\n                    font-weight: bold;\n                    color: #ff6b9d;\n                    margin-bottom: 15px;\n                    padding-bottom: 8px;\n                    border-bottom: 2px dashed #a8d8ff;\n                    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);\n                \">数值修改</div>\n                <div style=\"margin-bottom: 15px; color: #666; font-size: 14px;\">\n                    修改游戏中的数值，请谨慎操作\n                </div>\n                <div style=\"display: flex; gap: 10px; flex-wrap: wrap;\">\n                    <button id=\"cgEditNormalValues\" style=\"\n                        background: linear-gradient(135deg, #a8d8ff 0%, #6bc5ff 100%);\n                        color: white;\n                        border: none;\n                        border-radius: 12px;\n                        padding: 12px 20px;\n                        font-size: 16px;\n                        cursor: pointer;\n                        transition: all 0.3s ease;\n                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n                        border: 2px solid rgba(255, 255, 255, 0.5);\n                        font-weight: bold;\n                        text-shadow: 1px 1px 2px rgba(0,0,0,0.2);\n                        flex: 1;\n                        min-width: 200px;\n                    \">修改普通数值</button>\n                    <button id=\"cgEditSecondLoopValues\" style=\"\n                        background: linear-gradient(135deg, #b5ff9e 0%, #6bff6b 100%);\n                        color: white;\n                        border: none;\n                        border-radius: 12px;\n                        padding: 12px 20px;\n                        font-size: 16px;\n                        cursor: pointer;\n                        transition: all 0.3s ease;\n                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n                        border: 2px solid rgba(255, 255, 255, 0.5);\n                        font-weight: bold;\n                        text-shadow: 1px 1px 2极简的代码实现px rgba(0,0,0,0.2);\n                        flex: 1;\n                        min-width: 200px;\n                    \">修改二周目数值</button>\n                    <button id=\"cgExecuteCode\" style=\"\n                        background: linear-gradient(135deg, #ffd59e 0%, #ffb56b 100%);\n                        color: white;\n                        border: none;\n                        border-radius: 12px;\n                        padding: 12px 20px;\n                        font-size: 16px;\n                        cursor: pointer;\n                        transition: all 0.3s ease;\n                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n                        border: 2px solid rgba(255, 255, 255, 0.5);\n                        font-weight: bold;\n                        text-shadow: 1px 1px 2px rgba(0,0,0,0.2);\n                        flex: 1;\n                        min-width: 200px;\n                    \">执行数值代码</button>\n                </div>\n            </div>\n            \n            <div id=\"cgModeIndicator\" style=\"\n                position: fixed;\n                top: 10px;\n                right: 10px;\n                padding: 8px 15px;\n                background: rgba(255,158,184,0.9);\n                color: white;\n                border-radius: 20px;\n                font-size: 14px;\n                display: none;\n                z-index: 100000;\n                border: 2px solid white;\n                box-shadow: 0 2px 10px rgba(0,0,0,0.2);\n            \">\n                当前模式: <span id=\"cgCurrentModeText\">无</span>\n            </div>\n        ";
+    document.body.appendChild(_0x40b7ca);
+    document.getElementById("cisaBbaTgc".split("").reverse().join("")).onclick = function () {
+      document.getElementById("cgBasicSection").style.display = "kcolb".split("").reverse().join("");
+      document.getElementById("cgSaveSection").style.display = "none";
+      document.getElementById("cgValuesSection").style.display = "enon".split("").reverse().join("");
+      document.querySelectorAll(".cg-tab").forEach(_0x3c7892 => {
+        _0x3c7892.style.background = "none";
+        _0x3c7892.style.color = "d9b6ff#".split("").reverse().join("");
+      });
+      this.style.background = "rgba(255, 158, 184, 0.2)";
+      this.style.color = "#ff3d7f";
+      _0x3d07d0();
+    };
+    document.getElementById("cgTabSave").onclick = function () {
+      document.getElementById("noitceScisaBgc".split("").reverse().join("")).style.display = "enon".split("").reverse().join("");
+      document.getElementById("cgSaveSection").style.display = "kcolb".split("").reverse().join("");
+      document.getElementById("noitceSseulaVgc".split("").reverse().join("")).style.display = "enon".split("").reverse().join("");
+      document.querySelectorAll(".cg-tab").forEach(_0xd1a78e => {
+        _0xd1a78e.style.background = "enon".split("").reverse().join("");
+        _0xd1a78e.style.color = "d9b6ff#".split("").reverse().join("");
+      });
+      this.style.background = "rgba(255, 158, 184, 0.2)";
+      this.style.color = "#ff3d7f";
+      _0x47be0f();
+    };
+    document.getElementById("seulaVbaTgc".split("").reverse().join("")).onclick = function () {
+      document.getElementById("cgBasicSection").style.display = "none";
+      document.getElementById("noitceSevaSgc".split("").reverse().join("")).style.display = "enon".split("").reverse().join("");
+      document.getElementById("noitceSseulaVgc".split("").reverse().join("")).style.display = "kcolb".split("").reverse().join("");
+      document.querySelectorAll("bat-gc.".split("").reverse().join("")).forEach(_0x1b1f55 => {
+        _0x1b1f55.style.background = "none";
+        _0x1b1f55.style.color = "#ff6b9d";
+      });
+      this.style.background = ")2.0 ,481 ,851 ,552(abgr".split("").reverse().join("");
+      this.style.color = "#ff3d7f";
+    };
+    document.getElementById("lenaPesolCgc".split("").reverse().join("")).onclick = () => {
+      _0x40b7ca.style.display = "none";
+      _0x5f3060 = "enon".split("").reverse().join("");
+      _0x433457();
+    };
+    document.getElementById("cgShopToggle").onclick = function () {
+      _0xa1bd35 = !_0xa1bd35;
+      this.textContent = "商城开关: " + (_0xa1bd35 ? "启开".split("").reverse().join("") : "闭关".split("").reverse().join(""));
+      if (_0xa1bd35) {
+        _0x4cead4("商城拦截器已开启");
+        _0x3d07d0();
+      } else {
+        _0x4cead4("商城拦截器已关闭");
+      }
+    };
+    document.getElementById("neercslluFgc".split("").reverse().join("")).onclick = function () {
+      if (!document.fullscreenElement) {
+        if (document.documentElement.requestFullscreen) {
+          document.documentElement.requestFullscreen();
+        } else {
+          if (document.documentElement.mozRequestFullScreen) {
+            document.documentElement.mozRequestFullScreen();
+          } else {
+            if (document.documentElement.webkitRequestFullscreen) {
+              document.documentElement.webkitRequestfullscreen();
+            } else {
+              if (document.documentElement.msRequestFullscreen) {
+                document.documentElement.msRequestFullscreen();
+              }
+            }
+          }
+        }
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else {
+          if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+          } else {
+            if (document.webkitExitFullscreen) {
+              document.webkitExitFullscreen();
+            } else {
+              if (document.msExitFullscreen) {
+                document.msExitFullscreen();
+              }
+            }
+          }
+        }
+      }
+    };
+    document.getElementById("cgDownloadBin").onclick = async function () {
+      try {
+        var _0x23b3af;
+        const _0x28fa2e = _0x22e7a8();
+        _0x23b3af = 1;
+        if (!_0x28fa2e) {
+          _0x4cead4("无法获取game.bin URL", 2000, true);
+          return;
+        }
+        const _0x295988 = await fetch(_0x28fa2e);
+        if (!_0x295988.ok) {
+          _0x4cead4("下载失败! 状态: " + _0x295988.status, 2000, true);
+          return;
+        }
+        var _0x253a4c = 6;
+        const _0xd5d57c = await _0x295988.blob();
+        _0x253a4c = 13;
+        var _0x4b12a5;
+        const _0x34eab7 = URL.createObjectURL(_0xd5d57c);
+        _0x4b12a5 = "lcamfh";
+        var _0x149d04 = 5;
+        const _0x48da6e = document.createElement("a");
+        _0x149d04 = "hbfpia";
+        _0x48da6e.href = _0x34eab7;
+        const _0x28af00 = document.title.replace("戏游光橙 - ".split("").reverse().join(""), "").trim() || "game",
+          _0x23af87 = _0x28af00.replace(new RegExp("]|><\"?*:/\\\\[".split("").reverse().join(""), "g"), "");
+        _0x48da6e.download = _0x23af87 + ".bin";
+        document.body.appendChild(_0x48da6e);
+        _0x48da6e.click();
+        document.body.removeChild(_0x48da6e);
+        URL.revokeObjectURL(_0x34eab7);
+        _0x4cead4("bin文件下载完成");
+      } catch (_0x358182) {
+        console.error("下载bin文件失败:", _0x358182);
+        _0x4cead4("下载失败: " + _0x358182.message, 3000, true);
+      }
+    };
+    document.getElementById("cgModifyAccumulated").onclick = function () {
+      var _0x3924b2;
+      const _0x60c054 = prompt(":数充累入输请".split("").reverse().join(""), "");
+      _0x3924b2 = 6;
+      var _0x5ed5ee = 14;
+      const _0x5eaf87 = parseInt(_0x60c054) || 0;
+      _0x5ed5ee = 0;
+      const _0x3a0631 = window.getUserData?.() || {};
+      ["level1", "rewolFhserf".split("").reverse().join(""), "level2", "rewolFlatot".split("").reverse().join(""), "realFlower", "haveFlower"].forEach(_0x3ebd7d => {
+        const _0x373218 = {
+          value: _0x5eaf87,
+          writable: true
+        };
+        Object.defineProperty(_0x3a0631, _0x3ebd7d, _0x373218);
+      });
+      alert("累充已修改为：" + _0x5eaf87);
+      _0x4cead4("累充值已更新");
+    };
+    var _0x46d348;
+    const _0x3d07d0 = () => {
+      var _0x32305f = 12;
+      const _0x556578 = document.getElementById("smetIpohSgc".split("").reverse().join(""));
+      _0x32305f = 4;
+      const _0x567844 = document.getElementById("reniatnoCsmetIpohSgc".split("").reverse().join(""));
+      _0x556578.innerHTML = "";
+      window.hxsj && window.hxsj.mallItems ? (window.hxsj.mallItems.forEach(_0x35d0a8 => {
+        const _0x357514 = _0x35d0a8.itemData.itemId,
+          _0x33a2b3 = _0x35d0a8.itemData.itemName;
+        var _0x53211e = 11;
+        const _0x434f18 = document.createElement("nottub".split("").reverse().join(""));
+        _0x53211e = 2;
+        _0x434f18.textContent = _0x33a2b3;
+        _0x434f18.style.cssText = "\n                        background: linear-gradient(135deg, #ff9eb8 0%, #ff6b9d 100%);\n                        color: white;\n                        border: none;\n                        border-radius: 8px;\n                        padding: 10px;\n                        font-size: 14px;\n                        cursor: pointer;\n                        transition: all 0.2s;\n                        box-shadow: 0 2px 5px rgba(0,0,0,0.1);\n                        border: 1px solid rgba(255,255,255,0.3);\n                        font-weight: bold;\n                        text-align: center;\n                        min-width: 100px;\n                    ";
+        _0x434f18.onclick = () => buyItem(_0x357514);
+        _0x556578.appendChild(_0x434f18);
+      }), _0x567844.style.display = "block") : _0x567844.style.display = "none";
+    };
+    _0x46d348 = "aqgood".split("").reverse().join("");
+    document.getElementById("cgSaveMode").onclick = function () {
+      _0x5f3060 = _0x5f3060 === "save" ? "none" : "evas".split("").reverse().join("");
+      _0x433457();
+      _0x47be0f();
+    };
+    document.getElementById("edoMdaoLgc".split("").reverse().join("")).onclick = function () {
+      _0x5f3060 = _0x5f3060 === "load" ? "enon".split("").reverse().join("") : "load";
+      _0x433457();
+      _0x47be0f();
+    };
+    document.getElementById("cgEditNormalValues").onclick = () => {
+      var _0x33ff41 = 10;
+      const _0x87094f = document.getElementById("cgNormalEditor") || _0x4ef1c0(false);
+      _0x33ff41 = 6;
+      _0x87094f.style.display = "flex";
+      _0xa0ac44(false);
+    };
+    document.getElementById("cgEditSecondLoopValues").onclick = () => {
+      var _0x1fc6ad = 15;
+      const _0x404ec8 = document.getElementById("cgSecondLoopEditor") || _0x4ef1c0(true);
+      _0x1fc6ad = 12;
+      _0x404ec8.style.display = "xelf".split("").reverse().join("");
+      _0xa0ac44(true);
+    };
+    document.getElementById("cgExecuteCode").onclick = () => {
+      _0x175cf6();
+    };
+    var _0x58f1b7 = 9;
+    const _0x433457 = () => {
+      const _0x4f096e = document.getElementById("rotacidnIedoMgc".split("").reverse().join(""));
+      var _0x46ac59;
+      const _0x46bec1 = document.getElementById("cgCurrentModeText");
+      _0x46ac59 = 7;
+      _0x5f3060 === "none" ? (_0x4f096e.style.display = "none", _0x46bec1.textContent = "无") : (_0x4f096e.style.display = "kcolb".split("").reverse().join(""), _0x46bec1.textContent = _0x5f3060 === "evas".split("").reverse().join("") ? "式模档存".split("").reverse().join("") : "式模档读".split("").reverse().join(""), _0x4f096e.style.background = _0x5f3060 === "save" ? "rgba(168, 216, 255, 0.9)" : "rgba(181, 255, 158, 0.9)");
+    };
+    _0x58f1b7 = 7;
+    var _0x37ec88 = 8;
+    const _0x5b8b2f = _0x2f2a3d => {
+      try {
+        var _0x1a81f9;
+        const _0x370bf1 = JSON.parse(_0x2f2a3d);
+        _0x1a81f9 = 3;
+        if (_0x370bf1.Header) {
+          return {
+            gameName: _0x370bf1.Header.Name || "未知游戏",
+            storyName: _0x370bf1.Header.StoryName || "未知剧情",
+            saveTime: _0x370bf1.Header.SaveTime ? new Date(_0x370bf1.Header.SaveTime).toLocaleString() : "未知时间",
+            valid: true
+          };
+        }
+        for (const _0x56ae00 in _0x370bf1) {
+          if (_0x56ae00.startsWith("save")) {
+            const _0x28ed92 = _0x370bf1[_0x56ae00];
+            if (_0x28ed92.includes("\"Name\"") && _0x28ed92.includes("\"emaNyrotS\"".split("").reverse().join(""))) {
+              var _0x14e40d = 6;
+              const _0x5acaeb = _0x28ed92.match(new RegExp("\"Name\"\\s*[\\\\:]\\s*\"([^\"]+)\"", ""));
+              _0x14e40d = 3;
+              const _0x3d5b8f = _0x28ed92.match(new RegExp("\")+]\"^[(\"*s\\]:\\\\[*s\\\"emaNyrotS\"".split("").reverse().join(""), "")),
+                _0x55cb34 = _0x28ed92.match(new RegExp("\"SaveTime\"\\s*[\\\\:]\\s*([0-9]+)", ""));
+              return {
+                gameName: _0x5acaeb ? _0x5acaeb[1] : "未知游戏",
+                storyName: _0x3d5b8f ? _0x3d5b8f[1] : "未知剧情",
+                saveTime: _0x55cb34 ? new Date(parseInt(_0x55cb34[1])).toLocaleString() : "未知时间",
+                valid: true
+              };
+            }
+          }
+        }
+        const _0x3d9e5a = {
+          valid: false
+        };
+        return _0x3d9e5a;
+      } catch (_0x46a483) {
+        const _0x1cdb0e = {
+          valid: false
+        };
+        return _0x1cdb0e;
+      }
+    };
+    _0x37ec88 = 3;
+    var _0x5d7846;
+    const _0x5f08a1 = _0x22c43d => {
+      try {
+        if (typeof _0x22c43d === "tcejbo".split("").reverse().join("")) {
+          for (const _0x356eba in _0x22c43d) {
+            if (_0x356eba.startsWith("evas".split("").reverse().join(""))) {
+              try {
+                var _0x2095f3 = 6;
+                const _0xcac1bd = JSON.parse(_0x22c43d[_0x356eba]);
+                _0x2095f3 = 1;
+                _0xcac1bd.PlayerBuyItem && (_0xcac1bd.PlayerBuyItem.items = [], _0x22c43d[_0x356eba] = JSON.stringify(_0xcac1bd));
+              } catch (_0x3bc5b3) {}
+            }
+          }
+        }
+        return _0x22c43d;
+      } catch (_0x3db35c) {
+        return _0x22c43d;
+      }
+    };
+    _0x5d7846 = 7;
+    var _0x1248c3;
+    const _0x4db03a = () => {
+      try {
+        for (const _0x8d0fac of Object.keys(localStorage)) {
+          if (_0x8d0fac.startsWith("save") && _0x8d0fac != "saveData") {
+            var _0x820bbc = 3;
+            const _0x30bfc1 = localStorage.getItem(_0x8d0fac);
+            _0x820bbc = "llelnl";
+            if (_0x30bfc1) {
+              var _0x444a07;
+              const _0x45cff2 = JSON.parse(_0x30bfc1);
+              _0x444a07 = 4;
+              if (_0x45cff2.Header && _0x45cff2.Header.StoryName) {
+                return _0x45cff2.Header.StoryName;
+              }
+            }
+          }
+        }
+      } catch (_0x3abeae) {
+        console.error("获取剧情名称失败:", _0x3abeae);
+      }
+      return "情剧前当".split("").reverse().join("");
+    };
+    _0x1248c3 = "fkblpf".split("").reverse().join("");
+    const _0x5b821c = _0x289c95 => {
+        const _0xbbb9fa = "" + _0x3551f2.STORAGE_PREFIX + _0x46e6cb + "_" + _0x1276e1 + "_" + _0x289c95,
+          _0x9c6449 = localStorage.getItem(_0xbbb9fa);
+        if (!_0x9c6449) {
+          _0x4cead4("该存档位为空");
+          return;
+        }
+        try {
+          const _0x471b4d = JSON.parse(_0x9c6449),
+            _0x48736e = _0x471b4d.info.gameName || "戏游知未".split("").reverse().join("");
+          var _0x3606f0;
+          const _0x5dcb4e = _0x471b4d.info.storyName || "情剧知未".split("").reverse().join("");
+          _0x3606f0 = "momjbd";
+          confirm("确定要删除存档 " + _0x289c95 + " 吗？\n游戏: " + _0x48736e + "\n剧情: " + _0x5dcb4e) && (localStorage.removeItem(_0xbbb9fa), _0x4cead4("已删除存档 " + _0x289c95), _0x47be0f());
+        } catch (_0x3f89c1) {
+          _0x4cead4("删除存档失败", 2000, true);
+        }
+      },
+      _0x47be0f = () => {
+        for (let _0x416e55 = 1; _0x416e55 <= _0x3551f2.SLOT_COUNT; _0x416e55++) {
+          const _0x11cdc8 = document.getElementById("cgSlot" + _0x416e55),
+            _0x816e28 = _0x11cdc8.querySelector("tols-eteled-gc.".split("").reverse().join("")),
+            _0x4f4fb3 = _0x11cdc8.querySelector(".cg-slot-time"),
+            _0x1f3761 = _0x11cdc8.querySelector("eman-emag-gc.".split("").reverse().join("")),
+            _0x2fe7ad = _0x11cdc8.querySelector(".cg-story-name");
+          var _0x3203f2 = 12;
+          const _0x1737d6 = _0x11cdc8.querySelector("rab-weiverp-tols-gc.".split("").reverse().join(""));
+          _0x3203f2 = 2;
+          const _0x599daf = "" + _0x3551f2.STORAGE_PREFIX + _0x46e6cb + "_" + _0x1276e1 + "_" + _0x416e55;
+          var _0x5c0b76 = 10;
+          const _0x2c4e7c = localStorage.getItem(_0x599daf);
+          _0x5c0b76 = 0;
+          _0x816e28.onmouseenter = () => {
+            _0x816e28.style.background = "#ff4757";
+            _0x816e28.style.transform = "scale(1.1)";
+          };
+          _0x816e28.onmouseleave = () => {
+            _0x816e28.style.background = "rgba(255, 71, 87, 0.8)";
+            _0x816e28.style.transform = ")1(elacs".split("").reverse().join("");
+          };
+          _0x816e28.onclick = _0x386418 => {
+            _0x386418.stopPropagation();
+            _0x5b821c(_0x416e55);
+          };
+          _0x11cdc8.onmouseenter = () => {
+            _0x11cdc8.style.transform = ")xp3-(Yetalsnart".split("").reverse().join("");
+            _0x11cdc8.style.boxShadow = "0 5px 15px rgba(0, 0, 0, 0.2)";
+            _0x11cdc8.style.borderColor = "#ff9eb8";
+            if (_0x2c4e7c) {
+              _0x816e28.style.display = "flex";
+            }
+          };
+          _0x11cdc8.onmouseleave = () => {
+            _0x11cdc8.style.transform = ")0(Yetalsnart".split("").reverse().join("");
+            _0x11cdc8.style.boxShadow = "0 2px 5px rgba(0, 0, 0, 0.1)";
+            _0x11cdc8.style.borderColor = "ff8d8a#".split("").reverse().join("");
+            _0x816e28.style.display = "enon".split("").reverse().join("");
+          };
+          if (_0x2c4e7c) {
+            try {
+              const _0x2e220c = JSON.parse(_0x2c4e7c);
+              var _0x375a29;
+              const _0x187f27 = _0x5b8b2f(JSON.stringify(_0x2e220c.data));
+              _0x375a29 = "cnlamd";
+              if (_0x187f27.valid) {
+                _0x1f3761.textContent = _0x2e220c.info.gameName || _0x187f27.gameName || "戏游知未".split("").reverse().join("");
+                _0x2fe7ad.textContent = _0x2e220c.info.storyName || _0x187f27.storyName || "情剧知未".split("").reverse().join("");
+                _0x4f4fb3.textContent = _0x2e220c.info.saveTime ? new Date(_0x2e220c.info.saveTime).toLocaleString() : _0x187f27.saveTime;
+                _0x4f4fb3.style.color = "666#".split("").reverse().join("");
+                _0x1f3761.style.color = "#333";
+                _0x1737d6.style.background = ")%001 8be9ff# ,%0 ff8d8a# ,ged09(tneidarg-raenil".split("").reverse().join("");
+                _0x11cdc8.onclick = () => {
+                  if (_0x5f3060 === "evas".split("").reverse().join("")) {
+                    _0x23f0ff(_0x416e55);
+                  } else {
+                    if (_0x5f3060 === "daol".split("").reverse().join("")) {
+                      _0x1fe88e(_0x416e55);
+                    } else {
+                      _0x4cead4("式模档读或档存择选先请".split("").reverse().join(""));
+                    }
+                  }
+                };
+              } else {
+                _0x1f3761.textContent = "数据损坏";
+                _0x2fe7ad.textContent = "";
+                _0x4f4fb3.textContent = "无效存档";
+                _0x4f4fb3.style.color = "#ff4757";
+                _0x1f3761.style.color = "#ff4757";
+                _0x1737d6.style.background = "#ff4757";
+              }
+            } catch (_0x4036d2) {
+              _0x1f3761.textContent = "数据损坏";
+              _0x2fe7ad.textContent = "";
+              _0x4f4fb3.textContent = "误错析解".split("").reverse().join("");
+              _0x4f4fb3.style.color = "#ff4757";
+              _0x1f3761.style.color = "#ff4757";
+              _0x1737d6.style.background = "#ff4757";
+            }
+          } else {
+            _0x1f3761.textContent = "用使未".split("").reverse().join("");
+            _0x2fe7ad.textContent = "";
+            _0x4f4fb3.textContent = "空";
+            _0x4f4fb3.style.color = "#666";
+            _0x1f3761.style.color = "#999";
+            _0x1737d6.style.background = "ddd#".split("").reverse().join("");
+            _0x11cdc8.onclick = () => {
+              if (_0x5f3060 === "evas".split("").reverse().join("")) {
+                _0x23f0ff(_0x416e55);
+              } else {
+                _0x5f3060 === "daol".split("").reverse().join("") ? _0x4cead4("该存档位为空") : _0x4cead4("请先选择存档或读档模式");
+              }
+            };
+          }
+          if (_0x5f3060 === "save") {
+            _0x11cdc8.style.background = "rgba(168, 216, 255, 0.2)";
+          } else {
+            if (_0x5f3060 === "load") {
+              _0x11cdc8.style.background = "极简的代码实现rgba(181, 255, 158, 0.2)";
+            } else {
+              _0x11cdc8.style.background = "rgba(255, 255, 255, 0.8)";
+            }
+          }
+        }
+      },
+      _0x23f0ff = _0x219555 => {
+        const _0x1483df = {};
+        for (const _0x12eb4d of Object.keys(localStorage)) {
+          _0x12eb4d.startsWith("save") && _0x12eb4d != "ataDevas".split("").reverse().join("") && (_0x1483df[_0x12eb4d] = localStorage.getItem(_0x12eb4d));
+        }
+        if (Object.keys(_0x1483df).length === 0) {
+          _0x4cead4("未检测到当前游戏的存档数据");
+          return;
+        }
+        const _0x24a36b = _0x5f08a1(_0x1483df),
+          _0x550fe8 = new Date();
+        var _0x1f9558;
+        const _0x25ea41 = {
+          saveTime: _0x550fe8.getTime(),
+          gameName: document.title.replace(" - 橙光游戏", "") || "未知游戏",
+          storyName: _0x4db03a(),
+          gameId: _0x1276e1
+        };
+        _0x1f9558 = 0;
+        const _0x4e71b5 = "" + _0x3551f2.STORAGE_PREFIX + _0x46e6cb + "_" + _0x1276e1 + "_" + _0x219555,
+          _0x11eeb2 = {
+            data: _0x24a36b,
+            info: _0x25ea41
+          };
+        localStorage.setItem(_0x4e71b5, JSON.stringify(_0x11eeb2));
+        _0x4cead4("已保存到存档 " + _0x219555);
+        _0x47be0f();
+      };
+    var _0xdc6d2f = 8;
+    const _0x1fe88e = _0x1ea85d => {
+      const _0x28b173 = "" + _0x3551f2.STORAGE_PREFIX + _0x46e6cb + "_" + _0x1276e1 + "_" + _0x1ea85d;
+      var _0x6e25fb = 12;
+      const _0x38a938 = localStorage.getItem(_0x28b173);
+      _0x6e25fb = 6;
+      if (!_0x38a938) {
+        _0x4cead4("该存档位为空");
+        return;
+      }
+      try {
+        const _0x28216c = JSON.parse(_0x38a938);
+        for (const _0x15ed50 of Object.keys(localStorage)) {
+          if (_0x15ed50.startsWith("save") && _0x15ed50 != "ataDevas".split("").reverse().join("")) {
+            localStorage.removeItem(_0x15ed50);
+          }
+        }
+        Object.entries(_0x28216c.data).forEach(([_0x19f04d, _0x4a5326]) => {
+          if (_0x19f04d.startsWith("save") && _0x19f04d != "ataDevas".split("").reverse().join("")) {
+            localStorage.setItem(_0x19f04d, _0x4a5326);
+          }
+        });
+        _0x4cead4("已从存档 " + _0x1ea85d + " 还原数据");
+        location.reload();
+      } catch (_0x157f23) {
+        console.error("加载存档错误:", _0x157f23);
+        _0x4cead4("存档数据损坏或格式错误");
+      }
+    };
+    _0xdc6d2f = "miaolj".split("").reverse().join("");
+    document.getElementById("cgDownloadSave").onclick = function () {
+      const _0x22123b = {};
+      for (let _0x2db016 = 1; _0x2db016 <= _0x3551f2.SLOT_COUNT; _0x2db016++) {
+        var _0x4d0f19;
+        const _0x364d15 = "" + _0x3551f2.STORAGE_PREFIX + _0x46e6cb + "_" + _0x1276e1 + "_" + _0x2db016;
+        _0x4d0f19 = 5;
+        var _0x35b0ac = 9;
+        const _0x548cb4 = localStorage.getItem(_0x364d15);
+        _0x35b0ac = 6;
+        if (_0x548cb4) {
+          try {
+            var _0x11fc56;
+            const _0x500e2e = JSON.parse(_0x548cb4);
+            _0x11fc56 = 7;
+            const _0x198230 = {
+              info: _0x500e2e.info,
+              data: _0x500e2e.data
+            };
+            _0x22123b[_0x2db016] = _0x198230;
+          } catch (_0x3b114f) {
+            console.error("解析存档位数据失败:", _0x3b114f);
+          }
+        }
+      }
+      if (Object.keys(_0x22123b).length === 0) {
+        _0x4cead4("据数档存的戏游前当到测检未".split("").reverse().join(""));
+        return;
+      }
+      const _0x52a826 = {
+        slotInfos: _0x22123b,
+        meta: {
+          saveTime: new Date().getTime(),
+          gameName: document.title.replace(" - 橙光游戏", "") || "未知游戏",
+          storyName: _0x4db03a(),
+          gameId: _0x1276e1,
+          slotCount: _0x3551f2.SLOT_COUNT,
+          uid: _0x46e6cb
+        }
+      };
+      var _0x3ccbae = 11;
+      const _0x4b71c3 = new Date();
+      _0x3ccbae = 6;
+      const _0x551d33 = "橙光存档_" + _0x52a826.meta.gameName + "_" + _0x4b71c3.getFullYear() + (_0x4b71c3.getMonth() + 1) + _0x4b71c3.getDate() + ".sav";
+      var _0x2917ee = 10;
+      const _0x4377ab = new Blob([JSON.stringify(_0x52a826)], {
+        type: "application/octet-stream"
+      });
+      _0x2917ee = 14;
+      const _0x2bc288 = URL.createObjectURL(_0x4377ab),
+        _0x570e86 = document.createElement("a");
+      _0x570e86.href = _0x2bc288;
+      _0x570e86.download = _0x551d33;
+      _0x570e86.click();
+      document.body.removeChild(_0x570e86);
+      URL.revokeObjectURL(_0x2bc288);
+    };
+    document.getElementById("evaSdaoLgc".split("").reverse().join("")).onclick = function () {
+      var _0x598d29 = 14;
+      const _0x2be932 = document.createElement("input");
+      _0x598d29 = 0;
+      _0x2be932.type = "file";
+      _0x2be932.accept = ".sav";
+      _0x2be932.onchange = _0x14359d => {
+        var _0x5f2c8c;
+        const _0x37389b = _0x14359d.target.files[0];
+        _0x5f2c8c = "jpmmac";
+        if (!_0x37389b) {
+          return;
+        }
+        const _0x116ac2 = new FileReader();
+        _0x116ac2.onload = _0x55cfa1 => {
+          try {
+            const _0x239dc8 = JSON.parse(_0x55cfa1.target.result);
+            if (_0x239dc8.meta && _0x239dc8.meta.gameId && _0x239dc8.meta.gameId !== _0x1276e1) {
+              if (!confirm("警告：此存档来自游戏ID " + _0x239dc8.meta.gameId + "，当前游戏ID为 " + _0x1276e1 + "。是否继续导入？")) {
+                return;
+              }
+            }
+            if (_0x239dc8.slotInfos) {
+              Object.entries(_0x239dc8.slotInfos).forEach(([_0x19e01b, _0xa2175b]) => {
+                var _0x19180b;
+                const _0x11604e = "" + _0x3551f2.STORAGE_PREFIX + _0x46e6cb + "_" + _0x1276e1 + "_" + _0x19e01b;
+                _0x19180b = 6;
+                localStorage.setItem(_0x11604e, JSON.stringify(_0xa2175b));
+              });
+            }
+            _0x4cead4("据数档存原还件文从已".split("").reverse().join(""));
+            _0x47be0f();
+          } catch (_0x69f82c) {
+            _0x4cead4("误错式格件文档存".split("").reverse().join(""));
+          }
+        };
+        _0x116ac2.readAsText(_0x37389b);
+      };
+      _0x2be932.click();
+    };
+    document.getElementById("tnerruCraelCgc".split("").reverse().join("")).onclick = function () {
+      if (confirm("？吗据数档存有所的戏游前当除清要定确".split("").reverse().join(""))) {
+        for (const _0x4f6567 of Object.keys(localStorage)) {
+          _0x4f6567.startsWith("evas".split("").reverse().join("")) && _0x4f6567 != "saveData" && localStorage.removeItem(_0x4f6567);
+        }
+        for (let _0x4565a5 = 1; _0x4565a5 <= _0x3551f2.SLOT_COUNT; _0x4565a5++) {
+          const _0x1162cc = "" + _0x3551f2.STORAGE_PREFIX + _0x46e6cb + "_" + _0x1276e1 + "_" + _0x4565a5;
+          if (localStorage.getItem(_0x1162cc)) {
+            localStorage.removeItem(_0x1162cc);
+          }
+        }
+        _0x4cead4("已清除存档数据");
+        _0x47be0f();
+        location.reload();
+      }
+    };
+    document.getElementById("ataDraelCgc".split("").reverse().join("")).onclick = function () {
+      if (confirm("确定要清除所有存档数据吗？（包括所有游戏的存档）")) {
+        for (const _0x121e66 of Object.keys(localStorage)) {
+          if (_0x121e66.startsWith("cg_save_") || _0x121e66.startsWith("save")) {
+            localStorage.removeItem(_0x121e66);
+          }
+        }
+        _0x4cead4("据数档存除清已".split("").reverse().join(""));
+        _0x47be0f();
+        location.reload();
+      }
+    };
+    const _0x4ef1c0 = (_0x3c2397 = false) => {
+      var _0x36157b = 11;
+      const _0x318d41 = document.createElement("vid".split("").reverse().join(""));
+      _0x36157b = 15;
+      _0x318d41.id = _0x3c2397 ? "cgSecondLoopEditor" : "cgNormalEditor";
+      _0x318d41.style.cssText = "\n                position: fixed;\n                top: 50%;\n                left: 50%;\n                transform: translate(-50%, -50%);\n                width: 90%;\n                max-width: 800px;\n                max-height: 80vh;\n                background: rgba(255, 255, 255, 0.9);\n                border-radius: 12px;\n                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);\n                z-index: 100000;\n                display: none;\n                flex-direction: column;\n                padding: 20px;\n                font-family: 'Microsoft YaHei', sans-serif;\n                border: 2px solid #ff9eb8;\n            ";
+      _0x318d41.innerHTML = "\n                <div style=\"display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; border-bottom: 2px dashed #a8d8ff; padding-bottom: 10px;\">\n                    <h2 style=\"font-size: 20px; color: #ff6b9d; margin: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);\">" + (_0x3c2397 ? "值数目周二".split("").reverse().join("") : "值数通普".split("").reverse().join("")) + "修改</h2>\n                    <button class=\"cg-close-editor\" style=\"background: none; border: none; font-size: 24px; cursor: pointer; color: #ff6b9d;\">×</button>\n                </div>\n                \n                <div style=\"\n                    display: flex;\n                    justify-content: space-between;\n                    align-items: center;\n                    padding: 10px;\n                    background: rgba(255, 255, 255, 0.7);\n                    border-radius: 8px;\n                    margin-bottom: 10px;\n                    border: 1px solid #a8d8ff;\n                \">\n                    <div style=\"display: flex; align-items: center;\">\n                        <input type=\"checkbox\" id=\"" + (_0x3c2397 ? "pooLdnoceSllAtceleSgc".split("").reverse().join("") : "cgSelectAllNormal") + "\" style=\"\n                            margin-right: 10px;\n                            width: 16px;\n                            height: 16px;\n                            cursor: pointer;\n                            accent-color: #ff6b9d;\n                        \">\n                        <label for=\"" + (_0x3c2397 ? "pooLdnoceSllAtceleSgc".split("").reverse().join("") : "lamroNllAtceleSgc".split("").reverse().join("")) + "\" style=\"color: #666;\">全选</label>\n                    </div>\n                    <div style=\"display: flex; align-items: center; gap: 10px;\">\n                        <input type=\"number\" id=\"" + (_0x3c2397 ? "pooLdnoceSeulaVhctaBgc".split("").reverse().join("") : "cgBatchValueNormal") + "\" placeholder=\"批量设置值\" style=\"\n                            width: 80px;\n                            padding: 8px 12px;\n                            border: 1px solid #ff9eb8;\n                            border-radius: 6px;\n                            text-align: right;\n                            background: rgba(255, 255, 255, 0.8);\n                        \">\n                        <button id=\"" + (_0x3c2397 ? "cgBatchApplySecondLoop" : "lamroNylppAhctaBgc".split("").reverse().join("")) + "\" style=\"\n                            background: linear-gradient(135deg, #ff9eb8 0%, #ff6b9d 100%);\n                            color: white;\n                            border: none;\n                            border-radius: 6px;\n                            padding: 8px 12px;\n                            cursor: pointer;\n                            font-size: 14px;\n                            transition: all 0.2s;\n                            border: 1px solid rgba(255, 255, 255, 0.5);\n                            font-weight: bold;\n                        \">批量应用</button>\n                    </div>\n                </div>\n                \n                <div style=\"margin-bottom: 15px; display: flex; gap: 10px;\">\n                    <input type=\"text\" id=\"" + (_0x3c2397 ? "hcraeSpooLdnoceSgc".split("").reverse().join("") : "cgNormalSearch") + "\" placeholder=\"搜索数值...\" style=\"flex: 1; padding: 10px; border: 1px solid #ff9eb8; border-radius: 6px; background: rgba(255,255,255,0.8);\">\n                    <button id=\"" + (_0x3c2397 ? "cgSecondLoopRefresh" : "cgNormalRefresh") + "\" style=\"\n                        background: linear-gradient(135deg, #ff9eb8 0%, #ff6b9d 100%);\n                        color: white;\n                        border: none;\n                        border-radius: 12px;\n                        padding: 10px 15px;\n                        font-size: 16px;\n                        cursor: pointer;\n                        transition: all 0.3s ease;\n                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n                        border: 2px solid rgba(255, 255, 255, 0.5);\n                        font-weight: bold;\n                        text-shadow: 1px 1px 2px rgba(0,0,0,0.2);\n                    \">刷新</button>\n                </div>\n                \n                <div style=\"overflow-y: auto; flex: 1; margin-bottom: 15px; border: 1px solid #a8d8ff; border-radius: 8px; padding: 10px; background: rgba(255,255,255,0.7);\">\n                    <div id=\"" + (_0x3c2397 ? "seulaVpooLdnoceSgc".split("").reverse().join("") : "seulaVlamroNgc".split("").reverse().join("")) + "\" style=\"display: flex; flex-direction: column;\"></div>\n                </div>\n            ";
+      document.body.appendChild(_0x318d41);
+      _0x318d41.querySelectorAll("rotide-esolc-gc.".split("").reverse().join("")).forEach(_0xe7c803 => {
+        _0xe7c803.onclick = () => {
+          _0x318d41.style.display = "none";
+        };
+      });
+      const _0x1d7dba = _0x318d41.querySelector("#" + (_0x3c2397 ? "cgSelectAllSecondLoop" : "lamroNllAtceleSgc".split("").reverse().join("")));
+      _0x1d7dba.onchange = function () {
+        var _0x23156f;
+        const _0x4bee33 = _0x318d41.querySelectorAll(".cg-value-checkbox");
+        _0x23156f = 4;
+        _0x4bee33.forEach(_0x44448 => {
+          _0x44448.checked = this.checked;
+        });
+      };
+      var _0x198ef7 = 8;
+      const _0x189bf7 = _0x318d41.querySelector("#" + (_0x3c2397 ? "cgBatchApplySecondLoop" : "cgBatchApplyNormal"));
+      _0x198ef7 = 10;
+      _0x189bf7.onclick = function (_0x499327) {
+        const _0x4f45f1 = _0x318d41.querySelector("#" + (_0x3c2397 ? "pooLdnoceSeulaVhctaBgc".split("").reverse().join("") : "cgBatchValueNormal"));
+        var _0x49c516;
+        const _0x59d52e = parseInt(_0x4f45f1.value);
+        _0x49c516 = 7;
+        if (isNaN(_0x59d52e)) {
+          _0x4cead4("请输入有效的数值", 2000, true);
+          return;
+        }
+        var _0x420b7d = 7;
+        const _0x5e30a4 = _0x318d41.querySelectorAll(".cg-value-checkbox:checked");
+        _0x420b7d = 9;
+        if (_0x5e30a4.length === 0) {
+          _0x4cead4("值数个一择选少至请".split("").reverse().join(""), 2000, true);
+          return;
+        }
+        var _0x14aab8;
+        _0x499327 = 0;
+        _0x14aab8 = 4;
+        _0x5e30a4.forEach(_0x53486d => {
+          const _0x3e97c2 = _0x53486d.closest(".cg-value-item");
+          var _0x3a9150 = 16;
+          const _0x4ff12c = _0x3e97c2.querySelector(".cg-value-input");
+          _0x3a9150 = 7;
+          const _0x1b5dcf = parseInt(_0x4ff12c.dataset.index);
+          var _0x310d5e = 4;
+          _0x310d5e = 5;
+          !isNaN(_0x1b5dcf) && (_0x4ff12c.value = _0x59d52e, _0x371e9f(_0x1b5dcf, _0x59d52e, _0x3c2397), _0x499327++);
+        });
+        _0x4cead4("已批量修改 " + _0x499327 + " 个数值为 " + _0x59d52e);
+      };
+      var _0x464823 = 13;
+      const _0x202ac5 = _0x318d41.querySelector("#" + (_0x3c2397 ? "cgSecondLoopRefresh" : "cgNormalRefresh"));
+      _0x464823 = "djqoim".split("").reverse().join("");
+      _0x202ac5.onclick = () => {
+        _0xa0ac44(_0x3c2397);
+      };
+      var _0x5179e8 = 9;
+      const _0x20bbde = _0x318d41.querySelector("#" + (_0x3c2397 ? "hcraeSpooLdnoceSgc".split("").reverse().join("") : "cgNormalSearch"));
+      _0x5179e8 = 14;
+      _0x20bbde.oninput = () => {
+        var _0xefb9e6 = 11;
+        const _0x32103d = _0x20bbde.value.toLowerCase();
+        _0xefb9e6 = 2;
+        const _0x6b00df = _0x318d41.querySelectorAll(".cg-value-item");
+        _0x6b00df.forEach(_0x564c9e => {
+          var _0x5bcfef = 5;
+          const _0x2e258e = _0x564c9e.textContent.toLowerCase();
+          _0x5bcfef = 10;
+          _0x564c9e.style.display = _0x2e258e.includes(_0x32103d) ? "flex" : "none";
+        });
+      };
+      return _0x318d41;
+    };
+    var _0x43b64a;
+    const _0x175cf6 = () => {
+      const _0x460580 = document.createElement("div");
+      _0x460580.id = "cgCodeEditor";
+      _0x460580.style.cssText = "\n                position: fixed;\n                top: 50%;\n                left: 50%;\n                transform: translate(-50%, -50%);\n                width: 90%;\n                max-width: 700px;\n                background: rgba(255, 255, 255, 0.95);\n                border-radius: 12px;\n                padding: 20px;\n                z-index: 100000;\n                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);\n                font-family: 'Microsoft YaHei', sans-serif;\n                border: 2px solid #ff9eb8;\n            ";
+      _0x460580.innerHTML = "\n                <div style=\"display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; border-bottom: 2px dashed #a8d8ff; padding-bottom: 10px;\">\n                    <h2 style=\"font-size: 20px; color: #ff6b9d; margin: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);\">数值代码执行</h2>\n                    <button id=\"cgCloseCodeEditor\" style=\"background: none; border: none; font-size: 24px; cursor: pointer; color: #ff6b9d;\">×</button>\n                </div>\n                \n                <textarea id=\"cgCodeInput\" placeholder=\"输入数值代码，例如：&#10;数值[1]=100&#10;二周目数值[2]=50\" style=\"\n                    width: 100%;\n                    height: 150px;\n                    padding: 12px;\n                    border: 1px solid #ff9eb8;\n                    border-radius: 8px;\n                    margin-bottom: 15px;\n                    font-family: monospace;\n                    resize: vertical;\n                    background: rgba(255,255,255,0.8);\n                \"></textarea>\n                \n                <div style=\"display: flex; justify-content: space-between; margin-bottom: 15px;\">\n                    <div style=\"display: flex; gap: 10px;\">\n                        <button id=\"cgExecuteCodeBtn\" style=\"\n                            background: linear-gradient(135deg, #ff9eb8 0%, #ff6b9d 100%);\n                            color: white;\n                            border: none;\n                            border-radius: 12px;\n                            padding: 12极简的代码实现px 20px;\n                            font-size: 16px;\n                            cursor: pointer;\n                            transition: all 0.3s ease;\n                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n                            border: 2px solid rgba(255, 255, 255, 0.5);\n                            font-weight: bold;\n                            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);\n                        \">执行代码</button>\n                        <button id=\"cgExtractCodeBtn\" style=\"\n                            background: linear-gradient(135deg, #a8d8ff 0%, #6bc5ff 100%);\n                            color: white;\n                            border: none;\n                            border-radius: 12px;\n                            padding: 12px 20px;\n                            font-size: 16px;\n                            cursor: pointer;\n                            transition: all 0.3s ease;\n                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n                            border: 2px solid rgba(255, 255, 255, 0.5);\n                            font-weight: bold;\n                            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);\n                        \">提取代码</button>\n                    </div>\n                    <button id=\"cgImportCodeBtn\" style=\"\n                        background: linear-gradient(135deg, #b5极简的代码实现ff9e 0%, #6bff6b 100%);\n                        color: white;\n                        border: none;\n                        border-radius: 12px;\n                        padding: 12px 20px;\n                        font-size: 16px;\n                        cursor: pointer;\n                        transition: all 0.3s ease;\n                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n                        border: 2px solid rgba(255, 255, 255, 0.5);\n                        font-weight: bold;\n                        text-shadow: 1px 1px 2px rgba(0,0,0,0.2);\n                    \">导入代码</button>\n                </div>\n                \n                <div style=\"\n                    background: rgba(255, 158, 184, 0.1);\n                    padding: 10px;\n                    border-radius: 8px;\n                    margin-top: 10px;\n                    font-size: 13px;\n                    color: #666;\n                    border: 1px dashed #ff9eb8;\n                \">\n                    <div style=\"font-weight: bold; margin-bottom: 5px;\">使用说明：</div>\n                    <div>• 数值[ID]=值 - 修改普通数值</div>\n                    <div>• 二周目数值[ID]=值 - 修改二周目数值</div>\n                    <div>• 每行一个指令，支持多行代码</div>\n                    <div>• ID从1开始，对应游戏中的数值ID</div>\n                </div>\n                \n                <div id=\"cgCodeOutput\" style=\"margin-top: 15px; padding: 10px; border-radius: 8px; background: rgba(0,0,0,0.05); display: none;\"></div>\n            ";
+      document.body.appendChild(_0x460580);
+      document.getElementById("cgCloseCodeEditor").onclick = () => {
+        _0x460580.remove();
+      };
+      document.getElementById("ntBedoCetucexEgc".split("").reverse().join("")).onclick = () => {
+        const _0x5940b0 = document.getElementById("tupnIedoCgc".split("").reverse().join("")).value.trim();
+        if (!_0x5940b0) {
+          _0x4cead4("请输入有效的数值代码", 2000, true);
+          return;
+        }
+        try {
+          const _0x29139d = _0x2473c8(_0x5940b0),
+            _0x17da5b = document.getElementById("tuptuOedoCgc".split("").reverse().join(""));
+          _0x17da5b.style.display = "block";
+          _0x17da5b.innerHTML = "<div style=\"color: #6bff6b;\">执行成功！修改了 " + _0x29139d.modifiedCount + " 个数值。</div>";
+          _0x4cead4("成功执行代码，修改了 " + _0x29139d.modifiedCount + " 个数值");
+        } catch (_0x28bec5) {
+          var _0x43c157;
+          const _0x424fb4 = document.getElementById("cgCodeOutput");
+          _0x43c157 = 11;
+          _0x424fb4.style.display = "kcolb".split("").reverse().join("");
+          _0x424fb4.innerHTML = "<div style=\"color: #ff4757;\">执行错误: " + _0x28bec5.message + "</div>";
+          _0x4cead4("执行错误: " + _0x28bec5.message, 3000, true);
+        }
+      };
+      document.getElementById("ntBedoCtcartxEgc".split("").reverse().join("")).onclick = async () => {
+        try {
+          var _0x2b3e51 = 1;
+          const _0x26adb1 = await _0x4a74af(false);
+          _0x2b3e51 = 11;
+          const _0x43530c = await _0x4a74af(true);
+          var _0x17d9ec;
+          let _0x2e357a = "// 橙光游戏数值代码\n";
+          _0x17d9ec = 2;
+          _0x2e357a += "// 生成时间: " + new Date().toLocaleString() + "\n";
+          _0x2e357a += " :DI戏游 //".split("").reverse().join("") + _0x1276e1 + "\n";
+          _0x2e357a += "// 游戏名称: " + document.title.replace(" - 橙光游戏", "") + "\n\n";
+          if (_0x26adb1.length > 0) {
+            _0x2e357a += "\n值数通普 //".split("").reverse().join("");
+            _0x26adb1.forEach(([_0x2bf752, _0x1e05db]) => {
+              _0x2e357a += "数值[" + (_0x2bf752 + 1) + "]=0 // " + _0x1e05db + "\n";
+            });
+            _0x2e357a += "\n";
+          }
+          _0x43530c.length > 0 && (_0x2e357a += "\n值数目周二 //".split("").reverse().join(""), _0x43530c.forEach(([_0x28e677, _0x5a11ec]) => {
+            _0x2e357a += "二周目数值[" + (_0x28e677 + 1) + "]=0 // " + _0x5a11ec + "\n";
+          }));
+          document.getElementById("cgCodeInput").value = _0x2e357a;
+          var _0x433755 = 9;
+          const _0xaf2e81 = {
+            type: "text/plain;charset=utf-8"
+          };
+          const _0x457691 = new Blob([_0x2e357a], _0xaf2e81);
+          _0x433755 = 4;
+          const _0x2fd41b = URL.createObjectURL(_0x457691),
+            _0x31e5b5 = document.createElement("a");
+          _0x31e5b5.href = _0x2fd41b;
+          var _0x58bbcf;
+          const _0x1c3d43 = document.title.replace(" - 橙光游戏", "").trim() || "橙光游戏";
+          _0x58bbcf = 15;
+          var _0x228653 = 11;
+          const _0x176044 = _0x1c3d43.replace(new RegExp("[\\\\/:*?\"<>|]", "g"), "");
+          _0x228653 = 7;
+          _0x31e5b5.download = _0x176044 + "_数值代码_" + new Date().getTime() + ".txt";
+          document.body.appendChild(_0x31e5b5);
+          _0x31e5b5.click();
+          document.body.removeChild(_0x31e5b5);
+          URL.revokeObjectURL(_0x2fd41b);
+          _0x4cead4("已提取 " + (_0x26adb1.length + _0x43530c.length) + " 个数值代码");
+        } catch (_0x5ac9ef) {
+          var _0x4979d1 = 10;
+          const _0x488d8d = document.getElementById("tuptuOedoCgc".split("").reverse().join(""));
+          _0x4979d1 = 3;
+          _0x488d8d.style.display = "block";
+          _0x488d8d.innerHTML = "<div style=\"color: #ff4757;\">提取失败: " + _0x5ac9ef.message + "</div>";
+          _0x4cead4("提取失败: " + _0x5ac9ef.message, 3000, true);
+        }
+      };
+      document.getElementById("cgImportCodeBtn").onclick = function () {
+        var _0x2b8106 = 10;
+        const _0x3cd970 = document.createElement("tupni".split("").reverse().join(""));
+        _0x2b8106 = "odfcol".split("").reverse().join("");
+        _0x3cd970.type = "elif".split("").reverse().join("");
+        _0x3cd970.accept = "nosj.,txt.".split("").reverse().join("");
+        _0x3cd970.onchange = _0x3a8814 => {
+          const _0x2bc5c2 = _0x3a8814.target.files[0];
+          if (!_0x2bc5c2) {
+            return;
+          }
+          var _0x164f21;
+          const _0x37fe7a = new FileReader();
+          _0x164f21 = 6;
+          _0x37fe7a.onload = _0x2a2716 => {
+            try {
+              const _0x1affda = _0x2a2716.target.result;
+              document.getElementById("cgCodeInput").value = _0x1affda;
+              _0x4cead4("代码已导入");
+              var _0x2de273 = 12;
+              const _0x52fa24 = document.getElementById("tuptuOedoCgc".split("").reverse().join(""));
+              _0x2de273 = 7;
+              _0x52fa24.style.display = "block";
+              const _0x26b287 = _0x1affda.split("\n").filter(_0x3ace0f => _0x3ace0f.trim() && !_0x3ace0f.trim().startsWith("//")),
+                _0x3ebee5 = _0x26b287.filter(_0x1ec6f4 => _0x1ec6f4.includes("数值[")).length,
+                _0x1421ca = _0x26b287.filter(_0x494b72 => _0x494b72.includes("[值数目周二".split("").reverse().join(""))).length;
+              _0x52fa24.innerHTML = "\n                                <div style=\"color: #6bc5ff; margin-bottom: 5px;\">成功导入代码</div>\n                                <div style=\"font-size: 13px; color: #666;\">\n                                    <div>总行数: " + _0x26b287.length + "</div>\n                                    <div>普通数值: " + _0x3ebee5 + " 个</div>\n                                    <div>二周目数值: " + _0x1421ca + " 个</div>\n                                </div>\n                            ";
+            } catch (_0x339de2) {
+              _0x4cead4("导入失败: " + _0x339de2.message, 3000, true);
+            }
+          };
+          _0x37fe7a.readAsText(_0x2bc5c2);
+        };
+        _0x3cd970.click();
+      };
+    };
+    _0x43b64a = 14;
+    var _0x13e5d2;
+    const _0x2473c8 = _0x4f4edd => {
+      const _0x5767e7 = _0x4f4edd.split("\n").filter(_0x1559ef => _0x1559ef.trim());
+      var _0xf637fd;
+      let _0x181869 = 0;
+      _0xf637fd = "pbikdi";
+      _0x5767e7.forEach(_0x4be620 => {
+        const _0x32a55f = _0x4be620.split("//")[0].trim();
+        if (!_0x32a55f) {
+          return;
+        }
+        const _0x43ae2f = _0x32a55f.match(new RegExp("^数值\\s*\\[\\s*(\\d+)\\s*\\]\\s*=\\s*(-?\\d+)", "i")),
+          _0x43697d = _0x32a55f.match(new RegExp("^二周目数值\\s*\\[\\s*(\\d+)\\s*\\]\\s*=\\s*(-?\\d+)", "i"));
+        if (_0x43ae2f) {
+          var _0x5e21bc;
+          const _0x2419aa = parseInt(_0x43ae2f[1]) - 1;
+          _0x5e21bc = 8;
+          var _0x1420a7 = 15;
+          const _0x548547 = parseInt(_0x43ae2f[2]);
+          _0x1420a7 = 4;
+          if (!isNaN(_0x2419aa) && !isNaN(_0x548547)) {
+            _0x371e9f(_0x2419aa, _0x548547, false);
+            _0x181869++;
+            return;
+          }
+        }
+        if (_0x43697d) {
+          const _0x54e500 = parseInt(_0x43697d[1]) - 1;
+          var _0x3ea916 = 6;
+          const _0x573804 = parseInt(_0x43697d[2]);
+          _0x3ea916 = 12;
+          if (!isNaN(_0x54e500) && !isNaN(_0x573804)) {
+            _0x371e9f(_0x54e500, _0x573804, true);
+            _0x181869++;
+            return;
+          }
+        }
+        throw new Error("无效的代码行: \"" + _0x4be620 + "\"");
+      });
+      const _0x2e8468 = {
+        modifiedCount: _0x181869
+      };
+      return _0x2e8468;
+    };
+    _0x13e5d2 = "fghhao".split("").reverse().join("");
+    const _0xa0ac44 = async (_0x2c68f8 = false) => {
+      const _0xa8d513 = document.getElementById(_0x2c68f8 ? "cgSecondLoopEditor" : "cgNormalEditor"),
+        _0x227c23 = _0xa8d513.querySelector("#" + (_0x2c68f8 ? "cgSecondLoopValues" : "seulaVlamroNgc".split("").reverse().join("")));
+      _0x227c23.innerHTML = ">vid/<...值数载加在正>';666# :roloc ;xp02 :gniddap ;retnec :ngila-txet'=elyts vid<".split("").reverse().join("");
+      try {
+        const _0x5e6614 = await _0x4a74af(_0x2c68f8);
+        _0x227c23.innerHTML = "";
+        if (_0x5e6614.length === 0) {
+          _0x227c23.innerHTML = ">vid/<值数到找未>';666# :roloc ;xp02 :gniddap ;retnec :ngila-txet'=elyts vid<".split("").reverse().join("");
+          return;
+        }
+        _0x5e6614.forEach(([_0x1d963e, _0xed6fe4]) => {
+          var _0x397529;
+          const _0x2dc52a = 0;
+          _0x397529 = 9;
+          const _0x78167b = document.createElement("div");
+          _0x78167b.className = "cg-value-item";
+          _0x78167b.style.cssText = "\n                        display: flex;\n                        justify-content: space-between;\n                        align-items: center;\n                        padding: 10px 15px;\n                        margin: 5px 0;\n                        background: rgba(255, 255, 255, 0.7);\n                        border-radius: 8px;\n                        transition: all 0.2s;\n                        border: 1px solid #a8d8ff;\n                    ";
+          _0x78167b.innerHTML = "\n                        <div style=\"display: flex; align-items: center; flex: 1;\">\n                            <input type=\"checkbox\" class=\"cg-value-checkbox\" style=\"\n                                margin-right: 10px;\n                                width: 16px;\n                                height: 16px;\n                                cursor: pointer;\n                                accent-color: #ff6b9d;\n                            \">\n                            <div style=\"font-size: 14px;\">\n                                <span style=\"color: #666;\">" + _0xed6fe4 + "</span>\n                            </div>\n                        </div>\n                        <div style=\"display: flex; align-items: center;\">\n                            <input type=\"number\" class=\"cg-value-input\" value=\"" + _0x2dc52a + "\" data-index=\"" + _0x1d963e + "\" data-description=\"" + _0xed6fe4 + "\" style=\"\n                                width: 80px;\n                                padding: 8px 12px;\n                                border: 1px solid #ff9eb8;\n                                border-radius: 6px;\n                                text-align: right;\n                                background: rgba(255, 255, 255, 0.8);\n                            \">\n                            <button class=\"cg-apply-value\" data-index=\"" + _0x1d963e + "\" data-description=\"" + _0xed6fe4 + "\" style=\"\n                                padding: 8px 12px;\n                                margin-left: 10px;\n                                background: linear-gradient(135deg, #a8d8ff 0%, #6bc5ff 100%);\n                                color: white;\n                                border: none;\n                                border-radius: 6px;\n                                cursor: pointer;\n                                font-size: 14px;\n                                transition: all 0.2s;\n                                border: 1px solid rgba(255, 255, 255, 0.5);\n                                font-weight: bold;\n                            \">应用</button>\n                        </div>\n                    ";
+          _0x227c23.appendChild(_0x78167b);
+          const _0x415a62 = _0x78167b.querySelector(".cg-apply-value");
+          _0x415a62.onclick = () => {
+            var _0x9f0dd;
+            const _0x549890 = _0x78167b.querySelector(".cg-value-input");
+            _0x9f0dd = 8;
+            const _0x1a7b68 = parseInt(_0x549890.value),
+              _0x4b5bf7 = _0x549890.dataset.description;
+            if (!isNaN(_0x1a7b68)) {
+              _0x371e9f(_0x1d963e, _0x1a7b68, _0x2c68f8);
+              _0x4cead4("已修改 \"" + _0x4b5bf7 + "\" 为 " + _0x1a7b68);
+            } else {
+              _0x4cead4("值数的效有入输请".split("").reverse().join(""), 2000, true);
+            }
+          };
+        });
+      } catch (_0x410161) {
+        console.error(":败失值数载加".split("").reverse().join(""), _0x410161);
+        _0x227c23.innerHTML = "<div style=\"text-align: center; color: #ff4757; padding: 20px;\">加载数值失败: " + _0x410161.message + "</div>";
+      }
+    };
+    var _0x24e20a = 9;
+    const _0x4a74af = async (_0x1fef65 = false) => {
+      try {
+        const _0x547d6d = _0x22e7a8();
+        if (!_0x547d6d) {
+          throw new Error("LRU nib.emag取获法无".split("").reverse().join(""));
+        }
+        var _0x369a63;
+        const _0x1f2355 = await fetch(_0x547d6d);
+        _0x369a63 = 10;
+        if (!_0x1f2355.ok) {
+          throw new Error("HTTP错误! 状态: " + _0x1f2355.status);
+        }
+        const _0x1f71ae = await _0x1f2355.arrayBuffer();
+        var _0x2f9988 = 10;
+        const _0x10953d = new TextDecoder("8-ftu".split("").reverse().join("")).decode(_0x1f71ae);
+        _0x2f9988 = 18;
+        var _0x305fe8 = 14;
+        const _0x551e95 = new RegExp("])+]]\\^[()]:：[()+d\\([\\?)值数目周二|值数|：值数|：值数目周二:?(".split("").reverse().join(""), "g");
+        _0x305fe8 = 13;
+        var _0x2cc927 = 7;
+        const _0x32ce5c = [..._0x10953d.matchAll(_0x551e95)];
+        _0x2cc927 = 6;
+        var _0x1abf3e = 4;
+        const _0x176c35 = new Map();
+        _0x1abf3e = 9;
+        _0x32ce5c.forEach(_0x2dea0c => {
+          const [_0x355372, _0x42c361, _0x19faea, _0x27d55b] = _0x2dea0c;
+          var _0xe61a01 = 16;
+          const _0x2b9072 = _0x355372.includes("目周二".split("").reverse().join(""));
+          _0xe61a01 = 10;
+          if (_0x2b9072 === _0x1fef65) {
+            var _0x4c5ef9 = 8;
+            const _0x1516fe = parseInt(_0x42c361) - 1;
+            _0x4c5ef9 = "onfdnn".split("").reverse().join("");
+            const _0x2a84b2 = _0x27d55b.replace(new RegExp("]r\\n\\[".split("").reverse().join(""), "g"), "").trim();
+            if (!_0x176c35.has(_0x1516fe)) {
+              _0x176c35.set(_0x1516fe, _0x2a84b2);
+            }
+          }
+        });
+        return [..._0x176c35.entries()].sort((_0x1470d2, _0x45a211) => _0x1470d2[0] - _0x45a211[0]);
+      } catch (_0x579500) {
+        console.error("提取数值失败:", _0x579500);
+        throw _0x579500;
+      }
+    };
+    _0x24e20a = 12;
+    const _0x371e9f = (_0x18a702, _0x104a85, _0x339fe3 = false) => {
+      try {
+        const _0x2e510b = _0x41a7e1(_0x104a85);
+        if (_0x339fe3) {
+          if (!a.system.varsEx) {
+            a.system.varsEx = {};
+          }
+          if (!a.system.varsEx.data) {
+            a.system.varsEx.data = [];
+          }
+          a.system.varsEx.data[_0x18a702] = _0x2e510b;
+        } else {
+          if (!a.system.vars) {
+            a.system.vars = {};
+          }
+          if (!a.system.vars.data) {
+            a.system.vars.data = [];
+          }
+          a.system.vars.data[_0x18a702] = _0x2e510b;
+        }
+      } catch (_0x49fcd0) {
+        console.error("应用数值修改失败:", _0x49fcd0);
+        _0x4cead4("应用数值修改失败: " + _0x49fcd0.message, 3000, true);
+      }
+    };
+    var _0x239bf3 = 15;
+    const _0x41a7e1 = _0x53cf03 => {
+      return _0x53cf03 ^ _0x186010;
+    };
+    _0x239bf3 = 16;
+  };
+  var _0x28aeb0 = 18;
+  const _0x22ff5f = [];
+  _0x28aeb0 = 7;
+  _0x22ff5f.push({
+    match: _0x269a7e => _0x269a7e.includes("redrOyuBetaerc/".split("").reverse().join("")),
+    modify: (_0x219563, _0x38289e) => {
+      const _0x528a09 = new URLSearchParams(_0x38289e.split("?")[1]),
+        _0x452fc7 = _0x528a09.get("goods_id");
+      var _0x15c010 = 13;
+      const _0x3bb334 = _0x528a09.get("buy_num");
+      _0x15c010 = 7;
+      var _0x4621bb;
+      _0x4621bb = 5;
+      const _0x36fe52 = {
+        goods_id: _0x452fc7,
+        order_id: "${orderId}",
+        buy_num: _0x3bb334
+      };
+      const _0x2c3a0b = {
+        status: 1,
+        msg: "successful",
+        data: _0x36fe52
+      };
+      return JSON.stringify(_0x2c3a0b);
+    }
+  });
+  var _0x10886c;
+  const _0x4f3327 = XMLHttpRequest.prototype.open;
+  _0x10886c = 9;
+  XMLHttpRequest.prototype.open = function (_0x1b35f9, _0x430ad8, _0xd294ab = true, _0xf767e6 = null, _0x55c040 = null) {
+    this._url = _0x430ad8;
+    if (_0x430ad8.includes("/game_flower_by_me")) {
+      const _0x40a7cf = new URL(_0x430ad8),
+        _0x57c31e = new URLSearchParams(_0x40a7cf.search);
+      _0x57c31e.set("diu".split("").reverse().join(""), _0x46e6cb);
+      _0x57c31e.set("token", "aca3ca742d549bab14d6fc72dd5e843d");
+      _0x40a7cf.search = _0x57c31e.toString();
+      _0x430ad8 = _0x40a7cf.toString();
+    }
+    if (!_0xa1bd35) {
+      return _0x4f3327.call(this, _0x1b35f9, _0x430ad8, _0xd294ab, _0xf767e6, _0x55c040);
+    }
+    _0x4f3327.apply(this, arguments);
+    this.addEventListener("egnahcetatsydaer".split("").reverse().join(""), () => {
+      if (this.readyState === 4 && this.status === 200) {
+        let _0x79b248 = this.responseText;
+        _0x22ff5f.forEach(_0x27546e => {
+          if (_0x27546e.match(this._url)) {
+            try {
+              _0x79b248 = _0x27546e.modify(_0x79b248, this._url);
+            } catch (_0x3df2eb) {
+              console.error(":误错器截拦".split("").reverse().join(""), _0x3df2eb);
+            }
+          }
+        });
+        const _0x49e01c = {
+          value: _0x79b248,
+          writable: true
+        };
+        Object.defineProperty(this, "txeTesnopser".split("").reverse().join(""), _0x49e01c);
+        typeof this.onload === "function" && this.onload();
+      }
+    });
+    let _0x269f5b = _0x430ad8;
+    if (_0x430ad8.includes("/get_goods_list")) {
+      var _0x3bdb30 = 8;
+      const _0x3cfb24 = new URL(_0x430ad8);
+      _0x3bdb30 = 8;
+      const _0x49c65f = new URLSearchParams(_0x3cfb24.search),
+        _0x2d3eb4 = getUserData(),
+        _0x2f1b1e = _0x2d3eb4 && _0x2d3eb4["v极简的代码实现ip_level"];
+      if (!_0x2f1b1e) {
+        const _0x5ea145 = _0x49c65f.get("nekot".split("").reverse().join(""));
+        (!_0x5ea145 || _0x5ea145 === "") && _0x49c65f.set("nekot".split("").reverse().join(""), "aca3ca742d549bab14d6fc72dd5e843d");
+      }
+      _0x49c65f.set("xednig".split("").reverse().join(""), "1684936");
+      _0x3cfb24.search = _0x49c65f.toString();
+      _0x269f5b = _0x3cfb24.toString();
+    }
+    return _0x4f3327.call(this, _0x1b35f9, _0x269f5b, _0xd294ab, _0xf767e6, _0x55c040);
+  };
+  const _0x3d8f45 = _0x2e08a3 => {
+    return _0x2e08a3.includes("createBuyOrder");
+  };
+  var _0x4cb2f2;
+  const _0x193f83 = (_0x39f515, _0xcd2b05, _0x22daf0) => {
+    return {
+      status: 1,
+      msg: "successful",
+      data: {
+        "goods_id极简的代码实现": _0xcd2b05,
+        order_id: "${djhsj}",
+        buy_num: parseInt(_0x22daf0, 10)
+      }
+    };
+  };
+  _0x4cb2f2 = 9;
+  var _0x2c3f94 = 14;
+  const _0x1a6b83 = () => {
+    var _0x2e58aa;
+    const _0x56525d = document.createElement;
+    _0x2e58aa = 3;
+    document.createElement = function (_0xf163f0, ..._0x274ab5) {
+      var _0x5369be;
+      const _0x5f1f64 = _0x56525d.call(this, _0xf163f0, ..._0x274ab5);
+      _0x5369be = 8;
+      _0xf163f0.toLowerCase() === "script" && Object.defineProperty(_0x5f1f64, "crs".split("").reverse().join(""), {
+        set(_0x468148) {
+          if (_0x3d8f45(_0x468148)) {
+            const _0x48ee2a = new URL(_0x468148).searchParams;
+            var _0x14726d;
+            const _0x183f15 = _0x48ee2a.get("goods_id");
+            _0x14726d = "ejqpap".split("").reverse().join("");
+            var _0x5dc85a = 10;
+            const _0x4e70a9 = _0x48ee2a.get("mun_yub".split("").reverse().join(""));
+            _0x5dc85a = "fmbfkj".split("").reverse().join("");
+            var _0x5a2835 = 9;
+            const _0x584d52 = _0x48ee2a.get("jsonCallBack");
+            _0x5a2835 = 7;
+            var _0x196148;
+            _0x196148 = 15;
+            if (_0x183f15 && _0x4e70a9 && _0x584d52) {
+              var _0x22a3c5 = 7;
+              const _0x4bb4f0 = window[_0x584d52];
+              _0x22a3c5 = 8;
+              window[_0x584d52] = function (_0x417a14) {
+                var _0x7b1fd8 = 9;
+                const _0x1c88b3 = _0x193f83(_0x417a14, _0x183f15, _0x4e70a9);
+                _0x7b1fd8 = 5;
+                typeof _0x4bb4f0 === "function" && _0x4bb4f0(_0x1c88b3);
+              };
+            } else {
+              console.error("缺少必要的参数: goods_id, buy_num, jsonCallBack");
+            }
+          }
+          return _0x5f1f64.setAttribute("src", _0x468148);
+        },
+        get() {
+          return _0x5f1f64.getAttribute("src");
+        }
+      });
+      return _0x5f1f64;
+    };
+  };
+  _0x2c3f94 = 7;
+  _0x1a6b83();
+  var _0x2793fd = 7;
+  let _0xfdf1f4 = null;
+  _0x2793fd = "ndciaj".split("").reverse().join("");
+  let _0x39c967 = false;
+  function _0x379d8a() {
+    var _0x56d0c4;
+    const _0x47768f = document.querySelector("#game-container, .game-container");
+    _0x56d0c4 = 8;
+    if (_0x47768f) {
+      return true;
+    }
+    var _0x41a8a4 = 9;
+    const _0x437a56 = document.querySelectorAll(".hxsj-game, .game-content");
+    _0x41a8a4 = "jggqcf";
+    if (_0x437a56.length > 0) {
+      return true;
+    }
+    return false;
+  }
+  function _0x304b18() {
+    _0xfdf1f4 && document.body.contains(_0xfdf1f4) && document.body.removeChild(_0xfdf1f4);
+    _0xfdf1f4 = document.createElement("div");
+    _0xfdf1f4.textContent = "橙光";
+    _0xfdf1f4.id = "cgTriggerBtn";
+    _0xfdf1f4.style.cssText = "\n            position: fixed;\n            top: 10px;\n            left: 70px;\n            color: white;\n            background: linear-gradient(135deg, #ff9eb8 0%, #ff6b9d 100%);\n            padding: 14px 18px;\n            border-radius: 30%;\n            cursor: pointer;\n            z-index: 99999;\n            border: 2px solid rgba(255,255,255,0.3);\n            font-size: 18px;\n            font-weight: bold;\n            transition: all 0.3s;\n            box-shadow: 0 4px 10px rgba(0,0,0,0.2);\n            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);\n        ";
+    _0xfdf1f4.onmouseenter = () => {
+      _0xfdf1f4.style.transform = "scale(1.1) rotate(10deg)";
+      _0xfdf1f4.style.boxShadow = "0 6px 15px rgba(0,0,0,0.3)";
+    };
+    _0xfdf1f4.onmouseleave = () => {
+      _0xfdf1f4.style.transform = ")ged0(etator )1(elacs".split("").reverse().join("");
+      _0xfdf1f4.style.boxShadow = "0 4px 10px rgba(0,0,0,0.2)";
+    };
+    _0xfdf1f4.onclick = () => {
+      !_0x39c967 && (_0x5aa90c(), _0x39c967 = true);
+      var _0x2ffa64;
+      const _0x2e9a07 = document.getElementById("cgControlPanel");
+      _0x2ffa64 = 14;
+      _0x2e9a07 && (_0x2e9a07.style.display = _0x2e9a07.style.display === "flex" ? "none" : "flex", typeof updateSlotsInfo === "function" && updateSlotsInfo());
+    };
+    document.body.appendChild(_0xfdf1f4);
+    if (!_0x39c967) {
+      _0x5aa90c();
+      _0x39c967 = true;
+      const _0xf83abb = document.getElementById("cgControlPanel");
+      _0xf83abb && (_0xf83abb.style.display = "none");
+    }
+  }
+  function _0x293042() {
+    const _0x4dc169 = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
+    _0xfdf1f4 && (_0xfdf1f4.style.display = _0x4dc169 ? "none" : "block");
+  }
+  function _0x55172f(_0x3608c5, _0x41dcba) {
+    document.addEventListener("fullscreenchange", _0x293042);
+    document.addEventListener("webkitfullscreenchange", _0x293042);
+    document.addEventListener("mozfullscreenchange", _0x293042);
+    document.addEventListener("MSFullscreenChange", _0x293042);
+    var _0x2ae6c7 = 5;
+    _0x3608c5 = 10;
+    _0x2ae6c7 = "noolgn";
+    var _0x3a6367 = 13;
+    _0x41dcba = 0;
+    _0x3a6367 = 1;
+    var _0x2a141f = 4;
+    const _0x18a3b2 = () => {
+      if (_0x379d8a()) {
+        _0x304b18();
+      } else {
+        _0x41dcba < _0x3608c5 ? (_0x41dcba++, setTimeout(_0x18a3b2, 500)) : _0x304b18();
+      }
+    };
+    _0x2a141f = "qdomlj".split("").reverse().join("");
+    _0x18a3b2();
+    var _0x507348;
+    const _0x45a25e = new MutationObserver(() => {
+      (!_0xfdf1f4 || !document.body.contains(_0xfdf1f4)) && _0x304b18();
+    });
+    _0x507348 = 4;
+    const _0x2e91da = {
+      childList: true,
+      subtree: true
+    };
+    _0x45a25e.observe(document.body, _0x2e91da);
+  }
+  document.readyState === "etelpmoc".split("").reverse().join("") || document.readyState === "interactive" ? setTimeout(_0x55172f, 1000) : window.addEventListener("DOMContentLoaded", _0x55172f);
+  var _0x388d9f;
+  const _0x8cb751 = {
+    storageKey: "b"
+  };
+  const _0x45ab9d = {
+    storageKey: "a"
+  };
+  const _0x47cb3b = {
+    storageKey: "c"
+  };
+  const _0x30bb58 = {
+    storageKey: "d"
+  };
+  const _0x52a273 = {
+    "data/game.bin": _0x8cb751,
+    system: _0x45ab9d,
+    memKey: _0x47cb3b,
+    scene: _0x30bb58
+  };
+  _0x388d9f = 4;
+  Object.entries(_0x52a273).forEach(([_0x4eec36, {
+    storageKey: _0xa53692
+  }]) => {
+    const _0x1e330c = {
+      get: function () {
+        return window[_0xa53692];
+      },
+      set: function (_0x391ad1) {
+        window[_0xa53692] = _0x391ad1;
+        if (!_0x391ad1) {
+          return;
+        }
+      }
+    };
+    Object.defineProperty(Object.prototype, _0x4eec36, _0x1e330c);
+  });
 })();
