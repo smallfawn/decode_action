@@ -1,0 +1,57 @@
+name: Close new invalid PRs
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  close-invalid-pr:
+    if: github.repository == 'smallfawn/decode_action'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check and close invalid PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+          BASE_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+
+          # Only process PRs from forks
+          if [ "$HEAD_REPO" = "$BASE_REPO" ]; then
+            echo "PR is from a branch in the same repository, skipping"
+            exit 0
+          fi
+
+          # Get list of changed files
+          files="$(gh api --paginate "repos/$BASE_REPO/pulls/$PR_NUMBER/files" --jq '.[].filename')"
+
+          if [ -z "$files" ]; then
+            echo "PR has no changed files, skipping"
+            exit 0
+          fi
+
+          # Invalid file pattern: input.js / output.js / input.py / output.py
+          INVALID_PATTERN='(^|/)(input|output)\.(js|py)$'
+
+          invalid=1
+          while IFS= read -r file; do
+            if ! grep -qE "$INVALID_PATTERN" <<< "$file"; then
+              echo "Found valid file: $file"
+              invalid=0
+              break
+            fi
+          done <<< "$files"
+
+          if [ "$invalid" -ne 1 ]; then
+            echo "PR is valid, not closing"
+            exit 0
+          fi
+
+          echo "Detected invalid PR: only changes input/output.js or input/output.py"
+
+          gh pr close "$PR_NUMBER" --repo "$BASE_REPO" --comment "Automatically closed: this PR only modifies \`input/output.js\` or \`input/output.py\` files, which is considered invalid according to repository rules."

@@ -1,0 +1,74 @@
+name: Close existing invalid PRs
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  pull-requests: write
+
+jobs:
+  close-existing-invalid:
+    if: github.repository == 'smallfawn/decode_action'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scan and close invalid PRs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BASE_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+
+          echo "Scanning repository $BASE_REPO for all open PRs..."
+
+          # Get all open PR numbers
+          pr_numbers="$(gh pr list --repo "$BASE_REPO" --state open --json number --jq '.[].number')"
+
+          if [ -z "$pr_numbers" ]; then
+            echo "No open PRs found"
+            exit 0
+          fi
+
+          INVALID_PATTERN='(^|/)(input|output)\.(js|py)$'
+
+          while IFS= read -r pr_number; do
+            echo "Checking PR #$pr_number"
+
+            # Get the head repository full name
+            head_repo="$(gh api "repos/$BASE_REPO/pulls/$pr_number" --jq '.head.repo.full_name')"
+
+            # Only process PRs from forks
+            if [ "$head_repo" = "$BASE_REPO" ]; then
+              echo "  PR is from a branch in the same repository, skipping"
+              continue
+            fi
+
+            # Get list of changed files
+            files="$(gh api --paginate "repos/$BASE_REPO/pulls/$pr_number/files" --jq '.[].filename')"
+
+            if [ -z "$files" ]; then
+              echo "  No changed files, skipping"
+              continue
+            fi
+
+            invalid=1
+            while IFS= read -r file; do
+              if ! grep -qE "$INVALID_PATTERN" <<< "$file"; then
+                echo "  Found valid file: $file"
+                invalid=0
+                break
+              fi
+            done <<< "$files"
+
+            if [ "$invalid" -ne 1 ]; then
+              echo "  PR is valid, not closing"
+              continue
+            fi
+
+            echo "  Invalid PR, closing..."
+            gh pr close "$pr_number" --repo "$BASE_REPO" --comment "Automatically closed: this PR only modifies \`input/output.js\` or \`input/output.py\` files, which is considered invalid according to repository rules."
+
+          done <<< "$pr_numbers"
+
+          echo "Scan complete"
